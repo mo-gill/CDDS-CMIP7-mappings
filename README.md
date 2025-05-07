@@ -1,4 +1,4 @@
-# CDDS-CMIP7-mappings 
+# UKNCSP CDDS-CMIP7-mappings 
 
 *This repository is being constructed, and does not contain the full set of data from the CMIP7 Data Request. All queries to @matthew-mizielinski*
 
