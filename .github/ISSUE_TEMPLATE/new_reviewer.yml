@@ -1,0 +1,26 @@
+name: New Reviewer Request
+description: Request access to issues in this github repository
+title: "[New Reviewer]: Add Reviewer <github user id>"
+labels: ["NewReviewer"]
+
+body:
+  - type: input
+    id: UserId
+    attributes:
+      label: "Github User name"
+    valdiations:
+      required: true
+  - type: input
+    id: Name
+    attributes:
+      label: "Name"
+    validations:
+      required: true
+  - type: input
+    id: institution
+    attributes:
+      label: "Institution"
+    validations:
+      required: true
+    
+    
