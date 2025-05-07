@@ -1,5 +1,99 @@
-# CDDS-CMIP7-mappings
+# CDDS-CMIP7-mappings 
 
-### 6th May
+*This repository is being constructed, and does not contain the full set of data from the CMIP7 Data Request. All queries to @matthew-mizielinski*
 
-Initial set up with just mappings issues involving "Amon" in the title as a proof of concept. Please do not interact with this repository unless you have been in contact with @matthew-mizielinski
+This repository is being used for collection and review of model configuration for the UKESM1-3 and HadGEM3-GC5 based models being prepared for CMIP7 submission in 2026.
+
+## Mapping and STASH information 
+
+Information is being held for each mapping in the body of github issues, e.g. #67 contains the information for 
+monthly mean surface air temperature (Amon.tas). Within each issue there are three tables; 
+the first for Data Request information, second for mapping information and the third for STASH setup.
+
+The information in the issues is also presented in the following files;
+* [data/mappings.json](https://github.com/UKNCSP/CDDS-CMIP7-mappings/blob/main/data/mappings.json) (JSON representation of the data in each issue)
+* [data/mappings.csv](https://github.com/UKNCSP/CDDS-CMIP7-mappings/blob/main/data/mappings.csv) (Excel CSV representation of Data Request and Mapping information)
+* [data/stash.csv](https://github.com/UKNCSP/CDDS-CMIP7-mappings/blob/main/data/stash.csv) (Excel CSV representation of STASH information)
+
+
+### Prerequisites for the Review process
+
+Anyone with a github account can comment on issues, but to edit the body of the github issues and contribute 
+to the mappings/STASH setup review process users will need to be registered. To do this please fill 
+out [this form](https://github.com/UKNCSP/CDDS-CMIP7-mappings/issues/new?template=new_reviewer.yml).
+
+## Review process 
+Information is extracted from the "body" of each issue and updates should be made by editing its content 
+(see image below for pointer to button)
+
+![image](https://github.com/user-attachments/assets/3b907a1a-e3a3-4ea4-948d-ca3163b71389)
+
+This will eventually trigger actions to update the information in the data files linked to above (work in progress).
+
+### Mappings update
+
+To update the mapping add an extra row to the mappings table for the corresponding model (`UKESM1-3` or `HadGEM3-GC5`. For example to extend the mapping for Amon.tas (#67)
+change the mappings table from 
+
+| Field | Value | Notes |
+| --- | --- | --- |
+| Expression UKESM1 | `m01s03i236[lbproc=128]` | |
+| Expression HadGEM3-GC31 | `m01s03i236[lbproc=128]` | |
+| Model units | K | |
+
+to 
+
+| Field | Value | Notes |
+| --- | --- | --- |
+| Expression UKESM1 | `m01s03i236[lbproc=128]` | |
+| Expression HadGEM3-GC31 | `m01s03i236[lbproc=128]` | |
+| Expression UKESM1-3 | `m01s03i236[lbproc=128]` | |
+| Expression HadGEM3-GC5 | `m01s03i236[lbproc=128]` | |
+| Model units | K | |
+
+### STASH entries update
+
+To support configuration of the UM atmoshpere output each issue also tabulates the corresponding entries
+to be included in the STASH setup. If possible this table should be extended in a similar fashion to the
+one for the mappings, but with a row for each STASH code required.
+
+For example Amon.zg (geopotential height on pressure levels) in #78 has the expression 
+`m01s30i297[blev=PLEV19, lbproc=128] / m01s30i304[blev=PLEV19, lbproc=128]` for both models so requires *two* lines 
+in the STASH table for each model;
+
+| Model | STASH | Section, item number | Time Profile | Domain Profile | Usage Profile |
+| --- | --- | --- | --- | --- | --- |
+| UKESM1 | m01s30i297 | 30,297 | TMONMN | PLEV19 | UP5 |
+| UKESM1 | m01s30i304 | 30,304 | TMONMN | PLEV19 | UP5 |
+| HadGEM3-GC31 | m01s30i297 | 30,297 | TMONMN | PLEV19 | UP5 |
+| HadGEM3-GC31 | m01s30i304 | 30,304 | TMONMN | PLEV19 | UP5 |
+
+To extend the same STASH requirements to the HadGEM3-GC5 and UKESM1-3 models extend the table to
+
+| Model | STASH | Section, item number | Time Profile | Domain Profile | Usage Profile |
+| --- | --- | --- | --- | --- | --- |
+| UKESM1 | m01s30i297 | 30,297 | TMONMN | PLEV19 | UP5 |
+| UKESM1 | m01s30i304 | 30,304 | TMONMN | PLEV19 | UP5 |
+| HadGEM3-GC31 | m01s30i297 | 30,297 | TMONMN | PLEV19 | UP5 |
+| HadGEM3-GC31 | m01s30i304 | 30,304 | TMONMN | PLEV19 | UP5 |
+| UKESM1-3 | m01s30i297 | 30,297 | TMONMN | PLEV19 | UP5 |
+| UKESM1-3 | m01s30i304 | 30,304 | TMONMN | PLEV19 | UP5 |
+| HadGEM3-GC5 | m01s30i297 | 30,297 | TMONMN | PLEV19 | UP5 |
+| HadGEM3-GC5 | m01s30i304 | 30,304 | TMONMN | PLEV19 | UP5 |
+
+### Diagnostic review
+
+Where mappings and STASH requirements have not materially changed from CMIP6 definitions we do not 
+intend to produce sample data for Science QA review as these mappings have already been heavily tested.
+
+Variables that are very similar to existing ones, e.g. where they only differ in frequency, will likely 
+not require Science QA review.  
+
+All new variables will need to go through a Science QA review process  to ensure that we have the
+capability to produce the data correctly.
+
+### Differences between HadGEM3-GC5 and UKESM1-*/HadGEM3-GC31 models
+
+Please note that the HadGEM3-GC5 configuration uses both a new configuration of NEMO (conservative 
+potential temperature and absolute salinity as prognostics) and the SI3 model rather than CICE for the sea-ice component.
+Mappings will need to take this into account when adding information for HadGEM3-GC5 in particular.
