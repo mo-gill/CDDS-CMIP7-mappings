@@ -6,7 +6,7 @@ This repository is being used for collection and review of model configuration f
 
 ## Mapping and STASH information 
 
-Information is being held for each mapping in the body of github issues, e.g. #67 contains the information for 
+Information is being held for each mapping in the body of github issues, e.g. [#67](https://github.com/UKNCSP/CDDS-CMIP7-mappings/issues/67) contains the information for 
 monthly mean surface air temperature (Amon.tas). Within each issue there are three tables; 
 the first for Data Request information, second for mapping information and the third for STASH setup.
 
@@ -16,7 +16,7 @@ The information in the issues is also presented in the following files;
 * [data/stash.csv](https://github.com/UKNCSP/CDDS-CMIP7-mappings/blob/main/data/stash.csv) (Excel CSV representation of STASH information)
 
 
-### Prerequisites for the Review process
+## Prerequisites for the Review process
 
 Anyone with a github account can comment on issues, but to edit the body of the github issues and contribute 
 to the mappings/STASH setup review process users will need to be registered. To do this please fill 
@@ -32,7 +32,7 @@ This will eventually trigger actions to update the information in the data files
 
 ### Mappings update
 
-To update the mapping add an extra row to the mappings table for the corresponding model (`UKESM1-3` or `HadGEM3-GC5`. For example to extend the mapping for Amon.tas (#67)
+To update the mapping add an extra row to the mappings table for the corresponding model (`UKESM1-3` or `HadGEM3-GC5`. For example to extend the mapping for Amon.tas ([#67](https://github.com/UKNCSP/CDDS-CMIP7-mappings/issues/67))
 change the mappings table from 
 
 | Field | Value | Notes |
@@ -51,13 +51,22 @@ to
 | Expression HadGEM3-GC5 | `m01s03i236[lbproc=128]` | |
 | Model units | K | |
 
+More complex mappings, i.e. those which require some post processing, use python functions to produce the required data. 
+One example of this is Amon.tasmax ([#68](https://github.com/UKNCSP/CDDS-CMIP7-mappings/issues/68)) which uses a `mon_mean_from_day` in order to perform the necessary calculation.
+These "processor" functions are all written in python, take multiple [iris cubes](https://scitools-iris.readthedocs.io/en/stable/userguide/iris_cubes.html#cube) 
+as arguments and return an iris cube which is then passed on to CMOR for writing. The set of processor functions used in 
+CMIP6 can current be found [here](https://github.com/MetOffice/CDDS/blob/main/mip_convert/mip_convert/plugins/hadgem3/data/processors.py).
+
+If post-processing of data is required for a variable and a processor does not already exist please add the `processor` label to the issue. 
+Additional information on processors should be added as a comment to the issue.
+
 ### STASH entries update
 
 To support configuration of the UM atmoshpere output each issue also tabulates the corresponding entries
 to be included in the STASH setup. If possible this table should be extended in a similar fashion to the
 one for the mappings, but with a row for each STASH code required.
 
-For example Amon.zg (geopotential height on pressure levels) in #78 has the expression 
+For example Amon.zg (geopotential height on pressure levels) in [#78](https://github.com/UKNCSP/CDDS-CMIP7-mappings/issues/78) has the expression 
 `m01s30i297[blev=PLEV19, lbproc=128] / m01s30i304[blev=PLEV19, lbproc=128]` for both models so requires *two* lines 
 in the STASH table for each model;
 
