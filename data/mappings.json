@@ -1,0 +1,3916 @@
+[
+  {
+    "Data Request information": {
+      "Branded variable name": "zg_tavg-p19-hxy-air",
+      "CF standard name": "geopotential_height",
+      "CMIP6 Differences": "",
+      "Cell methods": "time: mean",
+      "Dimensions": "longitude latitude plev19 time",
+      "Frequency": "mon",
+      "Long name": "Geopotential Height",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s30i297[blev=PLEV19, lbproc=128] / m01s30i304[blev=PLEV19, lbproc=128]",
+      "Expression UKESM1": "m01s30i297[blev=PLEV19, lbproc=128] / m01s30i304[blev=PLEV19, lbproc=128]",
+      "Model units": "m"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s30i297",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "30,297",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i304",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "30,304",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i297",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,297",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i304",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,304",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 78,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.zg_tavg-p19-hxy-air (Amon.zg)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "wap_tavg-p19-hxy-air",
+      "CF standard name": "lagrangian_tendency_of_air_pressure",
+      "CMIP6 Differences": "\"comment\" was \"Omega (vertical velocity in pressure coordinates, positive downwards)\";",
+      "Cell methods": "time: mean",
+      "Dimensions": "longitude latitude plev19 time",
+      "Frequency": "mon",
+      "Long name": "Omega (=dp/dt)",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "Pa s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s30i298[blev=PLEV19, lbproc=128] / m01s30i304[blev=PLEV19, lbproc=128]",
+      "Expression UKESM1": "m01s30i298[blev=PLEV19, lbproc=128] / m01s30i304[blev=PLEV19, lbproc=128]",
+      "Model units": "Pa s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s30i298",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "30,298",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i304",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "30,304",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i298",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,298",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i304",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,304",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 77,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.wap_tavg-p19-hxy-air (Amon.wap)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "vas_tavg-h10m-hxy-u",
+      "CF standard name": "northward_wind",
+      "CMIP6 Differences": "",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time height10m",
+      "Frequency": "mon",
+      "Long name": "Northward Near-Surface Wind",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "normally, the the wind component should be reported at the 10 meter height; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time height10m CMIP7:longitude latitude time  height10m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i210[lbproc=128]",
+      "Expression UKESM1": "m01s03i210[lbproc=128]",
+      "Model units": "m s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i210",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,210",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i210",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,210",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 76,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.vas_tavg-h10m-hxy-u (Amon.vas)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "va_tavg-p19-hxy-air",
+      "CF standard name": "northward_wind",
+      "CMIP6 Differences": "",
+      "Cell methods": "time: mean",
+      "Dimensions": "longitude latitude plev19 time",
+      "Frequency": "mon",
+      "Long name": "Northward Wind",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s30i202[blev=PLEV19, lbproc=128] / m01s30i301[blev=PLEV19, lbproc=128]",
+      "Expression UKESM1": "m01s30i202[blev=PLEV19, lbproc=128] / m01s30i301[blev=PLEV19, lbproc=128]",
+      "Model units": "m s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s30i202",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "30,202",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i301",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "30,301",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i201",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "30,201",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i202",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,202",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i301",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,301",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i201",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,201",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 75,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.va_tavg-p19-hxy-air (Amon.va)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "uas_tavg-h10m-hxy-u",
+      "CF standard name": "eastward_wind",
+      "CMIP6 Differences": "",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time height10m",
+      "Frequency": "mon",
+      "Long name": "Eastward Near-Surface Wind",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "normally, the the wind component should be reported at the 10 meter height; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time height10m CMIP7:longitude latitude time  height10m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i209[lbproc=128]",
+      "Expression UKESM1": "m01s03i209[lbproc=128]",
+      "Model units": "m s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i209",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,209",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i209",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,209",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 74,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.uas_tavg-h10m-hxy-u (Amon.uas)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ua_tavg-p19-hxy-air",
+      "CF standard name": "eastward_wind",
+      "CMIP6 Differences": "",
+      "Cell methods": "time: mean",
+      "Dimensions": "longitude latitude plev19 time",
+      "Frequency": "mon",
+      "Long name": "Eastward Wind",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s30i201[blev=PLEV19, lbproc=128] / m01s30i301[blev=PLEV19, lbproc=128]",
+      "Expression UKESM1": "m01s30i201[blev=PLEV19, lbproc=128] / m01s30i301[blev=PLEV19, lbproc=128]",
+      "Model units": "m s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s30i201",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "30,201",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i301",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "30,301",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i202",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "30,202",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i201",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,201",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i301",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,301",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i202",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,202",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 73,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.ua_tavg-p19-hxy-air (Amon.ua)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ts_tavg-u-hxy-u",
+      "CF standard name": "surface_temperature",
+      "CMIP6 Differences": "\"comment\" was \"Temperature of the lower boundary of the atmosphere\";",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Temperature",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s00i024[lbproc=128]",
+      "Expression UKESM1": "m01s00i024[lbproc=128]",
+      "Model units": "K"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s00i024",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "24",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s00i024",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "24",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 72,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.ts_tavg-u-hxy-u (Amon.ts)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tauv_tavg-u-hxy-u",
+      "CF standard name": "surface_downward_northward_stress",
+      "CMIP6 Differences": "",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Downward Northward Wind Stress",
+      "Modeling realm": "atmos",
+      "Positive": "down",
+      "Processing notes": "",
+      "Units": "Pa",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i461[lbproc=128]",
+      "Expression UKESM1": "m01s03i461[lbproc=128]",
+      "Model units": "Pa"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i461",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,461",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i461",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,461",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 71,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.tauv_tavg-u-hxy-u (Amon.tauv)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tauu_tavg-u-hxy-u",
+      "CF standard name": "surface_downward_eastward_stress",
+      "CMIP6 Differences": "",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Downward Eastward Wind Stress",
+      "Modeling realm": "atmos",
+      "Positive": "down",
+      "Processing notes": "",
+      "Units": "Pa",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i460[lbproc=128]",
+      "Expression UKESM1": "m01s03i460[lbproc=128]",
+      "Model units": "Pa"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i460",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,460",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i460",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,460",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 70,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.tauu_tavg-u-hxy-u (Amon.tauu)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tasmin_tstat-h2m-hxy-u",
+      "CF standard name": "air_temperature",
+      "CMIP6 Differences": "\"comment\" was \"minimum near-surface (usually, 2 meter) air temperature (add cell_method attribute 'time: min')\"; ; \"dimensions\" was \"longitude latitude time height2m\";",
+      "Cell methods": "area: mean time: minimum within days time: mean over days",
+      "Dimensions": "longitude latitude time4 height2m",
+      "Frequency": "mon",
+      "Long name": "Daily Minimum Near-Surface Air Temperature",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "Normally, this should be reported at the 2 meter height. CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time height2m CMIP7:longitude latitude time4 height2m,",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "mon_mean_from_day(m01s03i236[lbproc=4096])",
+      "Expression UKESM1": "mon_mean_from_day(m01s03i236[lbproc=4096])",
+      "Model units": "K"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i236",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,236",
+        "time_profile": "TDAYMIN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s03i236",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,236",
+        "time_profile": "TDAYMIN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 69,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.tasmin_tstat-h2m-hxy-u (Amon.tasmin)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tasmax_tstat-h2m-hxy-u",
+      "CF standard name": "air_temperature",
+      "CMIP6 Differences": "\"dimensions\" was \"longitude latitude time height2m\"; ; \"comment\" was \"maximum near-surface (usually, 2 meter) air temperature (add cell_method attribute 'time: max')\";",
+      "Cell methods": "area: mean time: maximum within days time: mean over days",
+      "Dimensions": "longitude latitude time4 height2m",
+      "Frequency": "mon",
+      "Long name": "Daily Maximum Near-Surface Air Temperature",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "Normally, this should be reported at the 2 meter height.; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time height2m CMIP7:longitude latitude time4 height2m,",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "mon_mean_from_day(m01s03i236[lbproc=8192])",
+      "Expression UKESM1": "mon_mean_from_day(m01s03i236[lbproc=8192])",
+      "Model units": "K"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i236",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,236",
+        "time_profile": "TDAYMAX",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s03i236",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,236",
+        "time_profile": "TDAYMAX",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 68,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.tasmax_tstat-h2m-hxy-u (Amon.tasmax)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tas_tavg-h2m-hxy-u",
+      "CF standard name": "air_temperature",
+      "CMIP6 Differences": "",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time height2m",
+      "Frequency": "mon",
+      "Long name": "Near-Surface Air Temperature",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "normally, the temperature should be reported at the 2 meter height",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i236[lbproc=128]",
+      "Expression UKESM1": "m01s03i236[lbproc=128]",
+      "Model units": "K"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i236",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,236",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i236",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,236",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 67,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.tas_tavg-h2m-hxy-u (Amon.tas)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ta_tavg-p19-hxy-air",
+      "CF standard name": "air_temperature",
+      "CMIP6 Differences": "",
+      "Cell methods": "time: mean",
+      "Dimensions": "longitude latitude plev19 time",
+      "Frequency": "mon",
+      "Long name": "Air Temperature",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s30i294[blev=PLEV19, lbproc=128] / m01s30i304[blev=PLEV19, lbproc=128]",
+      "Expression UKESM1": "m01s30i294[blev=PLEV19, lbproc=128] / m01s30i304[blev=PLEV19, lbproc=128]",
+      "Model units": "K"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s30i294",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "30,294",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i304",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "30,304",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i294",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,294",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i304",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,304",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 66,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.ta_tavg-p19-hxy-air (Amon.ta)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sfcWind_tavg-h10m-hxy-u",
+      "CF standard name": "wind_speed",
+      "CMIP6 Differences": "\"comment\" was \"near-surface (usually, 10 meters) wind speed.\";",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time height10m",
+      "Frequency": "mon",
+      "Long name": "Near-Surface Wind Speed",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "normally, the the wind  should be reported at the 10 meter height; ; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time height10m CMIP7:longitude latitude time  height10m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i230[lbproc=128]",
+      "Expression UKESM1": "m01s03i230[lbproc=128]",
+      "Model units": "m s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i230",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,230",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i230",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,230",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 65,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.sfcWind_tavg-h10m-hxy-u (Amon.sfcWind)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sci_tavg-u-hxy-u",
+      "CF standard name": "shallow_convection_time_fraction",
+      "CMIP6 Differences": "",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Fraction of Time Shallow Convection Occurs",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "For models with a distinct shallow convection scheme only.",
+      "Units": "1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s05i270[lbproc=128]",
+      "Expression UKESM1": "m01s05i270[lbproc=128]",
+      "Model units": "1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s05i270",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "5,270",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s05i270",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "5,270",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 64,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.sci_tavg-u-hxy-u (Amon.sci)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sbl_tavg-u-hxy-u",
+      "CF standard name": "tendency_of_atmosphere_mass_content_of_water_vapor_due_to_sublimation_of_surface_snow_and_ice",
+      "CMIP6 Differences": "\"comment\" was \"The snow and ice sublimation flux is the loss of snow and ice mass per unit area from the surface resulting from their direct conversion to water vapor that enters the atmosphere.\";",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Snow and Ice Sublimation Flux",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "This differs from sbl appearing in table Limon in that the flux is averaged over the entire grid cell, not just the land portion.; CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i298[lbproc=128]",
+      "Expression UKESM1": "m01s03i298[lbproc=128]",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i298",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,298",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i298",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,298",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 63,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable landIce.mon.sbl_tavg-u-hxy-u (Amon.sbl)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rtmt_tavg-u-hxy-u",
+      "CF standard name": "net_downward_radiative_flux_at_top_of_atmosphere_model",
+      "CMIP6 Differences": "\"comment\" was \"Net Downward Radiative Flux at Top of Model : I.e., at the top of that portion of the atmosphere where dynamics are explicitly treated by the model. This is reported only if it differs from the net downward radiative flux at the top of the atmosphere.\";",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Net Downward Radiative Flux at Top of Model",
+      "Modeling realm": "atmos",
+      "Positive": "down",
+      "Processing notes": "",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s01i207[lbproc=128] - m01s01i208[lbproc=128] - m01s03i332[lbproc=128]",
+      "Expression UKESM1": "m01s01i207[lbproc=128] - m01s01i208[lbproc=128] - m01s03i332[lbproc=128]",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s01i207",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "1,207",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s01i208",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "1,208",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i332",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,332",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s01i207",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "1,207",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s01i208",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "1,208",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i332",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,332",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 62,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.rtmt_tavg-u-hxy-u (Amon.rtmt)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rsutcs_tavg-u-hxy-u",
+      "CF standard name": "toa_outgoing_shortwave_flux_assuming_clear_sky",
+      "CMIP6 Differences": "",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "TOA Outgoing Clear-Sky Shortwave Radiation",
+      "Modeling realm": "atmos",
+      "Positive": "up",
+      "Processing notes": "",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s01i209[lbproc=128]",
+      "Expression UKESM1": "m01s01i209[lbproc=128]",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s01i209",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "1,209",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s01i209",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "1,209",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 61,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.rsutcs_tavg-u-hxy-u (Amon.rsutcs)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rsut_tavg-u-hxy-u",
+      "CF standard name": "toa_outgoing_shortwave_flux",
+      "CMIP6 Differences": "",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "TOA Outgoing Shortwave Radiation",
+      "Modeling realm": "atmos",
+      "Positive": "up",
+      "Processing notes": "",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s01i208[lbproc=128]",
+      "Expression UKESM1": "m01s01i208[lbproc=128]",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s01i208",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "1,208",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s01i208",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "1,208",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 60,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.rsut_tavg-u-hxy-u (Amon.rsut)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rsuscs_tavg-u-hxy-u",
+      "CF standard name": "surface_upwelling_shortwave_flux_in_air_assuming_clear_sky",
+      "CMIP6 Differences": "",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Upwelling Clear-Sky Shortwave Radiation",
+      "Modeling realm": "atmos",
+      "Positive": "up",
+      "Processing notes": "",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s01i211[lbproc=128]",
+      "Expression UKESM1": "m01s01i211[lbproc=128]",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s01i211",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "1,211",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s01i211",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "1,211",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 59,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.rsuscs_tavg-u-hxy-u (Amon.rsuscs)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rsus_tavg-u-hxy-u",
+      "CF standard name": "surface_upwelling_shortwave_flux_in_air",
+      "CMIP6 Differences": "\"comment\" was \"The surface called 'surface' means the lower boundary of the atmosphere. 'shortwave' means shortwave radiation. Upwelling radiation is radiation from below. It does not mean 'net upward'. When thought of as being incident on a surface, a radiative flux is sometimes called 'irradiance'. In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called 'vector irradiance'. In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.\";",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Upwelling Shortwave Radiation",
+      "Modeling realm": "atmos",
+      "Positive": "up",
+      "Processing notes": "",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s01i235[lbproc=128] - m01s01i201[lbproc=128]",
+      "Expression UKESM1": "m01s01i235[lbproc=128] - m01s01i201[lbproc=128]",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s01i201",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "1,201",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s01i235",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "1,235",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s01i201",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "1,201",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s01i235",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "1,235",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 58,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.rsus_tavg-u-hxy-u (Amon.rsus)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rsdt_tavg-u-hxy-u",
+      "CF standard name": "toa_incoming_shortwave_flux",
+      "CMIP6 Differences": "\"comment\" was \"Shortwave radiation incident at the top of the atmosphere\";",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "TOA Incident Shortwave Radiation",
+      "Modeling realm": "atmos",
+      "Positive": "down",
+      "Processing notes": "",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s01i207[lbproc=128]",
+      "Expression UKESM1": "m01s01i207[lbproc=128]",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s01i207",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "1,207",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s01i207",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "1,207",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 57,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.rsdt_tavg-u-hxy-u (Amon.rsdt)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rsdscs_tavg-u-hxy-u",
+      "CF standard name": "surface_downwelling_shortwave_flux_in_air_assuming_clear_sky",
+      "CMIP6 Differences": "",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Downwelling Clear-Sky Shortwave Radiation",
+      "Modeling realm": "atmos",
+      "Positive": "down",
+      "Processing notes": "",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s01i210[lbproc=128]",
+      "Expression UKESM1": "m01s01i210[lbproc=128]",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s01i210",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "1,210",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s01i210",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "1,210",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 56,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.rsdscs_tavg-u-hxy-u (Amon.rsdscs)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rsds_tavg-u-hxy-u",
+      "CF standard name": "surface_downwelling_shortwave_flux_in_air",
+      "CMIP6 Differences": "",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Downwelling Shortwave Radiation",
+      "Modeling realm": "atmos",
+      "Positive": "down",
+      "Processing notes": "",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s01i235[lbproc=128]",
+      "Expression UKESM1": "m01s01i235[lbproc=128]",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s01i235",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "1,235",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s01i235",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "1,235",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 55,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.rsds_tavg-u-hxy-u (Amon.rsds)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rlutcs_tavg-u-hxy-u",
+      "CF standard name": "toa_outgoing_longwave_flux_assuming_clear_sky",
+      "CMIP6 Differences": "",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "TOA Outgoing Clear-Sky Longwave Radiation",
+      "Modeling realm": "atmos",
+      "Positive": "up",
+      "Processing notes": "",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s02i206[lbproc=128] + m01s03i332[lbproc=128] - m01s02i205[lbproc=128]",
+      "Expression UKESM1": "m01s02i206[lbproc=128] + m01s03i332[lbproc=128] - m01s02i205[lbproc=128]",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s02i205",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "2,205",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i206",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "2,206",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i332",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,332",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i205",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,205",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i206",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,206",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i332",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,332",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 54,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.rlutcs_tavg-u-hxy-u (Amon.rlutcs)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rlut_tavg-u-hxy-u",
+      "CF standard name": "toa_outgoing_longwave_flux",
+      "CMIP6 Differences": "",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "TOA Outgoing Longwave Radiation",
+      "Modeling realm": "atmos",
+      "Positive": "up",
+      "Processing notes": "",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i332[lbproc=128]",
+      "Expression UKESM1": "m01s03i332[lbproc=128]",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i332",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,332",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i332",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,332",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 53,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.rlut_tavg-u-hxy-u (Amon.rlut)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rluscs_tavg-u-hxy-u",
+      "CF standard name": "surface_upwelling_longwave_flux_assuming_clear_sky",
+      "CMIP6 Differences": "Not present",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Upwelling Clear-Sky Longwave Radiation",
+      "Modeling realm": "atmos",
+      "Positive": "up",
+      "Processing notes": "",
+      "Units": "W m-2",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 52,
+    "labels": [
+      "mon",
+      "atmos"
+    ],
+    "title": "Variable atmos.mon.rluscs_tavg-u-hxy-u (Amon.rluscs)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rlus_tavg-u-hxy-u",
+      "CF standard name": "surface_upwelling_longwave_flux_in_air",
+      "CMIP6 Differences": "\"comment\" was \"The surface called 'surface' means the lower boundary of the atmosphere. 'longwave' means longwave radiation. Upwelling radiation is radiation from below. It does not mean 'net upward'. When thought of as being incident on a surface, a radiative flux is sometimes called 'irradiance'. In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called 'vector irradiance'. In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.\";",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Upwelling Longwave Radiation",
+      "Modeling realm": "atmos",
+      "Positive": "up",
+      "Processing notes": "",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s02i207[lbproc=128] - m01s02i201[lbproc=128] + m01s03i332[lbproc=128] - m01s02i205[lbproc=128]",
+      "Expression UKESM1": "m01s02i207[lbproc=128] - m01s02i201[lbproc=128] + m01s03i332[lbproc=128] - m01s02i205[lbproc=128]",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s02i201",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "2,201",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i205",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "2,205",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i207",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "2,207",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i332",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,332",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i201",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,201",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i205",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,205",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i207",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,207",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i332",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,332",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 51,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.rlus_tavg-u-hxy-u (Amon.rlus)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rldscs_tavg-u-hxy-u",
+      "CF standard name": "surface_downwelling_longwave_flux_in_air_assuming_clear_sky",
+      "CMIP6 Differences": "",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Downwelling Clear-Sky Longwave Radiation",
+      "Modeling realm": "atmos",
+      "Positive": "down",
+      "Processing notes": "",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s02i208[lbproc=128]",
+      "Expression UKESM1": "m01s02i208[lbproc=128]",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s02i208",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "2,208",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i208",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,208",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 50,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.rldscs_tavg-u-hxy-u (Amon.rldscs)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rlds_tavg-u-hxy-u",
+      "CF standard name": "surface_downwelling_longwave_flux_in_air",
+      "CMIP6 Differences": "\"comment\" was \"The surface called 'surface' means the lower boundary of the atmosphere. 'longwave' means longwave radiation. Downwelling radiation is radiation from above. It does not mean 'net downward'. When thought of as being incident on a surface, a radiative flux is sometimes called 'irradiance'. In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called 'vector irradiance'. In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.\";",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Downwelling Longwave Radiation",
+      "Modeling realm": "atmos",
+      "Positive": "down",
+      "Processing notes": "",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s02i207[lbproc=128]",
+      "Expression UKESM1": "m01s02i207[lbproc=128]",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s02i207",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "2,207",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i207",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,207",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 49,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.rlds_tavg-u-hxy-u (Amon.rlds)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "psl_tavg-u-hxy-u",
+      "CF standard name": "air_pressure_at_mean_sea_level",
+      "CMIP6 Differences": "\"comment\" was \"Sea Level Pressure\";",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Sea Level Pressure",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "Pa",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s16i222[lbproc=128]",
+      "Expression UKESM1": "m01s16i222[lbproc=128]",
+      "Model units": "Pa"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s16i222",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "16,222",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s16i222",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "16,222",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 48,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.psl_tavg-u-hxy-u (Amon.psl)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ps_tavg-u-hxy-u",
+      "CF standard name": "surface_air_pressure",
+      "CMIP6 Differences": "\"comment\" was \"surface pressure (not mean sea-level pressure), 2-D field to calculate the 3-D pressure field from hybrid coordinates\";",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Air Pressure",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "Pa",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s00i409[lbproc=128]",
+      "Expression UKESM1": "m01s00i409[lbproc=128]",
+      "Model units": "Pa"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s00i409",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "409",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s00i409",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "409",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 47,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.ps_tavg-u-hxy-u (Amon.ps)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "prw_tavg-u-hxy-u",
+      "CF standard name": "atmosphere_mass_content_of_water_vapor",
+      "CMIP6 Differences": "",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Water Vapor Path",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s30i461[lbproc=128]",
+      "Expression UKESM1": "m01s30i461[lbproc=128]",
+      "Model units": "kg m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s30i461",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "30,461",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i461",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,461",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 46,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.prw_tavg-u-hxy-u (Amon.prw)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "prsn_tavg-u-hxy-u",
+      "CF standard name": "snowfall_flux",
+      "CMIP6 Differences": "\"comment\" was \"At surface; includes precipitation of all forms of water in the solid phase\";",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Snowfall Flux",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s05i215[lbproc=128]",
+      "Expression UKESM1": "m01s05i215[lbproc=128]",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s05i215",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "5,215",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s05i215",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "5,215",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 45,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.prsn_tavg-u-hxy-u (Amon.prsn)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "prra_tavg-u-hxy-u",
+      "CF standard name": "rainfall_flux",
+      "CMIP6 Differences": "Not present",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Rainfall Flux",
+      "Modeling realm": "atmos",
+      "Positive": "down",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 44,
+    "labels": [
+      "mon",
+      "atmos"
+    ],
+    "title": "Variable atmos.mon.prra_tavg-u-hxy-u (Amon.prra)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "prc_tavg-u-hxy-u",
+      "CF standard name": "convective_precipitation_flux",
+      "CMIP6 Differences": "\"comment\" was \"Convective precipitation at surface; includes both liquid and solid phases.\";",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Convective Precipitation",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s05i205[lbproc=128] + m01s05i206[lbproc=128]",
+      "Expression UKESM1": "m01s05i205[lbproc=128] + m01s05i206[lbproc=128]",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s05i205",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "5,205",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s05i206",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "5,206",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s05i205",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "5,205",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s05i206",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "5,206",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 43,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.prc_tavg-u-hxy-u (Amon.prc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "pr_tavg-u-hxy-u",
+      "CF standard name": "precipitation_flux",
+      "CMIP6 Differences": "\"comment\" was \"includes both liquid and solid phases\";",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Precipitation",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s05i216[lbproc=128]",
+      "Expression UKESM1": "m01s05i216[lbproc=128]",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s05i216",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "5,216",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s05i216",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "5,216",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 42,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.pr_tavg-u-hxy-u (Amon.pr)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "phalf_tclm-l-hxy-u",
+      "CF standard name": "air_pressure",
+      "CMIP6 Differences": "\"frequency\" was \"monC\";",
+      "Cell methods": "area: mean time: mean within years time: mean over years",
+      "Dimensions": "longitude latitude alevhalf time2",
+      "Frequency": "mon",
+      "Long name": "Pressure on Model Half-Levels",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:monC CMIP7:mon,",
+      "Units": "Pa",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 41,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.mon.phalf_tclm-l-hxy-u (Amon.phalf)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "pfull_tclm-l-hxy-u",
+      "CF standard name": "air_pressure",
+      "CMIP6 Differences": "\"frequency\" was \"monC\";",
+      "Cell methods": "area: mean time: mean within years time: mean over years",
+      "Dimensions": "longitude latitude alevel time2",
+      "Frequency": "mon",
+      "Long name": "Pressure at Model Full-Levels",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:monC CMIP7:mon,",
+      "Units": "Pa",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 40,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.mon.pfull_tclm-l-hxy-u (Amon.pfull)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "o3_tclm-p19-hxy-air",
+      "CF standard name": "mole_fraction_of_ozone_in_air",
+      "CMIP6 Differences": "\"frequency\" was \"monC\"; ; \"cell_methods\" was \"area: mean time: mean within years time: mean over years\"; ; \"modeling_realm\" was \"atmos atmosChem\";",
+      "Cell methods": "area: mean where air time: mean within years time: mean over years",
+      "Dimensions": "longitude latitude plev19 time2",
+      "Frequency": "mon",
+      "Long name": "Mole Fraction of O3",
+      "Modeling realm": "atmosChem",
+      "Positive": "",
+      "Processing notes": "If O3 does not vary from one year to the next, report 12 months, starting with January.   (Note: include all 12 months even if the values do not vary seasonally.)  When calling CMOR, identify this variable as tro3Clim, not tro3. If the O3 varies from one year to the next,  then report instead the field described in the previous table entry.  Are these the preferred units or should it be a unitless fraction?  Should this field be reported instead on model levels?  Or should we also require either the vertically integrated mole fraction (or mass?) of this species or the vertically integrated globally averaged mole fraction (or mass?)?; CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:monC CMIP7:mon, CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean time: mean within years time: mean over years CMIP7:area: mean where air time: mean within years time: mean over years,",
+      "Units": "mol mol-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 39,
+    "labels": [
+      "mon",
+      "atmosChem",
+      "CMIP6"
+    ],
+    "title": "Variable atmosChem.mon.o3_tclm-p19-hxy-air (Amon.o3Clim)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "o3_tavg-p19-hxy-air",
+      "CF standard name": "mole_fraction_of_ozone_in_air",
+      "CMIP6 Differences": "\"modeling_realm\" was \"atmos atmosChem\";",
+      "Cell methods": "time: mean",
+      "Dimensions": "longitude latitude plev19 time",
+      "Frequency": "mon",
+      "Long name": "Mole Fraction of O3",
+      "Modeling realm": "atmosChem",
+      "Positive": "",
+      "Processing notes": "If this does not change over time (except possibly to vary identically over each annual cycle), report instead the variable described in the next table entry.  Are these the preferred units or should it be a unitless fraction?  Should this field be reported instead on model levels?  Or should we also require either the vertically integrated mole fraction (or mass?) of this species or the vertically integrated globally averaged mole fraction (or mass?)?",
+      "Units": "mol mol-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "(MOLECULAR_MASS_OF_AIR / MOLECULAR_MASS_OF_O3) * m01s51i001[blev=PLEV19, lbproc=128] / m01s51i999[blev=PLEV19, lbproc=128]",
+      "Expression UKESM1": "(MOLECULAR_MASS_OF_AIR / MOLECULAR_MASS_OF_O3) * m01s51i001[blev=PLEV19, lbproc=128] / m01s51i999[blev=PLEV19, lbproc=128]",
+      "Model units": "mol mol-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s51i001",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "51,001",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s51i999",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "51,999",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s51i001",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "51,001",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s51i999",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "51,999",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 38,
+    "labels": [
+      "mon",
+      "atmosChem",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmosChem.mon.o3_tavg-p19-hxy-air (Amon.o3)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "n2o_tclm-u-hm-u",
+      "CF standard name": "mole_fraction_of_nitrous_oxide_in_air",
+      "CMIP6 Differences": "\"frequency\" was \"monC\"; ; \"cell_methods\" was \"area: mean time: mean within years time: mean over years\"; ; \"units\" was \"1e-09\"; ; \"modeling_realm\" was \"atmos atmosChem\";",
+      "Cell methods": "height: sum (through atmospheric column) area: sum time: mean within years time: mean over years",
+      "Dimensions": "time2",
+      "Frequency": "mon",
+      "Long name": "Global Mean Mole Fraction of N2O",
+      "Modeling realm": "atmosChem",
+      "Positive": "",
+      "Processing notes": "Report only for simulations (e.g., prescribed concentration pi-control run), in which the N2O does not vary from one year to the next. Report 12 monthly values, starting with January, even if the values do not vary seasonally.  When calling CMOR, identify this variable as ch4globalClim, not ch4global.  If N2O is spatially nonuniform, omit this field, but report Global Mean Mole Fraction of N2O (see the table entry before the previous one).  Are these the preferred units or should it be a unitless fraction?  Should this field be reported instead on model levels?  Or should we also require either the vertically integrated mole fraction (or mass?) of this species or the vertically integrated globally averaged mole fraction (or mass?)?; CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:monC CMIP7:mon, CHANGE SINCE CMIP6 in Units (from Physical Parameter) - CMIP6:1.00E-09 CMIP7:mol mol-1, CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean time: mean within years time: mean over years CMIP7:height: sum (through atmospheric column) area: sum time: mean within years time: mean over years,",
+      "Units": "mol mol-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 37,
+    "labels": [
+      "mon",
+      "atmosChem",
+      "CMIP6"
+    ],
+    "title": "Variable atmosChem.mon.n2o_tclm-u-hm-u (Amon.n2oglobalClim)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "n2o_tavg-u-hm-u",
+      "CF standard name": "mole_fraction_of_nitrous_oxide_in_air",
+      "CMIP6 Differences": "\"units\" was \"1e-09\"; ; \"modeling_realm\" was \"atmos atmosChem\"; ; \"cell_methods\" was \"area: time: mean\";",
+      "Cell methods": "height: sum (through atmospheric column) area: sum time: mean",
+      "Dimensions": "time",
+      "Frequency": "mon",
+      "Long name": "Global Mean Mole Fraction of N2O",
+      "Modeling realm": "atmosChem",
+      "Positive": "",
+      "Processing notes": "For some simulations (e.g., prescribed concentration pi-control run), this will not vary from one year to the next, and so report instead the variable described in the next table entry.  If N2O is spatially nonuniform, omit this field, but report Mole Fraction of N2O (see the table entry before the previous one).   Are these the preferred units or should it be a unitless fraction?  Should this field be reported instead on model levels?  Or should we also require either the vertically integrated mole fraction (or mass?) of this species or the vertically integrated globally averaged mole fraction (or mass?)?; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:height: sum (through atmospheric column) area: sum time: mean,",
+      "Units": "1E-09",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "mmr2molefrac(m01s50i063[lbproc=128], m01s34i049[lbproc=128], MOLECULAR_MASS_OF_N2O)",
+      "Expression UKESM1": "mmr2molefrac(m01s50i063[lbproc=128], m01s34i049[lbproc=128], MOLECULAR_MASS_OF_N2O)",
+      "Model units": "1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s34i049",
+        "domain_profile": "DALLTH",
+        "model": "UKESM1",
+        "stash_number": "34,049",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s50i063",
+        "domain_profile": "DALLTH",
+        "model": "UKESM1",
+        "stash_number": "50,063",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s34i049",
+        "domain_profile": "DALLTH",
+        "model": "HadGEM3-GC31",
+        "stash_number": "34,049",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s50i063",
+        "domain_profile": "DALLTH",
+        "model": "HadGEM3-GC31",
+        "stash_number": "50,063",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 36,
+    "labels": [
+      "mon",
+      "atmosChem",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmosChem.mon.n2o_tavg-u-hm-u (Amon.n2oglobal)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "n2o_tclm-p19-hxy-air",
+      "CF standard name": "mole_fraction_of_nitrous_oxide_in_air",
+      "CMIP6 Differences": "\"frequency\" was \"monC\"; ; \"cell_methods\" was \"area: mean time: mean within years time: mean over years\"; ; \"modeling_realm\" was \"atmos atmosChem\";",
+      "Cell methods": "area: mean where air time: mean within years time: mean over years",
+      "Dimensions": "longitude latitude plev19 time2",
+      "Frequency": "mon",
+      "Long name": "Mole Fraction of N2O",
+      "Modeling realm": "atmosChem",
+      "Positive": "",
+      "Processing notes": "Report only for simulations (e.g., prescribed concentration pi-control run), in which the N2O does not vary from one year to the next. Report 12 monthly values, starting with January, even if the values do not vary seasonally.  When calling CMOR, identify this variable as n2oglobal, not n2o.   If  N2O is spatially uniform, omit this field, but report Global Mean Mole Fraction of N2O (see the table entry after the next).  Are these the preferred units or should it be a unitless fraction?  Should this field be reported instead on model levels?  Or should we also require either the vertically integrated mole fraction (or mass?) of this species or the vertically integrated globally averaged mole fraction (or mass?)?; CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:monC CMIP7:mon, CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean time: mean within years time: mean over years CMIP7:area: mean where air time: mean within years time: mean over years,",
+      "Units": "mol mol-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 35,
+    "labels": [
+      "mon",
+      "atmosChem",
+      "CMIP6"
+    ],
+    "title": "Variable atmosChem.mon.n2o_tclm-p19-hxy-air (Amon.n2oClim)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "n2o_tavg-p19-hxy-air",
+      "CF standard name": "mole_fraction_of_nitrous_oxide_in_air",
+      "CMIP6 Differences": "\"modeling_realm\" was \"atmos atmosChem\";",
+      "Cell methods": "time: mean",
+      "Dimensions": "longitude latitude plev19 time",
+      "Frequency": "mon",
+      "Long name": "Mole Fraction of N2O",
+      "Modeling realm": "atmosChem",
+      "Positive": "",
+      "Processing notes": "For some simulations (e.g., prescribed concentration pi-control run), this will not vary from one year to the next, and so report instead the variable described in the next table entry.  If N2O is spatially uniform, omit this field, but report Global Mean Mole Fraction of N2O (see the table entry after the next one).  Are these the preferred units or should it be a unitless fraction?  Should this field be reported instead on model levels?  Or should we also require either the vertically integrated mole fraction (or mass?) of this species or the vertically integrated globally averaged mole fraction (or mass?)?",
+      "Units": "mol mol-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "(MOLECULAR_MASS_OF_AIR / MOLECULAR_MASS_OF_N2O) * m01s51i049[blev=PLEV19, lbproc=128] / m01s51i999[blev=PLEV19, lbproc=128]",
+      "Expression UKESM1": "(MOLECULAR_MASS_OF_AIR / MOLECULAR_MASS_OF_N2O) * m01s51i049[blev=PLEV19, lbproc=128] / m01s51i999[blev=PLEV19, lbproc=128]",
+      "Model units": "mol mol-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s51i049",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "51,049",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s51i999",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "51,999",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s51i049",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "51,049",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s51i999",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "51,999",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 34,
+    "labels": [
+      "mon",
+      "atmosChem",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmosChem.mon.n2o_tavg-p19-hxy-air (Amon.n2o)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "mc_tavg-l-hxy-u",
+      "CF standard name": "atmosphere_net_upward_convective_mass_flux",
+      "CMIP6 Differences": "",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude alevhalf time",
+      "Frequency": "mon",
+      "Long name": "Convective Mass Flux",
+      "Modeling realm": "atmos",
+      "Positive": "up",
+      "Processing notes": "Report on model half-levels (i.e., model layer bounds and not standard pressures).",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "(m01s05i250[lbproc=128] - m01s05i251[lbproc=128]) / ACCELERATION_DUE_TO_EARTH_GRAVITY",
+      "Expression UKESM1": "(m01s05i250[lbproc=128] - m01s05i251[lbproc=128]) / ACCELERATION_DUE_TO_EARTH_GRAVITY",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s00i407",
+        "domain_profile": "DALLRHP1",
+        "model": "UKESM1",
+        "stash_number": "407",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s05i250",
+        "domain_profile": "DALLTH",
+        "model": "UKESM1",
+        "stash_number": "5,250",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s05i251",
+        "domain_profile": "DALLTH",
+        "model": "UKESM1",
+        "stash_number": "5,251",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s00i033",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "33",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s00i407",
+        "domain_profile": "DALLRHP1",
+        "model": "HadGEM3-GC31",
+        "stash_number": "407",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s05i250",
+        "domain_profile": "DALLTH",
+        "model": "HadGEM3-GC31",
+        "stash_number": "5,250",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s05i251",
+        "domain_profile": "DALLTH",
+        "model": "HadGEM3-GC31",
+        "stash_number": "5,251",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s00i033",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "33",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 33,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.mc_tavg-l-hxy-u (Amon.mc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "huss_tavg-h2m-hxy-u",
+      "CF standard name": "specific_humidity",
+      "CMIP6 Differences": "",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time height2m",
+      "Frequency": "mon",
+      "Long name": "Near-Surface Specific Humidity",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "Normally, the specific humidity should be reported at the 2 meter height; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time height2m CMIP7:longitude latitude time  height2m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i237[lbproc=128]",
+      "Expression UKESM1": "m01s03i237[lbproc=128]",
+      "Model units": "1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i237",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,237",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i237",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,237",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 32,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.huss_tavg-h2m-hxy-u (Amon.huss)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hus_tavg-p19-hxy-u",
+      "CF standard name": "specific_humidity",
+      "CMIP6 Differences": "",
+      "Cell methods": "time: mean",
+      "Dimensions": "longitude latitude plev19 time",
+      "Frequency": "mon",
+      "Long name": "Specific Humidity",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s30i295[blev=PLEV19, lbproc=128] / m01s30i304[blev=PLEV19, lbproc=128]",
+      "Expression UKESM1": "m01s30i295[blev=PLEV19, lbproc=128] / m01s30i304[blev=PLEV19, lbproc=128]",
+      "Model units": "1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s30i295",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "30,295",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i304",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "30,304",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i295",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,295",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i304",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,304",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 31,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.hus_tavg-p19-hxy-u (Amon.hus)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hurs_tavg-h2m-hxy-u",
+      "CF standard name": "relative_humidity",
+      "CMIP6 Differences": "\"comment\" was \"The relative humidity with respect to liquid water for T> 0 C, and with respect to ice for T<0 C.\";",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time height2m",
+      "Frequency": "mon",
+      "Long name": "Near-Surface Relative Humidity",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "express as a percentage.  Normally, the relative humidity  should be reported at the 2 meter height; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time height2m CMIP7:longitude latitude time  height2m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i245[lbproc=128]",
+      "Expression UKESM1": "m01s03i245[lbproc=128]",
+      "Model units": "%"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i245",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,245",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i245",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,245",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 30,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.hurs_tavg-h2m-hxy-u (Amon.hurs)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hur_tavg-p19-hxy-air",
+      "CF standard name": "relative_humidity",
+      "CMIP6 Differences": "\"comment\" was \"The relative humidity with respect to liquid water for T> 0 C, and with respect to ice for T<0 C.\";",
+      "Cell methods": "time: mean",
+      "Dimensions": "longitude latitude plev19 time",
+      "Frequency": "mon",
+      "Long name": "Relative Humidity",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s30i296[blev=PLEV19, lbproc=128] / m01s30i304[blev=PLEV19, lbproc=128]",
+      "Expression UKESM1": "m01s30i296[blev=PLEV19, lbproc=128] / m01s30i304[blev=PLEV19, lbproc=128]",
+      "Model units": "%"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s30i296",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "30,296",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i304",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "30,304",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i296",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,296",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i304",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,304",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 29,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.hur_tavg-p19-hxy-air (Amon.hur)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hfss_tavg-u-hxy-u",
+      "CF standard name": "surface_upward_sensible_heat_flux",
+      "CMIP6 Differences": "",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Upward Sensible Heat Flux",
+      "Modeling realm": "atmos",
+      "Positive": "up",
+      "Processing notes": "",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i217[lbproc=128]",
+      "Expression UKESM1": "m01s03i217[lbproc=128]",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i217",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,217",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i217",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,217",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 28,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.hfss_tavg-u-hxy-u (Amon.hfss)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hfls_tavg-u-hxy-u",
+      "CF standard name": "surface_upward_latent_heat_flux",
+      "CMIP6 Differences": "\"comment\" was \"The surface called 'surface' means the lower boundary of the atmosphere. 'Upward' indicates a vector component which is positive when directed upward (negative downward). The surface latent heat flux is the exchange of heat between the surface and the air on account of evaporation (including sublimation). In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.\";",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Upward Latent Heat Flux",
+      "Modeling realm": "atmos",
+      "Positive": "up",
+      "Processing notes": "",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i234[lbproc=128]",
+      "Expression UKESM1": "m01s03i234[lbproc=128]",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i234",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,234",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i234",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,234",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 27,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.hfls_tavg-u-hxy-u (Amon.hfls)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hcfc22_tavg-u-hm-u",
+      "CF standard name": "mole_fraction_of_hcfc22_in_air",
+      "CMIP6 Differences": "\"units\" was \"1e-12\"; ; \"modeling_realm\" was \"atmos atmosChem\"; ; \"cell_methods\" was \"area: time: mean\";",
+      "Cell methods": "height: area: time: mean (with all samples weighted by the number of moles of air in the sample)",
+      "Dimensions": "time",
+      "Frequency": "mon",
+      "Long name": "Global Mean Mole Fraction of HCFC22",
+      "Modeling realm": "atmosChem",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:height: sum (through atmospheric column) area: sum time: mean,; CHANGE SINCE CMIP6 in Modeling Realm - primary - CMIP6:atmos, atmosChem CMIP7:atmosChem, CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:height: area: time: mean (with all samples weighted by the number of moles of air in the sample),",
+      "Units": "1E-12",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 26,
+    "labels": [
+      "mon",
+      "atmosChem",
+      "CMIP6"
+    ],
+    "title": "Variable atmosChem.mon.hcfc22_tavg-u-hm-u (Amon.hcfc22global)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fco2nat_tavg-u-hxy-u",
+      "CF standard name": "surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_natural_sources",
+      "CMIP6 Differences": "\"comment\" was \"This is what the atmosphere sees (on its own grid).  This field should be equivalent to the combined natural fluxes of carbon  that account for natural exchanges between the atmosphere and land (nep) or ocean (fgco2) reservoirs.\";",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Carbon Mass Flux into the Atmosphere Due to Natural Sources [kgC m-2 s-1]",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "Report from all simulations (both emission-driven and concentration-driven) performed by models with fully interactive and responsive carbon cycles.",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "((mdi_to_zero(m01s03i327[lbproc=128]) - m01s00i251[lbproc=128]) * (ATOMIC_MASS_OF_C / MOLECULAR_MASS_OF_CO2)) - (m01s03i395[lbproc=128, lbtim_ia=6] * (mdi_to_zero(m01s19i042[lbtim_ia=240,lbproc=128]) + mdi_to_zero(m01s19i044[lbtim_ia=240,lbproc=128]))) / (SECONDS_IN_DAY * DAYS_IN_YEAR)",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s00i448",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "448",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s00i458",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "458",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i293",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,293",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i013",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "19,013",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i101",
+        "domain_profile": "DPFTS",
+        "model": "UKESM1",
+        "stash_number": "19,101",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 25,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable atmos.mon.fco2nat_tavg-u-hxy-u (Amon.fco2nat)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fco2fos_tavg-u-hxy-u",
+      "CF standard name": "tendency_of_atmosphere_mass_content_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_fossil_fuel_combustion",
+      "CMIP6 Differences": "",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Carbon Mass Flux into Atmosphere Due to Fossil Fuel Emissions of CO2 [kgC m-2 s-1]",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "This is requested only for the emission-driven coupled carbon climate model runs.",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "m01s00i251[lbproc=128] * (ATOMIC_MASS_OF_C / MOLECULAR_MASS_OF_CO2)",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s00i251",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "251",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 24,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable atmos.mon.fco2fos_tavg-u-hxy-u (Amon.fco2fos)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fco2antt_tavg-u-hxy-u",
+      "CF standard name": "tendency_of_atmosphere_mass_content_of_carbon_dioxide_expressed_as_carbon_due_to_anthropogenic_emission",
+      "CMIP6 Differences": "",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Carbon Mass Flux into Atmosphere Due to All Anthropogenic Emissions of CO2 [kgC m-2 s-1]",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "m01s00i251[lbproc=128] * (ATOMIC_MASS_OF_C / MOLECULAR_MASS_OF_CO2) + m01s03i395[lbproc=128] * (mdi_to_zero(m01s19i042[lbtim_ia=240,lbproc=128]) + mdi_to_zero(m01s19i044[lbtim_ia=240,lbproc=128])) / (SECONDS_IN_DAY * DAYS_IN_YEAR)",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s00i251",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "251",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i042",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "19,042",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i044",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "19,044",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 23,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable atmos.mon.fco2antt_tavg-u-hxy-u (Amon.fco2antt)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "evspsbl_tavg-u-hxy-u",
+      "CF standard name": "water_evapotranspiration_flux",
+      "CMIP6 Differences": "\"comment\" was \"Evaporation at surface (also known as evapotranspiration): flux of water into the atmosphere due to conversion of both liquid and solid phases to vapor (from underlying surface and vegetation)\";",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Evaporation Including Sublimation and Transpiration",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i223[lbproc=128]",
+      "Expression UKESM1": "m01s03i223[lbproc=128]",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i223",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,223",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i223",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,223",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 22,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.evspsbl_tavg-u-hxy-u (Amon.evspsbl)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "co2_tclm-u-hm-u",
+      "CF standard name": "mole_fraction_of_carbon_dioxide_in_air",
+      "CMIP6 Differences": "\"frequency\" was \"monC\"; ; \"standard_name\" was \"atmosphere_mass_of_carbon_dioxide\"; ; \"units\" was \"kg\"; ; \"cell_methods\" was \"area: mean time: mean within years time: mean over years\";",
+      "Cell methods": "height: sum (through atmospheric column) area: sum time: mean within years time: mean over years",
+      "Dimensions": "time2",
+      "Frequency": "mon",
+      "Long name": "Total Atmospheric Mass of CO2",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "Report only for simulations (e.g., prescribed concentration pi-control run), in which the CO2 does not vary from one year to the next. Report 12 monthly values, starting with January, even if the values do not vary seasonally.  When calling CMOR, identify this variable as co2massClim, not co2mass.  If CO2 is spatially nonuniform, omit this field, but report Mole Fraction of CO2 (see the table entry before the previous one).; CHANGE SINCE CMIP6: compound name,",
+      "Units": "mol mol-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 21,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.mon.co2_tclm-u-hm-u (Amon.co2massCLim)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "co2mass_tavg-u-hm-u",
+      "CF standard name": "atmosphere_mass_of_carbon_dioxide",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: time: mean\";",
+      "Cell methods": "height: sum (through atmospheric column) area: sum time: mean",
+      "Dimensions": "time",
+      "Frequency": "mon",
+      "Long name": "Total Atmospheric Mass of CO2",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "For some simulations (e.g., prescribed concentration pi-control run), this will not vary from one year to the next, and so report instead the variable described in the next table entry.  If CO2 is spatially nonuniform, omit this field, but report Mole Fraction of CO2 (see the table entry before the previous one).; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:height: sum (through atmospheric column) area: sum time: mean,",
+      "Units": "kg",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s30i465[lbproc=128]",
+      "Expression UKESM1": "m01s30i465[lbproc=128]",
+      "Model units": "kg"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s30i465",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "30,465",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i465",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,465",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 20,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.co2mass_tavg-u-hm-u (Amon.co2mass)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "co2_tclm-p19-hxy-air",
+      "CF standard name": "mole_fraction_of_carbon_dioxide_in_air",
+      "CMIP6 Differences": "\"frequency\" was \"monC\"; ; \"cell_methods\" was \"area: mean time: mean within years time: mean over years\";",
+      "Cell methods": "area: mean where air time: mean within years time: mean over years",
+      "Dimensions": "longitude latitude plev19 time2",
+      "Frequency": "mon",
+      "Long name": "Mole Fraction of CO2",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "Report only for simulations (e.g., prescribed concentration pi-control run), in which the CO2 does not vary from one year to the next. Report 12 monthly values, starting with January, even if the values do not vary seasonally.  When calling CMOR, identify this variable as co2Clim, not co2.   If  CO2 is spatially uniform, omit this field, but report Total Atmospheric Mass of CO2 (see the table entry after the next).  Are these the preferred units or should it be a unitless fraction?  Should this field be reported instead on model levels?  Or should we also require either the vertically integrated mole fraction (or mass?) of this species or the vertically integrated globally averaged mole fraction (or mass?)?; CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:monC CMIP7:mon, CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean time: mean within years time: mean over years CMIP7:area: mean where air time: mean within years time: mean over years,",
+      "Units": "mol mol-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 19,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.mon.co2_tclm-p19-hxy-air (Amon.co2Clim)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "co2_tavg-p19-hxy-air",
+      "CF standard name": "mole_fraction_of_carbon_dioxide_in_air",
+      "CMIP6 Differences": "",
+      "Cell methods": "time: mean",
+      "Dimensions": "longitude latitude plev19 time",
+      "Frequency": "mon",
+      "Long name": "Mole Fraction of CO2",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "For some simulations (e.g., prescribed concentration pi-control run), this will not vary from one year to the next, and so report instead the variable described in the next table entry.  If spatially uniform, omit this field, but report Total Atmospheric Mass of CO2 (see the table entry after the next one).  Are these the preferred units or should it be a unitless fraction?  Should this field be reported instead on model levels?  Or should we also require either the vertically integrated mole fraction (or mass?) of this species or the vertically integrated globally averaged mole fraction (or mass?)?",
+      "Units": "mol mol-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 18,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.mon.co2_tavg-p19-hxy-air (Amon.co2)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "clwvi_tavg-u-hxy-u",
+      "CF standard name": "atmosphere_mass_content_of_cloud_condensed_water",
+      "CMIP6 Differences": "\"comment\" was \"Mass of condensed (liquid + ice) water in the column divided by the area of the column (not just the area of the cloudy portion of the column). Includes precipitating hydrometeors ONLY if the precipitating hydrometeors affect the calculation of radiative transfer in model.\";",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Condensed Water Path",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s02i391[lbproc=128] + m01s02i392[lbproc=128]",
+      "Expression UKESM1": "m01s02i391[lbproc=128] + m01s02i392[lbproc=128]",
+      "Model units": "kg m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s02i391",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "2,391",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i392",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "2,392",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i391",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,391",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i392",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,392",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 17,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.clwvi_tavg-u-hxy-u (Amon.clwvi)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "clw_tavg-l-hxy-u",
+      "CF standard name": "mass_fraction_of_cloud_liquid_water_in_air",
+      "CMIP6 Differences": "\"comment\" was \"Includes both large-scale and convective cloud. Calculate as the mass of cloud liquid water in the grid cell divided by the mass of air (including the water in all phases) in the grid cells. Precipitating hydrometeors are included ONLY if the precipitating hydrometeors affect the calculation of radiative transfer in model.\";",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude alevel time",
+      "Frequency": "mon",
+      "Long name": "Mass Fraction of Cloud Liquid Water",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "Report on model layers (not standard pressures).",
+      "Units": "kg kg-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s02i308[lbproc=128]",
+      "Expression UKESM1": "m01s02i308[lbproc=128]",
+      "Model units": "kg kg-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s02i308",
+        "domain_profile": "DALLTH",
+        "model": "UKESM1",
+        "stash_number": "2,308",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s00i033",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "33",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i308",
+        "domain_profile": "DALLTH",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,308",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s00i033",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "33",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 16,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.clw_tavg-l-hxy-u (Amon.clw)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "clt_tavg-u-hxy-u",
+      "CF standard name": "cloud_area_fraction",
+      "CMIP6 Differences": "\"comment\" was \"Total cloud area fraction (reported as a percentage) for the whole atmospheric column, as seen from the surface or the top of the atmosphere. Includes both large-scale and convective cloud.\";",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Total Cloud Cover Percentage",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s02i204[lbproc=128]",
+      "Expression UKESM1": "m01s02i204[lbproc=128]",
+      "Model units": "1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s02i204",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "2,204",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i204",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,204",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 15,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.clt_tavg-u-hxy-u (Amon.clt)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "clivi_tavg-u-hxy-u",
+      "CF standard name": "atmosphere_mass_content_of_cloud_ice",
+      "CMIP6 Differences": "",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Ice Water Path",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s02i392[lbproc=128]",
+      "Expression UKESM1": "m01s02i392[lbproc=128]",
+      "Model units": "kg m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s02i392",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "2,392",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i392",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,392",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 14,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.clivi_tavg-u-hxy-u (Amon.clivi)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "cli_tavg-l-hxy-u",
+      "CF standard name": "mass_fraction_of_cloud_ice_in_air",
+      "CMIP6 Differences": "\"comment\" was \"Includes both large-scale and convective cloud. This is calculated as the mass of cloud ice in the grid cell divided by the mass of air (including the water in all phases) in the grid cell. It includes precipitating hydrometeors ONLY if the precipitating hydrometeors affect the calculation of radiative transfer in model.\";",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude alevel time",
+      "Frequency": "mon",
+      "Long name": "Mass Fraction of Cloud Ice",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "Report on model layers (not standard pressures).",
+      "Units": "kg kg-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s02i309[lbproc=128]",
+      "Expression UKESM1": "m01s02i309[lbproc=128]",
+      "Model units": "kg kg-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s02i309",
+        "domain_profile": "DALLTH",
+        "model": "UKESM1",
+        "stash_number": "2,309",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s00i033",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "33",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i309",
+        "domain_profile": "DALLTH",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,309",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s00i033",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "33",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 13,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.cli_tavg-l-hxy-u (Amon.cli)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "cl_tavg-l-hxy-u",
+      "CF standard name": "cloud_area_fraction_in_atmosphere_layer",
+      "CMIP6 Differences": "\"comment\" was \"Percentage cloud cover, including both large-scale and convective cloud.\";",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude alevel time",
+      "Frequency": "mon",
+      "Long name": "Percentage Cloud Cover",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "Report on model layers (not standard pressures).",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s02i261[lbproc=128]",
+      "Expression UKESM1": "m01s02i261[lbproc=128]",
+      "Model units": "1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s02i261",
+        "domain_profile": "DALLTH",
+        "model": "UKESM1",
+        "stash_number": "2,261",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s00i033",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "33",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i261",
+        "domain_profile": "DALLTH",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,261",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s00i033",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "33",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 12,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.cl_tavg-l-hxy-u (Amon.cl)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ci_tavg-u-hxy-u",
+      "CF standard name": "convection_time_fraction",
+      "CMIP6 Differences": "\"comment\" was \"Fraction of time that convection occurs in the grid cell.\";",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Fraction of Time Convection Occurs in Cell",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s05i269[lbproc=128]",
+      "Expression UKESM1": "m01s05i269[lbproc=128]",
+      "Model units": "1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s05i269",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "5,269",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s05i269",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "5,269",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 11,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.ci_tavg-u-hxy-u (Amon.ci)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ch4_tclm-u-hm-u",
+      "CF standard name": "mole_fraction_of_methane_in_air",
+      "CMIP6 Differences": "\"frequency\" was \"monC\"; ; \"cell_methods\" was \"area: mean time: mean within years time: mean over years\"; ; \"units\" was \"1e-09\"; ; \"modeling_realm\" was \"atmos atmosChem\";",
+      "Cell methods": "height: area: mean time: mean within years time: mean over years (with all samples weighted by the number of moles of air in the sample)",
+      "Dimensions": "time2",
+      "Frequency": "mon",
+      "Long name": "Global Mean Mole Fraction of CH4",
+      "Modeling realm": "atmosChem",
+      "Positive": "",
+      "Processing notes": "Report only for simulations (e.g., prescribed concentration pi-control run), in which the CH4 does not vary from one year to the next. Report 12 monthly values, starting with January, even if the values do not vary seasonally.  When calling CMOR, identify this variable as ch4globalClim, not ch4global.  If CH4 is spatially nonuniform, omit this field, but report Global Mean Mole Fraction of CH4 (see the table entry before the previous one).   Are these the preferred units or should it be a unitless fraction?  Should this field be reported instead on model levels?  Or should we also require either the vertically integrated mole fraction (or mass?) of this species or the vertically integrated globally averaged mole fraction (or mass?)?; ; CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:monC CMIP7:mon, CHANGE SINCE CMIP6 in Units (from Physical Parameter) - CMIP6:1.00E-09 CMIP7:mol mol-1, CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean time: mean within years time: mean over years CMIP7:height: sum (through atmospheric column) area: sum time: mean within years time: mean over years,; CHANGE SINCE CMIP6 in Modeling Realm - primary - CMIP6:atmos, atmosChem CMIP7:atmosChem, CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean time: mean within years time: mean over years CMIP7:height: area: mean time: mean within years time: mean over years (with all samples weighted by the number of moles of air in the sample),",
+      "Units": "mol mol-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 10,
+    "labels": [
+      "mon",
+      "atmosChem",
+      "CMIP6"
+    ],
+    "title": "Variable atmosChem.mon.ch4_tclm-u-hm-u (Amon.ch4globalClim)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ch4_tavg-u-hm-u",
+      "CF standard name": "mole_fraction_of_methane_in_air",
+      "CMIP6 Differences": "\"units\" was \"1e-09\"; ; \"modeling_realm\" was \"atmos atmosChem\"; ; \"cell_methods\" was \"area: time: mean\";",
+      "Cell methods": "height: area: time: mean (with all samples weighted by the number of moles of air in the sample)",
+      "Dimensions": "time",
+      "Frequency": "mon",
+      "Long name": "Global Mean Mole Fraction of CH4",
+      "Modeling realm": "atmosChem",
+      "Positive": "",
+      "Processing notes": "For some simulations (e.g., prescribed concentration pi-control run), this will not vary from one year to the next, and so report instead the variable described in the next table entry.  If CH4 is spatially nonuniform, omit this field, but report Mole Fraction of CH4 (see the table entry before the previous one).  Are these the preferred units or should it be a unitless fraction?  Should this field be reported instead on model levels?  Or should we also require either the vertically integrated mole fraction (or mass?) of this species or the vertically integrated globally averaged mole fraction (or mass?)?; CHANGE SINCE CMIP6 in Units (from Physical Parameter) - CMIP6:1.00E-09 CMIP7:1E-09, CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:height: sum (through atmospheric column) area: sum time: mean,; CHANGE SINCE CMIP6 in Modeling Realm - primary - CMIP6:atmos, atmosChem CMIP7:atmosChem, CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:height: area: time: mean (with all samples weighted by the number of moles of air in the sample),",
+      "Units": "1E-09",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "mmr2molefrac(m01s50i063[lbproc=128], m01s34i009[lbproc=128], MOLECULAR_MASS_OF_CH4)",
+      "Expression UKESM1": "mmr2molefrac(m01s50i063[lbproc=128], m01s34i009[lbproc=128], MOLECULAR_MASS_OF_CH4)",
+      "Model units": "1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s34i009",
+        "domain_profile": "DALLTH",
+        "model": "UKESM1",
+        "stash_number": "34,009",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s50i063",
+        "domain_profile": "DALLTH",
+        "model": "UKESM1",
+        "stash_number": "50,063",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s34i009",
+        "domain_profile": "DALLTH",
+        "model": "HadGEM3-GC31",
+        "stash_number": "34,009",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s50i063",
+        "domain_profile": "DALLTH",
+        "model": "HadGEM3-GC31",
+        "stash_number": "50,063",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 9,
+    "labels": [
+      "mon",
+      "atmosChem",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmosChem.mon.ch4_tavg-u-hm-u (Amon.ch4global)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ch4_tclm-p19-hxy-air",
+      "CF standard name": "mole_fraction_of_methane_in_air",
+      "CMIP6 Differences": "\"frequency\" was \"monC\"; ; \"cell_methods\" was \"area: mean time: mean within years time: mean over years\"; ; \"modeling_realm\" was \"atmos atmosChem\";",
+      "Cell methods": "area: mean where air time: mean within years time: mean over years",
+      "Dimensions": "longitude latitude plev19 time2",
+      "Frequency": "mon",
+      "Long name": "Mole Fraction of CH4",
+      "Modeling realm": "atmosChem",
+      "Positive": "",
+      "Processing notes": "Report only for simulations (e.g., prescribed concentration pi-control run), in which the CH4 does not vary from one year to the next. Report 12 monthly values, starting with January, even if the values do not vary seasonally.  When calling CMOR, identify this variable as ch4global, not ch4.   If  CH4 is spatially uniform, omit this field, but report Global Mean Mole Fraction of CH4 (see the table entry after the next).  Are these the preferred units or should it be a unitless fraction?  Should this field be reported instead on model levels?  Or should we also require either the vertically integrated mole fraction (or mass?) of this species or the vertically integrated globally averaged mole fraction (or mass?)?; CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:monC CMIP7:mon, CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean time: mean within years time: mean over years CMIP7:area: mean where air time: mean within years time: mean over years,",
+      "Units": "mol mol-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 8,
+    "labels": [
+      "mon",
+      "atmosChem",
+      "CMIP6"
+    ],
+    "title": "Variable atmosChem.mon.ch4_tclm-p19-hxy-air (Amon.ch4Clim)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ch4_tavg-p19-hxy-air",
+      "CF standard name": "mole_fraction_of_methane_in_air",
+      "CMIP6 Differences": "\"modeling_realm\" was \"atmos atmosChem\";",
+      "Cell methods": "time: mean",
+      "Dimensions": "longitude latitude plev19 time",
+      "Frequency": "mon",
+      "Long name": "Mole Fraction of CH4",
+      "Modeling realm": "atmosChem",
+      "Positive": "",
+      "Processing notes": "For some simulations (e.g., prescribed concentration pi-control run), this will not vary from one year to the next, and so report instead the variable described in the next table entry.  If CH4 is spatially uniform, omit this field, but report Global Mean Mole Fraction of CH4 (see the table entry after the next one).   Are these the preferred units or should it be a unitless fraction?  Should this field be reported instead on model levels?  Or should we also require either the vertically integrated mole fraction (or mass?) of this species or the vertically integrated globally averaged mole fraction (or mass?)?",
+      "Units": "mol mol-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "(MOLECULAR_MASS_OF_AIR / MOLECULAR_MASS_OF_CH4) * m01s51i009[blev=PLEV19, lbproc=128] / m01s51i999[blev=PLEV19, lbproc=128]",
+      "Expression UKESM1": "(MOLECULAR_MASS_OF_AIR / MOLECULAR_MASS_OF_CH4) * m01s51i009[blev=PLEV19, lbproc=128] / m01s51i999[blev=PLEV19, lbproc=128]",
+      "Model units": "mol mol-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s51i009",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "51,009",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s51i999",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "51,999",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s51i009",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "51,009",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s51i999",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "51,999",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 7,
+    "labels": [
+      "mon",
+      "atmosChem",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmosChem.mon.ch4_tavg-p19-hxy-air (Amon.ch4)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "cfc12_tavg-u-hm-u",
+      "CF standard name": "mole_fraction_of_cfc12_in_air",
+      "CMIP6 Differences": "\"units\" was \"1e-12\"; ; \"modeling_realm\" was \"atmos atmosChem\"; ; \"cell_methods\" was \"area: time: mean\";",
+      "Cell methods": "height: sum (through atmospheric column) area: sum time: mean",
+      "Dimensions": "time",
+      "Frequency": "mon",
+      "Long name": "Global Mean Mole Fraction of CFC12",
+      "Modeling realm": "atmosChem",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Units (from Physical Parameter) - CMIP6:1.00E-12 CMIP7:1E-12, CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:height: sum (through atmospheric column) area: sum time: mean,",
+      "Units": "1E-12",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "mmr2molefrac(m01s50i063[lbproc=128], m01s34i056[lbproc=128], MOLECULAR_MASS_OF_CFC12)",
+      "Expression UKESM1": "mmr2molefrac(m01s50i063[lbproc=128], m01s34i056[lbproc=128], MOLECULAR_MASS_OF_CFC12)",
+      "Model units": "1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s34i056",
+        "domain_profile": "DALLTH",
+        "model": "UKESM1",
+        "stash_number": "34,056",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s50i063",
+        "domain_profile": "DALLTH",
+        "model": "UKESM1",
+        "stash_number": "50,063",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s34i056",
+        "domain_profile": "DALLTH",
+        "model": "HadGEM3-GC31",
+        "stash_number": "34,056",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s50i063",
+        "domain_profile": "DALLTH",
+        "model": "HadGEM3-GC31",
+        "stash_number": "50,063",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 6,
+    "labels": [
+      "mon",
+      "atmosChem",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmosChem.mon.cfc12_tavg-u-hm-u (Amon.cfc12global)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "cfc113_tavg-u-hm-u",
+      "CF standard name": "mole_fraction_of_cfc11_in_air",
+      "CMIP6 Differences": "\"units\" was \"1e-12\"; ; \"modeling_realm\" was \"atmos atmosChem\"; ; \"cell_methods\" was \"area: time: mean\";",
+      "Cell methods": "height: sum (through atmospheric column) area: sum time: mean",
+      "Dimensions": "time",
+      "Frequency": "mon",
+      "Long name": "Global Mean Mole Fraction of CFC11",
+      "Modeling realm": "atmosChem",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Units (from Physical Parameter) - CMIP6:1.00E-12 CMIP7:1E-12, CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:height: sum (through atmospheric column) area: sum time: mean,",
+      "Units": "1E-12",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "mmr2molefrac(m01s50i063[lbproc=128], m01s34i055[lbproc=128], MOLECULAR_MASS_OF_CFC11)",
+      "Expression UKESM1": "mmr2molefrac(m01s50i063[lbproc=128], m01s34i055[lbproc=128], MOLECULAR_MASS_OF_CFC11)",
+      "Model units": "1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s34i055",
+        "domain_profile": "DALLTH",
+        "model": "UKESM1",
+        "stash_number": "34,055",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s50i063",
+        "domain_profile": "DALLTH",
+        "model": "UKESM1",
+        "stash_number": "50,063",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s34i055",
+        "domain_profile": "DALLTH",
+        "model": "HadGEM3-GC31",
+        "stash_number": "34,055",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s50i063",
+        "domain_profile": "DALLTH",
+        "model": "HadGEM3-GC31",
+        "stash_number": "50,063",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 5,
+    "labels": [
+      "mon",
+      "atmosChem",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmosChem.mon.cfc113_tavg-u-hm-u (Amon.cfc11global)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "cfc113_tavg-u-hm-u",
+      "CF standard name": "mole_fraction_of_cfc113_in_air",
+      "CMIP6 Differences": "\"units\" was \"1e-12\"; ; \"modeling_realm\" was \"atmos atmosChem\"; ; \"cell_methods\" was \"area: time: mean\";",
+      "Cell methods": "height: sum (through atmospheric column) area: sum time: mean",
+      "Dimensions": "time",
+      "Frequency": "mon",
+      "Long name": "Global Mean Mole Fraction of CFC113",
+      "Modeling realm": "atmosChem",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Units (from Physical Parameter) - CMIP6:1.00E-12 CMIP7:1E-12, CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:height: sum (through atmospheric column) area: sum time: mean,",
+      "Units": "1E-12",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 4,
+    "labels": [
+      "mon",
+      "atmosChem",
+      "CMIP6"
+    ],
+    "title": "Variable atmosChem.mon.cfc113_tavg-u-hm-u (Amon.cfc113global)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "cct_tavg-u-hxy-ccl",
+      "CF standard name": "air_pressure_at_convective_cloud_top",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: time: mean\";",
+      "Cell methods": "area: time: mean where convective_cloud (weighted by total convective cloud area)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Air Pressure at Convective Cloud Top",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:area: time: mean where convective_cloud (weighted by total convective cloud area),; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:area: time: mean where convective_cloud (weighted by total convective cloud area),; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:area: time: mean where convective_cloud (weighted by total convective cloud area),; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:area: time: mean where convective_cloud (weighted by total convective cloud area),; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:area: time: mean where convective_cloud (weighted by total convective cloud area), area: time: mean where s (weighted by total convective cloud area) copy,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:area: time: mean where convective_cloud (weighted by total convective cloud area), area: time: mean where stratiform_cloud (weighted by total convective cloud area),",
+      "Units": "Pa",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 3,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.mon.cct_tavg-u-hxy-ccl (Amon.cct)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ccb_tavg-u-hxy-ccl",
+      "CF standard name": "air_pressure_at_convective_cloud_base",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: time: mean\";",
+      "Cell methods": "area: time: mean where convective_cloud (weighted by total convective cloud area)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Air Pressure at Convective Cloud Base",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:area: time: mean where convective_cloud (weighted by total convective cloud area),; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:area: time: mean where convective_cloud (weighted by total convective cloud area), area: time: mean where s (weighted by total convective cloud area) copy,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:area: time: mean where convective_cloud (weighted by total convective cloud area), area: time: mean where stratiform_cloud (weighted by total convective cloud area),",
+      "Units": "Pa",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 2,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.mon.ccb_tavg-u-hxy-ccl (Amon.ccb)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "aod550volso4_tavg-u-hxy-u",
+      "CF standard name": "stratosphere_optical_thickness_due_to_volcanic_ambient_aerosol_particles",
+      "CMIP6 Differences": "Not present",
+      "Cell methods": "area: time: mean",
+      "Dimensions": "longitude latitude time lambda550nm",
+      "Frequency": "mon",
+      "Long name": "Monthly Aerosol Optical Depth at 550nm Due to Stratospheric Volcanic Aerosols",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "1E-09",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1,
+    "labels": [
+      "mon",
+      "atmos"
+    ],
+    "title": "Variable atmos.mon.aod550volso4_tavg-u-hxy-u (Amon.aod550volso4)"
+  }
+]
