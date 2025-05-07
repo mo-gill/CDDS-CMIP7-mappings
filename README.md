@@ -15,6 +15,7 @@ The information in the issues is also presented in the following files;
 * [data/mappings.csv](https://github.com/UKNCSP/CDDS-CMIP7-mappings/blob/main/data/mappings.csv) (Excel CSV representation of Data Request and Mapping information)
 * [data/stash.csv](https://github.com/UKNCSP/CDDS-CMIP7-mappings/blob/main/data/stash.csv) (Excel CSV representation of STASH information)
 
+Eventually automatic processes (github actions) will regenerate these files as issues are updated.
 
 ## Prerequisites for the Review process
 
