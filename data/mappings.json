@@ -641,6 +641,7 @@
     "Mapping information": {
       "Expression HadGEM3-GC31": "m01s03i236[lbproc=128]",
       "Expression UKESM1": "m01s03i236[lbproc=128]",
+      "Expression UKESM1-3": "m01s03i236[lbproc=128]",
       "Model units": "K"
     },
     "STASH entries": [
