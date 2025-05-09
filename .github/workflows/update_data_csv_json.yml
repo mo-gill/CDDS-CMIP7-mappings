@@ -19,8 +19,8 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: execute py script
         env:
-	  GH_TOKEN: ${{ github.token }}
-	  GITHUB_TOKEN: ${{ github.token }}
+      	  GH_TOKEN: ${{ github.token }}
+      	  GITHUB_TOKEN: ${{ github.token }}
           ISSUE_SUBMITTER: ${{ github.event.issue.user.login }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
         run: |
