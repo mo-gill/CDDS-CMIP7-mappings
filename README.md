@@ -29,7 +29,9 @@ Information is extracted from the "body" of each issue and updates should be mad
 
 ![image](https://github.com/user-attachments/assets/3b907a1a-e3a3-4ea4-948d-ca3163b71389)
 
-This will eventually trigger actions to update the information in the data files linked to above (work in progress).
+This will trigger actions to update the information in the data files linked to above.
+
+Note that comments are ignored by the automated process so can be used for queries or discussions
 
 ### Mappings update
 
