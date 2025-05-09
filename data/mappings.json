@@ -685,7 +685,8 @@
       "atmos",
       "CMIP6",
       "UKESM1",
-      "HadGEM3-GC31"
+      "HadGEM3-GC31",
+      "approved"
     ],
     "title": "Variable atmos.mon.tas_tavg-h2m-hxy-u (Amon.tas)"
   },
