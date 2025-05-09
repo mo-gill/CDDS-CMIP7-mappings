@@ -102,7 +102,9 @@ UKESM1,prc_tavg-u-hxy-u,mon,m01s05i206,5,206,TMONMN,DIAG,UP5
 HadGEM3-GC31,prc_tavg-u-hxy-u,mon,m01s05i205,5,205,TMONMN,DIAG,UP5
 HadGEM3-GC31,prc_tavg-u-hxy-u,mon,m01s05i206,5,206,TMONMN,DIAG,UP5
 UKESM1,pr_tavg-u-hxy-u,mon,m01s05i216,5,216,TMONMN,DIAG,UP5
+UKESM1-3,pr_tavg-u-hxy-u,mon,m01s05i216,5,216,TMONMN,DIAG,UP5
 HadGEM3-GC31,pr_tavg-u-hxy-u,mon,m01s05i216,5,216,TMONMN,DIAG,UP5
+HadGEM3-GC5,pr_tavg-u-hxy-u,mon,m01s05i216,5,216,TMONMN,DIAG,UP5
 UKESM1,o3_tavg-p19-hxy-air,mon,m01s51i001,51,001,TMONMN,PLEV19,UP5
 UKESM1,o3_tavg-p19-hxy-air,mon,m01s51i999,51,999,TMONMN,PLEV19,UP5
 HadGEM3-GC31,o3_tavg-p19-hxy-air,mon,m01s51i001,51,001,TMONMN,PLEV19,UP5
