@@ -34,7 +34,7 @@ This will trigger actions to update the information in the data files linked to 
 
 Once your review is complete please add the "approved" label to the issue and add a comment confirming that you are happy with the mapping and STASH entries.
 
-If you have questions please add the "question" label to the issue. We will attempt to answer questions and remove that label when we think we've answered the question.
+If you have questions please add the "question" label to the issue. We will attempt to answer questions and remove that label when we think we've answered them.
 
 Note that comments are ignored by the automated process so can be used for queries or discussions
 
