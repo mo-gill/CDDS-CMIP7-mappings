@@ -24,12 +24,17 @@ to the mappings/STASH setup review process users will need to be registered. To 
 out [this form](https://github.com/UKNCSP/CDDS-CMIP7-mappings/issues/new?template=new_reviewer.yml).
 
 ## Review process 
+
 Information is extracted from the "body" of each issue and updates should be made by editing its content 
 (see image below for pointer to button)
 
 ![image](https://github.com/user-attachments/assets/3b907a1a-e3a3-4ea4-948d-ca3163b71389)
 
 This will trigger actions to update the information in the data files linked to above.
+
+Once your review is complete please add the "approved" label to the issue and add a comment confirming that you are happy with the mapping and STASH entries.
+
+If you have questions please add the "question" label to the issue. We will attempt to answer questions and remove that label when we think we've answered the question.
 
 Note that comments are ignored by the automated process so can be used for queries or discussions
 
