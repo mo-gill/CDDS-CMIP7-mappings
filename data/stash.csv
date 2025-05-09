@@ -35,6 +35,8 @@ UKESM1,tasmax_tstat-h2m-hxy-u,mon,m01s03i236,3,236,TDAYMAX,DIAG,UP6
 HadGEM3-GC31,tasmax_tstat-h2m-hxy-u,mon,m01s03i236,3,236,TDAYMAX,DIAG,UP6
 UKESM1,tas_tavg-h2m-hxy-u,mon,m01s03i236,3,236,TMONMN,DIAG,UP5
 HadGEM3-GC31,tas_tavg-h2m-hxy-u,mon,m01s03i236,3,236,TMONMN,DIAG,UP5
+UKESM1-3,tas_tavg-h2m-hxy-u,mon,m01s03i236,3,236,TMONMN,DIAG,UP5
+HadGEM3-GC5,tas_tavg-h2m-hxy-u,mon,m01s03i236,3,236,TMONMN,DIAG,UP5
 UKESM1,ta_tavg-p19-hxy-air,mon,m01s30i294,30,294,TMONMN,PLEV19,UP5
 UKESM1,ta_tavg-p19-hxy-air,mon,m01s30i304,30,304,TMONMN,PLEV19,UP5
 HadGEM3-GC31,ta_tavg-p19-hxy-air,mon,m01s30i294,30,294,TMONMN,PLEV19,UP5
