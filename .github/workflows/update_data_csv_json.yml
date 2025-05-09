@@ -3,6 +3,7 @@ run-name: ${{ github.actor }} updated Mapping issue
 on:
   issues:
     types: [opened, edited]
+  workflow_dispatch:
 jobs:
   updata-data-files:
     runs-on: ubuntu-22.04
