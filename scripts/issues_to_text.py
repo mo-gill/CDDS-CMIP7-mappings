@@ -124,7 +124,10 @@ if __name__ == '__main__':
                 entry['Data Request information']['Frequency'],
                 i['STASH'],
                 ]
-            line += i['stash_number'].split(',')
+            if ',' in i['stash_number']:
+                line += i['stash_number'].split(',')
+            else:
+                line += [0, i['stash_number']]
             line += [i[j] for j in stash_headings[-3:]]
             stash_csv.append(line)
      
