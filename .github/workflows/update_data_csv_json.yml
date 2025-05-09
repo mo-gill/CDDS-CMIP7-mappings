@@ -7,6 +7,8 @@ on:
 jobs:
   update-data-files:
     runs-on: ubuntu-22.04
+    permissions:
+      contents: write
     steps:
       - name: checkout repo content
         uses: actions/checkout@v3 # checkout the repository content to github runner.
