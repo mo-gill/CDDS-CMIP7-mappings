@@ -1,6 +1,556 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "lithk_ti-u-hxy-u",
+      "CF standard name": "land_ice_thickness",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean",
+      "Comment": "This variable identifies the thickness of a prescribed ice sheet. This information is relevant to better understand how different models treat ice. For models where an ice sheet is just orography + an ice sheet mask, the value should be set to zero. For models that explicitly resolve an ice sheet thickness, the thickness of the ice sheet should be provided.",
+      "Dimensions": "longitude latitude",
+      "Frequency": "fx",
+      "Long name": "Ice sheet thickness",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1849,
+    "labels": [
+      "fx",
+      "land"
+    ],
+    "title": "Variable land.fx.lithk_ti-u-hxy-u (fx.lithk)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "lat_ti-u-hxys-u",
+      "CF standard name": "latitude",
+      "CMIP6 Differences": "",
+      "Cell measures": "",
+      "Cell methods": "area: point",
+      "Comment": "Latitude is positive northward; its units of degree_north (or equivalent) indicate this explicitly. In a latitude-longitude system defined with respect to a rotated North Pole, the standard name of grid_latitude should be used instead of latitude. Grid latitude is positive in the grid-northward direction, but its units should be plain degree.",
+      "Dimensions": "site",
+      "Frequency": "fx",
+      "Long name": "Latitude",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "the above comment also applies to latitude.; CHANGE SINCE CMIP6: compound name,",
+      "Units": "degrees_north",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1848,
+    "labels": [
+      "fx",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.fx.lat_ti-u-hxys-u (fx.lat)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "depthsl_ti-u-hxy-u",
+      "CF standard name": "depth",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean",
+      "Comment": "Total (cumulative) thickness of all soil layers. This is the sum of individual thicknesses of all soil layers.",
+      "Dimensions": "longitude latitude",
+      "Frequency": "fx",
+      "Long name": "Total (Cumulative) Thickness of All Soil Layers",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1847,
+    "labels": [
+      "fx",
+      "land"
+    ],
+    "title": "Variable land.fx.depthsl_ti-u-hxy-u (fx.depthsl)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "depthl_ti-u-hxy-u",
+      "CF standard name": "depth",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean",
+      "Comment": "Depth of lakes, if this quantity is present in the model. If computed via volume and area, then this is lake volume divided by lake area.",
+      "Dimensions": "longitude latitude",
+      "Frequency": "fx",
+      "Long name": "Depth of Lake Below the Surface",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1846,
+    "labels": [
+      "fx",
+      "land"
+    ],
+    "title": "Variable land.fx.depthl_ti-u-hxy-u (fx.depthl)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "areacellr_ti-u-hxy-u",
+      "CF standard name": "cell_area",
+      "CMIP6 Differences": "\"comment\" was \"For river routing model, if grid differs from the atmospheric grid.\";",
+      "Cell measures": "",
+      "Cell methods": "area: sum",
+      "Comment": "Cell areas for any grid used to report river model variables (may be the same as for atmospheric variables). These cell areas should be defined to enable exact calculation of area integrals (e.g., of vertical fluxes of energy at the surface and top of the atmosphere).",
+      "Dimensions": "longitude latitude",
+      "Frequency": "fx",
+      "Long name": "Grid-Cell Area for River Model Variables",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1845,
+    "labels": [
+      "fx",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.fx.areacellr_ti-u-hxy-u (fx.areacellr)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "areacella_ti-u-hxy-u",
+      "CF standard name": "cell_area",
+      "CMIP6 Differences": "\"comment\" was \"For atmospheres with more than 1 mesh (e.g., staggered grids), report areas that apply to surface vertical fluxes of energy.\"; ; \"modeling_realm\" was \"atmos land\";",
+      "Cell measures": "",
+      "Cell methods": "area: sum",
+      "Comment": "Cell areas for any grid used to report atmospheric variables and any other variable using that grid (e.g., soil moisture content). These cell areas should be defined to enable exact calculation of global integrals (e.g., of vertical fluxes of energy at the surface and top of the atmosphere).",
+      "Dimensions": "longitude latitude",
+      "Frequency": "fx",
+      "Long name": "Grid-Cell Area for Atmospheric Grid Variables",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "For atmospheres with more than 1 mesh (e.g., staggered grids), report areas that apply to surface vertical fluxes of energy.",
+      "Units": "m2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "areacella(m01s00i505)",
+      "Expression UKESM1": "areacella(m01s00i505)",
+      "Model units": "m2"
+    },
+    "STASH entries": [],
+    "issue_number": 1844,
+    "labels": [
+      "fx",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable atmos.fx.areacella_ti-u-hxy-u (fx.areacella)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "zg_tavg-p19-hxy-air",
+      "CF standard name": "geopotential_height",
+      "CMIP6 Differences": "\"dimensions\" was \"longitude latitude plev8 time\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "time: mean",
+      "Comment": "Geopotential is the sum of the specific gravitational potential energy relative to the geoid and the specific centripetal potential energy. Geopotential height is the geopotential divided by the standard acceleration due to gravity. It is numerically similar to the altitude (or geometric height) and not to the quantity with standard name height, which is relative to the surface.",
+      "Dimensions": "longitude latitude plev19 time",
+      "Frequency": "day",
+      "Long name": "Geopotential Height",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude plev8 time CMIP7:longitude latitude plev19 time,",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s30i297[blev=PLEV8, lbproc=128] / m01s30i304[blev=PLEV8, lbproc=128]",
+      "Expression UKESM1": "m01s30i297[blev=PLEV8, lbproc=128] / m01s30i304[blev=PLEV8, lbproc=128]",
+      "Model units": "m"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s30i297",
+        "domain_profile": "PLEV8",
+        "model": "UKESM1",
+        "stash_number": "30,297",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i304",
+        "domain_profile": "PLEV8",
+        "model": "UKESM1",
+        "stash_number": "30,304",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i297",
+        "domain_profile": "PLEV8",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,297",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i304",
+        "domain_profile": "PLEV8",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,304",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 1843,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.day.zg_tavg-p19-hxy-air (day.zg)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tawbmax_tstat-h2m-hxy-u",
+      "CF standard name": "wet_bulb_globe_temperature",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "max 2m daily wet bulb globe temperature (WGBT):",
+      "Dimensions": "longitude latitude time height2m",
+      "Frequency": "day",
+      "Long name": "maximum 2m daily wet bulb globe temperature",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "The calculation should be done with: ; WBGT = 0.567 \\* T_C + 0.393 \\* e/100 + 3.94, ; where T_C is temperature in degrees C, ; and e = huss \\* p \\* M_air / M_H2O, ; where \"huss=specific humidity in kg/kg\", ; M_H2O = 18.01528/1000\u00a0# kg/mol, ; M_air = 28.964/1000\u00a0# kg/mol for dry air,; and \"P = surface pressure in Pa\"",
+      "Units": "degC",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1842,
+    "labels": [
+      "day",
+      "atmos"
+    ],
+    "title": "Variable atmos.day.tawbmax_tstat-h2m-hxy-u (day.wbgt2mmax)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tawb_tavg-h2m-hxy-u",
+      "CF standard name": "wet_bulb_globe_temperature",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "mean 2m daily wet bulb globe temperature (WBGT).",
+      "Dimensions": "longitude latitude time height2m",
+      "Frequency": "day",
+      "Long name": "mean 2m daily wet bulb globe temperature",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "The calculation should be done with: ; WBGT = 0.567 \\* T_C + 0.393 \\* e/100 + 3.94, ; where T_C is temperature in degrees C, ; and e = huss \\* p \\* M_air / M_H2O, ; where \"huss=specific humidity in kg/kg\", ; M_H2O = 18.01528/1000\u00a0# kg/mol, ; M_air = 28.964/1000\u00a0# kg/mol for dry air,; and \"P = surface pressure in Pa\"",
+      "Units": "degC",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1841,
+    "labels": [
+      "day",
+      "atmos"
+    ],
+    "title": "Variable atmos.day.tawb_tavg-h2m-hxy-u (day.wbgt2m)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "wap_tavg-p19-hxy-u",
+      "CF standard name": "lagrangian_tendency_of_air_pressure",
+      "CMIP6 Differences": "\"dimensions\" was \"longitude latitude plev8 time\"; ; \"comment\" was \"Omega (vertical velocity in pressure coordinates, positive downwards)\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "time: mean",
+      "Comment": "commonly referred to as \"omega\", this represents the vertical component of velocity in pressure coordinates (positive down)",
+      "Dimensions": "longitude latitude plev19 time",
+      "Frequency": "day",
+      "Long name": "Omega (=dp/dt)",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude plev8 time CMIP7:longitude latitude plev19 time,",
+      "Units": "Pa s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s30i298[blev=PLEV8, lbproc=128] / m01s30i304[blev=PLEV8, lbproc=128]",
+      "Expression UKESM1": "m01s30i298[blev=PLEV8, lbproc=128] / m01s30i304[blev=PLEV8, lbproc=128]",
+      "Model units": "Pa s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s30i298",
+        "domain_profile": "PLEV8",
+        "model": "UKESM1",
+        "stash_number": "30,298",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i304",
+        "domain_profile": "PLEV8",
+        "model": "UKESM1",
+        "stash_number": "30,304",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i298",
+        "domain_profile": "PLEV8",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,298",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i304",
+        "domain_profile": "PLEV8",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,304",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 1840,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable atmos.day.wap_tavg-p19-hxy-u (day.wap)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "vas_tavg-h10m-hxy-u",
+      "CF standard name": "northward_wind",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Northward component of the near surface wind",
+      "Dimensions": "longitude latitude time height10m",
+      "Frequency": "day",
+      "Long name": "Northward Near-Surface Wind",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "normally, report this at 10 meters above the surface; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time height10m CMIP7:longitude latitude time  height10m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i210[lbproc=128]",
+      "Expression UKESM1": "m01s03i210[lbproc=128]",
+      "Model units": "m s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i210",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,210",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s03i210",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,210",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 1839,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable atmos.day.vas_tavg-h10m-hxy-u (day.vas)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "va_tavg-p19-hxy-air",
+      "CF standard name": "northward_wind",
+      "CMIP6 Differences": "\"dimensions\" was \"longitude latitude plev8 time\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "time: mean",
+      "Comment": "Meridional wind (positive in a northward direction).",
+      "Dimensions": "longitude latitude plev19 time",
+      "Frequency": "day",
+      "Long name": "Northward Wind",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude plev8 time CMIP7:longitude latitude plev19 time,",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s30i202[blev=PLEV8, lbproc=128] / m01s30i301[blev=PLEV8, lbproc=128]",
+      "Expression UKESM1": "m01s30i202[blev=PLEV8, lbproc=128] / m01s30i301[blev=PLEV8, lbproc=128]",
+      "Model units": "m s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s30i202",
+        "domain_profile": "PLEV8",
+        "model": "UKESM1",
+        "stash_number": "30,202",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i301",
+        "domain_profile": "PLEV8",
+        "model": "UKESM1",
+        "stash_number": "30,301",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i201",
+        "domain_profile": "PLEV8",
+        "model": "UKESM1",
+        "stash_number": "30,201",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i202",
+        "domain_profile": "PLEV8",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,202",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i301",
+        "domain_profile": "PLEV8",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,301",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i201",
+        "domain_profile": "PLEV8",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,201",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 1838,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable atmos.day.va_tavg-p19-hxy-air (day.va)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "uas_tavg-h10m-hxy-u",
+      "CF standard name": "eastward_wind",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Eastward component of the near-surface (usually, 10 meters)  wind",
+      "Dimensions": "longitude latitude time height10m",
+      "Frequency": "day",
+      "Long name": "Eastward Near-Surface Wind",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "normally, report this at 10 meters above the surface; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time height10m CMIP7:longitude latitude time  height10m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i209[lbproc=128]",
+      "Expression UKESM1": "m01s03i209[lbproc=128]",
+      "Model units": "m s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i209",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,209",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s03i209",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,209",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 1837,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable atmos.day.uas_tavg-h10m-hxy-u (day.uas)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "ua_tavg-p19-hxy-air",
       "CF standard name": "eastward_wind",
       "CMIP6 Differences": "\"dimensions\" was \"longitude latitude plev8 time\";",
