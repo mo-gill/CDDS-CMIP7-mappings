@@ -1,6 +1,322 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "hfds_tavg-u-hxy-sea",
+      "CF standard name": "surface_downward_heat_flux_in_sea_water",
+      "CMIP6 Differences": "\"comment\" was \"This is the net flux of heat entering the liquid water column through its upper surface (excluding any 'flux adjustment') .\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "This is the net flux of heat entering the liquid water column through its upper surface (excluding any \"flux adjustment\") .",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Downward Heat Flux at Sea Water Surface",
+      "Modeling realm": "ocean",
+      "Positive": "down",
+      "Processing notes": "Report on native horizontal grid as well as remapped onto a latitude/longitude grid.",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "hfds",
+      "Expression UKESM1": "hfds",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 1447,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable ocean.mon.hfds_tavg-u-hxy-sea (Omon.hfds)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hfbasinpsmadv_tavg-u-hys-sea",
+      "CF standard name": "northward_ocean_heat_transport_due_to_parameterized_submesoscale_eddy_advection",
+      "CMIP6 Differences": "\"cell_methods\" was \"longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time: mean\";",
+      "Cell measures": "",
+      "Cell methods": "longitude: sum (basin sum [along zig-zag grid path]) depth: sum time: mean",
+      "Comment": "Contributions to heat transport from parameterized mesoscale eddy-induced advective transport. Diagnosed here as a function of latitude and basin.  Use Celsius for temperature scale.",
+      "Dimensions": "latitude basin time",
+      "Frequency": "mon",
+      "Long name": "Northward Ocean Heat Transport Due to Parameterized Submesoscale Advection",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "For models which do not have a Cartesian lat-long grid, this transport can be approximated as thetransport across zig-zag paths corresponding to latitudes with spacing between latitudes appropriate tothe model's resolution, as is done for the ocean meridional overturning mass streamfunction.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time: mean CMIP7:longitude: sum (basin sum [along zig-zag grid path]) depth: sum time: mean,",
+      "Units": "W",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1446,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.mon.hfbasinpsmadv_tavg-u-hys-sea (Omon.hfbasinpsmadv)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hfbasinpmdiff_tavg-u-hys-sea",
+      "CF standard name": "northward_ocean_heat_transport_due_to_parameterized_mesoscale_eddy_diffusion",
+      "CMIP6 Differences": "\"cell_methods\" was \"longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time: mean\";",
+      "Cell measures": "",
+      "Cell methods": "longitude: sum (basin sum [along zig-zag grid path]) depth: sum time: mean",
+      "Comment": "Contributions to heat transport from parameterized mesoscale eddy-induced diffusive transport (i.e., neutral diffusion). Diagnosed here as a function of latitude and basin.",
+      "Dimensions": "latitude basin time",
+      "Frequency": "mon",
+      "Long name": "Northward Ocean Heat Transport Due to Parameterized Mesoscale Diffusion",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "For models which do not have a Cartesian lat-long grid, this transport can be approximated as thetransport across zig-zag paths corresponding to latitudes with spacing between latitudes appropriate tothe model's resolution, as is done for the ocean meridional overturning mass streamfunction.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time: mean CMIP7:longitude: sum (basin sum [along zig-zag grid path]) depth: sum time: mean,",
+      "Units": "W",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "combine_cubes_to_basin_coord(hfbasinpmdiff_global, hfbasinpmdiff_atlantic, hfbasinpmdiff_indopacific, mask_global=global_ocean_1D_V, mask_atl=atlantic_arctic_ocean_1D_V, mask_indpac=indian_pacific_ocean_1D_V)",
+      "Expression UKESM1": "combine_cubes_to_basin_coord(hfbasinpmdiff_global, hfbasinpmdiff_atlantic, hfbasinpmdiff_indopacific, mask_global=global_ocean_1D_V, mask_atl=atlantic_arctic_ocean_1D_V, mask_indpac=indian_pacific_ocean_1D_V)",
+      "Model units": "PW"
+    },
+    "STASH entries": [],
+    "issue_number": 1445,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.mon.hfbasinpmdiff_tavg-u-hys-sea (Omon.hfbasinpmdiff)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hfbasinpmadv_tavg-u-hys-sea",
+      "CF standard name": "northward_ocean_heat_transport_due_to_parameterized_mesoscale_eddy_advection",
+      "CMIP6 Differences": "\"cell_methods\" was \"longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time: mean\";",
+      "Cell measures": "",
+      "Cell methods": "longitude: sum (basin sum [along zig-zag grid path]) depth: sum time: mean",
+      "Comment": "Contributions to heat transport from parameterized mesoscale eddy-induced advective transport. Diagnosed here as a function of latitude and basin.  Use Celsius for temperature scale.",
+      "Dimensions": "latitude basin time",
+      "Frequency": "mon",
+      "Long name": "Northward Ocean Heat Transport Due to Parameterized Mesoscale Advection",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "For models which do not have a Cartesian lat-long grid, this transport can be approximated as thetransport across zig-zag paths corresponding to latitudes with spacing between latitudes appropriate tothe model's resolution, as is done for the ocean meridional overturning mass streamfunction.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time: mean CMIP7:longitude: sum (basin sum [along zig-zag grid path]) depth: sum time: mean,",
+      "Units": "W",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "combine_cubes_to_basin_coord(hfbasinpmadv_global, hfbasinpmadv_atlantic, hfbasinpmadv_indopacific, mask_global=global_ocean_1D_V, mask_atl=atlantic_arctic_ocean_1D_V, mask_indpac=indian_pacific_ocean_1D_V)",
+      "Expression UKESM1": "combine_cubes_to_basin_coord(hfbasinpmadv_global, hfbasinpmadv_atlantic, hfbasinpmadv_indopacific, mask_global=global_ocean_1D_V, mask_atl=atlantic_arctic_ocean_1D_V, mask_indpac=indian_pacific_ocean_1D_V)",
+      "Model units": "PW"
+    },
+    "STASH entries": [],
+    "issue_number": 1444,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.mon.hfbasinpmadv_tavg-u-hys-sea (Omon.hfbasinpmadv)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hfbasinpadv_tavg-u-hys-sea",
+      "CF standard name": "northward_ocean_heat_transport_due_to_parameterized_eddy_advection",
+      "CMIP6 Differences": "\"cell_methods\" was \"longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time: mean\";",
+      "Cell measures": "",
+      "Cell methods": "longitude: sum (basin sum [along zig-zag grid path]) depth: sum time: mean",
+      "Comment": "Contributions to heat transport from parameterized eddy-induced advective transport due to any subgrid advective process. Diagnosed here as a function of latitude and basin.  Use Celsius for temperature scale.",
+      "Dimensions": "latitude basin time",
+      "Frequency": "mon",
+      "Long name": "Northward Ocean Heat Transport Due to Parameterized Eddy Advection",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "For models which do not have a Cartesian lat-long grid, this transport can be approximated as thetransport across zig-zag paths corresponding to latitudes with spacing between latitudes appropriate tothe model's resolution, as is done for the ocean meridional overturning mass streamfunction.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time: mean CMIP7:longitude: sum (basin sum [along zig-zag grid path]) depth: sum time: mean,",
+      "Units": "W",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "combine_cubes_to_basin_coord(hfbasinpadv_global, hfbasinpadv_atlantic, hfbasinpadv_indopacific, mask_global=global_ocean_1D_V, mask_atl=atlantic_arctic_ocean_1D_V, mask_indpac=indian_pacific_ocean_1D_V)",
+      "Expression UKESM1": "combine_cubes_to_basin_coord(hfbasinpadv_global, hfbasinpadv_atlantic, hfbasinpadv_indopacific, mask_global=global_ocean_1D_V, mask_atl=atlantic_arctic_ocean_1D_V, mask_indpac=indian_pacific_ocean_1D_V)",
+      "Model units": "PW"
+    },
+    "STASH entries": [],
+    "issue_number": 1443,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.mon.hfbasinpadv_tavg-u-hys-sea (Omon.hfbasinpadv)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hfbasin_tavg-u-hys-sea",
+      "CF standard name": "northward_ocean_heat_transport",
+      "CMIP6 Differences": "\"cell_methods\" was \"longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time: mean\";",
+      "Cell measures": "",
+      "Cell methods": "longitude: sum (basin sum [along zig-zag grid path]) depth: sum time: mean",
+      "Comment": "Contains contributions from all physical processes affecting the northward heat transport, including resolved advection, parameterized advection, lateral diffusion, etc. Diagnosed here as a function of latitude and basin.   Use Celsius for temperature scale.",
+      "Dimensions": "latitude basin time",
+      "Frequency": "mon",
+      "Long name": "Northward Ocean Heat Transport",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "For models which do not have a Cartesian lat-long grid, this transport can be approximated as thetransport across zig-zag paths corresponding to latitudes with spacing between latitudes appropriate tothe model's resolution, as is done for the ocean meridional overturning mass streamfunction.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time: mean CMIP7:longitude: sum (basin sum [along zig-zag grid path]) depth: sum time: mean,",
+      "Units": "W",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "combine_cubes_to_basin_coord(hfbasin_global, hfbasin_atlantic, hfbasin_indopacific, mask_global=global_ocean_1D_V, mask_atl=atlantic_arctic_ocean_1D_V, mask_indpac=indian_pacific_ocean_1D_V)",
+      "Expression UKESM1": "combine_cubes_to_basin_coord(hfbasin_global, hfbasin_atlantic, hfbasin_indopacific, mask_global=global_ocean_1D_V, mask_atl=atlantic_arctic_ocean_1D_V, mask_indpac=indian_pacific_ocean_1D_V)",
+      "Model units": "PW"
+    },
+    "STASH entries": [],
+    "issue_number": 1442,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.mon.hfbasin_tavg-u-hys-sea (Omon.hfbasin)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hfacrossline_tavg-u-ht-sea",
+      "CF standard name": "ocean_heat_transport_across_line",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea depth: sum where sea time: mean",
+      "Comment": "Depth-integrated total heat transport from resolved and parameterized processes across different lines on the Earth's surface (based on appendix J and table J1 of Griffies\u00a0et al., 2016). Formally, this means the integral along the line of the normal component of the heat transport. Positive and negative numbers refer to total northward/eastward and southward/westward transports, respectively. The transport should be evaluated for the full depth of the ocean, except for the Pacific Equatorial Undercurrent, which is averaged from the surface to 350m. Use Celsius for temperature scale.",
+      "Dimensions": "oline time",
+      "Frequency": "mon",
+      "Long name": "Ocean Heat Transport across Lines",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "W",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1441,
+    "labels": [
+      "mon",
+      "ocean"
+    ],
+    "title": "Variable ocean.mon.hfacrossline_tavg-u-ht-sea (Omon.hfacrossline)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "graz_tavg-l-hxy-sea",
+      "CF standard name": "tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_grazing_of_phytoplankton",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Total grazing of phytoplankton by zooplankton defined as tendency of moles of carbon per cubic metre.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Total Grazing of Phytoplankton by Zooplankton",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-3 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "(MIGRAZP3 + MEGRAZP3) * C_TO_N_RATIO",
+      "Model units": "mmol m-3 d-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1440,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.graz_tavg-l-hxy-sea (Omon.graz)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fsn_tavg-u-hm-sea",
+      "CF standard name": "tendency_of_ocean_mole_content_of_elemental_nitrogen_due_to_deposition_and_fixation_and_runoff",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Flux of nitrogen into the ocean due to deposition (sum of dry and wet deposition), fixation (the production of ammonia from nitrogen gas by diazotrophs) and runoff (liquid water which drains from land).",
+      "Dimensions": "longitude latitude time depth0m",
+      "Frequency": "mon",
+      "Long name": "Surface Downward Net Flux of Nitrogen",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time depth0m CMIP7:longitude latitude time  depth0m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "mol m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1439,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.fsn_tavg-u-hm-sea (Omon.fsn)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fsitherm_tavg-u-hxy-sea",
+      "CF standard name": "water_flux_into_sea_water_due_to_sea_ice_thermodynamics",
+      "CMIP6 Differences": "\"modeling_realm\" was \"ocean seaIce\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "computed as the sea ice thermodynamic water flux into the ocean divided by the area of the ocean portion of the grid cell.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Water Flux into Sea Water Due to Sea Ice Thermodynamics",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "OMDP has this as priority=2. The sea-ice folks requested that the priority be raised to 1. Report on native horizontal grid as well as mapped onto sphere.",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "fsitherm",
+      "Expression UKESM1": "fsitherm",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1438,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.mon.fsitherm_tavg-u-hxy-sea (Omon.fsitherm)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "fsfe_tavg-u-hm-sea",
       "CF standard name": "tendency_of_ocean_mole_content_of_iron_due_to_deposition_and_runoff_and_sediment_dissolution",
       "CMIP6 Differences": "",
