@@ -1,6 +1,343 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "ph_tavg-z0m-hxy-sea",
+      "CF standard name": "sea_water_ph_reported_on_total_scale",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "negative log10 of hydrogen ion concentration with the concentration expressed as mol H kg-1.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface pH",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "PH3[depth=0]",
+      "Model units": "1"
+    },
+    "STASH entries": [],
+    "issue_number": 1530,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.ph_tavg-z0m-hxy-sea (Omon.phos)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "phcint_tavg-u-hxy-u",
+      "CF standard name": "integral_wrt_depth_of_sea_water_potential_temperature_expressed_as_heat_content",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea",
+      "Comment": "This is the vertically-integrated heat content derived from potential temperature (thetao).",
+      "Dimensions": "longitude latitude oplayer4 time",
+      "Frequency": "mon",
+      "Long name": "Integrated Ocean Heat Content from Potential Temperature",
+      "Modeling realm": "ocean",
+      "Positive": "down",
+      "Processing notes": "CHANGE: This is a new variable, which aids in calculation of energy budgets.  It is preferable to calculate it online, due to difficulties with vertical discretizations.  It is calculated as an integral over hydrostatic pressure ranges, which makes it directly comparable with observations so long as integrals are over 0-300m, 300m-700m, 700m-2000m, total depth.",
+      "Units": "J m-2",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1529,
+    "labels": [
+      "mon",
+      "ocean"
+    ],
+    "title": "Variable ocean.mon.phcint_tavg-u-hxy-u (Omon.phcint)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ph_tavg-l-hxy-sea",
+      "CF standard name": "sea_water_ph_reported_on_total_scale",
+      "CMIP6 Differences": "\"comment\" was \"negative log of hydrogen ion concentration with the concentration expressed as mol H kg-1.\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "negative log10 of hydrogen ion concentration with the concentration expressed as mol H kg-1.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "pH",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "Concentrations of all 3D tracers in the uppermost ocean layer. See first table in Oyr for a complete list of these tracers.  \"Tracer\"  concentations should be reported even if they are diagnosed rather than prognostically calculated.",
+      "Units": "1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "PH3",
+      "Model units": "1"
+    },
+    "STASH entries": [],
+    "issue_number": 1528,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.ph_tavg-l-hxy-sea (Omon.ph)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "pfscint_tavg-u-hxy-u",
+      "CF standard name": "integral_wrt_depth_of_sea_water_preformed_salinity_expressed_as_salt_mass_content",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea",
+      "Comment": "This is a fundamental aspect of the changes in the hydrological cycle and their impact on the oceans, and due to new numerical schemes and vertical discretizations, it is important to calculate it consistently with the model formulation.",
+      "Dimensions": "longitude latitude oplayer4 time",
+      "Frequency": "mon",
+      "Long name": "Integral wrt depth of seawater preformed salinity expressed as salt mass content",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "CHANGE: This is a new variable, which aids in understanding hydrological change.\u00a0It is preferable to calculate it online, due to difficulties with vertical discretizations.\u00a0It is calculated as an integral over hydrostatic pressure ranges, which makes it directly comparable with observations.",
+      "Units": "kg m-2",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1527,
+    "labels": [
+      "mon",
+      "ocean"
+    ],
+    "title": "Variable ocean.mon.pfscint_tavg-u-hxy-u (Omon.pfscint)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "pbo_tavg-u-hxy-sea",
+      "CF standard name": "sea_water_pressure_at_sea_floor",
+      "CMIP6 Differences": "\"dimensions\" was \"longitude latitude time\"; ; \"comment\" was \"'Sea water pressure' is the pressure that exists in the medium of sea water.  It includes the pressure due to overlying sea water, sea ice, air and any other medium that may be present.\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "\"Sea water pressure\" is the pressure that exists in the medium of sea water.  It includes the pressure due to overlying sea water, sea ice, air and any other medium that may be present.",
+      "Dimensions": "longitude latitude depthseafloor time",
+      "Frequency": "mon",
+      "Long name": "Sea Water Pressure at Sea Floor",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6: Spatial shape updated to sea floor; CMIP5 had units of dbar.  CMIP6 uses Pa. Report on native horizontal grid as well as on a spherical latitude/longitude grid.; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time CMIP7:longitude latitude depthseafloor time,",
+      "Units": "Pa",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "pbo",
+      "Expression UKESM1": "pbo",
+      "Model units": "dbar"
+    },
+    "STASH entries": [],
+    "issue_number": 1526,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.mon.pbo_tavg-u-hxy-sea (Omon.pbo)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ocfriver_tavg-u-hxy-sea",
+      "CF standard name": "tendency_of_ocean_mole_content_of_organic_carbon_due_to_runoff_and_sediment_dissolution",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Organic Carbon supply to ocean through runoff (separate from gas exchange)",
+      "Dimensions": "longitude latitude time depth0m",
+      "Frequency": "mon",
+      "Long name": "Flux of Organic Carbon into Ocean Surface by Runoff",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time depth0m CMIP7:longitude latitude time  depth0m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "mol m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1525,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.ocfriver_tavg-u-hxy-sea (Omon.ocfriver)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "obvfsq_tavg-l-hxy-sea",
+      "CF standard name": "square_of_brunt_vaisala_frequency_in_sea_water",
+      "CMIP6 Differences": "\"comment\" was \"The phrase 'square_of_X' means X*X. Frequency is the number of oscillations of a wave per unit time. Brunt-Vaisala frequency is also sometimes called 'buoyancy frequency' and is a measure of the vertical stratification of the medium.\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "The phrase \"square_of_X\" means X\\*X. Frequency is the number of oscillations of a wave per unit time. Brunt-Vaisala frequency is also sometimes called \"buoyancy frequency\" and is a measure of the vertical stratification of the medium.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Square of Brunt Vaisala Frequency in Sea Water",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid as well as on a spherical latitude/longitude grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.",
+      "Units": "s-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "mask_copy(obvfsq, mask_3D_T)",
+      "Expression UKESM1": "mask_copy(obvfsq, mask_3D_T)",
+      "Model units": "s-2"
+    },
+    "STASH entries": [],
+    "issue_number": 1524,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.mon.obvfsq_tavg-l-hxy-sea (Omon.obvfsq)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "o2sat_tavg-l-hxy-sea",
+      "CF standard name": "mole_concentration_of_dissolved_molecular_oxygen_in_sea_water_at_saturation",
+      "CMIP6 Differences": "\"comment\" was \"'Mole concentration at saturation' means the mole concentration in a saturated solution. Mole concentration means number of moles per unit volume, also called 'molarity', and is used in the construction 'mole_concentration_of_X_in_Y', where X is a material constituent of Y. A chemical or biological species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'.\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "\"Mole concentration at saturation\" means the mole concentration in a saturated solution. Mole concentration means number of moles per unit volume, also called \"molarity\", and is used in the construction \"mole_concentration_of_X_in_Y\", where X is a material constituent of Y. A chemical or biological species denoted by X may be described by a single term such as \"nitrogen\" or a phrase such as \"nox_expressed_as_nitrogen\".",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Dissolved Oxygen Concentration at Saturation",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "Concentrations of all 3D tracers in the uppermost ocean layer. See first table in Oyr for a complete list of these tracers.  \"Tracer\"  concentations should be reported even if they are diagnosed rather than prognostically calculated.",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "O2SAT3",
+      "Model units": "mmol m-3"
+    },
+    "STASH entries": [],
+    "issue_number": 1523,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.o2sat_tavg-l-hxy-sea (Omon.o2sat)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "o2_tavg-u-hm-sea",
+      "CF standard name": "mole_concentration_of_dissolved_molecular_oxygen_in_sea_water",
+      "CMIP6 Differences": "\"comment\" was \"'Mole concentration' means number of moles per unit volume, also called 'molarity', and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y.  A chemical or biological species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'.\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "'Mole concentration' means number of moles per unit volume, also called \"molarity\", and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y.  A chemical or biological species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Dissolved Oxygen Concentration",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "OXY_E3T[depth=0] / thkcello[depth=0]",
+      "Model units": "mmol m-3"
+    },
+    "STASH entries": [],
+    "issue_number": 1522,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.o2_tavg-u-hm-sea (Omon.o2os)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "o2_tavg-l-hxy-sea",
+      "CF standard name": "mole_concentration_of_dissolved_molecular_oxygen_in_sea_water",
+      "CMIP6 Differences": "\"comment\" was \"'Mole concentration' means number of moles per unit volume, also called 'molarity', and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y.  A chemical or biological species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'.\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "'Mole concentration' means number of moles per unit volume, also called \"molarity\", and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y.  A chemical or biological species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Dissolved Oxygen Concentration",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "Concentrations of all 3D tracers in the uppermost ocean layer. See first table in Oyr for a complete list of these tracers.  \"Tracer\"  concentations should be reported even if they are diagnosed rather than prognostically calculated.",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "OXY_E3T / thkcello",
+      "Model units": "mmol m-3"
+    },
+    "STASH entries": [],
+    "issue_number": 1521,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.o2_tavg-l-hxy-sea (Omon.o2)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "no3os_tavg-u-hm-sea",
+      "CF standard name": "mole_concentration_of_nitrate_in_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Mole concentration means moles (amount of substance) per unit volume and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Dissolved Nitrate Concentration",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "DIN_E3T[depth=0] / thkcello[depth=0]",
+      "Model units": "mmol m-3"
+    },
+    "STASH entries": [],
+    "issue_number": 1520,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.no3os_tavg-u-hm-sea (Omon.no3os)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "no3_tavg-l-hxy-sea",
       "CF standard name": "mole_concentration_of_nitrate_in_sea_water",
       "CMIP6 Differences": "",
