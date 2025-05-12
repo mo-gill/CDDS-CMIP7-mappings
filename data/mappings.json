@@ -1,6 +1,414 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "??_tavg-u-hxy-lnd",
+      "CF standard name": "surface_temperature",
+      "CMIP6 Differences": "\"comment\" was \"Temperature of the snow surface as it interacts with the atmosphere, averaged over a grid cell.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "Snow Surface Temperature",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Snow Surface Temperature",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s00i024[lbproc=128]",
+      "Expression UKESM1": "m01s00i024[lbproc=128]",
+      "Model units": "K"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s00i024",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "24",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s00i024",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "24",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 800,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.day.??_tavg-u-hxy-lnd (Eday.tsns)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tsn_tavg-u-hxy-lnd",
+      "CF standard name": "temperature_in_surface_snow",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: mean where land time: mean (with samples weighted by snow mass)\"; ; \"comment\" was \"This temperature is averaged over all the snow in the grid cell that rests on land or land ice.  When computing the time-mean here, the time samples, weighted by the mass of snow on the land portion of the grid cell, are accumulated and then divided by the sum of the weights.   Reported as missing in regions free of snow on land.\"; ; \"modeling_realm\" was \"landIce land\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean (weighted by snow mass on land)",
+      "Comment": "This temperature is averaged over all the snow in the grid cell that rests on land or land ice.  When computing the time-mean here, the time samples, weighted by the mass of snow on the land portion of the grid cell, are accumulated and then divided by the sum of the weights.   Reported as \"missing in regions free of snow on land.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Snow Internal Temperature",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean where land time: mean (with samples weighted by snow mass) CMIP7:area: mean where land time: mean (weighted by snow mass on land),; CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:land, landIce CMIP7:land, ocean,",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 799,
+    "labels": [
+      "day",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.day.tsn_tavg-u-hxy-lnd (Eday.tsn)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tsl_tavg-l-hxy-lnd",
+      "CF standard name": "soil_temperature",
+      "CMIP6 Differences": "\"comment\" was \"Temperature of soil. Reported as missing for grid cells with no land.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "Temperature of each soil layer.  Reported as \"missing\" for grid cells occupied entirely by \"sea\".",
+      "Dimensions": "longitude latitude sdepth time",
+      "Frequency": "day",
+      "Long name": "Temperature of Soil",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s08i225[lbproc=128]",
+      "Expression UKESM1": "m01s08i225[lbproc=128]",
+      "Model units": "K"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s08i225",
+        "domain_profile": "DSOIL",
+        "model": "UKESM1",
+        "stash_number": "8,225",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s08i225",
+        "domain_profile": "DSOIL",
+        "model": "HadGEM3-GC31",
+        "stash_number": "8,225",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 798,
+    "labels": [
+      "day",
+      "land",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable land.day.tsl_tavg-l-hxy-lnd (Eday.tsl)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ts_tavg-u-hxy-u",
+      "CF standard name": "surface_temperature",
+      "CMIP6 Differences": "\"comment\" was \"Temperature of the lower boundary of the atmosphere\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Surface temperature (skin for open ocean)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Surface Temperature",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s00i024[lbproc=128]",
+      "Expression UKESM1": "m01s00i024[lbproc=128]",
+      "Model units": "K"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s00i024",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "24",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s00i024",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "24",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 797,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.day.ts_tavg-u-hxy-u (Eday.ts)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tpf_tavg-u-hxy-lnd",
+      "CF standard name": "permafrost_layer_thickness",
+      "CMIP6 Differences": "\"comment\" was \"The mean thickness of the permafrost layer in the land portion of the grid cell.  Reported as zero in permafrost-free regions.\"; ; \"modeling_realm\" was \"landIce land\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "permafrost_layer_thickness",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Permafrost Layer Thickness",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:land, landIce CMIP7:land, ocean,",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 796,
+    "labels": [
+      "day",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.day.tpf_tavg-u-hxy-lnd (Eday.tpf)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tdps_tavg-h2m-hxy-u",
+      "CF standard name": "dew_point_temperature",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Dew point temperature is the temperature at which a parcel of air reaches saturation upon being cooled at constant pressure and specific humidity.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "2m Dewpoint Temperature",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i250[lbproc=128]",
+      "Expression UKESM1": "m01s03i250[lbproc=128]",
+      "Model units": "K"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i250",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,250",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s03i250",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,250",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 795,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.day.tdps_tavg-h2m-hxy-u (Eday.tdps)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tauvpbl_tavg-u-hxy-u",
+      "CF standard name": "surface_downward_northward_stress_due_to_boundary_layer_mixing",
+      "CMIP6 Differences": "\"comment\" was \"The  downward northward stress associated with the models parameterization of the planetary boundary layer. (This request is related to a WGNE effort to understand how models parameterize the surface stresses.)\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "surface",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Northward Surface Stress from Planetary Boundary Layer Scheme",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "Pa",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i461[lbproc=128]",
+      "Expression UKESM1": "m01s03i461[lbproc=128]",
+      "Model units": "Pa"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i461",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,461",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s03i461",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,461",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 794,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.day.tauvpbl_tavg-u-hxy-u (Eday.tauvpbl)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tauv_tavg-u-hxy-u",
+      "CF standard name": "surface_downward_northward_stress",
+      "CMIP6 Differences": "\"comment\" was \"Downward northward wind stress at the surface\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "surface, now requesting daily output.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Surface Downward Northward Wind Stress",
+      "Modeling realm": "atmos",
+      "Positive": "down",
+      "Processing notes": "",
+      "Units": "Pa",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i461[lbproc=128]",
+      "Expression UKESM1": "m01s03i461[lbproc=128]",
+      "Model units": "Pa"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i461",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,461",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s03i461",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,461",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 793,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.day.tauv_tavg-u-hxy-u (Eday.tauv)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tauupbl_tavg-u-hxy-u",
+      "CF standard name": "surface_downward_eastward_stress_due_to_boundary_layer_mixing",
+      "CMIP6 Differences": "\"comment\" was \"The  downward eastward stress associated with the models parameterization of the planetary boundary layer. (This request is related to a WGNE effort to understand how models parameterize the surface stresses.)\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "surface",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Eastward Surface Stress from Planetary Boundary Layer Scheme",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "Pa",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i460[lbproc=128]",
+      "Expression UKESM1": "m01s03i460[lbproc=128]",
+      "Model units": "Pa"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i460",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,460",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s03i460",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,460",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 792,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.day.tauupbl_tavg-u-hxy-u (Eday.tauupbl)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "tauu_tavg-u-hxy-u",
       "CF standard name": "surface_downward_eastward_stress",
       "CMIP6 Differences": "",
