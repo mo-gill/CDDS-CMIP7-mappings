@@ -1,6 +1,300 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "chldiat_tavg-l-hxy-sea",
+      "CF standard name": "mass_concentration_of_diatoms_expressed_as_chlorophyll_in_sea_water",
+      "CMIP6 Differences": "\"comment\" was \"Chlorophyll from diatom phytoplankton component concentration alone\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "chlorophyll from diatom phytoplankton component concentration alone",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Mass Concentration of Diatoms Expressed as Chlorophyll in Sea Water",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "Concentrations of all 3D tracers in the uppermost ocean layer. See first table in Oyr for a complete list of these tracers.  \"Tracer\"  concentations should be reported even if they are diagnosed rather than prognostically calculated.",
+      "Units": "kg m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "CHD_E3T / thkcello",
+      "Model units": "mg m-3"
+    },
+    "STASH entries": [],
+    "issue_number": 1388,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.chldiat_tavg-l-hxy-sea (Omon.chldiat)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "chlcalc_tavg-u-hm-sea",
+      "CF standard name": "mass_concentration_of_calcareous_phytoplankton_expressed_as_chlorophyll_in_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "chlorophyll concentration from the calcite-producing phytoplankton component alone",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Mass Concentration of Calcareous Phytoplankton Expressed as Chlorophyll in Sea Water",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time CMIP7:longitude latitude time depth0m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "kg m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1387,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.chlcalc_tavg-u-hm-sea (Omon.chlcalcos)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "chlcalc_tavg-l-hxy-sea",
+      "CF standard name": "mass_concentration_of_calcareous_phytoplankton_expressed_as_chlorophyll_in_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "chlorophyll concentration from the calcite-producing phytoplankton component alone",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Mass Concentration of Calcareous Phytoplankton Expressed as Chlorophyll in Sea Water",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "Concentrations of all 3D tracers in the uppermost ocean layer. See first table in Oyr for a complete list of these tracers.  \"Tracer\"  concentations should be reported even if they are diagnosed rather than prognostically calculated.",
+      "Units": "kg m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1386,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.chlcalc_tavg-l-hxy-sea (Omon.chlcalc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "chl_tavg-l-hxy-sea",
+      "CF standard name": "mass_concentration_of_phytoplankton_expressed_as_chlorophyll_in_sea_water",
+      "CMIP6 Differences": "\"comment\" was \"Sum of chlorophyll from all phytoplankton group concentrations.  In most models this is equal to chldiat+chlmisc, that is the sum of Diatom Chlorophyll Mass Concentration and Other Phytoplankton Chlorophyll Mass Concentration\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "sum of chlorophyll from all phytoplankton group concentrations.  In most models this is equal to chldiat+chlmisc, that is the sum of \"Diatom Chlorophyll Mass Concentration\" plus \"Other Phytoplankton Chlorophyll Mass Concentration\"",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Mass Concentration of Total Phytoplankton Expressed as Chlorophyll in Sea Water",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "Concentrations of all 3D tracers in the uppermost ocean layer. See first table in Oyr for a complete list of these tracers.  \"Tracer\" concentrations should be reported even if they are diagnosed rather than prognostically calculated.",
+      "Units": "kg m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "(CHN_E3T + CHD_E3T) / thkcello",
+      "Model units": "mg m-3"
+    },
+    "STASH entries": [],
+    "issue_number": 1385,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.chl_tavg-l-hxy-sea (Omon.chl)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "chcint_tavg-u-hxy-u",
+      "CF standard name": "integral_wrt_depth_of_sea_water_conservative_temperature_expressed_as_heat_content",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea",
+      "Comment": "This is the vertically-integrated heat content derived from conservative temperature (bigthetao).",
+      "Dimensions": "longitude latitude oplayer4 time",
+      "Frequency": "mon",
+      "Long name": "Depth Integrated Seawater Conservative Temperature Expressed As Heat Content",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "CHANGE: This is a new variable, which aids in calculation of energy budgets.\u00a0It is preferable to calculate it online, due to difficulties with vertical discretizations.\u00a0It is calculated as an integral over hydrostatic pressure ranges, which makes it directly comparable with observations so long as integrals are over 0-300m, 300m-700m, 700m-2000m, total depth.",
+      "Units": "J m-2",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1384,
+    "labels": [
+      "mon",
+      "ocean"
+    ],
+    "title": "Variable ocean.mon.chcint_tavg-u-hxy-u (Omon.chcint)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "calc_tavg-u-hm-sea",
+      "CF standard name": "mole_concentration_of_calcite_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "sum of particulate calcite component concentrations (e.g. Phytoplankton, Detrital, etc.)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Calcite Concentration",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time CMIP7:longitude latitude time depth0m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1383,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.calc_tavg-u-hm-sea (Omon.calcos)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "calc_tavg-l-hxy-sea",
+      "CF standard name": "mole_concentration_of_calcite_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "\"comment\" was \"Sum of particulate calcite component concentrations (e.g. Phytoplankton, Detrital, etc.)\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "sum of particulate calcite component concentrations (e.g. Phytoplankton, Detrital, etc.)",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Calcite Concentration",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "Concentrations of all 3D tracers in the uppermost ocean layer. See first table in Oyr for a complete list of these tracers.  \"Tracer\"  concentrations should be reported even if they are diagnosed rather than prognostically calculated.",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1382,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.calc_tavg-l-hxy-sea (Omon.calc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "bigthetao_tavg-l-hm-sea",
+      "CF standard name": "sea_water_conservative_temperature",
+      "CMIP6 Differences": "\"dimensions\" was \"time\";",
+      "Cell measures": "",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Diagnostic should be contributed only for models using conservative temperature as prognostic field.",
+      "Dimensions": "olevel time",
+      "Frequency": "mon",
+      "Long name": "Global Average Sea Water Conservative Temperature",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:time CMIP7:olevel time,",
+      "Units": "degC",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1381,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.mon.bigthetao_tavg-l-hm-sea (Omon.bigthetaoga)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "bigthetao_tavg-l-hxy-sea",
+      "CF standard name": "sea_water_conservative_temperature",
+      "CMIP6 Differences": "\"comment\" was \"Sea water conservative temperature (this should be contributed only for models using conservative temperature as prognostic field)\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Diagnostic should be contributed only for models using conservative temperature as prognostic field.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Sea Water Conservative Temperature",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "degC",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1380,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "BCV"
+    ],
+    "title": "Variable ocean.mon.bigthetao_tavg-l-hxy-sea (Omon.bigthetao)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "bacc_tavg-u-hm-sea",
+      "CF standard name": "mole_concentration_of_bacteria_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "\"comment\" was \"Sum of bacterial carbon component concentrations\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "sum of bacterial carbon component concentrations",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Bacterial Carbon Concentration",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time CMIP7:longitude latitude time depth0m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1379,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.bacc_tavg-u-hm-sea (Omon.baccos)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "arag_tavg-u-hm-sea",
       "CF standard name": "mole_concentration_of_aragonite_expressed_as_carbon_in_sea_water",
       "CMIP6 Differences": "",
