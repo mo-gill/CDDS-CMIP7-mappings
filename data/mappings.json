@@ -1,6 +1,297 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "wfo_tavg-u-hxy-sea",
+      "CF standard name": "water_flux_into_sea_water",
+      "CMIP6 Differences": "\"comment\" was \"Computed as the water flux into the ocean divided by the area of the ocean portion of the grid cell. This is the sum *wfonocorr* and *wfcorr*.\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Computed as the water flux into the ocean divided by the area of the ocean portion of the grid cell. This is the sum \\*wfonocorr\\* and \\*wfcorr\\*.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Water Flux into Sea Water",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "net flux of water into sea water, including any flux correction. Report on native horizontal grid as well as mapped onto sphere.",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "-1 * (sowaflup + sowflisf)",
+      "Expression UKESM1": "-1 * (sowaflup + sowflisf)",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1601,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.mon.wfo_tavg-u-hxy-sea (Omon.wfo)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "wfcorr_tavg-u-hxy-sea",
+      "CF standard name": "water_flux_correction",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Computed as the water flux into the ocean due to flux correction divided by the area of the ocean portion of the grid cell.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Water Flux Correction",
+      "Modeling realm": "ocean",
+      "Positive": "down",
+      "Processing notes": "If this does not vary from one year to the next, report only a single year.  Most models now have zero water flux adjustment, in which case ignore or report zero. Report on native horizontal grid as well as mapped onto sphere.",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1600,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.mon.wfcorr_tavg-u-hxy-sea (Omon.wfcorr)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "wdirwindsea_tavg-u-hxy-sea",
+      "CF standard name": "sea_surface_wind_wave_from_direction",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Mean direction of wave propagation (direction from which the wave is coming) derived from the wind-sea component of the wave energy spectrum (i.e., local wind waves). This variable is usually expressed in degrees relative to true north.",
+      "Dimensions": "longitude latitude time depth0m",
+      "Frequency": "mon",
+      "Long name": "Sea Wave Direction",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "degree",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1599,
+    "labels": [
+      "mon",
+      "ocean"
+    ],
+    "title": "Variable ocean.mon.wdirwindsea_tavg-u-hxy-sea (Omon.wdirwindsea)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "wdirswell_tavg-u-hxy-sea",
+      "CF standard name": "sea_surface_swell_wave_from_direction",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Mean direction of wave propagation (direction from which the wave is coming) derived from the swell component of the wave energy spectrum (i.e., waves that have propagated away from their generation area). This variable is usually expressed in degrees relative to true north.",
+      "Dimensions": "longitude latitude time depth0m",
+      "Frequency": "mon",
+      "Long name": "Swell Wave Direction",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "degree",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1598,
+    "labels": [
+      "mon",
+      "ocean"
+    ],
+    "title": "Variable ocean.mon.wdirswell_tavg-u-hxy-sea (Omon.wdirswell)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "wdir_tavg-u-hxy-sea",
+      "CF standard name": "sea_surface_wave_from_direction",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Mean direction of wave propagation (direction from which the wave is coming) derived from the total wave energy spectrum, incorporating both wind-sea and swell waves.\u00a0This variable is usually expressed in degrees relative to true north.",
+      "Dimensions": "longitude latitude time depth0m",
+      "Frequency": "mon",
+      "Long name": "Total Wave Direction",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "degree",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1597,
+    "labels": [
+      "mon",
+      "ocean"
+    ],
+    "title": "Variable ocean.mon.wdir_tavg-u-hxy-sea (Omon.wdir)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "vsfsit_tavg-u-hxy-sea",
+      "CF standard name": "virtual_salt_flux_into_sea_water_due_to_sea_ice_thermodynamics",
+      "CMIP6 Differences": "\"modeling_realm\" was \"ocean seaIce\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "This variable measures the virtual salt flux into sea water due to the melting of sea ice. It is set to zero in models which receive a real water flux.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Virtual Salt Flux into Sea Water Due to Sea Ice Thermodynamics",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "The priority set by the WGOMD was 2 for this field.  The sea-ice folks requested that the priority be raised to 1. Report on native horizontal grid.",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1596,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.mon.vsfsit_tavg-u-hxy-sea (Omon.vsfsit)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "vsfriver_tavg-u-hxy-sea",
+      "CF standard name": "virtual_salt_flux_into_sea_water_from_rivers",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "zero for models using real water fluxes.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Virtual Salt Flux into Sea Water from Rivers",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid.",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1595,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.mon.vsfriver_tavg-u-hxy-sea (Omon.vsfriver)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "vsfpr_tavg-u-hxy-sea",
+      "CF standard name": "virtual_salt_flux_into_sea_water_due_to_rainfall",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "zero for models using real water fluxes.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Virtual Salt Flux into Sea Water Due to Rainfall",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid.",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1594,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.mon.vsfpr_tavg-u-hxy-sea (Omon.vsfpr)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "vsfevap_tavg-u-hxy-sea",
+      "CF standard name": "virtual_salt_flux_into_sea_water_due_to_evaporation",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "zero for models using real water fluxes.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Virtual Salt Flux into Sea Water Due to Evaporation",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid.",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1593,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.mon.vsfevap_tavg-u-hxy-sea (Omon.vsfevap)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "vsfcorr_tavg-u-hxy-sea",
+      "CF standard name": "virtual_salt_flux_correction",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "It is set to zero in models which receive a real water flux.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Virtual Salt Flux Correction",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid.",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1592,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.mon.vsfcorr_tavg-u-hxy-sea (Omon.vsfcorr)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "vsf_tavg-u-hxy-sea",
       "CF standard name": "virtual_salt_flux_into_sea_water",
       "CMIP6 Differences": "",
