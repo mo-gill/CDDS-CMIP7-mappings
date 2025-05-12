@@ -1,6 +1,264 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "tos_tavg-u-hxy-sea",
+      "CF standard name": "sea_surface_temperature",
+      "CMIP6 Differences": "\"comment\" was \"Temperature of upper boundary of the liquid ocean, including temperatures below sea-ice and floating ice shelves.\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "This may differ from \"surface temperature\" in regions of sea ice or floating ice shelves. For models using conservative temperature as the prognostic field, they should report the top ocean layer as surface potential temperature, which is the same as surface in situ temperature.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Sea Surface Temperature",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Note change from CMIP5 K to CMIP6 C. Report on native horizontal grid as well as on a spherical latitude/longitude grid.",
+      "Units": "degC",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "tos",
+      "Expression UKESM1": "tos",
+      "Model units": "degC"
+    },
+    "STASH entries": [],
+    "issue_number": 1583,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable ocean.mon.tos_tavg-u-hxy-sea (Omon.tos)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tob_tavg-u-hxy-sea",
+      "CF standard name": "sea_water_potential_temperature_at_sea_floor",
+      "CMIP6 Differences": "\"dimensions\" was \"longitude latitude time\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Potential temperature at the ocean bottom-most grid cell.",
+      "Dimensions": "longitude latitude depthseafloor time",
+      "Frequency": "mon",
+      "Long name": "Sea Water Potential Temperature at Sea Floor",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid as well as on a spherical latitude/longitude grid.; CHANGE SINCE CMIP6: Spatial shape updated to sea floor; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time CMIP7:longitude latitude depthseafloor time,",
+      "Units": "degC",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "tob",
+      "Expression UKESM1": "tob",
+      "Model units": "degC"
+    },
+    "STASH entries": [],
+    "issue_number": 1582,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.mon.tob_tavg-u-hxy-sea (Omon.tob)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "thkcellvo_tavg-l-hxy-sea",
+      "CF standard name": "cell_thickness",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "The time varying thickness of ocean cells centered at v-points (points for velocity in the y-direction). \"Thickness\" means the vertical extent of a layer. \"Cell\" refers to a model grid-cell.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Ocean Model Cell Thickness at v-points",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid as well as on a spherical latitude/longitude grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.",
+      "Units": "m",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1581,
+    "labels": [
+      "mon",
+      "ocean"
+    ],
+    "title": "Variable ocean.mon.thkcellvo_tavg-l-hxy-sea (Omon.thkcellvo)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "thkcelluo_tavg-l-hxy-sea",
+      "CF standard name": "cell_thickness",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "The time varying thickness of ocean cells centered at u-points (points for velocity in the x-direction). \"Thickness\" means the vertical extent of a layer. \"Cell\" refers to a model grid-cell.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Ocean Model Cell Thickness at u-points",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid as well as on a spherical latitude/longitude grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.",
+      "Units": "m",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1580,
+    "labels": [
+      "mon",
+      "ocean"
+    ],
+    "title": "Variable ocean.mon.thkcelluo_tavg-l-hxy-sea (Omon.thkcelluo)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "thkcello_tavg-l-hxy-sea",
+      "CF standard name": "cell_thickness",
+      "CMIP6 Differences": "\"comment\" was \"'Thickness' means the vertical extent of a layer. 'Cell' refers to a model grid-cell.\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "The time varying thickness of ocean cells. \"Thickness\" means the vertical extent of a layer. \"Cell\" refers to a model grid-cell.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Ocean Model Cell Thickness",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid as well as on a spherical latitude/longitude grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "thkcello",
+      "Expression UKESM1": "thkcello",
+      "Model units": "m"
+    },
+    "STASH entries": [],
+    "issue_number": 1579,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable ocean.mon.thkcello_tavg-l-hxy-sea (Omon.thkcello)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "thetao_tavg-l-hm-sea",
+      "CF standard name": "sea_water_potential_temperature",
+      "CMIP6 Differences": "\"dimensions\" was \"time\";",
+      "Cell measures": "",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Diagnostic should be contributed even for models using conservative temperature as prognostic field",
+      "Dimensions": "olevel time",
+      "Frequency": "mon",
+      "Long name": "Global Average Sea Water Potential Temperature",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:time CMIP7:olevel time,",
+      "Units": "degC",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "thetaoga",
+      "Expression UKESM1": "thetaoga",
+      "Model units": "degC"
+    },
+    "STASH entries": [],
+    "issue_number": 1578,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.mon.thetao_tavg-l-hm-sea (Omon.thetaoga)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "thetao_tavg-l-hxy-sea",
+      "CF standard name": "sea_water_potential_temperature",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Diagnostic should be contributed even for models using conservative temperature as prognostic field.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Sea Water Potential Temperature",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid as well as on a spherical latitude/longitude grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.",
+      "Units": "degC",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "thetao",
+      "Expression UKESM1": "thetao",
+      "Model units": "degC"
+    },
+    "STASH entries": [],
+    "issue_number": 1577,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable ocean.mon.thetao_tavg-l-hxy-sea (Omon.thetao)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tauvo_tavg-u-hxy-sea",
+      "CF standard name": "downward_y_stress_at_sea_water_surface",
+      "CMIP6 Differences": "\"cell_measures\" was \"--OPT\"; ; \"cell_methods\" was \"time: mean\";",
+      "Cell measures": "::OPT",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "This is the stress on the liquid ocean from overlying atmosphere, sea ice, ice shelf, etc.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Sea Water Surface Downward Y Stress",
+      "Modeling realm": "ocean",
+      "Positive": "down",
+      "Processing notes": "Report on native horizontal grid.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:time: mean CMIP7:area: mean where sea time: mean,",
+      "Units": "N m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "mask_copy(tauvo, mask_2D_V)",
+      "Expression UKESM1": "mask_copy(tauvo, mask_2D_V)",
+      "Model units": "N m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 1576,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable ocean.mon.tauvo_tavg-u-hxy-sea (Omon.tauvo)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "tauuo_tavg-u-hxy-sea",
       "CF standard name": "downward_x_stress_at_sea_water_surface",
       "CMIP6 Differences": "\"cell_measures\" was \"--OPT\"; ; \"cell_methods\" was \"time: mean\";",
