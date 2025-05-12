@@ -1,6 +1,295 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "fg13co2_tavg-u-hm-sea",
+      "CF standard name": "surface_downward_mass_flux_of_13C_dioxide_abiotic_analogue_expressed_as_13C",
+      "CMIP6 Differences": "\"dimensions\" was \"longitude latitude time depth0m\"; ; \"comment\" was \"Gas exchange flux of carbon-13 as CO2 (positive into ocean)\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Gas exchange flux of abiotic 13CO2 (positive into ocean)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Downward Mass Flux of Carbon-13 as 13CO2 [kgC m-2 s-1]",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "down",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time depth0m CMIP7:longitude latitude time  depth0m,",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1426,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.fg13co2_tavg-u-hm-sea (Omon.fg13co2)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "expsiob_tavg-u-hxy-sea",
+      "CF standard name": "sinking_mole_flux_of_particulate_silicon_in_sea_water",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Downward sinking flux of particulate silicon at seafloor",
+      "Dimensions": "longitude latitude depthseafloor time",
+      "Frequency": "mon",
+      "Long name": "Sinking Flux of Particulate Silicon Reaching the Ocean Bottom",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "down",
+      "Processing notes": "Variable value should be reported as the flux exiting the bottom of the deepest ocean layer",
+      "Units": "mol m-2 s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1425,
+    "labels": [
+      "mon",
+      "ocnBgchem"
+    ],
+    "title": "Variable ocnBgchem.mon.expsiob_tavg-u-hxy-sea (Omon.expsiob)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "exppob_tavg-u-hxy-sea",
+      "CF standard name": "sinking_mole_flux_of_particulate_organic_phosphorus_in_sea_water",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Downward sinking flux of particulate organic phosphorus at seafloor",
+      "Dimensions": "longitude latitude depthseafloor time",
+      "Frequency": "mon",
+      "Long name": "Sinking Flux of Particulate Organic Phosphorus Reaching the Ocean Bottom",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "down",
+      "Processing notes": "Variable value should be reported as the flux exiting the bottom of the deepest ocean layer",
+      "Units": "mol m-2 s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1424,
+    "labels": [
+      "mon",
+      "ocnBgchem"
+    ],
+    "title": "Variable ocnBgchem.mon.exppob_tavg-u-hxy-sea (Omon.exppob)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "expnob_tavg-u-hxy-sea",
+      "CF standard name": "sinking_mole_flux_of_particulate_organic_nitrogen_in_sea_water",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Downward sinking flux of particulate organic nitrogen at seafloor",
+      "Dimensions": "longitude latitude depthseafloor time",
+      "Frequency": "mon",
+      "Long name": "Sinking Flux of Particulate Organic Nitrogen Reaching the Ocean Bottom",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "down",
+      "Processing notes": "Variable value should be reported as the flux exiting the bottom of the deepest ocean layer",
+      "Units": "mol m-2 s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1423,
+    "labels": [
+      "mon",
+      "ocnBgchem"
+    ],
+    "title": "Variable ocnBgchem.mon.expnob_tavg-u-hxy-sea (Omon.expnob)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "expfeob_tavg-u-hxy-sea",
+      "CF standard name": "sinking_mole_flux_of_particulate_iron_in_sea_water",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Downward sinking flux of particulate iron at seafloor",
+      "Dimensions": "longitude latitude depthseafloor time",
+      "Frequency": "mon",
+      "Long name": "Sinking Flux of Particulate Iron Reaching the Ocean Bottom",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "down",
+      "Processing notes": "Variable value should be reported as the flux exiting the bottom of the deepest ocean layer",
+      "Units": "mol m-2 s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1422,
+    "labels": [
+      "mon",
+      "ocnBgchem"
+    ],
+    "title": "Variable ocnBgchem.mon.expfeob_tavg-u-hxy-sea (Omon.expfeob)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "expcob_tavg-u-hxy-sea",
+      "CF standard name": "sinking_mole_flux_of_particulate_organic_matter_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Downward sinking flux of particulate organic carbon at seafloor",
+      "Dimensions": "longitude latitude depthseafloor time",
+      "Frequency": "mon",
+      "Long name": "Sinking Flux of Particulate Organic Carbon Reaching the Ocean Bottom",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "down",
+      "Processing notes": "Variable value should be reported as the flux exiting the bottom of the deepest ocean layer; It might be the case to defined a new CF with _at_sea_floor",
+      "Units": "mol m-2 s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1421,
+    "labels": [
+      "mon",
+      "ocnBgchem"
+    ],
+    "title": "Variable ocnBgchem.mon.expcob_tavg-u-hxy-sea (Omon.expcob)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "expcalcob_tavg-u-hxy-sea",
+      "CF standard name": "sinking_mole_flux_of_calcite_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Downward sinking flux of calcite at seafloor",
+      "Dimensions": "longitude latitude depthseafloor time",
+      "Frequency": "mon",
+      "Long name": "Sinking Flux of Calcite Reaching the Ocean Bottom",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "down",
+      "Processing notes": "Variable value should be reported as the flux exiting the bottom of the deepest ocean layer",
+      "Units": "mol m-2 s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1420,
+    "labels": [
+      "mon",
+      "ocnBgchem"
+    ],
+    "title": "Variable ocnBgchem.mon.expcalcob_tavg-u-hxy-sea (Omon.expcalcob)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "expc_tavg-l-hxy-sea",
+      "CF standard name": "sinking_mole_flux_of_particulate_organic_matter_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Downward flux of particulate organic carbon",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Downward Flux of Particulate Organic Carbon",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "down",
+      "Processing notes": "Those who wish to record vertical velocities and vertical fluxes on ocean half-levels may do so. If using CMOR3 you will be required to specify artificial bounds (e.g. located at full model levels) to avoid an error exit.",
+      "Units": "mol m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "EXPC3",
+      "Model units": "mmol m-2 d-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1419,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.expc_tavg-l-hxy-sea (Omon.expc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "exparagob_tavg-u-hxy-sea",
+      "CF standard name": "sinking_mole_flux_of_aragonite_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Downward sinking flux of aragonite at seafloor",
+      "Dimensions": "longitude latitude depthseafloor time",
+      "Frequency": "mon",
+      "Long name": "Sinking Flux of Aragonite Reaching the Ocean Bottom",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "down",
+      "Processing notes": "Variable value should be reported as the flux exiting the bottom of the deepest ocean layer",
+      "Units": "mol m-2 s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1418,
+    "labels": [
+      "mon",
+      "ocnBgchem"
+    ],
+    "title": "Variable ocnBgchem.mon.exparagob_tavg-u-hxy-sea (Omon.exparagob)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "evs_tavg-u-hxy-ifs",
+      "CF standard name": "water_evapotranspiration_flux",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where ice_free_sea over sea time: mean",
+      "Comment": "computed as the total mass of water vapor evaporating from the ice-free portion of the ocean  divided by the area of the ocean portion of the grid cell.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Water Evaporation Flux Where Ice Free Ocean over Sea",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid.",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "correct_evaporation(evs, sowaflup - (evs - (ficeberg + friver + prsn + pr + fsitherm) ), areacello)",
+      "Expression UKESM1": "correct_evaporation(evs, sowaflup - (evs - (ficeberg + friver + prsn + pr + fsitherm) ), areacello)",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1417,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.mon.evs_tavg-u-hxy-ifs (Omon.evs)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "epsi_tavg-z100m-hxy-sea",
       "CF standard name": "sinking_mole_flux_of_particulate_silicon_in_sea_water",
       "CMIP6 Differences": "\"comment\" was \"In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.   'Sinking' is the gravitational settling of particulate matter suspended in a liquid. A sinking flux is positive downwards and is calculated relative to the movement of the surrounding fluid.\";",
