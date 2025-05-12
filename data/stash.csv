@@ -1,4 +1,8 @@
 Model,Branded variable name,Frequency,STASH,Section,Item,time_profile,domain_profile,usage_profile
+UKESM1,hus_tavg-p19-hxy-u,day,m01s30i295,30,295,TDAYMN,PLEV19,UP6
+UKESM1,hus_tavg-p19-hxy-u,day,m01s30i304,30,304,TDAYMN,PLEV19,UP6
+HadGEM3-GC31,hus_tavg-p19-hxy-u,day,m01s30i295,30,295,TDAYMN,PLEV19,UP6
+HadGEM3-GC31,hus_tavg-p19-hxy-u,day,m01s30i304,30,304,TDAYMN,PLEV19,UP6
 UKESM1,hursmin_tstat-h2m-hxy-crp,day,m01s03i245,3,245,TDAYMIN,DIAG,UP6
 HadGEM3-GC31,hursmin_tstat-h2m-hxy-crp,day,m01s03i245,3,245,TDAYMIN,DIAG,UP6
 UKESM1,hfdsn_tavg-u-hxy-lnd,day,m01s08i202,8,202,TDAYMN,DIAG,UP6

@@ -1,6 +1,310 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "lai_tavg-u-hxy-lus",
+      "CF standard name": "leaf_area_index",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where sector",
+      "Comment": "A ratio obtained by dividing the total upper leaf surface area of vegetation by the (horizontal) surface area of the land on which it grows.",
+      "Dimensions": "longitude latitude vegtype time",
+      "Frequency": "day",
+      "Long name": "Leaf Area Index on Vegetation type",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 737,
+    "labels": [
+      "day",
+      "land"
+    ],
+    "title": "Variable land.day.lai_tavg-u-hxy-lus (Eday.laiVgt)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "lai_tavg-u-hxy-lnd",
+      "CF standard name": "leaf_area_index",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "A ratio obtained by dividing the total upper leaf surface area of vegetation by the (horizontal) surface area of the land on which it grows.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Leaf Area Index",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "land_class_mean(m01s19i007[lbtim_ia=240,lbproc=128], m01s19i013[lbtim_ia=240,lbproc=128], land_class=\"veg\")",
+      "Model units": "-"
+    },
+    "STASH entries": [],
+    "issue_number": 736,
+    "labels": [
+      "day",
+      "land",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable land.day.lai_tavg-u-hxy-lnd (Eday.lai)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "jpdftaureliqmodis_tavg-u-hxy-u",
+      "CF standard name": "modis_cloud_area_fraction",
+      "CMIP6 Differences": "\"standard_name\" was \"cloud_area_fraction_in_atmosphere_layer\"; ; \"comment\" was \"Joint probability distribution function, giving probability of cloud as a function of optical thickness and particle size, as measured by MODIS. For liquid cloud particles.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "MODIS Optical Thickness-Particle Size joint  distribution, liquid",
+      "Dimensions": "longitude latitude effectRadLi tau time",
+      "Frequency": "day",
+      "Long name": "MODIS Optical Thickness-Particle Size Joint Distribution, Liquid",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude effectRadLi tau time CMIP7:longitude latitude time effectRadLi tau,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "jpdftaure_divide_by_mask(m01s02i468[lbproc=128], m01s02i330[lbproc=128])",
+      "Expression UKESM1": "jpdftaure_divide_by_mask(m01s02i468[lbproc=128], m01s02i330[lbproc=128])",
+      "Model units": "1"
+    },
+    "STASH entries": [],
+    "issue_number": 735,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.day.jpdftaureliqmodis_tavg-u-hxy-u (Eday.jpdftaureliqmodis)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "jpdftaureicemodis_tavg-u-hxy-u",
+      "CF standard name": "modis_cloud_area_fraction",
+      "CMIP6 Differences": "\"comment\" was \"Joint probability distribution function, giving probability of cloud as a function of optical thickness and particle size, as measured by MODIS. For cloud ice particles.\"; ; \"standard_name\" was \"cloud_area_fraction_in_atmosphere_layer\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "MODIS Optical Thickness-Particle Size joint  distribution, ice",
+      "Dimensions": "longitude latitude effectRadIc tau time",
+      "Frequency": "day",
+      "Long name": "MODIS Joint Distribution of Optical Thickness and Particle Size, Ice",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude effectRadIc tau time CMIP7:longitude latitude time effectRadIc tau,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "jpdftaure_divide_by_mask(m01s02i469[lbproc=128], m01s02i330[lbproc=128])",
+      "Expression UKESM1": "jpdftaure_divide_by_mask(m01s02i469[lbproc=128], m01s02i330[lbproc=128])",
+      "Model units": "1"
+    },
+    "STASH entries": [],
+    "issue_number": 734,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.day.jpdftaureicemodis_tavg-u-hxy-u (Eday.jpdftaureicemodis)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "intvaw_tavg-u-hxy-u",
+      "CF standard name": "northward_atmosphere_water_transport_across_unit_distance",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Vertically integrated northward moisture transport (Mass_weighted_vertical integral of the product of northward wind by total water mass per unit mass)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Vertically Integrated Northward Moisture Transport",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-1 s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 733,
+    "labels": [
+      "day",
+      "atmos"
+    ],
+    "title": "Variable atmos.day.intvaw_tavg-u-hxy-u (Eday.intvaw)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "intvadse_tavg-u-hxy-u",
+      "CF standard name": "northward_atmosphere_dry_static_energy_transport_across_unit_distance",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Vertically integrated northward dry static energy transport (cp.T +zg).v (Mass_weighted_vertical integral of the product of northward wind by dry static_energy per mass unit)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Vertically Integrated Northward Dry Static Energy Transport",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "MJ m-1 s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 732,
+    "labels": [
+      "day",
+      "atmos"
+    ],
+    "title": "Variable atmos.day.intvadse_tavg-u-hxy-u (Eday.intvadse)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "intuaw_tavg-u-hxy-u",
+      "CF standard name": "eastward_atmosphere_water_transport_across_unit_distance",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Vertically integrated eastward moisture transport (Mass weighted vertical integral of the product of eastward wind by total water mass per unit mass)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Vertically Integrated Eastward Moisture Transport",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-1 s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 731,
+    "labels": [
+      "day",
+      "atmos"
+    ],
+    "title": "Variable atmos.day.intuaw_tavg-u-hxy-u (Eday.intuaw)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "intuadse_tavg-u-hxy-u",
+      "CF standard name": "eastward_atmosphere_dry_static_energy_transport_across_unit_distance",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Vertically integrated eastward dry static energy transport (cp.T +zg).v (Mass_weighted_vertical integral of the product of eastward wind by dry static_energy per mass unit)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Vertically Integrated Eastward Dry Static Energy Transport",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "MJ m-1 s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 730,
+    "labels": [
+      "day",
+      "atmos"
+    ],
+    "title": "Variable atmos.day.intuadse_tavg-u-hxy-u (Eday.intuadse)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hus_tavg-p19-hxy-u",
+      "CF standard name": "specific_humidity",
+      "CMIP6 Differences": "\"comment\" was \"Specific humidity is the mass fraction of water vapor in (moist) air.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "time: mean",
+      "Comment": "These are standard variables from CMIP5.",
+      "Dimensions": "longitude latitude plev19 time",
+      "Frequency": "day",
+      "Long name": "Specific Humidity",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s30i295[blev=PLEV19, lbproc=128] / m01s30i304[blev=PLEV19, lbproc=128]",
+      "Expression UKESM1": "m01s30i295[blev=PLEV19, lbproc=128] / m01s30i304[blev=PLEV19, lbproc=128]",
+      "Model units": "1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s30i295",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "30,295",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i304",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "30,304",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i295",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,295",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i304",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,304",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 729,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable atmos.day.hus_tavg-p19-hxy-u (Eday.hus)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "hursmin_tstat-h2m-hxy-crp",
       "CF standard name": "relative_humidity",
       "CMIP6 Differences": "\"dimensions\" was \"longitude latitude time height2m\"; ; \"cell_methods\" was \"area: mean where crops time: minimum\";",
