@@ -1,6 +1,202 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "mmrss_tpt-u-hm-u",
+      "CF standard name": "mass_fraction_of_sea_salt_dry_aerosol_particles_in_air",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "::MODEL",
+      "Cell methods": "area: point time: point",
+      "Comment": "This variable represents instantaneous surface sea salt aerosol mass mixing ratio at CF sites, sampled every 3 hours",
+      "Dimensions": "site time1",
+      "Frequency": "3hr",
+      "Long name": "Sea salt Aerosol Mass Mixing Ratio at CF sites",
+      "Modeling realm": "aerosol",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg kg-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 701,
+    "labels": [
+      "3hr",
+      "aerosol"
+    ],
+    "title": "Variable aerosol.3hr.mmrss_tpt-u-hm-u (E3hrPt.mmrss)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "mmrso4_tpt-u-hm-u",
+      "CF standard name": "mass_fraction_of_sulfate_dry_aerosol_particles_in_air",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "::MODEL",
+      "Cell methods": "area: point time: point",
+      "Comment": "This variable is for instantaneous surface mass mixing ratio of sulfate aerosol at CF sites, sampled every 3 hours",
+      "Dimensions": "site time1",
+      "Frequency": "3hr",
+      "Long name": "Instantaneous Aerosol Sulfate Mass Mixing Ratio at CF sites",
+      "Modeling realm": "aerosol",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg kg-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 700,
+    "labels": [
+      "3hr",
+      "aerosol"
+    ],
+    "title": "Variable aerosol.3hr.mmrso4_tpt-u-hm-u (E3hrPt.mmrso4)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "mmroa_tpt-u-hm-u",
+      "CF standard name": "mass_fraction_of_particulate_organic_matter_dry_aerosol_particles_in_air",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "::MODEL",
+      "Cell methods": "area: point time: point",
+      "Comment": "This variable represents the instantaneous surface organic aerosol\u00a0Mass Mixing Ratio at CF sites, sampled every 3 hours.",
+      "Dimensions": "site time1",
+      "Frequency": "3hr",
+      "Long name": "Instantaneous surface total organic aerosol mass mixing ratio at CF sites",
+      "Modeling realm": "aerosol",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg kg-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 699,
+    "labels": [
+      "3hr",
+      "aerosol"
+    ],
+    "title": "Variable aerosol.3hr.mmroa_tpt-u-hm-u (E3hrPt.mmroa)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "mmrno3_tpt-u-hm-u",
+      "CF standard name": "mass_fraction_of_nitrate_dry_aerosol_particles_in_air",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "::MODEL",
+      "Cell methods": "area: point time: point",
+      "Comment": "This variable represents the instantaneous surface NO3 Aerosol Mass Mixing Ratio at CF sites, sampled every 3 hours",
+      "Dimensions": "site time1",
+      "Frequency": "3hr",
+      "Long name": "Instantaneous surface NO3 aerosol mass mixing ratio at CF sites",
+      "Modeling realm": "aerosol",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg kg-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 698,
+    "labels": [
+      "3hr",
+      "aerosol"
+    ],
+    "title": "Variable aerosol.3hr.mmrno3_tpt-u-hm-u (E3hrPt.mmrno3)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "mmrnh4_tpt-u-hm-u",
+      "CF standard name": "mass_fraction_of_ammonium_dry_aerosol_particles_in_air",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "::MODEL",
+      "Cell methods": "area: point time: point",
+      "Comment": "This variable represents the instantaneous surface NH4 Aerosol Mass Mixing Ratio at CF sites, sampled every 3 hours",
+      "Dimensions": "site time1",
+      "Frequency": "3hr",
+      "Long name": "Instantaneous surface NH4 aerosol mass mixing ratio at CF sites",
+      "Modeling realm": "aerosol",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg kg-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 697,
+    "labels": [
+      "3hr",
+      "aerosol"
+    ],
+    "title": "Variable aerosol.3hr.mmrnh4_tpt-u-hm-u (E3hrPt.mmrnh4)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "mmrdust_tpt-u-hm-u",
+      "CF standard name": "mass_fraction_of_dust_dry_aerosol_particles_in_air",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "::MODEL",
+      "Cell methods": "area: point time: point",
+      "Comment": "This variable represents the instantaneous surface Dust Aerosol Mass Mixing Ratio at CF sites, sampled every 3 hours",
+      "Dimensions": "site time1",
+      "Frequency": "3hr",
+      "Long name": "Instantaneous surface Dust Aerosol Mass Mixing Ratio at CF sites",
+      "Modeling realm": "aerosol",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg kg-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 696,
+    "labels": [
+      "3hr",
+      "aerosol"
+    ],
+    "title": "Variable aerosol.3hr.mmrdust_tpt-u-hm-u (E3hrPt.mmrdust)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "mmrbc_tpt-u-hm-u",
+      "CF standard name": "mass_fraction_of_elemental_carbon_dry_aerosol_particles_in_air",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "::MODEL",
+      "Cell methods": "area: point time: point",
+      "Comment": "This variable represents the instantaneous surface elemental carbon Aerosol Mass Mixing Ratio at CF sites, sampled every 3 hours",
+      "Dimensions": "site time1",
+      "Frequency": "3hr",
+      "Long name": "Elemental carbon mass mixing ratio",
+      "Modeling realm": "aerosol",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg kg-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 695,
+    "labels": [
+      "3hr",
+      "aerosol"
+    ],
+    "title": "Variable aerosol.3hr.mmrbc_tpt-u-hm-u (E3hrPt.mmrbc)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "mmraerh2o_tpt-u-hm-u",
       "CF standard name": "mass_fraction_of_water_in_ambient_aerosol_particles_in_air",
       "CMIP6 Differences": "Not present",
