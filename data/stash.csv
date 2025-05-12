@@ -1,4 +1,25 @@
 Model,Branded variable name,Frequency,STASH,Section,Item,time_profile,domain_profile,usage_profile
+UKESM1,cLeaf_tavg-u-hxy-lnd,mon,m01s19i026,19,026,TMONMN,DIAG,UP5
+UKESM1,c4PftFrac_tavg-u-hxy-u,mon,m01s03i395,3,395,TMONMN,DIAG,UP5
+UKESM1,c4PftFrac_tavg-u-hxy-u,mon,m01s19i013,19,013,TMONMN,DTILE,UP5
+HadGEM3-GC31,c4PftFrac_tavg-u-hxy-u,mon,m01s03i395,3,395,TMONMN,DIAG,UP5
+HadGEM3-GC31,c4PftFrac_tavg-u-hxy-u,mon,m01s19i013,19,013,TMONMN,DTILE,UP5
+UKESM1,c3PftFrac_tavg-u-hxy-u,mon,m01s03i395,3,395,TMONMN,DIAG,UP5
+UKESM1,c3PftFrac_tavg-u-hxy-u,mon,m01s19i013,19,013,TMONMN,DTILE,UP5
+HadGEM3-GC31,c3PftFrac_tavg-u-hxy-u,mon,m01s03i395,3,395,TMONMN,DIAG,UP5
+HadGEM3-GC31,c3PftFrac_tavg-u-hxy-u,mon,m01s19i013,19,013,TMONMN,DTILE,UP5
+UKESM1,baresoilFrac_tavg-u-hxy-u,mon,m01s03i395,3,395,TMONMN,DIAG,UP5
+UKESM1,baresoilFrac_tavg-u-hxy-u,mon,m01s19i013,19,013,TMONMN,DTILE,UP5
+HadGEM3-GC31,baresoilFrac_tavg-u-hxy-u,mon,m01s03i395,3,395,TMONMN,DIAG,UP5
+HadGEM3-GC31,baresoilFrac_tavg-u-hxy-u,mon,m01s19i013,19,013,TMONMN,DTILE,UP5
+UKESM1,ts_tavg-u-hxy-is,mon,m01s03i316,3,316,TMONMN,DTILE,UP5
+UKESM1,ts_tavg-u-hxy-is,mon,m01s03i317,3,317,TMONMN,DTILE,UP5
+HadGEM3-GC31,ts_tavg-u-hxy-is,mon,m01s03i316,3,316,TMONMN,DTILE,UP5
+HadGEM3-GC31,ts_tavg-u-hxy-is,mon,m01s03i317,3,317,TMONMN,DTILE,UP5
+UKESM1,tas_tavg-u-hxy-is,mon,m01s03i317,3,317,TMONMN,DTILE,UP5
+UKESM1,tas_tavg-u-hxy-is,mon,m01s03i328,3,328,TMONMN,DTILE,UP5
+HadGEM3-GC31,tas_tavg-u-hxy-is,mon,m01s03i317,3,317,TMONMN,DTILE,UP5
+HadGEM3-GC31,tas_tavg-u-hxy-is,mon,m01s03i328,3,328,TMONMN,DTILE,UP5
 UKESM1,snw_tavg-u-hxy-lnd,mon,m01s03i317,3,317,TMONMN,DTILE,UP5
 UKESM1,snw_tavg-u-hxy-lnd,mon,m01s08i236,8,236,TMONMN,DTILE,UP5
 HadGEM3-GC31,snw_tavg-u-hxy-lnd,mon,m01s03i317,3,317,TMONMN,DTILE,UP5

@@ -1,6 +1,520 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "cLeaf_tavg-u-hxy-lnd",
+      "CF standard name": "leaf_mass_content_of_carbon",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "Carbon mass per unit area in leaves.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Carbon Mass in Leaves",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "m01s19i026[lbtim_ia=240,lbproc=128]",
+      "Model units": "kg m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s19i026",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "19,026",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1273,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable land.mon.cLeaf_tavg-u-hxy-lnd (Lmon.cLeaf)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "cGeologicStorage_tavg-u-hm-u",
+      "CF standard name": "carbon_mass_content_of_geological_storage",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean",
+      "Comment": "Mass of carbon that has been intentionally sequestered in geologic storage. The definition of geologic storage here is that it be stored for periods of time that are long as compared to the simulation.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Carbon Mass in Geologic Storage",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "This variable should only contain carbon that is stored through processes that are represented by the Earth system model itself, not carbon that is stored solely on the basis of a forcing dataset. For example, if an ESM represents biomass energy with carbon capture and storage (BECCS) as a prognostic process, then the resulting carbon storage would be included here; whereas if a process like direct air capture (DAC) is represented solely as a negative carbon emissions flux in the scenario forcing dataset, then it would not be included here.",
+      "Units": "kg m-2",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1272,
+    "labels": [
+      "mon",
+      "land"
+    ],
+    "title": "Variable land.mon.cGeologicStorage_tavg-u-hm-u (Lmon.cGeologicStorage)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "c4PftFrac_tavg-u-hxy-u",
+      "CF standard name": "area_fraction",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: mean where land over all_area_types time: mean\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Percentage of entire grid cell  that is covered by C4 PFTs (including grass and crops).",
+      "Dimensions": "longitude latitude time typec4pft",
+      "Frequency": "mon",
+      "Long name": "Percentage Cover by C4 Plant Functional Type",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "Note that if this variable is independent of time, it should be stored only for a single time (user choice).; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time typec4pft CMIP7:longitude latitude time  typec4pft,;  ; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean where land over all_area_types time: mean CMIP7:area: time: mean,",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "land_class_area(m01s19i013[lbtim_ia=240,lbproc=128], m01s03i395[lbproc=128], land_class='c4')",
+      "Expression UKESM1": "land_class_area(m01s19i013[lbtim_ia=240,lbproc=128], m01s03i395[lbproc=128], land_class='c4')",
+      "Model units": "%"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i395",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,395",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i013",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "19,013",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i395",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,395",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i013",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "19,013",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1271,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable land.mon.c4PftFrac_tavg-u-hxy-u (Lmon.c4PftFrac)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "c3PftFrac_tavg-u-hxy-u",
+      "CF standard name": "area_fraction",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: mean where land over all_area_types time: mean\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Percentage of entire grid cell  that is covered by C3 PFTs (including grass, crops, and trees).",
+      "Dimensions": "longitude latitude time typec3pft",
+      "Frequency": "mon",
+      "Long name": "Percentage Cover by C3 Plant Functional Type",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "Note that if this variable is independent of time, it should be stored only for a single time (user choice).; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time typec3pft CMIP7:longitude latitude time  typec3pft,;  ; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean where land over all_area_types time: mean CMIP7:area: time: mean,",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "land_class_area(m01s19i013[lbtim_ia=240,lbproc=128], m01s03i395[lbproc=128], land_class='c3')",
+      "Expression UKESM1": "land_class_area(m01s19i013[lbtim_ia=240,lbproc=128], m01s03i395[lbproc=128], land_class='c3')",
+      "Model units": "%"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i395",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,395",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i013",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "19,013",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i395",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,395",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i013",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "19,013",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1270,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable land.mon.c3PftFrac_tavg-u-hxy-u (Lmon.c3PftFrac)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "burntFractionAll_tavg-u-hxy-u",
+      "CF standard name": "area_fraction",
+      "CMIP6 Differences": "\"comment\" was \"Percentage of grid cell burned due to all fires including natural and anthropogenic fires and those associated with anthropogenic Land-use change\"; ; \"long_name\" was \"Percentage of Entire Grid cell  that is Covered by Burnt Vegetation (All Classes)\"; ; \"cell_methods\" was \"area: mean where land over all_area_types time: mean\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Percentage of grid cell burned due to all fires including natural and anthropogenic fires and those associated with anthropogenic land use change",
+      "Dimensions": "longitude latitude time typeburnt",
+      "Frequency": "mon",
+      "Long name": "Percentage of Entire Grid Cell That Is Covered by Burnt Vegetation (All Classes)",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "Note that if this variable is independent of time, it should be stored only for a single time (user choice).; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time typeburnt CMIP7:longitude latitude time  typeburnt,;  ; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean where land over all_area_types time: mean CMIP7:area: time: mean,",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1269,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.mon.burntFractionAll_tavg-u-hxy-u (Lmon.burntFractionAll)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "baresoilFrac_tavg-u-hxy-u",
+      "CF standard name": "area_fraction",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: mean where land over all_area_types time: mean\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Percentage of entire grid cell  that is covered by bare soil.",
+      "Dimensions": "longitude latitude time typebare",
+      "Frequency": "mon",
+      "Long name": "Bare Soil Percentage Area Coverage",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "Note that if this variable is independent of time, it should be stored only for a single time (user choice).; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time typebare CMIP7:longitude latitude time  typebare,;  ; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean where land over all_area_types time: mean CMIP7:area: time: mean,",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "land_class_area(m01s19i013[lbtim_ia=240,lbproc=128], m01s03i395[lbproc=128], land_class='bareSoil')",
+      "Expression UKESM1": "land_class_area(m01s19i013[lbtim_ia=240,lbproc=128], m01s03i395[lbproc=128], land_class='bareSoil')",
+      "Model units": "%"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i395",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,395",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i013",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "19,013",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i395",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,395",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i013",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "19,013",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1268,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable land.mon.baresoilFrac_tavg-u-hxy-u (Lmon.baresoilFrac)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tsn_tavg-u-hxy-is",
+      "CF standard name": "temperature_in_surface_snow",
+      "CMIP6 Differences": "\"comment\" was \"This temperature is averaged over all the snow in the grid cell that rests on land or land ice.  When computing the time-mean here, the time samples, weighted by the mass of snow on the land portion of the grid cell, are accumulated and then divided by the sum of the weights.   Reported as missing in regions free of snow on land.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "quantity averaged over ice_sheet (meaning grounded ice sheet and floating ice shelf) only, to avoid contamination from other surfaces (eg: permafrost)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Ice Sheet Snow Internal Temperature",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1267,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.tsn_tavg-u-hxy-is (LImon.tsnIs)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tsn_tavg-u-hxy-lnd",
+      "CF standard name": "temperature_in_surface_snow",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: mean where land time: mean (with samples weighted by snow mass)\"; ; \"comment\" was \"This temperature is averaged over all the snow in the grid cell that rests on land or land ice.  When computing the time-mean here, the time samples, weighted by the mass of snow on the land portion of the grid cell, are accumulated and then divided by the sum of the weights.   Reported as missing in regions free of snow on land.\"; ; \"modeling_realm\" was \"landIce land\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean (weighted by snow mass on land)",
+      "Comment": "This temperature is averaged over all the snow in the grid cell that rests on land or land ice.  When computing the time-mean here, the time samples, weighted by the mass of snow on the land portion of the grid cell, are accumulated and then divided by the sum of the weights.   Reported as \"missing in regions free of snow on land.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Snow Internal Temperature",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean where land time: mean (with samples weighted by snow mass) CMIP7:area: mean where land time: mean (weighted by snow mass on land),; CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:land, landIce CMIP7:land, ocean,",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1266,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.tsn_tavg-u-hxy-lnd (LImon.tsn)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ts_tavg-u-hxy-is",
+      "CF standard name": "surface_temperature",
+      "CMIP6 Differences": "\"comment\" was \"Temperature of the lower boundary of the atmosphere\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "quantity averaged over ice_sheet (meaning grounded ice sheet and floating ice shelf) only, to avoid contamination from other surfaces (eg: permafrost)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Ice Sheet Surface Temperature",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "land_class_mean(m01s03i316[lbproc=128], m01s03i317[lbproc=128], land_class='iceElev')",
+      "Expression UKESM1": "land_class_mean(m01s03i316[lbproc=128], m01s03i317[lbproc=128], land_class='iceElev')",
+      "Model units": "K"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i316",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "3,316",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i316",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,316",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1265,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable landIce.mon.ts_tavg-u-hxy-is (LImon.tsIs)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tpf_tavg-u-hxy-lnd",
+      "CF standard name": "permafrost_layer_thickness",
+      "CMIP6 Differences": "\"comment\" was \"The mean thickness of the permafrost layer in the land portion of the grid cell.  Reported as zero in permafrost-free regions.\"; ; \"modeling_realm\" was \"landIce land\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "where land over land: This is the mean thickness of the permafrost layer in the land portion of the grid cell.  Reported as missing in permafrost-free regions.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Permafrost Layer Thickness",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:land, landIce CMIP7:land, ocean,",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1264,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.tpf_tavg-u-hxy-lnd (LImon.tpf)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tas_tavg-u-hxy-is",
+      "CF standard name": "air_temperature",
+      "CMIP6 Differences": "\"comment\" was \"near-surface (usually, 2 meter) air temperature\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "quantity averaged over ice_sheet (meaning grounded ice sheet and floating ice shelf) only, to avoid contamination from other surfaces (eg: permafrost)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Ice Sheet Near-Surface Air Temperature",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "land_class_mean(m01s03i328[lbproc=128], m01s03i317[lbproc=128], land_class='iceElev')",
+      "Expression UKESM1": "land_class_mean(m01s03i328[lbproc=128], m01s03i317[lbproc=128], land_class='iceElev')",
+      "Model units": "K"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i328",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "3,328",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i328",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,328",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1263,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable landIce.mon.tas_tavg-u-hxy-is (LImon.tasIs)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "sootsn_tavg-u-hxy-lnd",
       "CF standard name": "soot_content_of_surface_snow",
       "CMIP6 Differences": "\"modeling_realm\" was \"landIce land\";",
