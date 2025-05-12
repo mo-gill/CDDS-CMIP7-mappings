@@ -1,6 +1,404 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "utendnogw_tavg-p39-hy-air",
+      "CF standard name": "tendency_of_eastward_wind_due_to_nonorographic_gravity_wave_drag",
+      "CMIP6 Differences": "\"cell_methods\" was \"longitude: mean time: mean\"; ; \"comment\" was \"Tendency of the eastward wind by parameterized nonorographic gravity waves.\";",
+      "Cell measures": "",
+      "Cell methods": "longitude: time: mean where air",
+      "Comment": "Zonal mean tendency of eastward wind induced by the parameterized non-orographic gravity wave drag",
+      "Dimensions": "latitude plev39 time",
+      "Frequency": "day",
+      "Long name": "Eastward Acceleration Due to Non-Orographic Gravity Wave Drag",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "This is the total tendency due to parameterized non-orographic gravity wave drag, which is the sum of all possible components of the parameterization (where applicable). We ask that in the Essential Model Documentation modelling centers specify the parameterization scheme used and the specific values of its tunable parameters used for the simulation, and a specification of the part of the gravity wave spectrum that is targeted by the parameterization (e.g., minimally, the effective resolution of the model).; ; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:longitude: mean time: mean CMIP7:longitude: time: mean where air,",
+      "Units": "m s-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s06i115[blev=PLEV39, lbproc=192]",
+      "Expression UKESM1": "m01s06i115[blev=PLEV39, lbproc=192]",
+      "Model units": "m s-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s06i115",
+        "domain_profile": "PLEV39Z",
+        "model": "UKESM1",
+        "stash_number": "6,115",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s06i115",
+        "domain_profile": "PLEV39Z",
+        "model": "HadGEM3-GC31",
+        "stash_number": "6,115",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 824,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.day.utendnogw_tavg-p39-hy-air (EdayZ.utendnogw)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "utendepfd_tavg-p39-hy-air",
+      "CF standard name": "tendency_of_eastward_wind_due_to_eliassen_palm_flux_divergence",
+      "CMIP6 Differences": "\"cell_methods\" was \"longitude: mean time: mean\"; ; \"comment\" was \"Tendency of the zonal mean zonal wind due to the divergence of the Eliassen-Palm flux.\";",
+      "Cell measures": "",
+      "Cell methods": "longitude: time: mean where air",
+      "Comment": "Called \"acceldivf\" in CCMI table; we suggest new name. zonal mean; hence YZT",
+      "Dimensions": "latitude plev39 time",
+      "Frequency": "day",
+      "Long name": "Tendency of Eastward Wind Due to Eliassen-Palm Flux Divergence",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:longitude: mean time: mean CMIP7:longitude: time: mean where air,",
+      "Units": "m s-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "zonal_apply_heaviside(m01s30i314[blev=PLEV39, lbproc=192], m01s30i301[blev=PLEV39, lbproc=192])",
+      "Expression UKESM1": "zonal_apply_heaviside(m01s30i314[blev=PLEV39, lbproc=192], m01s30i301[blev=PLEV39, lbproc=192])",
+      "Model units": "m s-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s30i301",
+        "domain_profile": "PLEV39Z",
+        "model": "UKESM1",
+        "stash_number": "30,301",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i314",
+        "domain_profile": "PLEV39",
+        "model": "UKESM1",
+        "stash_number": "30,314",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i201",
+        "domain_profile": "PLEV39Z",
+        "model": "UKESM1",
+        "stash_number": "30,201",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i202",
+        "domain_profile": "PLEV39Z",
+        "model": "UKESM1",
+        "stash_number": "30,202",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i301",
+        "domain_profile": "PLEV39Z",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,301",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i314",
+        "domain_profile": "PLEV39",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,314",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i201",
+        "domain_profile": "PLEV39Z",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,201",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i202",
+        "domain_profile": "PLEV39Z",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,202",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 823,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.day.utendepfd_tavg-p39-hy-air (EdayZ.utendepfd)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ua_tavg-p39-hy-air",
+      "CF standard name": "eastward_wind",
+      "CMIP6 Differences": "\"cell_methods\" was \"longitude: mean time: mean\"; ; \"comment\" was \"Zonal wind (positive in a eastward direction).\";",
+      "Cell measures": "",
+      "Cell methods": "longitude: time: mean where air",
+      "Comment": "zonal mean; hence YZT",
+      "Dimensions": "latitude plev39 time",
+      "Frequency": "day",
+      "Long name": "Eastward Wind",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:longitude: mean time: mean CMIP7:longitude: time: mean where air,",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s30i201[blev=PLEV39, lbproc=192] / m01s30i301[blev=PLEV39, lbproc=192]",
+      "Expression UKESM1": "m01s30i201[blev=PLEV39, lbproc=192] / m01s30i301[blev=PLEV39, lbproc=192]",
+      "Model units": "m s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s30i201",
+        "domain_profile": "PLEV39Z",
+        "model": "UKESM1",
+        "stash_number": "30,201",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i301",
+        "domain_profile": "PLEV39Z",
+        "model": "UKESM1",
+        "stash_number": "30,301",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i202",
+        "domain_profile": "PLEV39Z",
+        "model": "UKESM1",
+        "stash_number": "30,202",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i201",
+        "domain_profile": "PLEV39Z",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,201",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i301",
+        "domain_profile": "PLEV39Z",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,301",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i202",
+        "domain_profile": "PLEV39Z",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,202",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 822,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.day.ua_tavg-p39-hy-air (EdayZ.ua)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tntrs_tavg-p39-hy-air",
+      "CF standard name": "tendency_of_air_temperature_due_to_shortwave_heating",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "",
+      "Cell methods": "longitude: time: mean where air",
+      "Comment": "Zonal mean tendency of air temperature due to shortwave heating, all sky, with the extended number of vertical levels.",
+      "Dimensions": "latitude plev39 time",
+      "Frequency": "day",
+      "Long name": "Zonal mean tendency of air temperature due to shortwave heating, all sky",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "K s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 821,
+    "labels": [
+      "day",
+      "atmos"
+    ],
+    "title": "Variable atmos.day.tntrs_tavg-p39-hy-air (EdayZ.tntrs)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tntrl_tavg-p39-hy-air",
+      "CF standard name": "tendency_of_air_temperature_due_to_longwave_heating",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "",
+      "Cell methods": "longitude: time: mean where air",
+      "Comment": "Zonal mean tendency of air temperature due to longwave heating, all sky, with the extended number of vertical levels.",
+      "Dimensions": "latitude plev39 time",
+      "Frequency": "day",
+      "Long name": "Zonal mean tendency of air temperature due to longwave heating, all sky",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "K s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 820,
+    "labels": [
+      "day",
+      "atmos"
+    ],
+    "title": "Variable atmos.day.tntrl_tavg-p39-hy-air (EdayZ.tntrl)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tntmp_tavg-p39-hy-air",
+      "CF standard name": "tendency_of_air_temperature_due_to_model_physics",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "",
+      "Cell methods": "longitude: time: mean where air",
+      "Comment": "Zonal mean tendency of air temperature due to model physics, with the extended number of vertical levels",
+      "Dimensions": "latitude plev39 time",
+      "Frequency": "day",
+      "Long name": "Zonal mean tendency of air temperature due to model physics",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "This is the total temperature tendency due to parameterized physics, which is the sum of contributes from all relevant parameterizations. We ask that in the Essential Model Documentation modelling centers specify the parameterized process contributing to this tendency, and (where applicable) specific values of their tunable parameters used for the simulation.",
+      "Units": "K s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 819,
+    "labels": [
+      "day",
+      "atmos"
+    ],
+    "title": "Variable atmos.day.tntmp_tavg-p39-hy-air (EdayZ.tntmp)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tauvogw_tavg-p39-hy-air",
+      "CF standard name": "upward_northward_momentum_flux_in_air_due_to_orographic_gravity_waves",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "",
+      "Cell methods": "longitude: time: mean where air",
+      "Comment": "Zonal mean vertical flux of meridional momentum within the orographic gravity wave parameterization",
+      "Dimensions": "latitude plev39 time",
+      "Frequency": "day",
+      "Long name": "Zonal mean northward Reynolds stress from orographic gravity wave parameterization",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "Pa",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 818,
+    "labels": [
+      "day",
+      "atmos"
+    ],
+    "title": "Variable atmos.day.tauvogw_tavg-p39-hy-air (EdayZ.tauvogw)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tauvnogw_tavg-p39-hy-air",
+      "CF standard name": "upward_northward_momentum_flux_in_air_due_to_nonorographic_gravity_waves",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "",
+      "Cell methods": "longitude: time: mean where air",
+      "Comment": "Zonal mean vertical wave flux of meridional momentum within the non-orographic gravity wave parameterization",
+      "Dimensions": "latitude plev39 time",
+      "Frequency": "day",
+      "Long name": "Zonal mean northward Reynolds stress from non-orographic gravity wave parameterization",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "Pa",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 817,
+    "labels": [
+      "day",
+      "atmos"
+    ],
+    "title": "Variable atmos.day.tauvnogw_tavg-p39-hy-air (EdayZ.tauvnogw)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tauuogw_tavg-p39-hy-air",
+      "CF standard name": "upward_eastward_momentum_flux_in_air_due_to_orographic_gravity_waves",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "",
+      "Cell methods": "longitude: time: mean where air",
+      "Comment": "Zonal mean of the vertical flux of zonal momentum within the orographic gravity wave parameterization",
+      "Dimensions": "latitude plev39 time",
+      "Frequency": "day",
+      "Long name": "Zonal mean eastward Reynolds stress from orographic gravity wave parameterization",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "Pa",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 816,
+    "labels": [
+      "day",
+      "atmos"
+    ],
+    "title": "Variable atmos.day.tauuogw_tavg-p39-hy-air (EdayZ.tauuogw)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "tauunowgw_tavg-p39-hy-air",
       "CF standard name": "upward_eastward_momentum_flux_in_air_due_to_nonorographic_westward_gravity_waves",
       "CMIP6 Differences": "Not present",
