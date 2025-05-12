@@ -1,6 +1,333 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "limirrmisc_tavg-u-hxy-sea",
+      "CF standard name": "growth_limitation_of_miscellaneous_phytoplankton_due_to_solar_irradiance",
+      "CMIP6 Differences": "\"comment\" was \"Growth limitation of miscellaneous phytoplankton due to solar irradiance. 'Growth limitation due to solar irradiance' means the ratio of the growth rate of a species population in the environment (where the amount of sunlight reaching a location may be limited) to the theoretical growth rate if there were no such limit on solar irradiance.\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Growth limitation of miscellaneous phytoplankton due to solar irradiance. \"Growth limitation due to solar irradiance\" means the ratio of the growth rate of a species population in the environment (where the amount of sunlight reaching a location may be limited) to the theoretical growth rate if there were no such limit on solar irradiance.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Irradiance Limitation of Other Phytoplankton",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "PN_JLIM",
+      "Model units": "1"
+    },
+    "STASH entries": [],
+    "issue_number": 1490,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.limirrmisc_tavg-u-hxy-sea (Omon.limirrmisc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "limirrdiaz_tavg-u-hxy-sea",
+      "CF standard name": "growth_limitation_of_diazotrophic_phytoplankton_due_to_solar_irradiance",
+      "CMIP6 Differences": "\"comment\" was \"Growth limitation of diazotrophs due to solar irradiance. 'Growth limitation due to solar irradiance' means the ratio of the growth rate of a species population in the environment (where the amount of sunlight reaching a location may be limited) to the theoretical growth rate if there were no such limit on solar irradiance.\"; ; \"standard_name\" was \"growth_limitation_of_diazotrophs_due_to_solar_irradiance\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Growth limitation of diazotrophs due to solar irradiance. \"Growth limitation due to solar irradiance\" means the ratio of the growth rate of a species population in the environment (where the amount of sunlight reaching a location may be limited) to the theoretical growth rate if there were no such limit on solar irradiance.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Irradiance Limitation of Diazotrophs",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1489,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.limirrdiaz_tavg-u-hxy-sea (Omon.limirrdiaz)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "limirrdiat_tavg-u-hxy-sea",
+      "CF standard name": "growth_limitation_of_diatoms_due_to_solar_irradiance",
+      "CMIP6 Differences": "\"comment\" was \"Growth limitation of diatoms due to solar irradiance. 'Growth limitation due to solar irradiance' means the ratio of the growth rate of a species population in the environment (where the amount of sunlight reaching a location may be limited) to the theoretical growth rate if there were no such limit on solar irradiance.\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Growth limitation of diatoms due to solar irradiance. \"Growth limitation due to solar irradiance\" means the ratio of the growth rate of a species population in the environment (where the amount of sunlight reaching a location may be limited) to the theoretical growth rate if there were no such limit on solar irradiance.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Irradiance Limitation of Diatoms",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "PD_JLIM",
+      "Model units": "1"
+    },
+    "STASH entries": [],
+    "issue_number": 1488,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.limirrdiat_tavg-u-hxy-sea (Omon.limirrdiat)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "limirrcalc_tavg-u-hxy-sea",
+      "CF standard name": "growth_limitation_of_calcareous_phytoplankton_due_to_solar_irradiance",
+      "CMIP6 Differences": "\"comment\" was \"Growth limitation of calcareous phytoplankton due to solar irradiance. 'Growth limitation due to solar irradiance' means the ratio of the growth rate of a species population in the environment (where the amount of sunlight reaching a location may be limited) to the theoretical growth rate if there were no such limit on solar irradiance.\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Growth limitation of calcareous phytoplankton due to solar irradiance. \"Growth limitation due to solar irradiance\" means the ratio of the growth rate of a species population in the environment (where the amount of sunlight reaching a location may be limited) to the theoretical growth rate if there were no such limit on solar irradiance.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Irradiance Limitation of Calcareous Phytoplankton",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1487,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.limirrcalc_tavg-u-hxy-sea (Omon.limirrcalc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "limfepico_tavg-u-hxy-sea",
+      "CF standard name": "iron_growth_limitation_of_picophytoplankton",
+      "CMIP6 Differences": "\"comment\" was \"Picophytoplankton are phytoplankton of less than 2 micrometers in size. Phytoplankton are algae that grow where there is sufficient light to support photosynthesis. 'Iron growth limitation' means the ratio of the growth rate of a species population in the environment (where there is a finite availability of iron) to the theoretical growth rate if there were no such limit on iron availability.\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Picophytoplankton are phytoplankton of less than 2 micrometers in size. Phytoplankton are algae that grow where there is sufficient light to support photosynthesis. \"Iron growth limitation\" means the ratio of the growth rate of a species population in the environment (where there is a finite availability of iron) to the theoretical growth rate if there were no such limit on iron availability.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Iron Limitation of Picophytoplankton",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1486,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.limfepico_tavg-u-hxy-sea (Omon.limfepico)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "limfemisc_tavg-u-hxy-sea",
+      "CF standard name": "iron_growth_limitation_of_miscellaneous_phytoplankton",
+      "CMIP6 Differences": "\"comment\" was \"Phytoplankton are algae that grow where there is sufficient light to support photosynthesis. 'Miscellaneous phytoplankton' are all those phytoplankton that are not diatoms, diazotrophs, calcareous phytoplankton, picophytoplankton or other separately named components of the phytoplankton population. 'Iron growth limitation' means the ratio of the growth rate of a species population in the environment (where there is a finite availability of iron) to the theoretical growth rate if there were no such limit on iron availability.\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Phytoplankton are algae that grow where there is sufficient light to support photosynthesis. \"Miscellaneous phytoplankton\" are all those phytoplankton that are not diatoms, diazotrophs, calcareous phytoplankton, picophytoplankton or other separately named components of the phytoplankton population. \"Iron growth limitation\" means the ratio of the growth rate of a species population in the environment (where there is a finite availability of iron) to the theoretical growth rate if there were no such limit on iron availability.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Iron Limitation of Other Phytoplankton",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "PN_FELIM",
+      "Model units": "1"
+    },
+    "STASH entries": [],
+    "issue_number": 1485,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.limfemisc_tavg-u-hxy-sea (Omon.limfemisc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "limfediaz_tavg-u-hxy-sea",
+      "CF standard name": "iron_growth_limitation_of_diazotrophic_phytoplankton",
+      "CMIP6 Differences": "\"comment\" was \"In ocean modelling, diazotrophs are phytoplankton of the phylum cyanobacteria distinct from other phytoplankton groups in their ability to fix nitrogen gas in addition to nitrate and ammonium. Phytoplankton are algae that grow where there is sufficient light to support photosynthesis. 'Iron growth limitation' means the ratio of the growth rate of a species population in the environment (where there is a finite availability of iron) to the theoretical growth rate if there were no such limit on iron availability.\"; ; \"standard_name\" was \"iron_growth_limitation_of_diazotrophs\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "In ocean modelling, diazotrophs are phytoplankton of the phylum cyanobacteria distinct from other phytoplankton groups in their ability to fix nitrogen gas in addition to nitrate and ammonium. Phytoplankton are algae that grow where there is sufficient light to support photosynthesis. \"Iron growth limitation\" means the ratio of the growth rate of a species population in the environment (where there is a finite availability of iron) to the theoretical growth rate if there were no such limit on iron availability.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Iron Limitation of Diazotrophs",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1484,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.limfediaz_tavg-u-hxy-sea (Omon.limfediaz)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "limfediat_tavg-u-hxy-sea",
+      "CF standard name": "iron_growth_limitation_of_diatoms",
+      "CMIP6 Differences": "\"comment\" was \"Diatoms are phytoplankton with an external skeleton made of silica. Phytoplankton are algae that grow where there is sufficient light to support photosynthesis. 'Iron growth limitation' means the ratio of the growth rate of a species population in the environment (where there is a finite availability of iron) to the theoretical growth rate if there were no such limit on iron availability.\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Diatoms are phytoplankton with an external skeleton made of silica. Phytoplankton are algae that grow where there is sufficient light to support photosynthesis. \"Iron growth limitation\" means the ratio of the growth rate of a species population in the environment (where there is a finite availability of iron) to the theoretical growth rate if there were no such limit on iron availability.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Iron Limitation of Diatoms",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "PD_FELIM",
+      "Model units": "1"
+    },
+    "STASH entries": [],
+    "issue_number": 1483,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.limfediat_tavg-u-hxy-sea (Omon.limfediat)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "limfecalc_tavg-u-hxy-sea",
+      "CF standard name": "iron_growth_limitation_of_calcareous_phytoplankton",
+      "CMIP6 Differences": "\"comment\" was \"'Calcareous phytoplankton' are phytoplankton that produce calcite. Calcite is a mineral that is a polymorph of calcium carbonate. The chemical formula of calcite is CaCO3. Phytoplankton are algae that grow where there is sufficient light to support photosynthesis. 'Iron growth limitation' means the ratio of the growth rate of a species population in the environment (where there is a finite availability of iron) to the theoretical growth rate if there were no such limit on iron availability.\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "\"Calcareous phytoplankton\" are phytoplankton that produce calcite. Calcite is a mineral that is a polymorph of calcium carbonate. The chemical formula of calcite is CaCO3. Phytoplankton are algae that grow where there is sufficient light to support photosynthesis. \"Iron growth limitation\" means the ratio of the growth rate of a species population in the environment (where there is a finite availability of iron) to the theoretical growth rate if there were no such limit on iron availability.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Iron Limitation of Calcareous Phytoplankton",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1482,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.limfecalc_tavg-u-hxy-sea (Omon.limfecalc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "intpppico_tavg-u-hxy-sea",
+      "CF standard name": "net_primary_mole_productivity_of_biomass_expressed_as_carbon_by_picophytoplankton",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea depth: sum where sea time: mean",
+      "Comment": "Vertically integrated primary (organic carbon) production by the picophytoplankton component alone",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Net Primary Mole Productivity of Carbon by Picophytoplankton",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1481,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.intpppico_tavg-u-hxy-sea (Omon.intpppico)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "intppnitrate_tavg-u-hxy-sea",
+      "CF standard name": "net_primary_mole_productivity_of_biomass_expressed_as_carbon_due_to_nitrate_utilization",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea depth: sum where sea time: mean",
+      "Comment": "Vertically integrated primary (organic carbon) production by phytoplankton based on nitrate uptake alone",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Primary Organic Carbon Production by Phytoplankton Based on Nitrate Uptake Alone",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1480,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.intppnitrate_tavg-u-hxy-sea (Omon.intppnitrate)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "intppnano_tavg-u-hxy-sea",
       "CF standard name": "net_primary_mole_productivity_of_biomass_expressed_as_carbon_by_nanophytoplankton",
       "CMIP6 Differences": "Not present",
