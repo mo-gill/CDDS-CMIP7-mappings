@@ -1,6 +1,318 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "difmxybo_tavg-l-hxy-sea",
+      "CF standard name": "ocean_momentum_xy_biharmonic_diffusivity",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Lateral biharmonic viscosity applied to the momentum equations.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "yr",
+      "Long name": "Ocean Momentum XY Biharmonic Diffusivity",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.",
+      "Units": "m4 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1621,
+    "labels": [
+      "yr",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.yr.difmxybo_tavg-l-hxy-sea (Oyr.difmxybo)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "zostoga_tavg-u-hm-sea",
+      "CF standard name": "global_average_thermosteric_sea_level_change",
+      "CMIP6 Differences": "",
+      "Cell measures": "",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "There is no CMIP6 request for zosga nor zossga.",
+      "Dimensions": "time",
+      "Frequency": "mon",
+      "Long name": "Global Average Thermosteric Sea Level Change",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "calc_zostoga(thetao, thkcello, areacello, zfullo_0, so_0, rho_0_mean, deptho_0_mean)",
+      "Expression UKESM1": "calc_zostoga(thetao, thkcello, areacello, zfullo_0, so_0, rho_0_mean, deptho_0_mean)",
+      "Model units": "m"
+    },
+    "STASH entries": [],
+    "issue_number": 1620,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable ocean.mon.zostoga_tavg-u-hm-sea (Omon.zostoga)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "zossq_tavg-u-hxy-sea",
+      "CF standard name": "square_of_sea_surface_height_above_geoid",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Surface ocean geoid defines z=0.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Square of Sea Surface Height Above Geoid",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid as well as on a spherical latitude/longitude grid.",
+      "Units": "m2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "zossq",
+      "Expression UKESM1": "zossq",
+      "Model units": "m2"
+    },
+    "STASH entries": [],
+    "issue_number": 1619,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.mon.zossq_tavg-u-hxy-sea (Omon.zossq)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "zos_tavg-u-hxy-sea",
+      "CF standard name": "sea_surface_height_above_geoid",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "This is the dynamic sea level, so should have zero global area mean. It should not include inverse barometer depressions from sea ice.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Sea Surface Height Above Geoid",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "See OMDP document for details. Report on native horizontal grid as well as on a spherical latitude/longitude grid.",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "zos",
+      "Expression UKESM1": "zos",
+      "Model units": "m"
+    },
+    "STASH entries": [],
+    "issue_number": 1618,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable ocean.mon.zos_tavg-u-hxy-sea (Omon.zos)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "zooc_tavg-z0m-hxy-sea",
+      "CF standard name": "mole_concentration_of_zooplankton_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "sum of zooplankton carbon component concentrations",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Zooplankton Carbon Concentration",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "(ZMI[depth=0] + ZME[depth=0]) * C_TO_N_RATIO_ZOO",
+      "Model units": "mol m-3"
+    },
+    "STASH entries": [],
+    "issue_number": 1617,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.zooc_tavg-z0m-hxy-sea (Omon.zoocos)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "zooc_tavg-l-hxy-sea",
+      "CF standard name": "mole_concentration_of_zooplankton_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "sum of zooplankton carbon component concentrations",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Zooplankton Carbon Concentration",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "(ZMI_E3T + ZME_E3T) * C_TO_N_RATIO_ZOO / thkcello",
+      "Model units": "mmol m-3"
+    },
+    "STASH entries": [],
+    "issue_number": 1616,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.zooc_tavg-l-hxy-sea (Omon.zooc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "zmisc_tavg-z0m-hxy-sea",
+      "CF standard name": "mole_concentration_of_miscellaneous_zooplankton_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "carbon from additional zooplankton component concentrations alone (e.g. Micro, meso).  Since the models all have different numbers of components, this variable has been included to provide a check for intercomparison between models since some phytoplankton groups are supersets.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Mole Concentration of Other Zooplankton Expressed as Carbon in Sea Water",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1615,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.zmisc_tavg-z0m-hxy-sea (Omon.zmiscos)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "zmisc_tavg-l-hxy-sea",
+      "CF standard name": "mole_concentration_of_miscellaneous_zooplankton_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "carbon from additional zooplankton component concentrations alone (e.g. Micro, meso).  Since the models all have different numbers of components, this variable has been included to provide a check for intercomparison between models since some phytoplankton groups are supersets.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Mole Concentration of Other Zooplankton Expressed as Carbon in Sea Water",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1614,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.zmisc_tavg-l-hxy-sea (Omon.zmisc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "zmicro_tavg-z0m-hxy-sea",
+      "CF standard name": "mole_concentration_of_microzooplankton_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "carbon  concentration from the microzooplankton (<20 um) component alone",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Mole Concentration of Microzooplankton Expressed as Carbon in Sea Water",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "ZMI[depth=0] * C_TO_N_RATIO_ZOO",
+      "Model units": "mmol m-3"
+    },
+    "STASH entries": [],
+    "issue_number": 1613,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.zmicro_tavg-z0m-hxy-sea (Omon.zmicroos)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "zmicro_tavg-l-hxy-sea",
+      "CF standard name": "mole_concentration_of_microzooplankton_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "carbon  concentration from the microzooplankton (<20 um) component alone",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Mole Concentration of Microzooplankton Expressed as Carbon in Sea Water",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "ZMI_E3T * C_TO_N_RATIO_ZOO / thkcello",
+      "Model units": "mmol m-3"
+    },
+    "STASH entries": [],
+    "issue_number": 1612,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.zmicro_tavg-l-hxy-sea (Omon.zmicro)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "zmeso_tavg-z0m-hxy-sea",
       "CF standard name": "mole_concentration_of_mesozooplankton_expressed_as_carbon_in_sea_water",
       "CMIP6 Differences": "",
