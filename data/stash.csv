@@ -1,4 +1,12 @@
 Model,Branded variable name,Frequency,STASH,Section,Item,time_profile,domain_profile,usage_profile
+UKESM1,tas_tavg-h2m-hxy-lus,mon,m01s03i236,3,236,TMONMN,DIAG,UP5
+UKESM1,tas_tavg-h2m-hxy-lus,mon,m01s19i013,19,013,TMONMN,DTILE,UP5
+UKESM1,sweLut_tavg-u-hxy-lus,mon,m01s03i317,3,317,TMONMN,DTILE,UP5
+UKESM1,sweLut_tavg-u-hxy-lus,mon,m01s08i236,8,236,TMONMN,DTILE,UP5
+HadGEM3-GC31,sweLut_tavg-u-hxy-lus,mon,m01s03i317,3,317,TMONMN,DTILE,UP5
+HadGEM3-GC31,sweLut_tavg-u-hxy-lus,mon,m01s08i236,8,236,TMONMN,DTILE,UP5
+UKESM1,sfcWindmax_tstat-h10m-hxy-u,mon,m01s03i230,3,230,TDAYMAX,DIAG,UP6
+HadGEM3-GC31,sfcWindmax_tstat-h10m-hxy-u,mon,m01s03i230,3,230,TDAYMAX,DIAG,UP6
 UKESM1,rss_tavg-u-hxy-u,mon,m01s01i201,1,201,TMONMN,DIAG,UP5
 HadGEM3-GC31,rss_tavg-u-hxy-u,mon,m01s01i201,1,201,TMONMN,DIAG,UP5
 UKESM1,rls_tavg-u-hxy-u,mon,m01s02i201,2,201,TMONMN,DIAG,UP5

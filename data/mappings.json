@@ -1,6 +1,318 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "tas_tavg-h2m-hxy-lus",
+      "CF standard name": "air_temperature",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where sector",
+      "Comment": "Air temperature is the bulk temperature of the air, not the surface (skin) temperature.",
+      "Dimensions": "longitude latitude landUse time height2m",
+      "Frequency": "mon",
+      "Long name": "Near-Surface Air Temperature on Land Use Tile",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude landUse time height2m CMIP7:longitude latitude time landUse height2m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "land_use_tile_mean(m01s03i328[lbproc=128],m01s19i013[lbtim_ia=240,lbproc=128])",
+      "Model units": "K"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i236",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,236",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i013",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "19,013",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1022,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable land.mon.tas_tavg-h2m-hxy-lus (Emon.tasLut)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "t20d_tavg-u-hxy-sea",
+      "CF standard name": "depth_of_isosurface_of_sea_water_potential_temperature",
+      "CMIP6 Differences": "\"comment\" was \"This quantity, sometimes called the 'isotherm depth', is the depth (if it exists) at which the sea water potential temperature equals some specified value. This value should be specified in a scalar coordinate variable. Depth is the vertical distance below the surface. Potential temperature is the temperature a parcel of air or sea water would have if moved adiabatically to sea level pressure.\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Monthly 20C isotherm depth",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Depth of 20 degree Celsius Isotherm",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "This quantity, sometimes called the \"isotherm depth\", is the depth (if it exists) at which the sea water potential temperature equals some specified value. This value should be specified in a scalar coordinate variable. Depth is the vertical distance below the surface. Potential temperature is the temperature a parcel of air or sea water would have if moved adiabatically to sea level pressure.",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "t20d",
+      "Expression UKESM1": "t20d",
+      "Model units": "m"
+    },
+    "STASH entries": [],
+    "issue_number": 1021,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.mon.t20d_tavg-u-hxy-sea (Emon.t20d)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "t17d_tavg-u-hxy-sea",
+      "CF standard name": "depth_of_isosurface_of_sea_water_potential_temperature",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Monthly 17C isotherm depth",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Depth of 17 degree Celsius Isotherm",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "This quantity, sometimes called the \"isotherm depth\", is the depth (if it exists) at which the sea water potential temperature equals some specified value. This value should be specified in a scalar coordinate variable. Depth is the vertical distance below the surface. Potential temperature is the temperature a parcel of air or sea water would have if moved adiabatically to sea level pressure.",
+      "Units": "m",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1020,
+    "labels": [
+      "mon",
+      "ocean"
+    ],
+    "title": "Variable ocean.mon.t17d_tavg-u-hxy-sea (Emon.t17d)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sweLut_tavg-u-hxy-lus",
+      "CF standard name": "lwe_thickness_of_surface_snow_amount",
+      "CMIP6 Differences": "\"comment\" was \"The surface called 'surface' means the lower boundary of the atmosphere. 'lwe' means liquid water equivalent. 'Amount' means mass per unit area. The construction lwe_thickness_of_X_amount or _content means the vertical extent of a layer of liquid water having the same mass per unit area. Surface amount refers to the amount on the ground, excluding that on the plant or vegetation canopy.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where sector",
+      "Comment": "The surface called \"surface\" means the lower boundary of the atmosphere. \"lwe\" means liquid water equivalent. \"Amount\" means mass per unit area. The construction lwe_thickness_of_X_amount or _content means the vertical extent of a layer of liquid water having the same mass per unit area. Surface amount refers to the amount on the ground, excluding that on the plant or vegetation canopy.",
+      "Dimensions": "longitude latitude landUse time",
+      "Frequency": "mon",
+      "Long name": "Snow Water Equivalent on Land-Use Tile",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude landUse time CMIP7:longitude latitude time landUse,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "land_use_tile_mean( m01s08i236[lbproc=128] / FRESHWATER_DENSITY, m01s03i317[lbproc=128])",
+      "Expression UKESM1": "land_use_tile_mean( m01s08i236[lbproc=128] / FRESHWATER_DENSITY, m01s03i317[lbproc=128])",
+      "Model units": "m"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i236",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "8,236",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i236",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "8,236",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1019,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable land.mon.sweLut_tavg-u-hxy-lus (Emon.sweLut)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sw2H_tavg-l-hxy-sea",
+      "CF standard name": "isotope_ratio_of_2H_to_1H_in_sea_water_excluding_solutes_and_solids",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Ratio of abundance of hydrogen-2 (2H) atoms to hydrogen-1 (1H) atoms in sea water",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Isotopic Ratio of Deuterium in Sea Water",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "ISSUE: missing CF name",
+      "Units": "1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1018,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.mon.sw2H_tavg-l-hxy-sea (Emon.sw2H)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sw18O_tavg-l-hxy-sea",
+      "CF standard name": "isotope_ratio_of_18O_to_16O_in_sea_water_excluding_solutes_and_solids",
+      "CMIP6 Differences": "\"cell_measures\" was \"area: areacella\"; ; \"dimensions\" was \"longitude latitude alevel time\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean",
+      "Comment": "Ratio of abundance of oxygen-18 (18O) atoms to oxygen-16 (16O) atoms in sea water",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Isotopic Ratio of Oxygen-18 in Sea Water",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Measures - CMIP6:area: areacella CMIP7:area: areacello, CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude alevel time CMIP7:longitude latitude olevel time,",
+      "Units": "1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1017,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.mon.sw18O_tavg-l-hxy-sea (Emon.sw18O)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sw17O_tavg-l-hxy-sea",
+      "CF standard name": "isotope_ratio_of_17O_to_16O_in_sea_water_excluding_solutes_and_solids",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Ratio of abundance of oxygen-17 (17O) atoms to oxygen-16 (16O) atoms in sea water",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Isotopic Ratio of Oxygen-17 in Sea Water",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1016,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.mon.sw17O_tavg-l-hxy-sea (Emon.sw17O)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sfcWindmax_tstat-h10m-hxy-u",
+      "CF standard name": "wind_speed",
+      "CMIP6 Differences": "\"dimensions\" was \"longitude latitude time height10m\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean time: maximum within days time: mean over days",
+      "Comment": "Daily maximum near-surface (usually, 10 meters) wind speed.",
+      "Dimensions": "longitude latitude time2 height10m",
+      "Frequency": "mon",
+      "Long name": "Daily Maximum Near-Surface Wind Speed",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time height10m CMIP7:longitude latitude time2 height10m,",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "mon_mean_from_day(m01s03i230[lbproc=8192])",
+      "Expression UKESM1": "mon_mean_from_day(m01s03i230[lbproc=8192])",
+      "Model units": "m s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i230",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,230",
+        "time_profile": "TDAYMAX",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s03i230",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,230",
+        "time_profile": "TDAYMAX",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 1015,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.sfcWindmax_tstat-h10m-hxy-u (Emon.sfcWindmax)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "scldncl_tavg-u-hxy-scl",
       "CF standard name": "number_concentration_of_stratiform_cloud_liquid_water_particles_at_stratiform_liquid_water_cloud_top",
       "CMIP6 Differences": "Not present",
