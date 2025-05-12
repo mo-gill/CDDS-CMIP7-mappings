@@ -1,6 +1,306 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "masscello_ti-l-hxy-sea",
+      "CF standard name": "sea_water_mass_per_unit_area",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: sum\"; ; \"comment\" was \"Tracer grid-cell mass per unit area used for computing tracer budgets. For Boussinesq models with static ocean grid cell thickness, masscello = rhozero*thickcello, where thickcello is static cell thickness and rhozero is constant Boussinesq reference density. More generally, masscello is time dependent and reported as part of Omon.\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean",
+      "Comment": "Tracer grid-cell mass per unit area used for computing tracer budgets. For Boussinesq models with static ocean grid cell thickness, masscello = rhozero\\*thickcello, where thickcello is static cell thickness and rhozero is constant Boussinesq reference density. More generally, masscello is time dependent and reported as part of Omon.",
+      "Dimensions": "longitude latitude olevel",
+      "Frequency": "fx",
+      "Long name": "Ocean Grid-Cell Mass per Area",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "3-d field: report on grid that applies to temperature. Use this variable if masscello is fixed, e.g. for Boussinesq models with static ocean grid cell thickness.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: sum CMIP7:area: mean,",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1371,
+    "labels": [
+      "fx",
+      "ocean",
+      "CMIP6",
+      "BCV"
+    ],
+    "title": "Variable ocean.fx.masscello_ti-l-hxy-sea (Ofx.masscello)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hfgeou_ti-u-hxy-sea",
+      "CF standard name": "upward_geothermal_heat_flux_at_sea_floor",
+      "CMIP6 Differences": "\"dimensions\" was \"longitude latitude\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea",
+      "Comment": "Upward geothermal heat flux per unit area on the sea floor",
+      "Dimensions": "longitude latitude depthseafloor",
+      "Frequency": "fx",
+      "Long name": "Upward Geothermal Heat Flux at Sea Floor",
+      "Modeling realm": "ocean",
+      "Positive": "up",
+      "Processing notes": "CHANGE SINCE CMIP6: Spatial shape updated to sea floor; If this field is time-dependent then save it instead as one of your Omon fields (see the Omon table); CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude CMIP7:longitude latitude depthseafloor,",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "hfgeou",
+      "Expression UKESM1": "hfgeou",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 1370,
+    "labels": [
+      "fx",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable ocean.fx.hfgeou_ti-u-hxy-sea (Ofx.hfgeou)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "dyvo_ti-u-hxy-u",
+      "CF standard name": "cell_y_length",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "::MODEL",
+      "Cell methods": "area: point",
+      "Comment": "The linear extent of the cell in the y direction of the horizontal grid centered at v-points (points for velocity in the y-direction). Not applicable to unstructured grids.",
+      "Dimensions": "longitude latitude",
+      "Frequency": "fx",
+      "Long name": "Cell Length in the Y Direction at v-points",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1369,
+    "labels": [
+      "fx",
+      "ocean"
+    ],
+    "title": "Variable ocean.fx.dyvo_ti-u-hxy-u (Ofx.dyvo)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "dyuo_ti-u-hxy-u",
+      "CF standard name": "cell_y_length",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "::MODEL",
+      "Cell methods": "area: point",
+      "Comment": "The linear extent of the cell in the y direction of the horizontal grid centered at u-points (points for velocity in the x-direction). Not applicable to unstructured grids.",
+      "Dimensions": "longitude latitude",
+      "Frequency": "fx",
+      "Long name": "Cell Length in the Y Direction at u-points",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1368,
+    "labels": [
+      "fx",
+      "ocean"
+    ],
+    "title": "Variable ocean.fx.dyuo_ti-u-hxy-u (Ofx.dyuo)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "dyto_ti-u-hxy-u",
+      "CF standard name": "cell_y_length",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "::MODEL",
+      "Cell methods": "area: point",
+      "Comment": "The linear extent of the cell in the y direction of the horizontal grid centered at t-points (points for tracers such as temperature, salinity, etc.). Not applicable to unstructured grids.",
+      "Dimensions": "longitude latitude",
+      "Frequency": "fx",
+      "Long name": "Cell Length in the Y Direction at t-points",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1367,
+    "labels": [
+      "fx",
+      "ocean"
+    ],
+    "title": "Variable ocean.fx.dyto_ti-u-hxy-u (Ofx.dyto)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "dxvo_ti-u-hxy-u",
+      "CF standard name": "cell_x_length",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "::MODEL",
+      "Cell methods": "area: point",
+      "Comment": "The linear extent of the cell in the x direction of the horizontal grid centered at v-points (points for velocity in the y-direction). Not applicable to unstructured grids.",
+      "Dimensions": "longitude latitude",
+      "Frequency": "fx",
+      "Long name": "Cell Length in the X Direction at v-points",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1366,
+    "labels": [
+      "fx",
+      "ocean"
+    ],
+    "title": "Variable ocean.fx.dxvo_ti-u-hxy-u (Ofx.dxvo)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "dxuo_ti-u-hxy-u",
+      "CF standard name": "cell_x_length",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "::MODEL",
+      "Cell methods": "area: point",
+      "Comment": "The linear extent of the cell in the x direction of the horizontal grid centered at u-points (points for velocity in the x-direction). Not applicable to unstructured grids.",
+      "Dimensions": "longitude latitude",
+      "Frequency": "fx",
+      "Long name": "Cell Length in the X Direction at u-points",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1365,
+    "labels": [
+      "fx",
+      "ocean"
+    ],
+    "title": "Variable ocean.fx.dxuo_ti-u-hxy-u (Ofx.dxuo)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "dxto_ti-u-hxy-u",
+      "CF standard name": "cell_x_length",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "::MODEL",
+      "Cell methods": "area: point",
+      "Comment": "The linear extent of the cell in the x direction of the horizontal grid centered at t-points (points for tracers such as temperature, salinity, etc.). Not applicable to unstructured grids.",
+      "Dimensions": "longitude latitude",
+      "Frequency": "fx",
+      "Long name": "Cell Length in the X Direction at t-points",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1364,
+    "labels": [
+      "fx",
+      "ocean"
+    ],
+    "title": "Variable ocean.fx.dxto_ti-u-hxy-u (Ofx.dxto)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "deptho_ti-u-hxy-sea",
+      "CF standard name": "sea_floor_depth_below_geoid",
+      "CMIP6 Differences": "\"dimensions\" was \"longitude latitude\"; ; \"comment\" was \"Ocean bathymetry.   Reported here is the sea floor depth for present day relative to z=0 geoid. Reported as missing for land grid cells.\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea",
+      "Comment": "Ocean bathymetry. Reported here is the sea floor depth for present day relative to z=0 geoid. Reported as missing for land grid cells.",
+      "Dimensions": "longitude latitude depthseafloor",
+      "Frequency": "fx",
+      "Long name": "Sea Floor Depth Below Geoid",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6: Spatial shape updated to sea floor; save both native and spherical; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude CMIP7:longitude latitude depthseafloor,",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "deptho",
+      "Expression UKESM1": "deptho",
+      "Model units": "m"
+    },
+    "STASH entries": [],
+    "issue_number": 1363,
+    "labels": [
+      "fx",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable ocean.fx.deptho_ti-u-hxy-sea (Ofx.deptho)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "basin_ti-u-hxy-u",
+      "CF standard name": "region",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean",
+      "Comment": "A variable with the standard name of region contains strings which indicate geographical regions. These strings must be chosen from the standard region list.",
+      "Dimensions": "longitude latitude",
+      "Frequency": "fx",
+      "Long name": "Region Selection Index",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on the same grid as the temperature field. flag_values=0,1,2,3,4,5,6,7,8,9,10 corresponding to flag_meanings=global_land, southern_ocean, atlantic_ocean, pacific_ocean, arctic_ocean, indian_ocean, mediterranean_sea, black_sea, hudson_bay, baltic_sea, red_sea.  CHANGE: Flag values and meanings are in processing note. ISSUE: may not be easily machine processed.",
+      "Units": "1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "basin",
+      "Expression UKESM1": "basin",
+      "Model units": "1"
+    },
+    "STASH entries": [],
+    "issue_number": 1362,
+    "labels": [
+      "fx",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable ocean.fx.basin_ti-u-hxy-u (Ofx.basin)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "areacello_ti-u-hxy-u",
       "CF standard name": "cell_area",
       "CMIP6 Differences": "\"comment\" was \"Horizontal area of ocean grid cells\";",
