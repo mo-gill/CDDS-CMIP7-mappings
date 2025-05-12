@@ -1,6 +1,308 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "dfe_tavg-l-hxy-sea",
+      "CF standard name": "mole_concentration_of_dissolved_iron_in_sea_water",
+      "CMIP6 Differences": "\"comment\" was \"Dissolved iron in sea water,  including both Fe2+ and Fe3+ ions (but not particulate detrital iron)\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "dissolved iron in sea water is meant to include both Fe2+ and Fe3+ ions (but not, e.g., particulate detrital iron)",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Dissolved Iron Concentration",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "Concentrations of all 3D tracers in the uppermost ocean layer. See first table in Oyr for a complete list of these tracers.  \"Tracer\"  concentations should be reported even if they are diagnosed rather than prognostically calculated.",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "FER_E3T / thkcello",
+      "Model units": "mmol m-3"
+    },
+    "STASH entries": [],
+    "issue_number": 1398,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.dfe_tavg-l-hxy-sea (Omon.dfe)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "detoc_tavg-l-hxy-sea",
+      "CF standard name": "mole_concentration_of_organic_detritus_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "\"comment\" was \"Sum of detrital organic carbon component concentrations\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "sum of detrital organic carbon component concentrations",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Detrital Organic Carbon Concentration",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "Concentrations of all 3D tracers in the uppermost ocean layer. See first table in Oyr for a complete list of these tracers.  \"Tracer\"  concentations should be reported even if they are diagnosed rather than prognostically calculated.",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "DTC_E3T / thkcello",
+      "Model units": "mmol m-3"
+    },
+    "STASH entries": [],
+    "issue_number": 1397,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.detoc_tavg-l-hxy-sea (Omon.detoc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "chlpico_tavg-u-hm-sea",
+      "CF standard name": "mass_concentration_of_picophytoplankton_expressed_as_chlorophyll_in_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "chlorophyll concentration from the picophytoplankton (<2 um) component alone",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Mass Concentration of Picophytoplankton Expressed as Chlorophyll in Sea Water",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time CMIP7:longitude latitude time depth0m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "kg m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1396,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.chlpico_tavg-u-hm-sea (Omon.chlpicoos)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "chlpico_tavg-l-hxy-sea",
+      "CF standard name": "mass_concentration_of_picophytoplankton_expressed_as_chlorophyll_in_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "chlorophyll concentration from the picophytoplankton (<2 um) component alone",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Mass Concentration of Picophytoplankton Expressed as Chlorophyll in Sea Water",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "Concentrations of all 3D tracers in the uppermost ocean layer. See first table in Oyr for a complete list of these tracers.  \"Tracer\"  concentations should be reported even if they are diagnosed rather than prognostically calculated.",
+      "Units": "kg m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1395,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.chlpico_tavg-l-hxy-sea (Omon.chlpico)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "chl_tavg-u-hm-sea",
+      "CF standard name": "mass_concentration_of_phytoplankton_expressed_as_chlorophyll_in_sea_water",
+      "CMIP6 Differences": "\"comment\" was \"Sum of chlorophyll from all phytoplankton group concentrations at the sea surface.  In most models this is equal to chldiat+chlmisc, that is the sum of 'Diatom Chlorophyll Mass Concentration' plus 'Other Phytoplankton Chlorophyll Mass Concentration'\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "sum of chlorophyll from all phytoplankton group concentrations.  In most models this is equal to chldiat+chlmisc, that is the sum of \"Diatom Chlorophyll Mass Concentration\" plus \"Other Phytoplankton Chlorophyll Mass Concentration\"",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Mass Concentration of Total Phytoplankton Expressed as Chlorophyll in Sea Water",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time CMIP7:longitude latitude time depth0m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "kg m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "(CHN_E3T[depth=0] + CHD_E3T[depth=0]) / thkcello[depth=0]",
+      "Model units": "mg m-3"
+    },
+    "STASH entries": [],
+    "issue_number": 1394,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.chl_tavg-u-hm-sea (Omon.chlos)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "chlmisc_tavg-u-hm-sea",
+      "CF standard name": "mass_concentration_of_miscellaneous_phytoplankton_expressed_as_chlorophyll_in_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "chlorophyll from additional phytoplankton component concentrations alone",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Mass Concentration of Other Phytoplankton Expressed as Chlorophyll in Sea Water",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time CMIP7:longitude latitude time depth0m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "kg m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "CHN_E3T[depth=0] / thkcello[depth=0]",
+      "Model units": "mg m-3"
+    },
+    "STASH entries": [],
+    "issue_number": 1393,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.chlmisc_tavg-u-hm-sea (Omon.chlmiscos)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "chlmisc_tavg-l-hxy-sea",
+      "CF standard name": "mass_concentration_of_miscellaneous_phytoplankton_expressed_as_chlorophyll_in_sea_water",
+      "CMIP6 Differences": "\"comment\" was \"Chlorophyll from additional phytoplankton component concentrations alone\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "chlorophyll from additional phytoplankton component concentrations alone",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Mass Concentration of Other Phytoplankton Expressed as Chlorophyll in Sea Water",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "Concentrations of all 3D tracers in the uppermost ocean layer. See first table in Oyr for a complete list of these tracers.  \"Tracer\"  concentations should be reported even if they are diagnosed rather than prognostically calculated.",
+      "Units": "kg m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "CHN_E3T / thkcello",
+      "Model units": "mg m-3"
+    },
+    "STASH entries": [],
+    "issue_number": 1392,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.chlmisc_tavg-l-hxy-sea (Omon.chlmisc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "chldiaz_tavg-u-hm-sea",
+      "CF standard name": "mass_concentration_of_diazotrophic_phytoplankton_expressed_as_chlorophyll_in_sea_water",
+      "CMIP6 Differences": "\"standard_name\" was \"mass_concentration_of_diazotrophs_expressed_as_chlorophyll_in_sea_water\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "chlorophyll concentration from the diazotrophic phytoplankton component alone",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Mass Concentration of Diazotrophs Expressed as Chlorophyll in Sea Water",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time CMIP7:longitude latitude time depth0m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "kg m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1391,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.chldiaz_tavg-u-hm-sea (Omon.chldiazos)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "chldiaz_tavg-l-hxy-sea",
+      "CF standard name": "mass_concentration_of_diazotrophic_phytoplankton_expressed_as_chlorophyll_in_sea_water",
+      "CMIP6 Differences": "\"standard_name\" was \"mass_concentration_of_diazotrophs_expressed_as_chlorophyll_in_sea_water\"; ; \"comment\" was \"Chlorophyll concentration from the diazotrophic phytoplankton component alone\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "chlorophyll concentration from the diazotrophic phytoplankton component alone",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Mass Concentration of Diazotrophs Expressed as Chlorophyll in Sea Water",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "Concentrations of all 3D tracers in the uppermost ocean layer. See first table in Oyr for a complete list of these tracers.  \"Tracer\"  concentations should be reported even if they are diagnosed rather than prognostically calculated.",
+      "Units": "kg m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1390,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.chldiaz_tavg-l-hxy-sea (Omon.chldiaz)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "chldiat_tavg-u-hm-sea",
+      "CF standard name": "mass_concentration_of_diatoms_expressed_as_chlorophyll_in_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "chlorophyll from diatom phytoplankton component concentration alone",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Mass Concentration of Diatoms Expressed as Chlorophyll in Sea Water",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time CMIP7:longitude latitude time depth0m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "kg m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "CHD_E3T[depth=0] / thkcello[depth=0]",
+      "Model units": "mg m-3"
+    },
+    "STASH entries": [],
+    "issue_number": 1389,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.chldiat_tavg-u-hm-sea (Omon.chldiatos)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "chldiat_tavg-l-hxy-sea",
       "CF standard name": "mass_concentration_of_diatoms_expressed_as_chlorophyll_in_sea_water",
       "CMIP6 Differences": "\"comment\" was \"Chlorophyll from diatom phytoplankton component concentration alone\";",
