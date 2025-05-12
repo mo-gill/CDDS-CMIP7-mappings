@@ -6,6 +6,3098 @@
       "CMIP6 Differences": "Not present",
       "Cell measures": "",
       "Cell methods": "area: sum time: mean",
+      "Comment": "Total integrated mass of snow on sea ice in the Southern Hemisphere.",
+      "Dimensions": "time",
+      "Frequency": "mon",
+      "Long name": "Snow Mass on Sea Ice South",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1776,
+    "labels": [
+      "mon",
+      "seaIce"
+    ],
+    "title": "Variable seaIce.mon.sisnmass_tavg-u-hm-u (SImon.sisnmasss)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sisnmass_tavg-u-hm-u",
+      "CF standard name": "surface_snow_mass",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "",
+      "Cell methods": "area: sum time: mean",
+      "Comment": "Total integrated mass of snow on sea ice in the Northern Hemisphere.",
+      "Dimensions": "time",
+      "Frequency": "mon",
+      "Long name": "Snow Mass on Sea Ice North",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1775,
+    "labels": [
+      "mon",
+      "seaIce"
+    ],
+    "title": "Variable seaIce.mon.sisnmass_tavg-u-hm-u (SImon.sisnmassn)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sisnmassacrossline_tavg-u-ht-u",
+      "CF standard name": "snow_transport_across_line_due_to_sea_ice_dynamics",
+      "CMIP6 Differences": "\"comment\" was \"net (sum of transport in all directions) sea ice area transport through the following four passages, positive into the Arctic Ocean 1. Fram Strait = (11.5W,81.3N to (10.5E,79.6N) 2. Canadian Archipelago = (128.2W,70.6N) to (59.3W,82.1N) 3. Barents opening = (16.8E,76.5N) to (19.2E,70.2N) 4. Bering Strait = (171W,66.2N) to (166W,65N)\";",
+      "Cell measures": "",
+      "Cell methods": "time: mean",
+      "Comment": "Net (sum of transport in all directions) snow mass transport through the following four passages, positive into the Arctic Ocean. Note that the definitions of the passages are for SIMIP purposes just meant as default values as given by the physical ocean MIP described in Griffies et al. (2016). Individual models might chose slightly different definitions as given by their grid geometry. 1. Fram Strait: (11.5W,81.3N) to (10.5E,79.6N). 2. Canadian Arctic Archipelago: (128.2W,70.6N) to (59.3W,82.1N). 3. Barents Sea Opening: (16.8E,76.5N) to (19.2E,70.2N). 4. Bering Strait: (171W,66.2N) to (166W,65N).",
+      "Dimensions": "siline time",
+      "Frequency": "mon",
+      "Long name": "Snow Mass Flux Through Straits",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6: compound name,",
+      "Units": "kg s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1774,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6"
+    ],
+    "title": "Variable seaIce.mon.sisnmassacrossline_tavg-u-ht-u (SImon.sisnmassacrossline)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sisnmass_tavg-u-hxy-u",
+      "CF standard name": "surface_snow_amount",
+      "CMIP6 Differences": "\"comment\" was \"Total mass of snow on sea ice divided by sea-ice area.\"; ; \"standard_name\" was \"liquid_water_content_of_surface_snow\"; ; \"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconc)\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Total mass of snow on sea ice divided by grid-cell area. This then allows one to analyse the storage of latent heat in the snow, and to calculate the snow-water equivalent.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Snow Mass per Area",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siconc) CMIP7:area: time: mean where sea_ice (mask=siconc),",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "hs * SNOW_DENSITY",
+      "Expression UKESM1": "hs * SNOW_DENSITY",
+      "Model units": "kg m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 1773,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.sisnmass_tavg-u-hxy-u (SImon.sisnmass)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sisnhc_tavg-u-hxy-si",
+      "CF standard name": "thermal_energy_content_of_surface_snow",
+      "CMIP6 Differences": "\"comment\" was \"Heat-content of all snow in grid cell divided by total grid-cell area. Snow-water equivalent at 0 Celsius is assumed to have a heat content of 0 J.  Does not include heat content of sea ice.\"; ; \"long_name\" was \"Snow Heat Content per Unit Area\"; ; \"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconc)\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Heat content of all snow in grid cell divided by grid-cell area. This includes both the latent and sensible heat content contributions. Snow-water equivalent at 0 C is assumed to have a heat content of 0 J. Does not include the heat content of sea ice.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Snow Heat Content",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siconc) CMIP7:area: time: mean where sea_ice (mask=siconc),",
+      "Units": "J m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "sisnhc",
+      "Expression UKESM1": "sisnhc",
+      "Model units": "J m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 1772,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.sisnhc_tavg-u-hxy-si (SImon.sisnhc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sisndmasswind_tavg-u-hxy-si",
+      "CF standard name": "tendency_of_surface_snow_amount_due_to_drifting_into_sea",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Rate of change of snow mass due to wind-driven transport into the ocean divided by grid-cell area.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Snow Mass Rate of Change Through Wind Drift of Snow",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6: compound name,",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1771,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6"
+    ],
+    "title": "Variable seaIce.mon.sisndmasswind_tavg-u-hxy-si (SImon.sisndmasswind)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sisndmasssubl_tavg-u-hxy-si",
+      "CF standard name": "tendency_of_atmosphere_mass_content_of_water_vapor_due_to_sublimation_of_surface_snow_and_ice",
+      "CMIP6 Differences": "\"comment\" was \"the rate of change of snow mass through sublimation and evaporation divided by sea-ice area\"; ; \"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconc)\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Rate of change of snow mass through sublimation divided by grid-cell area. If a model does not differentiate between the sublimation of snow and sea ice, we recommend to report all sublimation within sisndmasssubl as long as the ice is snow covered.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Snow Mass Rate of Change Through Evaporation or Sublimation",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6: compound name,",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1770,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6"
+    ],
+    "title": "Variable seaIce.mon.sisndmasssubl_tavg-u-hxy-si (SImon.sisndmasssubl)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sisndmasssnf_tavg-u-hxy-si",
+      "CF standard name": "snowfall_flux",
+      "CMIP6 Differences": "\"long_name\" was \"Snow Mass Change Through Snow Fall\"; ; \"comment\" was \"mass of solid precipitation falling onto sea ice divided by sea-ice area\"; ; \"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconc)\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Rate of change of snow mass due to solid precipitation (i.e. snowfall) falling onto sea ice divided by grid-cell area. Always positive or zero.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Snow Mass Change Through Snowfall",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6: compound name,",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "snow_ai * FRESHWATER_DENSITY / (100. * SECONDS_IN_DAY)",
+      "Expression UKESM1": "snow_ai * FRESHWATER_DENSITY / (100. * SECONDS_IN_DAY)",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1769,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.sisndmasssnf_tavg-u-hxy-si (SImon.sisndmasssnf)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sisndmasssi_tavg-u-hxy-si",
+      "CF standard name": "tendency_of_surface_snow_amount_due_to_conversion_of_snow_to_sea_ice",
+      "CMIP6 Differences": "\"comment\" was \"the rate of change of snow mass due to transformation of snow to sea ice divided by sea-ice area\"; ; \"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconc)\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Rate of change of snow mass due to transformation of snow to sea ice divided by grid-cell area. Always negative or zero.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Snow Mass Rate of Change Through Snow-to-Ice Conversion",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6: compound name,",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "-1 * snoice * ICE_DENSITY / (100. * SECONDS_IN_DAY)",
+      "Expression UKESM1": "-1 * snoice * ICE_DENSITY / (100. * SECONDS_IN_DAY)",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1768,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.sisndmasssi_tavg-u-hxy-si (SImon.sisndmasssi)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sisndmassmelt_tavg-u-hxy-si",
+      "CF standard name": "surface_snow_melt_flux",
+      "CMIP6 Differences": "\"comment\" was \"the rate of change of snow mass through melt divided by sea-ice area\"; ; \"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconc)\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Rate of change of snow mass through melt divided by grid-cell area. Always negative or zero.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Snow Mass Rate of Change Through Melt",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6: compound name,",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "-1 * melts * SNOW_DENSITY / (100. * SECONDS_IN_DAY)",
+      "Expression UKESM1": "-1 * melts * SNOW_DENSITY / (100. * SECONDS_IN_DAY)",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1767,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.sisndmassmelt_tavg-u-hxy-si (SImon.sisndmassmelt)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sisndmassdyn_tavg-u-hxy-si",
+      "CF standard name": "tendency_of_surface_snow_amount_due_to_sea_ice_dynamics",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Rate of change of snow mass due to sea ice dynamics (advection, divergence, etc.) divided by grid-cell area.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Snow Mass Rate of Change Through Advection by Sea-Ice Dynamics",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6: compound name,",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1766,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6"
+    ],
+    "title": "Variable seaIce.mon.sisndmassdyn_tavg-u-hxy-si (SImon.sisndmassdyn)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "snc_tavg-u-hxy-si",
+      "CF standard name": "surface_snow_area_fraction",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconc)\"; ; \"units\" was \"%\"; ; \"comment\" was \"Percentage of sea ice, by area, which is covered by snow, giving equal weight to every square metre of sea ice . Exclude snow that lies on land or land ice.\"; ; \"long_name\" was \"Snow Area Percentage\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Area fraction of the sea-ice surface that is covered by snow. In many models that do not explicitly resolve an areal fraction of snow, this variable will always be either 0 or 1.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Snow Area Fraction",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Units (from Physical Parameter) - CMIP6:% CMIP7:1,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siconc) CMIP7:area: time: mean where sea_ice (mask=siconc),",
+      "Units": "1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "snowfrac / aice",
+      "Expression UKESM1": "snowfrac / aice",
+      "Model units": "1"
+    },
+    "STASH entries": [],
+    "issue_number": 1765,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.snc_tavg-u-hxy-si (SImon.sisnconc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sisi_tavg-u-hxy-si",
+      "CF standard name": "sea_ice_mole_content_of_silicon",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Vertically-integrated amount of silicate in ice algae, expressed in moles of silicon per square meter of sea ice.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Dissolved Silicon Amount in Sea Ice",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.",
+      "Units": "mol m-2",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1764,
+    "labels": [
+      "mon",
+      "ocnBgchem"
+    ],
+    "title": "Variable ocnBgchem.mon.sisi_tavg-u-hxy-si (SImon.sisi)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sishearvel_tpt-u-hxy-si",
+      "CF standard name": "maximum_over_coordinate_rotation_of_sea_ice_horizontal_shear_strain_rate",
+      "CMIP6 Differences": "\"comment\" was \"Maximum shear of sea-ice velocity field (second shear strain invariant)\"; ; \"frequency\" was \"monPt\"; ; \"cell_methods\" was \"area: mean where sea_ice (comment: mask=siconc) time: point\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea_ice (mask=siconc) time: point",
+      "Comment": "Maximum shear of sea-ice velocity field (second shear strain invariant). Requested as instantaneous value at the center of the month (i.e., first timestep of the 15th day of the month).",
+      "Dimensions": "longitude latitude time1",
+      "Frequency": "mon",
+      "Long name": "Maximum Shear of Sea-Ice Velocity Field",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6: compound name,",
+      "Units": "s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1763,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6"
+    ],
+    "title": "Variable seaIce.mon.sishearvel_tpt-u-hxy-si (SImon.sishearvel)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sisaltmass_tavg-u-hxy-si",
+      "CF standard name": "sea_ice_mass_content_of_salt",
+      "CMIP6 Differences": "\"long_name\" was \"Mass of Salt in Sea Ice per Area\"; ; \"comment\" was \"Total mass of all salt in sea ice divided by grid-cell area\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Total mass of all salt in sea ice divided by grid-cell area. Sometimes, models implicitly or explicitly assume a different salinity of the ice for thermodynamic considerations than they do for closing the salt budget with the ocean. In these cases, the total mass of all salt in sea ice should be calculated from the salinity value used in the calculation of the salt budget.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Mass of Salt in Sea Ice",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "sisaltmass",
+      "Expression UKESM1": "sisaltmass",
+      "Model units": "kg m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 1762,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.sisaltmass_tavg-u-hxy-si (SImon.sisaltmass)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sisali_tavg-u-hxy-si",
+      "CF standard name": "sea_ice_salinity",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconc)\"; ; \"units\" was \"0.001\"; ; \"long_name\" was \"Sea Ice Salinity\"; ; \"comment\" was \"Mean sea-ice salinity of all sea ice in grid cell\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Mean sea-ice salinity of all sea ice in grid cell. Sometimes, models implicitly or explicitly assume a different salinity of the ice for thermodynamic considerations than they do for closing the salt budget with the ocean. In these cases, the mean salinity used in the calculation of the salt budget should be reported.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Sea-Ice Salinity",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Units (from Physical Parameter) - CMIP6:0.001 CMIP7:1,; CHANGE SINCE CMIP6 in Units (from Physical Parameter) - CMIP6:0.001 CMIP7:1E-03,; Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siconc) CMIP7:area: time: mean where sea_ice (mask=siconc),",
+      "Units": "1E-03",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1761,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6"
+    ],
+    "title": "Variable seaIce.mon.sisali_tavg-u-hxy-si (SImon.sisali)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sithickrdg_tavg-u-hxy-sir",
+      "CF standard name": "sea_ice_thickness",
+      "CMIP6 Differences": "\"comment\" was \"Sea Ice Ridge Height (representing mean height over the ridged area)\"; ; \"cell_methods\" was \"area: time: mean where sea_ice_ridges (comment: mask=sirdgconc)\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice_ridges (mask=sirdgconc)",
+      "Comment": "Total volume of ridged sea ice divided by area of ridges, i.e. mean thickness of ridged sea ice.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Ridged Ice Thickness",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice_ridges (comment: mask=sirdgconc) CMIP7:area: time: mean where sea_ice_ridges (mask=sirdgconc),",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "vrdg / ardg",
+      "Expression UKESM1": "vrdg / ardg",
+      "Model units": "m"
+    },
+    "STASH entries": [],
+    "issue_number": 1760,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.sithickrdg_tavg-u-hxy-sir (SImon.sirdgthick)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sirdgconc_tavg-u-hxy-u",
+      "CF standard name": "area_fraction",
+      "CMIP6 Differences": "\"long_name\" was \"Percentage Cover of Sea Ice by Ridging\"; ; \"comment\" was \"Fraction of sea ice, by area, which is covered by sea ice ridges, giving equal weight to every square metre of sea ice .\"; ; \"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconc)\"; ; \"units\" was \"1\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Area fraction of sea-ice surface that is ridged sea ice.",
+      "Dimensions": "longitude latitude time typesirdg",
+      "Frequency": "mon",
+      "Long name": "Fraction of Ridged Sea Ice",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time typesirdg CMIP7:longitude latitude time  typesirdg,;  ; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siconc) CMIP7:area: time: mean where sea_ice (mask=siconc),; CHANGE SINCE CMIP6 in Units (from Physical Parameter) - CMIP6:1 CMIP7:%,",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "ardg",
+      "Expression UKESM1": "ardg",
+      "Model units": "1"
+    },
+    "STASH entries": [],
+    "issue_number": 1759,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.sirdgconc_tavg-u-hxy-u (SImon.sirdgconc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "prra_tavg-u-hxy-si",
+      "CF standard name": "rainfall_flux",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconc)\"; ; \"comment\" was \"mass of liquid precipitation falling onto sea ice divided by grid-cell area\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Mass of liquid precipitation falling onto sea ice divided by grid-cell area. If the rain is directly put into the ocean, it should not be counted towards sipr. Always positive or zero.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Rainfall Rate over Sea Ice",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siconc) CMIP7:area: time: mean where sea_ice (mask=siconc),",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "rain_ai * FRESHWATER_DENSITY / (100. * SECONDS_IN_DAY)",
+      "Expression UKESM1": "rain_ai * FRESHWATER_DENSITY / (100. * SECONDS_IN_DAY)",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1758,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.prra_tavg-u-hxy-si (SImon.sipr)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sino3_tavg-u-hxy-si",
+      "CF standard name": "sea_ice_mole_content_of_nitrate",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Vertically-integrated amount of nitrate in ice algae, expressed in moles of nitrogen per square meter of sea ice.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Dissolved Nitrate Amount in Sea Ice",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.",
+      "Units": "mol m-2",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1757,
+    "labels": [
+      "mon",
+      "ocnBgchem"
+    ],
+    "title": "Variable ocnBgchem.mon.sino3_tavg-u-hxy-si (SImon.sino3)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "simpthick_tavg-u-hxy-si",
+      "CF standard name": "sea_ice_melt_pond_thickness",
+      "CMIP6 Differences": "\"long_name\" was \"Meltpond Mass per Unit Area (as Depth)\"; ; \"cell_methods\" was \"area: time: mean where sea_ice_melt_pond (comment: mask=simpconc)\"; ; \"comment\" was \"Meltpond Depth\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice_melt_pond (mask=simpconc)",
+      "Comment": "Average depth of melt ponds on sea ice, that is melt pond volume divided by melt pond area.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Melt Pond Depth",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6: compound name,; Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "hpond_ai / aice",
+      "Expression UKESM1": "hpond_ai / aice",
+      "Model units": "m"
+    },
+    "STASH entries": [],
+    "issue_number": 1756,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.simpthick_tavg-u-hxy-si (SImon.simpthick)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "simprefrozen_tavg-u-hxy-simp",
+      "CF standard name": "thickness_of_ice_on_sea_ice_melt_pond",
+      "CMIP6 Differences": "\"comment\" was \"Volume of refrozen ice on melt ponds divided by meltpond covered area\"; ; \"cell_methods\" was \"area: time: mean where sea_ice_melt_pond (comment: mask=simpconc)\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice_melt_pond (mask=simpconc)",
+      "Comment": "Volume of refrozen ice on melt ponds divided by melt pond covered area.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Thickness of Refrozen Ice on Melt Pond",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice_melt_pond (comment: mask=simpconc) CMIP7:area: time: mean where sea_ice_melt_pond (mask=simpconc),",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "ipond_ai / apond_ai",
+      "Expression UKESM1": "ipond_ai / apond_ai",
+      "Model units": "m"
+    },
+    "STASH entries": [],
+    "issue_number": 1755,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.simprefrozen_tavg-u-hxy-simp (SImon.simprefrozen)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "simpeffconc_tavg-u-hxy-si",
+      "CF standard name": "area_fraction",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Area fraction of sea-ice surface that is covered by open melt ponds, that is melt ponds that are not covered by snow or ice lids. This represents the effective (i.e. radiatively-active) melt pond area fraction.",
+      "Dimensions": "longitude latitude time typemp",
+      "Frequency": "mon",
+      "Long name": "Fraction of Sea Ice Covered by Effective Melt Pond",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "%",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1754,
+    "labels": [
+      "mon",
+      "seaIce"
+    ],
+    "title": "Variable seaIce.mon.simpeffconc_tavg-u-hxy-si (SImon.simpeffconc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "simpconc_tavg-u-hxy-si",
+      "CF standard name": "area_fraction",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconc)\"; ; \"comment\" was \"Percentage of sea ice, by area, which is covered by melt ponds, giving equal weight to every square metre of sea ice .\"; ; \"long_name\" was \"Percentage Cover of Sea Ice by Meltpond\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Area fraction of sea-ice surface that is covered by melt ponds.",
+      "Dimensions": "longitude latitude time typemp",
+      "Frequency": "mon",
+      "Long name": "Fraction of Sea Ice Covered by Melt Pond",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Units (from Physical Parameter) - CMIP6:% CMIP7:1,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siconc) CMIP7:area: time: mean where sea_ice (mask=siconc),",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "apond_ai / aice",
+      "Expression UKESM1": "apond_ai / aice",
+      "Model units": "1"
+    },
+    "STASH entries": [],
+    "issue_number": 1753,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.simpconc_tavg-u-hxy-si (SImon.simpconc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "simassacrossline_tavg-u-ht-u",
+      "CF standard name": "sea_ice_transport_across_line",
+      "CMIP6 Differences": "\"long_name\" was \"Sea Mass Area Flux Through Straits\"; ; \"comment\" was \"net (sum of transport in all directions) sea ice area transport through the following four passages, positive into the Arctic Ocean 1. Fram Strait = (11.5W,81.3N to (10.5E,79.6N) 2. Canadian Archipelago = (128.2W,70.6N) to (59.3W,82.1N) 3. Barents opening = (16.8E,76.5N) to (19.2E,70.2N) 4. Bering Strait = (171W,66.2N) to (166W,65N)\";",
+      "Cell measures": "",
+      "Cell methods": "time: mean",
+      "Comment": "Net (sum of transport in all directions) sea ice mass transport through the following four passages, positive into the Arctic Ocean. Note that the definitions of the passages are for SIMIP purposes just meant as default values as given by the physical ocean MIP described in Griffies et al. (2016). Individual models might chose slightly different definitions as given by their grid geometry. 1. Fram Strait: (11.5W,81.3N) to (10.5E,79.6N). 2. Canadian Arctic Archipelago: (128.2W,70.6N) to (59.3W,82.1N). 3. Barents Sea Opening: (16.8E,76.5N) to (19.2E,70.2N). 4. Bering Strait: (171W,66.2N) to (166W,65N).",
+      "Dimensions": "siline time",
+      "Frequency": "mon",
+      "Long name": "Sea-Ice Mass Flux Through Straits",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1752,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6"
+    ],
+    "title": "Variable seaIce.mon.simassacrossline_tavg-u-ht-u (SImon.simassacrossline)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "simass_tavg-u-hxy-sea",
+      "CF standard name": "sea_ice_amount",
+      "CMIP6 Differences": "\"long_name\" was \"Sea-Ice Mass per Area\"; ; \"comment\" was \"Total mass of sea ice divided by grid-cell area\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Total mass of sea ice divided by grid-cell area.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Sea-Ice Mass",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "hi * ICE_DENSITY",
+      "Expression UKESM1": "hi * ICE_DENSITY",
+      "Model units": "kg m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 1751,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable seaIce.mon.simass_tavg-u-hxy-sea (SImon.simass)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sithickitd_tavg-u-hxy-si",
+      "CF standard name": "sea_ice_thickness",
+      "CMIP6 Differences": "\"long_name\" was \"Sea-Ice Thickness in Thickness Categories\"; ; \"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siitdconc)\"; ; \"comment\" was \"Actual (floe) thickness of sea ice in each  category (NOT volume divided by grid area),  (vector with one entry for each thickness category starting from the thinnest category, netcdf file should use thickness bounds of categories as third coordinate axis)\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siitdconc)",
+      "Comment": "Actual (floe) thickness of sea ice in each ice thickness category, NOT volume divided by grid area (vector with one entry for each ice thickness category starting from the thinnest category, netcdf file should use thickness bounds of categories as third coordinate axis).",
+      "Dimensions": "longitude latitude iceband time",
+      "Frequency": "mon",
+      "Long name": "Sea-Ice Thickness in Ice Thickness Categories",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude iceband time CMIP7:longitude latitude time iceband,;  ; Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siitdconc) CMIP7:area: time: mean where sea_ice (mask=siitdconc),",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "vicen / aicen",
+      "Expression UKESM1": "vicen / aicen",
+      "Model units": "m"
+    },
+    "STASH entries": [],
+    "issue_number": 1750,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.sithickitd_tavg-u-hxy-si (SImon.siitdthick)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "snditd_tavg-u-hxy-si",
+      "CF standard name": "surface_snow_thickness",
+      "CMIP6 Differences": "\"comment\" was \"Actual thickness of snow in each  category (NOT volume divided by grid area),  (vector with one entry for each thickness category starting from the thinnest category, netcdf file should use thickness bounds of categories as third coordinate axis)\"; ; \"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siitdconc)\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siitdconc)",
+      "Comment": "Actual thickness of snow in each ice thickness category, NOT snow volume divided by grid area (vector with one entry for each ice thickness category starting from the thinnest category, netcdf file should use thickness bounds of categories as third coordinate axis). It can also be derived by dividing the volume of snow by the area of snow in each thickness category.",
+      "Dimensions": "longitude latitude iceband time",
+      "Frequency": "mon",
+      "Long name": "Snow Thickness in Ice Thickness Categories",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude iceband time CMIP7:longitude latitude time iceband,; ; Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siitdconc) CMIP7:area: time: mean where sea_ice (mask=siitdconc),",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "vsnon / aicen",
+      "Expression UKESM1": "vsnon / aicen",
+      "Model units": "m"
+    },
+    "STASH entries": [],
+    "issue_number": 1749,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.snditd_tavg-u-hxy-si (SImon.siitdsnthick)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sncitd_tavg-u-hxy-si",
+      "CF standard name": "surface_snow_area_fraction",
+      "CMIP6 Differences": "\"long_name\" was \"Snow Area Percentages in Ice Thickness Categories\"; ; \"comment\" was \"Percentage of grid cell covered by snow in each ice-thickness category (vector with one entry for each thickness category starting from the thinnest category, netcdf file should use thickness bounds of the categories as third coordinate axis)\"; ; \"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siitdconc)\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siitdconc)",
+      "Comment": "Area fraction of grid cell covered by snow in each ice thickness category (vector with one entry for each ice thickness category starting from the thinnest category, netcdf file should use thickness bounds of the categories as third coordinate axis).",
+      "Dimensions": "longitude latitude iceband time",
+      "Frequency": "mon",
+      "Long name": "Snow Area Fractions in Ice Thickness Categories",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Units (from Physical Parameter) - CMIP6:% CMIP7:1,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siitdconc) CMIP7:area: time: mean where sea_ice (mask=siitdconc),",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "snowfracn",
+      "Expression UKESM1": "snowfracn",
+      "Model units": "1"
+    },
+    "STASH entries": [],
+    "issue_number": 1748,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.sncitd_tavg-u-hxy-si (SImon.siitdsnconc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "siconcitd_tavg-u-hxy-sea",
+      "CF standard name": "sea_ice_area_fraction",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconc)\"; ; \"comment\" was \"Percentage of grid cell covered by each ice-thickness category (vector with one entry for each thickness category starting from the thinnest category, netcdf file should use thickness bounds of the categories as third coordinate axis)\"; ; \"long_name\" was \"Sea-Ice Area Percentages in Thickness Categories\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Area fraction of grid cell covered by each ice thickness category (vector with one entry for each ice thickness category starting from the thinnest category, netcdf file should use thickness bounds of the categories as third coordinate axis).",
+      "Dimensions": "longitude latitude iceband time",
+      "Frequency": "mon",
+      "Long name": "Sea-Ice Area Fractions in Ice Thickness Categories",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Units (from Physical Parameter) - CMIP6:% CMIP7:1,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siconc) CMIP7:area: time: mean where sea_ice (mask=siconc),",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "aicen",
+      "Expression UKESM1": "aicen",
+      "Model units": "1"
+    },
+    "STASH entries": [],
+    "issue_number": 1747,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.siconcitd_tavg-u-hxy-sea (SImon.siitdconc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sihc_tavg-u-hxy-sea",
+      "CF standard name": "sea_ice_enthalpy_content",
+      "CMIP6 Differences": "\"standard_name\" was \"sea_ice_temperature_expressed_as_heat_content\"; ; \"comment\" was \"Heat content of all ice in grid cell divided by total grid-cell area. Water at 0 Celsius is assumed to have a heat content of 0 J.  Does not include heat content of snow, but does include heat content of brine. Heat content is always negative, since both the sensible and the latent heat content of ice are less than that of water\"; ; \"long_name\" was \"Sea-Ice Heat Content per Unit Area\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Heat content of all ice in grid cell divided by grid-cell area. This includes both the latent and sensible heat content contributions. Water at 0C is assumed to have a heat content of 0 J. This variable does not include heat content of snow, but does include heat content of brine. Heat content is always negative since both the sensible and the latent heat content of ice are less than that of water. Note that the CF standard name is incorrect since heat content is not only function of temperature but also of salinity, plus the link with temperature is not linear. A new CF standard name is currently being proposed to address this issue (https://github.com/cf-convention/vocabularies/issues/253).",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Sea-Ice Heat Content",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "J m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "sihc",
+      "Expression UKESM1": "sihc",
+      "Model units": "J m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 1746,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.sihc_tavg-u-hxy-sea (SImon.sihc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sigpp_tavg-u-hxy-si",
+      "CF standard name": "gross_primary_productivity_of_biomass_expressed_as_carbon_due_to_ice_algae_in_sea_ice",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Change in ice algal carbon mass due to photosynthesis per sea ice unit area per unit time.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Gross Primary Productivity in Sea Ice as Carbon Amount Flux",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.",
+      "Units": "kg m-2 s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1745,
+    "labels": [
+      "mon",
+      "ocnBgchem"
+    ],
+    "title": "Variable ocnBgchem.mon.sigpp_tavg-u-hxy-si (SImon.sigpp)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "siforcetilty_tavg-u-hxy-si",
+      "CF standard name": "sea_ice_y_force_per_unit_area_due_to_sea_surface_tilt",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconc)\"; ; \"cell_measures\" was \"--MODEL\"; ; \"comment\" was \"Y-component of force on sea ice caused by sea-surface tilt\";",
+      "Cell measures": "::MODEL",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Y-component of the force on sea ice caused by sea-surface tilt divided by grid-cell area.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Sea-Surface Tilt Term in Force Balance (Y-Component)",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siconc) CMIP7:area: time: mean where sea_ice (mask=siconc),",
+      "Units": "N m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "siforcetilty",
+      "Expression UKESM1": "siforcetilty",
+      "Model units": "N m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 1744,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.siforcetilty_tavg-u-hxy-si (SImon.siforcetilty)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "siforcetiltx_tavg-u-hxy-si",
+      "CF standard name": "sea_ice_x_force_per_unit_area_due_to_sea_surface_tilt",
+      "CMIP6 Differences": "\"comment\" was \"X-component of force on sea ice caused by sea-surface tilt\"; ; \"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconc)\"; ; \"cell_measures\" was \"--MODEL\";",
+      "Cell measures": "::MODEL",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "X-component of the force on sea ice caused by sea-surface tilt divided by grid-cell area.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Sea-Surface Tilt Term in Force Balance (X-Component)",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siconc) CMIP7:area: time: mean where sea_ice (mask=siconc),",
+      "Units": "N m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "siforcetiltx",
+      "Expression UKESM1": "siforcetiltx",
+      "Model units": "N m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 1743,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.siforcetiltx_tavg-u-hxy-si (SImon.siforcetiltx)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "siforceintstry_tavg-u-hxy-si",
+      "CF standard name": "sea_ice_y_internal_stress",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconc)\"; ; \"cell_measures\" was \"--MODEL\"; ; \"comment\" was \"Y-component of force on sea ice caused by internal stress (divergence of sigma)\";",
+      "Cell measures": "::MODEL",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Y-component of the force on sea ice caused by internal stress (divergence of sigma) divided by grid-cell area.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Internal Stress Term in Force Balance (Y-Component)",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siconc) CMIP7:area: time: mean where sea_ice (mask=siconc),",
+      "Units": "N m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "siforceintstry",
+      "Expression UKESM1": "siforceintstry",
+      "Model units": "N m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 1742,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.siforceintstry_tavg-u-hxy-si (SImon.siforceintstry)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "siforceintstrx_tavg-u-hxy-si",
+      "CF standard name": "sea_ice_x_internal_stress",
+      "CMIP6 Differences": "\"comment\" was \"X-component of force on sea ice caused by internal stress (divergence of sigma)\"; ; \"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconc)\"; ; \"cell_measures\" was \"--MODEL\";",
+      "Cell measures": "::MODEL",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "X-component of the force on sea ice caused by internal stress (divergence of sigma) divided by grid-cell area.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Internal Stress Term in Force Balance (X-Component)",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siconc) CMIP7:area: time: mean where sea_ice (mask=siconc),",
+      "Units": "N m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "siforceintstrx",
+      "Expression UKESM1": "siforceintstrx",
+      "Model units": "N m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 1741,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.siforceintstrx_tavg-u-hxy-si (SImon.siforceintstrx)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "siforcecorioly_tavg-u-hxy-si",
+      "CF standard name": "sea_ice_y_force_per_unit_area_due_to_coriolis_effect",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconc)\"; ; \"cell_measures\" was \"--MODEL\"; ; \"comment\" was \"Y-component of force on sea ice caused by coriolis force\";",
+      "Cell measures": "::MODEL",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Y-component of the force on sea ice caused by the Coriolis force divided by grid-cell area.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Coriolis Force Term in Force Balance (Y-Component)",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siconc) CMIP7:area: time: mean where sea_ice (mask=siconc),",
+      "Units": "N m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "siforcecorioly",
+      "Expression UKESM1": "siforcecorioly",
+      "Model units": "N m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 1740,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.siforcecorioly_tavg-u-hxy-si (SImon.siforcecorioly)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "siforcecoriolx_tavg-u-hxy-si",
+      "CF standard name": "sea_ice_x_force_per_unit_area_due_to_coriolis_effect",
+      "CMIP6 Differences": "\"comment\" was \"X-component of force on sea ice caused by coriolis force\"; ; \"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconc)\"; ; \"cell_measures\" was \"--MODEL\";",
+      "Cell measures": "::MODEL",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "X-component of the force on sea ice caused by the Coriolis force divided by grid-cell area.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Coriolis Force Term in Force Balance (X-Component)",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siconc) CMIP7:area: time: mean where sea_ice (mask=siconc),",
+      "Units": "N m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "siforcecoriolx",
+      "Expression UKESM1": "siforcecoriolx",
+      "Model units": "N m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 1739,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.siforcecoriolx_tavg-u-hxy-si (SImon.siforcecoriolx)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rsus_tavg-u-hxy-si",
+      "CF standard name": "surface_upwelling_shortwave_flux_in_air",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconca)\"; ; \"comment\" was \"The upwelling shortwave flux over sea ice (always negative)\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconca)",
+      "Comment": "Upward shortwave flux from the sea-ice surface to the atmosphere\u00a0(energy flow per sea ice area). Always positive or zero.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Upwelling Shortwave Flux over Sea Ice",
+      "Modeling realm": "seaIce",
+      "Positive": "up",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siconca) CMIP7:area: time: mean where sea_ice (mask=siconca),",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s01i503[lbproc=128] / m01s00i031[lbproc=128]",
+      "Expression UKESM1": "m01s01i503[lbproc=128] / m01s00i031[lbproc=128]",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s00i031",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "31",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s01i503",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "1,503",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s00i031",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "31",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s01i503",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "1,503",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1738,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.rsus_tavg-u-hxy-si (SImon.siflswutop)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rsds_tavg-u-hxy-si",
+      "CF standard name": "surface_downwelling_shortwave_flux_in_air",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconca)\"; ; \"comment\" was \"The downwelling shortwave flux over sea ice (always positive by sign convention)\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconca)",
+      "Comment": "Downwelling shortwave flux from the atmosphere to the sea-ice surface\u00a0(energy flow per sea ice area). Always positive or zero.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Downwelling Shortwave Flux over Sea Ice",
+      "Modeling realm": "seaIce",
+      "Positive": "down",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siconca) CMIP7:area: time: mean where sea_ice (mask=siconca),",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s01i501[lbproc=128] / m01s00i031[lbproc=128]",
+      "Expression UKESM1": "m01s01i501[lbproc=128] / m01s00i031[lbproc=128]",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s00i031",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "31",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s01i501",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "1,501",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s00i031",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "31",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s01i501",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "1,501",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1737,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.rsds_tavg-u-hxy-si (SImon.siflswdtop)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "siflswdbot_tavg-u-hxy-si",
+      "CF standard name": "downwelling_shortwave_flux_in_sea_water_at_sea_ice_base",
+      "CMIP6 Differences": "\"comment\" was \"The downwelling shortwave flux underneath sea ice (always positive)\"; ; \"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconc)\"; ; \"long_name\" was \"Downwelling Shortwave Flux Under Sea Ice\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Downwelling shortwave flux underneath sea ice, i.e. the amount of shortwave radiation that penetrates the sea ice and reaches the sea ice-ocean interface\u00a0(energy flow per sea ice area). Always positive or zero.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Downwelling Shortwave Flux under Sea Ice",
+      "Modeling realm": "seaIce",
+      "Positive": "down",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siconc) CMIP7:area: time: mean where sea_ice (mask=siconc),",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1736,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6"
+    ],
+    "title": "Variable seaIce.mon.siflswdbot_tavg-u-hxy-si (SImon.siflswdbot)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hfss_tavg-u-hxy-si",
+      "CF standard name": "surface_downward_sensible_heat_flux",
+      "CMIP6 Differences": "\"positive\" was \"up\"; ; \"long_name\" was \"Net Upward Sensible Heat Flux over Sea Ice\"; ; \"standard_name\" was \"surface_upward_sensible_heat_flux\"; ; \"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconca)\"; ; \"comment\" was \"the net sensible heat flux over sea ice\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconca)",
+      "Comment": "Net sensible heat flux over sea ice\u00a0(energy flow per sea ice area). Positive for a downward heat flux.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Net Downward Sensible Heat Flux over Sea Ice",
+      "Modeling realm": "seaIce",
+      "Positive": "down",
+      "Processing notes": "CHANGE SINCE CMIP6 in Positive Direction - CMIP6:up CMIP7:down; Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siconca) CMIP7:area: time: mean where sea_ice (mask=siconca),",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "-1. * m01s03i533[lbproc=128] / m01s00i031[lbproc=128]",
+      "Expression UKESM1": "-1. * m01s03i533[lbproc=128] / m01s00i031[lbproc=128]",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 1735,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.hfss_tavg-u-hxy-si (SImon.siflsenstop)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "siflsensbot_tavg-u-hxy-si",
+      "CF standard name": "upward_sea_ice_basal_heat_flux",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconc)\"; ; \"long_name\" was \"Net Upward Sensible Heat Flux Under Sea Ice\"; ; \"comment\" was \"the net sensible heat flux under sea ice from the ocean\"; ; \"positive\" was \"up\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Net sensible heat flux under sea ice from or to the ocean\u00a0(energy flow per sea ice area). Per sign convention, heat from the ocean is counted as negative since it describes an upward heat flux.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Net Upward Sensible Heat Flux under Sea Ice",
+      "Modeling realm": "seaIce",
+      "Positive": "down",
+      "Processing notes": "CHANGE SINCE CMIP6: compound name,; Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "siflsensupbot",
+      "Expression UKESM1": "siflsensupbot",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 1734,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.siflsensbot_tavg-u-hxy-si (SImon.siflsensbot)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "siflsaltbot_tavg-u-hxy-si",
+      "CF standard name": "downward_sea_ice_basal_salt_flux",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Total flux of salt from water into sea ice divided by grid-cell area. This flux is upward (negative) during ice growth when salt is embedded into the ice and downward (positive) during melt when salt from sea ice is again released to the ocean.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Salt Flux from Sea Ice",
+      "Modeling realm": "seaIce",
+      "Positive": "down",
+      "Processing notes": "Identical to the now-deprecated CMIP6 variable SImon.sfdsi; Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.",
+      "Units": "kg m-2 s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "((meltt + meltb + meltl - congel - frazil) * ICE_DENSITY + melts * SNOW_DENSITY) / (100. * SECONDS_IN_DAY * aice) * REF_SALINITY / 1000.",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1733,
+    "labels": [
+      "mon",
+      "seaIce",
+      "UKESM1"
+    ],
+    "title": "Variable seaIce.mon.siflsaltbot_tavg-u-hxy-si (SImon.siflsaltbot)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rlus_tavg-u-hxy-si",
+      "CF standard name": "surface_upwelling_longwave_flux_in_air",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconca)\"; ; \"comment\" was \"the upwelling longwave flux over sea ice (always negative)\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconca)",
+      "Comment": "Upward longwave flux from the sea-ice surface to the atmosphere\u00a0(energy flow per sea ice area). Always positive or zero.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Upwelling Longwave Flux over Sea Ice",
+      "Modeling realm": "seaIce",
+      "Positive": "up",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siconca) CMIP7:area: time: mean where sea_ice (mask=siconca),",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i531[lbproc=128] / m01s00i031[lbproc=128]",
+      "Expression UKESM1": "m01s03i531[lbproc=128] / m01s00i031[lbproc=128]",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s00i031",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "31",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i531",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,531",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s00i031",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "31",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i531",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,531",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1732,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.rlus_tavg-u-hxy-si (SImon.sifllwutop)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rlds_tavg-u-hxy-si",
+      "CF standard name": "surface_downwelling_longwave_flux_in_air",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconca)\"; ; \"comment\" was \"the downwelling longwave flux over sea ice (always positive)\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconca)",
+      "Comment": "Downwelling longwave flux from the atmosphere to the sea-ice surface\u00a0(energy flow per sea ice area). Always positive or zero.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Downwelling Longwave Flux over Sea Ice",
+      "Modeling realm": "seaIce",
+      "Positive": "down",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siconca) CMIP7:area: time: mean where sea_ice (mask=siconca),",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s02i501[lbproc=128] / m01s00i031[lbproc=128]",
+      "Expression UKESM1": "m01s02i501[lbproc=128] / m01s00i031[lbproc=128]",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s00i031",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "31",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i501",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "2,501",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s00i031",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "31",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i501",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,501",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1731,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.rlds_tavg-u-hxy-si (SImon.sifllwdtop)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hfls_tavg-u-hxy-si",
+      "CF standard name": "surface_downward_latent_heat_flux",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconca)\"; ; \"positive\" was \"up\"; ; \"standard_name\" was \"surface_upward_latent_heat_flux\"; ; \"comment\" was \"the net latent heat flux over sea ice\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconca)",
+      "Comment": "Net latent heat flux over sea ice\u00a0(energy flow per sea ice area). Positive for a downward heat flux.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Net Latent Heat Flux over Sea Ice",
+      "Modeling realm": "seaIce",
+      "Positive": "down",
+      "Processing notes": "CHANGE SINCE CMIP6: compound name,; Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "-1. * flat_ai / aice",
+      "Expression UKESM1": "-1. * flat_ai / aice",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 1730,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.hfls_tavg-u-hxy-si (SImon.sifllattop)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "siflfwdrain_tavg-u-hxy-si",
+      "CF standard name": "water_flux_into_sea_water_due_to_surface_drainage",
+      "CMIP6 Differences": "\"comment\" was \"Total flux of fresh water from sea-ice surface into underlying ocean. This combines both surface melt water that drains directly into the ocean and the drainage of surface melt pond. By definition, this flux is always positive.\"; ; \"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconc)\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Total flux of fresh water from sea-ice surface into underlying ocean divided by grid-cell area. This combines both surface meltwater that drains directly into the ocean and the drainage of surface melt ponds. By definition, this flux is always positive.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Freshwater Flux from Sea-Ice Surface",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siconc) CMIP7:area: time: mean where sea_ice (mask=siconc),",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "(meltt * ICE_DENSITY + melts * SNOW_DENSITY) / (100. * SECONDS_IN_DAY)",
+      "Expression UKESM1": "(meltt * ICE_DENSITY + melts * SNOW_DENSITY) / (100. * SECONDS_IN_DAY)",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1729,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.siflfwdrain_tavg-u-hxy-si (SImon.siflfwdrain)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fsitherm_tavg-u-hxy-si",
+      "CF standard name": "water_flux_into_sea_water_due_to_sea_ice_thermodynamics",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconc)\"; ; \"comment\" was \"Total flux of fresh water from water into sea ice divided by grid-cell area; This flux is negative during ice growth (liquid water mass decreases, hence upward flux of freshwater), positive during ice melt (liquid water mass increases, hence downward flux of freshwater)\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Total flux of fresh water from water into sea ice divided by grid-cell area. This flux is positive when fresh water enters the ocean, and is therefore negative during ice growth and positive during ice melt.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Freshwater Flux from Sea Ice",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siconc) CMIP7:area: time: mean where sea_ice (mask=siconc),",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "((meltt + meltb + meltl - congel - frazil) * ICE_DENSITY + melts * SNOW_DENSITY) / (100. * SECONDS_IN_DAY)",
+      "Expression UKESM1": "((meltt + meltb + meltl - congel - frazil) * ICE_DENSITY + melts * SNOW_DENSITY) / (100. * SECONDS_IN_DAY)",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1728,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.fsitherm_tavg-u-hxy-si (SImon.siflfwbot)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "siflcondtop_tavg-u-hxy-si",
+      "CF standard name": "surface_downward_heat_flux_in_sea_ice",
+      "CMIP6 Differences": "\"comment\" was \"the net heat conduction flux at the ice surface\"; ; \"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconc)\"; ; \"standard_name\" was \"surface_downward_sensible_heat_flux\"; ; \"long_name\" was \"Net Conductive Heat Flux in Ice at the Surface\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Net heat conduction flux at the ice surface, i.e. the conductive heat flux from the centre of the uppermost vertical sea-ice grid box to the surface of the sea ice\u00a0(energy flow per sea ice area). Positive for a downward heat flux.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Net Conductive Heat Flux in Sea Ice at the Surface",
+      "Modeling realm": "seaIce",
+      "Positive": "down",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siconc) CMIP7:area: time: mean where sea_ice (mask=siconc),",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "siflcondtop",
+      "Expression UKESM1": "siflcondtop",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 1727,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.siflcondtop_tavg-u-hxy-si (SImon.siflcondtop)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "siflcondbot_tavg-u-hxy-si",
+      "CF standard name": "basal_downward_heat_flux_in_sea_ice",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconc)\"; ; \"comment\" was \"the net heat conduction flux at the ice base\"; ; \"long_name\" was \"Net Conductive Heat Fluxes in Ice at the Bottom\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Net heat conduction flux at the ice base, i.e. the conductive heat flux from the centre of the lowermost vertical sea-ice grid box to the base of the sea ice\u00a0(energy flow per sea ice area). Positive for a downward heat flux.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Net Conductive Heat Flux in Sea Ice at the Base",
+      "Modeling realm": "seaIce",
+      "Positive": "down",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siconc) CMIP7:area: time: mean where sea_ice (mask=siconc),",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "siflcondbot",
+      "Expression UKESM1": "siflcondbot",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 1726,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.siflcondbot_tavg-u-hxy-si (SImon.siflcondbot)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sifb_tavg-u-hxy-si",
+      "CF standard name": "sea_ice_freeboard",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconc)\"; ; \"comment\" was \"Mean height of sea-ice surface (=snow-ice interface when snow covered) above sea level\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Mean height of sea-ice surface (i.e. snow-ice interface when snow covered) above sea level. This follows the classical definition of freeboard for in situ observations. In the satellite community, sometimes the total height of sea ice and snow above sea level is referred to as freeboard. This can easily be calculated by adding sisnthick to sifb.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Sea-Ice Freeboard",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siconc) CMIP7:area: time: mean where sea_ice (mask=siconc),",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "sifb",
+      "Expression UKESM1": "sifb",
+      "Model units": "m"
+    },
+    "STASH entries": [],
+    "issue_number": 1725,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.sifb_tavg-u-hxy-si (SImon.sifb)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "siextent_tavg-u-hm-u",
+      "CF standard name": "sea_ice_extent",
+      "CMIP6 Differences": "\"comment\" was \"Total area of all Southern-Hemisphere grid cells that are covered by at least 15 % areal fraction of sea ice\";",
+      "Cell measures": "",
+      "Cell methods": "area: time: mean",
+      "Comment": "Total integrated area of all Southern Hemisphere grid cells that are covered by at least 15% areal fraction of sea ice (siconc >= 0.15). Does not include grid cells partially covered by land.",
+      "Dimensions": "time",
+      "Frequency": "mon",
+      "Long name": "Sea-Ice Extent South",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "1e6 km2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1724,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6"
+    ],
+    "title": "Variable seaIce.mon.siextent_tavg-u-hm-u (SImon.siextents)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "siextent_tavg-u-hm-u",
+      "CF standard name": "sea_ice_extent",
+      "CMIP6 Differences": "\"comment\" was \"Total area of all Northern-Hemisphere grid cells that are covered by at least 15 % areal fraction of sea ice\";",
+      "Cell measures": "",
+      "Cell methods": "area: time: mean",
+      "Comment": "Total integrated area of all Northern Hemisphere grid cells that are covered by at least 15% areal fraction of sea ice (siconc >= 0.15). Does not include grid cells partially covered by land.",
+      "Dimensions": "time",
+      "Frequency": "mon",
+      "Long name": "Sea-Ice Extent North",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "1e6 km2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1723,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6"
+    ],
+    "title": "Variable seaIce.mon.siextent_tavg-u-hm-u (SImon.siextentn)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sidragtop_tavg-u-hxy-si",
+      "CF standard name": "surface_drag_coefficient_for_momentum_in_air",
+      "CMIP6 Differences": "\"comment\" was \"Atmospheric drag coefficient that is used to calculate the atmospheric momentum drag on sea ice\"; ; \"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconc)\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Atmospheric drag coefficient that is used to calculate the atmospheric momentum drag on sea ice.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Atmospheric Drag Coefficient",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siconc) CMIP7:area: time: mean where sea_ice (mask=siconc),",
+      "Units": "1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i538[lbproc=128] / m01s00i031[lbproc=128]",
+      "Expression UKESM1": "m01s03i538[lbproc=128] / m01s00i031[lbproc=128]",
+      "Model units": "1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s00i031",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "31",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i538",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,538",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s00i031",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "31",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i538",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,538",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1722,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.sidragtop_tavg-u-hxy-si (SImon.sidragtop)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sidragbot_tavg-u-hxy-si",
+      "CF standard name": "sea_ice_basal_drag_coefficient_for_momentum_in_sea_water",
+      "CMIP6 Differences": "\"comment\" was \"Oceanic drag coefficient that is used to calculate the oceanic momentum drag on sea ice\"; ; \"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconc)\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Oceanic drag coefficient that is used to calculate the oceanic momentum drag on sea ice.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Ocean Drag Coefficient",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siconc) CMIP7:area: time: mean where sea_ice (mask=siconc),",
+      "Units": "1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1721,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6"
+    ],
+    "title": "Variable seaIce.mon.sidragbot_tavg-u-hxy-si (SImon.sidragbot)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sidmasstrany_tavg-u-hxy-si",
+      "CF standard name": "sea_ice_y_transport",
+      "CMIP6 Differences": "\"cell_measures\" was \"--MODEL\"; ; \"comment\" was \"Includes transport of both sea ice and snow by advection\";",
+      "Cell measures": "::MODEL",
+      "Cell methods": "time: mean",
+      "Comment": "Y-component of the sea-ice drift-induced transport of snow and sea ice mass.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Y-Component of Sea-Ice Mass Transport",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "sidmasstrany",
+      "Expression UKESM1": "sidmasstrany",
+      "Model units": "kg s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1720,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.sidmasstrany_tavg-u-hxy-si (SImon.sidmasstrany)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sidmasstranx_tavg-u-hxy-si",
+      "CF standard name": "sea_ice_x_transport",
+      "CMIP6 Differences": "\"cell_measures\" was \"--MODEL\"; ; \"comment\" was \"Includes transport of both sea ice and snow by advection\";",
+      "Cell measures": "::MODEL",
+      "Cell methods": "time: mean",
+      "Comment": "X-component of the sea-ice drift-induced transport of snow and sea ice mass.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "X-Component of Sea-Ice Mass Transport",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "sidmasstranx",
+      "Expression UKESM1": "sidmasstranx",
+      "Model units": "kg s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1719,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.sidmasstranx_tavg-u-hxy-si (SImon.sidmasstranx)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sidmassth_tavg-u-hxy-si",
+      "CF standard name": "tendency_of_sea_ice_amount_due_to_sea_ice_thermodynamics",
+      "CMIP6 Differences": "\"comment\" was \"Total change in sea-ice mass from thermodynamic processes divided by grid-cell area\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Total change in sea-ice mass from thermodynamic processes divided by grid-cell area.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Sea-Ice Mass Change from Thermodynamics",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "dvidtt * ICE_DENSITY / (100. * SECONDS_IN_DAY)",
+      "Expression UKESM1": "dvidtt * ICE_DENSITY / (100. * SECONDS_IN_DAY)",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1718,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.sidmassth_tavg-u-hxy-si (SImon.sidmassth)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sidmassmelttop_tavg-u-hxy-si",
+      "CF standard name": "tendency_of_sea_ice_amount_due_to_surface_melting",
+      "CMIP6 Differences": "\"comment\" was \"The rate of change of sea ice mass through melting at the ice surface divided by grid-cell area\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Rate of change of sea-ice mass through melting at the ice surface divided by grid-cell area. This number is independent of the actual fate of the meltwater, and will hence include all sea-ice meltwater that drains into the ocean and all sea-ice meltwater that is collected by a melt-pond parameterisation. Always negative or zero.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Sea-Ice Mass Change Through Surface Melting",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "-1 * meltt * ICE_DENSITY / (100. * SECONDS_IN_DAY)",
+      "Expression UKESM1": "-1 * meltt * ICE_DENSITY / (100. * SECONDS_IN_DAY)",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1717,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.sidmassmelttop_tavg-u-hxy-si (SImon.sidmassmelttop)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sidmassmeltlat_tavg-u-hxy-si",
+      "CF standard name": "tendency_of_sea_ice_amount_due_to_lateral_melting",
+      "CMIP6 Differences": "\"long_name\" was \"Lateral Sea Ice Melt Rate\"; ; \"comment\" was \"The rate of change of sea ice mass through lateral melting divided by grid-cell area (report 0 if not explicitly calculated thermodynamically)\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Rate of change of sea-ice mass through lateral melting/dissolution divided by grid-cell area (report zero if not explicitly calculated thermodynamically). Always negative or zero.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Sea-Ice Mass Change Through Lateral Melting",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "CHANGE: name, renamed from SImon.sidmasslat in CMIP6; CHANGE SINCE CMIP6: compound name,",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "-1 * meltl * ICE_DENSITY / (100. * SECONDS_IN_DAY)",
+      "Expression UKESM1": "-1 * meltl * ICE_DENSITY / (100. * SECONDS_IN_DAY)",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1716,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.sidmassmeltlat_tavg-u-hxy-si (SImon.sidmassmeltlat)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sidmassmeltbot_tavg-u-hxy-si",
+      "CF standard name": "tendency_of_sea_ice_amount_due_to_basal_melting",
+      "CMIP6 Differences": "\"comment\" was \"The rate of change of sea ice mass through melting at the ice bottom divided by grid-cell area\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Rate of change of sea-ice mass through melting/dissolution at the ice bottom divided by grid-cell area. Note that this number is always zero or negative since sea-ice growth is collected in sidmassgrowthbot. This is to account for differential growth and melt in models with a sub-grid scale ice thickness distribution.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Sea-Ice Mass Change Through Bottom Melting",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "-1 * meltb * ICE_DENSITY / (100. * SECONDS_IN_DAY)",
+      "Expression UKESM1": "-1 * meltb * ICE_DENSITY / (100. * SECONDS_IN_DAY)",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1715,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.sidmassmeltbot_tavg-u-hxy-si (SImon.sidmassmeltbot)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sidmassgrowthwat_tavg-u-hxy-si",
+      "CF standard name": "tendency_of_sea_ice_amount_due_to_frazil_ice_accumulation_in_leads",
+      "CMIP6 Differences": "\"comment\" was \"The rate of change of sea ice mass due to sea ice formation in supercooled water (often through frazil formation) divided by grid-cell area. Together, sidmassgrowthwat and sidmassgrowthbot should give total ice growth\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Rate of change of sea-ice mass due to sea ice formation in supercooled water (often through frazil formation) divided by grid-cell area. Always positive or zero.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Sea-Ice Mass Change Through Growth in Supercooled Open Water (Frazil)",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "frazil * ICE_DENSITY / (100. * SECONDS_IN_DAY)",
+      "Expression UKESM1": "frazil * ICE_DENSITY / (100. * SECONDS_IN_DAY)",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1714,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.sidmassgrowthwat_tavg-u-hxy-si (SImon.sidmassgrowthwat)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sidmassgrowthsi_tavg-u-hxy-si",
+      "CF standard name": "tendency_of_sea_ice_amount_due_to_conversion_of_snow_to_sea_ice",
+      "CMIP6 Differences": "\"comment\" was \"The rate of change of sea ice mass due to transformation of snow to sea ice divided by grid-cell area\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Rate of change of sea-ice mass due to transformation of snow to sea ice divided by grid-cell area. Always positive or zero.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Sea-Ice Mass Change Through Snow-to-Ice Conversion",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6: compound name,",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "snoice * ICE_DENSITY / (100. * SECONDS_IN_DAY)",
+      "Expression UKESM1": "snoice * ICE_DENSITY / (100. * SECONDS_IN_DAY)",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1713,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.sidmassgrowthsi_tavg-u-hxy-si (SImon.sidmassgrowthsi)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sidmassgrowthbot_tavg-u-hxy-si",
+      "CF standard name": "tendency_of_sea_ice_amount_due_to_congelation_ice_accumulation",
+      "CMIP6 Differences": "\"comment\" was \"The rate of change of sea ice mass due to vertical growth of existing sea ice at its base divided by grid-cell area.\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Rate of change of sea-ice mass due to vertical growth of existing sea ice at its base divided by grid-cell area. Note that this number is always positive or zero since sea-ice melt is collected in sidmassmeltbot. This is to account for differential growth and melt in models with a sub-grid scale ice thickness distribution.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Sea-Ice Mass Change Through Basal Growth",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "congel * ICE_DENSITY / (100. * SECONDS_IN_DAY)",
+      "Expression UKESM1": "congel * ICE_DENSITY / (100. * SECONDS_IN_DAY)",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1712,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.sidmassgrowthbot_tavg-u-hxy-si (SImon.sidmassgrowthbot)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "evspsbl_tavg-u-hxy-si",
+      "CF standard name": "water_evapotranspiration_flux",
+      "CMIP6 Differences": "\"comment\" was \"The rate of change of sea-ice mass change through evaporation and sublimation divided by grid-cell area\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Rate of change of sea-ice mass change through evaporation and sublimation divided by grid-cell area. If a model does not differentiate between the sublimation of snow and sea ice, we recommend to report sidmassevapsubl as zero as long as the ice is snow covered, and to report any sublimation within the variable sisndmasssubl.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Sea-Ice Mass Change Through Evaporation and Sublimation",
+      "Modeling realm": "seaIce",
+      "Positive": "up",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "-1 * evap_ai * FRESHWATER_DENSITY / (100. * SECONDS_IN_DAY)",
+      "Expression UKESM1": "-1 * evap_ai * FRESHWATER_DENSITY / (100. * SECONDS_IN_DAY)",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1711,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.evspsbl_tavg-u-hxy-si (SImon.sidmassevapsubl)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sidmassdyn_tavg-u-hxy-si",
+      "CF standard name": "tendency_of_sea_ice_amount_due_to_sea_ice_dynamics",
+      "CMIP6 Differences": "\"comment\" was \"Total change in sea-ice mass through dynamics-related processes (advection,...) divided by grid-cell area\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Total change in sea-ice mass through dynamics-related processes (advection, divergence, etc.) divided by grid-cell area.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Sea-Ice Mass Change from Dynamics",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "dvidtd * ICE_DENSITY / (100. * SECONDS_IN_DAY)",
+      "Expression UKESM1": "dvidtd * ICE_DENSITY / (100. * SECONDS_IN_DAY)",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1710,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.sidmassdyn_tavg-u-hxy-si (SImon.sidmassdyn)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sidivvel_tpt-u-hxy-si",
+      "CF standard name": "divergence_of_sea_ice_velocity",
+      "CMIP6 Differences": "\"comment\" was \"Divergence of sea-ice velocity field (first shear strain invariant)\"; ; \"frequency\" was \"monPt\"; ; \"cell_methods\" was \"area: mean where sea_ice (comment: mask=siconc) time: point\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea_ice (mask=siconc) time: point",
+      "Comment": "Divergence of sea-ice velocity field (first shear strain invariant). Requested as instantaneous value at the center of the month (i.e., first timestep of the 15th day of the month).",
+      "Dimensions": "longitude latitude time1",
+      "Frequency": "mon",
+      "Long name": "Divergence of the Sea-Ice Velocity Field",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:monPt CMIP7:mon,;  ; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean where sea_ice (comment: mask=siconc) time: point CMIP7:area: mean where sea_ice (mask=siconc) time: point,",
+      "Units": "s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1709,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6"
+    ],
+    "title": "Variable seaIce.mon.sidivvel_tpt-u-hxy-si (SImon.sidivvel)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sidconcth_tavg-u-hxy-si",
+      "CF standard name": "tendency_of_sea_ice_area_fraction_due_to_thermodynamics",
+      "CMIP6 Differences": "\"comment\" was \"Total change in sea-ice area fraction through thermodynamic processes\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Total change in sea-ice area fraction through thermodynamic processes.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Sea-Ice Area Percentage Tendency Due to Thermodynamics",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "sidconcth",
+      "Expression UKESM1": "sidconcth",
+      "Model units": "s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1708,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.sidconcth_tavg-u-hxy-si (SImon.sidconcth)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sidconcdyn_tavg-u-hxy-sea",
+      "CF standard name": "tendency_of_sea_ice_area_fraction_due_to_dynamics",
+      "CMIP6 Differences": "\"comment\" was \"Total change in sea-ice area fraction through dynamics-related processes (advection, divergence...)\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Total change in sea-ice area fraction through dynamics-related processes (advection, divergence, etc.).",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Sea-Ice Area Percentage Tendency Due to Dynamics",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "sidconcdyn",
+      "Expression UKESM1": "sidconcdyn",
+      "Model units": "s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1707,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.sidconcdyn_tavg-u-hxy-sea (SImon.sidconcdyn)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "siconc_tavg-u-hxy-u",
+      "CF standard name": "sea_ice_area_fraction",
+      "CMIP6 Differences": "\"comment\" was \"Percentage of grid cell covered by sea ice\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Areal fraction of a given grid cell that is covered by sea ice on the atmosphere grid, independent of the thickness of that ice.",
+      "Dimensions": "longitude latitude time typesi",
+      "Frequency": "mon",
+      "Long name": "Sea-Ice Area Percentage (Atmospheric Grid)",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Units (from Physical Parameter) - CMIP6:% CMIP7:1,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s00i031[lbproc=128]",
+      "Expression UKESM1": "m01s00i031[lbproc=128]",
+      "Model units": "1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s00i031",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "31",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s00i031",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "31",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1706,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.siconc_tavg-u-hxy-u (SImon.siconca)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "siconc_tavg-u-hxy-u",
+      "CF standard name": "sea_ice_area_fraction",
+      "CMIP6 Differences": "\"comment\" was \"Percentage of grid cell covered by sea ice\"; ; \"cell_methods\" was \"area: mean where sea time: mean\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean",
+      "Comment": "Areal fraction of a given grid cell that is covered by sea ice on the ocean grid, independent of the thickness of that ice.",
+      "Dimensions": "longitude latitude time typesi",
+      "Frequency": "mon",
+      "Long name": "Sea-Ice Area Percentage (Ocean Grid)",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Units (from Physical Parameter) - CMIP6:% CMIP7:1, CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean where sea time: mean CMIP7:area: time: mean,",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "aice",
+      "Expression UKESM1": "aice",
+      "Model units": "1"
+    },
+    "STASH entries": [],
+    "issue_number": 1705,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable seaIce.mon.siconc_tavg-u-hxy-u (SImon.siconc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sicompstren_tavg-u-hxy-si",
+      "CF standard name": "compressive_strength_of_sea_ice",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconc)\"; ; \"comment\" was \"Computed strength of the ice pack, defined as the energy (J m-2) dissipated per unit area removed from the ice pack under compression, and assumed proportional to the change in potential energy caused by ridging. For Hibler-type models, this is P (= P*h exp(-C(1-A)) where P* is compressive strength, h ice thickness, A compactness and C strength reduction constant).\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Computed strength of the ice pack, defined as the energy (J m-2) dissipated per unit area removed from the ice pack under compression, and assumed proportional to the change in potential energy caused by ridging. For Hibler-type models, this is P = P\\* h exp(-C(1-A)) where P\\* is compressive strength, h is ice thickness, A is compactness and C is strength reduction constant.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Compressive Sea Ice Strength",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siconc) CMIP7:area: time: mean where sea_ice (mask=siconc),",
+      "Units": "N m-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "sicompstren",
+      "Expression UKESM1": "sicompstren",
+      "Model units": "N m-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1704,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.sicompstren_tavg-u-hxy-si (SImon.sicompstren)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sichl_tavg-u-hxy-si",
+      "CF standard name": "sea_ice_mass_content_of_ice_algae_expressed_as_chlorophyll",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Vertically-integrated content of Chl-a in ice algae, expressed as kg of Chl-a per square meter of sea ice.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Amount of Total Ice Algae Expressed as Chlorophyll in Sea Ice",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.",
+      "Units": "kg m-2",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1703,
+    "labels": [
+      "mon",
+      "ocnBgchem"
+    ],
+    "title": "Variable ocnBgchem.mon.sichl_tavg-u-hxy-si (SImon.sichl)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "siarea_tavg-u-hm-u",
+      "CF standard name": "sea_ice_area",
+      "CMIP6 Differences": "\"comment\" was \"total area of sea ice in the Southern hemisphere\"; ; \"cell_methods\" was \"area: time: mean\";",
+      "Cell measures": "",
+      "Cell methods": "area: sum time: mean",
+      "Comment": "Total integrated area of sea ice in the Southern Hemisphere (where siconc > 0). Does not include grid cells partially covered by land.",
+      "Dimensions": "time",
+      "Frequency": "mon",
+      "Long name": "Sea-Ice Area South",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:area: sum time: mean,",
+      "Units": "1e6 km2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1702,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6"
+    ],
+    "title": "Variable seaIce.mon.siarea_tavg-u-hm-u (SImon.siareas)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "siarea_tavg-u-hm-u",
+      "CF standard name": "sea_ice_area",
+      "CMIP6 Differences": "\"comment\" was \"total area of sea ice in the Northern hemisphere\"; ; \"cell_methods\" was \"area: time: mean\";",
+      "Cell measures": "",
+      "Cell methods": "area: sum time: mean",
+      "Comment": "Total integrated area of sea ice in the Northern Hemisphere (where siconc > 0). Does not include grid cells partially covered by land.",
+      "Dimensions": "time",
+      "Frequency": "mon",
+      "Long name": "Sea-Ice Area North",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:area: sum time: mean,",
+      "Units": "1e6 km2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1701,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6"
+    ],
+    "title": "Variable seaIce.mon.siarea_tavg-u-hm-u (SImon.siarean)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "siareaacrossline_tavg-u-ht-sea",
+      "CF standard name": "sea_ice_area_transport_across_line",
+      "CMIP6 Differences": "\"comment\" was \"net (sum of transport in all directions) sea ice area transport through the following four passages, positive into the Arctic Ocean 1. Fram Strait = (11.5W,81.3N to (10.5E,79.6N) 2. Canadian Archipelago = (128.2W,70.6N) to (59.3W,82.1N) 3. Barents opening = (16.8E,76.5N) to (19.2E,70.2N) 4. Bering Strait = (171W,66.2N) to (166W,65N)\";",
+      "Cell measures": "",
+      "Cell methods": "time: mean",
+      "Comment": "Net (sum of transport in all directions) sea ice area transport through the following four passages, positive into the Arctic Ocean. Note that the definitions of the passages are for SIMIP purposes just meant as default values as given by the physical ocean MIP described in Griffies et al. (2016). Individual models might chose slightly different definitions as given by their grid geometry. 1. Fram Strait: (11.5W,81.3N) to (10.5E,79.6N). 2. Canadian Arctic Archipelago: (128.2W,70.6N) to (59.3W,82.1N). 3. Barents Sea Opening: (16.8E,76.5N) to (19.2E,70.2N). 4. Bering Strait: (171W,66.2N) to (166W,65N).",
+      "Dimensions": "siline time",
+      "Frequency": "mon",
+      "Long name": "Sea-Ice Area Flux Through Straits",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1700,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6"
+    ],
+    "title": "Variable seaIce.mon.siareaacrossline_tavg-u-ht-sea (SImon.siareaacrossline)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sialgc_tavg-u-hxy-si",
+      "CF standard name": "sea_ice_mole_content_of_ice_algae_expressed_as_carbon",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Vertically-integrated content of carbon in ice algae, expressed as moles of carbon per square meter of sea ice.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Total Ice Algal Carbon Amount in Sea Ice",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.",
+      "Units": "mol m-2",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1699,
+    "labels": [
+      "mon",
+      "ocnBgchem"
+    ],
+    "title": "Variable ocnBgchem.mon.sialgc_tavg-u-hxy-si (SImon.sialgc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "siage_tavg-u-hxy-si",
+      "CF standard name": "age_of_sea_ice",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconc)\"; ; \"comment\" was \"Age of sea ice\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Age of sea ice since its formation in open water.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Age of Sea Ice",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siconc) CMIP7:area: time: mean where sea_ice (mask=siconc),",
+      "Units": "s",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "iage * SECONDS_IN_DAY * DAYS_IN_YEAR",
+      "Expression UKESM1": "iage * SECONDS_IN_DAY * DAYS_IN_YEAR",
+      "Model units": "s"
+    },
+    "STASH entries": [],
+    "issue_number": 1698,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.siage_tavg-u-hxy-si (SImon.siage)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sivol_tavg-u-hm-u",
+      "CF standard name": "sea_ice_volume",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "",
+      "Cell methods": "area: sum time: mean",
+      "Comment": "Total integrated volume of sea ice in the Southern Hemisphere.",
+      "Dimensions": "time",
+      "Frequency": "day",
+      "Long name": "Sea-Ice Volume South",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "1e3 km3",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1697,
+    "labels": [
+      "day",
+      "seaIce"
+    ],
+    "title": "Variable seaIce.day.sivol_tavg-u-hm-u (SIday.sivols)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sivol_tavg-u-hm-u",
+      "CF standard name": "sea_ice_volume",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "",
+      "Cell methods": "area: sum time: mean",
+      "Comment": "Total integrated volume of sea ice in the Northern Hemisphere.",
+      "Dimensions": "time",
+      "Frequency": "day",
+      "Long name": "Sea-Ice Volume North",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "1e3 km3",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1696,
+    "labels": [
+      "day",
+      "seaIce"
+    ],
+    "title": "Variable seaIce.day.sivol_tavg-u-hm-u (SIday.sivoln)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "siv_tavg-u-hxy-si",
+      "CF standard name": "sea_ice_y_velocity",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconc)\"; ; \"cell_measures\" was \"--MODEL\"; ; \"comment\" was \"The y-velocity of ice on native model grid\";",
+      "Cell measures": "::MODEL",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Y-component of sea-ice velocity on native model grid.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Y-Component of Sea-Ice Velocity",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siconc) CMIP7:area: time: mean where sea_ice (mask=siconc),",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "siv",
+      "Expression UKESM1": "siv",
+      "Model units": "m s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1695,
+    "labels": [
+      "day",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.day.siv_tavg-u-hxy-si (SIday.siv)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "siu_tavg-u-hxy-si",
+      "CF standard name": "sea_ice_x_velocity",
+      "CMIP6 Differences": "\"comment\" was \"The x-velocity of ice on native model grid\"; ; \"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconc)\"; ; \"cell_measures\" was \"--MODEL\";",
+      "Cell measures": "::MODEL",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "X-component of sea-ice velocity on native model grid.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "X-Component of Sea-Ice Velocity",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siconc) CMIP7:area: time: mean where sea_ice (mask=siconc),",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "siu",
+      "Expression UKESM1": "siu",
+      "Model units": "m s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1694,
+    "labels": [
+      "day",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.day.siu_tavg-u-hxy-si (SIday.siu)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sitimefrac_tavg-u-hxy-sea",
+      "CF standard name": "fraction_of_time_with_sea_ice_area_fraction_above_threshold",
+      "CMIP6 Differences": "\"comment\" was \"Fraction of time steps of the averaging period during which sea ice is present (siconc >0 ) in a grid cell\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Fraction of time steps of the averaging period during which sea ice is present (siconc > 0) in a grid cell.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Fraction of Time Steps with Sea Ice",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "ice_present",
+      "Expression UKESM1": "ice_present",
+      "Model units": "1"
+    },
+    "STASH entries": [],
+    "issue_number": 1693,
+    "labels": [
+      "day",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.day.sitimefrac_tavg-u-hxy-sea (SIday.sitimefrac)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sithick_tavg-u-hxy-si",
+      "CF standard name": "sea_ice_thickness",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconc)\"; ; \"comment\" was \"Actual (floe) thickness of sea ice (NOT volume divided by grid area as was done in CMIP5)\"; ; \"long_name\" was \"Sea Ice Thickness\"; ; \"modeling_realm\" was \"seaIce ocean\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Actual (floe) thickness of sea ice averaged over the ice-covered part of a given grid cell, NOT volume divided by grid area.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Sea-Ice Thickness",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.; CHANGE SINCE CMIP6 in Modeling Realm - primary - CMIP6:ocean, seaIce CMIP7:seaIce, CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siconc) CMIP7:area: time: mean where sea_ice (mask=siconc),",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "sithick",
+      "Expression UKESM1": "sithick",
+      "Model units": "m"
+    },
+    "STASH entries": [],
+    "issue_number": 1692,
+    "labels": [
+      "day",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.day.sithick_tavg-u-hxy-si (SIday.sithick)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ts_tavg-u-hxy-si",
+      "CF standard name": "sea_ice_surface_temperature",
+      "CMIP6 Differences": "\"comment\" was \"Report surface temperature of snow where snow covers the sea ice.\"; ; \"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconc)\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Mean surface temperature of the sea-ice covered part of the grid cell. Wherever snow covers the ice, the surface temperature of the snow is used for the averaging, otherwise the surface temperature of the ice is used.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Surface Temperature of Sea Ice",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siconc) CMIP7:area: time: mean where sea_ice (mask=siconc),",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i535[lbproc=128] / m01s00i031[lbproc=128]",
+      "Expression UKESM1": "m01s03i535[lbproc=128] / m01s00i031[lbproc=128]",
+      "Model units": "K"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s00i031",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "31",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s03i535",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,535",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s00i031",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "31",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s03i535",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,535",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 1691,
+    "labels": [
+      "day",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.day.ts_tavg-u-hxy-si (SIday.sitemptop)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tssi_tavg-u-hxy-si",
+      "CF standard name": "sea_ice_surface_temperature",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Mean temperature at the snow-ice interface. This is the surface temperature of ice where snow thickness is zero.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Temperature at Snow-Ice Interface",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.",
+      "Units": "K",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1690,
+    "labels": [
+      "day",
+      "seaIce"
+    ],
+    "title": "Variable seaIce.day.tssi_tavg-u-hxy-si (SIday.sitempsnic)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sitempbot_tavg-u-hxy-si",
+      "CF standard name": "sea_ice_basal_temperature",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Mean temperature at the base of the sea ice, NOT the temperature within lowermost sea-ice model layer.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Temperature at Ice-Ocean Interface",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.",
+      "Units": "K",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1689,
+    "labels": [
+      "day",
+      "seaIce"
+    ],
+    "title": "Variable seaIce.day.sitempbot_tavg-u-hxy-si (SIday.sitempbot)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sispeed_tavg-u-hxy-si",
+      "CF standard name": "sea_ice_speed",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconc)\"; ; \"comment\" was \"Speed of ice (i.e. mean absolute velocity) to account for back-and-forth movement of the ice\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Speed of ice (i.e. mean absolute velocity) to account for back-and-forth movement of the ice.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Sea-Ice Speed",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siconc) CMIP7:area: time: mean where sea_ice (mask=siconc),",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "sispeed",
+      "Expression UKESM1": "sispeed",
+      "Model units": "m s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1688,
+    "labels": [
+      "day",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.day.sispeed_tavg-u-hxy-si (SIday.sispeed)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "snd_tavg-u-hxy-si",
+      "CF standard name": "surface_snow_thickness",
+      "CMIP6 Differences": "\"comment\" was \"Actual thickness of snow (snow volume divided by snow-covered area)\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where snow over sea_ice area: time: mean where sea_ice",
+      "Comment": "Actual thickness of snow averaged over the snow-covered part of the sea ice. This thickness is usually directly available within the model formulation. It can also be derived by dividing the total volume of snow by the area of the snow.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Snow Thickness",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "sisnthick",
+      "Expression UKESM1": "sisnthick",
+      "Model units": "m"
+    },
+    "STASH entries": [],
+    "issue_number": 1687,
+    "labels": [
+      "day",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.day.snd_tavg-u-hxy-si (SIday.sisnthick)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sisnmass_tavg-u-hm-u",
+      "CF standard name": "surface_snow_mass",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "",
+      "Cell methods": "area: sum time: mean",
+      "Comment": "Total integrated mass of snow on sea ice in the Southern Hemisphere.",
+      "Dimensions": "time",
+      "Frequency": "day",
+      "Long name": "Snow Mass on Sea Ice South",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1686,
+    "labels": [
+      "day",
+      "seaIce"
+    ],
+    "title": "Variable seaIce.day.sisnmass_tavg-u-hm-u (SIday.sisnmasss)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sisnmass_tavg-u-hm-u",
+      "CF standard name": "surface_snow_mass",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "",
+      "Cell methods": "area: sum time: mean",
       "Comment": "Total integrated mass of snow on sea ice in the Northern Hemisphere.",
       "Dimensions": "time",
       "Frequency": "day",
