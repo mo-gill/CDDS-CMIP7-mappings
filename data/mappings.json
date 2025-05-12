@@ -1,6 +1,347 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "tauuo_tavg-u-hxy-sea",
+      "CF standard name": "downward_x_stress_at_sea_water_surface",
+      "CMIP6 Differences": "\"cell_measures\" was \"--OPT\"; ; \"cell_methods\" was \"time: mean\";",
+      "Cell measures": "::OPT",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "This is the stress on the liquid ocean from overlying atmosphere, sea ice, ice shelf, etc.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Sea Water Surface Downward X Stress",
+      "Modeling realm": "ocean",
+      "Positive": "down",
+      "Processing notes": "Report on native horizontal grid.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:time: mean CMIP7:area: mean where sea time: mean,",
+      "Units": "N m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "mask_copy(tauuo, mask_2D_U)",
+      "Expression UKESM1": "mask_copy(tauuo, mask_2D_U)",
+      "Model units": "N m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 1575,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable ocean.mon.tauuo_tavg-u-hxy-sea (Omon.tauuo)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "talk_tavg-l-hxy-sea",
+      "CF standard name": "sea_water_alkalinity_expressed_as_mole_equivalent",
+      "CMIP6 Differences": "\"comment\" was \"total alkalinity equivalent concentration (including carbonate, nitrogen, silicate, and borate components)\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "total alkalinity equivalent concentration (including carbonate, borate, phosphorus, silicon, and nitrogen components)",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Total Alkalinity",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "Concentrations of all 3D tracers in the uppermost ocean layer. See first table in Oyr for a complete list of these tracers.  \"Tracer\"  concentations should be reported even if they are diagnosed rather than prognostically calculated.",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "ALK_E3T / thkcello",
+      "Model units": "mmol m-3"
+    },
+    "STASH entries": [],
+    "issue_number": 1574,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.talk_tavg-l-hxy-sea (Omon.talk)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "swhwindsea_tavg-u-hxy-sea",
+      "CF standard name": "sea_surface_wind_wave_significant_height",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Average height of the highest one-third of waves present in the sea state, incorporating just wind-sea waves (i.e., local wind waves). It is derived from the wind-sea wave spectrum using spectral moments. Specifically, this parameter is four times the square root of the integral over all directions and all frequencies of the two-dimensional wind-sea wave spectrum.",
+      "Dimensions": "longitude latitude time depth0m",
+      "Frequency": "mon",
+      "Long name": "Wind Sea Significant Wave Height",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1573,
+    "labels": [
+      "mon",
+      "ocean"
+    ],
+    "title": "Variable ocean.mon.swhwindsea_tavg-u-hxy-sea (Omon.swhwindsea)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "swhswell_tavg-u-hxy-sea",
+      "CF standard name": "sea_surface_swell_wave_significant_height",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Average height of the highest one-third of waves present in the sea state, incorporating just swell waves (i.e., waves that have propagated away from their generation area). This parameter is derived from all swell partitions of the wave spectrum using spectral moments. Specifically, this parameter is four times the square root of the integral over all directions and all frequencies of the\u00a0components of the two-dimensional wave spectrum that are not under the influence of local wind.",
+      "Dimensions": "longitude latitude time depth0m",
+      "Frequency": "mon",
+      "Long name": "Swell Significant Wave Height",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1572,
+    "labels": [
+      "mon",
+      "ocean"
+    ],
+    "title": "Variable ocean.mon.swhswell_tavg-u-hxy-sea (Omon.swhswell)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "swhmax_tstat-u-hxy-sea",
+      "CF standard name": "sea_surface_wave_significant_height",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: maximum",
+      "Comment": "Highest value of the significant wave height simulated within a given time range (e.g., daily or monthly). The significant wave height (swh) is derived from the wave spectrum using spectral moments. Specifically, swh is four times the square root of the integral over all directions and all frequencies of the two-dimensional wave spectrum.",
+      "Dimensions": "longitude latitude time depth0m",
+      "Frequency": "mon",
+      "Long name": "Maximum Significant Wave Height",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1571,
+    "labels": [
+      "mon",
+      "ocean"
+    ],
+    "title": "Variable ocean.mon.swhmax_tstat-u-hxy-sea (Omon.swhmax)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "swh_tavg-u-hxy-sea",
+      "CF standard name": "sea_surface_wave_significant_height",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Average height of the highest one-third of waves present in the sea state, incorporating both wind-sea and swell waves. This is a key parameter for describing wave energy and is derived from the wave spectrum using spectral moments. Specifically, this parameter is four times the square root of the integral over all directions and all frequencies of the two-dimensional wave spectrum.",
+      "Dimensions": "longitude latitude time depth0m",
+      "Frequency": "mon",
+      "Long name": "Total Significant Wave Height",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1570,
+    "labels": [
+      "mon",
+      "ocean"
+    ],
+    "title": "Variable ocean.mon.swh_tavg-u-hxy-sea (Omon.swh)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "spco2_tavg-u-hxy-sea",
+      "CF standard name": "surface_partial_pressure_of_carbon_dioxide_in_sea_water",
+      "CMIP6 Differences": "\"comment\" was \"The surface called 'surface' means the lower boundary of the atmosphere. The partial pressure of a dissolved gas in sea water is the partial pressure in air with which it would be in equilibrium. The partial pressure of a gaseous constituent of air is the pressure which it alone would exert with unchanged temperature and number of moles per unit volume. The chemical formula for carbon dioxide is CO2.\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "The surface called \"surface\" means the lower boundary of the atmosphere. The partial pressure of a dissolved gas in sea water is the partial pressure in air with which it would be in equilibrium. The partial pressure of a gaseous constituent of air is the pressure which it alone would exert with unchanged temperature and number of moles per unit volume. The chemical formula for carbon dioxide is CO2.",
+      "Dimensions": "longitude latitude time depth0m",
+      "Frequency": "mon",
+      "Long name": "Surface Aqueous Partial Pressure of CO2",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time depth0m CMIP7:longitude latitude time  depth0m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "Pa",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "OCN_PCO2",
+      "Model units": "uatm"
+    },
+    "STASH entries": [],
+    "issue_number": 1569,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.spco2_tavg-u-hxy-sea (Omon.spco2)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sossq_tavg-u-hxy-sea",
+      "CF standard name": "square_of_sea_surface_salinity",
+      "CMIP6 Differences": "\"units\" was \"1e-06\"; ; \"comment\" was \"Sea water salinity is the salt content of sea water, often on the Practical Salinity Scale of 1978. However, the unqualified term 'salinity' is generic and does not necessarily imply any particular method of calculation. The units of salinity are dimensionless and the units attribute should normally be given as 1e-3 or 0.001 i.e. parts per thousand. \";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Sea water salinity is the salt content of sea water, often on the Practical Salinity Scale of 1978. However, the unqualified term 'salinity' is generic and does not necessarily imply any particular method of calculation. The units of salinity are dimensionless and the units attribute should normally be given as 1e-3 or 0.001 i.e. parts per thousand.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Square of Sea Surface Salinity",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid.",
+      "Units": "1E-06",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "sossq",
+      "Expression UKESM1": "sossq",
+      "Model units": "1e-6"
+    },
+    "STASH entries": [],
+    "issue_number": 1568,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.mon.sossq_tavg-u-hxy-sea (Omon.sossq)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sos_tavg-u-hm-sea",
+      "CF standard name": "sea_surface_salinity",
+      "CMIP6 Differences": "\"units\" was \"0.001\"; ; \"comment\" was \"Sea water salinity is the salt content of sea water, often on the Practical Salinity Scale of 1978. However, the unqualified term 'salinity' is generic and does not necessarily imply any particular method of calculation. The units of salinity are dimensionless and the units attribute should normally be given as 1e-3 or 0.001 i.e. parts per thousand. \";",
+      "Cell measures": "",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Sea water salinity is the salt content of sea water, often on the Practical Salinity Scale of 1978. However, the unqualified term 'salinity' is generic and does not necessarily imply any particular method of calculation. The units of salinity are dimensionless and the units attribute should normally be given as 1e-3 or 0.001 i.e. parts per thousand.",
+      "Dimensions": "time",
+      "Frequency": "mon",
+      "Long name": "Global Average Sea Surface Salinity",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Units (from Physical Parameter) - CMIP6:0.001 CMIP7:1,; CHANGE SINCE CMIP6 in Units (from Physical Parameter) - CMIP6:0.001 CMIP7:1E-03,",
+      "Units": "1E-03",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "area_mean(sos, areacello)",
+      "Expression UKESM1": "area_mean(sos, areacello)",
+      "Model units": "1e-3"
+    },
+    "STASH entries": [],
+    "issue_number": 1567,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.mon.sos_tavg-u-hm-sea (Omon.sosga)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sos_tavg-u-hxy-sea",
+      "CF standard name": "sea_surface_salinity",
+      "CMIP6 Differences": "\"units\" was \"0.001\"; ; \"comment\" was \"Sea water salinity is the salt content of sea water, often on the Practical Salinity Scale of 1978. However, the unqualified term 'salinity' is generic and does not necessarily imply any particular method of calculation. The units of salinity are dimensionless and the units attribute should normally be given as 1e-3 or 0.001 i.e. parts per thousand. \";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Sea water salinity is the salt content of sea water, often on the Practical Salinity Scale of 1978. However, the unqualified term 'salinity' is generic and does not necessarily imply any particular method of calculation. The units of salinity are dimensionless and the units attribute should normally be given as 1e-3 or 0.001 i.e. parts per thousand.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Sea Surface Salinity",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid as well as on a spherical latitude/longitude grid.; CHANGE SINCE CMIP6 in Units (from Physical Parameter) - CMIP6:0.001 CMIP7:1,; CHANGE SINCE CMIP6 in Units (from Physical Parameter) - CMIP6:0.001 CMIP7:1E-03,",
+      "Units": "1E-03",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "sos",
+      "Expression UKESM1": "sos",
+      "Model units": "1e-3"
+    },
+    "STASH entries": [],
+    "issue_number": 1566,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable ocean.mon.sos_tavg-u-hxy-sea (Omon.sos)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "so_tavg-l-hm-sea",
+      "CF standard name": "sea_water_salinity",
+      "CMIP6 Differences": "\"dimensions\" was \"time\"; ; \"units\" was \"0.001\"; ; \"comment\" was \"Sea water salinity is the salt content of sea water, often on the Practical Salinity Scale of 1978. However, the unqualified term 'salinity' is generic and does not necessarily imply any particular method of calculation. The units of salinity are dimensionless and the units attribute should normally be given as 1e-3 or 0.001 i.e. parts per thousand. \";",
+      "Cell measures": "",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Sea water salinity is the salt content of sea water, often on the Practical Salinity Scale of 1978. However, the unqualified term 'salinity' is generic and does not necessarily imply any particular method of calculation. The units of salinity are dimensionless and the units attribute should normally be given as 1e-3 or 0.001 i.e. parts per thousand.",
+      "Dimensions": "olevel time",
+      "Frequency": "mon",
+      "Long name": "Global Mean Sea Water Salinity",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Units (from Physical Parameter) - CMIP6:0.001 CMIP7:1E-03, CHANGE SINCE CMIP6 in Dimensions - CMIP6:time CMIP7:olevel time,",
+      "Units": "1E-03",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "soga",
+      "Expression UKESM1": "soga",
+      "Model units": "1e-3"
+    },
+    "STASH entries": [],
+    "issue_number": 1565,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.mon.so_tavg-l-hm-sea (Omon.soga)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "sob_tavg-u-hxy-sea",
       "CF standard name": "sea_water_salinity_at_sea_floor",
       "CMIP6 Differences": "\"units\" was \"0.001\"; ; \"dimensions\" was \"longitude latitude time\";",
