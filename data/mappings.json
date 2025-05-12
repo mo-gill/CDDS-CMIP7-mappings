@@ -1,6 +1,302 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "hfls_tavg-u-hxy-u",
+      "CF standard name": "surface_upward_latent_heat_flux",
+      "CMIP6 Differences": "\"comment\" was \"The surface called 'surface' means the lower boundary of the atmosphere. 'Upward' indicates a vector component which is positive when directed upward (negative downward). The surface latent heat flux is the exchange of heat between the surface and the air on account of evaporation (including sublimation). In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "This is the 3-hour mean flux.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "3hr",
+      "Long name": "Surface Upward Latent Heat Flux",
+      "Modeling realm": "atmos",
+      "Positive": "up",
+      "Processing notes": "",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i234[lbproc=128]",
+      "Expression UKESM1": "m01s03i234[lbproc=128]",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i234",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,234",
+        "time_profile": "T3HRMN",
+        "usage_profile": "UP8"
+      },
+      {
+        "STASH": "m01s03i234",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,234",
+        "time_profile": "T3HRMN",
+        "usage_profile": "UP8"
+      }
+    ],
+    "issue_number": 88,
+    "labels": [
+      "3hr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.3hr.hfls_tavg-u-hxy-u (3hr.hfls)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hfdsl_tavg-u-hxy-u",
+      "CF standard name": "surface_downward_heat_flux_in_air",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Ground heat flux at 3hr",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "3hr",
+      "Long name": "Ground heat flux at 3hr",
+      "Modeling realm": "land",
+      "Positive": "up",
+      "Processing notes": "",
+      "Units": "W m-2",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 87,
+    "labels": [
+      "3hr",
+      "land"
+    ],
+    "title": "Variable land.3hr.hfdsl_tavg-u-hxy-u (3hr.hfdsl)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hfds_tavg-u-hxy-sea",
+      "CF standard name": "surface_downward_heat_flux_in_sea_water",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Net flux of heat entering the liquid water column through its upper surface (excluding any 'flux adjustment').",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "3hr",
+      "Long name": "Downward Heat Flux at Sea Water Surface",
+      "Modeling realm": "ocean",
+      "Positive": "down",
+      "Processing notes": "",
+      "Units": "W m-2",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 86,
+    "labels": [
+      "3hr",
+      "ocean"
+    ],
+    "title": "Variable ocean.3hr.hfds_tavg-u-hxy-sea (3hr.hfds)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "friver_tavg-u-hxy-sea",
+      "CF standard name": "water_flux_into_sea_water_from_rivers",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Computed as the river flux of water into the ocean divided by the area of the ocean portion of the grid cell.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "3hr",
+      "Long name": "Water Flux into Sea Water from Rivers",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid.",
+      "Units": "kg m-2 s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 85,
+    "labels": [
+      "3hr",
+      "ocean"
+    ],
+    "title": "Variable ocean.3hr.friver_tavg-u-hxy-sea (3hr.friver)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "flandice_tavg-u-hxy-sea",
+      "CF standard name": "water_flux_into_sea_water_from_land_ice",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Computed as the water flux into the ocean due to land ice (runoff water from surface and base of land ice or melt from base of ice shelf or vertical ice front) into the ocean divided by the area ocean portion of the grid cell.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "3hr",
+      "Long name": "Water Flux into Sea Water from Land Ice",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 84,
+    "labels": [
+      "3hr",
+      "ocean"
+    ],
+    "title": "Variable ocean.3hr.flandice_tavg-u-hxy-sea (3hr.flandice)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ficeberg_tavg-l-hxy-sea",
+      "CF standard name": "water_flux_into_sea_water_from_icebergs",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Computed as the iceberg melt water flux into the ocean divided by the area of the ocean portion of the grid cell.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "3hr",
+      "Long name": "Water Flux into Sea Water from Icebergs",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.",
+      "Units": "kg m-2 s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 83,
+    "labels": [
+      "3hr",
+      "ocean"
+    ],
+    "title": "Variable ocean.3hr.ficeberg_tavg-l-hxy-sea (3hr.ficeberg)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "evspsblveg_tavg-u-hxy-u",
+      "CF standard name": "water_evaporation_flux_from_canopy",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Evaporation from canopy",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "3hr",
+      "Long name": "Evaporation from canopy",
+      "Modeling realm": "land",
+      "Positive": "up",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 82,
+    "labels": [
+      "3hr",
+      "land"
+    ],
+    "title": "Variable land.3hr.evspsblveg_tavg-u-hxy-u (3hr.evspsblveg)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "evspsblsoi_tavg-u-hxy-u",
+      "CF standard name": "water_evaporation_flux_from_soil",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Water evaporation from soil",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "3hr",
+      "Long name": "Water evaporation from soil",
+      "Modeling realm": "land",
+      "Positive": "up",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 81,
+    "labels": [
+      "3hr",
+      "land"
+    ],
+    "title": "Variable land.3hr.evspsblsoi_tavg-u-hxy-u (3hr.evspsblsoi)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "clt_tavg-u-hxy-u",
+      "CF standard name": "cloud_area_fraction",
+      "CMIP6 Differences": "\"comment\" was \"Total cloud area fraction (reported as a percentage) for the whole atmospheric column, as seen from the surface or the top of the atmosphere. Includes both large-scale and convective cloud.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "for the whole atmospheric column, as seen from the surface or the top of the atmosphere. Include both large-scale and convective cloud.  This is a 3-hour mean.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "3hr",
+      "Long name": "Total Cloud Cover Percentage",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s02i204[lbproc=128]",
+      "Expression UKESM1": "m01s02i204[lbproc=128]",
+      "Model units": "1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s02i204",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "2,204",
+        "time_profile": "T3HRMN",
+        "usage_profile": "UP8"
+      },
+      {
+        "STASH": "m01s02i204",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,204",
+        "time_profile": "T3HRMN",
+        "usage_profile": "UP8"
+      }
+    ],
+    "issue_number": 80,
+    "labels": [
+      "3hr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.3hr.clt_tavg-u-hxy-u (3hr.clt)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "zg_tavg-p19-hxy-air",
       "CF standard name": "geopotential_height",
       "CMIP6 Differences": "",
@@ -2094,7 +2390,8 @@
       "atmos",
       "CMIP6",
       "UKESM1",
-      "HadGEM3-GC31"
+      "HadGEM3-GC31",
+      "approved"
     ],
     "title": "Variable atmos.mon.pr_tavg-u-hxy-u (Amon.pr)"
   },
