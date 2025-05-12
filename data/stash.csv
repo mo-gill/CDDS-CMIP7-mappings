@@ -1,4 +1,7 @@
 Model,Branded variable name,Frequency,STASH,Section,Item,time_profile,domain_profile,usage_profile
+UKESM1,nSoil_tavg-u-hxy-lnd,mon,m01s19i145,19,145,TMONMN,DIAG,UP5
+UKESM1,nRoot_tavg-u-hxy-lnd,mon,m01s19i133,19,133,TMONMN,DPFTS,UP5
+UKESM1,nMineral_tavg-u-hxy-lnd,mon,m01s19i146,19,146,TMONMN,DIAG,UP5
 UKESM1,nLeaf_tavg-u-hxy-lnd,mon,m01s19i013,19,013,TMONMN,DTILE,UP5
 UKESM1,nLeaf_tavg-u-hxy-lnd,mon,m01s19i132,19,132,TMONMN,DPFTS,UP5
 UKESM1,nLand_tavg-u-hxy-lnd,mon,m01s19i147,19,147,TMONMN,DIAG,UP5
