@@ -1,6 +1,465 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "pflw_tavg-u-hxy-lnd",
+      "CF standard name": "liquid_water_content_of_permafrost_layer",
+      "CMIP6 Differences": "\"comment\" was \"*where land over land*, i.e., this is the total mass of liquid water contained within the permafrost layer within the land portion of a grid cell divided by the area of the land portion of the cell.\"; ; \"modeling_realm\" was \"landIce land\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "\"where land over land\", i.e., this is the total mass of liquid water contained within the permafrost layer within the land portion of a grid cell divided by the area of the land portion of the cell.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Liquid Water Content of Permafrost Layer",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:land, landIce CMIP7:land, ocean,",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1243,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.pflw_tavg-u-hxy-lnd (LImon.pflw)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "orog_tavg-u-hxy-is",
+      "CF standard name": "surface_altitude",
+      "CMIP6 Differences": "\"comment\" was \"The surface called 'surface' means the lower boundary of the atmosphere. Altitude is the (geometric) height above the geoid, which is the reference geopotential surface. The geoid is similar to mean sea level.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "quantity averaged over ice_sheet (meaning grounded ice sheet and floating ice shelf) only, to avoid contamination from other surfaces (eg: permafrost)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Ice Sheet Surface Altitude",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1242,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.orog_tavg-u-hxy-is (LImon.orogIs)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "mrro_tavg-u-hxy-is",
+      "CF standard name": "runoff_flux",
+      "CMIP6 Differences": "\"comment\" was \"The total run-off (including drainage through the base of the soil model) per unit area leaving the land portion of the grid cell.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "quantity averaged over ice_sheet (meaning grounded ice sheet and floating ice shelf) only, to avoid contamination from other surfaces (eg: permafrost)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Ice Sheet Total Runoff",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "land_class_mean(m01s08i583[lbproc=128], m01s03i317[lbproc=128], land_class='iceElev')",
+      "Expression UKESM1": "land_class_mean(m01s08i583[lbproc=128], m01s03i317[lbproc=128], land_class='iceElev')",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i583",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "8,583",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i583",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "8,583",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1241,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable landIce.mon.mrro_tavg-u-hxy-is (LImon.mrroIs)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "lwsnl_tavg-u-hxy-lnd",
+      "CF standard name": "liquid_water_content_of_surface_snow",
+      "CMIP6 Differences": "\"comment\" was \"The total mass of liquid water contained interstitially within the whole depth of the snow layer of the land portion of a grid cell divided by the area of the land portion of the cell.\"; ; \"modeling_realm\" was \"landIce land\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "where land over land: this is computed as the total mass of liquid water contained interstitially within the snow layer of the land portion of a grid cell divided by the area of the land portion of the cell.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Liquid Water Content of Snow Layer",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:land, landIce CMIP7:land, ocean,",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1240,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.lwsnl_tavg-u-hxy-lnd (LImon.lwsnl)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "litemptop_tavg-u-hxy-is",
+      "CF standard name": "temperature_at_top_of_ice_sheet_model",
+      "CMIP6 Differences": "\"comment\" was \"Upper boundary temperature that is used to force ice sheet models. It is the temperature at the base of the snowpack models, and does not vary with seasons. Report surface temperature of ice sheet where snow thickness is zero\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "quantity averaged over ice_sheet (meaning grounded ice sheet and floating ice shelf) only, to avoid contamination from other surfaces (eg: permafrost)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Ice Sheet Temperature at Top of Ice Sheet Model",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "land_class_mean(m01s08i576[lbproc=128], m01s03i317[lbproc=128], land_class='iceElev')",
+      "Expression UKESM1": "land_class_mean(m01s08i576[lbproc=128], m01s03i317[lbproc=128], land_class='iceElev')",
+      "Model units": "K"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i576",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "8,576",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i576",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "8,576",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1239,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable landIce.mon.litemptop_tavg-u-hxy-is (LImon.litemptopIs)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "icem_tavg-u-hxy-is",
+      "CF standard name": "land_ice_surface_melt_flux",
+      "CMIP6 Differences": "\"comment\" was \"Loss of ice mass resulting from surface melting. Computed as the total surface melt water on the land ice portion of the grid cell divided by land ice area in the grid cell.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "quantity averaged over ice_sheet (meaning grounded ice sheet and floating ice shelf) only, to avoid contamination from other surfaces (eg: permafrost)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Ice Sheet Surface Ice Melt Flux",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1238,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.icem_tavg-u-hxy-is (LImon.icemIs)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hfss_tavg-u-hxy-is",
+      "CF standard name": "surface_upward_sensible_heat_flux",
+      "CMIP6 Differences": "\"comment\" was \"Upward sensible heat flux from the ice sheet surface. The surface sensible heat flux, also called turbulent heat flux, is the exchange of heat between the surface and the air by motion of air.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "quantity averaged over ice_sheet (meaning grounded ice sheet and floating ice shelf) only, to avoid contamination from other surfaces (eg: permafrost)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Ice Sheet Surface Upward Sensible Heat Flux",
+      "Modeling realm": "landIce",
+      "Positive": "up",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "land_class_mean(m01s03i290[lbproc=128], m01s03i317[lbproc=128], land_class='iceElev')",
+      "Expression UKESM1": "land_class_mean(m01s03i290[lbproc=128], m01s03i317[lbproc=128], land_class='iceElev')",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i290",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "3,290",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i290",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,290",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1237,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable landIce.mon.hfss_tavg-u-hxy-is (LImon.hfssIs)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hfls_tavg-u-hxy-is",
+      "CF standard name": "surface_upward_latent_heat_flux",
+      "CMIP6 Differences": "\"comment\" was \"Upward latent heat flux from the ice sheet surface\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "quantity averaged over ice_sheet (meaning grounded ice sheet and floating ice shelf) only, to avoid contamination from other surfaces (eg: permafrost)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Ice Sheet Surface Upward Latent Heat Flux",
+      "Modeling realm": "landIce",
+      "Positive": "up",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "land_class_mean(m01s03i330[lbproc=128], m01s03i317[lbproc=128], land_class='iceElev')",
+      "Expression UKESM1": "land_class_mean(m01s03i330[lbproc=128], m01s03i317[lbproc=128], land_class='iceElev')",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i330",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "3,330",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i330",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,330",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1236,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable landIce.mon.hfls_tavg-u-hxy-is (LImon.hflsIs)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hfdsn_tavg-u-hxy-lnd",
+      "CF standard name": "surface_downward_heat_flux_in_snow",
+      "CMIP6 Differences": "\"comment\" was \"the net downward heat flux from the atmosphere into the snow that lies on land divided by the land area in the grid cell; reported as 0.0 for snow-free land regions or where the land fraction is 0.\"; ; \"modeling_realm\" was \"landIce land\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "the net downward heat flux from the atmosphere into the snow that lies on land divided by the land area in the grid cell; reported as missing for snow-free land regions or where the land fraction is 0.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Downward Heat Flux into Snow Where Land over Land",
+      "Modeling realm": "landIce",
+      "Positive": "down",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:land, landIce CMIP7:land, ocean,",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s08i202[lbproc=128]",
+      "Expression UKESM1": "m01s08i202[lbproc=128]",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s08i202",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "8,202",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i202",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "8,202",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1235,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable landIce.mon.hfdsn_tavg-u-hxy-lnd (LImon.hfdsn)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "agesno_tavg-u-hxy-lnd",
+      "CF standard name": "age_of_surface_snow",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: mean where land time: mean (with samples weighted by snow mass)\"; ; \"comment\" was \"Age of Snow (when computing the time-mean here, the time samples, weighted by the mass of snow on the land portion of the grid cell, are accumulated and then divided by the sum of the weights.  Reported as missing data in regions free of snow on land.\"; ; \"modeling_realm\" was \"landIce land\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean (weighted by snow mass on land)",
+      "Comment": "When computing the time-mean here, the time samples, weighted by the mass of snow on the land portion of the grid cell, are accumulated and then divided by the sum of the weights.  Reported as \"missing in regions free of snow on land.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Mean Age of Snow",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean where land time: mean (with samples weighted by snow mass) CMIP7:area: mean where land time: mean (weighted by snow mass on land),; CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:land, landIce CMIP7:land, ocean,",
+      "Units": "day",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1234,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.agesno_tavg-u-hxy-lnd (LImon.agesno)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "acabf_tavg-u-hxy-is",
       "CF standard name": "land_ice_surface_specific_mass_balance_flux",
       "CMIP6 Differences": "\"comment\" was \"Specific mass balance means the net rate at which ice is added per unit area at the land ice surface. Computed as the total surface mass balance on the land ice portion of the grid cell divided by land ice area in the grid cell. A negative value means loss of ice\";",
