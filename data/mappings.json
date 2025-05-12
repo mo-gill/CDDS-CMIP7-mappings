@@ -1,6 +1,260 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "bigthetao_tavg-l-hxy-sea",
+      "CF standard name": "sea_water_conservative_temperature",
+      "CMIP6 Differences": "\"comment\" was \"Sea water conservative temperature (this should be contributed only for models using conservative temperature as prognostic field)\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Diagnostic should be contributed only for models using conservative temperature as prognostic field.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "dec",
+      "Long name": "Sea Water Conservative Temperature",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "degC",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1350,
+    "labels": [
+      "dec",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.dec.bigthetao_tavg-l-hxy-sea (Odec.bigthetao)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "zostoga_tavg-u-hm-sea",
+      "CF standard name": "global_average_thermosteric_sea_level_change",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Global Average Thermosteric Sea Level Change",
+      "Dimensions": "time",
+      "Frequency": "day",
+      "Long name": "global_average_thermosteric_sea_level_change",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1349,
+    "labels": [
+      "day",
+      "ocean"
+    ],
+    "title": "Variable ocean.day.zostoga_tavg-u-hm-sea (Oday.zostoga)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "zos_tavg-u-hxy-sea",
+      "CF standard name": "sea_surface_height_above_geoid",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "This is the dynamic sea level, so should have zero global area mean. zos is the effective sea level as if sea ice (and snow) at a grid cell were converted to liquid seawater (Campin et al., 2008). For OMIP, do _not _record inverse barometer responses from sea-ice (and snow) loading in zos. See (Griffies et al, 2016, https://doi.org/10.5194/gmd-9-3231-2016).",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Sea Surface Height above Geoid",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1348,
+    "labels": [
+      "day",
+      "ocean",
+      "BCV"
+    ],
+    "title": "Variable ocean.day.zos_tavg-u-hxy-sea (Oday.zos)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "zooc_tavg-l-hxy-sea",
+      "CF standard name": "mole_concentration_of_zooplankton_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "sum of zooplankton carbon component concentrations",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "day",
+      "Long name": "Zooplankton Carbon Concentration",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-3",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1347,
+    "labels": [
+      "day",
+      "ocnBgchem"
+    ],
+    "title": "Variable ocnBgchem.day.zooc_tavg-l-hxy-sea (Oday.zooc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "zmicro_tavg-l-hxy-sea",
+      "CF standard name": "mole_concentration_of_microzooplankton_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "carbon\u00a0concentration from the microzooplankton (<20 um) component alone",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "day",
+      "Long name": "Mole Concentration of microzooplankton Expressed as Carbon in Sea Water",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-3",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1346,
+    "labels": [
+      "day",
+      "ocnBgchem"
+    ],
+    "title": "Variable ocnBgchem.day.zmicro_tavg-l-hxy-sea (Oday.zmicro)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "zmeso_tavg-l-hxy-sea",
+      "CF standard name": "mole_concentration_of_mesozooplankton_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "carbon concentration from mesozooplankton (20-200 um) component alone",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "day",
+      "Long name": "Mole Concentration of Mesozooplankton Expressed as Carbon in Sea Water",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-3",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1345,
+    "labels": [
+      "day",
+      "ocnBgchem"
+    ],
+    "title": "Variable ocnBgchem.day.zmeso_tavg-l-hxy-sea (Oday.zmeso)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "wo_tavg-l-hxy-sea",
+      "CF standard name": "upward_sea_water_velocity",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Prognostic z-ward velocity component resolved by the model.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "day",
+      "Long name": "Sea Water Vertical Velocity",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native. Those who wish to record vertical velocities and vertical fluxes on ocean half-levels may do so. If using CMOR3 you will be required to specify artificial bounds (e.g. located at full model levels) to avoid an error exit.",
+      "Units": "m s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1344,
+    "labels": [
+      "day",
+      "ocean"
+    ],
+    "title": "Variable ocean.day.wo_tavg-l-hxy-sea (Oday.wo)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "vos_tavg-u-hxy-sea",
+      "CF standard name": "surface_sea_water_y_velocity",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Daily surface prognostic y-ward velocity component resolved by the model.",
+      "Dimensions": "longitude latitude time depth0m",
+      "Frequency": "day",
+      "Long name": "Daily Surface Sea Water Y Velocity",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid. Surface values only.",
+      "Units": "m s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1343,
+    "labels": [
+      "day",
+      "ocean"
+    ],
+    "title": "Variable ocean.day.vos_tavg-u-hxy-sea (Oday.vos)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "uos_tavg-u-hxy-sea",
+      "CF standard name": "surface_sea_water_x_velocity",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Daily surface prognostic x-ward velocity component resolved by the model.",
+      "Dimensions": "longitude latitude time depth0m",
+      "Frequency": "day",
+      "Long name": "Daily Surface Sea Water X Velocity",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid. Surface values only.",
+      "Units": "m s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1342,
+    "labels": [
+      "day",
+      "ocean"
+    ],
+    "title": "Variable ocean.day.uos_tavg-u-hxy-sea (Oday.uos)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "tossq_tavg-u-hxy-sea",
       "CF standard name": "square_of_sea_surface_temperature",
       "CMIP6 Differences": "\"comment\" was \"Square of temperature of liquid ocean.\";",
