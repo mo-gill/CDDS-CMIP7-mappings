@@ -1,6 +1,238 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "orog_tavg-u-hxy-is",
+      "CF standard name": "surface_altitude",
+      "CMIP6 Differences": "\"comment\" was \"The surface called 'surface' means the lower boundary of the atmosphere. Altitude is the (geometric) height above the geoid, which is the reference geopotential surface. The geoid is similar to mean sea level.\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "This is needed in case the ice sheet elevation changes in time",
+      "Dimensions": "xgre ygre time",
+      "Frequency": "yr",
+      "Long name": "Surface Altitude",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1215,
+    "labels": [
+      "yr",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.yr.orog_tavg-u-hxy-is (IyrGre.orog)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "modelCellAreai_tavg-u-hxy-u",
+      "CF standard name": "cell_area",
+      "CMIP6 Differences": "\"comment\" was \"Horizontal area of ice-sheet grid cells\"; ; \"cell_methods\" was \"area: time: mean\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: sum time: mean",
+      "Comment": "When interpolated to a regular grid, it should be interpolated (not summed) with a conservative scheme to preserve total area",
+      "Dimensions": "xgre ygre time",
+      "Frequency": "yr",
+      "Long name": "The Cell Area of the Ice Sheet Model",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:area: sum time: mean,; CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "m2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1214,
+    "labels": [
+      "yr",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.yr.modelCellAreai_tavg-u-hxy-u (IyrGre.modelCellAreai)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "lithk_tavg-u-hxy-is",
+      "CF standard name": "land_ice_thickness",
+      "CMIP6 Differences": "\"comment\" was \"The thickness of the ice sheet\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "This is needed in case ice sheet thickness changes in time",
+      "Dimensions": "xgre ygre time",
+      "Frequency": "yr",
+      "Long name": "Ice Sheet Thickness",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1213,
+    "labels": [
+      "yr",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.yr.lithk_tavg-u-hxy-is (IyrGre.lithk)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "litemptop_tavg-u-hxy-is",
+      "CF standard name": "temperature_at_top_of_ice_sheet_model",
+      "CMIP6 Differences": "\"comment\" was \"Upper boundary temperature that is used to force ice sheet models. It is the temperature at the base of the snowpack models, and does not vary with seasons. Report surface temperature of ice sheet where snow thickness is zero\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "quantity averaged over ice sheet only, to avoid contamination from other surfaces (eg: permafrost)",
+      "Dimensions": "xgre ygre time",
+      "Frequency": "yr",
+      "Long name": "Temperature at Top of Ice Sheet Model",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1212,
+    "labels": [
+      "yr",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.yr.litemptop_tavg-u-hxy-is (IyrGre.litemptop)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "litempbot_tavg-u-hxy-gis",
+      "CF standard name": "land_ice_basal_temperature",
+      "CMIP6 Differences": "\"comment\" was \"Basal temperature that is used to force the ice sheet models, it is the temperature AT ice sheet - bedrock interface. Cell_methods: area: mean where grounded_ice_sheet\"; ; \"cell_methods\" was \"area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf)\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where grounded_ice_sheet (mask=sfgrlf)",
+      "Comment": "quantity averaged over grounded land ice",
+      "Dimensions": "xgre ygre time",
+      "Frequency": "yr",
+      "Long name": "Basal Temperature of Grounded Ice Sheet",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf), area: sum time: mean where grounded_ice_sheet (comment: mask=sfgrlf),;  ; CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: time: mean where grounded_ice_sheet (mask=sfgrlf),",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1211,
+    "labels": [
+      "yr",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.yr.litempbot_tavg-u-hxy-gis (IyrGre.litempbotgr)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "litempbot_tavg-u-hxy-fis",
+      "CF standard name": "land_ice_basal_temperature",
+      "CMIP6 Differences": "\"comment\" was \"Basal temperature that is used to force the ice sheet models, it is the temperature AT ice shelf-ocean interface.  Cell_methods: area: mean where floating_ice_shelf\"; ; \"cell_methods\" was \"area: time: mean where floating_ice_shelf (comment: mask=sftflf)\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where floating_ice_shelf (mask=sftflf)",
+      "Comment": "quantity averaged over floating land ice",
+      "Dimensions": "xgre ygre time",
+      "Frequency": "yr",
+      "Long name": "Basal Temperature of Floating Ice Shelf",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where floating_ice_shelf (comment: mask=sftflf) CMIP7:area: time: mean where floating_ice_shelf (comment: mask=sftflf), area: sum time: mean where floating_ice_shelf (comment: mask=sftflf) copy,;  ; CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where floating_ice_shelf (comment: mask=sftflf) CMIP7:area: time: mean where floating_ice_shelf (mask=sftflf),",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1210,
+    "labels": [
+      "yr",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.yr.litempbot_tavg-u-hxy-fis (IyrGre.litempbotfl)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "limnsw_tavg-u-hm-is",
+      "CF standard name": "land_ice_mass_not_displacing_sea_water",
+      "CMIP6 Differences": "\"comment\" was \"The ice sheet mass is computed as the volume above flotation times density. Changes in land_ice_mass_not_displacing_sea_water will always result in a change in sea level, unlike changes in land_ice_mass which may not result in sea level change (such as melting of the floating ice shelves, or portion of ice that sits on bedrock below sea level)\"; ; \"cell_methods\" was \"area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf)\";",
+      "Cell measures": "",
+      "Cell methods": "area: sum where ice_sheet time: mean",
+      "Comment": "Greenland",
+      "Dimensions": "time",
+      "Frequency": "yr",
+      "Long name": "Ice Sheet Mass That Does not Displace Sea Water",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: sum where ice_sheet time: mean,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: sum where ice_sheet time: mean,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: sum where ice_sheet time: mean,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: sum where ice_sheet time: mean,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: sum where ice_sheet time: mean,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: sum where ice_sheet time: mean,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: sum where ice_sheet time: mean,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: sum where ice_sheet time: mean,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: sum where ice_sheet time: mean,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: sum where ice_sheet time: mean,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: sum where ice_sheet time: mean,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: sum where ice_sheet time: mean,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: sum where ice_sheet time: mean,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: sum where ice_sheet time: mean,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: sum where ice_sheet time: mean,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: sum where ice_sheet time: mean,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: sum where ice_sheet time: mean,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: sum where ice_sheet time: mean,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: sum where ice_sheet time: mean,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: sum where ice_sheet time: mean,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: sum where ice_sheet time: mean,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: sum where ice_sheet time: mean,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: sum where ice_sheet time: mean,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: sum where ice_sheet time: mean,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: sum where ice_sheet time: mean,; CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean, CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: sum where ice_sheet time: mean,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: sum where ice_sheet time: mean,",
+      "Units": "kg",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1209,
+    "labels": [
+      "yr",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.yr.limnsw_tavg-u-hm-is (IyrGre.limnsw)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "lim_tavg-u-hm-is",
+      "CF standard name": "land_ice_mass",
+      "CMIP6 Differences": "\"comment\" was \"The ice sheet mass is computed as the volume times density\";",
+      "Cell measures": "",
+      "Cell methods": "area: sum where ice_sheet time: mean",
+      "Comment": "Greenland",
+      "Dimensions": "time",
+      "Frequency": "yr",
+      "Long name": "Ice Sheet Mass",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "kg",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1208,
+    "labels": [
+      "yr",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.yr.lim_tavg-u-hm-is (IyrGre.lim)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "lifmassbf_tavg-u-hxy-is",
       "CF standard name": "land_ice_specific_mass_flux_due_to_calving_and_ice_front_melting",
       "CMIP6 Differences": "",
