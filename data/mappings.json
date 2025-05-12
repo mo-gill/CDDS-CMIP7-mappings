@@ -1,6 +1,279 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "cropFrac_tavg-u-hxy-u",
+      "CF standard name": "area_fraction",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: mean where land over all_area_types time: mean\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Percentage of entire grid cell  that is covered by crop.",
+      "Dimensions": "longitude latitude time typecrop",
+      "Frequency": "yr",
+      "Long name": "Percentage Crop Cover",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time typecrop CMIP7:longitude latitude time  typecrop,;  ; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean where land over all_area_types time: mean CMIP7:area: time: mean,",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1095,
+    "labels": [
+      "yr",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.yr.cropFrac_tavg-u-hxy-u (Eyr.cropFrac)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "cVeg_tpt-u-hxy-lus",
+      "CF standard name": "vegetation_carbon_content",
+      "CMIP6 Differences": "\"frequency\" was \"yrPt\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where sector time: point",
+      "Comment": "end of year values (not annual mean)",
+      "Dimensions": "longitude latitude landUse time1",
+      "Frequency": "yr",
+      "Long name": "Carbon in Vegetation on Land-Use Tiles",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude landUse time1 CMIP7:longitude latitude time1 landUse,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1094,
+    "labels": [
+      "yr",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.yr.cVeg_tpt-u-hxy-lus (Eyr.cVegLut)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "cSoil_tpt-u-hxy-lus",
+      "CF standard name": "soil_mass_content_of_carbon",
+      "CMIP6 Differences": "\"long_name\" was \"carbon  in soil pool on Land-use tiles\"; ; \"frequency\" was \"yrPt\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where sector time: point",
+      "Comment": "end of year values (not annual mean)",
+      "Dimensions": "longitude latitude landUse time1",
+      "Frequency": "yr",
+      "Long name": "Carbon in Soil Pool on Land-Use Tiles",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude landUse time1 CMIP7:longitude latitude time1 landUse,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1093,
+    "labels": [
+      "yr",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.yr.cSoil_tpt-u-hxy-lus (Eyr.cSoilLut)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "cProduct_tpt-u-hxy-lus",
+      "CF standard name": "carbon_mass_content_of_forestry_and_agricultural_products",
+      "CMIP6 Differences": "\"frequency\" was \"yrPt\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where sector time: point",
+      "Comment": "Anthropogenic pools associated with land use tiles into which harvests and cleared carbon are deposited before release into atmosphere PLUS any remaining anthropogenic pools that may be associated with lands which were converted into land use tiles during reported period. Examples of products include paper, cardboard, timber for construction, and crop harvest for food or fuel. Does NOT include residue which is deposited into soil or litter; end of year values (not annual mean).",
+      "Dimensions": "longitude latitude landUse time1",
+      "Frequency": "yr",
+      "Long name": "Wood and Agricultural Product Pool Carbon Associated with Land-Use Tiles",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude landUse time1 CMIP7:longitude latitude time1 landUse,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1092,
+    "labels": [
+      "yr",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.yr.cProduct_tpt-u-hxy-lus (Eyr.cProductLut)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "cLitter_tpt-u-hxy-lus",
+      "CF standard name": "litter_mass_content_of_carbon",
+      "CMIP6 Differences": "\"frequency\" was \"yrPt\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where sector time: point",
+      "Comment": "end of year values (not annual mean)",
+      "Dimensions": "longitude latitude landUse time1",
+      "Frequency": "yr",
+      "Long name": "Carbon  in Above and Below-Ground Litter Pools on Land-Use Tiles",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude landUse time1 CMIP7:longitude latitude time1 landUse,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1091,
+    "labels": [
+      "yr",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.yr.cLitter_tpt-u-hxy-lus (Eyr.cLitterLut)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "baresoilFrac_tavg-u-hxy-u",
+      "CF standard name": "area_fraction",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: mean where land over all_area_types time: mean\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Percentage of entire grid cell  that is covered by bare soil.",
+      "Dimensions": "longitude latitude time typebare",
+      "Frequency": "yr",
+      "Long name": "Bare Soil Percentage Area Coverage",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time typebare CMIP7:longitude latitude time  typebare,;  ; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean where land over all_area_types time: mean CMIP7:area: time: mean,",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1090,
+    "labels": [
+      "yr",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.yr.baresoilFrac_tavg-u-hxy-u (Eyr.baresoilFrac)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tntscp_tpt-l-hxys-u",
+      "CF standard name": "tendency_of_air_temperature_due_to_stratiform_cloud_and_precipitation",
+      "CMIP6 Differences": "\"frequency\" was \"subhrPt\"; ; \"comment\" was \"The phrase 'tendency_of_X' means derivative of X with respect to time. Air temperature is the bulk temperature of the air, not the surface (skin) temperature. The specification of a physical process by the phrase 'due_to_' process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. A variable with the standard name tendency_of_air_temperature_due_to_stratiform_cloud_and_precipitation should contain net latent heating effects of all processes which convert stratiform clouds and precipitation between water vapour, liquid or ice phases. In an atmosphere model, stratiform cloud is that produced by large-scale convergence (not the convection schemes).\";",
+      "Cell measures": "",
+      "Cell methods": "area: point time: point",
+      "Comment": "alevel site time1",
+      "Dimensions": "alevel site time1",
+      "Frequency": "subhr",
+      "Long name": "Tendency of Air Temperature Due to Stratiform Clouds and Precipitation",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:subhrPt CMIP7:subhr,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "K s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "(m01s03i181[lbproc=0] - m01s03i189[lbproc=0] + m01s04i141[lbproc=0] + m01s04i181[lbproc=0] + m01s16i161[lbproc=0] + m01s16i181[lbproc=0] + m01s01i181[lbproc=0] - m01s01i161[lbproc=0] + m01s02i181[lbproc=0] - m01s02i161[lbproc=0] + m01s05i181[lbproc=0] - m01s05i161[lbproc=0]) / ATMOS_TIMESTEP",
+      "Expression UKESM1": "(m01s03i181[lbproc=0] - m01s03i189[lbproc=0] + m01s04i141[lbproc=0] + m01s04i181[lbproc=0] + m01s16i161[lbproc=0] + m01s16i181[lbproc=0] + m01s01i181[lbproc=0] - m01s01i161[lbproc=0] + m01s02i181[lbproc=0] - m01s02i161[lbproc=0] + m01s05i181[lbproc=0] - m01s05i161[lbproc=0]) / ATMOS_TIMESTEP",
+      "Model units": "K s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1089,
+    "labels": [
+      "subhr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.subhr.tntscp_tpt-l-hxys-u (Esubhr.tntscp)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tntrscs_tpt-l-hxys-u",
+      "CF standard name": "tendency_of_air_temperature_due_to_shortwave_heating_assuming_clear_sky",
+      "CMIP6 Differences": "\"frequency\" was \"subhrPt\"; ; \"comment\" was \"Tendency of Air Temperature due to Clear Sky Shortwave Radiative Heating\";",
+      "Cell measures": "",
+      "Cell methods": "area: point time: point",
+      "Comment": "alevel site time1",
+      "Dimensions": "alevel site time1",
+      "Frequency": "subhr",
+      "Long name": "Tendency of Air Temperature Due to Clear Sky Shortwave Radiative Heating",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:subhrPt CMIP7:subhr,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "K s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s01i233[lbproc=0]",
+      "Expression UKESM1": "m01s01i233[lbproc=0]",
+      "Model units": "K s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1088,
+    "labels": [
+      "subhr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.subhr.tntrscs_tpt-l-hxys-u (Esubhr.tntrscs)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tntrs_tpt-l-hxys-u",
+      "CF standard name": "tendency_of_air_temperature_due_to_shortwave_heating",
+      "CMIP6 Differences": "\"frequency\" was \"subhrPt\"; ; \"comment\" was \"Tendency of air temperature due to shortwave radiative heating\";",
+      "Cell measures": "",
+      "Cell methods": "area: point time: point",
+      "Comment": "alevel site time1",
+      "Dimensions": "alevel site time1",
+      "Frequency": "subhr",
+      "Long name": "Tendency of Air Temperature Due to Shortwave Radiative Heating",
+      "Modeling realm": "aerosol",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:subhrPt CMIP7:subhr,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "K s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s01i161[lbproc=0] / ATMOS_TIMESTEP",
+      "Expression UKESM1": "m01s01i161[lbproc=0] / ATMOS_TIMESTEP",
+      "Model units": "K s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1087,
+    "labels": [
+      "subhr",
+      "aerosol",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable aerosol.subhr.tntrs_tpt-l-hxys-u (Esubhr.tntrs)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "tntrlcs_tpt-l-hxys-u",
       "CF standard name": "tendency_of_air_temperature_due_to_longwave_heating_assuming_clear_sky",
       "CMIP6 Differences": "\"frequency\" was \"subhrPt\"; ; \"comment\" was \"Tendency of Air Temperature due to Clear Sky Longwave Radiative Heating\";",
