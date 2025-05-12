@@ -1,6 +1,246 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "epsi_tavg-z100m-hxy-sea",
+      "CF standard name": "sinking_mole_flux_of_particulate_silicon_in_sea_water",
+      "CMIP6 Differences": "\"comment\" was \"In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.   'Sinking' is the gravitational settling of particulate matter suspended in a liquid. A sinking flux is positive downwards and is calculated relative to the movement of the surrounding fluid.\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics.   'Sinking' is the gravitational settling of particulate matter suspended in a liquid. A sinking flux is positive downwards and is calculated relative to the movement of the surrounding fluid.",
+      "Dimensions": "longitude latitude time depth100m",
+      "Frequency": "mon",
+      "Long name": "Downward Flux of Particulate Silicon",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "at 100 m depth.; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time depth100m CMIP7:longitude latitude time  depth100m,;  ; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time depth100m CMIP7:longitude latitude time  depth100m depth200m,;  ; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time depth100m CMIP7:longitude latitude time  depth100m depth1000m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "mol m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "epSI100",
+      "Model units": "mmol m-2 d-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1416,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.epsi_tavg-z100m-hxy-sea (Omon.epsi100)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "epp_tavg-z100m-hxy-sea",
+      "CF standard name": "sinking_mole_flux_of_particulate_organic_phosphorus_in_sea_water",
+      "CMIP6 Differences": "\"comment\" was \"In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.   'Sinking' is the gravitational settling of particulate matter suspended in a liquid. A sinking flux is positive downwards and is calculated relative to the movement of the surrounding fluid.\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics.   'Sinking' is the gravitational settling of particulate matter suspended in a liquid. A sinking flux is positive downwards and is calculated relative to the movement of the surrounding fluid.",
+      "Dimensions": "longitude latitude time depth100m",
+      "Frequency": "mon",
+      "Long name": "Downward Flux of Particulate Phosphorus",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "at 100 m depth.; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time depth100m CMIP7:longitude latitude time  depth100m,;  ; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time depth100m CMIP7:longitude latitude time  depth100m depth200m,;  ; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time depth100m CMIP7:longitude latitude time  depth100m depth1000m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "mol m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "epN100 * P_TO_N_RATIO",
+      "Model units": "mmol m-2 d-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1415,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.epp_tavg-z100m-hxy-sea (Omon.epp100)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "epn_tavg-z100m-hxy-sea",
+      "CF standard name": "sinking_mole_flux_of_particulate_organic_nitrogen_in_sea_water",
+      "CMIP6 Differences": "\"comment\" was \"In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.   'Sinking' is the gravitational settling of particulate matter suspended in a liquid. A sinking flux is positive downwards and is calculated relative to the movement of the surrounding fluid.\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics.   'Sinking' is the gravitational settling of particulate matter suspended in a liquid. A sinking flux is positive downwards and is calculated relative to the movement of the surrounding fluid.",
+      "Dimensions": "longitude latitude time depth100m",
+      "Frequency": "mon",
+      "Long name": "Downward Flux of Particulate Nitrogen",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "at 100 m depth.; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time depth100m CMIP7:longitude latitude time  depth100m,;  ; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time depth100m CMIP7:longitude latitude time  depth100m depth200m,;  ; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time depth100m CMIP7:longitude latitude time  depth100m depth1000m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "mol m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "epN100",
+      "Model units": "mmol m-2 d-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1414,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.epn_tavg-z100m-hxy-sea (Omon.epn100)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "epcalc_tavg-u-hxy-sea",
+      "CF standard name": "sinking_mole_flux_of_calcite_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics.   'Sinking' is the gravitational settling of particulate matter suspended in a liquid. A sinking flux is positive downwards and is calculated relative to the movement of the surrounding fluid. Calcite is a mineral that is a polymorph of calcium carbonate. The chemical formula of calcite is CaCO3. Standard names also exist for aragonite, another polymorph of calcium carbonate.",
+      "Dimensions": "longitude latitude time depth1000m",
+      "Frequency": "mon",
+      "Long name": "Downward Flux of Calcite at 1000m",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "see Omon.epcalc100",
+      "Units": "mol m-2 s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1413,
+    "labels": [
+      "mon",
+      "ocnBgchem"
+    ],
+    "title": "Variable ocnBgchem.mon.epcalc_tavg-u-hxy-sea (Omon.epcalc1000)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "epcalc_tavg-z100m-hxy-sea",
+      "CF standard name": "sinking_mole_flux_of_calcite_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "\"comment\" was \"The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.   'Sinking' is the gravitational settling of particulate matter suspended in a liquid. A sinking flux is positive downwards and is calculated relative to the movement of the surrounding fluid. Calcite is a mineral that is a polymorph of calcium carbonate. The chemical formula of calcite is CaCO3. Standard names also exist for aragonite, another polymorph of calcium carbonate.\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics.   'Sinking' is the gravitational settling of particulate matter suspended in a liquid. A sinking flux is positive downwards and is calculated relative to the movement of the surrounding fluid. Calcite is a mineral that is a polymorph of calcium carbonate. The chemical formula of calcite is CaCO3. Standard names also exist for aragonite, another polymorph of calcium carbonate.",
+      "Dimensions": "longitude latitude time depth100m",
+      "Frequency": "mon",
+      "Long name": "Downward Flux of Calcite",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "at 100 m depth.; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time depth100m CMIP7:longitude latitude time  depth100m,;  ; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time depth100m CMIP7:longitude latitude time  depth100m depth200m,;  ; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time depth100m CMIP7:longitude latitude time  depth100m depth1000m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "mol m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "epCALC100",
+      "Model units": "mmol m-2 d-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1412,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.epcalc_tavg-z100m-hxy-sea (Omon.epcalc100)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "epc_tavg-u-hxy-sea",
+      "CF standard name": "sinking_mole_flux_of_particulate_organic_matter_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics.   'Sinking' is the gravitational settling of particulate matter suspended in a liquid. A sinking flux is positive downwards and is calculated relative to the movement of the surrounding fluid.",
+      "Dimensions": "longitude latitude time depth1000m",
+      "Frequency": "mon",
+      "Long name": "Downward Flux of Particulate Organic Carbon at 1000m",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "see Omon.epc100",
+      "Units": "mol m-2 s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1411,
+    "labels": [
+      "mon",
+      "ocnBgchem"
+    ],
+    "title": "Variable ocnBgchem.mon.epc_tavg-u-hxy-sea (Omon.epc1000)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "epc_tavg-z100m-hxy-sea",
+      "CF standard name": "sinking_mole_flux_of_particulate_organic_matter_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "\"comment\" was \"The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.   'Sinking' is the gravitational settling of particulate matter suspended in a liquid. A sinking flux is positive downwards and is calculated relative to the movement of the surrounding fluid.\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics.   'Sinking' is the gravitational settling of particulate matter suspended in a liquid. A sinking flux is positive downwards and is calculated relative to the movement of the surrounding fluid.",
+      "Dimensions": "longitude latitude time depth100m",
+      "Frequency": "mon",
+      "Long name": "Downward Flux of Particulate Organic Carbon",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "at 100 m depth.; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time depth100m CMIP7:longitude latitude time  depth100m,;  ; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time depth100m CMIP7:longitude latitude time  depth100m depth200m,;  ; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time depth100m CMIP7:longitude latitude time  depth100m depth1000m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "mol m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "epC100",
+      "Model units": "mmol m-2 d-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1410,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.epc_tavg-z100m-hxy-sea (Omon.epc100)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "dpo2_tavg-u-hm-sea",
+      "CF standard name": "surface_molecular_oxygen_partial_pressure_difference_between_sea_water_and_air",
+      "CMIP6 Differences": "\"dimensions\" was \"longitude latitude time depth0m\"; ; \"comment\" was \"The partial pressure of a dissolved gas in sea water is the partial pressure in air with which it would be in equilibrium.  The partial pressure of a gaseous constituent of air is the pressure which it alone would exert with unchanged temperature and number of moles per unit volume.  The surface called 'surface' means the lower boundary of the atmosphere.\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "The partial pressure of a dissolved gas in sea water is the partial pressure in air with which it would be in equilibrium.  The partial pressure of a gaseous constituent of air is the pressure which it alone would exert with unchanged temperature and number of moles per unit volume.  The surface called \"surface\" means the lower boundary of the atmosphere.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Delta O2 Partial Pressure",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "Difference between atmospheric and oceanic partial pressure of O2 (positive meaning ocean > atmosphere); CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time depth0m CMIP7:longitude latitude time  depth0m,",
+      "Units": "Pa",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1409,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.dpo2_tavg-u-hm-sea (Omon.dpo2)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "dmso_tavg-u-hm-sea",
       "CF standard name": "mole_concentration_of_dimethyl_sulfide_in_sea_water",
       "CMIP6 Differences": "",
