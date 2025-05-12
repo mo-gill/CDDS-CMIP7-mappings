@@ -1,6 +1,354 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "rlut_tavg-u-hxy-u",
+      "CF standard name": "toa_outgoing_longwave_flux",
+      "CMIP6 Differences": "\"comment\" was \"at the top of the atmosphere (to be compared with satellite measurements)\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "TOA outgoing longwave radiation",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "3hr",
+      "Long name": "TOA Outgoing Longwave Radiation",
+      "Modeling realm": "atmos",
+      "Positive": "up",
+      "Processing notes": "",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 685,
+    "labels": [
+      "3hr",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.3hr.rlut_tavg-u-hxy-u (E3hr.rlut)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "prw_tavg-u-hxy-u",
+      "CF standard name": "atmosphere_mass_content_of_water_vapor",
+      "CMIP6 Differences": "\"comment\" was \"vertically integrated through the atmospheric column\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Column-integrated water vapour",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "3hr",
+      "Long name": "Water Vapor Path",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 684,
+    "labels": [
+      "3hr",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.3hr.prw_tavg-u-hxy-u (E3hr.prw)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "clwvi_tavg-u-hxy-u",
+      "CF standard name": "atmosphere_mass_content_of_cloud_condensed_water",
+      "CMIP6 Differences": "\"comment\" was \"Mass of condensed (liquid + ice) water in the column divided by the area of the column (not just the area of the cloudy portion of the column). Includes precipitating hydrometeors ONLY if the precipitating hydrometeors affect the calculation of radiative transfer in model.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Liquid water path",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "3hr",
+      "Long name": "Condensed Water Path",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 683,
+    "labels": [
+      "3hr",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.3hr.clwvi_tavg-u-hxy-u (E3hr.clwvi)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "clivi_tavg-u-hxy-u",
+      "CF standard name": "atmosphere_mass_content_of_cloud_ice",
+      "CMIP6 Differences": "\"comment\" was \"mass of ice water in the column divided by the area of the column (not just the area of the cloudy portion of the column). Includes precipitating frozen hydrometeors ONLY if the precipitating hydrometeor affects the calculation of radiative transfer in model.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Ice water path",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "3hr",
+      "Long name": "Ice Water Path",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 682,
+    "labels": [
+      "3hr",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.3hr.clivi_tavg-u-hxy-u (E3hr.clivi)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rsutcs_tclmdc-u-hxy-u",
+      "CF standard name": "toa_outgoing_shortwave_flux_assuming_clear_sky",
+      "CMIP6 Differences": "\"frequency\" was \"1hrCM\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean time: mean within days time: mean over days",
+      "Comment": "Calculated in the absence of clouds.",
+      "Dimensions": "longitude latitude time3",
+      "Frequency": "1hr",
+      "Long name": "TOA Outgoing Clear-Sky Shortwave Radiation",
+      "Modeling realm": "atmos",
+      "Positive": "up",
+      "Processing notes": "CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:1hrCM CMIP7:1hr,",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "mean_diurnal_cycle(m01s01i209[lbproc=128, lbtim_ia=24])",
+      "Expression UKESM1": "mean_diurnal_cycle(m01s01i209[lbproc=128, lbtim_ia=24])",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s01i209",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "1,209",
+        "time_profile": "T1HRMN",
+        "usage_profile": "UP9"
+      },
+      {
+        "STASH": "m01s01i209",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "1,209",
+        "time_profile": "T1HRMN",
+        "usage_profile": "UP9"
+      }
+    ],
+    "issue_number": 681,
+    "labels": [
+      "1hr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.1hr.rsutcs_tclmdc-u-hxy-u (E1hrClimMon.rsutcs)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rsut_tclmdc-u-hxy-u",
+      "CF standard name": "toa_outgoing_shortwave_flux",
+      "CMIP6 Differences": "\"frequency\" was \"1hrCM\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean time: mean within days time: mean over days",
+      "Comment": "at the top of the atmosphere",
+      "Dimensions": "longitude latitude time3",
+      "Frequency": "1hr",
+      "Long name": "TOA Outgoing Shortwave Radiation",
+      "Modeling realm": "atmos",
+      "Positive": "up",
+      "Processing notes": "CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:1hrCM CMIP7:1hr,",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "mean_diurnal_cycle(m01s01i208[lbproc=128, lbtim_ia=24])",
+      "Expression UKESM1": "mean_diurnal_cycle(m01s01i208[lbproc=128, lbtim_ia=24])",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s01i208",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "1,208",
+        "time_profile": "T1HRMN",
+        "usage_profile": "UP9"
+      },
+      {
+        "STASH": "m01s01i208",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "1,208",
+        "time_profile": "T1HRMN",
+        "usage_profile": "UP9"
+      }
+    ],
+    "issue_number": 680,
+    "labels": [
+      "1hr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.1hr.rsut_tclmdc-u-hxy-u (E1hrClimMon.rsut)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rsdt_tclmdc-u-hxy-u",
+      "CF standard name": "toa_incoming_shortwave_flux",
+      "CMIP6 Differences": "\"frequency\" was \"1hrCM\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean time: mean within days time: mean over days",
+      "Comment": "Shortwave radiation incident at the top of the atmosphere",
+      "Dimensions": "longitude latitude time3",
+      "Frequency": "1hr",
+      "Long name": "TOA Incident Shortwave Radiation",
+      "Modeling realm": "atmos",
+      "Positive": "down",
+      "Processing notes": "CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:1hrCM CMIP7:1hr,",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "mean_diurnal_cycle(m01s01i207[lbproc=128, lbtim_ia=24])",
+      "Expression UKESM1": "mean_diurnal_cycle(m01s01i207[lbproc=128, lbtim_ia=24])",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s01i207",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "1,207",
+        "time_profile": "T1HRMN",
+        "usage_profile": "UP9"
+      },
+      {
+        "STASH": "m01s01i207",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "1,207",
+        "time_profile": "T1HRMN",
+        "usage_profile": "UP9"
+      }
+    ],
+    "issue_number": 679,
+    "labels": [
+      "1hr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.1hr.rsdt_tclmdc-u-hxy-u (E1hrClimMon.rsdt)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rlutcs_tclmdc-u-hxy-u",
+      "CF standard name": "toa_outgoing_longwave_flux_assuming_clear_sky",
+      "CMIP6 Differences": "\"frequency\" was \"1hrCM\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean time: mean within days time: mean over days",
+      "Comment": "Upwelling clear-sky longwave radiation at top of atmosphere",
+      "Dimensions": "longitude latitude time3",
+      "Frequency": "1hr",
+      "Long name": "TOA Outgoing Clear-Sky Longwave Radiation",
+      "Modeling realm": "atmos",
+      "Positive": "up",
+      "Processing notes": "CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:1hrCM CMIP7:1hr,",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "mean_diurnal_cycle(m01s02i206[lbproc=128, lbtim_ia=24] + m01s03i332[lbproc=128, lbtim_ia=24] - m01s02i205[lbproc=128, lbtim_ia=24])",
+      "Expression UKESM1": "mean_diurnal_cycle(m01s02i206[lbproc=128, lbtim_ia=24] + m01s03i332[lbproc=128, lbtim_ia=24] - m01s02i205[lbproc=128, lbtim_ia=24])",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s02i205",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "2,205",
+        "time_profile": "T1HRMN",
+        "usage_profile": "UP9"
+      },
+      {
+        "STASH": "m01s02i206",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "2,206",
+        "time_profile": "T1HRMN",
+        "usage_profile": "UP9"
+      },
+      {
+        "STASH": "m01s03i332",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,332",
+        "time_profile": "T1HRMN",
+        "usage_profile": "UP9"
+      },
+      {
+        "STASH": "m01s02i205",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,205",
+        "time_profile": "T1HRMN",
+        "usage_profile": "UP9"
+      },
+      {
+        "STASH": "m01s02i206",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,206",
+        "time_profile": "T1HRMN",
+        "usage_profile": "UP9"
+      },
+      {
+        "STASH": "m01s03i332",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,332",
+        "time_profile": "T1HRMN",
+        "usage_profile": "UP9"
+      }
+    ],
+    "issue_number": 678,
+    "labels": [
+      "1hr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.1hr.rlutcs_tclmdc-u-hxy-u (E1hrClimMon.rlutcs)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "rlut_tclmdc-u-hxy-u",
       "CF standard name": "toa_outgoing_longwave_flux",
       "CMIP6 Differences": "\"frequency\" was \"1hrCM\";",

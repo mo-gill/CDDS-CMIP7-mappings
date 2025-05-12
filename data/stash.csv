@@ -1,4 +1,16 @@
 Model,Branded variable name,Frequency,STASH,Section,Item,time_profile,domain_profile,usage_profile
+UKESM1,rsutcs_tclmdc-u-hxy-u,1hr,m01s01i209,1,209,T1HRMN,DIAG,UP9
+HadGEM3-GC31,rsutcs_tclmdc-u-hxy-u,1hr,m01s01i209,1,209,T1HRMN,DIAG,UP9
+UKESM1,rsut_tclmdc-u-hxy-u,1hr,m01s01i208,1,208,T1HRMN,DIAG,UP9
+HadGEM3-GC31,rsut_tclmdc-u-hxy-u,1hr,m01s01i208,1,208,T1HRMN,DIAG,UP9
+UKESM1,rsdt_tclmdc-u-hxy-u,1hr,m01s01i207,1,207,T1HRMN,DIAG,UP9
+HadGEM3-GC31,rsdt_tclmdc-u-hxy-u,1hr,m01s01i207,1,207,T1HRMN,DIAG,UP9
+UKESM1,rlutcs_tclmdc-u-hxy-u,1hr,m01s02i205,2,205,T1HRMN,DIAG,UP9
+UKESM1,rlutcs_tclmdc-u-hxy-u,1hr,m01s02i206,2,206,T1HRMN,DIAG,UP9
+UKESM1,rlutcs_tclmdc-u-hxy-u,1hr,m01s03i332,3,332,T1HRMN,DIAG,UP9
+HadGEM3-GC31,rlutcs_tclmdc-u-hxy-u,1hr,m01s02i205,2,205,T1HRMN,DIAG,UP9
+HadGEM3-GC31,rlutcs_tclmdc-u-hxy-u,1hr,m01s02i206,2,206,T1HRMN,DIAG,UP9
+HadGEM3-GC31,rlutcs_tclmdc-u-hxy-u,1hr,m01s03i332,3,332,T1HRMN,DIAG,UP9
 UKESM1,rlut_tclmdc-u-hxy-u,1hr,m01s03i332,3,332,T1HRMN,DIAG,UP9
 HadGEM3-GC31,rlut_tclmdc-u-hxy-u,1hr,m01s03i332,3,332,T1HRMN,DIAG,UP9
 UKESM1,pr_tavg-u-hxy-u,1hr,m01s05i216,5,216,T1HRMN,DIAG,UP9
