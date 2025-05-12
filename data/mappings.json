@@ -1,6 +1,298 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "areacellg_ti-u-hxy-u",
+      "CF standard name": "cell_area",
+      "CMIP6 Differences": "\"comment\" was \"Area of the target grid (not the interpolated area of the source grid).\";",
+      "Cell measures": "",
+      "Cell methods": "area: sum",
+      "Comment": "Cell areas any grid used to report ice sheet variables. These cell areas should be defined to enable exact calculation of area integrals (e.g., of vertical fluxes of energy at the surface and top of the atmosphere)",
+      "Dimensions": "longitude latitude",
+      "Frequency": "fx",
+      "Long name": "Grid-Cell Area for Ice Sheet Variables",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1105,
+    "labels": [
+      "fx",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.fx.areacellg_ti-u-hxy-u (IfxAnt.areacellg)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "zfullo_tavg-l-hxy-sea",
+      "CF standard name": "depth_below_geoid",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Depth below geoid",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "yr",
+      "Long name": "Depth Below Geoid of Ocean Layer",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1104,
+    "labels": [
+      "yr",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.yr.zfullo_tavg-l-hxy-sea (Eyr.zfullo)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "vegFrac_tavg-u-hxy-u",
+      "CF standard name": "area_fraction",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: mean where land over all_area_types time: mean\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Percentage of grid cell that is covered by vegetation.This SHOULD be the sum of tree, grass (natural and pasture), crop and shrub fractions.",
+      "Dimensions": "longitude latitude time typeveg",
+      "Frequency": "yr",
+      "Long name": "Total Vegetated Percentage Cover",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time typeveg CMIP7:longitude latitude time  typeveg,;  ; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean where land over all_area_types time: mean CMIP7:area: time: mean,",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "land_class_area(m01s03i317[lbproc=128], m01s03i395[lbproc=128], land_class='natural')",
+      "Model units": "-"
+    },
+    "STASH entries": [],
+    "issue_number": 1103,
+    "labels": [
+      "yr",
+      "land",
+      "CMIP6",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable land.yr.vegFrac_tavg-u-hxy-u (Eyr.vegFrac)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "treeFrac_tavg-u-hxy-u",
+      "CF standard name": "area_fraction",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: mean where land over all_area_types time: mean\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Percentage of entire grid cell  that is covered by trees.",
+      "Dimensions": "longitude latitude time typetree",
+      "Frequency": "yr",
+      "Long name": "Tree Cover Percentage",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time typetree CMIP7:longitude latitude time  typetree,;  ; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean where land over all_area_types time: mean CMIP7:area: time: mean,",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1102,
+    "labels": [
+      "yr",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.yr.treeFrac_tavg-u-hxy-u (Eyr.treeFrac)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "shrubFrac_tavg-u-hxy-u",
+      "CF standard name": "area_fraction",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: mean where land over all_area_types time: mean\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Percentage of entire grid cell  that is covered by shrub.",
+      "Dimensions": "longitude latitude time typeshrub",
+      "Frequency": "yr",
+      "Long name": "Percentage Cover by Shrub",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time typeshrub CMIP7:longitude latitude time  typeshrub,;  ; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean where land over all_area_types time: mean CMIP7:area: time: mean,",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1101,
+    "labels": [
+      "yr",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.yr.shrubFrac_tavg-u-hxy-u (Eyr.shrubFrac)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "residualFrac_tavg-u-hxy-u",
+      "CF standard name": "area_fraction",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: mean where land over all_area_types time: mean\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Percentage of entire grid cell  that is land and is covered by  neither vegetation nor bare-soil (e.g., urban, ice, lakes, etc.)",
+      "Dimensions": "longitude latitude time typeresidual",
+      "Frequency": "yr",
+      "Long name": "Percentage of Grid Cell That Is Land but neither Vegetation Covered nor Bare Soil",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time typeresidual CMIP7:longitude latitude time  typeresidual,;  ; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean where land over all_area_types time: mean CMIP7:area: time: mean,",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1100,
+    "labels": [
+      "yr",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.yr.residualFrac_tavg-u-hxy-u (Eyr.residualFrac)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "grassFrac_tavg-u-hxy-u",
+      "CF standard name": "area_fraction",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: mean where land over all_area_types time: mean\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Percentage of entire grid cell that is covered by natural grass.",
+      "Dimensions": "longitude latitude time typenatgr",
+      "Frequency": "yr",
+      "Long name": "Natural Grass Area Percentage",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time typenatgr CMIP7:longitude latitude time  typenatgr,;  ; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean where land over all_area_types time: mean CMIP7:area: time: mean,",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1099,
+    "labels": [
+      "yr",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.yr.grassFrac_tavg-u-hxy-u (Eyr.grassFrac)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fracOutLut_tavg-u-hxy-u",
+      "CF standard name": "area_fraction",
+      "CMIP6 Differences": "\"long_name\" was \"Annual gross percentage of Land-use tile  that was transferred into other Land-use tiles\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land over all_area_types time: sum",
+      "Comment": "Cumulative percentage transitions over the year; note that percentage should be reported as percentage of atmospheric grid cell",
+      "Dimensions": "longitude latitude landUse time",
+      "Frequency": "yr",
+      "Long name": "Annual Gross Percentage of Land-Use Tile That Was Transferred into Other Land-Use Tiles",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude landUse time CMIP7:longitude latitude time landUse,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1098,
+    "labels": [
+      "yr",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.yr.fracOutLut_tavg-u-hxy-u (Eyr.fracOutLut)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fracLut_tpt-u-hxy-u",
+      "CF standard name": "area_fraction",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: mean where land over all_area_types time: point\"; ; \"comment\" was \"End of year values (not annual mean); note that percentage should be reported as percentage of land grid cell (example: frac_lnd = 0.5, frac_ocn = 0.5, frac_crop_lnd = 0.2 (of land portion of grid cell), then frac_lut(crop) = 0.5*0.2 = 0.1)\"; ; \"frequency\" was \"yrPt\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean time: point",
+      "Comment": "End of year values (not annual mean); note that percentage should be reported as percentage of land grid cell (example: frac_lnd = 0.5, frac_ocn = 0.5, frac_crop_lnd = 0.2 (of land portion of grid cell), then frac_lut(crop) = 0.5\\*0.2 = 0.1)",
+      "Dimensions": "longitude latitude landUse time1",
+      "Frequency": "yr",
+      "Long name": "Percentage of Grid Cell for Each Land-Use Tile",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude landUse time1 CMIP7:longitude latitude time1 landUse,;  ; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean where land over all_area_types time: point CMIP7:area: mean time: point,",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1097,
+    "labels": [
+      "yr",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.yr.fracLut_tpt-u-hxy-u (Eyr.fracLut)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fracInLut_tavg-u-hxy-u",
+      "CF standard name": "area_fraction",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land over all_area_types time: sum",
+      "Comment": "Cumulative percentage transitions over the year; note that percentage should be reported as a percentage of atmospheric grid cell",
+      "Dimensions": "longitude latitude landUse time",
+      "Frequency": "yr",
+      "Long name": "Annual Gross Percentage That Was Transferred into This Tile from Other Land-Use Tiles",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude landUse time CMIP7:longitude latitude time landUse,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1096,
+    "labels": [
+      "yr",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.yr.fracInLut_tavg-u-hxy-u (Eyr.fracInLut)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "cropFrac_tavg-u-hxy-u",
       "CF standard name": "area_fraction",
       "CMIP6 Differences": "\"cell_methods\" was \"area: mean where land over all_area_types time: mean\";",
