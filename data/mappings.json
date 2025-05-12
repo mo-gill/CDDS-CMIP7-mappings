@@ -1,6 +1,270 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "vsf_tavg-u-hxy-sea",
+      "CF standard name": "virtual_salt_flux_into_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "It is set to zero in models which receive a real water flux.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Virtual Salt Flux into Sea Water",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "If this does not vary from one year to the next, report only a single year.  Positive flux implies correction increases salinity of water.  This includes all virtual salt flux, including that due to a salt flux correction.  Report on native horizontal grid.",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1591,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.mon.vsf_tavg-u-hxy-sea (Omon.vsf)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "volo_tavg-u-hm-sea",
+      "CF standard name": "sea_water_volume",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: sum where sea time: mean\";",
+      "Cell measures": "",
+      "Cell methods": "depth: area: sum where sea time: mean",
+      "Comment": "Total volume of liquid sea water.",
+      "Dimensions": "time",
+      "Frequency": "mon",
+      "Long name": "Sea Water Volume",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: sum where sea time: mean CMIP7:depth: area: sum where sea time: mean,",
+      "Units": "m3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "scvoltot",
+      "Expression UKESM1": "scvoltot",
+      "Model units": "m3"
+    },
+    "STASH entries": [],
+    "issue_number": 1590,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.mon.volo_tavg-u-hm-sea (Omon.volo)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "volcello_tavg-l-hxy-sea",
+      "CF standard name": "ocean_volume",
+      "CMIP6 Differences": "\"comment\" was \"grid-cell volume ca. 2000.\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: sum where sea time: mean",
+      "Comment": "For oceans with more than 1 mesh (e.g. staggered grids), report areas that apply to surface vertical fluxes of energy. If this field is time-dependent then save it instead as one of your Omon and Odec fields",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Ocean Grid-Cell Volume",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "a 3-d field: For oceans with more than 1 mesh, report on grid that applies to temperature",
+      "Units": "m3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "volcello(thkcello, areacello)",
+      "Expression UKESM1": "volcello(thkcello, areacello)",
+      "Model units": "m3"
+    },
+    "STASH entries": [],
+    "issue_number": 1589,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.mon.volcello_tavg-l-hxy-sea (Omon.volcello)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "vo_tavg-l-hxy-sea",
+      "CF standard name": "sea_water_y_velocity",
+      "CMIP6 Differences": "\"cell_measures\" was \"--OPT\"; ; \"cell_methods\" was \"time: mean\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Prognostic y-ward velocity component resolved by the model.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Sea Water Y Velocity",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:time: mean CMIP7:area: mean where sea time: mean, CHANGE SINCE CMIP6 in Cell Measures - CMIP6:::OPT CMIP7:area: areacello volume: volcello,",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "mask_copy(vo, mask_3D_V)",
+      "Expression UKESM1": "mask_copy(vo, mask_3D_V)",
+      "Model units": "m s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1588,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable ocean.mon.vo_tavg-l-hxy-sea (Omon.vo)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "vmo_tavg-l-hxy-sea",
+      "CF standard name": "ocean_mass_y_transport",
+      "CMIP6 Differences": "\"cell_measures\" was \"--OPT\"; ; \"comment\" was \"Y-ward mass transport from resolved and parameterized advective transport.\"; ; \"cell_methods\" was \"time: mean\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Y-ward mass transport from residual mean (resolved plus parameterized) advective transport.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Ocean Mass Y Transport",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.; ; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:time: mean CMIP7:area: mean where sea time: mean, CHANGE SINCE CMIP6 in Cell Measures - CMIP6:::OPT CMIP7:area: areacello volume: volcello,",
+      "Units": "kg s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "mask_copy(vmo, mask_3D_V)",
+      "Expression UKESM1": "mask_copy(vmo, mask_3D_V)",
+      "Model units": "kg s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1587,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable ocean.mon.vmo_tavg-l-hxy-sea (Omon.vmo)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "uo_tavg-l-hxy-sea",
+      "CF standard name": "sea_water_x_velocity",
+      "CMIP6 Differences": "\"cell_measures\" was \"--OPT\"; ; \"cell_methods\" was \"time: mean\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Prognostic x-ward velocity component resolved by the model.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Sea Water X Velocity",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:time: mean CMIP7:area: mean where sea time: mean, CHANGE SINCE CMIP6 in Cell Measures - CMIP6:::OPT CMIP7:area: areacello volume: volcello,",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "mask_copy(uo, mask_3D_U)",
+      "Expression UKESM1": "mask_copy(uo, mask_3D_U)",
+      "Model units": "m s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1586,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable ocean.mon.uo_tavg-l-hxy-sea (Omon.uo)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "umo_tavg-l-hxy-sea",
+      "CF standard name": "ocean_mass_x_transport",
+      "CMIP6 Differences": "\"cell_measures\" was \"--OPT\"; ; \"comment\" was \"X-ward mass transport from resolved and parameterized advective transport.\"; ; \"cell_methods\" was \"time: mean\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "X-ward mass transport from residual mean (resolved plus parameterized) advective transport.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Ocean Mass X Transport",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:time: mean CMIP7:area: mean where sea time: mean, CHANGE SINCE CMIP6 in Cell Measures - CMIP6:::OPT CMIP7:area: areacello volume: volcello,",
+      "Units": "kg s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "mask_copy(umo, mask_3D_U)",
+      "Expression UKESM1": "mask_copy(umo, mask_3D_U)",
+      "Model units": "kg s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1585,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable ocean.mon.umo_tavg-l-hxy-sea (Omon.umo)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tossq_tavg-u-hxy-sea",
+      "CF standard name": "square_of_sea_surface_temperature",
+      "CMIP6 Differences": "\"comment\" was \"Square of temperature of liquid ocean.\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Square of temperature of liquid ocean, averaged over the day.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Square of Sea Surface Temperature",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid.",
+      "Units": "degC2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "tossq",
+      "Expression UKESM1": "tossq",
+      "Model units": "degC2"
+    },
+    "STASH entries": [],
+    "issue_number": 1584,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.mon.tossq_tavg-u-hxy-sea (Omon.tossq)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "tos_tavg-u-hxy-sea",
       "CF standard name": "sea_surface_temperature",
       "CMIP6 Differences": "\"comment\" was \"Temperature of upper boundary of the liquid ocean, including temperatures below sea-ice and floating ice shelves.\";",
