@@ -1,6 +1,335 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "phypico_tavg-l-hxy-sea",
+      "CF standard name": "mole_concentration_of_picophytoplankton_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "carbon concentration from the picophytoplankton (<2 um) component alone",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Mole Concentration of Picophytoplankton Expressed as Carbon in Sea Water",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "Concentrations of all 3D tracers in the uppermost ocean layer. See first table in Oyr for a complete list of these tracers.  \"Tracer\"  concentations should be reported even if they are diagnosed rather than prognostically calculated.",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1541,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.phypico_tavg-l-hxy-sea (Omon.phypico)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "phymisc_tavg-z0m-hxy-sea",
+      "CF standard name": "mole_concentration_of_miscellaneous_phytoplankton_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "carbon concentration from additional phytoplankton component alone",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Mole Concentration of Miscellaneous Phytoplankton Expressed as Carbon in Sea Water",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1540,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.phymisc_tavg-z0m-hxy-sea (Omon.phymiscos)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "phymisc_tavg-l-hxy-sea",
+      "CF standard name": "mole_concentration_of_miscellaneous_phytoplankton_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "carbon concentration from additional phytoplankton component alone",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Mole Concentration of Miscellaneous Phytoplankton Expressed as Carbon in Sea Water",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "Concentrations of all 3D tracers in the uppermost ocean layer. See first table in Oyr for a complete list of these tracers.  \"Tracer\"  concentations should be reported even if they are diagnosed rather than prognostically calculated.",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "PHN_E3T * C_TO_N_RATIO / thkcello",
+      "Model units": "mmol m-3"
+    },
+    "STASH entries": [],
+    "issue_number": 1539,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.phymisc_tavg-l-hxy-sea (Omon.phymisc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "phydiaz_tavg-z0m-hxy-sea",
+      "CF standard name": "mole_concentration_of_diazotrophic_phytoplankton_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "\"standard_name\" was \"mole_concentration_of_diazotrophs_expressed_as_carbon_in_sea_water\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "carbon concentration from the diazotrophic phytoplankton component alone",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Mole Concentration of Diazotrophs Expressed as Carbon in Sea Water",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1538,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.phydiaz_tavg-z0m-hxy-sea (Omon.phydiazos)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "phydiaz_tavg-l-hxy-sea",
+      "CF standard name": "mole_concentration_of_diazotrophic_phytoplankton_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "\"standard_name\" was \"mole_concentration_of_diazotrophs_expressed_as_carbon_in_sea_water\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "carbon concentration from the diazotrophic phytoplankton component alone",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Mole Concentration of Diazotrophs Expressed as Carbon in Sea Water",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "Concentrations of all 3D tracers in the uppermost ocean layer. See first table in Oyr for a complete list of these tracers.  \"Tracer\"  concentations should be reported even if they are diagnosed rather than prognostically calculated.",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1537,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.phydiaz_tavg-l-hxy-sea (Omon.phydiaz)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "phydiat_tavg-z0m-hxy-sea",
+      "CF standard name": "mole_concentration_of_diatoms_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "carbon from the diatom phytoplankton component concentration alone",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Mole Concentration of Diatoms Expressed as Carbon in Sea Water",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "PHD[depth=0] * C_TO_N_RATIO",
+      "Model units": "mmol m-3"
+    },
+    "STASH entries": [],
+    "issue_number": 1536,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.phydiat_tavg-z0m-hxy-sea (Omon.phydiatos)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "phydiat_tavg-l-hxy-sea",
+      "CF standard name": "mole_concentration_of_diatoms_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "carbon from the diatom phytoplankton component concentration alone",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Mole Concentration of Diatoms Expressed as Carbon in Sea Water",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "Concentrations of all 3D tracers in the uppermost ocean layer. See first table in Oyr for a complete list of these tracers.  \"Tracer\"  concentations should be reported even if they are diagnosed rather than prognostically calculated.",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "PHD_E3T * C_TO_N_RATIO / thkcello",
+      "Model units": "mmol m-3"
+    },
+    "STASH entries": [],
+    "issue_number": 1535,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.phydiat_tavg-l-hxy-sea (Omon.phydiat)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "phyco_tavg-z0m-hxy-sea",
+      "CF standard name": "mole_concentration_of_phytoplankton_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "\"comment\" was \"sum of phytoplankton organic carbon component concentrations at the sea surface\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "sum of phytoplankton carbon component concentrations.  In most (all?) cases this is the sum of phycdiat and phycmisc (i.e., \"Diatom Carbon Concentration\" and \"Non-Diatom Phytoplankton Carbon Concentration\"",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Sea Surface Phytoplankton Carbon Concentration",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "(PHN_E3T[depth=0] + PHD_E3T[depth=0]) * C_TO_N_RATIO / thkcello[depth=0]",
+      "Model units": "mmol m-3"
+    },
+    "STASH entries": [],
+    "issue_number": 1534,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.phyco_tavg-z0m-hxy-sea (Omon.phycos)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "phycalcos_tavg-u-hxy-sea",
+      "CF standard name": "mole_concentration_of_calcareous_phytoplankton_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "carbon concentration from calcareous (calcite-producing) phytoplankton component alone",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Mole Concentration of Calcareous Phytoplankton Expressed as Carbon in Sea Water",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1533,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.phycalcos_tavg-u-hxy-sea (Omon.phycalcos)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "phycalc_tavg-l-hxy-sea",
+      "CF standard name": "mole_concentration_of_calcareous_phytoplankton_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "carbon concentration from calcareous (calcite-producing) phytoplankton component alone",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Mole Concentration of Calcareous Phytoplankton Expressed as Carbon in Sea Water",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "Concentrations of all 3D tracers in the uppermost ocean layer. See first table in Oyr for a complete list of these tracers.  \"Tracer\"  concentations should be reported even if they are diagnosed rather than prognostically calculated.",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1532,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.phycalc_tavg-l-hxy-sea (Omon.phycalc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "phyc_tavg-l-hxy-sea",
+      "CF standard name": "mole_concentration_of_phytoplankton_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "\"comment\" was \"sum of phytoplankton carbon component concentrations.  In most (all?) cases this is the sum of phycdiat and phycmisc (i.e., 'Diatom Carbon Concentration' and 'Non-Diatom Phytoplankton Carbon Concentration'\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "sum of phytoplankton carbon component concentrations.  In most (all?) cases this is the sum of phycdiat and phycmisc (i.e., \"Diatom Carbon Concentration\" and \"Non-Diatom Phytoplankton Carbon Concentration\"",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Phytoplankton Carbon Concentration",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "Concentrations of all 3D tracers in the uppermost ocean layer. See first table in Oyr for a complete list of these tracers.  \"Tracer\"  concentations should be reported even if they are diagnosed rather than prognostically calculated.",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "(PHN_E3T + PHD_E3T) * C_TO_N_RATIO / thkcello",
+      "Model units": "mmol m-3"
+    },
+    "STASH entries": [],
+    "issue_number": 1531,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.phyc_tavg-l-hxy-sea (Omon.phyc)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "ph_tavg-z0m-hxy-sea",
       "CF standard name": "sea_water_ph_reported_on_total_scale",
       "CMIP6 Differences": "",
