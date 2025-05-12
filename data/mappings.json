@@ -1,6 +1,329 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "areacello_ti-u-hxy-u",
+      "CF standard name": "cell_area",
+      "CMIP6 Differences": "\"comment\" was \"Horizontal area of ocean grid cells\";",
+      "Cell measures": "",
+      "Cell methods": "area: sum",
+      "Comment": "Cell areas for any grid used to report ocean variables and variables which are requested as used on the model ocean grid (e.g. hfsso, which is a downward heat flux from the atmosphere interpolated onto the ocean grid). These cell areas should be defined to enable exact calculation of global integrals (e.g., of vertical fluxes of energy at the surface and top of the atmosphere).",
+      "Dimensions": "longitude latitude",
+      "Frequency": "fx",
+      "Long name": "Grid-Cell Area for Ocean Variables",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "For oceans with more than 1 mesh (e.g., staggered grids), report areas that apply to surface vertical fluxes of energy.",
+      "Units": "m2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "areacello",
+      "Expression UKESM1": "areacello",
+      "Model units": "m2"
+    },
+    "STASH entries": [],
+    "issue_number": 1361,
+    "labels": [
+      "fx",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable ocean.fx.areacello_ti-u-hxy-u (Ofx.areacello)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "volo_tavg-u-hm-sea",
+      "CF standard name": "sea_water_volume",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: sum where sea time: mean\";",
+      "Cell measures": "",
+      "Cell methods": "depth: area: sum where sea time: mean",
+      "Comment": "Total volume of liquid sea water.",
+      "Dimensions": "time",
+      "Frequency": "dec",
+      "Long name": "Sea Water Volume",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: sum where sea time: mean CMIP7:depth: area: sum where sea time: mean,",
+      "Units": "m3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1360,
+    "labels": [
+      "dec",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.dec.volo_tavg-u-hm-sea (Odec.volo)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "volcello_tavg-l-hxy-sea",
+      "CF standard name": "ocean_volume",
+      "CMIP6 Differences": "\"comment\" was \"grid-cell volume ca. 2000.\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: sum where sea time: mean",
+      "Comment": "For oceans with more than 1 mesh (e.g. staggered grids), report areas that apply to surface vertical fluxes of energy. If this field is time-dependent then save it instead as one of your Omon and Odec fields",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "dec",
+      "Long name": "Ocean Grid-Cell Volume",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "a 3-d field: For oceans with more than 1 mesh, report on grid that applies to temperature",
+      "Units": "m3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1359,
+    "labels": [
+      "dec",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.dec.volcello_tavg-l-hxy-sea (Odec.volcello)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "thkcello_tavg-l-hxy-sea",
+      "CF standard name": "cell_thickness",
+      "CMIP6 Differences": "\"comment\" was \"'Thickness' means the vertical extent of a layer. 'Cell' refers to a model grid-cell.\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "The time varying thickness of ocean cells. \"Thickness\" means the vertical extent of a layer. \"Cell\" refers to a model grid-cell.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "dec",
+      "Long name": "Ocean Model Cell Thickness",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid as well as on a spherical latitude/longitude grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1358,
+    "labels": [
+      "dec",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.dec.thkcello_tavg-l-hxy-sea (Odec.thkcello)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "thetao_tavg-l-hxy-sea",
+      "CF standard name": "sea_water_potential_temperature",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Diagnostic should be contributed even for models using conservative temperature as prognostic field.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "dec",
+      "Long name": "Sea Water Potential Temperature",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Note change from CMIP5 K to CMIP6 C. Report on native horizontal grid as well as on a spherical latitude/longitude grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.",
+      "Units": "degC",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1357,
+    "labels": [
+      "dec",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.dec.thetao_tavg-l-hxy-sea (Odec.thetao)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tauvo_tavg-u-hxy-sea",
+      "CF standard name": "downward_y_stress_at_sea_water_surface",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "This is the stress on the liquid ocean from overlying atmosphere, sea ice, ice shelf, etc.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "dec",
+      "Long name": "Sea Water Surface Downward Y Stress",
+      "Modeling realm": "ocean",
+      "Positive": "down",
+      "Processing notes": "Report on native horizontal grid.",
+      "Units": "N m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1356,
+    "labels": [
+      "dec",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.dec.tauvo_tavg-u-hxy-sea (Odec.tauvo)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tauuo_tavg-u-hxy-sea",
+      "CF standard name": "downward_x_stress_at_sea_water_surface",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "This is the stress on the liquid ocean from overlying atmosphere, sea ice, ice shelf, etc.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "dec",
+      "Long name": "Sea Water Surface Downward X Stress",
+      "Modeling realm": "ocean",
+      "Positive": "down",
+      "Processing notes": "Report on native horizontal grid.",
+      "Units": "N m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1355,
+    "labels": [
+      "dec",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.dec.tauuo_tavg-u-hxy-sea (Odec.tauuo)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "so_tavg-l-hxy-sea",
+      "CF standard name": "sea_water_salinity",
+      "CMIP6 Differences": "\"units\" was \"0.001\"; ; \"comment\" was \"Sea water salinity is the salt content of sea water, often on the Practical Salinity Scale of 1978. However, the unqualified term 'salinity' is generic and does not necessarily imply any particular method of calculation. The units of salinity are dimensionless and the units attribute should normally be given as 1e-3 or 0.001 i.e. parts per thousand. \";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Sea water salinity is the salt content of sea water, often on the Practical Salinity Scale of 1978. However, the unqualified term 'salinity' is generic and does not necessarily imply any particular method of calculation. The units of salinity are dimensionless and the units attribute should normally be given as 1e-3 or 0.001 i.e. parts per thousand.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "dec",
+      "Long name": "Sea Water Salinity",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid as well as on a spherical latitude/longitude grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.; CHANGE SINCE CMIP6 in Units (from Physical Parameter) - CMIP6:0.001 CMIP7:1E-03,",
+      "Units": "1E-03",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1354,
+    "labels": [
+      "dec",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.dec.so_tavg-l-hxy-sea (Odec.so)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "opottemptend_tavg-l-hxy-sea",
+      "CF standard name": "tendency_of_sea_water_potential_temperature_expressed_as_heat_content",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Tendency of heat content for a grid cell from all processes. Reported only for models that use potential temperature as prognostic field.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "dec",
+      "Long name": "Tendency of Sea Water Potential Temperature Expressed as Heat Content",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.",
+      "Units": "W m-2",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1353,
+    "labels": [
+      "dec",
+      "ocean"
+    ],
+    "title": "Variable ocean.dec.opottemptend_tavg-l-hxy-sea (Odec.opottemptend)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "masso_tavg-u-hm-sea",
+      "CF standard name": "sea_water_mass",
+      "CMIP6 Differences": "",
+      "Cell measures": "",
+      "Cell methods": "area: sum where sea time: mean",
+      "Comment": "Total mass of liquid sea water. For Boussinesq models, report this diagnostic as Boussinesq reference density times total volume.",
+      "Dimensions": "time",
+      "Frequency": "dec",
+      "Long name": "Sea Water Mass",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1352,
+    "labels": [
+      "dec",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.dec.masso_tavg-u-hm-sea (Odec.masso)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "masscello_tavg-l-hxy-sea",
+      "CF standard name": "sea_water_mass_per_unit_area",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: sum where sea time: mean\"; ; \"comment\" was \"Tracer grid-cell mass per unit area used for computing tracer budgets. For Boussinesq models with static ocean grid cell thickness, masscello = rhozero*thickcello, where thickcello is static cell thickness and rhozero is constant Boussinesq reference density. More generally, masscello is time dependent and reported as part of Omon.\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "For Boussinesq models, report this diagnostic as Boussinesq reference density times grid celll volume.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "dec",
+      "Long name": "Ocean Grid-Cell Mass per Area",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid as well as on a spherical latitude/longitude grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native. Do not use this field if masscello is fixed: use Ofx.masscello instead.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: sum where sea time: mean CMIP7:area: mean where sea time: mean,",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1351,
+    "labels": [
+      "dec",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.dec.masscello_tavg-l-hxy-sea (Odec.masscello)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "bigthetao_tavg-l-hxy-sea",
       "CF standard name": "sea_water_conservative_temperature",
       "CMIP6 Differences": "\"comment\" was \"Sea water conservative temperature (this should be contributed only for models using conservative temperature as prognostic field)\";",
