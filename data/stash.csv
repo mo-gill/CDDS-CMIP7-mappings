@@ -1,4 +1,24 @@
 Model,Branded variable name,Frequency,STASH,Section,Item,time_profile,domain_profile,usage_profile
+UKESM1,clmisr_tavg-h16-hxy-air,mon,m01s02i330,2,330,TMONMN,DIAG,UP5
+UKESM1,clmisr_tavg-h16-hxy-air,mon,m01s02i360,2,360,TMONMN,DCOSP16x7,UP5
+HadGEM3-GC31,clmisr_tavg-h16-hxy-air,mon,m01s02i330,2,330,TMONMN,DIAG,UP5
+HadGEM3-GC31,clmisr_tavg-h16-hxy-air,mon,m01s02i360,2,360,TMONMN,DCOSP16x7,UP5
+UKESM1,climodis_tavg-u-hxy-u,mon,m01s02i330,2,330,TMONMN,DIAG,UP5
+UKESM1,climodis_tavg-u-hxy-u,mon,m01s02i453,2,453,TMONMN,DIAG,UP5
+HadGEM3-GC31,climodis_tavg-u-hxy-u,mon,m01s02i330,2,330,TMONMN,DIAG,UP5
+HadGEM3-GC31,climodis_tavg-u-hxy-u,mon,m01s02i453,2,453,TMONMN,DIAG,UP5
+UKESM1,cldnvi_tavg-u-hxy-u,mon,m01s01i280,1,280,TMONMN,DIAG,UP5
+UKESM1,cldnvi_tavg-u-hxy-u,mon,m01s01i281,1,281,TMONMN,DIAG,UP5
+HadGEM3-GC31,cldnvi_tavg-u-hxy-u,mon,m01s01i280,1,280,TMONMN,DIAG,UP5
+HadGEM3-GC31,cldnvi_tavg-u-hxy-u,mon,m01s01i281,1,281,TMONMN,DIAG,UP5
+UKESM1,cldncl_tavg-u-hxy-cl,mon,m01s01i298,1,298,TMONMN,DIAG,UP5
+UKESM1,cldncl_tavg-u-hxy-cl,mon,m01s01i299,1,299,TMONMN,DIAG,UP5
+HadGEM3-GC31,cldncl_tavg-u-hxy-cl,mon,m01s01i298,1,298,TMONMN,DIAG,UP5
+HadGEM3-GC31,cldncl_tavg-u-hxy-cl,mon,m01s01i299,1,299,TMONMN,DIAG,UP5
+UKESM1,clcalipsoliq_tavg-h40-hxy-air,mon,m01s02i325,2,325,TMONMN,DCOSP40H,UP5
+UKESM1,clcalipsoliq_tavg-h40-hxy-air,mon,m01s02i473,2,473,TMONMN,DCOSP40H,UP5
+HadGEM3-GC31,clcalipsoliq_tavg-h40-hxy-air,mon,m01s02i325,2,325,TMONMN,DCOSP40H,UP5
+HadGEM3-GC31,clcalipsoliq_tavg-h40-hxy-air,mon,m01s02i473,2,473,TMONMN,DCOSP40H,UP5
 UKESM1,clcalipsoice_tavg-h40-hxy-air,mon,m01s02i325,2,325,TMONMN,DCOSP40H,UP5
 UKESM1,clcalipsoice_tavg-h40-hxy-air,mon,m01s02i474,2,474,TMONMN,DCOSP40H,UP5
 HadGEM3-GC31,clcalipsoice_tavg-h40-hxy-air,mon,m01s02i325,2,325,TMONMN,DCOSP40H,UP5

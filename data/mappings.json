@@ -1,6 +1,365 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "clmisr_tavg-h16-hxy-air",
+      "CF standard name": "cloud_area_fraction_in_atmosphere_layer",
+      "CMIP6 Differences": "\"comment\" was \"Cloud percentage in spectral bands and layers as observed by the Multi-angle Imaging SpectroRadiometer (MISR) instrument. The first layer in each profile is reserved for a retrieval error flag.\"; ; \"cell_methods\" was \"area: time: mean\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where air",
+      "Comment": "MISR cloud area fraction",
+      "Dimensions": "longitude latitude alt16 tau time",
+      "Frequency": "mon",
+      "Long name": "Percentage Cloud Cover as Calculated by the MISR Simulator (Including Error Flag)",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:area: time: mean where air,",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "fix_clmisr_height(m01s02i360[lbproc=128], m01s02i330[lbproc=128])",
+      "Expression UKESM1": "fix_clmisr_height(m01s02i360[lbproc=128], m01s02i330[lbproc=128])",
+      "Model units": "1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s02i330",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "2,330",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i360",
+        "domain_profile": "DCOSP16x7",
+        "model": "UKESM1",
+        "stash_number": "2,360",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i330",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,330",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i360",
+        "domain_profile": "DCOSP16x7",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,360",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 867,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.clmisr_tavg-h16-hxy-air (Emon.clmisr)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "climodis_tavg-u-hxy-u",
+      "CF standard name": "modis_ice_topped_cloud_area_fraction",
+      "CMIP6 Differences": "\"comment\" was \"Total ice cloud area fraction (reported as a percentage) for the whole atmospheric column, as seen by the  Moderate Resolution Imaging Spectroradiometer (MODIS). \"; ; \"standard_name\" was \"ice_cloud_area_fraction\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "MODIS Ice Cloud Fraction",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "MODIS Ice Cloud Area Percentage",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s02i453[lbproc=128] / m01s02i330[lbproc=128]",
+      "Expression UKESM1": "m01s02i453[lbproc=128] / m01s02i330[lbproc=128]",
+      "Model units": "1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s02i330",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "2,330",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i453",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "2,453",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i330",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,330",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i453",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,453",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 866,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.climodis_tavg-u-hxy-u (Emon.climodis)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "cldnvi_tavg-u-hxy-u",
+      "CF standard name": "atmosphere_number_content_of_cloud_droplets",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Droplets are liquid only.  Values are weighted by liquid cloud fraction in each layer when vertically integrating, and for monthly means the samples are weighted by total liquid cloud fraction (as seen from TOA).",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Column Integrated Cloud Droplet Number",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s01i280[lbproc=128] / m01s01i281[lbproc=128]",
+      "Expression UKESM1": "m01s01i280[lbproc=128] / m01s01i281[lbproc=128]",
+      "Model units": "m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s01i280",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "1,280",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s01i281",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "1,281",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s01i280",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "1,280",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s01i281",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "1,281",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 865,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.cldnvi_tavg-u-hxy-u (Emon.cldnvi)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "cldncl_tavg-u-hxy-cl",
+      "CF standard name": "number_concentration_of_cloud_liquid_water_particles_in_air_at_liquid_water_cloud_top",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Droplets are liquid only.  Report concentration 'as seen from space' over liquid cloudy portion of grid cell.  This is the value from uppermost model layer with liquid cloud or, if available, it is better to sum over all liquid cloud tops, no matter where they occur, as long as they are seen from the top of the atmosphere. Weight by total liquid cloud top fraction of  (as seen from TOA) each time sample when computing monthly mean.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Cloud Droplet Number Concentration of Cloud Tops",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s01i298[lbproc=128] / m01s01i299[lbproc=128]",
+      "Expression UKESM1": "m01s01i298[lbproc=128] / m01s01i299[lbproc=128]",
+      "Model units": "cm-3"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s01i298",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "1,298",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s01i299",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "1,299",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s01i298",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "1,298",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s01i299",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "1,299",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 864,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.cldncl_tavg-u-hxy-cl (Emon.cldncl)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "cldnci_tavg-u-hxy-cl",
+      "CF standard name": "number_concentration_of_ice_crystals_in_air_at_ice_cloud_top",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Concentration 'as seen from space' over ice-cloud portion of grid cell.  This is the value from uppermost model layer with ice cloud or, if available, it is the sum over all ice cloud tops, no matter where they occur, as long as they are seen from the top of the atmosphere. Weight by total ice cloud top fraction (as seen from TOA) of each time sample when computing monthly mean.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Ice Crystal Number Concentration of Cloud Tops",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 863,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.mon.cldnci_tavg-u-hxy-cl (Emon.cldnci)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "clcalipsoliq_tavg-h40-hxy-air",
+      "CF standard name": "liquid_water_cloud_area_fraction_in_atmosphere_layer",
+      "CMIP6 Differences": "\"comment\" was \"Percentage liquid water ice cloud cover in CALIPSO standard atmospheric layers.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "time: mean",
+      "Comment": "CALIPSO Liquid Cloud Fraction",
+      "Dimensions": "longitude latitude alt40 time",
+      "Frequency": "mon",
+      "Long name": "CALIPSO Liquid Cloud Percentage",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s02i473[lbproc=128] / m01s02i325[lbproc=128]",
+      "Expression UKESM1": "m01s02i473[lbproc=128] / m01s02i325[lbproc=128]",
+      "Model units": "1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s02i325",
+        "domain_profile": "DCOSP40H",
+        "model": "UKESM1",
+        "stash_number": "2,325",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i473",
+        "domain_profile": "DCOSP40H",
+        "model": "UKESM1",
+        "stash_number": "2,473",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i325",
+        "domain_profile": "DCOSP40H",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,325",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i473",
+        "domain_profile": "DCOSP40H",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,473",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 862,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.clcalipsoliq_tavg-h40-hxy-air (Emon.clcalipsoliq)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "clcalipsoice_tavg-h40-hxy-air",
       "CF standard name": "ice_cloud_area_fraction_in_atmosphere_layer",
       "CMIP6 Differences": "\"comment\" was \"Percentage cloud cover in CALIPSO standard atmospheric layers.\";",
