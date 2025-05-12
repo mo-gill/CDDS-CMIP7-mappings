@@ -1,6 +1,275 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "acabf_tavg-u-hxy-is",
+      "CF standard name": "land_ice_surface_specific_mass_balance_flux",
+      "CMIP6 Differences": "\"comment\" was \"Specific mass balance means the net rate at which ice is added per unit area at the land ice surface. Computed as the total surface mass balance on the land ice portion of the grid cell divided by land ice area in the grid cell. A negative value means loss of ice\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "quantity averaged over ice_sheet (meaning grounded ice sheet and floating ice shelf) only, to avoid contamination from other surfaces (eg: permafrost)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Ice Sheet Surface Mass Balance Flux",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "land_class_mean(m01s08i578[lbproc=128], m01s03i317[lbproc=128], land_class='iceElev')",
+      "Expression UKESM1": "land_class_mean(m01s08i578[lbproc=128], m01s03i317[lbproc=128], land_class='iceElev')",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i578",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "8,578",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i578",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "8,578",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1233,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable landIce.mon.acabf_tavg-u-hxy-is (LImon.acabfIs)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "zvelsurf_tavg-u-hxy-is",
+      "CF standard name": "land_ice_surface_upward_velocity",
+      "CMIP6 Differences": "\"comment\" was \"A velocity is a vector quantity. 'Upward' indicates a vector component which is positive when directed upward (negative downward). The surface called 'surface' means the lower boundary of the atmosphere\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "A velocity is a vector quantity. \"Upward\" indicates a vector component which is positive when directed upward (negative downward). The surface called \"surface\" means the lower boundary of the atmosphere",
+      "Dimensions": "xgre ygre time",
+      "Frequency": "yr",
+      "Long name": "Upward Component of Land-Ice Surface Velocity",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1232,
+    "labels": [
+      "yr",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.yr.zvelsurf_tavg-u-hxy-is (IyrGre.zvelsurf)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "zvelbase_tavg-u-hxy-is",
+      "CF standard name": "land_ice_basal_upward_velocity",
+      "CMIP6 Differences": "\"comment\" was \"A velocity is a vector quantity. 'Upward' indicates a vector component which is positive when directed upward (negative downward). 'basal' means the lower boundary of the atmosphere\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "A velocity is a vector quantity. \"Upward\" indicates a vector component which is positive when directed upward (negative downward). \"basal\" means the lower boundary of the atmosphere",
+      "Dimensions": "xgre ygre time",
+      "Frequency": "yr",
+      "Long name": "Upward Component of Land-Ice Basal Velocity",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1231,
+    "labels": [
+      "yr",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.yr.zvelbase_tavg-u-hxy-is (IyrGre.zvelbase)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "yvelsurf_tavg-u-hxy-is",
+      "CF standard name": "land_ice_surface_y_velocity",
+      "CMIP6 Differences": "\"comment\" was \"A velocity is a vector quantity. 'y' indicates a vector component along the grid y-axis, positive with increasing y. 'Land ice' means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. The surface called 'surface' means the lower boundary of the atmosphere.'\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "A velocity is a vector quantity. \"y\" indicates a vector component along the grid y-axis, positive with increasing y. \"Land ice\" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. The surface called \"surface\" means the lower boundary of the atmosphere.'",
+      "Dimensions": "xgre ygre time",
+      "Frequency": "yr",
+      "Long name": "Y-Component of Land Ice Surface Velocity",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1230,
+    "labels": [
+      "yr",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.yr.yvelsurf_tavg-u-hxy-is (IyrGre.yvelsurf)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "yvelmean_tavg-u-hxy-is",
+      "CF standard name": "land_ice_vertical_mean_y_velocity",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "The vertical mean land ice velocity is the average from the bedrock to the surface of the ice",
+      "Dimensions": "xgre ygre time",
+      "Frequency": "yr",
+      "Long name": "Y-Component of Land Ice Vertical Mean Velocity",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1229,
+    "labels": [
+      "yr",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.yr.yvelmean_tavg-u-hxy-is (IyrGre.yvelmean)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "yvelbase_tavg-u-hxy-is",
+      "CF standard name": "land_ice_basal_y_velocity",
+      "CMIP6 Differences": "\"comment\" was \"A velocity is a vector quantity. 'y' indicates a vector component along the grid y-axis, positive with increasing y. 'Land ice' means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. 'basal' means the lower boundary of the land ice.\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "A velocity is a vector quantity. \"y\" indicates a vector component along the grid y-axis, positive with increasing y. \"Land ice\" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. \"basal\" means the lower boundary of the land ice.",
+      "Dimensions": "xgre ygre time",
+      "Frequency": "yr",
+      "Long name": "Y-Component of Land Ice Basal Velocity",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1228,
+    "labels": [
+      "yr",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.yr.yvelbase_tavg-u-hxy-is (IyrGre.yvelbase)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "xvelsurf_tavg-u-hxy-is",
+      "CF standard name": "land_ice_surface_x_velocity",
+      "CMIP6 Differences": "\"comment\" was \"A velocity is a vector quantity. 'x' indicates a vector component along the grid x-axis, positive with increasing x. 'Land ice' means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. The surface called 'surface' means the lower boundary of the atmosphere.\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "A velocity is a vector quantity. \"x\" indicates a vector component along the grid x-axis, positive with increasing x. \"Land ice\" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. The surface called \"surface\" means the lower boundary of the atmosphere.",
+      "Dimensions": "xgre ygre time",
+      "Frequency": "yr",
+      "Long name": "X-Component of Land Ice Surface Velocity",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1227,
+    "labels": [
+      "yr",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.yr.xvelsurf_tavg-u-hxy-is (IyrGre.xvelsurf)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "xvelmean_tavg-u-hxy-is",
+      "CF standard name": "land_ice_vertical_mean_x_velocity",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "The vertical mean land ice velocity is the average from the bedrock to the surface of the ice",
+      "Dimensions": "xgre ygre time",
+      "Frequency": "yr",
+      "Long name": "X-Component of Land Ice Vertical Mean Velocity",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1226,
+    "labels": [
+      "yr",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.yr.xvelmean_tavg-u-hxy-is (IyrGre.xvelmean)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "xvelbase_tavg-u-hxy-is",
       "CF standard name": "land_ice_basal_x_velocity",
       "CMIP6 Differences": "\"comment\" was \"A velocity is a vector quantity. 'x' indicates a vector component along the grid x-axis, positive with increasing x. 'Land ice' means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. 'basal' means the lower boundary of the land ice.\";",
