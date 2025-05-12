@@ -1,6 +1,299 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "tntrlcs_tpt-l-hxys-u",
+      "CF standard name": "tendency_of_air_temperature_due_to_longwave_heating_assuming_clear_sky",
+      "CMIP6 Differences": "\"frequency\" was \"subhrPt\"; ; \"comment\" was \"Tendency of Air Temperature due to Clear Sky Longwave Radiative Heating\";",
+      "Cell measures": "",
+      "Cell methods": "area: point time: point",
+      "Comment": "alevel site time1",
+      "Dimensions": "alevel site time1",
+      "Frequency": "subhr",
+      "Long name": "Tendency of Air Temperature Due to Clear Sky Longwave Radiative Heating",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:subhrPt CMIP7:subhr,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "K s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s02i233[lbproc=0]",
+      "Expression UKESM1": "m01s02i233[lbproc=0]",
+      "Model units": "K s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1086,
+    "labels": [
+      "subhr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.subhr.tntrlcs_tpt-l-hxys-u (Esubhr.tntrlcs)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tntrl_tpt-l-hxys-u",
+      "CF standard name": "tendency_of_air_temperature_due_to_longwave_heating",
+      "CMIP6 Differences": "\"comment\" was \"Tendency of air temperature due to longwave radiative heating\"; ; \"frequency\" was \"subhrPt\";",
+      "Cell measures": "",
+      "Cell methods": "area: point time: point",
+      "Comment": "alevel site time1",
+      "Dimensions": "alevel site time1",
+      "Frequency": "subhr",
+      "Long name": "Tendency of Air Temperature Due to Longwave Radiative Heating",
+      "Modeling realm": "aerosol",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:subhrPt CMIP7:subhr,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "K s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s02i161[lbproc=0] / ATMOS_TIMESTEP",
+      "Expression UKESM1": "m01s02i161[lbproc=0] / ATMOS_TIMESTEP",
+      "Model units": "K s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1085,
+    "labels": [
+      "subhr",
+      "aerosol",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable aerosol.subhr.tntrl_tpt-l-hxys-u (Esubhr.tntrl)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tntpbl_tpt-l-hxys-u",
+      "CF standard name": "tendency_of_air_temperature_due_to_boundary_layer_mixing",
+      "CMIP6 Differences": "\"frequency\" was \"subhrPt\"; ; \"comment\" was \"Includes all boundary layer terms including diffusive terms.\";",
+      "Cell measures": "",
+      "Cell methods": "area: point time: point",
+      "Comment": "alevel site time1",
+      "Dimensions": "alevel site time1",
+      "Frequency": "subhr",
+      "Long name": "Tendency of Air Temperature Due to Boundary Layer Mixing",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:subhrPt CMIP7:subhr,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "K s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i189[lbproc=0] / ATMOS_TIMESTEP",
+      "Expression UKESM1": "m01s03i189[lbproc=0] / ATMOS_TIMESTEP",
+      "Model units": "K s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1084,
+    "labels": [
+      "subhr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.subhr.tntpbl_tpt-l-hxys-u (Esubhr.tntpbl)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tntd_tpt-l-hxys-u",
+      "CF standard name": "tendency_of_air_temperature_due_to_diffusion",
+      "CMIP6 Differences": "\"frequency\" was \"subhrPt\"; ; \"comment\" was \"This includes any horizontal or vertical numerical temperature diffusion not associated with the parametrized moist physics or the resolved dynamics.  For example, any vertical diffusion which is part of the boundary layer mixing scheme should be excluded, as should any diffusion which is included in the terms from the resolved dynamics.   This term is required to check the closure of the temperature budget.\";",
+      "Cell measures": "",
+      "Cell methods": "area: point time: point",
+      "Comment": "alevel site time1",
+      "Dimensions": "alevel site time1",
+      "Frequency": "subhr",
+      "Long name": "Tendency of Air Temperature Due to Numerical Diffusion",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:subhrPt CMIP7:subhr,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "K s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1083,
+    "labels": [
+      "subhr",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.subhr.tntd_tpt-l-hxys-u (Esubhr.tntd)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tnhusscp_tpt-l-hxys-u",
+      "CF standard name": "tendency_of_specific_humidity_due_to_stratiform_cloud_and_precipitation",
+      "CMIP6 Differences": "\"frequency\" was \"subhrPt\"; ; \"comment\" was \"The phrase 'tendency_of_X' means derivative of X with respect to time. 'Specific' means per unit mass. Specific humidity is the mass fraction of water vapor in (moist) air. The specification of a physical process by the phrase 'due_to_' process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. A variable with the standard name of tendency_of_specific_humidity_due_to_stratiform_cloud_and_precipitation should contain the effects of all processes which convert stratiform clouds and precipitation to or from water vapor. In an atmosphere model, stratiform cloud is that produced by large-scale convergence (not the convection schemes).\";",
+      "Cell measures": "",
+      "Cell methods": "area: point time: point",
+      "Comment": "alevel site time1",
+      "Dimensions": "alevel site time1",
+      "Frequency": "subhr",
+      "Long name": "Tendency of Specific Humidity Due to Stratiform Clouds and Precipitation",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:subhrPt CMIP7:subhr,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "(m01s01i182[lbproc=0] + m01s02i182[lbproc=0] + m01s03i182[lbproc=0] - m01s03i190[lbproc=0] + m01s04i142[lbproc=0] + m01s04i182[lbproc=0] + m01s05i182[lbproc=0] - m01s05i162[lbproc=0] + m01s16i162[lbproc=0] + m01s16i182[lbproc=0]) / ATMOS_TIMESTEP",
+      "Expression UKESM1": "(m01s01i182[lbproc=0] + m01s02i182[lbproc=0] + m01s03i182[lbproc=0] - m01s03i190[lbproc=0] + m01s04i142[lbproc=0] + m01s04i182[lbproc=0] + m01s05i182[lbproc=0] - m01s05i162[lbproc=0] + m01s16i162[lbproc=0] + m01s16i182[lbproc=0]) / ATMOS_TIMESTEP",
+      "Model units": "s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1082,
+    "labels": [
+      "subhr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.subhr.tnhusscp_tpt-l-hxys-u (Esubhr.tnhusscp)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tnhuspbl_tpt-l-hxys-u",
+      "CF standard name": "tendency_of_specific_humidity_due_to_boundary_layer_mixing",
+      "CMIP6 Differences": "\"frequency\" was \"subhrPt\"; ; \"comment\" was \"Includes all boundary layer terms including diffusive terms.\";",
+      "Cell measures": "",
+      "Cell methods": "area: point time: point",
+      "Comment": "alevel site time1",
+      "Dimensions": "alevel site time1",
+      "Frequency": "subhr",
+      "Long name": "Tendency of Specific Humidity Due to Boundary Layer Mixing",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:subhrPt CMIP7:subhr,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i190[lbproc=0] / ATMOS_TIMESTEP",
+      "Expression UKESM1": "m01s03i190[lbproc=0] / ATMOS_TIMESTEP",
+      "Model units": "s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1081,
+    "labels": [
+      "subhr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.subhr.tnhuspbl_tpt-l-hxys-u (Esubhr.tnhuspbl)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "reffclws_tpt-l-hxys-scl",
+      "CF standard name": "effective_radius_of_stratiform_cloud_liquid_water_particles",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: point time: point\"; ; \"frequency\" was \"subhrPt\"; ; \"comment\" was \"Droplets are liquid.  The effective radius is defined as the ratio of the third moment over the second moment of the particle size distribution and the time-mean should be calculated, weighting the individual samples by the cloudy fraction of the grid cell.\"; ; \"standard_name\" was \"effective_radius_of_stratiform_cloud_liquid_water_particle\";",
+      "Cell measures": "",
+      "Cell methods": "area: mean where stratiform_cloud time: point",
+      "Comment": "alevel site time1",
+      "Dimensions": "alevel site time1",
+      "Frequency": "subhr",
+      "Long name": "Stratiform Cloud Liquid Droplet Effective Radius",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:subhrPt CMIP7:subhr,;  ; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: point time: point CMIP7:area: mean where stratiform_cloud time: point,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: point time: point CMIP7:area: mean where stratiform_cloud time: point,",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s02i397[lbproc=0] / m01s02i312[lbproc=0]",
+      "Expression UKESM1": "m01s02i397[lbproc=0] / m01s02i312[lbproc=0]",
+      "Model units": "m"
+    },
+    "STASH entries": [],
+    "issue_number": 1080,
+    "labels": [
+      "subhr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.subhr.reffclws_tpt-l-hxys-scl (Esubhr.reffclws)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "reffclwc_tpt-l-hxys-ccl",
+      "CF standard name": "effective_radius_of_convective_cloud_liquid_water_particles",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: point time: point\"; ; \"frequency\" was \"subhrPt\"; ; \"comment\" was \"Droplets are liquid.  The effective radius is defined as the ratio of the third moment over the second moment of the particle size distribution and the time-mean should be calculated, weighting the individual samples by the cloudy fraction of the grid cell.\"; ; \"standard_name\" was \"effective_radius_of_convective_cloud_liquid_water_particle\";",
+      "Cell measures": "",
+      "Cell methods": "area: mean where convective_cloud time: point",
+      "Comment": "alevel site time1",
+      "Dimensions": "alevel site time1",
+      "Frequency": "subhr",
+      "Long name": "Convective Cloud Liquid Droplet Effective Radius",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:subhrPt CMIP7:subhr,;  ; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: point time: point CMIP7:area: mean where convective_cloud time: point,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: point time: point CMIP7:area: mean where convective_cloud time: point, area: mean where stratiform_cloud time: point,",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s02i397[lbproc=0] / m01s02i312[lbproc=0]",
+      "Expression UKESM1": "m01s02i397[lbproc=0] / m01s02i312[lbproc=0]",
+      "Model units": "m"
+    },
+    "STASH entries": [],
+    "issue_number": 1079,
+    "labels": [
+      "subhr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.subhr.reffclwc_tpt-l-hxys-ccl (Esubhr.reffclwc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "reffclis_tpt-l-hxys-scl",
+      "CF standard name": "effective_radius_of_stratiform_cloud_ice_particles",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: point time: point\"; ; \"frequency\" was \"subhrPt\"; ; \"standard_name\" was \"effective_radius_of_stratiform_cloud_ice_particle\"; ; \"comment\" was \"This is defined as the in-cloud ratio of the third moment over the second moment of the particle size distribution (obtained by considering only the cloudy portion of the grid cell).\";",
+      "Cell measures": "",
+      "Cell methods": "area: mean where stratiform_cloud time: point",
+      "Comment": "alevel site time1",
+      "Dimensions": "alevel site time1",
+      "Frequency": "subhr",
+      "Long name": "Hydrometeor Effective Radius of Stratiform Cloud Ice",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:subhrPt CMIP7:subhr,;  ; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: point time: point CMIP7:area: mean where stratiform_cloud time: point,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: point time: point CMIP7:area: mean where stratiform_cloud time: point,",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "0.5 * m01s02i398[lbproc=0] / m01s02i313[lbproc=0]",
+      "Expression UKESM1": "0.5 * m01s02i398[lbproc=0] / m01s02i313[lbproc=0]",
+      "Model units": "m"
+    },
+    "STASH entries": [],
+    "issue_number": 1078,
+    "labels": [
+      "subhr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.subhr.reffclis_tpt-l-hxys-scl (Esubhr.reffclis)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "reffclic_tpt-l-hxys-ccl",
       "CF standard name": "effective_radius_of_convective_cloud_ice_particles",
       "CMIP6 Differences": "\"standard_name\" was \"effective_radius_of_convective_cloud_ice_particle\"; ; \"cell_methods\" was \"area: point time: point\"; ; \"frequency\" was \"subhrPt\"; ; \"comment\" was \"This is defined as the in-cloud ratio of the third moment over the second moment of the particle size distribution (obtained by considering only the cloudy portion of the grid cell).\";",
