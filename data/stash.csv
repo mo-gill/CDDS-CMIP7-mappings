@@ -1,4 +1,24 @@
 Model,Branded variable name,Frequency,STASH,Section,Item,time_profile,domain_profile,usage_profile
+UKESM1,epfz_tavg-p39-hy-air,mon,m01s30i301,30,301,TMONMN,PLEV39Z,UP5
+UKESM1,epfz_tavg-p39-hy-air,mon,m01s30i313,30,313,TMONMN,PLEV39,UP5
+UKESM1,epfz_tavg-p39-hy-air,mon,m01s30i201,30,201,TMONMN,PLEV39Z,UP5
+UKESM1,epfz_tavg-p39-hy-air,mon,m01s30i202,30,202,TMONMN,PLEV39Z,UP5
+HadGEM3-GC31,epfz_tavg-p39-hy-air,mon,m01s30i301,30,301,TMONMN,PLEV39Z,UP5
+HadGEM3-GC31,epfz_tavg-p39-hy-air,mon,m01s30i313,30,313,TMONMN,PLEV39,UP5
+HadGEM3-GC31,epfz_tavg-p39-hy-air,mon,m01s30i201,30,201,TMONMN,PLEV39Z,UP5
+HadGEM3-GC31,epfz_tavg-p39-hy-air,mon,m01s30i202,30,202,TMONMN,PLEV39Z,UP5
+UKESM1,epfy_tavg-p39-hy-air,mon,m01s30i301,30,301,TMONMN,PLEV39Z,UP5
+UKESM1,epfy_tavg-p39-hy-air,mon,m01s30i312,30,312,TMONMN,PLEV39,UP5
+UKESM1,epfy_tavg-p39-hy-air,mon,m01s30i201,30,201,TMONMN,PLEV39Z,UP5
+UKESM1,epfy_tavg-p39-hy-air,mon,m01s30i202,30,202,TMONMN,PLEV39Z,UP5
+HadGEM3-GC31,epfy_tavg-p39-hy-air,mon,m01s30i301,30,301,TMONMN,PLEV39Z,UP5
+HadGEM3-GC31,epfy_tavg-p39-hy-air,mon,m01s30i312,30,312,TMONMN,PLEV39,UP5
+HadGEM3-GC31,epfy_tavg-p39-hy-air,mon,m01s30i201,30,201,TMONMN,PLEV39Z,UP5
+HadGEM3-GC31,epfy_tavg-p39-hy-air,mon,m01s30i202,30,202,TMONMN,PLEV39Z,UP5
+UKESM1,wetlandFrac_tavg-u-hxy-u,mon,m01s03i395,3,395,TMONMN,DIAG,UP5
+UKESM1,wetlandFrac_tavg-u-hxy-u,mon,m01s08i248,8,248,TMONMN,DIAG,UP5
+HadGEM3-GC31,wetlandFrac_tavg-u-hxy-u,mon,m01s03i395,3,395,TMONMN,DIAG,UP5
+HadGEM3-GC31,wetlandFrac_tavg-u-hxy-u,mon,m01s08i248,8,248,TMONMN,DIAG,UP5
 UKESM1,wetlandCH4_tavg-u-hxy-lnd,mon,m01s08i261,8,261,TMONMN,DIAG,UP5
 HadGEM3-GC31,wetlandCH4_tavg-u-hxy-lnd,mon,m01s08i261,8,261,TMONMN,DIAG,UP5
 UKESM1,vegHeight_tavg-u-hxy-tree,mon,m01s19i013,19,013,TMONMN,DTILE,UP5

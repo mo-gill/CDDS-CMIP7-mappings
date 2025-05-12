@@ -1,6 +1,498 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "tntrl_tavg-p39-hy-air",
+      "CF standard name": "tendency_of_air_temperature_due_to_longwave_heating",
+      "CMIP6 Differences": "\"cell_methods\" was \"longitude: mean time: mean\"; ; \"comment\" was \"Tendency of air temperature due to longwave radiative heating\"; ; \"modeling_realm\" was \"aerosol\";",
+      "Cell measures": "",
+      "Cell methods": "longitude: time: mean where air",
+      "Comment": "zonal mean; hence YZT",
+      "Dimensions": "latitude plev39 time",
+      "Frequency": "mon",
+      "Long name": "Tendency of Air Temperature Due to Longwave Radiative Heating",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:longitude: mean time: mean CMIP7:longitude: time: mean where air,",
+      "Units": "K s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1067,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.mon.tntrl_tavg-p39-hy-air (EmonZ.tntrl)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tntogw_tavg-p39-hy-air",
+      "CF standard name": "tendency_of_air_temperature_due_to_dissipation_of_orographic_gravity_waves",
+      "CMIP6 Differences": "\"cell_methods\" was \"longitude: mean time: mean\"; ; \"comment\" was \"Temperature tendency due to dissipation of parameterized orographic gravity waves.\";",
+      "Cell measures": "",
+      "Cell methods": "longitude: time: mean where air",
+      "Comment": "zonal mean; hence YZT",
+      "Dimensions": "latitude plev39 time",
+      "Frequency": "mon",
+      "Long name": "Temperature Tendency Due to Orographic Gravity Wave Dissipation",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:longitude: mean time: mean CMIP7:longitude: time: mean where air,",
+      "Units": "K s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1066,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.mon.tntogw_tavg-p39-hy-air (EmonZ.tntogw)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tntnogw_tavg-p39-hy-air",
+      "CF standard name": "tendency_of_air_temperature_due_to_dissipation_of_nonorographic_gravity_waves",
+      "CMIP6 Differences": "\"cell_methods\" was \"longitude: mean time: mean\"; ; \"comment\" was \"Temperature tendency due to dissipation of parameterized nonorographic gravity waves.\";",
+      "Cell measures": "",
+      "Cell methods": "longitude: time: mean where air",
+      "Comment": "zonal mean; hence YZT",
+      "Dimensions": "latitude plev39 time",
+      "Frequency": "mon",
+      "Long name": "Temperature Tendency Due to Non-Orographic Gravity Wave Dissipation",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:longitude: mean time: mean CMIP7:longitude: time: mean where air,",
+      "Units": "K s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1065,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.mon.tntnogw_tavg-p39-hy-air (EmonZ.tntnogw)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tntmp_tavg-p39-hy-air",
+      "CF standard name": "tendency_of_air_temperature_due_to_model_physics",
+      "CMIP6 Differences": "\"cell_methods\" was \"longitude: mean time: mean\"; ; \"comment\" was \"Tendency of air temperature due to model physics. This includes sources and sinks from parametrized physics (e.g. radiation, convection, boundary layer, stratiform condensation/evaporation, etc.). It excludes sources and sinks from resolved dynamics and numerical diffusion not associated with parametrized physics.  For example, any vertical diffusion which is part of the boundary layer mixing scheme should be included, while numerical diffusion applied in addition to physics or resolved dynamics should be excluded.  This term is required to check the closure of the heat budget.\";",
+      "Cell measures": "",
+      "Cell methods": "longitude: time: mean where air",
+      "Comment": "Zonal mean tendency of air temperature due to model physics, with the extended number of vertical levels",
+      "Dimensions": "latitude plev39 time",
+      "Frequency": "mon",
+      "Long name": "Tendency of Air Temperature Due to Model Physics",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "This is the total temperature tendency due to parameterized physics, which is the sum of contributes from all relevant parameterizations. We ask that in the Essential Model Documentation modelling centers specify the parameterized process contributing to this tendency, and (where applicable) specific values of their tunable parameters used for the simulation.; ; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:longitude: mean time: mean CMIP7:longitude: time: mean where air,",
+      "Units": "K s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1064,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.mon.tntmp_tavg-p39-hy-air (EmonZ.tntmp)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tntc_tavg-p39-hy-air",
+      "CF standard name": "tendency_of_air_temperature_due_to_convection",
+      "CMIP6 Differences": "\"cell_methods\" was \"longitude: mean time: mean\"; ; \"comment\" was \"Tendencies from cumulus convection scheme.\";",
+      "Cell measures": "",
+      "Cell methods": "longitude: time: mean where air",
+      "Comment": "zonal mean; hence YZT",
+      "Dimensions": "latitude plev39 time",
+      "Frequency": "mon",
+      "Long name": "Tendency of Air Temperature Due to Convection",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:longitude: mean time: mean CMIP7:longitude: time: mean where air,",
+      "Units": "K s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1063,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.mon.tntc_tavg-p39-hy-air (EmonZ.tntc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "epfz_tavg-p39-hy-air",
+      "CF standard name": "upward_eliassen_palm_flux_in_air",
+      "CMIP6 Differences": "\"cell_methods\" was \"longitude: mean time: mean\"; ; \"comment\" was \"Transformed Eulerian Mean Diagnostics Meridional component Fz of the Eliassen-Palm (EP) flux (Fy, Fz) derived from 6hr or higher frequency fields (use daily fields or 12 hr fields if the 6 hr are not available). Please use the definitions given by equation 3.5.3b of Andrews, Holton and Leovy text book, but scaled by density to have units m3 s-2.\";",
+      "Cell measures": "",
+      "Cell methods": "longitude: time: mean where air",
+      "Comment": "zonal mean; hence YZT",
+      "Dimensions": "latitude plev39 time",
+      "Frequency": "mon",
+      "Long name": "Upward Component of the Eliassen-Palm Flux",
+      "Modeling realm": "atmos",
+      "Positive": "up",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:longitude: mean time: mean CMIP7:longitude: time: mean where air,",
+      "Units": "m3 s-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "scale_epflux(m01s30i313[blev=PLEV39, lbproc=192], m01s30i301[blev=PLEV39, lbproc=192])",
+      "Expression UKESM1": "scale_epflux(m01s30i313[blev=PLEV39, lbproc=192], m01s30i301[blev=PLEV39, lbproc=192])",
+      "Model units": "m3 s-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s30i301",
+        "domain_profile": "PLEV39Z",
+        "model": "UKESM1",
+        "stash_number": "30,301",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i313",
+        "domain_profile": "PLEV39",
+        "model": "UKESM1",
+        "stash_number": "30,313",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i201",
+        "domain_profile": "PLEV39Z",
+        "model": "UKESM1",
+        "stash_number": "30,201",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i202",
+        "domain_profile": "PLEV39Z",
+        "model": "UKESM1",
+        "stash_number": "30,202",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i301",
+        "domain_profile": "PLEV39Z",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,301",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i313",
+        "domain_profile": "PLEV39",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,313",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i201",
+        "domain_profile": "PLEV39Z",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,201",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i202",
+        "domain_profile": "PLEV39Z",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,202",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1062,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.epfz_tavg-p39-hy-air (EmonZ.epfz)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "epfy_tavg-p39-hy-air",
+      "CF standard name": "northward_eliassen_palm_flux_in_air",
+      "CMIP6 Differences": "\"cell_methods\" was \"longitude: mean time: mean\";",
+      "Cell measures": "",
+      "Cell methods": "longitude: time: mean where air",
+      "Comment": "Transformed Eulerian Mean Diagnostics Meridional component Fy of Eliassen-Palm (EP) flux (Fy, Fz) derived from 6hr or higher frequency fields (use daily fields or 12 hr fields if the 6 hr are not available). Please use the definitions given by equation 3.5.3a of Andrews, Holton and Leovy text book, but scaled by density to have units m3 s-2.",
+      "Dimensions": "latitude plev39 time",
+      "Frequency": "mon",
+      "Long name": "Northward Component of the Eliassen-Palm Flux",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:longitude: mean time: mean CMIP7:longitude: time: mean where air,",
+      "Units": "m3 s-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "scale_epflux(m01s30i312[blev=PLEV39, lbproc=192], m01s30i301[blev=PLEV39, lbproc=192])",
+      "Expression UKESM1": "scale_epflux(m01s30i312[blev=PLEV39, lbproc=192], m01s30i301[blev=PLEV39, lbproc=192])",
+      "Model units": "m3 s-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s30i301",
+        "domain_profile": "PLEV39Z",
+        "model": "UKESM1",
+        "stash_number": "30,301",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i312",
+        "domain_profile": "PLEV39",
+        "model": "UKESM1",
+        "stash_number": "30,312",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i201",
+        "domain_profile": "PLEV39Z",
+        "model": "UKESM1",
+        "stash_number": "30,201",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i202",
+        "domain_profile": "PLEV39Z",
+        "model": "UKESM1",
+        "stash_number": "30,202",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i301",
+        "domain_profile": "PLEV39Z",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,301",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i312",
+        "domain_profile": "PLEV39",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,312",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i201",
+        "domain_profile": "PLEV39Z",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,201",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i202",
+        "domain_profile": "PLEV39Z",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,202",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1061,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.epfy_tavg-p39-hy-air (EmonZ.epfy)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "wsgmax_tstat-h10m-hxy-u",
+      "CF standard name": "wind_speed_of_gust",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean time: maximum",
+      "Comment": "Maximum Wind Speed of Gust at 10m, monthly",
+      "Dimensions": "longitude latitude time height10m",
+      "Frequency": "mon",
+      "Long name": "Maximum Wind Speed of Gust at 10m",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "Maximum instantaneous gust over grid cell, recorded monthly. Input data at the highest available frequency, ideally model timesteps, should be used to compute the maximum. Modellers are requested to leave in a comment in the netcdf metadata stating the frequency of the input data.",
+      "Units": "m s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1060,
+    "labels": [
+      "mon",
+      "atmos"
+    ],
+    "title": "Variable atmos.mon.wsgmax_tstat-h10m-hxy-u (Emon.wsgmax10m)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "wsgmax_tstat-h100m-hxy-u",
+      "CF standard name": "wind_speed_of_gust",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean time: maximum",
+      "Comment": "Maximum Wind Speed of Gust at 100m, monthly",
+      "Dimensions": "longitude latitude time height100m",
+      "Frequency": "mon",
+      "Long name": "Maximum Wind Speed of Gust at 100m",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "Maximum instantaneous gust over grid cell, recorded monthly. Input data at the highest available frequency, ideally model timesteps, should be used to compute the maximum. Modellers are requested to leave in a comment in the netcdf metadata stating the frequency of the input data.",
+      "Units": "m s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1059,
+    "labels": [
+      "mon",
+      "atmos"
+    ],
+    "title": "Variable atmos.mon.wsgmax_tstat-h100m-hxy-u (Emon.wsgmax100m)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "wetlandFrac_tavg-u-hxy-u",
+      "CF standard name": "area_fraction",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: mean where land over all_area_types time: mean\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Percentage of grid cell covered by wetland. Report only one year if  fixed percentage is used, or time series if values are determined dynamically.",
+      "Dimensions": "longitude latitude time typewetla",
+      "Frequency": "mon",
+      "Long name": "Wetland Percentage Cover",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time typewetla CMIP7:longitude latitude time  typewetla,;  ; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean where land over all_area_types time: mean CMIP7:area: time: mean,",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s08i248[lbproc=128] * m01s03i395[lbproc=128]",
+      "Expression UKESM1": "m01s08i248[lbproc=128] * m01s03i395[lbproc=128]",
+      "Model units": "1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i395",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,395",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i248",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "8,248",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i395",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,395",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i248",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "8,248",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1058,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable land.mon.wetlandFrac_tavg-u-hxy-u (Emon.wetlandFrac)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "wetlandCH4prod_tavg-u-hxy-lnd",
+      "CF standard name": "surface_upward_mass_flux_of_methane_due_to_emission_from_wetland_biological_production",
+      "CMIP6 Differences": "\"comment\" was \"Biological emissions (methanogenesis) of methane (NH4) from wetlands (areas where water covers the soil, or is present either at or near the surface of the soil all year or for varying periods of time during the year, including during the growing season). \";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "Biological emissions (methanogenesis) of methane (NH4) from wetlands (areas where water covers the soil, or is present either at or near the surface of the soil all year or for varying periods of time during the year, including during the growing season).",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Grid Averaged Methane Production (Methanogenesis) from Wetlands",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1057,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.mon.wetlandCH4prod_tavg-u-hxy-lnd (Emon.wetlandCH4prod)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "wetlandCH4cons_tavg-u-hxy-lnd",
       "CF standard name": "surface_downward_mass_flux_of_methane_due_to_wetland_biological_consumption",
       "CMIP6 Differences": "\"comment\" was \"Biological consumption (methanotrophy) of methane (NH4) by wetlands (areas where water covers the soil, or is present either at or near the surface of the soil all year or for varying periods of time during the year, including during the growing season). \";",
