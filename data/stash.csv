@@ -1,4 +1,12 @@
 Model,Branded variable name,Frequency,STASH,Section,Item,time_profile,domain_profile,usage_profile
+UKESM1,mrro_tavg-u-hxy-lnd,3hr,m01s08i234,8,234,T3HRMN,DIAG,UP8
+UKESM1,mrro_tavg-u-hxy-lnd,3hr,m01s08i235,8,235,T3HRMN,DIAG,UP8
+HadGEM3-GC31,mrro_tavg-u-hxy-lnd,3hr,m01s08i234,8,234,T3HRMN,DIAG,UP8
+HadGEM3-GC31,mrro_tavg-u-hxy-lnd,3hr,m01s08i235,8,235,T3HRMN,DIAG,UP8
+UKESM1,huss_tpt-h2m-hxy-u,3hr,m01s03i237,3,237,T3HR,DIAG,UP8
+HadGEM3-GC31,huss_tpt-h2m-hxy-u,3hr,m01s03i237,3,237,T3HR,DIAG,UP8
+UKESM1,hfss_tavg-u-hxy-u,3hr,m01s03i217,3,217,T3HRMN,DIAG,UP8
+HadGEM3-GC31,hfss_tavg-u-hxy-u,3hr,m01s03i217,3,217,T3HRMN,DIAG,UP8
 UKESM1,hfls_tavg-u-hxy-u,3hr,m01s03i234,3,234,T3HRMN,DIAG,UP8
 HadGEM3-GC31,hfls_tavg-u-hxy-u,3hr,m01s03i234,3,234,T3HRMN,DIAG,UP8
 UKESM1,clt_tavg-u-hxy-u,3hr,m01s02i204,2,204,T3HRMN,DIAG,UP8
