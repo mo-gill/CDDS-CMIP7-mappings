@@ -1,6 +1,369 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "intppnano_tavg-u-hxy-sea",
+      "CF standard name": "net_primary_mole_productivity_of_biomass_expressed_as_carbon_by_nanophytoplankton",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea depth: sum where sea time: mean",
+      "Comment": "Vertically integrated total primary (organic carbon) production by nanophytoplankton.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Net Primary Organic Carbon Production by Nanophytoplankton",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-2 s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1479,
+    "labels": [
+      "mon",
+      "ocnBgchem"
+    ],
+    "title": "Variable ocnBgchem.mon.intppnano_tavg-u-hxy-sea (Omon.intppnano)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "intppmisc_tavg-u-hxy-sea",
+      "CF standard name": "net_primary_mole_productivity_of_biomass_expressed_as_carbon_by_miscellaneous_phytoplankton",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea depth: sum where sea time: mean",
+      "Comment": "Vertically integrated total primary (organic carbon) production by other phytoplankton components alone",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Net Primary Organic Carbon Production by Other Phytoplankton",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "PRN * C_TO_N_RATIO",
+      "Model units": "mmol m-2 d-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1478,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.intppmisc_tavg-u-hxy-sea (Omon.intppmisc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "intppdiaz_tavg-u-hxy-sea",
+      "CF standard name": "net_primary_mole_productivity_of_biomass_expressed_as_carbon_by_diazotrophic_phytoplankton",
+      "CMIP6 Differences": "\"standard_name\" was \"net_primary_mole_productivity_of_biomass_expressed_as_carbon_by_diazotrophs\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea depth: sum where sea time: mean",
+      "Comment": "Vertically integrated primary (organic carbon) production by the diazotrophs alone",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Net Primary Mole Productivity of Carbon by Diazotrophs",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1477,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.intppdiaz_tavg-u-hxy-sea (Omon.intppdiaz)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "intppdiat_tavg-u-hxy-sea",
+      "CF standard name": "net_primary_mole_productivity_of_biomass_expressed_as_carbon_by_diatoms",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea depth: sum where sea time: mean",
+      "Comment": "Vertically integrated primary (organic carbon) production by the diatom phytoplankton component alone",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Net Primary Organic Carbon Production by Diatoms",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "PRD * C_TO_N_RATIO",
+      "Model units": "mmol m-2 d-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1476,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.intppdiat_tavg-u-hxy-sea (Omon.intppdiat)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "intppcalc_tavg-u-hxy-sea",
+      "CF standard name": "net_primary_mole_productivity_of_biomass_expressed_as_carbon_by_calcareous_phytoplankton",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea depth: sum where sea time: mean",
+      "Comment": "Vertically integrated primary (organic carbon) production by the calcareous phytoplankton component alone",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Net Primary Mole Productivity of Carbon by Calcareous Phytoplankton",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1475,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.intppcalc_tavg-u-hxy-sea (Omon.intppcalc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "intpp_tavg-u-hxy-sea",
+      "CF standard name": "net_primary_mole_productivity_of_biomass_expressed_as_carbon_by_phytoplankton",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea depth: sum where sea time: mean",
+      "Comment": "Vertically integrated total primary (organic carbon) production by phytoplankton.  This should equal the sum of intpdiat+intpphymisc, but those individual components may be unavailable in some models.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Primary Organic Carbon Production by All Types of Phytoplankton",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "(PRN + PRD) * C_TO_N_RATIO",
+      "Model units": "mmol m-2 d-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1474,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.intpp_tavg-u-hxy-sea (Omon.intpp)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "intpoc_tavg-u-hxy-sea",
+      "CF standard name": "ocean_mass_content_of_particulate_organic_matter_expressed_as_carbon",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea depth: sum where sea time: mean",
+      "Comment": "Vertically integrated POC",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Particulate Organic Carbon Content",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "(((INT_PN + INT_PD) * C_TO_N_RATIO) + ((INT_ZMI + INT_ZME) * C_TO_N_RATIO_ZOO) + INT_DTC) * ATOMIC_MASS_OF_C",
+      "Model units": "mg m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 1473,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.intpoc_tavg-u-hxy-sea (Omon.intpoc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "intpn2_tavg-u-hxy-sea",
+      "CF standard name": "tendency_of_ocean_mole_content_of_elemental_nitrogen_due_to_fixation",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea depth: sum where sea time: mean",
+      "Comment": "Vertically integrated nitrogen fixation",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Nitrogen Fixation Rate in Ocean",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1472,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.intpn2_tavg-u-hxy-sea (Omon.intpn2)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "intpcalcite_tavg-u-hxy-sea",
+      "CF standard name": "tendency_of_ocean_mole_content_of_calcite_expressed_as_carbon_due_to_biological_production",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea depth: sum where sea time: mean",
+      "Comment": "Vertically integrated calcite production",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Calcite Production",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "FASTCA",
+      "Model units": "mmol m-2 d-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1471,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.intpcalcite_tavg-u-hxy-sea (Omon.intpcalcite)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "intpbsi_tavg-u-hxy-sea",
+      "CF standard name": "tendency_of_ocean_mole_content_of_silicon_due_to_biological_production",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea depth: sum where sea time: mean",
+      "Comment": "Vertically integrated biogenic silica production",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Silicon Production",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "OPAL",
+      "Model units": "mmol m-2 d-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1470,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.intpbsi_tavg-u-hxy-sea (Omon.intpbsi)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "intpbp_tavg-u-hxy-sea",
+      "CF standard name": "tendency_of_ocean_mole_content_of_phosphorus_due_to_biological_production",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea depth: sum where sea time: mean",
+      "Comment": "Vertically integrated biogenic phosphorus production",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Phosphorus Production",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "(PRN + PRD) * P_TO_N_RATIO",
+      "Model units": "mmol m-2 d-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1469,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.intpbp_tavg-u-hxy-sea (Omon.intpbp)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "intpbn_tavg-u-hxy-sea",
+      "CF standard name": "tendency_of_ocean_mole_content_of_nitrogen_due_to_biological_production",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea depth: sum where sea time: mean",
+      "Comment": "Vertically integrated biogenic nitrogen production",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Nitrogen Production",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "PRN + PRD",
+      "Model units": "mmol m-2 d-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1468,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.intpbn_tavg-u-hxy-sea (Omon.intpbn)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "intpbfe_tavg-u-hxy-sea",
       "CF standard name": "tendency_of_ocean_mole_content_of_iron_due_to_biological_production",
       "CMIP6 Differences": "",
