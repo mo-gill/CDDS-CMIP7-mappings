@@ -1,6 +1,410 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "mlotst_tavg-u-hxy-sea",
+      "CF standard name": "ocean_mixed_layer_thickness_defined_by_sigma_t",
+      "CMIP6 Differences": "\"comment\" was \"Sigma T is potential density referenced to ocean surface.\"; ; \"dimensions\" was \"longitude latitude time\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Sigma T is potential density referenced to ocean surface. Defined by Sigma T of 0.03 kg m-3 wrt to model level closest to 10 m depth.",
+      "Dimensions": "longitude latitude time deltasigt",
+      "Frequency": "day",
+      "Long name": "Ocean Mixed Layer Thickness Defined by Sigma T",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "dsigmat coordinate added to clarify definition. CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time CMIP7:longitude latitude time deltasigt,",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "mlotst",
+      "Expression UKESM1": "mlotst",
+      "Model units": "m"
+    },
+    "STASH entries": [],
+    "issue_number": 748,
+    "labels": [
+      "day",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.day.mlotst_tavg-u-hxy-sea (Eday.mlotst)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "lwsnl_tavg-u-hxy-lnd",
+      "CF standard name": "liquid_water_content_of_surface_snow",
+      "CMIP6 Differences": "\"comment\" was \"The total mass of liquid water contained interstitially within the whole depth of the snow layer of the land portion of a grid cell divided by the area of the land portion of the cell.\"; ; \"modeling_realm\" was \"landIce land\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "liquid_water_content_of_snow_layer",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Liquid Water Content of Snow Layer",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:land, landIce CMIP7:land, ocean,",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 747,
+    "labels": [
+      "day",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.day.lwsnl_tavg-u-hxy-lnd (Eday.lwsnl)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "loadss_tavg-u-hxy-u",
+      "CF standard name": "atmosphere_mass_content_of_sea_salt_dry_aerosol_particles",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "The total dry mass of sea salt aerosol particles per unit area.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Load of Sea-Salt Aerosol",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "SECONDS_IN_HOUR / ATMOS_TIMESTEP * m01s38i539[lbproc=128]",
+      "Model units": "kg m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s38i539",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "38,539",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 746,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable atmos.day.loadss_tavg-u-hxy-u (Eday.loadss)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "loadsoa_tavg-u-hxy-u",
+      "CF standard name": "atmosphere_mass_content_of_secondary_particulate_organic_matter_dry_aerosol_particles",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "The total dry mass of secondary particulate organic aerosol particles per unit area.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Load of Dry Aerosol Secondary Organic Matter",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 745,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.day.loadsoa_tavg-u-hxy-u (Eday.loadsoa)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "loadso4_tavg-u-hxy-u",
+      "CF standard name": "atmosphere_mass_content_of_sulfate_dry_aerosol_particles",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "The total dry mass of sulfate aerosol particles per unit area.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Load of SO4",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "(MOLECULAR_MASS_OF_SO4 / MOLECULAR_MASS_OF_H2SO4) * (SECONDS_IN_HOUR / ATMOS_TIMESTEP) * m01s38i520[lbproc=128]",
+      "Model units": "kg m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s38i520",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "38,520",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 744,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable atmos.day.loadso4_tavg-u-hxy-u (Eday.loadso4)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "loadpoa_tavg-u-hxy-u",
+      "CF standard name": "atmosphere_mass_content_of_primary_particulate_organic_matter_dry_aerosol_particles",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "The total dry mass of primary particulate organic aerosol particles per unit area.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Load of Dry Aerosol Primary Organic Matter",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 743,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.day.loadpoa_tavg-u-hxy-u (Eday.loadpoa)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "loadoa_tavg-u-hxy-u",
+      "CF standard name": "atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "atmosphere dry organic content: This is the vertically integrated sum of atmosphere_primary_organic_content and atmosphere_secondary_organic_content (see next two table entries).",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Load of Dry Aerosol Organic Matter",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "SECONDS_IN_HOUR / ATMOS_TIMESTEP * m01s38i531[lbproc=128]",
+      "Model units": "kg m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s38i531",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "38,531",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 742,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable atmos.day.loadoa_tavg-u-hxy-u (Eday.loadoa)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "loadno3_tavg-u-hxy-u",
+      "CF standard name": "atmosphere_mass_content_of_nitrate_dry_aerosol_particles",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "The total dry mass of nitrate aerosol particles per unit area.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Load of NO3",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 741,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.day.loadno3_tavg-u-hxy-u (Eday.loadno3)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "loadnh4_tavg-u-hxy-u",
+      "CF standard name": "atmosphere_mass_content_of_ammonium_dry_aerosol_particles",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "The total dry mass of ammonium aerosol particles per unit area.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Load of NH4",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 740,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.day.loadnh4_tavg-u-hxy-u (Eday.loadnh4)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "loaddust_tavg-u-hxy-u",
+      "CF standard name": "atmosphere_mass_content_of_dust_dry_aerosol_particles",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "The total dry mass of dust aerosol particles per unit area.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Load of Dust",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "calc_loaddust(m01s17i257[lbproc=128], m01s50i255[lbproc=128])",
+      "Expression UKESM1": "calc_loaddust(m01s17i257[lbproc=128], m01s50i255[lbproc=128])",
+      "Model units": "kg m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s17i257",
+        "domain_profile": "DALLTH",
+        "model": "UKESM1",
+        "stash_number": "17,257",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s50i255",
+        "domain_profile": "DALLTH",
+        "model": "UKESM1",
+        "stash_number": "50,255",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s17i257",
+        "domain_profile": "DALLTH",
+        "model": "HadGEM3-GC31",
+        "stash_number": "17,257",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s50i255",
+        "domain_profile": "DALLTH",
+        "model": "HadGEM3-GC31",
+        "stash_number": "50,255",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 739,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.day.loaddust_tavg-u-hxy-u (Eday.loaddust)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "loadbc_tavg-u-hxy-u",
+      "CF standard name": "atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "The total dry mass of black carbon aerosol particles per unit area.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Load of Black Carbon Aerosol",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "SECONDS_IN_HOUR / ATMOS_TIMESTEP * m01s38i525[lbproc=128]",
+      "Model units": "kg m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s38i525",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "38,525",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 738,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable atmos.day.loadbc_tavg-u-hxy-u (Eday.loadbc)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "lai_tavg-u-hxy-lus",
       "CF standard name": "leaf_area_index",
       "CMIP6 Differences": "Not present",

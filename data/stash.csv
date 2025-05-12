@@ -1,4 +1,12 @@
 Model,Branded variable name,Frequency,STASH,Section,Item,time_profile,domain_profile,usage_profile
+UKESM1,loadss_tavg-u-hxy-u,day,m01s38i539,38,539,TDAYMN,DIAG,UP6
+UKESM1,loadso4_tavg-u-hxy-u,day,m01s38i520,38,520,TDAYMN,DIAG,UP6
+UKESM1,loadoa_tavg-u-hxy-u,day,m01s38i531,38,531,TDAYMN,DIAG,UP6
+UKESM1,loaddust_tavg-u-hxy-u,day,m01s17i257,17,257,TDAYMN,DALLTH,UP6
+UKESM1,loaddust_tavg-u-hxy-u,day,m01s50i255,50,255,TDAYMN,DALLTH,UP6
+HadGEM3-GC31,loaddust_tavg-u-hxy-u,day,m01s17i257,17,257,TDAYMN,DALLTH,UP6
+HadGEM3-GC31,loaddust_tavg-u-hxy-u,day,m01s50i255,50,255,TDAYMN,DALLTH,UP6
+UKESM1,loadbc_tavg-u-hxy-u,day,m01s38i525,38,525,TDAYMN,DIAG,UP6
 UKESM1,hus_tavg-p19-hxy-u,day,m01s30i295,30,295,TDAYMN,PLEV19,UP6
 UKESM1,hus_tavg-p19-hxy-u,day,m01s30i304,30,304,TDAYMN,PLEV19,UP6
 HadGEM3-GC31,hus_tavg-p19-hxy-u,day,m01s30i295,30,295,TDAYMN,PLEV19,UP6
