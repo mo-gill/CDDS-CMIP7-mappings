@@ -1,4 +1,14 @@
 Model,Branded variable name,Frequency,STASH,Section,Item,time_profile,domain_profile,usage_profile
+UKESM1,tauu_tavg-u-hxy-u,day,m01s03i460,3,460,TDAYMN,DIAG,UP6
+HadGEM3-GC31,tauu_tavg-u-hxy-u,day,m01s03i460,3,460,TDAYMN,DIAG,UP6
+UKESM1,ta850_tavg-850hPa-hxy-air,day,m01s30i294,30,294,TDAYMN,DP850,UP6
+UKESM1,ta850_tavg-850hPa-hxy-air,day,m01s30i304,30,304,TDAYMN,DP850,UP6
+HadGEM3-GC31,ta850_tavg-850hPa-hxy-air,day,m01s30i294,30,294,TDAYMN,DP850,UP6
+HadGEM3-GC31,ta850_tavg-850hPa-hxy-air,day,m01s30i304,30,304,TDAYMN,DP850,UP6
+UKESM1,ta_tavg-p19-hxy-air,day,m01s30i294,30,294,TDAYMN,PLEV19,UP6
+UKESM1,ta_tavg-p19-hxy-air,day,m01s30i304,30,304,TDAYMN,PLEV19,UP6
+HadGEM3-GC31,ta_tavg-p19-hxy-air,day,m01s30i294,30,294,TDAYMN,PLEV19,UP6
+HadGEM3-GC31,ta_tavg-p19-hxy-air,day,m01s30i304,30,304,TDAYMN,PLEV19,UP6
 UKESM1,snm_tavg-u-hxy-lnd,day,m01s03i317,3,317,TDAYMN,DTILE,UP6
 UKESM1,snm_tavg-u-hxy-lnd,day,m01s08i237,8,237,TDAYMN,DTILE,UP6
 HadGEM3-GC31,snm_tavg-u-hxy-lnd,day,m01s03i317,3,317,TDAYMN,DTILE,UP6

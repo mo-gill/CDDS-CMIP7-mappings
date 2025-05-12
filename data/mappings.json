@@ -1,6 +1,309 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "tauu_tavg-u-hxy-u",
+      "CF standard name": "surface_downward_eastward_stress",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Downward eastward wind stress at the surface",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Surface Downward Eastward Wind Stress",
+      "Modeling realm": "atmos",
+      "Positive": "down",
+      "Processing notes": "",
+      "Units": "Pa",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i460[lbproc=128]",
+      "Expression UKESM1": "m01s03i460[lbproc=128]",
+      "Model units": "Pa"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i460",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,460",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s03i460",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,460",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 791,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.day.tauu_tavg-u-hxy-u (Eday.tauu)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tasmin_tstat-h2m-hxy-crp",
+      "CF standard name": "air_temperature",
+      "CMIP6 Differences": "\"comment\" was \"minimum near-surface (usually, 2 meter) air temperature (add cell_method attribute 'time: min')\"; ; \"cell_methods\" was \"area: mean where crops time: minimum\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where crops time: minimum within days time: mean over days",
+      "Comment": "minimum near-surface (usually, 2 meter) air temperature (add cell_method attribute \"time: min\")",
+      "Dimensions": "longitude latitude time height2m",
+      "Frequency": "day",
+      "Long name": "Daily Minimum Near-Surface Air Temperature over Crop Tile",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean where crops time: minimum CMIP7:area: mean where crops time: minimum within days time: mean over days,",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 790,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.day.tasmin_tstat-h2m-hxy-crp (Eday.tasminCrop)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tasmax_tstat-h2m-hxy-crp",
+      "CF standard name": "air_temperature",
+      "CMIP6 Differences": "\"comment\" was \"maximum near-surface (usually, 2 meter) air temperature (add cell_method attribute 'time: max')\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where crops time: maximum",
+      "Comment": "maximum near-surface (usually, 2 meter) air temperature (add cell_method attribute \"time: max\")",
+      "Dimensions": "longitude latitude time height2m",
+      "Frequency": "day",
+      "Long name": "Daily Maximum Near-Surface Air Temperature over Crop Tile",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time height2m CMIP7:longitude latitude time  height2m,;  ; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean where crops time: maximum CMIP7:area: mean where crops time: maximum, area: mean where sea time: maximum,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 789,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.day.tasmax_tstat-h2m-hxy-crp (Eday.tasmaxCrop)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ta850_tavg-850hPa-hxy-air",
+      "CF standard name": "air_temperature",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: time: mean\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where air",
+      "Comment": "Air temperature at 850hPa",
+      "Dimensions": "longitude latitude time p850",
+      "Frequency": "day",
+      "Long name": "Air Temperature",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:area: time: mean where air,",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s30i294[blev=P850, lbproc=128] / m01s30i304[blev=P850, lbproc=128]",
+      "Expression UKESM1": "m01s30i294[blev=P850, lbproc=128] / m01s30i304[blev=P850, lbproc=128]",
+      "Model units": "K"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s30i294",
+        "domain_profile": "DP850",
+        "model": "UKESM1",
+        "stash_number": "30,294",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i304",
+        "domain_profile": "DP850",
+        "model": "UKESM1",
+        "stash_number": "30,304",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i294",
+        "domain_profile": "DP850",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,294",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i304",
+        "domain_profile": "DP850",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,304",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 788,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.day.ta850_tavg-850hPa-hxy-air (Eday.ta850)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ta_tavg-p19-hxy-air",
+      "CF standard name": "air_temperature",
+      "CMIP6 Differences": "\"comment\" was \"Air Temperature\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "time: mean",
+      "Comment": "The difference is to request greater vertical",
+      "Dimensions": "longitude latitude plev19 time",
+      "Frequency": "day",
+      "Long name": "Air Temperature",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s30i294[blev=PLEV19, lbproc=128] / m01s30i304[blev=PLEV19, lbproc=128]",
+      "Expression UKESM1": "m01s30i294[blev=PLEV19, lbproc=128] / m01s30i304[blev=PLEV19, lbproc=128]",
+      "Model units": "K"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s30i294",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "30,294",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i304",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "30,304",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i294",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,294",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i304",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,304",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 787,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable atmos.day.ta_tavg-p19-hxy-air (Eday.ta)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "t20d_tavg-u-hxy-sea",
+      "CF standard name": "depth_of_isosurface_of_sea_water_potential_temperature",
+      "CMIP6 Differences": "\"comment\" was \"This quantity, sometimes called the 'isotherm depth', is the depth (if it exists) at which the sea water potential temperature equals some specified value. This value should be specified in a scalar coordinate variable. Depth is the vertical distance below the surface. Potential temperature is the temperature a parcel of air or sea water would have if moved adiabatically to sea level pressure.\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Daily 20C isotherm depth",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Depth of 20 degree Celsius Isotherm",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "This quantity, sometimes called the \"isotherm depth\", is the depth (if it exists) at which the sea water potential temperature equals some specified value. This value should be specified in a scalar coordinate variable. Depth is the vertical distance below the surface. Potential temperature is the temperature a parcel of air or sea water would have if moved adiabatically to sea level pressure.",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "t20d",
+      "Expression UKESM1": "t20d",
+      "Model units": "m"
+    },
+    "STASH entries": [],
+    "issue_number": 786,
+    "labels": [
+      "day",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.day.t20d_tavg-u-hxy-sea (Eday.t20d)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sw_tavg-u-hxy-lnd",
+      "CF standard name": "land_surface_liquid_water_amount",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "Total liquid water storage, other than soil, snow or interception storage (i.e. lakes, river channel or depression storage).",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Surface Water Storage",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 785,
+    "labels": [
+      "day",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.day.sw_tavg-u-hxy-lnd (Eday.sw)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "snwc_tavg-u-hxy-lnd",
       "CF standard name": "canopy_snow_amount",
       "CMIP6 Differences": "\"long_name\" was \" snow water equivalent intercepted by the vegetation\"; ; \"comment\" was \"Total water mass of the snowpack (liquid or frozen), averaged over a grid cell and intercepted by the canopy.\";",
