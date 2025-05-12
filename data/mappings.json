@@ -1,6 +1,325 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "icem_tavg-u-hxy-is",
+      "CF standard name": "land_ice_surface_melt_flux",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "Loss of ice mass resulting from surface melting. Computed as the total surface melt water on the land ice portion of the grid cell divided by land ice area in the grid cell.",
+      "Dimensions": "xant yant time",
+      "Frequency": "mon",
+      "Long name": "Surface Ice Melt Flux",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1116,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.icem_tavg-u-hxy-is (ImonAnt.icem)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hfss_tavg-u-hxy-is",
+      "CF standard name": "surface_upward_sensible_heat_flux",
+      "CMIP6 Differences": "\"modeling_realm\" was \"landIce land\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "The surface sensible heat flux, also called turbulent heat flux, is the exchange of heat between the surface and the air by motion of air.",
+      "Dimensions": "xant yant time",
+      "Frequency": "mon",
+      "Long name": "Surface Upward Sensible Heat Flux",
+      "Modeling realm": "landIce",
+      "Positive": "up",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:land, landIce CMIP7:land, ocean,",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1115,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.hfss_tavg-u-hxy-is (ImonAnt.hfss)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hfls_tavg-u-hxy-is",
+      "CF standard name": "surface_upward_latent_heat_flux",
+      "CMIP6 Differences": "\"comment\" was \"The surface called 'surface' means the lower boundary of the atmosphere. 'Upward' indicates a vector component which is positive when directed upward (negative downward). The surface latent heat flux is the exchange of heat between the surface and the air on account of evaporation (including sublimation). In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.\"; ; \"modeling_realm\" was \"landIce land\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "The surface called \"surface\" means the lower boundary of the atmosphere. \"Upward\" indicates a vector component which is positive when directed upward (negative downward). The surface latent heat flux is the exchange of heat between the surface and the air on account of evaporation (including sublimation). In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics.",
+      "Dimensions": "xant yant time",
+      "Frequency": "mon",
+      "Long name": "Surface Upward Latent Heat Flux",
+      "Modeling realm": "landIce",
+      "Positive": "up",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:land, landIce CMIP7:land, ocean,",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1114,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.hfls_tavg-u-hxy-is (ImonAnt.hfls)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "acabf_tavg-u-hxy-is",
+      "CF standard name": "land_ice_surface_specific_mass_balance_flux",
+      "CMIP6 Differences": "\"comment\" was \"Specific mass balance means the net rate at which ice is added per unit area at the land ice surface. Computed as the total surface mass balance on the land ice portion of the grid cell divided by land ice area in the grid cell. A negative value means loss of ice\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "quantity averaged over ice sheet (grounded ice sheet and floating ice shelf) only. Needed to analyse the impact of downscaling methods, and as forcing for ISM",
+      "Dimensions": "xant yant time",
+      "Frequency": "mon",
+      "Long name": "Surface Mass Balance Flux",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1113,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.acabf_tavg-u-hxy-is (ImonAnt.acabf)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "topg_tavg-u-hxy-gis",
+      "CF standard name": "bedrock_altitude",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: mean where grounded_ice_sheet",
+      "Comment": "The bedrock topography beneath the land ice",
+      "Dimensions": "xgre ygre",
+      "Frequency": "fx",
+      "Long name": "Bedrock Altitude",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1112,
+    "labels": [
+      "fx",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.fx.topg_tavg-u-hxy-gis (IfxGre.topg)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "lithk_ti-u-hxy-is",
+      "CF standard name": "land_ice_thickness",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: mean where ice_sheet",
+      "Comment": "The thickness of the ice sheet",
+      "Dimensions": "xgre ygre",
+      "Frequency": "fx",
+      "Long name": "Ice Sheet Thickness",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1111,
+    "labels": [
+      "fx",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.fx.lithk_ti-u-hxy-is (IfxGre.lithk)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hfgeoubed_ti-u-hxy-gis",
+      "CF standard name": "upward_geothermal_heat_flux_at_ground_level_in_land_ice",
+      "CMIP6 Differences": "\"comment\" was \"Upward geothermal heat flux per unit area beneath land ice\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: mean where grounded_ice_sheet",
+      "Comment": "",
+      "Dimensions": "xgre ygre",
+      "Frequency": "fx",
+      "Long name": "Geothermal Heat Flux Beneath Land Ice",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1110,
+    "labels": [
+      "fx",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.fx.hfgeoubed_ti-u-hxy-gis (IfxGre.hfgeoubed)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "areacellg_ti-u-hxy-u",
+      "CF standard name": "cell_area",
+      "CMIP6 Differences": "\"comment\" was \"Area of the target grid (not the interpolated area of the source grid).\";",
+      "Cell measures": "",
+      "Cell methods": "area: sum",
+      "Comment": "Cell areas any grid used to report ice sheet variables. These cell areas should be defined to enable exact calculation of area integrals (e.g., of vertical fluxes of energy at the surface and top of the atmosphere)",
+      "Dimensions": "longitude latitude",
+      "Frequency": "fx",
+      "Long name": "Grid-Cell Area for Ice Sheet Variables",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1109,
+    "labels": [
+      "fx",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.fx.areacellg_ti-u-hxy-u (IfxGre.areacellg)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "topg_tavg-u-hxy-gis",
+      "CF standard name": "bedrock_altitude",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: mean where grounded_ice_sheet",
+      "Comment": "The bedrock topography beneath the land ice",
+      "Dimensions": "xant yant",
+      "Frequency": "fx",
+      "Long name": "Bedrock Altitude",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1108,
+    "labels": [
+      "fx",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.fx.topg_tavg-u-hxy-gis (IfxAnt.topg)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "lithk_ti-u-hxy-is",
+      "CF standard name": "land_ice_thickness",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: mean where ice_sheet",
+      "Comment": "The thickness of the ice sheet",
+      "Dimensions": "xant yant",
+      "Frequency": "fx",
+      "Long name": "Ice Sheet Thickness",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1107,
+    "labels": [
+      "fx",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.fx.lithk_ti-u-hxy-is (IfxAnt.lithk)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hfgeoubed_ti-u-hxy-gis",
+      "CF standard name": "upward_geothermal_heat_flux_at_ground_level_in_land_ice",
+      "CMIP6 Differences": "\"comment\" was \"Upward geothermal heat flux per unit area beneath land ice\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: mean where grounded_ice_sheet",
+      "Comment": "",
+      "Dimensions": "xant yant",
+      "Frequency": "fx",
+      "Long name": "Geothermal Heat Flux Beneath Land Ice",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1106,
+    "labels": [
+      "fx",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.fx.hfgeoubed_ti-u-hxy-gis (IfxAnt.hfgeoubed)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "areacellg_ti-u-hxy-u",
       "CF standard name": "cell_area",
       "CMIP6 Differences": "\"comment\" was \"Area of the target grid (not the interpolated area of the source grid).\";",
