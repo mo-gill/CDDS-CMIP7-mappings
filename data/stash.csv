@@ -1,4 +1,26 @@
 Model,Branded variable name,Frequency,STASH,Section,Item,time_profile,domain_profile,usage_profile
+UKESM1,clwvic_tavg-u-hxy-u,day,m01s02i395,2,395,TDAYMN,DIAG,UP6
+UKESM1,clwvic_tavg-u-hxy-u,day,m01s02i396,2,396,TDAYMN,DIAG,UP6
+HadGEM3-GC31,clwvic_tavg-u-hxy-u,day,m01s02i395,2,395,TDAYMN,DIAG,UP6
+HadGEM3-GC31,clwvic_tavg-u-hxy-u,day,m01s02i396,2,396,TDAYMN,DIAG,UP6
+UKESM1,clivic_tavg-u-hxy-u,day,m01s02i396,2,396,TDAYMN,DIAG,UP6
+HadGEM3-GC31,clivic_tavg-u-hxy-u,day,m01s02i396,2,396,TDAYMN,DIAG,UP6
+UKESM1,cldnvi_tavg-u-hxy-u,day,m01s01i280,1,280,TDAYMN,DIAG,UP6
+UKESM1,cldnvi_tavg-u-hxy-u,day,m01s01i281,1,281,TDAYMN,DIAG,UP6
+HadGEM3-GC31,cldnvi_tavg-u-hxy-u,day,m01s01i280,1,280,TDAYMN,DIAG,UP6
+HadGEM3-GC31,cldnvi_tavg-u-hxy-u,day,m01s01i281,1,281,TDAYMN,DIAG,UP6
+UKESM1,ccldncl_tavg-u-hxy-ccl,day,m01s00i407,0,407,TDAYMN,DALLRHP1,UP6
+UKESM1,ccldncl_tavg-u-hxy-ccl,day,m01s00i409,0,409,TDAYMN,DIAG,UP6
+UKESM1,ccldncl_tavg-u-hxy-ccl,day,m01s01i298,1,298,TDAYMN,DIAG,UP6
+UKESM1,ccldncl_tavg-u-hxy-ccl,day,m01s01i299,1,299,TDAYMN,DIAG,UP6
+UKESM1,ccldncl_tavg-u-hxy-ccl,day,m01s02i318,2,318,TDAYMN,DALLTH,UP6
+UKESM1,ccldncl_tavg-u-hxy-ccl,day,m01s02i319,2,319,TDAYMN,DALLTH,UP6
+HadGEM3-GC31,ccldncl_tavg-u-hxy-ccl,day,m01s00i407,0,407,TDAYMN,DALLRHP1,UP6
+HadGEM3-GC31,ccldncl_tavg-u-hxy-ccl,day,m01s00i409,0,409,TDAYMN,DIAG,UP6
+HadGEM3-GC31,ccldncl_tavg-u-hxy-ccl,day,m01s01i298,1,298,TDAYMN,DIAG,UP6
+HadGEM3-GC31,ccldncl_tavg-u-hxy-ccl,day,m01s01i299,1,299,TDAYMN,DIAG,UP6
+HadGEM3-GC31,ccldncl_tavg-u-hxy-ccl,day,m01s02i318,2,318,TDAYMN,DALLTH,UP6
+HadGEM3-GC31,ccldncl_tavg-u-hxy-ccl,day,m01s02i319,2,319,TDAYMN,DALLTH,UP6
 UKESM1,hus_tpt-l-hxy-u,3hr,m01s00i010,0,10,T3HR,DALLTH,UP8
 UKESM1,hus_tpt-l-hxy-u,3hr,m01s00i033,0,33,T3HR,DIAG,UP8
 HadGEM3-GC31,hus_tpt-l-hxy-u,3hr,m01s00i010,0,10,T3HR,DALLTH,UP8

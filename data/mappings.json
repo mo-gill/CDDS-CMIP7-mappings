@@ -1,6 +1,516 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "clwvic_tavg-u-hxy-u",
+      "CF standard name": "atmosphere_mass_content_of_convective_cloud_condensed_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "calculate mass of convective condensed (liquid + ice) water in the column divided by the area of the column (not just the area of the cloudy portion of the column). This includes precipitating hydrometeors ONLY if the precipitating hydrometeors affect the calculation of radiative transfer in model.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Convective Condensed Water Path",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s02i395[lbproc=128] + m01s02i396[lbproc=128]",
+      "Expression UKESM1": "m01s02i395[lbproc=128] + m01s02i396[lbproc=128]",
+      "Model units": "kg m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s02i395",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "2,395",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s02i396",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "2,396",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s02i395",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,395",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s02i396",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,396",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 712,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.day.clwvic_tavg-u-hxy-u (Eday.clwvic)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "clt_tavg-u-hxy-lnd",
+      "CF standard name": "cloud_area_fraction",
+      "CMIP6 Differences": "\"comment\" was \"Total cloud area fraction (reported as a percentage) for the whole atmospheric column, as seen from the surface or the top of the atmosphere. Includes both large-scale and convective cloud.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "Total cloud fraction",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Total Cloud Cover Percentage",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 711,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.day.clt_tavg-u-hxy-lnd (Eday.clt)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "clivic_tavg-u-hxy-u",
+      "CF standard name": "atmosphere_mass_content_of_convective_cloud_ice",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "calculate mass of convective ice water in the column divided by the area of the column (not just the area of the cloudy portion of the column). This includes precipitating frozen hydrometeors ONLY if the precipitating hydrometeors affect the calculation of radiative transfer in model.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Convective Ice Water Path",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s02i396[lbproc=128]",
+      "Expression UKESM1": "m01s02i396[lbproc=128]",
+      "Model units": "kg m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s02i396",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "2,396",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s02i396",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,396",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 710,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.day.clivic_tavg-u-hxy-u (Eday.clivic)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "cldnvi_tavg-u-hxy-u",
+      "CF standard name": "atmosphere_number_content_of_cloud_droplets",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Droplets are liquid only.  Values are weighted by liquid cloud fraction in each layer when vertically integrating, and for monthly means the samples are weighted by total liquid cloud fraction (as seen from TOA).",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Column Integrated Cloud Droplet Number",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s01i280[lbproc=128] / m01s01i281[lbproc=128]",
+      "Expression UKESM1": "m01s01i280[lbproc=128] / m01s01i281[lbproc=128]",
+      "Model units": "m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s01i280",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "1,280",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s01i281",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "1,281",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s01i280",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "1,280",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s01i281",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "1,281",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 709,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.day.cldnvi_tavg-u-hxy-u (Eday.cldnvi)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "cldnci_tavg-u-hxy-cl",
+      "CF standard name": "number_concentration_of_ice_crystals_in_air_at_ice_cloud_top",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Concentration 'as seen from space' over ice-cloud portion of grid cell.  This is the value from uppermost model layer with ice cloud or, if available, it is the sum over all ice cloud tops, no matter where they occur, as long as they are seen from the top of the atmosphere. Weight by total ice cloud top fraction (as seen from TOA) of each time sample when computing monthly mean.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Ice Crystal Number Concentration of Cloud Tops",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 708,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.day.cldnci_tavg-u-hxy-cl (Eday.cldnci)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ccldncl_tavg-u-hxy-ccl",
+      "CF standard name": "number_concentration_of_convective_cloud_liquid_water_particles_at_convective_liquid_water_cloud_top",
+      "CMIP6 Differences": "\"standard_name\" was \"number_concentration_of_convective_cloud_liquid_water_particle_at_convective_liquid_water_cloud_top\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Droplets are liquid only.  Report concentration 'as seen from space' over convective liquid cloudy portion of grid cell.  This is the value from uppermost model layer with liquid cloud or, if available, it is better to sum over all liquid cloud tops, no matter where they occur, as long as they are seen from the top of the atmosphere. Weight by total liquid cloud top fraction of  (as seen from TOA) each time sample when computing monthly mean.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Cloud Droplet Number Concentration of Convective Cloud Tops",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "mask_using_cube(m01s01i298[lbproc=128] / m01s01i299[lbproc=128], m01s02i395[lbproc=128] + m01s02i396[lbproc=128])",
+      "Expression UKESM1": "mask_using_cube(m01s01i298[lbproc=128] / m01s01i299[lbproc=128], m01s02i395[lbproc=128] + m01s02i396[lbproc=128])",
+      "Model units": "cm-3"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s00i407",
+        "domain_profile": "DALLRHP1",
+        "model": "UKESM1",
+        "stash_number": "407",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s00i409",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "409",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s01i298",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "1,298",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s01i299",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "1,299",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s02i318",
+        "domain_profile": "DALLTH",
+        "model": "UKESM1",
+        "stash_number": "2,318",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s02i319",
+        "domain_profile": "DALLTH",
+        "model": "UKESM1",
+        "stash_number": "2,319",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s00i407",
+        "domain_profile": "DALLRHP1",
+        "model": "HadGEM3-GC31",
+        "stash_number": "407",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s00i409",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "409",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s01i298",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "1,298",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s01i299",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "1,299",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s02i318",
+        "domain_profile": "DALLTH",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,318",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s02i319",
+        "domain_profile": "DALLTH",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,319",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 707,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.day.ccldncl_tavg-u-hxy-ccl (Eday.ccldncl)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "wap_tpt-u-hxy-air",
+      "CF standard name": "lagrangian_tendency_of_air_pressure",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where air time: point",
+      "Comment": "Omega (=dp/dt) on 6 pressure levels in the lower troposphere",
+      "Dimensions": "longitude latitude plev6 time1",
+      "Frequency": "3hr",
+      "Long name": "Omega (=dp/dt)",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "950 hPa to 700 hPa with an interval of 50h Pa for vertical layers (6 vertical layers)",
+      "Units": "Pa s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 706,
+    "labels": [
+      "3hr",
+      "atmos"
+    ],
+    "title": "Variable atmos.3hr.wap_tpt-u-hxy-air (E3hrPt.wap6)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "va_tpt-u-hxy-air",
+      "CF standard name": "northward_wind",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where air time: point",
+      "Comment": "Meridional wind (positive in a northward direction) on 6 pressure levels in the lower troposphere",
+      "Dimensions": "longitude latitude plev6 time1",
+      "Frequency": "3hr",
+      "Long name": "Northward Wind",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "950 hPa to 700 hPa with an interval of 50h Pa for vertical layers (6 vertical layers)",
+      "Units": "m s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 705,
+    "labels": [
+      "3hr",
+      "atmos"
+    ],
+    "title": "Variable atmos.3hr.va_tpt-u-hxy-air (E3hrPt.va6)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ua_tpt-u-hxy-air",
+      "CF standard name": "eastward_wind",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where air time: point",
+      "Comment": "Zonal wind (positive in a eastward direction) on 6 pressure levels in the lower troposphere",
+      "Dimensions": "longitude latitude plev6 time1",
+      "Frequency": "3hr",
+      "Long name": "Eastward wind",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "950 hPa to 700 hPa with an interval of 50h Pa for vertical layers (6 vertical layers)",
+      "Units": "m s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 704,
+    "labels": [
+      "3hr",
+      "atmos"
+    ],
+    "title": "Variable atmos.3hr.ua_tpt-u-hxy-air (E3hrPt.ua6)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ta6_tpt-u-hxy-air",
+      "CF standard name": "air_temperature",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where air time: point",
+      "Comment": "Air temperature on 6 pressure levels in the lower troposphere",
+      "Dimensions": "longitude latitude plev6 time1",
+      "Frequency": "3hr",
+      "Long name": "Air temperature",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "950 hPa to 700 hPa with an interval of 50h Pa for vertical layers (6 vertical layers)",
+      "Units": "K",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 703,
+    "labels": [
+      "3hr",
+      "atmos"
+    ],
+    "title": "Variable atmos.3hr.ta6_tpt-u-hxy-air (E3hrPt.ta6)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "so2_tavg-u-hm-u",
+      "CF standard name": "mole_fraction_of_sulfur_dioxide_in_air",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "::MODEL",
+      "Cell methods": "area: point time: point",
+      "Comment": "This variable represents the instantaneous surface so2 volume mixing ration at CF sites, sampled every 3 hours",
+      "Dimensions": "site time1",
+      "Frequency": "3hr",
+      "Long name": "Surface SO2 volume mixing ratio at CF sites",
+      "Modeling realm": "aerosol",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol mol-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 702,
+    "labels": [
+      "3hr",
+      "aerosol"
+    ],
+    "title": "Variable aerosol.3hr.so2_tavg-u-hm-u (E3hrPt.so2)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "mmrss_tpt-u-hm-u",
       "CF standard name": "mass_fraction_of_sea_salt_dry_aerosol_particles_in_air",
       "CMIP6 Differences": "Not present",
