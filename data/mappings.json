@@ -1,6 +1,431 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "sftflf_tavg-u-hxy-u",
+      "CF standard name": "floating_ice_shelf_area_fraction",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Percentage of grid cell covered by floating ice shelf, the component of the ice sheet that is flowing over sea water",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Floating Ice Shelf Area Percentage",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1252,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.sftflf_tavg-u-hxy-u (LImon.sftflf)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sbl_tavg-u-hxy-is",
+      "CF standard name": "tendency_of_atmosphere_mass_content_of_water_vapor_due_to_sublimation_of_surface_snow_and_ice",
+      "CMIP6 Differences": "\"comment\" was \"The snow and ice sublimation flux is the loss of snow and ice mass per unit area from the surface resulting from their direct conversion to water vapor that enters the atmosphere.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "quantity averaged over ice_sheet (meaning grounded ice sheet and floating ice shelf) only, to avoid contamination from other surfaces (eg: permafrost)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Ice Sheet Surface Snow and Ice Sublimation Flux",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "land_class_mean(m01s03i331[lbproc=128], m01s03i317[lbproc=128], land_class='iceElev')",
+      "Expression UKESM1": "land_class_mean(m01s03i331[lbproc=128], m01s03i317[lbproc=128], land_class='iceElev')",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i331",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "3,331",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i331",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,331",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1251,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable landIce.mon.sbl_tavg-u-hxy-is (LImon.sblIs)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sbl_tavg-u-hxy-lnd",
+      "CF standard name": "tendency_of_atmosphere_mass_content_of_water_vapor_due_to_sublimation_of_surface_snow_and_ice",
+      "CMIP6 Differences": "\"comment\" was \"The snow and ice sublimation flux is the loss of snow and ice mass per unit area from the surface resulting from their direct conversion to water vapor that enters the atmosphere.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "The snow and ice sublimation flux is the loss of snow and ice mass resulting from their conversion to water vapor.  Computed as the total sublimation on the land portion of the grid cell divided by the land area in the grid cell; reported as missing for snow-free land regions; reported as missing where the land fraction is 0.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Snow and Ice Sublimation Flux",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "land_class_mean(m01s03i331[lbproc=128], m01s03i317[lbproc=128], land_class='all')",
+      "Expression UKESM1": "land_class_mean(m01s03i331[lbproc=128], m01s03i317[lbproc=128], land_class='all')",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i331",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "3,331",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i395",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,395",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i331",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,331",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i395",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,395",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1250,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable landIce.mon.sbl_tavg-u-hxy-lnd (LImon.sbl)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rsus_tavg-u-hxy-is",
+      "CF standard name": "surface_upwelling_shortwave_flux_in_air",
+      "CMIP6 Differences": "\"comment\" was \"The surface called 'surface' means the lower boundary of the atmosphere. 'shortwave' means shortwave radiation. Upwelling radiation is radiation from below. It does not mean 'net upward'. When thought of as being incident on a surface, a radiative flux is sometimes called 'irradiance'. In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called 'vector irradiance'. In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "quantity averaged over ice_sheet (meaning grounded ice sheet and floating ice shelf) only, to avoid contamination from other surfaces (eg: permafrost)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Ice Sheet Surface Upwelling Shortwave Radiation",
+      "Modeling realm": "landIce",
+      "Positive": "up",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1249,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.rsus_tavg-u-hxy-is (LImon.rsusIs)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rsds_tavg-u-hxy-is",
+      "CF standard name": "surface_downwelling_shortwave_flux_in_air",
+      "CMIP6 Differences": "\"comment\" was \"Surface solar irradiance for UV calculations\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "quantity averaged over ice_sheet (meaning grounded ice sheet and floating ice shelf) only, to avoid contamination from other surfaces (eg: permafrost)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Ice Sheet Surface Downwelling Shortwave Radiation",
+      "Modeling realm": "landIce",
+      "Positive": "down",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1248,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.rsds_tavg-u-hxy-is (LImon.rsdsIs)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rlus_tavg-u-hxy-is",
+      "CF standard name": "surface_upwelling_longwave_flux_in_air",
+      "CMIP6 Differences": "\"comment\" was \"The surface called 'surface' means the lower boundary of the atmosphere. 'longwave' means longwave radiation. Upwelling radiation is radiation from below. It does not mean 'net upward'. When thought of as being incident on a surface, a radiative flux is sometimes called 'irradiance'. In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called 'vector irradiance'. In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "quantity averaged over ice_sheet (meaning grounded ice sheet and floating ice shelf) only, to avoid contamination from other surfaces (eg: permafrost)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Ice Sheet Surface Upwelling Longwave Radiation",
+      "Modeling realm": "landIce",
+      "Positive": "up",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "land_class_mean(m01s03i383[lbproc=128], m01s03i317[lbproc=128], land_class='iceElev')",
+      "Expression UKESM1": "land_class_mean(m01s03i383[lbproc=128], m01s03i317[lbproc=128], land_class='iceElev')",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i383",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "3,383",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i383",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,383",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1247,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable landIce.mon.rlus_tavg-u-hxy-is (LImon.rlusIs)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rlds_tavg-u-hxy-is",
+      "CF standard name": "surface_downwelling_longwave_flux_in_air",
+      "CMIP6 Differences": "\"comment\" was \"The surface called 'surface' means the lower boundary of the atmosphere. 'longwave' means longwave radiation. Downwelling radiation is radiation from above. It does not mean 'net downward'. When thought of as being incident on a surface, a radiative flux is sometimes called 'irradiance'. In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called 'vector irradiance'. In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "quantity averaged over ice_sheet (meaning grounded ice sheet and floating ice shelf) only, to avoid contamination from other surfaces (eg: permafrost)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Ice Sheet Surface Downwelling Longwave Radiation",
+      "Modeling realm": "landIce",
+      "Positive": "down",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "land_class_mean(m01s03i384[lbproc=128], m01s03i317[lbproc=128], land_class='iceElev')",
+      "Expression UKESM1": "land_class_mean(m01s03i384[lbproc=128], m01s03i317[lbproc=128], land_class='iceElev')",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i384",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "3,384",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i384",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,384",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1246,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable landIce.mon.rlds_tavg-u-hxy-is (LImon.rldsIs)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "prsnIs_tavg-u-hxy-is",
+      "CF standard name": "snowfall_flux",
+      "CMIP6 Differences": "\"comment\" was \"at surface; includes precipitation of all forms of water in the solid phase\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "quantity averaged over ice_sheet (meaning grounded ice sheet and floating ice shelf) only, to avoid contamination from other surfaces (eg: permafrost)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Ice Sheet Snowfall Flux",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1245,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.prsnIs_tavg-u-hxy-is (LImon.prsnIs)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "prra_tavg-u-hxy-is",
+      "CF standard name": "rainfall_flux",
+      "CMIP6 Differences": "\"comment\" was \"Rainfall rate over the ice sheet\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "quantity averaged over ice_sheet (meaning grounded ice sheet and floating ice shelf) only, to avoid contamination from other surfaces (eg: permafrost)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Ice Sheet Rainfall Rate",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1244,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.prra_tavg-u-hxy-is (LImon.prraIs)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "pflw_tavg-u-hxy-lnd",
       "CF standard name": "liquid_water_content_of_permafrost_layer",
       "CMIP6 Differences": "\"comment\" was \"*where land over land*, i.e., this is the total mass of liquid water contained within the permafrost layer within the land portion of a grid cell divided by the area of the land portion of the cell.\"; ; \"modeling_realm\" was \"landIce land\";",

@@ -1,4 +1,22 @@
 Model,Branded variable name,Frequency,STASH,Section,Item,time_profile,domain_profile,usage_profile
+UKESM1,sbl_tavg-u-hxy-is,mon,m01s03i317,3,317,TMONMN,DTILE,UP5
+UKESM1,sbl_tavg-u-hxy-is,mon,m01s03i331,3,331,TMONMN,DTILE,UP5
+HadGEM3-GC31,sbl_tavg-u-hxy-is,mon,m01s03i317,3,317,TMONMN,DTILE,UP5
+HadGEM3-GC31,sbl_tavg-u-hxy-is,mon,m01s03i331,3,331,TMONMN,DTILE,UP5
+UKESM1,sbl_tavg-u-hxy-lnd,mon,m01s03i317,3,317,TMONMN,DTILE,UP5
+UKESM1,sbl_tavg-u-hxy-lnd,mon,m01s03i331,3,331,TMONMN,DTILE,UP5
+UKESM1,sbl_tavg-u-hxy-lnd,mon,m01s03i395,3,395,TMONMN,DIAG,UP5
+HadGEM3-GC31,sbl_tavg-u-hxy-lnd,mon,m01s03i317,3,317,TMONMN,DTILE,UP5
+HadGEM3-GC31,sbl_tavg-u-hxy-lnd,mon,m01s03i331,3,331,TMONMN,DTILE,UP5
+HadGEM3-GC31,sbl_tavg-u-hxy-lnd,mon,m01s03i395,3,395,TMONMN,DIAG,UP5
+UKESM1,rlus_tavg-u-hxy-is,mon,m01s03i317,3,317,TMONMN,DTILE,UP5
+UKESM1,rlus_tavg-u-hxy-is,mon,m01s03i383,3,383,TMONMN,DTILE,UP5
+HadGEM3-GC31,rlus_tavg-u-hxy-is,mon,m01s03i317,3,317,TMONMN,DTILE,UP5
+HadGEM3-GC31,rlus_tavg-u-hxy-is,mon,m01s03i383,3,383,TMONMN,DTILE,UP5
+UKESM1,rlds_tavg-u-hxy-is,mon,m01s03i317,3,317,TMONMN,DTILE,UP5
+UKESM1,rlds_tavg-u-hxy-is,mon,m01s03i384,3,384,TMONMN,DTILE,UP5
+HadGEM3-GC31,rlds_tavg-u-hxy-is,mon,m01s03i317,3,317,TMONMN,DTILE,UP5
+HadGEM3-GC31,rlds_tavg-u-hxy-is,mon,m01s03i384,3,384,TMONMN,DTILE,UP5
 UKESM1,mrro_tavg-u-hxy-is,mon,m01s03i317,3,317,TMONMN,DTILE,UP5
 UKESM1,mrro_tavg-u-hxy-is,mon,m01s08i583,8,583,TMONMN,DTILE,UP5
 HadGEM3-GC31,mrro_tavg-u-hxy-is,mon,m01s03i317,3,317,TMONMN,DTILE,UP5
