@@ -1,6 +1,298 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "bldep_tavg-u-hxy-u",
+      "CF standard name": "atmosphere_boundary_layer_thickness",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Boundary Layer depth",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "1hr",
+      "Long name": "Boundary layer depth",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 654,
+    "labels": [
+      "1hr",
+      "atmos"
+    ],
+    "title": "Variable atmos.1hr.bldep_tavg-u-hxy-u (E1hr.bldep)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "zg_tpt-l-hxys-u",
+      "CF standard name": "geopotential_height",
+      "CMIP6 Differences": "\"frequency\" was \"subhrPt\";",
+      "Cell measures": "",
+      "Cell methods": "area: point time: point",
+      "Comment": "Geopotential is the sum of the specific gravitational potential energy relative to the geoid and the specific centripetal potential energy. Geopotential height is the geopotential divided by the standard acceleration due to gravity. It is numerically similar to the altitude (or geometric height) and not to the quantity with standard name height, which is relative to the surface.",
+      "Dimensions": "alevel site time1",
+      "Frequency": "subhr",
+      "Long name": "Geopotential Height",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:subhrPt CMIP7:subhr,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s16i201[lbproc=0]",
+      "Expression UKESM1": "m01s16i201[lbproc=0]",
+      "Model units": "m"
+    },
+    "STASH entries": [],
+    "issue_number": 653,
+    "labels": [
+      "subhr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.subhr.zg_tpt-l-hxys-u (CFsubhr.zg)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "wap_tpt-l-hxys-u",
+      "CF standard name": "lagrangian_tendency_of_air_pressure",
+      "CMIP6 Differences": "\"frequency\" was \"subhrPt\"; ; \"comment\" was \"Omega (vertical velocity in pressure coordinates, positive downwards)\";",
+      "Cell measures": "",
+      "Cell methods": "area: point time: point",
+      "Comment": "commonly referred to as \"omega\", this represents the vertical component of velocity in pressure coordinates (positive down)",
+      "Dimensions": "alevel site time1",
+      "Frequency": "subhr",
+      "Long name": "Omega (=dp/dt)",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:subhrPt CMIP7:subhr,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "Pa s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s30i008[lbproc=0]",
+      "Expression UKESM1": "m01s30i008[lbproc=0]",
+      "Model units": "Pa s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 652,
+    "labels": [
+      "subhr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.subhr.wap_tpt-l-hxys-u (CFsubhr.wap)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "vas_tpt-h10m-hxys-u",
+      "CF standard name": "northward_wind",
+      "CMIP6 Differences": "\"frequency\" was \"subhrPt\";",
+      "Cell measures": "",
+      "Cell methods": "area: point time: point",
+      "Comment": "Northward component of the near surface wind",
+      "Dimensions": "site time1 height10m",
+      "Frequency": "subhr",
+      "Long name": "Northward Near-Surface Wind",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "This table includes the 2-D variables listed in the \"Amon\" spreadsheet, omitting, however, the daily maximum and minimum temperatures.  All variables should be reported as synoptic fields, not daily means.; CHANGE SINCE CMIP6 in Dimensions - CMIP6:site time1 height10m CMIP7:site time1  height10m, Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i210[lbproc=0]",
+      "Expression UKESM1": "m01s03i210[lbproc=0]",
+      "Model units": "m s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 651,
+    "labels": [
+      "subhr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.subhr.vas_tpt-h10m-hxys-u (CFsubhr.vas)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "va_tpt-l-hxys-u",
+      "CF standard name": "northward_wind",
+      "CMIP6 Differences": "\"frequency\" was \"subhrPt\";",
+      "Cell measures": "",
+      "Cell methods": "area: point time: point",
+      "Comment": "Meridional wind (positive in a northward direction).",
+      "Dimensions": "alevel site time1",
+      "Frequency": "subhr",
+      "Long name": "Northward Wind",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:subhrPt CMIP7:subhr,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s00i003[lbproc=0]",
+      "Expression UKESM1": "m01s00i003[lbproc=0]",
+      "Model units": "m s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 650,
+    "labels": [
+      "subhr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.subhr.va_tpt-l-hxys-u (CFsubhr.va)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "uas_tpt-h10m-hxys-u",
+      "CF standard name": "eastward_wind",
+      "CMIP6 Differences": "\"frequency\" was \"subhrPt\";",
+      "Cell measures": "",
+      "Cell methods": "area: point time: point",
+      "Comment": "Eastward component of the near-surface (usually, 10 meters)  wind",
+      "Dimensions": "site time1 height10m",
+      "Frequency": "subhr",
+      "Long name": "Eastward Near-Surface Wind",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "This table includes the 2-D variables listed in the \"Amon\" spreadsheet, omitting, however, the daily maximum and minimum temperatures.  All variables should be reported as synoptic fields, not daily means.; CHANGE SINCE CMIP6 in Dimensions - CMIP6:site time1 height10m CMIP7:site time1  height10m, Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i209[lbproc=0]",
+      "Expression UKESM1": "m01s03i209[lbproc=0]",
+      "Model units": "m s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 649,
+    "labels": [
+      "subhr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.subhr.uas_tpt-h10m-hxys-u (CFsubhr.uas)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ua_tpt-l-hxys-u",
+      "CF standard name": "eastward_wind",
+      "CMIP6 Differences": "\"frequency\" was \"subhrPt\";",
+      "Cell measures": "",
+      "Cell methods": "area: point time: point",
+      "Comment": "Zonal wind (positive in a eastward direction).",
+      "Dimensions": "alevel site time1",
+      "Frequency": "subhr",
+      "Long name": "Eastward Wind",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:subhrPt CMIP7:subhr,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s00i002[lbproc=0]",
+      "Expression UKESM1": "m01s00i002[lbproc=0]",
+      "Model units": "m s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 648,
+    "labels": [
+      "subhr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.subhr.ua_tpt-l-hxys-u (CFsubhr.ua)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ts_tpt-u-hxys-u",
+      "CF standard name": "surface_temperature",
+      "CMIP6 Differences": "\"frequency\" was \"subhrPt\"; ; \"comment\" was \"Temperature of the lower boundary of the atmosphere\";",
+      "Cell measures": "",
+      "Cell methods": "area: point time: point",
+      "Comment": "Surface temperature (skin for open ocean)",
+      "Dimensions": "site time1",
+      "Frequency": "subhr",
+      "Long name": "Surface Temperature",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "This table includes the 2-D variables listed in the \"Amon\" spreadsheet, omitting, however, the daily maximum and minimum temperatures.  All variables should be reported as synoptic fields, not daily means.; CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:subhrPt CMIP7:subhr,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s00i024[lbproc=0]",
+      "Expression UKESM1": "m01s00i024[lbproc=0]",
+      "Model units": "K"
+    },
+    "STASH entries": [],
+    "issue_number": 647,
+    "labels": [
+      "subhr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.subhr.ts_tpt-u-hxys-u (CFsubhr.ts)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tntscpbl_tpt-l-hxys-u",
+      "CF standard name": "tendency_of_air_temperature_due_to_stratiform_cloud_and_precipitation_and_boundary_layer_mixing",
+      "CMIP6 Differences": "\"frequency\" was \"subhrPt\"; ; \"comment\" was \"Tendency of Air Temperature Due to Stratiform Cloud and Precipitation and Boundary Layer Mixing (to be specified only in  models which do not separate cloud, precipitation and boundary layer terms.  Includes all boundary layer terms including diffusive ones.)\";",
+      "Cell measures": "",
+      "Cell methods": "area: point time: point",
+      "Comment": "To be specified only in  models which do not separate cloud, precipitation and boundary layer terms.  Includes all boundary layer terms including diffusive ones.",
+      "Dimensions": "alevel site time1",
+      "Frequency": "subhr",
+      "Long name": "Tendency of Air Temperature Due to Stratiform Cloud and Precipitation and Boundary Layer Mixing",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:subhrPt CMIP7:subhr,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "K s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "(m01s03i181[lbproc=0] + m01s04i141[lbproc=0] + m01s04i181[lbproc=0] + m01s16i161[lbproc=0] + m01s16i181[lbproc=0] + m01s01i181[lbproc=0] - m01s01i161[lbproc=0] + m01s02i181[lbproc=0] - m01s02i161[lbproc=0] + m01s05i181[lbproc=0] - m01s05i161[lbproc=0]) / ATMOS_TIMESTEP",
+      "Expression UKESM1": "(m01s03i181[lbproc=0] + m01s04i141[lbproc=0] + m01s04i181[lbproc=0] + m01s16i161[lbproc=0] + m01s16i181[lbproc=0] + m01s01i181[lbproc=0] - m01s01i161[lbproc=0] + m01s02i181[lbproc=0] - m01s02i161[lbproc=0] + m01s05i181[lbproc=0] - m01s05i161[lbproc=0]) / ATMOS_TIMESTEP",
+      "Model units": "K s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 646,
+    "labels": [
+      "subhr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.subhr.tntscpbl_tpt-l-hxys-u (CFsubhr.tntscpbl)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "tntr_tpt-l-hxys-u",
       "CF standard name": "tendency_of_air_temperature_due_to_radiative_heating",
       "CMIP6 Differences": "\"frequency\" was \"subhrPt\";",
