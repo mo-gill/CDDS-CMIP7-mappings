@@ -1,6 +1,541 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "pr_tavg-u-hxy-u",
+      "CF standard name": "precipitation_flux",
+      "CMIP6 Differences": "\"comment\" was \"includes both liquid and solid phases\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "at surface; includes both liquid and solid phases from all types of clouds (both large-scale and convective)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Precipitation",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s05i216[lbproc=128]",
+      "Expression UKESM1": "m01s05i216[lbproc=128]",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s05i216",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "5,216",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s05i216",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "5,216",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 1813,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable atmos.day.pr_tavg-u-hxy-u (day.pr)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "noaahimax_tstat-h2m-hxy-u",
+      "CF standard name": "heat_index_of_air_temperature",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "max 2m daily NOAA heat index",
+      "Dimensions": "longitude latitude time height2m",
+      "Frequency": "day",
+      "Long name": "max 2m daily NOAA heat index",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "NOAA heat index =\u00a0-42.379 + 2.04901523T + 10.14333127R - 0.22475541TR - 6.83783 x 10-3T2\u00a0- 5.481717 x 10-2R2\u00a0+ 1.22874 x 10-3T2R + 8.5282 x 10-4TR2\u00a0- 1.99 x 10-6T2R2; where T is 2 m temperature (degrees F), R is relative humidity (%).; The heat index is only defined when the ambient air temperature is at or above 299.817 K.",
+      "Units": "degC",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1812,
+    "labels": [
+      "day",
+      "atmos"
+    ],
+    "title": "Variable atmos.day.noaahimax_tstat-h2m-hxy-u (day.noaahi2mmax)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "noaahi_tavg-h2m-hxy-u",
+      "CF standard name": "heat_index_of_air_temperature",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "mean 2m daily NOAA heat index.",
+      "Dimensions": "longitude latitude time height2m",
+      "Frequency": "day",
+      "Long name": "mean 2m daily NOAA heat index",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "NOAA heat index =\u00a0-42.379 + 2.04901523T + 10.14333127R - 0.22475541TR - 6.83783 x 10-3T2\u00a0- 5.481717 x 10-2R2\u00a0+ 1.22874 x 10-3T2R + 8.5282 x 10-4TR2\u00a0- 1.99 x 10-6T2R2; where T is 2 m temperature (degrees F), R is relative humidity (%).; Heat index is only defined when the ambient air temperature is at or above 299.817 K.",
+      "Units": "degC",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1811,
+    "labels": [
+      "day",
+      "atmos"
+    ],
+    "title": "Variable atmos.day.noaahi_tavg-h2m-hxy-u (day.noaahi2m)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "mrsol_tavg-z10cm-hxy-lnd",
+      "CF standard name": "mass_content_of_water_in_soil_layer",
+      "CMIP6 Differences": "\"comment\" was \"The mass of water in all phases in the upper 10cm of the  soil layer.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "the mass of water in all phases in a thin surface soil layer.",
+      "Dimensions": "longitude latitude time sdepth1",
+      "Frequency": "day",
+      "Long name": "Moisture in Upper Portion of Soil Column",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "integrate over uppermost 10 cm; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time sdepth1 CMIP7:longitude latitude time  sdepth1,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s08i223[blev=0.05, lbproc=128]",
+      "Expression UKESM1": "m01s08i223[blev=0.05, lbproc=128]",
+      "Model units": "kg m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s08i223",
+        "domain_profile": "DSOIL",
+        "model": "UKESM1",
+        "stash_number": "8,223",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s08i223",
+        "domain_profile": "DSOIL",
+        "model": "HadGEM3-GC31",
+        "stash_number": "8,223",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 1810,
+    "labels": [
+      "day",
+      "land",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable land.day.mrsol_tavg-z10cm-hxy-lnd (day.mrsos)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "mrso_tavg-u-hxy-lnd",
+      "CF standard name": "mass_content_of_water_in_soil",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "the mass per unit area  (summed over all soil layers) of water in all phases.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Total Soil Moisture Content",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "level_sum(m01s08i223[lbproc=128])",
+      "Expression UKESM1": "level_sum(m01s08i223[lbproc=128])",
+      "Model units": "kg m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s08i223",
+        "domain_profile": "DSOIL",
+        "model": "UKESM1",
+        "stash_number": "8,223",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s08i229",
+        "domain_profile": "DSOIL",
+        "model": "UKESM1",
+        "stash_number": "8,229",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s08i230",
+        "domain_profile": "DSOIL",
+        "model": "UKESM1",
+        "stash_number": "8,230",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s08i223",
+        "domain_profile": "DSOIL",
+        "model": "HadGEM3-GC31",
+        "stash_number": "8,223",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s08i229",
+        "domain_profile": "DSOIL",
+        "model": "HadGEM3-GC31",
+        "stash_number": "8,229",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s08i230",
+        "domain_profile": "DSOIL",
+        "model": "HadGEM3-GC31",
+        "stash_number": "8,230",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 1809,
+    "labels": [
+      "day",
+      "land",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable land.day.mrso_tavg-u-hxy-lnd (day.mrso)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "mrro_tavg-u-hxy-lnd",
+      "CF standard name": "runoff_flux",
+      "CMIP6 Differences": "\"comment\" was \"The total run-off (including drainage through the base of the soil model) per unit area leaving the land portion of the grid cell.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "computed as the total runoff (including \"drainage\" through the base of the soil model) leaving the land portion of the grid cell divided by the land area in the grid cell.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Total Runoff",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s08i234[lbproc=128] + m01s08i235[lbproc=128]",
+      "Expression UKESM1": "m01s08i234[lbproc=128] + m01s08i235[lbproc=128]",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s08i234",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "8,234",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s08i235",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "8,235",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s08i234",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "8,234",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s08i235",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "8,235",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 1808,
+    "labels": [
+      "day",
+      "land",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable land.day.mrro_tavg-u-hxy-lnd (day.mrro)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "irr_tavg-u-hm-u",
+      "CF standard name": "surface_downward_mass_flux_of_water_due_to_irrigation",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean",
+      "Comment": "the amount of water withdrawal for irrigation from surface water, including rivers, lakes, reservoirs, etc.)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "irrigation water withdrawal from surface water",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1807,
+    "labels": [
+      "day",
+      "land"
+    ],
+    "title": "Variable land.day.irr_tavg-u-hm-u (day.irrSurf)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "irr_tavg-u-hm-u",
+      "CF standard name": "surface_downward_mass_flux_of_water_due_to_irrigation",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean",
+      "Comment": "the total amount of water withdrawal from multiple sources",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "irrigation water withdrawal",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1806,
+    "labels": [
+      "day",
+      "land"
+    ],
+    "title": "Variable land.day.irr_tavg-u-hm-u (day.irrLut)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "irrGw_tavg-u-hm-u",
+      "CF standard name": "surface_downward_mass_flux_of_water_due_to_irrigation",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean",
+      "Comment": "the amount of water withdrawal for irrigation from ground water, including deep soil water, confined and unconfined aquifer, etc",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "irrigation water withdrawal from groundwater",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1805,
+    "labels": [
+      "day",
+      "land"
+    ],
+    "title": "Variable land.day.irrGw_tavg-u-hm-u (day.irrGw)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "irrDem_tavg-u-hm-u",
+      "CF standard name": "surface_downward_mass_flux_of_water_due_to_irrigation",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean",
+      "Comment": "the total amount of irrigation water demand",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "irrigation water demand",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1804,
+    "labels": [
+      "day",
+      "land"
+    ],
+    "title": "Variable land.day.irrDem_tavg-u-hm-u (day.irrDem)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "huss_tavg-h2m-hxy-u",
+      "CF standard name": "specific_humidity",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Near-surface (usually, 2 meter) specific humidity.",
+      "Dimensions": "longitude latitude time height2m",
+      "Frequency": "day",
+      "Long name": "Near-Surface Specific Humidity",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "normally, report this at 2 meters above the surface; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time height2m CMIP7:longitude latitude time  height2m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i237[lbproc=128]",
+      "Expression UKESM1": "m01s03i237[lbproc=128]",
+      "Model units": "1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i237",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,237",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s03i237",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,237",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 1803,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable atmos.day.huss_tavg-h2m-hxy-u (day.huss)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hus_tavg-p19-hxy-u",
+      "CF standard name": "specific_humidity",
+      "CMIP6 Differences": "\"dimensions\" was \"longitude latitude plev8 time\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "time: mean",
+      "Comment": "Specific humidity is the mass fraction of water vapor in (moist) air.",
+      "Dimensions": "longitude latitude plev19 time",
+      "Frequency": "day",
+      "Long name": "Specific Humidity",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude plev8 time CMIP7:longitude latitude plev19 time,",
+      "Units": "1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s30i295[blev=PLEV8, lbproc=128] / m01s30i304[blev=PLEV8, lbproc=128]",
+      "Expression UKESM1": "m01s30i295[blev=PLEV8, lbproc=128] / m01s30i304[blev=PLEV8, lbproc=128]",
+      "Model units": "1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s30i295",
+        "domain_profile": "PLEV8",
+        "model": "UKESM1",
+        "stash_number": "30,295",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i304",
+        "domain_profile": "PLEV8",
+        "model": "UKESM1",
+        "stash_number": "30,304",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i295",
+        "domain_profile": "PLEV8",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,295",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i304",
+        "domain_profile": "PLEV8",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,304",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 1802,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable atmos.day.hus_tavg-p19-hxy-u (day.hus)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "hursmin_tstat-h2m-hxy-u",
       "CF standard name": "relative_humidity",
       "CMIP6 Differences": "\"comment\" was \"The relative humidity with respect to liquid water for T> 0 C, and with respect to ice for T<0 C.\";",
