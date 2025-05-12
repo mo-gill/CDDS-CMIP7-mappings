@@ -1,6 +1,270 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "tnhus_tpt-l-hxys-u",
+      "CF standard name": "tendency_of_specific_humidity",
+      "CMIP6 Differences": "\"frequency\" was \"subhrPt\";",
+      "Cell measures": "",
+      "Cell methods": "area: point time: point",
+      "Comment": "Tendency of Specific Humidity",
+      "Dimensions": "alevel site time1",
+      "Frequency": "subhr",
+      "Long name": "Tendency of Specific Humidity",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:subhrPt CMIP7:subhr,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s30i182[lbproc=0] / ATMOS_TIMESTEP",
+      "Expression UKESM1": "m01s30i182[lbproc=0] / ATMOS_TIMESTEP",
+      "Model units": "s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 635,
+    "labels": [
+      "subhr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.subhr.tnhus_tpt-l-hxys-u (CFsubhr.tnhus)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tauv_tpt-u-hxys-u",
+      "CF standard name": "surface_downward_northward_stress",
+      "CMIP6 Differences": "\"frequency\" was \"subhrPt\";",
+      "Cell measures": "",
+      "Cell methods": "area: point time: point",
+      "Comment": "Downward northward wind stress at the surface",
+      "Dimensions": "site time1",
+      "Frequency": "subhr",
+      "Long name": "Surface Downward Northward Wind Stress",
+      "Modeling realm": "atmos",
+      "Positive": "down",
+      "Processing notes": "This table includes the 2-D variables listed in the \"Amon\" spreadsheet, omitting, however, the daily maximum and minimum temperatures.  All variables should be reported as synoptic fields, not daily means.; CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:subhrPt CMIP7:subhr,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "Pa",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i461[lbproc=0]",
+      "Expression UKESM1": "m01s03i461[lbproc=0]",
+      "Model units": "Pa"
+    },
+    "STASH entries": [],
+    "issue_number": 634,
+    "labels": [
+      "subhr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.subhr.tauv_tpt-u-hxys-u (CFsubhr.tauv)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tauu_tpt-u-hxys-u",
+      "CF standard name": "surface_downward_eastward_stress",
+      "CMIP6 Differences": "\"frequency\" was \"subhrPt\";",
+      "Cell measures": "",
+      "Cell methods": "area: point time: point",
+      "Comment": "Downward eastward wind stress at the surface",
+      "Dimensions": "site time1",
+      "Frequency": "subhr",
+      "Long name": "Surface Downward Eastward Wind Stress",
+      "Modeling realm": "atmos",
+      "Positive": "down",
+      "Processing notes": "This table includes the 2-D variables listed in the \"Amon\" spreadsheet, omitting, however, the daily maximum and minimum temperatures.  All variables should be reported as synoptic fields, not daily means.; CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:subhrPt CMIP7:subhr,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "Pa",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i460[lbproc=0]",
+      "Expression UKESM1": "m01s03i460[lbproc=0]",
+      "Model units": "Pa"
+    },
+    "STASH entries": [],
+    "issue_number": 633,
+    "labels": [
+      "subhr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.subhr.tauu_tpt-u-hxys-u (CFsubhr.tauu)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tas_tpt-h2m-hxys-u",
+      "CF standard name": "air_temperature",
+      "CMIP6 Differences": "\"frequency\" was \"subhrPt\";",
+      "Cell measures": "",
+      "Cell methods": "area: point time: point",
+      "Comment": "near-surface (usually, 2 meter) air temperature",
+      "Dimensions": "site time1 height2m",
+      "Frequency": "subhr",
+      "Long name": "Near-Surface Air Temperature",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "This table includes the 2-D variables listed in the \"Amon\" spreadsheet, omitting, however, the daily maximum and minimum temperatures.  All variables should be reported as synoptic fields, not daily means.; CHANGE SINCE CMIP6 in Dimensions - CMIP6:site time1 height2m CMIP7:site time1  height2m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i236[lbproc=0]",
+      "Expression UKESM1": "m01s03i236[lbproc=0]",
+      "Model units": "K"
+    },
+    "STASH entries": [],
+    "issue_number": 632,
+    "labels": [
+      "subhr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.subhr.tas_tpt-h2m-hxys-u (CFsubhr.tas)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ta_tpt-l-hxys-u",
+      "CF standard name": "air_temperature",
+      "CMIP6 Differences": "\"frequency\" was \"subhrPt\";",
+      "Cell measures": "",
+      "Cell methods": "area: point time: point",
+      "Comment": "Air Temperature",
+      "Dimensions": "alevel site time1",
+      "Frequency": "subhr",
+      "Long name": "Air Temperature",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:subhrPt CMIP7:subhr,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s30i111[lbproc=0]",
+      "Expression UKESM1": "m01s30i111[lbproc=0]",
+      "Model units": "K"
+    },
+    "STASH entries": [],
+    "issue_number": 631,
+    "labels": [
+      "subhr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.subhr.ta_tpt-l-hxys-u (CFsubhr.ta)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sfcWind_tpt-h10m-hxys-u",
+      "CF standard name": "wind_speed",
+      "CMIP6 Differences": "\"frequency\" was \"subhrPt\"; ; \"comment\" was \"near-surface (usually, 10 meters) wind speed.\";",
+      "Cell measures": "",
+      "Cell methods": "area: point time: point",
+      "Comment": "This is the mean of the speed, not the speed computed from the mean u and v components of wind",
+      "Dimensions": "site time1 height10m",
+      "Frequency": "subhr",
+      "Long name": "Near-Surface Wind Speed",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "This table includes the 2-D variables listed in the \"Amon\" spreadsheet, omitting, however, the daily maximum and minimum temperatures.  All variables should be reported as synoptic fields, not daily means.; CHANGE SINCE CMIP6 in Dimensions - CMIP6:site time1 height10m CMIP7:site time1  height10m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i230[lbproc=0]",
+      "Expression UKESM1": "m01s03i230[lbproc=0]",
+      "Model units": "m s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 630,
+    "labels": [
+      "subhr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.subhr.sfcWind_tpt-h10m-hxys-u (CFsubhr.sfcWind)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sci_tpt-u-hxys-u",
+      "CF standard name": "shallow_convection_time_fraction",
+      "CMIP6 Differences": "\"frequency\" was \"subhrPt\";",
+      "Cell measures": "",
+      "Cell methods": "area: point time: point",
+      "Comment": "Fraction of time that shallow convection occurs in the grid cell.",
+      "Dimensions": "site time1",
+      "Frequency": "subhr",
+      "Long name": "Fraction of Time Shallow Convection Occurs",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "This table includes the 2-D variables listed in the \"Amon\" spreadsheet, omitting, however, the daily maximum and minimum temperatures.  All variables should be reported as synoptic fields, not daily means.; CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:subhrPt CMIP7:subhr,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s05i270[lbproc=0]",
+      "Expression UKESM1": "m01s05i270[lbproc=0]",
+      "Model units": "1"
+    },
+    "STASH entries": [],
+    "issue_number": 629,
+    "labels": [
+      "subhr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.subhr.sci_tpt-u-hxys-u (CFsubhr.sci)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sbl_tpt-u-hxys-u",
+      "CF standard name": "tendency_of_atmosphere_mass_content_of_water_vapor_due_to_sublimation_of_surface_snow_and_ice",
+      "CMIP6 Differences": "\"frequency\" was \"subhrPt\"; ; \"comment\" was \"The snow and ice sublimation flux is the loss of snow and ice mass per unit area from the surface resulting from their direct conversion to water vapor that enters the atmosphere.\";",
+      "Cell measures": "",
+      "Cell methods": "area: point time: point",
+      "Comment": "The snow and ice sublimation flux is the loss of snow and ice mass from the surface resulting from their conversion to water vapor that enters the atmosphere.",
+      "Dimensions": "site time1",
+      "Frequency": "subhr",
+      "Long name": "Surface Snow and Ice Sublimation Flux",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "This table includes the 2-D variables listed in the \"Amon\" spreadsheet, omitting, however, the daily maximum and minimum temperatures.  All variables should be reported as synoptic fields, not daily means.; CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:subhrPt CMIP7:subhr,;  ; CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i298[lbproc=0]",
+      "Expression UKESM1": "m01s03i298[lbproc=0]",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 628,
+    "labels": [
+      "subhr",
+      "landIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable landIce.subhr.sbl_tpt-u-hxys-u (CFsubhr.sbl)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "rtmt_tpt-u-hxys-u",
       "CF standard name": "net_downward_radiative_flux_at_top_of_atmosphere_model",
       "CMIP6 Differences": "\"frequency\" was \"subhrPt\"; ; \"comment\" was \"Net Downward Radiative Flux at Top of Model : I.e., at the top of that portion of the atmosphere where dynamics are explicitly treated by the model. This is reported only if it differs from the net downward radiative flux at the top of the atmosphere.\";",
