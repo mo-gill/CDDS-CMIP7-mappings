@@ -1,6 +1,224 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "rlut_tclmdc-u-hxy-u",
+      "CF standard name": "toa_outgoing_longwave_flux",
+      "CMIP6 Differences": "\"frequency\" was \"1hrCM\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean time: mean within days time: mean over days",
+      "Comment": "at the top of the atmosphere (to be compared with satellite measurements)",
+      "Dimensions": "longitude latitude time3",
+      "Frequency": "1hr",
+      "Long name": "TOA Outgoing Longwave Radiation",
+      "Modeling realm": "atmos",
+      "Positive": "up",
+      "Processing notes": "CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:1hrCM CMIP7:1hr,",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "mean_diurnal_cycle(m01s03i332[lbproc=128, lbtim_ia=24])",
+      "Expression UKESM1": "mean_diurnal_cycle(m01s03i332[lbproc=128, lbtim_ia=24])",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i332",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,332",
+        "time_profile": "T1HRMN",
+        "usage_profile": "UP9"
+      },
+      {
+        "STASH": "m01s03i332",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,332",
+        "time_profile": "T1HRMN",
+        "usage_profile": "UP9"
+      }
+    ],
+    "issue_number": 677,
+    "labels": [
+      "1hr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.1hr.rlut_tclmdc-u-hxy-u (E1hrClimMon.rlut)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "wsgmax_tstat-h10m-hxy-u",
+      "CF standard name": "wind_speed_of_gust",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean time: maximum",
+      "Comment": "Wind speed gust maximum at 10m above surface",
+      "Dimensions": "longitude latitude time height10m",
+      "Frequency": "1hr",
+      "Long name": "Maximum Speed of Wind Gust at 10m",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "Time maximum required",
+      "Units": "m s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 676,
+    "labels": [
+      "1hr",
+      "atmos"
+    ],
+    "title": "Variable atmos.1hr.wsgmax_tstat-h10m-hxy-u (E1hr.wsgmax10m)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "wsgmax_tstat-h100m-hxy-u",
+      "CF standard name": "wind_speed_of_gust",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean time: maximum",
+      "Comment": "Wind speed gust maximum at 100m above surface",
+      "Dimensions": "longitude latitude time height100m",
+      "Frequency": "1hr",
+      "Long name": "Maximum Wind Speed of Gust at 100m",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "Wind speed gust maximum at 100m above surface - hourly output",
+      "Units": "m s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 675,
+    "labels": [
+      "1hr",
+      "atmos"
+    ],
+    "title": "Variable atmos.1hr.wsgmax_tstat-h100m-hxy-u (E1hr.wsgmax100m)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "vas_tpt-h10m-hxy-u",
+      "CF standard name": "northward_wind",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean time: point",
+      "Comment": "Meridional wind (positive in a northward direction) at 10 meters above the surface.",
+      "Dimensions": "longitude latitude time1 height10m",
+      "Frequency": "1hr",
+      "Long name": "Surface wind speed Northward Component",
+      "Modeling realm": "atmos",
+      "Positive": "up",
+      "Processing notes": "",
+      "Units": "m s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 674,
+    "labels": [
+      "1hr",
+      "atmos"
+    ],
+    "title": "Variable atmos.1hr.vas_tpt-h10m-hxy-u (E1hr.vas)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "va_tpt-h100m-hxy-u",
+      "CF standard name": "northward_wind",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean time: point",
+      "Comment": "Meridional wind (positive in a northward direction) at 100m above the surface.",
+      "Dimensions": "longitude latitude time1 height100m",
+      "Frequency": "1hr",
+      "Long name": "Northward Wind at 100m",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "Instantaneous values",
+      "Units": "m s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 673,
+    "labels": [
+      "1hr",
+      "atmos"
+    ],
+    "title": "Variable atmos.1hr.va_tpt-h100m-hxy-u (E1hr.va100m)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "uas_tpt-h10m-hxy-u",
+      "CF standard name": "eastward_wind",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean time: point",
+      "Comment": "Zonal wind (positive in a eastward direction) at 10 meters above the surface.",
+      "Dimensions": "longitude latitude time1 height10m",
+      "Frequency": "1hr",
+      "Long name": "Surface wind speed Eastward Components",
+      "Modeling realm": "atmos",
+      "Positive": "up",
+      "Processing notes": "",
+      "Units": "m s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 672,
+    "labels": [
+      "1hr",
+      "atmos"
+    ],
+    "title": "Variable atmos.1hr.uas_tpt-h10m-hxy-u (E1hr.uas)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ua_tpt-h100m-hxy-u",
+      "CF standard name": "eastward_wind",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean time: point",
+      "Comment": "Zonal wind (positive in a eastward direction) at 100m above the surface",
+      "Dimensions": "longitude latitude time1 height100m",
+      "Frequency": "1hr",
+      "Long name": "Eastward Wind at 100m",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "Instantaneous values",
+      "Units": "m s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 671,
+    "labels": [
+      "1hr",
+      "atmos"
+    ],
+    "title": "Variable atmos.1hr.ua_tpt-h100m-hxy-u (E1hr.ua100m)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "ts_tavg-u-hxy-u",
       "CF standard name": "surface_temperature",
       "CMIP6 Differences": "Not present",
