@@ -1,6 +1,839 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "nLitterCwd_tavg-u-hxy-lnd",
+      "CF standard name": "wood_debris_mass_content_of_nitrogen",
+      "CMIP6 Differences": "\"comment\" was \"'Content' indicates a quantity per unit area. 'Wood debris' means dead organic matter composed of coarse wood. It is distinct from fine litter. The precise distinction between 'fine' and 'coarse' is model dependent. The sum of the quantities with standard names wood_debris_mass_content_of_nitrogen, surface_litter_mass_content_of_nitrogen and subsurface_litter_mass_content_of_nitrogen is the total nitrogen mass content of dead plant material.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "\"Content\" indicates a quantity per unit area. \"Wood debris\" means dead organic matter composed of coarse wood. It is distinct from fine litter. The precise distinction between \"fine\" and \"coarse\" is model dependent. The sum of the quantities with standard names wood_debris_mass_content_of_nitrogen, surface_litter_mass_content_of_nitrogen and subsurface_litter_mass_content_of_nitrogen is the total nitrogen mass content of dead plant material.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Nitrogen Mass in Coarse Woody Debris",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 946,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.mon.nLitterCwd_tavg-u-hxy-lnd (Emon.nLitterCwd)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "nLitter_tavg-u-hxy-lnd",
+      "CF standard name": "litter_mass_content_of_nitrogen",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "Report missing data over ocean grid cells. For fractional land report value averaged over the land fraction.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Nitrogen Mass in Litter Pool",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 945,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.mon.nLitter_tavg-u-hxy-lnd (Emon.nLitter)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "nLeaf_tavg-u-hxy-lnd",
+      "CF standard name": "leaf_mass_content_of_nitrogen",
+      "CMIP6 Differences": "\"comment\" was \"'Content' indicates a quantity per unit area.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "\"Content\" indicates a quantity per unit area.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Nitrogen Mass in Leaves",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "land_class_mean(m01s19i132[lbtim_ia=240,lbproc=128], m01s19i013[lbtim_ia=240,lbproc=128], land_class='veg') * land_class_area(m01s19i013[lbtim_ia=240,lbproc=128], m01s03i395[lbproc=128], land_class='veg') / m01s03i395[lbproc=128] / 100.",
+      "Model units": "kg m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s19i013",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "19,013",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i132",
+        "domain_profile": "DPFTS",
+        "model": "UKESM1",
+        "stash_number": "19,132",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 944,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable land.mon.nLeaf_tavg-u-hxy-lnd (Emon.nLeaf)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "nLand_tavg-u-hxy-lnd",
+      "CF standard name": "mass_content_of_nitrogen_in_vegetation_and_litter_and_soil_and_forestry_and_agricultural_products",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "Report missing data over ocean grid cells. For fractional land report value averaged over the land fraction.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Total Nitrogen in All Terrestrial Nitrogen Pools",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "m01s19i147[lbtim_ia=240,lbproc=128]",
+      "Model units": "kg m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s19i147",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "19,147",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 943,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable land.mon.nLand_tavg-u-hxy-lnd (Emon.nLand)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "mrtws_tavg-u-hxy-lnd",
+      "CF standard name": "land_water_amount",
+      "CMIP6 Differences": "\"comment\" was \"Mass of water in all phases and in all components including soil, canopy, vegetation, ice sheets, rivers and ground water.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "requested for C4MIP, OCMIP/OMIP, LUMIP, ScenarioMIP, DECK, DAMIP, GeoMIP, LS3MIP, ??",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Terrestrial Water Storage",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 942,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.mon.mrtws_tavg-u-hxy-lnd (Emon.mrtws)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "mrsol_tavg-z10cm-hxy-lus",
+      "CF standard name": "mass_content_of_water_in_soil_layer",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where sector",
+      "Comment": "the mass of water in all phases in a thin surface layer; integrate over uppermost 10cm",
+      "Dimensions": "longitude latitude landUse time sdepth1",
+      "Frequency": "mon",
+      "Long name": "Moisture in Upper Portion of Soil Column of Land-Use Tile",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude landUse time sdepth1 CMIP7:longitude latitude time landUse sdepth1,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 941,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.mon.mrsol_tavg-z10cm-hxy-lus (Emon.mrsosLut)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "mrsol_tavg-l-hxy-lnd",
+      "CF standard name": "mass_content_of_water_in_soil_layer",
+      "CMIP6 Differences": "\"comment\" was \"in each soil layer, the mass of water in all phases, including ice.  Reported as 'missing' for grid cells occupied entirely by 'sea'\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "in each soil layer, the mass of water in all phases, including ice.  Reported as \"missing\" for grid cells occupied entirely by \"sea\"",
+      "Dimensions": "longitude latitude sdepth time",
+      "Frequency": "mon",
+      "Long name": "Total Water Content of Soil Layer",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s08i223[lbproc=128]",
+      "Expression UKESM1": "m01s08i223[lbproc=128]",
+      "Model units": "kg m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s08i223",
+        "domain_profile": "DSOIL",
+        "model": "UKESM1",
+        "stash_number": "8,223",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i223",
+        "domain_profile": "DSOIL",
+        "model": "HadGEM3-GC31",
+        "stash_number": "8,223",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 940,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable land.mon.mrsol_tavg-l-hxy-lnd (Emon.mrsol)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "mrsll_tavg-l-hxy-lnd",
+      "CF standard name": "liquid_water_content_of_soil_layer",
+      "CMIP6 Differences": "\"comment\" was \"in each soil layer, the mass of water in liquid phase.  Reported as 'missing' for grid cells occupied entirely by 'sea'\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "in each soil layer, the mass of water in liquid phase.  Reported as \"missing\" for grid cells occupied entirely by \"sea\"",
+      "Dimensions": "longitude latitude sdepth time",
+      "Frequency": "mon",
+      "Long name": "Liquid Water Content of Soil Layer",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s08i223[lbproc=128] * m01s08i229[lbproc=128] / (m01s08i230[lbproc=128] + m01s08i229[lbproc=128])",
+      "Expression UKESM1": "m01s08i223[lbproc=128] * m01s08i229[lbproc=128] / (m01s08i230[lbproc=128] + m01s08i229[lbproc=128])",
+      "Model units": "kg m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s08i223",
+        "domain_profile": "DSOIL",
+        "model": "UKESM1",
+        "stash_number": "8,223",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i229",
+        "domain_profile": "DSOIL",
+        "model": "UKESM1",
+        "stash_number": "8,229",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i230",
+        "domain_profile": "DSOIL",
+        "model": "UKESM1",
+        "stash_number": "8,230",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i223",
+        "domain_profile": "DSOIL",
+        "model": "HadGEM3-GC31",
+        "stash_number": "8,223",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i229",
+        "domain_profile": "DSOIL",
+        "model": "HadGEM3-GC31",
+        "stash_number": "8,229",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i230",
+        "domain_profile": "DSOIL",
+        "model": "HadGEM3-GC31",
+        "stash_number": "8,230",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 939,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable land.mon.mrsll_tavg-l-hxy-lnd (Emon.mrsll)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "mrsfl_tavg-l-hxy-lnd",
+      "CF standard name": "frozen_water_content_of_soil_layer",
+      "CMIP6 Differences": "\"comment\" was \"in each soil layer, the mass of water in ice phase.  Reported as 'missing' for grid cells occupied entirely by 'sea'\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "in each soil layer, the mass of water in ice phase.  Reported as \"missing\" for grid cells occupied entirely by \"sea\"",
+      "Dimensions": "longitude latitude sdepth time",
+      "Frequency": "mon",
+      "Long name": "Frozen Water Content of Soil Layer",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s08i223[lbproc=128] * m01s08i230[lbproc=128] / (m01s08i230[lbproc=128] + m01s08i229[lbproc=128])",
+      "Expression UKESM1": "m01s08i223[lbproc=128] * m01s08i230[lbproc=128] / (m01s08i230[lbproc=128] + m01s08i229[lbproc=128])",
+      "Model units": "kg m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s08i223",
+        "domain_profile": "DSOIL",
+        "model": "UKESM1",
+        "stash_number": "8,223",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i229",
+        "domain_profile": "DSOIL",
+        "model": "UKESM1",
+        "stash_number": "8,229",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i230",
+        "domain_profile": "DSOIL",
+        "model": "UKESM1",
+        "stash_number": "8,230",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i223",
+        "domain_profile": "DSOIL",
+        "model": "HadGEM3-GC31",
+        "stash_number": "8,223",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i229",
+        "domain_profile": "DSOIL",
+        "model": "HadGEM3-GC31",
+        "stash_number": "8,229",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i230",
+        "domain_profile": "DSOIL",
+        "model": "HadGEM3-GC31",
+        "stash_number": "8,230",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 938,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable land.mon.mrsfl_tavg-l-hxy-lnd (Emon.mrsfl)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "loadso4_tavg-u-hxy-u",
+      "CF standard name": "atmosphere_mass_content_of_sulfate_dry_aerosol_particles",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "The total dry mass of sulfate aerosol particles per unit area.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Load of SO4",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "(MOLECULAR_MASS_OF_SO4 / MOLECULAR_MASS_OF_H2SO4) * (SECONDS_IN_HOUR / ATMOS_TIMESTEP) * m01s38i520[lbproc=128]",
+      "Model units": "kg m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s38i520",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "38,520",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 937,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable atmos.mon.loadso4_tavg-u-hxy-u (Emon.loadso4)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "lai_tavg-u-hxy-lus",
+      "CF standard name": "leaf_area_index",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where sector",
+      "Comment": "A ratio obtained by dividing the total upper leaf surface area of vegetation by the (horizontal) surface area of the land on which it grows.",
+      "Dimensions": "longitude latitude landUse time",
+      "Frequency": "mon",
+      "Long name": "Leaf Area Index on Land-Use Tile",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude landUse time CMIP7:longitude latitude time landUse,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "land_use_tile_mean(m01s19i014[lbtim_ia=240,lbproc=128],m01s19i013[lbtim_ia=240,lbproc=128])",
+      "Model units": "1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s19i013",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "19,013",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i014",
+        "domain_profile": "DPFTS",
+        "model": "UKESM1",
+        "stash_number": "19,014",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 936,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable land.mon.lai_tavg-u-hxy-lus (Emon.laiLut)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "jpdftaureliqmodis_tavg-u-hxy-u",
+      "CF standard name": "modis_cloud_area_fraction",
+      "CMIP6 Differences": "\"standard_name\" was \"cloud_area_fraction_in_atmosphere_layer\"; ; \"comment\" was \"Joint probability distribution function, giving probability of cloud as a function of optical thickness and particle size, as measured by MODIS. For liquid cloud particles.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "MODIS Optical Thickness-Particle Size joint distribution, liquid",
+      "Dimensions": "longitude latitude effectRadLi tau time",
+      "Frequency": "mon",
+      "Long name": "MODIS Optical Thickness-Particle Size Joint Distribution, Liquid",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude effectRadLi tau time CMIP7:longitude latitude time effectRadLi tau,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "jpdftaure_divide_by_mask(m01s02i468[lbproc=128], m01s02i330[lbproc=128])",
+      "Expression UKESM1": "jpdftaure_divide_by_mask(m01s02i468[lbproc=128], m01s02i330[lbproc=128])",
+      "Model units": "1"
+    },
+    "STASH entries": [],
+    "issue_number": 935,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.jpdftaureliqmodis_tavg-u-hxy-u (Emon.jpdftaureliqmodis)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "jpdftaureicemodis_tavg-u-hxy-u",
+      "CF standard name": "modis_cloud_area_fraction",
+      "CMIP6 Differences": "\"comment\" was \"Joint probability distribution function, giving probability of cloud as a function of optical thickness and particle size, as measured by MODIS. For cloud ice particles.\"; ; \"standard_name\" was \"cloud_area_fraction_in_atmosphere_layer\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "MODIS Optical Thickness-Particle Size joint distribution, ice",
+      "Dimensions": "longitude latitude effectRadIc tau time",
+      "Frequency": "mon",
+      "Long name": "MODIS Joint Distribution of Optical Thickness and Particle Size, Ice",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude effectRadIc tau time CMIP7:longitude latitude time effectRadIc tau,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "jpdftaure_divide_by_mask(m01s02i469[lbproc=128], m01s02i330[lbproc=128])",
+      "Expression UKESM1": "jpdftaure_divide_by_mask(m01s02i469[lbproc=128], m01s02i330[lbproc=128])",
+      "Model units": "1"
+    },
+    "STASH entries": [],
+    "issue_number": 934,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.jpdftaureicemodis_tavg-u-hxy-u (Emon.jpdftaureicemodis)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "irr_tavg-u-hxy-lus",
+      "CF standard name": "surface_downward_mass_flux_of_water_due_to_irrigation",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where sector",
+      "Comment": "Mass flux of water due to irrigation.",
+      "Dimensions": "longitude latitude landUse time",
+      "Frequency": "mon",
+      "Long name": "Irrigation Flux Including any Irrigation for Crops, Trees, Pasture, or Urban Lawns",
+      "Modeling realm": "land",
+      "Positive": "down",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude landUse time CMIP7:longitude latitude time landUse,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 933,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.mon.irr_tavg-u-hxy-lus (Emon.irrLut)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "intvaw_tavg-u-hxy-u",
+      "CF standard name": "northward_atmosphere_water_transport_across_unit_distance",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Vertically integrated Northward moisture transport (Mass_weighted_vertical integral of the product of northward wind by total water mass per unit mass)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Vertically Integrated Northward Moisture Transport",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-1 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s30i463[lbproc=128]",
+      "Expression UKESM1": "m01s30i463[lbproc=128]",
+      "Model units": "kg m-1 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s30i463",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "30,463",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i463",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,463",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 932,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.intvaw_tavg-u-hxy-u (Emon.intvaw)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "intvadse_tavg-u-hxy-u",
+      "CF standard name": "northward_atmosphere_dry_static_energy_transport_across_unit_distance",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Vertically integrated northward dry static energy transport (cp.T +zg).v (Mass_weighted_vertical integral of the product of northward wind by dry static_energy per mass unit)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Vertically Integrated Northward Dry Static Energy Transport",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "MJ m-1 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "SPECIFIC_HEAT_OF_DRY_AIR * m01s30i426[lbproc=128] + m01s30i423[lbproc=128]",
+      "Expression UKESM1": "SPECIFIC_HEAT_OF_DRY_AIR * m01s30i426[lbproc=128] + m01s30i423[lbproc=128]",
+      "Model units": "J m-1 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s30i423",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "30,423",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i426",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "30,426",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i423",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,423",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i426",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,426",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 931,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.intvadse_tavg-u-hxy-u (Emon.intvadse)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "intuaw_tavg-u-hxy-u",
+      "CF standard name": "eastward_atmosphere_water_transport_across_unit_distance",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Vertically integrated Eastward moisture transport (Mass weighted vertical integral of the product of eastward wind by total water mass per unit mass)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Vertically Integrated Eastward Moisture Transport",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-1 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s30i462[lbproc=128]",
+      "Expression UKESM1": "m01s30i462[lbproc=128]",
+      "Model units": "kg m-1 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s30i462",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "30,462",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i462",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,462",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 930,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.intuaw_tavg-u-hxy-u (Emon.intuaw)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "intuadse_tavg-u-hxy-u",
+      "CF standard name": "eastward_atmosphere_dry_static_energy_transport_across_unit_distance",
+      "CMIP6 Differences": "\"long_name\" was \"Vertically Integrated Eastward Dry Statice Energy Transport\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Vertically integrated eastward dry static energy transport (cp.T +zg).v (Mass_weighted_vertical integral of the product of eastward wind by dry static_energy per mass unit)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Vertically Integrated Eastward Dry Static Energy Transport",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "MJ m-1 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "SPECIFIC_HEAT_OF_DRY_AIR * m01s30i425[lbproc=128] + m01s30i422[lbproc=128]",
+      "Expression UKESM1": "SPECIFIC_HEAT_OF_DRY_AIR * m01s30i425[lbproc=128] + m01s30i422[lbproc=128]",
+      "Model units": "J m-1 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s30i422",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "30,422",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i425",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "30,425",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i422",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,422",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s30i425",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,425",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 929,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.intuadse_tavg-u-hxy-u (Emon.intuadse)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "hfss_tavg-u-hxy-lus",
       "CF standard name": "surface_upward_sensible_heat_flux",
       "CMIP6 Differences": "",
