@@ -1,6 +1,599 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "ua_tavg-p19-hxy-air",
+      "CF standard name": "eastward_wind",
+      "CMIP6 Differences": "\"dimensions\" was \"longitude latitude plev8 time\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "time: mean",
+      "Comment": "Zonal wind (positive in a eastward direction).",
+      "Dimensions": "longitude latitude plev19 time",
+      "Frequency": "day",
+      "Long name": "Eastward Wind",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude plev8 time CMIP7:longitude latitude plev19 time,",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s30i201[blev=PLEV8, lbproc=128] / m01s30i301[blev=PLEV8, lbproc=128]",
+      "Expression UKESM1": "m01s30i201[blev=PLEV8, lbproc=128] / m01s30i301[blev=PLEV8, lbproc=128]",
+      "Model units": "m s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s30i201",
+        "domain_profile": "PLEV8",
+        "model": "UKESM1",
+        "stash_number": "30,201",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i301",
+        "domain_profile": "PLEV8",
+        "model": "UKESM1",
+        "stash_number": "30,301",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i202",
+        "domain_profile": "PLEV8",
+        "model": "UKESM1",
+        "stash_number": "30,202",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i201",
+        "domain_profile": "PLEV8",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,201",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i301",
+        "domain_profile": "PLEV8",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,301",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i202",
+        "domain_profile": "PLEV8",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,202",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 1836,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable atmos.day.ua_tavg-p19-hxy-air (day.ua)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tslsi_tavg-u-hxy-u",
+      "CF standard name": "surface_temperature",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: time: mean (comment: over land and sea ice)\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean (over land and sea ice)",
+      "Comment": "Surface temperature of all surfaces except open ocean.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Surface Temperature Where Land or Sea Ice",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean (comment: over land and sea ice) CMIP7:area: time: mean (over land and sea ice),",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1835,
+    "labels": [
+      "day",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.day.tslsi_tavg-u-hxy-u (day.tslsi)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tasmin_tstat-h2m-hxy-u",
+      "CF standard name": "air_temperature",
+      "CMIP6 Differences": "\"comment\" was \"minimum near-surface (usually, 2 meter) air temperature (add cell_method attribute 'time: min')\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean time: minimum",
+      "Comment": "minimum near-surface (usually, 2 meter) air temperature (add cell_method attribute \"time: min\")",
+      "Dimensions": "longitude latitude time height2m",
+      "Frequency": "day",
+      "Long name": "Daily Minimum Near-Surface Air Temperature",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "normally report this at 2 meters above the surface; ; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time height2m CMIP7:longitude latitude time  height2m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i236[lbproc=4096]",
+      "Expression UKESM1": "m01s03i236[lbproc=4096]",
+      "Model units": "K"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i236",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,236",
+        "time_profile": "TDAYMIN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s03i236",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,236",
+        "time_profile": "TDAYMIN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 1834,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable atmos.day.tasmin_tstat-h2m-hxy-u (day.tasmin)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tasmax_tstat-h2m-hxy-u",
+      "CF standard name": "air_temperature",
+      "CMIP6 Differences": "\"comment\" was \"maximum near-surface (usually, 2 meter) air temperature (add cell_method attribute 'time: max')\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean time: maximum",
+      "Comment": "maximum near-surface (usually, 2 meter) air temperature (add cell_method attribute \"time: max\")",
+      "Dimensions": "longitude latitude time height2m",
+      "Frequency": "day",
+      "Long name": "Daily Maximum Near-Surface Air Temperature",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "normally report this at 2 meters above the surface; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time height2m CMIP7:longitude latitude time  height2m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i236[lbproc=8192]",
+      "Expression UKESM1": "m01s03i236[lbproc=8192]",
+      "Model units": "K"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i236",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,236",
+        "time_profile": "TDAYMAX",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s03i236",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,236",
+        "time_profile": "TDAYMAX",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 1833,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable atmos.day.tasmax_tstat-h2m-hxy-u (day.tasmax)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tas_tavg-h2m-hxy-u",
+      "CF standard name": "air_temperature",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "near-surface (usually, 2 meter) air temperature",
+      "Dimensions": "longitude latitude time height2m",
+      "Frequency": "day",
+      "Long name": "Near-Surface Air Temperature",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "normally report this at 2 meters above the surface; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time height2m CMIP7:longitude latitude time  height2m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i236[lbproc=128]",
+      "Expression UKESM1": "m01s03i236[lbproc=128]",
+      "Model units": "K"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i236",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,236",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s03i236",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,236",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 1832,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable atmos.day.tas_tavg-h2m-hxy-u (day.tas)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ta_tavg-p19-hxy-air",
+      "CF standard name": "air_temperature",
+      "CMIP6 Differences": "\"dimensions\" was \"longitude latitude plev8 time\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "time: mean",
+      "Comment": "Air Temperature",
+      "Dimensions": "longitude latitude plev19 time",
+      "Frequency": "day",
+      "Long name": "Air Temperature",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude plev8 time CMIP7:longitude latitude plev19 time,",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s30i294[blev=PLEV8, lbproc=128] / m01s30i304[blev=PLEV8, lbproc=128]",
+      "Expression UKESM1": "m01s30i294[blev=PLEV8, lbproc=128] / m01s30i304[blev=PLEV8, lbproc=128]",
+      "Model units": "K"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s30i294",
+        "domain_profile": "PLEV8",
+        "model": "UKESM1",
+        "stash_number": "30,294",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i304",
+        "domain_profile": "PLEV8",
+        "model": "UKESM1",
+        "stash_number": "30,304",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i294",
+        "domain_profile": "PLEV8",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,294",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i304",
+        "domain_profile": "PLEV8",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,304",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 1831,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable atmos.day.ta_tavg-p19-hxy-air (day.ta)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "snw_tavg-u-hxy-lnd",
+      "CF standard name": "surface_snow_amount",
+      "CMIP6 Differences": "\"comment\" was \"The mass of surface snow on the land portion of the grid cell divided by the land area in the grid cell; reported as missing where the land fraction is 0; excludes snow on vegetation canopy or on sea ice.\"; ; \"modeling_realm\" was \"landIce land\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "the mass of surface snow on the land portion of the grid cell divided by the land area in the grid cell; reported as missing where the land fraction is 0; excludes snow on vegetation canopy or on sea ice.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Surface Snow Amount",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:land, landIce CMIP7:land, ocean,",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "land_class_mean(m01s08i236[lbproc=128], m01s03i317[lbproc=128], land_class='all')",
+      "Expression UKESM1": "land_class_mean(m01s08i236[lbproc=128], m01s03i317[lbproc=128], land_class='all')",
+      "Model units": "kg m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "3,317",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s08i236",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "8,236",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,317",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s08i236",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "8,236",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 1830,
+    "labels": [
+      "day",
+      "landIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable landIce.day.snw_tavg-u-hxy-lnd (day.snw)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "snc_tavg-u-hxy-lnd",
+      "CF standard name": "surface_snow_area_fraction",
+      "CMIP6 Differences": "\"modeling_realm\" was \"landIce land\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Percentage of each grid cell that is occupied by snow that rests on land portion of cell.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Snow Area Percentage",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:land, landIce CMIP7:land, ocean,",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "snc_calc(m01s08i236[lbproc=128], m01s03i317[lbproc=128], m01s03i395[lbproc=128])",
+      "Expression UKESM1": "snc_calc(m01s08i236[lbproc=128], m01s03i317[lbproc=128], m01s03i395[lbproc=128])",
+      "Model units": "%"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "3,317",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s08i236",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "8,236",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,317",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s08i236",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "8,236",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 1829,
+    "labels": [
+      "day",
+      "landIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable landIce.day.snc_tavg-u-hxy-lnd (day.snc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sfcWindmax_tstat-h10m-hxy-u",
+      "CF standard name": "wind_speed",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean time: maximum",
+      "Comment": "Daily maximum near-surface (usually, 10 meters) wind speed.",
+      "Dimensions": "longitude latitude time height10m",
+      "Frequency": "day",
+      "Long name": "Daily Maximum Near-Surface Wind Speed",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "normally, report this at 10 meters above the surface; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time height10m CMIP7:longitude latitude time  height10m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i230[lbproc=8192]",
+      "Expression UKESM1": "m01s03i230[lbproc=8192]",
+      "Model units": "m s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i230",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,230",
+        "time_profile": "TDAYMAX",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s03i230",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,230",
+        "time_profile": "TDAYMAX",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 1828,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.day.sfcWindmax_tstat-h10m-hxy-u (day.sfcWindmax)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sfcWind_tavg-h10m-hxy-u",
+      "CF standard name": "wind_speed",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "near-surface (usually, 10 meters) wind speed.",
+      "Dimensions": "longitude latitude time height10m",
+      "Frequency": "day",
+      "Long name": "Daily-Mean Near-Surface Wind Speed",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "normally report this at 10 meters above the surface; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time height10m CMIP7:longitude latitude time  height10m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i230[lbproc=128]",
+      "Expression UKESM1": "m01s03i230[lbproc=128]",
+      "Model units": "m s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i230",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,230",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s03i230",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,230",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 1827,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable atmos.day.sfcWind_tavg-h10m-hxy-u (day.sfcWind)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rsut_tavg-u-hxy-u",
+      "CF standard name": "toa_outgoing_shortwave_flux",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Outgoing shortwave radiation at the top of the atmosphere.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "TOA Outgoing Shortwave Radiation",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "W m-2",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1826,
+    "labels": [
+      "day",
+      "atmos"
+    ],
+    "title": "Variable atmos.day.rsut_tavg-u-hxy-u (day.rsut)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "rsus_tavg-u-hxy-u",
       "CF standard name": "surface_upwelling_shortwave_flux_in_air",
       "CMIP6 Differences": "\"comment\" was \"The surface called 'surface' means the lower boundary of the atmosphere. 'shortwave' means shortwave radiation. Upwelling radiation is radiation from below. It does not mean 'net upward'. When thought of as being incident on a surface, a radiative flux is sometimes called 'irradiance'. In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called 'vector irradiance'. In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.\";",
