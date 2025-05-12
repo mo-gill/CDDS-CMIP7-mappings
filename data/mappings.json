@@ -1,6 +1,470 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "ra_tavg-u-hxy-lnd",
+      "CF standard name": "surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_plant_respiration",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "Carbon mass flux per unit area into atmosphere due to autotrophic respiration on land (respiration by producers) [see rh for heterotrophic production]",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Carbon Mass Flux into Atmosphere Due to Autotrophic (Plant) Respiration on Land [kgC m-2 s-1]",
+      "Modeling realm": "land",
+      "Positive": "up",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "m01s19i185[lbtim_ia=240,lbproc=128] / (SECONDS_IN_DAY * DAYS_IN_YEAR)",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s19i185",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "19,185",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1301,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable land.mon.ra_tavg-u-hxy-lnd (Lmon.ra)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "prveg_tavg-u-hxy-lnd",
+      "CF standard name": "precipitation_flux_onto_canopy",
+      "CMIP6 Differences": "\"comment\" was \"The precipitation flux that is intercepted by the vegetation canopy (if present in model) before reaching the ground.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "the precipitation flux that is intercepted by the vegetation canopy (if present in model) before reaching the ground.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Precipitation onto Canopy",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1300,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.mon.prveg_tavg-u-hxy-lnd (Lmon.prveg)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "pastureFrac_tavg-u-hxy-u",
+      "CF standard name": "area_fraction",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: mean where land over all_area_types time: mean\"; ; \"comment\" was \"Percentage of entire grid cell  that is covered by anthropogenic pasture.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "fraction of entire grid cell  that is covered by anthropogenic pasture.",
+      "Dimensions": "longitude latitude time typepasture",
+      "Frequency": "mon",
+      "Long name": "Percentage of Land Which Is Anthropogenic Pasture",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "add scalar coordinate typepasture and add \"pasture\" to the CF area type table. Note that if this variable is independent of time, it should be stored only for a single time (user choice).; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time typepasture CMIP7:longitude latitude time  typepasture,;  ; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean where land over all_area_types time: mean CMIP7:area: time: mean,",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "land_class_area(m01s19i013[lbtim_ia=240,lbproc=128],m01s03i395[lbproc=128], land_class='pasture')",
+      "Model units": "%"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i395",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,395",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i013",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "19,013",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1299,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable land.mon.pastureFrac_tavg-u-hxy-u (Lmon.pastureFrac)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "nppRoot_tavg-u-hxy-lnd",
+      "CF standard name": "net_primary_productivity_of_biomass_expressed_as_carbon_accumulated_in_roots",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "This is the rate of carbon uptake by roots due to NPP",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Net Primary Production Allocated to Roots as Carbon Mass Flux [kgC m-2 s-1]",
+      "Modeling realm": "land",
+      "Positive": "down",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1298,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.mon.nppRoot_tavg-u-hxy-lnd (Lmon.nppRoot)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "nppLeaf_tavg-u-hxy-lnd",
+      "CF standard name": "net_primary_productivity_of_biomass_expressed_as_carbon_accumulated_in_leaves",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "This is the rate of carbon uptake by leaves due to NPP",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Net Primary Production Allocated to Leaves as Carbon Mass Flux [kgC m-2 s-1]",
+      "Modeling realm": "land",
+      "Positive": "down",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1297,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.mon.nppLeaf_tavg-u-hxy-lnd (Lmon.nppLeaf)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "npp_tavg-u-hxy-lnd",
+      "CF standard name": "net_primary_productivity_of_biomass_expressed_as_carbon",
+      "CMIP6 Differences": "\"comment\" was \"'Production of carbon' means the production of biomass expressed as the mass of carbon which it contains. Net primary production is the excess of gross primary production (rate of synthesis of biomass from inorganic precursors) by autotrophs ('producers'), for example, photosynthesis in plants or phytoplankton, over the rate at which the autotrophs themselves respire some of this biomass. 'Productivity' means production per unit area. The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "\"Production of carbon\" means the production of biomass expressed as the mass of carbon which it contains. Net primary production is the excess of gross primary production (rate of synthesis of biomass from inorganic precursors) by autotrophs (\"producers\"), for example, photosynthesis in plants or phytoplankton, over the rate at which the autotrophs themselves respire some of this biomass. \"Productivity\" means production per unit area. The phrase \"expressed_as\" is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Net Primary Production on Land as Carbon Mass Flux [kgC m-2 s-1]",
+      "Modeling realm": "land",
+      "Positive": "down",
+      "Processing notes": "needed for any model that does not compute GPP",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "m01s19i102[lbtim_ia=240,lbproc=128] / (SECONDS_IN_DAY * DAYS_IN_YEAR)",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s19i102",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "19,102",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1296,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable land.mon.npp_tavg-u-hxy-lnd (Lmon.npp)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "nbp_tavg-u-hxy-lnd",
+      "CF standard name": "surface_net_downward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_all_land_processes",
+      "CMIP6 Differences": "\"comment\" was \"This is the net mass flux of carbon from atmosphere into land, calculated as photosynthesis MINUS the sum of  plant and soil respiration, carbon fluxes from fire, harvest, grazing  and land use change. Positive flux is into the land.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "This is the net mass flux of carbon between land and atmosphere calculated as photosynthesis MINUS the sum of  plant and soil respiration, carbonfluxes  from fire, harvest, grazing  and land use change. Positive flux  is into the land.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Carbon Mass Flux out of Atmosphere Due to Net Biospheric Production on Land [kgC m-2 s-1]",
+      "Modeling realm": "land",
+      "Positive": "down",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "(m01s19i102[lbtim_ia=240,lbproc=128] - m01s19i053[lbtim_ia=240,lbproc=128] - m01s19i042[lbtim_ia=240,lbproc=128] - m01s19i044[lbtim_ia=240,lbproc=128]) / (SECONDS_IN_DAY * DAYS_IN_YEAR)",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s19i042",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "19,042",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i044",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "19,044",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i053",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "19,053",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i102",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "19,102",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1295,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable land.mon.nbp_tavg-u-hxy-lnd (Lmon.nbp)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "mrsol_tavg-z10cm-hxy-lnd",
+      "CF standard name": "mass_content_of_water_in_soil_layer",
+      "CMIP6 Differences": "\"comment\" was \"The mass of water in all phases in the upper 10cm of the  soil layer.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "the mass of water in all phases in a thin surface soil layer.",
+      "Dimensions": "longitude latitude time sdepth1",
+      "Frequency": "mon",
+      "Long name": "Moisture in Upper Portion of Soil Column",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "integrate over uppermost 10 cm; ; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time sdepth1 CMIP7:longitude latitude time  sdepth1,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s08i223[blev=0.05, lbproc=128]",
+      "Expression UKESM1": "m01s08i223[blev=0.05, lbproc=128]",
+      "Model units": "kg m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s08i223",
+        "domain_profile": "DSOIL",
+        "model": "UKESM1",
+        "stash_number": "8,223",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i223",
+        "domain_profile": "DSOIL",
+        "model": "HadGEM3-GC31",
+        "stash_number": "8,223",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1294,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable land.mon.mrsol_tavg-z10cm-hxy-lnd (Lmon.mrsos)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "mrso_tavg-u-hxy-lnd",
+      "CF standard name": "mass_content_of_water_in_soil",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "the mass per unit area  (summed over all soil layers) of water in all phases.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Total Soil Moisture Content",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "level_sum(m01s08i223[lbproc=128])",
+      "Expression UKESM1": "level_sum(m01s08i223[lbproc=128])",
+      "Model units": "kg m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s08i223",
+        "domain_profile": "DSOIL",
+        "model": "UKESM1",
+        "stash_number": "8,223",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i229",
+        "domain_profile": "DSOIL",
+        "model": "UKESM1",
+        "stash_number": "8,229",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i230",
+        "domain_profile": "DSOIL",
+        "model": "UKESM1",
+        "stash_number": "8,230",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i223",
+        "domain_profile": "DSOIL",
+        "model": "HadGEM3-GC31",
+        "stash_number": "8,223",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i229",
+        "domain_profile": "DSOIL",
+        "model": "HadGEM3-GC31",
+        "stash_number": "8,229",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i230",
+        "domain_profile": "DSOIL",
+        "model": "HadGEM3-GC31",
+        "stash_number": "8,230",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1293,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable land.mon.mrso_tavg-u-hxy-lnd (Lmon.mrso)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "mrros_tavg-u-hxy-lnd",
+      "CF standard name": "surface_runoff_flux",
+      "CMIP6 Differences": "\"comment\" was \"The total surface run off leaving the land portion of the grid cell (excluding drainage through the base of the soil model).\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "the total surface runoff leaving the land portion of the grid cell.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Runoff",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s08i234[lbproc=128]",
+      "Expression UKESM1": "m01s08i234[lbproc=128]",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s08i234",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "8,234",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i234",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "8,234",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1292,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable land.mon.mrros_tavg-u-hxy-lnd (Lmon.mrros)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "mrro_tavg-u-hxy-lnd",
       "CF standard name": "runoff_flux",
       "CMIP6 Differences": "\"comment\" was \"The total run-off (including drainage through the base of the soil model) per unit area leaving the land portion of the grid cell.\";",
