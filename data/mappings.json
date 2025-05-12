@@ -1,6 +1,511 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "ec550aer_tavg-l-hxy-u",
+      "CF standard name": "volume_extinction_coefficient_in_air_due_to_ambient_aerosol_particles",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Aerosol Extinction at 550nm",
+      "Dimensions": "longitude latitude alevel time lambda550nm",
+      "Frequency": "mon",
+      "Long name": "Aerosol Extinction Coefficient",
+      "Modeling realm": "aerosol",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s02i530[lbplev=3, lbproc=128] + m01s02i540[lbplev=3, lbproc=128]",
+      "Expression UKESM1": "m01s02i530[lbplev=3, lbproc=128] + m01s02i540[lbplev=3, lbproc=128]",
+      "Model units": "m-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s02i530",
+        "domain_profile": "DALLTHAOT",
+        "model": "UKESM1",
+        "stash_number": "2,530",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i540",
+        "domain_profile": "DALLTHAOT",
+        "model": "UKESM1",
+        "stash_number": "2,540",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s00i033",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "33",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i530",
+        "domain_profile": "DALLTHAOT",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,530",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i540",
+        "domain_profile": "DALLTHAOT",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,540",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s00i033",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "33",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 877,
+    "labels": [
+      "mon",
+      "aerosol",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable aerosol.mon.ec550aer_tavg-l-hxy-u (Emon.ec550aer)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "dissi14c_tavg-l-hxy-sea",
+      "CF standard name": "mole_concentration_of_dissolved_inorganic_14C_in_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Dissolved inorganic carbon-14 (CO3+HCO3+H2CO3) concentration",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Dissolved Inorganic Carbon-14 Concentration",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 876,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.dissi14c_tavg-l-hxy-sea (Emon.dissi14c)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "depdust_tavg-u-hxy-u",
+      "CF standard name": "minus_tendency_of_atmosphere_mass_content_of_dust_dry_aerosol_particles_due_to_deposition",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Fdry mass deposition rate of dust",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Total Deposition Rate of Dust",
+      "Modeling realm": "aerosol",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i440[lbproc=128]",
+      "Expression UKESM1": "m01s03i440[lbproc=128]",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i440",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,440",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i440",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,440",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 875,
+    "labels": [
+      "mon",
+      "aerosol",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable aerosol.mon.depdust_tavg-u-hxy-u (Emon.depdust)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "cropFracC4_tavg-u-hxy-u",
+      "CF standard name": "area_fraction",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: mean where land over all_area_types time: mean\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Percentage of entire grid cell covered by C4 crops",
+      "Dimensions": "longitude latitude time typec4crop",
+      "Frequency": "mon",
+      "Long name": "Percentage Cover by C4 Crops",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time typec4crop CMIP7:longitude latitude time  typec4crop,;  ; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean where land over all_area_types time: mean CMIP7:area: time: mean,",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "land_class_area(m01s19i013[lbtim_ia=240,lbproc=128],m01s03i395[lbproc=128], land_class='c4Crop')",
+      "Model units": "%"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i395",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,395",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i013",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "19,013",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 874,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable land.mon.cropFracC4_tavg-u-hxy-u (Emon.cropFracC4)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "cropFracC3_tavg-u-hxy-u",
+      "CF standard name": "area_fraction",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: mean where land over all_area_types time: mean\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Percentage of entire grid cell covered by C3 crops",
+      "Dimensions": "longitude latitude time typec3crop",
+      "Frequency": "mon",
+      "Long name": "Percentage Cover by C3 Crops",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time typec3crop CMIP7:longitude latitude time  typec3crop,;  ; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean where land over all_area_types time: mean CMIP7:area: time: mean,",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "land_class_area(m01s19i013[lbtim_ia=240,lbproc=128],m01s03i395[lbproc=128], land_class='c3Crop')",
+      "Model units": "%"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i395",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,395",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i013",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "19,013",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 873,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable land.mon.cropFracC3_tavg-u-hxy-u (Emon.cropFracC3)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "co2_tavg-u-hm-u",
+      "CF standard name": "mole_fraction_of_carbon_dioxide_in_air",
+      "CMIP6 Differences": "\"units\" was \"1e-06\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "As co2, but only at the surface",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Atmosphere CO2",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "1E-06",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "m01s00i252[lblev=1, lbproc=128] * (MOLECULAR_MASS_OF_AIR / MOLECULAR_MASS_OF_CO2)",
+      "Model units": "mol mol-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s00i252",
+        "domain_profile": "DALLTH",
+        "model": "UKESM1",
+        "stash_number": "252",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 872,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable atmos.mon.co2_tavg-u-hm-u (Emon.co2s)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "co23D_tavg-l-hxy-u",
+      "CF standard name": "mass_fraction_of_carbon_dioxide_tracer_in_air",
+      "CMIP6 Differences": "\"comment\" was \"report 3D field of model simulated atmospheric CO2 mass mixing ration on model levels\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "requested for all Emissions-driven runs",
+      "Dimensions": "longitude latitude alevel time",
+      "Frequency": "mon",
+      "Long name": "3D-Field of Transported CO2",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg kg-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "m01s00i252[lbproc=128]",
+      "Model units": "kg kg-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s00i252",
+        "domain_profile": "DALLTH",
+        "model": "UKESM1",
+        "stash_number": "252",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s00i033",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "33",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 871,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable atmos.mon.co23D_tavg-l-hxy-u (Emon.co23D)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "cnc_tavg-u-hxy-u",
+      "CF standard name": "vegetation_area_fraction",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "Canopy covered fraction",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Canopy Covered Area Percentage",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "%",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 870,
+    "labels": [
+      "mon",
+      "land"
+    ],
+    "title": "Variable land.mon.cnc_tavg-u-hxy-u (Emon.cnc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "clwmodis_tavg-u-hxy-u",
+      "CF standard name": "modis_liquid_topped_cloud_area_fraction",
+      "CMIP6 Differences": "\"comment\" was \"Mass of cloud liquid water, as seen by the  Moderate Resolution Imaging Spectroradiometer (MODIS). Includes both large-scale and convective cloud.\"; ; \"standard_name\" was \"liquid_water_cloud_area_fraction\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "MODIS Liquid Cloud Fraction",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "MODIS Liquid Cloud Percentage",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s02i452[lbproc=128] / m01s02i330[lbproc=128]",
+      "Expression UKESM1": "m01s02i452[lbproc=128] / m01s02i330[lbproc=128]",
+      "Model units": "1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s02i330",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "2,330",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i452",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "2,452",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i330",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,330",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i452",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,452",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 869,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.clwmodis_tavg-u-hxy-u (Emon.clwmodis)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "cltmodis_tavg-u-hxy-u",
+      "CF standard name": "modis_cloud_area_fraction",
+      "CMIP6 Differences": "\"comment\" was \"Total cloud area fraction (reported as a percentage) for the whole atmospheric column, as seen by the  Moderate Resolution Imaging Spectroradiometer (MODIS). Includes both large-scale and convective cloud.\"; ; \"standard_name\" was \"cloud_area_fraction\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "MODIS Total Cloud Fraction",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "MODIS Total Cloud Cover Percentage",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s02i451[lbproc=128] / m01s02i330[lbproc=128]",
+      "Expression UKESM1": "m01s02i451[lbproc=128] / m01s02i330[lbproc=128]",
+      "Model units": "1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s02i330",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "2,330",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i451",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "2,451",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i330",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,330",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i451",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,451",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 868,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.cltmodis_tavg-u-hxy-u (Emon.cltmodis)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "clmisr_tavg-h16-hxy-air",
       "CF standard name": "cloud_area_fraction_in_atmosphere_layer",
       "CMIP6 Differences": "\"comment\" was \"Cloud percentage in spectral bands and layers as observed by the Multi-angle Imaging SpectroRadiometer (MISR) instrument. The first layer in each profile is reserved for a retrieval error flag.\"; ; \"cell_methods\" was \"area: time: mean\";",

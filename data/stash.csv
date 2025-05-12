@@ -1,4 +1,27 @@
 Model,Branded variable name,Frequency,STASH,Section,Item,time_profile,domain_profile,usage_profile
+UKESM1,ec550aer_tavg-l-hxy-u,mon,m01s02i530,2,530,TMONMN,DALLTHAOT,UP5
+UKESM1,ec550aer_tavg-l-hxy-u,mon,m01s02i540,2,540,TMONMN,DALLTHAOT,UP5
+UKESM1,ec550aer_tavg-l-hxy-u,mon,m01s00i033,0,33,TMONMN,DIAG,UP5
+HadGEM3-GC31,ec550aer_tavg-l-hxy-u,mon,m01s02i530,2,530,TMONMN,DALLTHAOT,UP5
+HadGEM3-GC31,ec550aer_tavg-l-hxy-u,mon,m01s02i540,2,540,TMONMN,DALLTHAOT,UP5
+HadGEM3-GC31,ec550aer_tavg-l-hxy-u,mon,m01s00i033,0,33,TMONMN,DIAG,UP5
+UKESM1,depdust_tavg-u-hxy-u,mon,m01s03i440,3,440,TMONMN,DIAG,UP5
+HadGEM3-GC31,depdust_tavg-u-hxy-u,mon,m01s03i440,3,440,TMONMN,DIAG,UP5
+UKESM1,cropFracC4_tavg-u-hxy-u,mon,m01s03i395,3,395,TMONMN,DIAG,UP5
+UKESM1,cropFracC4_tavg-u-hxy-u,mon,m01s19i013,19,013,TMONMN,DTILE,UP5
+UKESM1,cropFracC3_tavg-u-hxy-u,mon,m01s03i395,3,395,TMONMN,DIAG,UP5
+UKESM1,cropFracC3_tavg-u-hxy-u,mon,m01s19i013,19,013,TMONMN,DTILE,UP5
+UKESM1,co2_tavg-u-hm-u,mon,m01s00i252,0,252,TMONMN,DALLTH,UP5
+UKESM1,co23D_tavg-l-hxy-u,mon,m01s00i252,0,252,TMONMN,DALLTH,UP5
+UKESM1,co23D_tavg-l-hxy-u,mon,m01s00i033,0,33,TMONMN,DIAG,UP5
+UKESM1,clwmodis_tavg-u-hxy-u,mon,m01s02i330,2,330,TMONMN,DIAG,UP5
+UKESM1,clwmodis_tavg-u-hxy-u,mon,m01s02i452,2,452,TMONMN,DIAG,UP5
+HadGEM3-GC31,clwmodis_tavg-u-hxy-u,mon,m01s02i330,2,330,TMONMN,DIAG,UP5
+HadGEM3-GC31,clwmodis_tavg-u-hxy-u,mon,m01s02i452,2,452,TMONMN,DIAG,UP5
+UKESM1,cltmodis_tavg-u-hxy-u,mon,m01s02i330,2,330,TMONMN,DIAG,UP5
+UKESM1,cltmodis_tavg-u-hxy-u,mon,m01s02i451,2,451,TMONMN,DIAG,UP5
+HadGEM3-GC31,cltmodis_tavg-u-hxy-u,mon,m01s02i330,2,330,TMONMN,DIAG,UP5
+HadGEM3-GC31,cltmodis_tavg-u-hxy-u,mon,m01s02i451,2,451,TMONMN,DIAG,UP5
 UKESM1,clmisr_tavg-h16-hxy-air,mon,m01s02i330,2,330,TMONMN,DIAG,UP5
 UKESM1,clmisr_tavg-h16-hxy-air,mon,m01s02i360,2,360,TMONMN,DCOSP16x7,UP5
 HadGEM3-GC31,clmisr_tavg-h16-hxy-air,mon,m01s02i330,2,330,TMONMN,DIAG,UP5
