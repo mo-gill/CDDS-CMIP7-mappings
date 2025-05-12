@@ -1,6 +1,325 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "yvelmean_tavg-u-hxy-is",
+      "CF standard name": "land_ice_vertical_mean_y_velocity",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "The vertical mean land ice velocity is the average from the bedrock to the surface of the ice",
+      "Dimensions": "xant yant time",
+      "Frequency": "yr",
+      "Long name": "Y-Component of Land Ice Vertical Mean Velocity",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1196,
+    "labels": [
+      "yr",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.yr.yvelmean_tavg-u-hxy-is (IyrAnt.yvelmean)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "yvelbase_tavg-u-hxy-is",
+      "CF standard name": "land_ice_basal_y_velocity",
+      "CMIP6 Differences": "\"comment\" was \"A velocity is a vector quantity. 'y' indicates a vector component along the grid y-axis, positive with increasing y. 'Land ice' means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. 'basal' means the lower boundary of the land ice.\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "A velocity is a vector quantity. \"y\" indicates a vector component along the grid y-axis, positive with increasing y. \"Land ice\" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. \"basal\" means the lower boundary of the land ice.",
+      "Dimensions": "xant yant time",
+      "Frequency": "yr",
+      "Long name": "Y-Component of Land Ice Basal Velocity",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1195,
+    "labels": [
+      "yr",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.yr.yvelbase_tavg-u-hxy-is (IyrAnt.yvelbase)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "xvelsurf_tavg-u-hxy-is",
+      "CF standard name": "land_ice_surface_x_velocity",
+      "CMIP6 Differences": "\"comment\" was \"A velocity is a vector quantity. 'x' indicates a vector component along the grid x-axis, positive with increasing x. 'Land ice' means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. The surface called 'surface' means the lower boundary of the atmosphere.\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "A velocity is a vector quantity. \"x\" indicates a vector component along the grid x-axis, positive with increasing x. \"Land ice\" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. The surface called \"surface\" means the lower boundary of the atmosphere.",
+      "Dimensions": "xant yant time",
+      "Frequency": "yr",
+      "Long name": "X-Component of Land Ice Surface Velocity",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1194,
+    "labels": [
+      "yr",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.yr.xvelsurf_tavg-u-hxy-is (IyrAnt.xvelsurf)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "xvelmean_tavg-u-hxy-is",
+      "CF standard name": "land_ice_vertical_mean_x_velocity",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "The vertical mean land ice velocity is the average from the bedrock to the surface of the ice",
+      "Dimensions": "xant yant time",
+      "Frequency": "yr",
+      "Long name": "X-Component of Land Ice Vertical Mean Velocity",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1193,
+    "labels": [
+      "yr",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.yr.xvelmean_tavg-u-hxy-is (IyrAnt.xvelmean)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "xvelbase_tavg-u-hxy-is",
+      "CF standard name": "land_ice_basal_x_velocity",
+      "CMIP6 Differences": "\"comment\" was \"A velocity is a vector quantity. 'x' indicates a vector component along the grid x-axis, positive with increasing x. 'Land ice' means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. 'basal' means the lower boundary of the land ice.\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "A velocity is a vector quantity. \"x\" indicates a vector component along the grid x-axis, positive with increasing x. \"Land ice\" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. \"basal\" means the lower boundary of the land ice.",
+      "Dimensions": "xant yant time",
+      "Frequency": "yr",
+      "Long name": "X-Component of Land Ice Basal Velocity",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1192,
+    "labels": [
+      "yr",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.yr.xvelbase_tavg-u-hxy-is (IyrAnt.xvelbase)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "topg_tavg-u-hxy-gis",
+      "CF standard name": "bedrock_altitude",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: time: mean where ice_sheet\"; ; \"comment\" was \"The bedrock topography beneath the land ice\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where grounded_ice_sheet (mask=sfgrlf)",
+      "Comment": "This is needed in case bed rock elevation changes in time",
+      "Dimensions": "xant yant time",
+      "Frequency": "yr",
+      "Long name": "Bedrock Altitude",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where ice_sheet CMIP7:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf),; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where ice_sheet CMIP7:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf),; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where ice_sheet CMIP7:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf),; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where ice_sheet CMIP7:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf),; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where ice_sheet CMIP7:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf), area: sum time: mean where grounded_ice_sheet (comment: mask=sfgrlf),; CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where ice_sheet CMIP7:area: time: mean where grounded_ice_sheet (mask=sfgrlf),",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1191,
+    "labels": [
+      "yr",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.yr.topg_tavg-u-hxy-gis (IyrAnt.topg)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tendlicalvf_tavg-u-hm-is",
+      "CF standard name": "tendency_of_land_ice_mass_due_to_calving",
+      "CMIP6 Differences": "\"comment\" was \"The total calving flux over land ice is a spatial integration of the calving flux\";",
+      "Cell measures": "",
+      "Cell methods": "area: sum where ice_sheet time: mean",
+      "Comment": "Antarctica",
+      "Dimensions": "time",
+      "Frequency": "yr",
+      "Long name": "Total Calving Flux",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "kg s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1190,
+    "labels": [
+      "yr",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.yr.tendlicalvf_tavg-u-hm-is (IyrAnt.tendlicalvf)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tendlibmassbf_tavg-u-hm-is",
+      "CF standard name": "tendency_of_land_ice_mass_due_to_basal_mass_balance",
+      "CMIP6 Differences": "\"comment\" was \"The total basal mass balance flux over land ice is a spatial integration of the basal mass balance flux\";",
+      "Cell measures": "",
+      "Cell methods": "area: sum where ice_sheet time: mean",
+      "Comment": "Antarctica",
+      "Dimensions": "time",
+      "Frequency": "yr",
+      "Long name": "Total Basal Mass Balance Flux",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "kg s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1189,
+    "labels": [
+      "yr",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.yr.tendlibmassbf_tavg-u-hm-is (IyrAnt.tendlibmassbf)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tendacabf_tavg-u-hm-is",
+      "CF standard name": "tendency_of_land_ice_mass_due_to_surface_mass_balance",
+      "CMIP6 Differences": "\"comment\" was \"The total surface mass balance flux over land ice is a spatial integration of the surface mass balance flux\";",
+      "Cell measures": "",
+      "Cell methods": "area: sum where ice_sheet time: mean",
+      "Comment": "Antarctica",
+      "Dimensions": "time",
+      "Frequency": "yr",
+      "Long name": "Total Surface Mass Balance Flux",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "kg s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1188,
+    "labels": [
+      "yr",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.yr.tendacabf_tavg-u-hm-is (IyrAnt.tendacabf)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "strbasemag_tavg-u-hxy-is",
+      "CF standard name": "land_ice_basal_drag",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "Magnitude of basal drag at land ice base",
+      "Dimensions": "xant yant time",
+      "Frequency": "yr",
+      "Long name": "Land Ice Basal Drag",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "Pa",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1187,
+    "labels": [
+      "yr",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.yr.strbasemag_tavg-u-hxy-is (IyrAnt.strbasemag)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "snc_tavg-u-hxy-is",
+      "CF standard name": "surface_snow_area_fraction",
+      "CMIP6 Differences": "\"comment\" was \"Percentage of each grid cell that is occupied by snow that rests on land portion of cell.\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "quantity averaged over ice sheet  only, to avoid contamination from other surfaces (eg: permafrost)",
+      "Dimensions": "xant yant time",
+      "Frequency": "yr",
+      "Long name": "Snow Area Percentage",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1186,
+    "labels": [
+      "yr",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.yr.snc_tavg-u-hxy-is (IyrAnt.snc)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "sftgrf_tavg-u-hxy-u",
       "CF standard name": "grounded_ice_sheet_area_fraction",
       "CMIP6 Differences": "\"comment\" was \"Percentage of grid cell covered by grounded ice sheet\";",
