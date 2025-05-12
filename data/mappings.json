@@ -1,6 +1,233 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "fNfert_tavg-u-hxy-lnd",
+      "CF standard name": "tendency_of_soil_mass_content_of_nitrogen_compounds_expressed_as_nitrogen_due_to_fertilization",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "Total Nitrogen added for cropland fertilisation (artificial and manure). Relative to total land area of a grid cell, not relative to agricultural area",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Total Nitrogen Added for Cropland Fertilisation (Artificial and Manure)",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "m01s19i126[lbtim_ia=240,lbproc=128] / (SECONDS_IN_DAY * DAYS_IN_YEAR)",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s19i126",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "19,126",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 901,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable land.mon.fNfert_tavg-u-hxy-lnd (Emon.fNfert)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fNdep_tavg-u-hxy-lnd",
+      "CF standard name": "minus_tendency_of_atmosphere_mass_content_of_nitrogen_compounds_expressed_as_nitrogen_due_to_deposition",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "Surface deposition rate of nitrogen.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Dry and Wet Deposition of Reactive Nitrogen onto Land",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 900,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.mon.fNdep_tavg-u-hxy-lnd (Emon.fNdep)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fNVegSoil_tavg-u-hxy-lnd",
+      "CF standard name": "nitrogen_mass_flux_into_soil_from_vegetation_excluding_litter",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "In some models part of nitrogen (e.g., root exudate) can go directly into the soil pool without entering litter.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Total Nitrogen Mass Flux from Vegetation Directly to Soil",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "m01s19i124[lbtim_ia=240,lbproc=128] / (SECONDS_IN_DAY * DAYS_IN_YEAR)",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s19i124",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "19,124",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 899,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable land.mon.fNVegSoil_tavg-u-hxy-lnd (Emon.fNVegSoil)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fNVegLitter_tavg-u-hxy-lnd",
+      "CF standard name": "nitrogen_mass_flux_into_litter_from_vegetation",
+      "CMIP6 Differences": "\"comment\" was \"In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics. 'Litter' is dead plant material in or above the soil. 'Vegetation' means any living plants e.g. trees, shrubs, grass.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics. \"Litter\" is dead plant material in or above the soil. \"Vegetation\" means any living plants e.g. trees, shrubs, grass.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Total Nitrogen Mass Flux from Vegetation to Litter",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 898,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.mon.fNVegLitter_tavg-u-hxy-lnd (Emon.fNVegLitter)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fNProduct_tavg-u-hxy-lnd",
+      "CF standard name": "nitrogen_mass_flux_into_forestry_and_agricultural_products_due_to_anthropogenic_land_use_or_land_cover_change",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "When land use change results in deforestation of natural vegetation (trees or grasslands) then natural biomass is removed. The treatment of deforested biomass differs significantly across models, but it should be straight-forward to compare deforested biomass across models.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Deforested or Harvested Biomass as a Result of Anthropogenic Land-Use or Change",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "m01s19i122[lbtim_ia=240,lbproc=128] / (SECONDS_IN_DAY * DAYS_IN_YEAR)",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 897,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable land.mon.fNProduct_tavg-u-hxy-lnd (Emon.fNProduct)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fNOx_tavg-u-hxy-lnd",
+      "CF standard name": "surface_upward_mass_flux_of_nox_expressed_as_nitrogen_out_of_vegetation_and_litter_and_soil",
+      "CMIP6 Differences": "\"comment\" was \"The surface called 'surface' means the lower boundary of the atmosphere. 'Upward' indicates a vector component which is positive when directed upward (negative downward). In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics. The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. 'Nox' means a combination of two radical species containing nitrogen and oxygen NO+NO2. 'Vegetation' means any living plants e.g. trees, shrubs, grass. 'Litter' is dead plant material in or above the soil.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "The surface called \"surface\" means the lower boundary of the atmosphere. \"Upward\" indicates a vector component which is positive when directed upward (negative downward). In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics. The phrase \"expressed_as\" is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. \"Nox\" means a combination of two radical species containing nitrogen and oxygen NO+NO2. \"Vegetation\" means any living plants e.g. trees, shrubs, grass. \"Litter\" is dead plant material in or above the soil.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Total Land NOx Flux",
+      "Modeling realm": "land",
+      "Positive": "up",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 896,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.mon.fNOx_tavg-u-hxy-lnd (Emon.fNOx)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fNLitterSoil_tavg-u-hxy-lnd",
+      "CF standard name": "nitrogen_mass_flux_into_soil_from_litter",
+      "CMIP6 Differences": "\"comment\" was \"In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics. 'Litter' is dead plant material in or above the soil.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics. \"Litter\" is dead plant material in or above the soil.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Total Nitrogen Mass Flux from Litter to Soil",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 895,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.mon.fNLitterSoil_tavg-u-hxy-lnd (Emon.fNLitterSoil)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "fNLandToOcean_tavg-u-hxy-lnd",
       "CF standard name": "mass_flux_of_nitrogen_compounds_expressed_as_nitrogen_into_sea_from_rivers",
       "CMIP6 Differences": "",

@@ -1,4 +1,6 @@
 Model,Branded variable name,Frequency,STASH,Section,Item,time_profile,domain_profile,usage_profile
+UKESM1,fNfert_tavg-u-hxy-lnd,mon,m01s19i126,19,126,TMONMN,DIAG,UP5
+UKESM1,fNVegSoil_tavg-u-hxy-lnd,mon,m01s19i124,19,124,TMONMN,DIAG,UP5
 UKESM1,fNAnthDisturb_tavg-u-hxy-lnd,mon,m01s19i120,19,120,TMONMN,DIAG,UP5
 UKESM1,fNAnthDisturb_tavg-u-hxy-lnd,mon,m01s19i122,19,122,TMONMN,DIAG,UP5
 UKESM1,fLuc_tavg-u-hxy-lnd,mon,m01s19i039,19,039,TMONMN,DIAG,UP5
