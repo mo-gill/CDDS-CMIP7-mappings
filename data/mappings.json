@@ -1,6 +1,470 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "tauunowgw_tavg-p39-hy-air",
+      "CF standard name": "upward_eastward_momentum_flux_in_air_due_to_nonorographic_westward_gravity_waves",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "",
+      "Cell methods": "longitude: time: mean where air",
+      "Comment": "Zonal mean vertical wave flux of zonal momentum within the non-orographic gravity wave parameterization associated with the westward propagating modes.",
+      "Dimensions": "latitude plev39 time",
+      "Frequency": "day",
+      "Long name": "Zonal mean eastward Reynolds stress from non-orographic westward gravity wave parameterization",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "Pa",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 815,
+    "labels": [
+      "day",
+      "atmos"
+    ],
+    "title": "Variable atmos.day.tauunowgw_tavg-p39-hy-air (EdayZ.tauunowgw)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tauunoegw_tavg-p39-hy-air",
+      "CF standard name": "upward_eastward_momentum_flux_in_air_due_to_nonorographic_eastward_gravity_waves",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "",
+      "Cell methods": "longitude: time: mean where air",
+      "Comment": "Zonal mean vertical wave flux of zonal momentum within the non-orographic gravity wave parameterization associated with the eastward propagating modes.",
+      "Dimensions": "latitude plev39 time",
+      "Frequency": "day",
+      "Long name": "Zonal mean eastward Reynolds stress from non-orographic eastward gravity wave parameterization",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "Pa",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 814,
+    "labels": [
+      "day",
+      "atmos"
+    ],
+    "title": "Variable atmos.day.tauunoegw_tavg-p39-hy-air (EdayZ.tauunoegw)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ta_tavg-p39-hy-air",
+      "CF standard name": "air_temperature",
+      "CMIP6 Differences": "\"long_name\" was \"Air Temperature\"; ; \"dimensions\" was \"latitude plev19 time\"; ; \"comment\" was \"Air Temperature\"; ; \"cell_measures\" was \"\"; ; \"cell_methods\" was \"longitude: mean time: mean\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "longitude: time: mean where air",
+      "Comment": "Zonal mean temperature of air with the extended number of vertical levels.",
+      "Dimensions": "latitude plev39 time",
+      "Frequency": "day",
+      "Long name": "Zonal mean air temperature",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:longitude: mean time: mean CMIP7:longitude: time: mean where air, CHANGE SINCE CMIP6 in Cell Measures - CMIP6:null CMIP7:area: areacella, CHANGE SINCE CMIP6 in Dimensions - CMIP6:latitude plev19 time CMIP7:latitude plev39 time,",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s30i294[blev=PLEV19, lbproc=192] / m01s30i304[blev=PLEV19, lbproc=192]",
+      "Expression UKESM1": "m01s30i294[blev=PLEV19, lbproc=192] / m01s30i304[blev=PLEV19, lbproc=192]",
+      "Model units": "K"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s30i294",
+        "domain_profile": "PLEV19Z",
+        "model": "UKESM1",
+        "stash_number": "30,294",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i304",
+        "domain_profile": "PLEV19Z",
+        "model": "UKESM1",
+        "stash_number": "30,304",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i294",
+        "domain_profile": "PLEV19Z",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,294",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i304",
+        "domain_profile": "PLEV19Z",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,304",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 813,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.day.ta_tavg-p39-hy-air (EdayZ.ta)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "psitem_tavg-p39-hy-air",
+      "CF standard name": "atmosphere_transformed_eulerian_mean_meridional_overturning_mass_streamfunction",
+      "CMIP6 Differences": "\"cell_methods\" was \"longitude: mean time: mean\"; ; \"comment\" was \"Residual mass streamfunction, computed from vstar and integrated from the top of the atmosphere (on the native model grid). Reference: Andrews et al (1987): Middle Atmospheric Dynamics. Academic Press.\";",
+      "Cell measures": "",
+      "Cell methods": "longitude: time: mean where air",
+      "Comment": "zonal mean; hence YZT",
+      "Dimensions": "latitude plev39 time",
+      "Frequency": "day",
+      "Long name": "Transformed Eulerian Mean Mass Streamfunction",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:longitude: mean time: mean CMIP7:longitude: time: mean where air,",
+      "Units": "kg s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 812,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.day.psitem_tavg-p39-hy-air (EdayZ.psitem)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "epfz_tavg-p39-hy-air",
+      "CF standard name": "upward_eliassen_palm_flux_in_air",
+      "CMIP6 Differences": "\"cell_methods\" was \"longitude: mean time: mean\"; ; \"comment\" was \"Transformed Eulerian Mean Diagnostics Meridional component Fz of the Eliassen-Palm (EP) flux (Fy, Fz) derived from 6hr or higher frequency fields (use daily fields or 12 hr fields if the 6 hr are not available). Please use the definitions given by equation 3.5.3b of Andrews, Holton and Leovy text book, but scaled by density to have units m3 s-2.\";",
+      "Cell measures": "",
+      "Cell methods": "longitude: time: mean where air",
+      "Comment": "zonal mean; hence YZT",
+      "Dimensions": "latitude plev39 time",
+      "Frequency": "day",
+      "Long name": "Upward Component of the Eliassen-Palm Flux",
+      "Modeling realm": "atmos",
+      "Positive": "up",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:longitude: mean time: mean CMIP7:longitude: time: mean where air,",
+      "Units": "m3 s-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "scale_epflux(m01s30i313[blev=PLEV39, lbproc=192], m01s30i301[blev=PLEV39, lbproc=192])",
+      "Expression UKESM1": "scale_epflux(m01s30i313[blev=PLEV39, lbproc=192], m01s30i301[blev=PLEV39, lbproc=192])",
+      "Model units": "m3 s-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s30i301",
+        "domain_profile": "PLEV39Z",
+        "model": "UKESM1",
+        "stash_number": "30,301",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i313",
+        "domain_profile": "PLEV39",
+        "model": "UKESM1",
+        "stash_number": "30,313",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i201",
+        "domain_profile": "PLEV39Z",
+        "model": "UKESM1",
+        "stash_number": "30,201",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i202",
+        "domain_profile": "PLEV39Z",
+        "model": "UKESM1",
+        "stash_number": "30,202",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i301",
+        "domain_profile": "PLEV39Z",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,301",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i313",
+        "domain_profile": "PLEV39",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,313",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i201",
+        "domain_profile": "PLEV39Z",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,201",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i202",
+        "domain_profile": "PLEV39Z",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,202",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 811,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.day.epfz_tavg-p39-hy-air (EdayZ.epfz)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "epfy_tavg-p39-hy-air",
+      "CF standard name": "northward_eliassen_palm_flux_in_air",
+      "CMIP6 Differences": "\"cell_methods\" was \"longitude: mean time: mean\"; ; \"comment\" was \"Transformed Eulerian Mean Diagnostics Meridional component Fy of Eliassen-Palm (EP) flux (Fy, Fz) derived from 6hr or higher frequency fields (use daily fields or 12 hr fields if the 6 hr are not available). Please use the definitions given by equation 3.5.3a of Andrews, Holton and Leovy text book, but scaled by density to have units m3 s-2.\";",
+      "Cell measures": "",
+      "Cell methods": "longitude: time: mean where air",
+      "Comment": "zonal mean; hence YZT",
+      "Dimensions": "latitude plev39 time",
+      "Frequency": "day",
+      "Long name": "Northward Component of the Eliassen-Palm Flux",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:longitude: mean time: mean CMIP7:longitude: time: mean where air,",
+      "Units": "m3 s-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "scale_epflux(m01s30i312[blev=PLEV39, lbproc=192], m01s30i301[blev=PLEV39, lbproc=192])",
+      "Expression UKESM1": "scale_epflux(m01s30i312[blev=PLEV39, lbproc=192], m01s30i301[blev=PLEV39, lbproc=192])",
+      "Model units": "m3 s-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s30i301",
+        "domain_profile": "PLEV39Z",
+        "model": "UKESM1",
+        "stash_number": "30,301",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i312",
+        "domain_profile": "PLEV39",
+        "model": "UKESM1",
+        "stash_number": "30,312",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i201",
+        "domain_profile": "PLEV39Z",
+        "model": "UKESM1",
+        "stash_number": "30,201",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i202",
+        "domain_profile": "PLEV39Z",
+        "model": "UKESM1",
+        "stash_number": "30,202",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i301",
+        "domain_profile": "PLEV39Z",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,301",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i312",
+        "domain_profile": "PLEV39",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,312",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i201",
+        "domain_profile": "PLEV39Z",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,201",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i202",
+        "domain_profile": "PLEV39Z",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,202",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 810,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.day.epfy_tavg-p39-hy-air (EdayZ.epfy)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "zg_tavg-p19-hxy-air",
+      "CF standard name": "geopotential_height",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "time: mean",
+      "Comment": "Geopotential is the sum of the specific gravitational potential energy relative to the geoid and the specific centripetal potential energy. Geopotential height is the geopotential divided by the standard acceleration due to gravity. It is numerically similar to the altitude (or geometric height) and not to the quantity with standard name height, which is relative to the surface.",
+      "Dimensions": "longitude latitude plev19 time",
+      "Frequency": "day",
+      "Long name": "Geopotential Height",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s30i297[blev=PLEV19, lbproc=128] / m01s30i304[blev=PLEV19, lbproc=128]",
+      "Expression UKESM1": "m01s30i297[blev=PLEV19, lbproc=128] / m01s30i304[blev=PLEV19, lbproc=128]",
+      "Model units": "m"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s30i297",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "30,297",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i304",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "30,304",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i297",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,297",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i304",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,304",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 809,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable atmos.day.zg_tavg-p19-hxy-air (Eday.zg)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "wtd_tavg-u-hxy-lnd",
+      "CF standard name": "water_table_depth",
+      "CMIP6 Differences": "\"comment\" was \"Depth is the vertical distance below the surface. The water table is the surface below which the soil is saturated with water such that all pore spaces are filled.\";",
+      "Cell measures": "area: areacellr",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "depth_of_soil_moisture_saturation",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Water Table Depth",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s08i249[lbproc=128]",
+      "Expression UKESM1": "m01s08i249[lbproc=128]",
+      "Model units": "m"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s08i249",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "8,249",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s08i249",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "8,249",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 808,
+    "labels": [
+      "day",
+      "land",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable land.day.wtd_tavg-u-hxy-lnd (Eday.wtd)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "wap_tavg-p19-hxy-u",
       "CF standard name": "lagrangian_tendency_of_air_pressure",
       "CMIP6 Differences": "\"comment\" was \"Omega (vertical velocity in pressure coordinates, positive downwards)\";",
