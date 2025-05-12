@@ -1,6 +1,350 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "wap_tavg-p19-hxy-u",
+      "CF standard name": "lagrangian_tendency_of_air_pressure",
+      "CMIP6 Differences": "\"comment\" was \"Omega (vertical velocity in pressure coordinates, positive downwards)\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "time: mean",
+      "Comment": "wap is a lower priority request (level 2, not level 1)",
+      "Dimensions": "longitude latitude plev19 time",
+      "Frequency": "day",
+      "Long name": "Omega (=dp/dt)",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "Pa s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s30i298[blev=PLEV19, lbproc=128] / m01s30i304[blev=PLEV19, lbproc=128]",
+      "Expression UKESM1": "m01s30i298[blev=PLEV19, lbproc=128] / m01s30i304[blev=PLEV19, lbproc=128]",
+      "Model units": "Pa s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s30i298",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "30,298",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i304",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "30,304",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i298",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,298",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i304",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,304",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 807,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.day.wap_tavg-p19-hxy-u (Eday.wap)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "vtendogw_tavg-p19-hxy-air",
+      "CF standard name": "tendency_of_northward_wind_due_to_orographic_gravity_wave_drag",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where air",
+      "Comment": "Tendency of northward wind induced by the parameterized orographic gravity wave drag",
+      "Dimensions": "longitude latitude plev19 time",
+      "Frequency": "day",
+      "Long name": "Tendency of northward wind due to orographic gravity waves",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "This is the total tendency due to parameterized orographic gravity wave drag, which is the sum of all possible components of the parameterization (where applicable). We ask that in the Essential Model Documentation modelling centers specify the parameterization scheme used and the specific values of its tunable parameters used for the simulation, and a specification of the part of the gravity wave spectrum that is targeted by the parameterization (e.g., minimally, the effective resolution of the model).",
+      "Units": "m s-2",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 806,
+    "labels": [
+      "day",
+      "atmos"
+    ],
+    "title": "Variable atmos.day.vtendogw_tavg-p19-hxy-air (Eday.vtendogw)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "vtendnogw_tavg-p19-hxy-air",
+      "CF standard name": "tendency_of_northward_wind_due_to_nonorographic_gravity_wave_drag",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where air",
+      "Comment": "Tendency of northward wind induced by the parameterized non-orographic gravity wave drag",
+      "Dimensions": "longitude latitude plev19 time",
+      "Frequency": "day",
+      "Long name": "Tendency of northward wind due to non-orographic gravity waves",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "This is the total tendency due to parameterized non-orographic gravity wave drag, which is the sum of all possible components of the parameterization (where applicable). We ask that in the Essential Model Documentation modelling centers specify the parameterization scheme used and the specific values of its tunable parameters used for the simulation, and a specification of the part of the gravity wave spectrum that is targeted by the parameterization (e.g., minimally, the effective resolution of the model).",
+      "Units": "m s-2",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 805,
+    "labels": [
+      "day",
+      "atmos"
+    ],
+    "title": "Variable atmos.day.vtendnogw_tavg-p19-hxy-air (Eday.vtendnogw)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "va_tavg-p19-hxy-air",
+      "CF standard name": "northward_wind",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "time: mean",
+      "Comment": "Meridional wind (positive in a northward direction).",
+      "Dimensions": "longitude latitude plev19 time",
+      "Frequency": "day",
+      "Long name": "Northward Wind",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s30i202[blev=PLEV19, lbproc=128] / m01s30i301[blev=PLEV19, lbproc=128]",
+      "Expression UKESM1": "m01s30i202[blev=PLEV19, lbproc=128] / m01s30i301[blev=PLEV19, lbproc=128]",
+      "Model units": "m s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s30i202",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "30,202",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i301",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "30,301",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i201",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "30,201",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i202",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,202",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i301",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,301",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i201",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,201",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 804,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable atmos.day.va_tavg-p19-hxy-air (Eday.va)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "utendogw_tavg-p19-hxy-air",
+      "CF standard name": "tendency_of_eastward_wind_due_to_orographic_gravity_wave_drag",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where air",
+      "Comment": "Tendency of eastward wind induced by the parameterized orographic gravity wave drag",
+      "Dimensions": "longitude latitude plev19 time",
+      "Frequency": "day",
+      "Long name": "Tendency of eastward wind due to orographic gravity waves",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "This is the total tendency due to parameterized orographic gravity wave drag, which is the sum of all possible components of the parameterization (where applicable). We ask that in the Essential Model Documentation modelling centers specify the parameterization scheme used and the specific values of its tunable parameters used for the simulation, and a specification of the part of the gravity wave spectrum that is targeted by the parameterization (e.g., minimally, the effective resolution of the model).",
+      "Units": "m s-2",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 803,
+    "labels": [
+      "day",
+      "atmos"
+    ],
+    "title": "Variable atmos.day.utendogw_tavg-p19-hxy-air (Eday.utendogw)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "utendnogw_tavg-p19-hxy-air",
+      "CF standard name": "tendency_of_eastward_wind_due_to_nonorographic_gravity_wave_drag",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where air",
+      "Comment": "Tendency of eastward wind induced by the parameterized non-orographic gravity wave drag",
+      "Dimensions": "longitude latitude plev19 time",
+      "Frequency": "day",
+      "Long name": "Tendency of eastward wind due to non-orographic gravity waves",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "This is the total tendency due to parameterized non-orographic gravity wave drag, which is the sum of all possible components of the parameterization (where applicable). We ask that in the Essential Model Documentation modelling centers specify the parameterization scheme used and the specific values of its tunable parameters used for the simulation, and a specification of the part of the gravity wave spectrum that is targeted by the parameterization (e.g., minimally, the effective resolution of the model).",
+      "Units": "m s-2",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 802,
+    "labels": [
+      "day",
+      "atmos"
+    ],
+    "title": "Variable atmos.day.utendnogw_tavg-p19-hxy-air (Eday.utendnogw)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ua_tavg-p19-hxy-air",
+      "CF standard name": "eastward_wind",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "time: mean",
+      "Comment": "Zonal wind (positive in a eastward direction).",
+      "Dimensions": "longitude latitude plev19 time",
+      "Frequency": "day",
+      "Long name": "Eastward Wind",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s30i201[blev=PLEV19, lbproc=128] / m01s30i301[blev=PLEV19, lbproc=128]",
+      "Expression UKESM1": "m01s30i201[blev=PLEV19, lbproc=128] / m01s30i301[blev=PLEV19, lbproc=128]",
+      "Model units": "m s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s30i201",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "30,201",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i301",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "30,301",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i202",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "30,202",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i201",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,201",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i301",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,301",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i202",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,202",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 801,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable atmos.day.ua_tavg-p19-hxy-air (Eday.ua)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "??_tavg-u-hxy-lnd",
       "CF standard name": "surface_temperature",
       "CMIP6 Differences": "\"comment\" was \"Temperature of the snow surface as it interacts with the atmosphere, averaged over a grid cell.\";",

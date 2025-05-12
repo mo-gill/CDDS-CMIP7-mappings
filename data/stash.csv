@@ -1,4 +1,20 @@
 Model,Branded variable name,Frequency,STASH,Section,Item,time_profile,domain_profile,usage_profile
+UKESM1,wap_tavg-p19-hxy-u,day,m01s30i298,30,298,TDAYMN,PLEV19,UP6
+UKESM1,wap_tavg-p19-hxy-u,day,m01s30i304,30,304,TDAYMN,PLEV19,UP6
+HadGEM3-GC31,wap_tavg-p19-hxy-u,day,m01s30i298,30,298,TDAYMN,PLEV19,UP6
+HadGEM3-GC31,wap_tavg-p19-hxy-u,day,m01s30i304,30,304,TDAYMN,PLEV19,UP6
+UKESM1,va_tavg-p19-hxy-air,day,m01s30i202,30,202,TDAYMN,PLEV19,UP6
+UKESM1,va_tavg-p19-hxy-air,day,m01s30i301,30,301,TDAYMN,PLEV19,UP6
+UKESM1,va_tavg-p19-hxy-air,day,m01s30i201,30,201,TDAYMN,PLEV19,UP6
+HadGEM3-GC31,va_tavg-p19-hxy-air,day,m01s30i202,30,202,TDAYMN,PLEV19,UP6
+HadGEM3-GC31,va_tavg-p19-hxy-air,day,m01s30i301,30,301,TDAYMN,PLEV19,UP6
+HadGEM3-GC31,va_tavg-p19-hxy-air,day,m01s30i201,30,201,TDAYMN,PLEV19,UP6
+UKESM1,ua_tavg-p19-hxy-air,day,m01s30i201,30,201,TDAYMN,PLEV19,UP6
+UKESM1,ua_tavg-p19-hxy-air,day,m01s30i301,30,301,TDAYMN,PLEV19,UP6
+UKESM1,ua_tavg-p19-hxy-air,day,m01s30i202,30,202,TDAYMN,PLEV19,UP6
+HadGEM3-GC31,ua_tavg-p19-hxy-air,day,m01s30i201,30,201,TDAYMN,PLEV19,UP6
+HadGEM3-GC31,ua_tavg-p19-hxy-air,day,m01s30i301,30,301,TDAYMN,PLEV19,UP6
+HadGEM3-GC31,ua_tavg-p19-hxy-air,day,m01s30i202,30,202,TDAYMN,PLEV19,UP6
 UKESM1,??_tavg-u-hxy-lnd,day,m01s00i024,0,24,TDAYMN,DIAG,UP6
 HadGEM3-GC31,??_tavg-u-hxy-lnd,day,m01s00i024,0,24,TDAYMN,DIAG,UP6
 UKESM1,tsl_tavg-l-hxy-lnd,day,m01s08i225,8,225,TDAYMN,DSOIL,UP6
