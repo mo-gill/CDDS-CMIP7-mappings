@@ -1,6 +1,254 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "hfsnthermds_tavg-l-hxy-sea",
+      "CF standard name": "heat_flux_into_sea_water_due_to_snow_thermodynamics",
+      "CMIP6 Differences": "\"comment\" was \"In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  'Snow thermodynamics' refers to the addition or subtraction of mass due to surface and basal fluxes, i.e., due to melting, sublimation and fusion.\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  \"Snow thermodynamics\" refers to the addition or subtraction of mass due to surface and basal fluxes, i.e., due to melting, sublimation and fusion.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Heat Flux into Sea Water Due to Snow Thermodynamics",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "In general this should be reported as a function of depth, (i.e.,  it will be a function of the generic \"XYZ\" dimensions).  Include enough depth levels to represent  the non-zero values of this field everywhere on the globe. Report on native horizontal grid. If a function of depth, perform online remapping to depth or pressure, if not native vertical grid.",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1455,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.mon.hfsnthermds_tavg-l-hxy-sea (Omon.hfsnthermds)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hfrunoffds_tavg-u-hxy-sea",
+      "CF standard name": "temperature_flux_due_to_runoff_expressed_as_heat_flux_into_sea_water",
+      "CMIP6 Differences": "\"comment\" was \"Heat flux associated with liquid water which drains from land. It is calculated relative to the heat that would be transported by runoff water entering the sea at zero degrees Celsius. \";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Heat flux associated with liquid water which drains from land. It is calculated relative to the heat that would be transported by runoff water entering the sea at zero degrees Celsius.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Temperature Flux Due to Runoff Expressed as Heat Flux into Sea Water",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "If only the vertically integrated runoff flux is available, report as this 2-d field; otherwise hfrunoffds should be used.",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1454,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.mon.hfrunoffds_tavg-u-hxy-sea (Omon.hfrunoffds2d)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hfrunoffds_tavg-l-hxy-sea",
+      "CF standard name": "temperature_flux_due_to_runoff_expressed_as_heat_flux_into_sea_water",
+      "CMIP6 Differences": "\"comment\" was \"Heat flux associated with liquid water which drains from land. It is calculated relative to the heat that would be transported by runoff water entering the sea at zero degrees Celsius. \";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Heat flux associated with liquid water which drains from land. It is calculated relative to the heat that would be transported by runoff water entering the sea at zero degrees Celsius.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Temperature Flux Due to Runoff Expressed as Heat Flux into Sea Water",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "In general this should be reported as a function of depth, (i.e.,  it will be a function of the generic \"XYZ\" dimensions).  Include enough depth levels to represent  the non-zero values of this field everywhere on the globe. Report on native horizontal grid. If a function of depth, perform online remapping to depth or pressure, if not native vertical grid.",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "sum_2d_and_3d(hflx_rnf, -1*vohfcisf)",
+      "Expression UKESM1": "sum_2d_and_3d(hflx_rnf, -1*vohfcisf)",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 1453,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.mon.hfrunoffds_tavg-l-hxy-sea (Omon.hfrunoffds)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hfrainds_tavg-u-hxy-ifs",
+      "CF standard name": "temperature_flux_due_to_rainfall_expressed_as_heat_flux_into_sea_water",
+      "CMIP6 Differences": "\"comment\" was \"This is defined as 'where ice_free_sea over sea'; i.e., the total flux (considered here) entering the ice-free portion of the grid cell divided by the area of the ocean portion of the grid cell.  All such heat fluxes are computed based on Celsius scale.\"; ; \"cell_methods\" was \"area: mean where ice_free_sea over sea time: mean\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where ice_free_sea over sea",
+      "Comment": "This is defined as \"where ice_free_sea over sea\"; i.e., the total flux (considered here) entering the ice-free portion of the grid cell divided by the area of the ocean portion of the grid cell.  All such heat fluxes are computed based on Celsius scale.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Temperature Flux Due to Rainfall Expressed as Heat Flux into Sea Water",
+      "Modeling realm": "ocean",
+      "Positive": "down",
+      "Processing notes": "Report on native horizontal grid.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean where ice_free_sea over sea time: mean CMIP7:area: time: mean where ice_free_sea over sea,",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "hfrainds",
+      "Expression UKESM1": "hfrainds",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 1452,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.mon.hfrainds_tavg-u-hxy-ifs (Omon.hfrainds)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hfibthermds_tavg-u-hxy-sea",
+      "CF standard name": "heat_flux_into_sea_water_due_to_iceberg_thermodynamics",
+      "CMIP6 Differences": "\"comment\" was \"In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  ' Iceberg thermodynamics' refers to the addition or subtraction of mass due to surface and basal fluxes, i.e., due to melting, sublimation and fusion.\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Heat Flux into Sea Water Due to Iceberg Thermodynamics",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "If only the vertically integrated heat flux is available, report as this 2-d field; otherwise hfibthermds should be used.",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1451,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.mon.hfibthermds_tavg-u-hxy-sea (Omon.hfibthermds2d)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hfibthermds_tavg-l-hxy-sea",
+      "CF standard name": "heat_flux_into_sea_water_due_to_iceberg_thermodynamics",
+      "CMIP6 Differences": "\"comment\" was \"In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  ' Iceberg thermodynamics' refers to the addition or subtraction of mass due to surface and basal fluxes, i.e., due to melting, sublimation and fusion.\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Heat Flux into Sea Water Due to Iceberg Thermodynamics",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "In general this should be reported as a function of depth, (i.e.,  it will be a function of the generic \"XYZ\" dimensions).  Include enough depth levels to represent  the non-zero values of this field everywhere on the globe. Report on native horizontal grid. If a function of depth, perform online remapping to depth or pressure, if not native vertical grid.",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "sum_2d_and_3d(-1*berg_latent_heat_flux, vohflisf)",
+      "Expression UKESM1": "sum_2d_and_3d(-1*berg_latent_heat_flux, vohflisf)",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 1450,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.mon.hfibthermds_tavg-l-hxy-sea (Omon.hfibthermds)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hfgeou_ti-u-hxy-sea",
+      "CF standard name": "upward_geothermal_heat_flux_at_sea_floor",
+      "CMIP6 Differences": "\"dimensions\" was \"longitude latitude time\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Upward geothermal heat flux per unit area on the sea floor",
+      "Dimensions": "longitude latitude depthseafloor time",
+      "Frequency": "mon",
+      "Long name": "Upward Geothermal Heat Flux at Sea Floor",
+      "Modeling realm": "ocean",
+      "Positive": "up",
+      "Processing notes": "CHANGE SINCE CMIP6: Spatial shape updated to sea floor; If this field is time-invariant, then save it instead as one of your \"fixed\" fields (see the fx table). Report on native horizontal grid.; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time CMIP7:longitude latitude depthseafloor time,",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1449,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.mon.hfgeou_ti-u-hxy-sea (Omon.hfgeou)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hfevapds_tavg-u-hxy-ifs",
+      "CF standard name": "temperature_flux_due_to_evaporation_expressed_as_heat_flux_out_of_sea_water",
+      "CMIP6 Differences": "\"comment\" was \"This is defined as 'where ice_free_sea over sea'\"; ; \"cell_methods\" was \"area: mean where ice_free_sea over sea time: mean\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where ice_free_sea over sea",
+      "Comment": "This is defined as \"where ice_free_sea over sea\"",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Temperature Flux Due to Evaporation Expressed as Heat Flux out of Sea Water",
+      "Modeling realm": "ocean",
+      "Positive": "up",
+      "Processing notes": "Report on native horizontal grid.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean where ice_free_sea over sea time: mean CMIP7:area: time: mean where ice_free_sea over sea,",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "hfevapds",
+      "Expression UKESM1": "hfevapds",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 1448,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.mon.hfevapds_tavg-u-hxy-ifs (Omon.hfevapds)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "hfds_tavg-u-hxy-sea",
       "CF standard name": "surface_downward_heat_flux_in_sea_water",
       "CMIP6 Differences": "\"comment\" was \"This is the net flux of heat entering the liquid water column through its upper surface (excluding any 'flux adjustment') .\";",
