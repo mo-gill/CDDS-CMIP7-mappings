@@ -1,6 +1,534 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "hursmin_tstat-h2m-hxy-u",
+      "CF standard name": "relative_humidity",
+      "CMIP6 Differences": "\"comment\" was \"The relative humidity with respect to liquid water for T> 0 C, and with respect to ice for T<0 C.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean time: minimum",
+      "Comment": "This is the relative humidity with respect to liquid water for T> 0 C, and with respect to ice for T<0 C.",
+      "Dimensions": "longitude latitude time height2m",
+      "Frequency": "day",
+      "Long name": "Daily Minimum Near-Surface Relative Humidity",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "normally report this at 2 meters above the surface; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time height2m CMIP7:longitude latitude time  height2m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i245[lbproc=4096]",
+      "Expression UKESM1": "m01s03i245[lbproc=4096]",
+      "Model units": "%"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i245",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,245",
+        "time_profile": "TDAYMIN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s03i245",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,245",
+        "time_profile": "TDAYMIN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 1801,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.day.hursmin_tstat-h2m-hxy-u (day.hursmin)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hursmax_tstat-h2m-hxy-u",
+      "CF standard name": "relative_humidity",
+      "CMIP6 Differences": "\"comment\" was \"The relative humidity with respect to liquid water for T> 0 C, and with respect to ice for T<0 C.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean time: maximum",
+      "Comment": "This is the relative humidity with respect to liquid water for T> 0 C, and with respect to ice for T<0 C.",
+      "Dimensions": "longitude latitude time height2m",
+      "Frequency": "day",
+      "Long name": "Daily Maximum Near-Surface Relative Humidity",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "normally report this at 2 meters above the surface; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time height2m CMIP7:longitude latitude time  height2m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i245[lbproc=8192]",
+      "Expression UKESM1": "m01s03i245[lbproc=8192]",
+      "Model units": "%"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i245",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,245",
+        "time_profile": "TDAYMAX",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s03i245",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,245",
+        "time_profile": "TDAYMAX",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 1800,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.day.hursmax_tstat-h2m-hxy-u (day.hursmax)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hurs_tavg-h2m-hxy-u",
+      "CF standard name": "relative_humidity",
+      "CMIP6 Differences": "\"comment\" was \"The relative humidity with respect to liquid water for T> 0 C, and with respect to ice for T<0 C.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "This is the relative humidity with respect to liquid water for T> 0 C, and with respect to ice for T<0 C.",
+      "Dimensions": "longitude latitude time height2m",
+      "Frequency": "day",
+      "Long name": "Near-Surface Relative Humidity",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "normally report this at 2 meters above the surface; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time height2m CMIP7:longitude latitude time  height2m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i245[lbproc=128]",
+      "Expression UKESM1": "m01s03i245[lbproc=128]",
+      "Model units": "%"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i245",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,245",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s03i245",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,245",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 1799,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable atmos.day.hurs_tavg-h2m-hxy-u (day.hurs)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hur_tavg-p19-hxy-u",
+      "CF standard name": "relative_humidity",
+      "CMIP6 Differences": "\"dimensions\" was \"longitude latitude plev8 time\"; ; \"comment\" was \"The relative humidity with respect to liquid water for T> 0 C, and with respect to ice for T<0 C.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "time: mean",
+      "Comment": "This is the relative humidity with respect to liquid water for T> 0 C, and with respect to ice for T<0 C.",
+      "Dimensions": "longitude latitude plev19 time",
+      "Frequency": "day",
+      "Long name": "Relative Humidity",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude plev8 time CMIP7:longitude latitude plev19 time,",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s30i296[blev=PLEV8, lbproc=128] / m01s30i304[blev=PLEV8, lbproc=128]",
+      "Expression UKESM1": "m01s30i296[blev=PLEV8, lbproc=128] / m01s30i304[blev=PLEV8, lbproc=128]",
+      "Model units": "%"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s30i296",
+        "domain_profile": "PLEV8",
+        "model": "UKESM1",
+        "stash_number": "30,296",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i304",
+        "domain_profile": "PLEV8",
+        "model": "UKESM1",
+        "stash_number": "30,304",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i296",
+        "domain_profile": "PLEV8",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,296",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s30i304",
+        "domain_profile": "PLEV8",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30,304",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 1798,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable atmos.day.hur_tavg-p19-hxy-u (day.hur)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hfss_tavg-u-hxy-u",
+      "CF standard name": "surface_upward_sensible_heat_flux",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "The surface sensible heat flux, also called turbulent heat flux, is the exchange of heat between the surface and the air by motion of air.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Surface Upward Sensible Heat Flux",
+      "Modeling realm": "atmos",
+      "Positive": "up",
+      "Processing notes": "",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i217[lbproc=128]",
+      "Expression UKESM1": "m01s03i217[lbproc=128]",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i217",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,217",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s03i217",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,217",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 1797,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.day.hfss_tavg-u-hxy-u (day.hfss)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hfls_tavg-u-hxy-u",
+      "CF standard name": "surface_upward_latent_heat_flux",
+      "CMIP6 Differences": "\"comment\" was \"The surface called 'surface' means the lower boundary of the atmosphere. 'Upward' indicates a vector component which is positive when directed upward (negative downward). The surface latent heat flux is the exchange of heat between the surface and the air on account of evaporation (including sublimation). In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "The surface called \"surface\" means the lower boundary of the atmosphere. \"Upward\" indicates a vector component which is positive when directed upward (negative downward). The surface latent heat flux is the exchange of heat between the surface and the air on account of evaporation (including sublimation). In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Surface Upward Latent Heat Flux",
+      "Modeling realm": "atmos",
+      "Positive": "up",
+      "Processing notes": "",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i234[lbproc=128]",
+      "Expression UKESM1": "m01s03i234[lbproc=128]",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i234",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,234",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s03i234",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,234",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 1796,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.day.hfls_tavg-u-hxy-u (day.hfls)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "clt_tavg-u-hxy-u",
+      "CF standard name": "cloud_area_fraction",
+      "CMIP6 Differences": "\"comment\" was \"Total cloud area fraction (reported as a percentage) for the whole atmospheric column, as seen from the surface or the top of the atmosphere. Includes both large-scale and convective cloud.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "for the whole atmospheric column, as seen from the surface or the top of the atmosphere. Includes both large-scale and convective cloud.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Total Cloud Cover Percentage",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s02i204[lbproc=128]",
+      "Expression UKESM1": "m01s02i204[lbproc=128]",
+      "Model units": "1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s02i204",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "2,204",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s02i204",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,204",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 1795,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable atmos.day.clt_tavg-u-hxy-u (day.clt)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sivol_tavg-u-hm-u",
+      "CF standard name": "sea_ice_volume",
+      "CMIP6 Differences": "\"comment\" was \"total volume of sea ice in the Southern hemisphere\"; ; \"cell_methods\" was \"area: time: mean\";",
+      "Cell measures": "",
+      "Cell methods": "area: sum time: mean",
+      "Comment": "Total integrated volume of sea ice in the Southern Hemisphere.",
+      "Dimensions": "time",
+      "Frequency": "mon",
+      "Long name": "Sea-Ice Volume South",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:area: sum time: mean,",
+      "Units": "1e3 km3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1794,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6"
+    ],
+    "title": "Variable seaIce.mon.sivol_tavg-u-hm-u (SImon.sivols)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sivol_tavg-u-hm-u",
+      "CF standard name": "sea_ice_volume",
+      "CMIP6 Differences": "\"comment\" was \"total volume of sea ice in the Northern hemisphere\"; ; \"cell_methods\" was \"area: time: mean\";",
+      "Cell measures": "",
+      "Cell methods": "area: sum time: mean",
+      "Comment": "Total integrated volume of sea ice in the Northern Hemisphere.",
+      "Dimensions": "time",
+      "Frequency": "mon",
+      "Long name": "Sea-Ice Volume North",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:area: sum time: mean,",
+      "Units": "1e3 km3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1793,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6"
+    ],
+    "title": "Variable seaIce.mon.sivol_tavg-u-hm-u (SImon.sivoln)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "?_tavg-u-hxy-sea",
+      "CF standard name": "sea_ice_thickness",
+      "CMIP6 Differences": "\"comment\" was \"Total volume of sea ice divided by grid-cell area (this used to be called ice thickness in CMIP5)\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Total volume of sea ice divided by grid-cell area, also known as the equivalent thickness of sea ice.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Sea-Ice Volume per Area",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "hi",
+      "Expression UKESM1": "hi",
+      "Model units": "m"
+    },
+    "STASH entries": [],
+    "issue_number": 1792,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable seaIce.mon.?_tavg-u-hxy-sea (SImon.sivol)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "siv_tavg-u-hxy-si",
+      "CF standard name": "sea_ice_y_velocity",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconc)\"; ; \"cell_measures\" was \"--MODEL\"; ; \"comment\" was \"The y-velocity of ice on native model grid\";",
+      "Cell measures": "::MODEL",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Y-component of sea-ice velocity on native model grid.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Y-Component of Sea-Ice Velocity",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siconc) CMIP7:area: time: mean where sea_ice (mask=siconc),",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "siv",
+      "Expression UKESM1": "siv",
+      "Model units": "m s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1791,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable seaIce.mon.siv_tavg-u-hxy-si (SImon.siv)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "siu_tavg-u-hxy-si",
+      "CF standard name": "sea_ice_x_velocity",
+      "CMIP6 Differences": "\"comment\" was \"The x-velocity of ice on native model grid\"; ; \"cell_methods\" was \"area: time: mean where sea_ice (comment: mask=siconc)\"; ; \"cell_measures\" was \"--MODEL\";",
+      "Cell measures": "::MODEL",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "X-component of sea-ice velocity on native model grid.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "X-Component of Sea-Ice Velocity",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where sea_ice (comment: mask=siconc) CMIP7:area: time: mean where sea_ice (mask=siconc),",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "siu",
+      "Expression UKESM1": "siu",
+      "Model units": "m s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1790,
+    "labels": [
+      "mon",
+      "seaIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable seaIce.mon.siu_tavg-u-hxy-si (SImon.siu)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "sitimefrac_tavg-u-hxy-sea",
       "CF standard name": "fraction_of_time_with_sea_ice_area_fraction_above_threshold",
       "CMIP6 Differences": "\"comment\" was \"Fraction of time steps of the averaging period during which sea ice is present (siconc >0 ) in a grid cell\";",

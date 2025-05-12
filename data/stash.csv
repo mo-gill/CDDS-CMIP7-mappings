@@ -1,4 +1,20 @@
 Model,Branded variable name,Frequency,STASH,Section,Item,time_profile,domain_profile,usage_profile
+UKESM1,hursmin_tstat-h2m-hxy-u,day,m01s03i245,3,245,TDAYMIN,DIAG,UP6
+HadGEM3-GC31,hursmin_tstat-h2m-hxy-u,day,m01s03i245,3,245,TDAYMIN,DIAG,UP6
+UKESM1,hursmax_tstat-h2m-hxy-u,day,m01s03i245,3,245,TDAYMAX,DIAG,UP6
+HadGEM3-GC31,hursmax_tstat-h2m-hxy-u,day,m01s03i245,3,245,TDAYMAX,DIAG,UP6
+UKESM1,hurs_tavg-h2m-hxy-u,day,m01s03i245,3,245,TDAYMN,DIAG,UP6
+HadGEM3-GC31,hurs_tavg-h2m-hxy-u,day,m01s03i245,3,245,TDAYMN,DIAG,UP6
+UKESM1,hur_tavg-p19-hxy-u,day,m01s30i296,30,296,TDAYMN,PLEV8,UP6
+UKESM1,hur_tavg-p19-hxy-u,day,m01s30i304,30,304,TDAYMN,PLEV8,UP6
+HadGEM3-GC31,hur_tavg-p19-hxy-u,day,m01s30i296,30,296,TDAYMN,PLEV8,UP6
+HadGEM3-GC31,hur_tavg-p19-hxy-u,day,m01s30i304,30,304,TDAYMN,PLEV8,UP6
+UKESM1,hfss_tavg-u-hxy-u,day,m01s03i217,3,217,TDAYMN,DIAG,UP6
+HadGEM3-GC31,hfss_tavg-u-hxy-u,day,m01s03i217,3,217,TDAYMN,DIAG,UP6
+UKESM1,hfls_tavg-u-hxy-u,day,m01s03i234,3,234,TDAYMN,DIAG,UP6
+HadGEM3-GC31,hfls_tavg-u-hxy-u,day,m01s03i234,3,234,TDAYMN,DIAG,UP6
+UKESM1,clt_tavg-u-hxy-u,day,m01s02i204,2,204,TDAYMN,DIAG,UP6
+HadGEM3-GC31,clt_tavg-u-hxy-u,day,m01s02i204,2,204,TDAYMN,DIAG,UP6
 UKESM1,ts_tavg-u-hxy-si,mon,m01s00i031,0,31,TMONMN,DIAG,UP5
 UKESM1,ts_tavg-u-hxy-si,mon,m01s03i535,3,535,TMONMN,DIAG,UP5
 HadGEM3-GC31,ts_tavg-u-hxy-si,mon,m01s00i031,0,31,TMONMN,DIAG,UP5
