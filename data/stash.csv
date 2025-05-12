@@ -1,4 +1,6 @@
 Model,Branded variable name,Frequency,STASH,Section,Item,time_profile,domain_profile,usage_profile
+UKESM1,evspsblpot_tavg-u-hxy-lnd,day,m01s03i335,3,335,TDAYMN,DTILE,UP6
+HadGEM3-GC31,evspsblpot_tavg-u-hxy-lnd,day,m01s03i335,3,335,TDAYMN,DTILE,UP6
 UKESM1,clwvic_tavg-u-hxy-u,day,m01s02i395,2,395,TDAYMN,DIAG,UP6
 UKESM1,clwvic_tavg-u-hxy-u,day,m01s02i396,2,396,TDAYMN,DIAG,UP6
 HadGEM3-GC31,clwvic_tavg-u-hxy-u,day,m01s02i395,2,395,TDAYMN,DIAG,UP6

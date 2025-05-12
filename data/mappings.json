@@ -1,6 +1,292 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "evspsblpot_tavg-u-hxy-lnd",
+      "CF standard name": "water_potential_evaporation_flux",
+      "CMIP6 Differences": "\"comment\" was \"at surface; potential flux of water into the atmosphere due to conversion of both liquid and solid phases to vapor (from underlying surface and vegetation)\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "water_potential_evapotranspiration_flux",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Potential Evapotranspiration",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i334[lbproc=128]",
+      "Expression UKESM1": "m01s03i334[lbproc=128]",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i335",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "3,335",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s03i335",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,335",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 721,
+    "labels": [
+      "day",
+      "land",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable land.day.evspsblpot_tavg-u-hxy-lnd (Eday.evspsblpot)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "evspsbl_tavg-u-hxy-lnd",
+      "CF standard name": "water_evapotranspiration_flux",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "Evaporation at surface (also known as evapotranspiration): flux of water into the atmosphere due to conversion of both liquid and solid phases to vapor (from underlying surface and vegetation)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Evaporation Including Sublimation and Transpiration",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i223[lbproc=128]",
+      "Expression UKESM1": "m01s03i223[lbproc=128]",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 720,
+    "labels": [
+      "day",
+      "land",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable land.day.evspsbl_tavg-u-hxy-lnd (Eday.evspsbl)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "esn_tavg-u-hxy-lnd",
+      "CF standard name": "water_evapotranspiration_flux",
+      "CMIP6 Differences": "\"comment\" was \"Water here means water in all phases. Evaporation is the conversion of liquid or solid into vapor. (The conversion of solid alone into vapor is called 'sublimation'.) In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics. Unless indicated in the cell_methods attribute, a quantity is assumed to apply to the whole area of each horizontal grid box. Previously, the qualifier where_type was used to specify that the quantity applies only to the part of the grid box of the named type.  Names containing the where_type qualifier are deprecated and newly created data should use the cell_methods attribute to indicate the horizontal area to which the quantity applies.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "liquid_water_evaporation_flux_from_surface_snow",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Snow Evaporation",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 719,
+    "labels": [
+      "day",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.day.esn_tavg-u-hxy-lnd (Eday.esn)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "dsw_tavg-u-hxy-lnd",
+      "CF standard name": "change_over_time_in_land_water_amount",
+      "CMIP6 Differences": "\"comment\" was \"The phrase 'land_water_amount', often known as 'Terrestrial Water Storage', includes: surface liquid water (water in rivers, wetlands, lakes, reservoirs, rainfall intercepted by the canopy); surface ice and snow (glaciers, ice caps, grounded ice sheets not displacing sea water, river and lake ice, other surface ice such as frozen flood water, snow lying on the surface and intercepted by the canopy); subsurface water (liquid and frozen soil water, groundwater).\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Change in Surface Water Storage",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 718,
+    "labels": [
+      "day",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.day.dsw_tavg-u-hxy-lnd (Eday.dsw)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "dsn_tavg-u-hxy-lnd",
+      "CF standard name": "change_over_time_in_amount_of_ice_and_snow_on_land",
+      "CMIP6 Differences": "\"comment\" was \"Change in time of the mass per unit area of ice in glaciers, ice caps, ice sheets and shelves, river and lake ice, any other ice on a land surface, such as frozen flood water, and snow lying on such ice or on the land surface.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Change in Snow Water Equivalent",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 717,
+    "labels": [
+      "day",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.day.dsn_tavg-u-hxy-lnd (Eday.dsn)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "dslw_tavg-u-hxy-lnd",
+      "CF standard name": "change_over_time_in_mass_content_of_water_in_soil",
+      "CMIP6 Differences": "\"comment\" was \"The phrase 'change_over_time_in_X' means change in a quantity X over a time-interval, which should be defined by the bounds of the time coordinate. 'Content' indicates a quantity per unit area. The mass content of water in soil refers to the vertical integral from the surface down to the bottom of the soil model. For the content between specified levels in the soil, standard names including 'content_of_soil_layer' are used. 'Water' means water in all phases.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Change in Soil Moisture",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 716,
+    "labels": [
+      "day",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.day.dslw_tavg-u-hxy-lnd (Eday.dslw)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "drivw_tavg-u-hxy-lnd",
+      "CF standard name": "change_over_time_in_river_water_amount",
+      "CMIP6 Differences": "\"comment\" was \"Change over time of the mass of water per unit area in the fluvial system (stream and floodplain).\";",
+      "Cell measures": "area: areacellr",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Change in River Storage",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 715,
+    "labels": [
+      "day",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.day.drivw_tavg-u-hxy-lnd (Eday.drivw)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "dgw_tavg-u-hxy-lnd",
+      "CF standard name": "change_over_time_in_groundwater_amount",
+      "CMIP6 Differences": "\"comment\" was \"Groundwater is subsurface water below the depth of the water table.\";",
+      "Cell measures": "area: areacellr",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "change_over_time_in_groundwater",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Change in Groundwater",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 714,
+    "labels": [
+      "day",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.day.dgw_tavg-u-hxy-lnd (Eday.dgw)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "dcw_tavg-u-hxy-lnd",
+      "CF standard name": "change_over_time_in_canopy_water_amount",
+      "CMIP6 Differences": "\"comment\" was \"The phrase 'change_over_time_in_X' means change in a quantity X over a time-interval, which should be defined by the bounds of the time coordinate. 'Canopy' means the plant or vegetation canopy. Canopy water is the water on the canopy. 'Water' means water in all phases, including frozen, i.e. ice and snow. 'Amount' means mass per unit area.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "change_over_time_in_canopy_water_amount",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Change in Interception Storage",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 713,
+    "labels": [
+      "day",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.day.dcw_tavg-u-hxy-lnd (Eday.dcw)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "clwvic_tavg-u-hxy-u",
       "CF standard name": "atmosphere_mass_content_of_convective_cloud_condensed_water",
       "CMIP6 Differences": "",
