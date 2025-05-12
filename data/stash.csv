@@ -1,4 +1,21 @@
 Model,Branded variable name,Frequency,STASH,Section,Item,time_profile,domain_profile,usage_profile
+UKESM1,tsl_tavg-l-hxy-lnd,mon,m01s08i225,8,225,TMONMN,DSOIL,UP5
+HadGEM3-GC31,tsl_tavg-l-hxy-lnd,mon,m01s08i225,8,225,TMONMN,DSOIL,UP5
+UKESM1,treeFrac_tavg-u-hxy-u,mon,m01s03i395,3,395,TMONMN,DIAG,UP5
+UKESM1,treeFrac_tavg-u-hxy-u,mon,m01s19i013,19,013,TMONMN,DTILE,UP5
+HadGEM3-GC31,treeFrac_tavg-u-hxy-u,mon,m01s03i395,3,395,TMONMN,DIAG,UP5
+HadGEM3-GC31,treeFrac_tavg-u-hxy-u,mon,m01s19i013,19,013,TMONMN,DTILE,UP5
+UKESM1,tran_tavg-u-hxy-lnd,mon,m01s03i539,3,539,TMONMN,DIAG,UP5
+HadGEM3-GC31,tran_tavg-u-hxy-lnd,mon,m01s03i539,3,539,TMONMN,DIAG,UP5
+UKESM1,shrubFrac_tavg-u-hxy-u,mon,m01s03i395,3,395,TMONMN,DIAG,UP5
+UKESM1,shrubFrac_tavg-u-hxy-u,mon,m01s19i013,19,013,TMONMN,DTILE,UP5
+HadGEM3-GC31,shrubFrac_tavg-u-hxy-u,mon,m01s03i395,3,395,TMONMN,DIAG,UP5
+HadGEM3-GC31,shrubFrac_tavg-u-hxy-u,mon,m01s19i013,19,013,TMONMN,DTILE,UP5
+UKESM1,rh_tavg-u-hxy-lnd,mon,m01s19i053,19,053,TMONMN,DIAG,UP5
+UKESM1,residualFrac_tavg-u-hxy-u,mon,m01s03i395,3,395,TMONMN,DIAG,UP5
+UKESM1,residualFrac_tavg-u-hxy-u,mon,m01s19i013,19,013,TMONMN,DTILE,UP5
+HadGEM3-GC31,residualFrac_tavg-u-hxy-u,mon,m01s03i395,3,395,TMONMN,DIAG,UP5
+HadGEM3-GC31,residualFrac_tavg-u-hxy-u,mon,m01s19i013,19,013,TMONMN,DTILE,UP5
 UKESM1,ra_tavg-u-hxy-lnd,mon,m01s19i185,19,185,TMONMN,DIAG,UP5
 UKESM1,pastureFrac_tavg-u-hxy-u,mon,m01s03i395,3,395,TMONMN,DIAG,UP5
 UKESM1,pastureFrac_tavg-u-hxy-u,mon,m01s19i013,19,013,TMONMN,DTILE,UP5

@@ -1,6 +1,431 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "chl_tavg-u-hxy-sea",
+      "CF standard name": "mass_concentration_of_phytoplankton_expressed_as_chlorophyll_in_sea_water",
+      "CMIP6 Differences": "\"comment\" was \"Sum of chlorophyll from all phytoplankton group concentrations at the sea surface.  In most models this is equal to chldiat+chlmisc, that is the sum of 'Diatom Chlorophyll Mass Concentration' plus 'Other Phytoplankton Chlorophyll Mass Concentration'\"; ; \"dimensions\" was \"longitude latitude time\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "sum of chlorophyll from all phytoplankton group concentrations at the sea surface.  In most models this is equal to chldiat+chlmisc, that is the sum of \"Diatom Chlorophyll Mass Concentration\" plus \"Other Phytoplankton Chlorophyll Mass Concentration\"",
+      "Dimensions": "longitude latitude time depth0m",
+      "Frequency": "day",
+      "Long name": "Surface Mass Concentration of Total Phytoplankton Expressed as Chlorophyll in Sea Water",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time CMIP7:longitude latitude time depth0m,",
+      "Units": "kg m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "SURF_CHN + SURF_CHD",
+      "Model units": "-"
+    },
+    "STASH entries": [],
+    "issue_number": 1310,
+    "labels": [
+      "day",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.day.chl_tavg-u-hxy-sea (Oday.chlos)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "chl_tavg-u-hxy-sea",
+      "CF standard name": "mass_concentration_of_phytoplankton_expressed_as_chlorophyll_in_sea_water",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean",
+      "Comment": "Sum of chlorophyll from all phytoplankton group concentrations. In most models this is equal to chldiat+chlmisc, that is the sum of Diatom Chlorophyll Mass Concentration and Other Phytoplankton Chlorophyll Mass Concentration",
+      "Dimensions": "longitude latitude time op20bar",
+      "Frequency": "day",
+      "Long name": "Mass Concentration of Total Phytoplankton Expressed as Chlorophyll in Sea Water at 200 meters",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "The variable at the depth of 200 meters is requested.",
+      "Units": "kg m-3",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1309,
+    "labels": [
+      "day",
+      "ocnBgchem"
+    ],
+    "title": "Variable ocnBgchem.day.chl_tavg-u-hxy-sea (Oday.chl200)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "bigthetao_tavg-u-hxy-sea",
+      "CF standard name": "sea_water_conservative_temperature",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean",
+      "Comment": "Diagnostic should be contributed even for models using conservative temperature as prognostic field.",
+      "Dimensions": "longitude latitude time op20bar",
+      "Frequency": "day",
+      "Long name": "Sea Water Conservative Temperature at 200 meters",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "The variable at the depth of 200 meters is requested.",
+      "Units": "degC",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1308,
+    "labels": [
+      "day",
+      "ocean"
+    ],
+    "title": "Variable ocean.day.bigthetao_tavg-u-hxy-sea (Oday.bigthetao200)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tsl_tavg-l-hxy-lnd",
+      "CF standard name": "soil_temperature",
+      "CMIP6 Differences": "\"comment\" was \"Temperature of soil. Reported as missing for grid cells with no land.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "Temperature of each soil layer.  Reported as \"missing\" for grid cells occupied entirely by \"sea\".",
+      "Dimensions": "longitude latitude sdepth time",
+      "Frequency": "mon",
+      "Long name": "Temperature of Soil",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "If soil layer thicknesses vary from one location to another, interpolate to a standard set of depths.  Ideally, the interpolation should preserve the vertical integral.",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s08i225[lbproc=128]",
+      "Expression UKESM1": "m01s08i225[lbproc=128]",
+      "Model units": "K"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s08i225",
+        "domain_profile": "DSOIL",
+        "model": "UKESM1",
+        "stash_number": "8,225",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i225",
+        "domain_profile": "DSOIL",
+        "model": "HadGEM3-GC31",
+        "stash_number": "8,225",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1307,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable land.mon.tsl_tavg-l-hxy-lnd (Lmon.tsl)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "treeFrac_tavg-u-hxy-u",
+      "CF standard name": "area_fraction",
+      "CMIP6 Differences": "\"comment\" was \"Percentage of entire grid cell  that is covered by trees.\"; ; \"cell_methods\" was \"area: mean where land over all_area_types time: mean\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "fraction of entire grid cell  that is covered by trees.",
+      "Dimensions": "longitude latitude time typetree",
+      "Frequency": "mon",
+      "Long name": "Tree Cover Percentage",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "add scalar coordinate typetree and add \"tree\" to the CF area type table.  Note that if this variable is independent of time, it should be stored only for a single time (user choice).; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time typetree CMIP7:longitude latitude time  typetree,;  ; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean where land over all_area_types time: mean CMIP7:area: time: mean,",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "land_class_area(m01s19i013[lbtim_ia=240,lbproc=128], m01s03i395[lbproc=128], land_class='tree')",
+      "Expression UKESM1": "land_class_area(m01s19i013[lbtim_ia=240,lbproc=128], m01s03i395[lbproc=128], land_class='tree')",
+      "Model units": "%"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i395",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,395",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i013",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "19,013",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i395",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,395",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i013",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "19,013",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1306,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable land.mon.treeFrac_tavg-u-hxy-u (Lmon.treeFrac)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tran_tavg-u-hxy-lnd",
+      "CF standard name": "transpiration_flux",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "Transpiration (may include dew formation as a negative flux).",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Transpiration",
+      "Modeling realm": "land",
+      "Positive": "up",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i539[lbproc=128]",
+      "Expression UKESM1": "m01s03i539[lbproc=128]",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i539",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,539",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i539",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,539",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1305,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable land.mon.tran_tavg-u-hxy-lnd (Lmon.tran)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "shrubFrac_tavg-u-hxy-u",
+      "CF standard name": "area_fraction",
+      "CMIP6 Differences": "\"comment\" was \"Percentage of entire grid cell  that is covered by shrub.\"; ; \"cell_methods\" was \"area: mean where land over all_area_types time: mean\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "fraction of entire grid cell  that is covered by shrub.",
+      "Dimensions": "longitude latitude time typeshrub",
+      "Frequency": "mon",
+      "Long name": "Percentage Cover by Shrub",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "add scalar coordinate typeshrub and add \"shrub\" to the CF area type table.  Note that if this variable is independent of time, it should be stored only for a single time (user choice).; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time typeshrub CMIP7:longitude latitude time  typeshrub,;  ; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean where land over all_area_types time: mean CMIP7:area: time: mean,",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "land_class_area(m01s19i013[lbtim_ia=240,lbproc=128], m01s03i395[lbproc=128], land_class='shrub')",
+      "Expression UKESM1": "land_class_area(m01s19i013[lbtim_ia=240,lbproc=128], m01s03i395[lbproc=128], land_class='shrub')",
+      "Model units": "%"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i395",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,395",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i013",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "19,013",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i395",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,395",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i013",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "19,013",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1304,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable land.mon.shrubFrac_tavg-u-hxy-u (Lmon.shrubFrac)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rh_tavg-u-hxy-lnd",
+      "CF standard name": "surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_heterotrophic_respiration",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "Carbon mass flux per unit area into atmosphere due to heterotrophic respiration on land (respiration by consumers)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Total Heterotrophic Respiration on Land as Carbon Mass Flux [kgC m-2 s-1]",
+      "Modeling realm": "land",
+      "Positive": "up",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "m01s19i053[lbtim_ia=240,lbproc=128] / (SECONDS_IN_DAY * DAYS_IN_YEAR)",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s19i053",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "19,053",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1303,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable land.mon.rh_tavg-u-hxy-lnd (Lmon.rh)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "residualFrac_tavg-u-hxy-u",
+      "CF standard name": "area_fraction",
+      "CMIP6 Differences": "\"comment\" was \"Percentage of entire grid cell  that is land and is covered by  neither vegetation nor bare-soil (e.g., urban, ice, lakes, etc.)\"; ; \"cell_methods\" was \"area: mean where land over all_area_types time: mean\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "fraction of entire grid cell  that is land and is covered by \"non-vegetation\" and \"non-bare-soil\" (e.g., urban, ice, lakes, etc.)",
+      "Dimensions": "longitude latitude time typeresidual",
+      "Frequency": "mon",
+      "Long name": "Percentage of Grid Cell That Is Land but neither Vegetation Covered nor Bare Soil",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "add scalar coordinate type???and add \"???\" to the CF area type table.; ; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time typeresidual CMIP7:longitude latitude time  typeresidual,;  ; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean where land over all_area_types time: mean CMIP7:area: time: mean,",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "land_class_area(m01s19i013[lbtim_ia=240,lbproc=128], m01s03i395[lbproc=128], land_class='residual')",
+      "Expression UKESM1": "land_class_area(m01s19i013[lbtim_ia=240,lbproc=128], m01s03i395[lbproc=128], land_class='residual')",
+      "Model units": "%"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i395",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,395",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i013",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "19,013",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i395",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,395",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i013",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "19,013",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1302,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable land.mon.residualFrac_tavg-u-hxy-u (Lmon.residualFrac)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "ra_tavg-u-hxy-lnd",
       "CF standard name": "surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_plant_respiration",
       "CMIP6 Differences": "",
