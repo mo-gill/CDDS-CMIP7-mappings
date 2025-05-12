@@ -1,6 +1,336 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "rsdscs_tpt-u-hxys-u",
+      "CF standard name": "surface_downwelling_shortwave_flux_in_air_assuming_clear_sky",
+      "CMIP6 Differences": "\"frequency\" was \"subhrPt\";",
+      "Cell measures": "",
+      "Cell methods": "area: point time: point",
+      "Comment": "Surface solar irradiance clear sky for UV calculations",
+      "Dimensions": "site time1",
+      "Frequency": "subhr",
+      "Long name": "Surface Downwelling Clear-Sky Shortwave Radiation",
+      "Modeling realm": "atmos",
+      "Positive": "down",
+      "Processing notes": "This table includes the 2-D variables listed in the \"Amon\" spreadsheet, omitting, however, the daily maximum and minimum temperatures.  All variables should be reported as synoptic fields, not daily means.; CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:subhrPt CMIP7:subhr,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s01i210[lbproc=0]",
+      "Expression UKESM1": "m01s01i210[lbproc=0]",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 619,
+    "labels": [
+      "subhr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.subhr.rsdscs_tpt-u-hxys-u (CFsubhr.rsdscs)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rsds_tpt-u-hxys-u",
+      "CF standard name": "surface_downwelling_shortwave_flux_in_air",
+      "CMIP6 Differences": "\"frequency\" was \"subhrPt\";",
+      "Cell measures": "",
+      "Cell methods": "area: point time: point",
+      "Comment": "Surface solar irradiance for UV calculations.",
+      "Dimensions": "site time1",
+      "Frequency": "subhr",
+      "Long name": "Surface Downwelling Shortwave Radiation",
+      "Modeling realm": "atmos",
+      "Positive": "down",
+      "Processing notes": "This table includes the 2-D variables listed in the \"Amon\" spreadsheet, omitting, however, the daily maximum and minimum temperatures.  All variables should be reported as synoptic fields, not daily means.; CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:subhrPt CMIP7:subhr,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s01i235[lbproc=0]",
+      "Expression UKESM1": "m01s01i235[lbproc=0]",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 618,
+    "labels": [
+      "subhr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.subhr.rsds_tpt-u-hxys-u (CFsubhr.rsds)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rsdcs_tpt-l-hxys-u",
+      "CF standard name": "downwelling_shortwave_flux_in_air_assuming_clear_sky",
+      "CMIP6 Differences": "\"frequency\" was \"subhrPt\";",
+      "Cell measures": "",
+      "Cell methods": "area: point time: point",
+      "Comment": "Downwelling clear-sky shortwave radiation (includes the fluxes at the surface and top-of-atmosphere)",
+      "Dimensions": "alevhalf site time1",
+      "Frequency": "subhr",
+      "Long name": "Downwelling Clear-Sky Shortwave Radiation",
+      "Modeling realm": "atmos",
+      "Positive": "down",
+      "Processing notes": "Report on model half-levels (i.e., interfaces between model layers).; CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:subhrPt CMIP7:subhr,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "correct_multilevel_metadata(m01s01i220[lbproc=0])",
+      "Expression UKESM1": "correct_multilevel_metadata(m01s01i220[lbproc=0])",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 617,
+    "labels": [
+      "subhr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.subhr.rsdcs_tpt-l-hxys-u (CFsubhr.rsdcs)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rsd_tpt-l-hxys-u",
+      "CF standard name": "downwelling_shortwave_flux_in_air",
+      "CMIP6 Differences": "\"frequency\" was \"subhrPt\";",
+      "Cell measures": "",
+      "Cell methods": "area: point time: point",
+      "Comment": "Downwelling shortwave radiation (includes the fluxes at the surface and top-of-atmosphere)",
+      "Dimensions": "alevhalf site time1",
+      "Frequency": "subhr",
+      "Long name": "Downwelling Shortwave Radiation",
+      "Modeling realm": "atmos",
+      "Positive": "down",
+      "Processing notes": "Report on model half-levels (i.e., interfaces between model layers).; CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:subhrPt CMIP7:subhr,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "correct_multilevel_metadata(m01s01i218[lbproc=0])",
+      "Expression UKESM1": "correct_multilevel_metadata(m01s01i218[lbproc=0])",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 616,
+    "labels": [
+      "subhr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.subhr.rsd_tpt-l-hxys-u (CFsubhr.rsd)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rlutcs_tpt-u-hxys-u",
+      "CF standard name": "toa_outgoing_longwave_flux_assuming_clear_sky",
+      "CMIP6 Differences": "\"frequency\" was \"subhrPt\";",
+      "Cell measures": "",
+      "Cell methods": "area: point time: point",
+      "Comment": "Upwelling clear-sky longwave radiation at top of atmosphere",
+      "Dimensions": "site time1",
+      "Frequency": "subhr",
+      "Long name": "TOA Outgoing Clear-Sky Longwave Radiation",
+      "Modeling realm": "atmos",
+      "Positive": "up",
+      "Processing notes": "This table includes the 2-D variables listed in the \"Amon\" spreadsheet, omitting, however, the daily maximum and minimum temperatures.  All variables should be reported as synoptic fields, not daily means.; CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:subhrPt CMIP7:subhr,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s02i206[lbproc=0]",
+      "Expression UKESM1": "m01s02i206[lbproc=0]",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 615,
+    "labels": [
+      "subhr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.subhr.rlutcs_tpt-u-hxys-u (CFsubhr.rlutcs)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rlut_tpt-u-hxys-u",
+      "CF standard name": "toa_outgoing_longwave_flux",
+      "CMIP6 Differences": "\"frequency\" was \"subhrPt\";",
+      "Cell measures": "",
+      "Cell methods": "area: point time: point",
+      "Comment": "at the top of the atmosphere (to be compared with satellite measurements)",
+      "Dimensions": "site time1",
+      "Frequency": "subhr",
+      "Long name": "TOA Outgoing Longwave Radiation",
+      "Modeling realm": "atmos",
+      "Positive": "up",
+      "Processing notes": "This table includes the 2-D variables listed in the \"Amon\" spreadsheet, omitting, however, the daily maximum and minimum temperatures.  All variables should be reported as synoptic fields, not daily means.; ; CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:subhrPt CMIP7:subhr,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s02i205[lbproc=0]",
+      "Expression UKESM1": "m01s02i205[lbproc=0]",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 614,
+    "labels": [
+      "subhr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.subhr.rlut_tpt-u-hxys-u (CFsubhr.rlut)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rlus_tpt-u-hxys-u",
+      "CF standard name": "surface_upwelling_longwave_flux_in_air",
+      "CMIP6 Differences": "\"frequency\" was \"subhrPt\"; ; \"comment\" was \"The surface called 'surface' means the lower boundary of the atmosphere. 'longwave' means longwave radiation. Upwelling radiation is radiation from below. It does not mean 'net upward'. When thought of as being incident on a surface, a radiative flux is sometimes called 'irradiance'. In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called 'vector irradiance'. In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.\";",
+      "Cell measures": "",
+      "Cell methods": "area: point time: point",
+      "Comment": "The surface called \"surface\" means the lower boundary of the atmosphere. \"longwave\" means longwave radiation. Upwelling radiation is radiation from below. It does not mean \"net upward\". When thought of as being incident on a surface, a radiative flux is sometimes called \"irradiance\". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called \"vector irradiance\". In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics.",
+      "Dimensions": "site time1",
+      "Frequency": "subhr",
+      "Long name": "Surface Upwelling Longwave Radiation",
+      "Modeling realm": "atmos",
+      "Positive": "up",
+      "Processing notes": "This table includes the 2-D variables listed in the \"Amon\" spreadsheet, omitting, however, the daily maximum and minimum temperatures.  All variables should be reported as synoptic fields, not daily means.; CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:subhrPt CMIP7:subhr,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s02i207[lbproc=0] - m01s02i201[lbproc=0]",
+      "Expression UKESM1": "m01s02i207[lbproc=0] - m01s02i201[lbproc=0]",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 613,
+    "labels": [
+      "subhr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.subhr.rlus_tpt-u-hxys-u (CFsubhr.rlus)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rlucs_tpt-l-hxys-u",
+      "CF standard name": "upwelling_longwave_flux_in_air_assuming_clear_sky",
+      "CMIP6 Differences": "\"frequency\" was \"subhrPt\";",
+      "Cell measures": "",
+      "Cell methods": "area: point time: point",
+      "Comment": "Upwelling clear-sky longwave radiation  (includes the fluxes at the surface and TOA)",
+      "Dimensions": "alevhalf site time1",
+      "Frequency": "subhr",
+      "Long name": "Upwelling Clear-Sky Longwave Radiation",
+      "Modeling realm": "atmos",
+      "Positive": "up",
+      "Processing notes": "Report on model half-levels (i.e., interfaces between model layers).; CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:subhrPt CMIP7:subhr,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "correct_multilevel_metadata(m01s02i219[lbproc=0])",
+      "Expression UKESM1": "correct_multilevel_metadata(m01s02i219[lbproc=0])",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 612,
+    "labels": [
+      "subhr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.subhr.rlucs_tpt-l-hxys-u (CFsubhr.rlucs)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rlu_tpt-l-hxys-u",
+      "CF standard name": "upwelling_longwave_flux_in_air",
+      "CMIP6 Differences": "\"frequency\" was \"subhrPt\";",
+      "Cell measures": "",
+      "Cell methods": "area: point time: point",
+      "Comment": "Upwelling longwave radiation (includes the fluxes at the surface and TOA)",
+      "Dimensions": "alevhalf site time1",
+      "Frequency": "subhr",
+      "Long name": "Upwelling Longwave Radiation",
+      "Modeling realm": "atmos",
+      "Positive": "up",
+      "Processing notes": "Report on model half-levels (i.e., interfaces between model layers).; CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:subhrPt CMIP7:subhr,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "correct_multilevel_metadata(m01s02i217[lbproc=0])",
+      "Expression UKESM1": "correct_multilevel_metadata(m01s02i217[lbproc=0])",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 611,
+    "labels": [
+      "subhr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.subhr.rlu_tpt-l-hxys-u (CFsubhr.rlu)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rldscs_tpt-u-hxys-u",
+      "CF standard name": "surface_downwelling_longwave_flux_in_air_assuming_clear_sky",
+      "CMIP6 Differences": "\"frequency\" was \"subhrPt\";",
+      "Cell measures": "",
+      "Cell methods": "area: point time: point",
+      "Comment": "Surface downwelling clear-sky longwave radiation",
+      "Dimensions": "site time1",
+      "Frequency": "subhr",
+      "Long name": "Surface Downwelling Clear-Sky Longwave Radiation",
+      "Modeling realm": "atmos",
+      "Positive": "down",
+      "Processing notes": "This table includes the 2-D variables listed in the \"Amon\" spreadsheet, omitting, however, the daily maximum and minimum temperatures.  All variables should be reported as synoptic fields, not daily means.; CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:subhrPt CMIP7:subhr,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s02i208[lbproc=0]",
+      "Expression UKESM1": "m01s02i208[lbproc=0]",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 610,
+    "labels": [
+      "subhr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.subhr.rldscs_tpt-u-hxys-u (CFsubhr.rldscs)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "rlds_tpt-u-hxys-u",
       "CF standard name": "surface_downwelling_longwave_flux_in_air",
       "CMIP6 Differences": "\"frequency\" was \"subhrPt\"; ; \"comment\" was \"The surface called 'surface' means the lower boundary of the atmosphere. 'longwave' means longwave radiation. Downwelling radiation is radiation from above. It does not mean 'net downward'. When thought of as being incident on a surface, a radiative flux is sometimes called 'irradiance'. In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called 'vector irradiance'. In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.\";",
