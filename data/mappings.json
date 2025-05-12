@@ -1,6 +1,448 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "rhLitter_tavg-u-hxy-lnd",
+      "CF standard name": "surface_upward_mass_flux_of_carbon_due_to_heterotrophic_respiration_in_litter",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "Needed to calculate litter bulk turnover time. Includes respiration from CWD as well.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Carbon Mass Flux into Atmosphere Due to Heterotrophic Respiration from Litter on Land",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 995,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.mon.rhLitter_tavg-u-hxy-lnd (Emon.rhLitter)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rhGrass_tavg-u-hxy-ng",
+      "CF standard name": "surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_heterotrophic_respiration",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: time: mean where natural_grasses (comment: mask=grassFrac)\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where natural_grasses (mask=grassFrac)",
+      "Comment": "Total RH of grass in the grid cell",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Heterotrophic Respiration on Grass Tiles as Carbon Mass Flux [kgC m-2 s-1]",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where natural_grasses (comment: mask=grassFrac) CMIP7:area: time: mean where natural_grasses (mask=grassFrac),",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 994,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.mon.rhGrass_tavg-u-hxy-ng (Emon.rhGrass)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "reffsclwtop_tavg-u-hxy-scl",
+      "CF standard name": "effective_radius_of_stratiform_cloud_liquid_water_particles_at_stratiform_liquid_water_cloud_top",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where stratiform_cloud (weighted by total stratiform cloud area)",
+      "Comment": "Cloud-Top Effective Droplet Radius in Stratiform Cloud",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Cloud-Top Effective Droplet Radius in Stratiform Cloud",
+      "Modeling realm": "aerosol",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 993,
+    "labels": [
+      "mon",
+      "aerosol"
+    ],
+    "title": "Variable aerosol.mon.reffsclwtop_tavg-u-hxy-scl (Emon.reffsclwtop)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "reffclws_tavg-l-hxy-u",
+      "CF standard name": "effective_radius_of_stratiform_cloud_liquid_water_particles",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: time: mean\"; ; \"standard_name\" was \"effective_radius_of_stratiform_cloud_liquid_water_particle\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where stratiform_cloud (weighted by total stratiform cloud area)",
+      "Comment": "Droplets are liquid.  The effective radius is defined as the ratio of the third moment over the second moment of the particle size distribution and the time-mean should be calculated, weighting the individual samples by the cloudy fraction of the grid cell.",
+      "Dimensions": "longitude latitude alevel time",
+      "Frequency": "mon",
+      "Long name": "Stratiform Cloud Liquid Droplet Effective Radius",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:area: time: mean where stratiform_cloud (weighted by total stratiform cloud area),; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:area: time: mean where stratiform_cloud (weighted by total stratiform cloud area),",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s02i397[lbproc=128] / m01s02i312[lbproc=128]",
+      "Expression UKESM1": "m01s02i397[lbproc=128] / m01s02i312[lbproc=128]",
+      "Model units": "m"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s02i312",
+        "domain_profile": "DALLTH",
+        "model": "UKESM1",
+        "stash_number": "2,312",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i397",
+        "domain_profile": "DALLTH",
+        "model": "UKESM1",
+        "stash_number": "2,397",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s00i033",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "33",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i312",
+        "domain_profile": "DALLTH",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,312",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i397",
+        "domain_profile": "DALLTH",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,397",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s00i033",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "33",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 992,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.reffclws_tavg-l-hxy-u (Emon.reffclws)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "reffclwc_tavg-l-hxy-u",
+      "CF standard name": "effective_radius_of_convective_cloud_liquid_water_particles",
+      "CMIP6 Differences": "\"standard_name\" was \"effective_radius_of_convective_cloud_liquid_water_particle\"; ; \"cell_methods\" was \"area: time: mean\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where convective_cloud (weighted by total convective cloud area)",
+      "Comment": "Droplets are liquid.  The effective radius is defined as the ratio of the third moment over the second moment of the particle size distribution and the time-mean should be calculated, weighting the individual samples by the cloudy fraction of the grid cell.",
+      "Dimensions": "longitude latitude alevel time",
+      "Frequency": "mon",
+      "Long name": "Convective Cloud Liquid Droplet Effective Radius",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:area: time: mean where convective_cloud,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:area: time: mean where convective_cloud (weighted by total convective cloud area),; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:area: time: mean where convective_cloud (weighted by total convective cloud area), area: time: mean where stratiform_cloud (weighted by total convective cloud area) copy,",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s02i397[lbproc=128] / m01s02i312[lbproc=128]",
+      "Expression UKESM1": "m01s02i397[lbproc=128] / m01s02i312[lbproc=128]",
+      "Model units": "m"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s02i312",
+        "domain_profile": "DALLTH",
+        "model": "UKESM1",
+        "stash_number": "2,312",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i397",
+        "domain_profile": "DALLTH",
+        "model": "UKESM1",
+        "stash_number": "2,397",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s00i033",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "33",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i312",
+        "domain_profile": "DALLTH",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,312",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i397",
+        "domain_profile": "DALLTH",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,397",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s00i033",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "33",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 991,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.reffclwc_tavg-l-hxy-u (Emon.reffclwc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "reffclis_tavg-l-hxy-u",
+      "CF standard name": "effective_radius_of_stratiform_cloud_ice_particles",
+      "CMIP6 Differences": "\"standard_name\" was \"effective_radius_of_stratiform_cloud_ice_particle\"; ; \"cell_methods\" was \"area: time: mean\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where stratiform_cloud (weighted by total stratiform cloud area)",
+      "Comment": "This is defined as the in-cloud ratio of the third moment over the second moment of the particle size distribution (obtained by considering only the cloudy portion of the grid cell).",
+      "Dimensions": "longitude latitude alevel time",
+      "Frequency": "mon",
+      "Long name": "Hydrometeor Effective Radius of Stratiform Cloud Ice",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:area: time: mean where stratiform_cloud (weighted by total stratiform cloud area),; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:area: time: mean where stratiform_cloud (weighted by total stratiform cloud area),",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "0.5 * m01s02i398[lbproc=128] / m01s02i313[lbproc=128]",
+      "Expression UKESM1": "0.5 * m01s02i398[lbproc=128] / m01s02i313[lbproc=128]",
+      "Model units": "m"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s02i313",
+        "domain_profile": "DALLTH",
+        "model": "UKESM1",
+        "stash_number": "2,313",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i398",
+        "domain_profile": "DALLTH",
+        "model": "UKESM1",
+        "stash_number": "2,398",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s00i033",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "33",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i313",
+        "domain_profile": "DALLTH",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,313",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i398",
+        "domain_profile": "DALLTH",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,398",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s00i033",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "33",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 990,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.reffclis_tavg-l-hxy-u (Emon.reffclis)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "reffclic_tavg-l-hxy-u",
+      "CF standard name": "effective_radius_of_convective_cloud_ice_particles",
+      "CMIP6 Differences": "\"standard_name\" was \"effective_radius_of_convective_cloud_ice_particle\"; ; \"cell_methods\" was \"area: time: mean\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where convective_cloud (weighted by total convective cloud area)",
+      "Comment": "This is defined as the in-cloud ratio of the third moment over the second moment of the particle size distribution (obtained by considering only the cloudy portion of the grid cell).",
+      "Dimensions": "longitude latitude alevel time",
+      "Frequency": "mon",
+      "Long name": "Hydrometeor Effective Radius of Convective Cloud Ice",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:area: time: mean where convective_cloud,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:area: time: mean where convective_cloud (weighted by total convective cloud area),; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:area: time: mean where convective_cloud (weighted by total convective cloud area), area: time: mean where stratiform_cloud (weighted by total convective cloud area),",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "0.5 * m01s02i398[lbproc=128] / m01s02i313[lbproc=128]",
+      "Expression UKESM1": "0.5 * m01s02i398[lbproc=128] / m01s02i313[lbproc=128]",
+      "Model units": "m"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s02i313",
+        "domain_profile": "DALLTH",
+        "model": "UKESM1",
+        "stash_number": "2,313",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i398",
+        "domain_profile": "DALLTH",
+        "model": "UKESM1",
+        "stash_number": "2,398",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s00i033",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "33",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i313",
+        "domain_profile": "DALLTH",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,313",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i398",
+        "domain_profile": "DALLTH",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,398",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s00i033",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "33",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 989,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.reffclic_tavg-l-hxy-u (Emon.reffclic)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "reffccwctop_tavg-u-hxy-ccl",
+      "CF standard name": "effective_radius_of_cloud_condensed_water_particles_at_cloud_top",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Cloud-Top Effective Radius of Liquid or Ice Cloud at Liquid or Ice Cloud Top",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Cloud-Top Effective Radius of Liquid or Ice Cloud at Liquid or Ice Cloud Top",
+      "Modeling realm": "aerosol",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 988,
+    "labels": [
+      "mon",
+      "aerosol"
+    ],
+    "title": "Variable aerosol.mon.reffccwctop_tavg-u-hxy-ccl (Emon.reffccwctop)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "reffcclwtop_tavg-u-hxy-ccl",
       "CF standard name": "effective_radius_of_convective_cloud_liquid_water_particles_at_convective_liquid_water_cloud_top",
       "CMIP6 Differences": "Not present",
