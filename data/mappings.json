@@ -1,6 +1,304 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "dmso_tavg-u-hm-sea",
+      "CF standard name": "mole_concentration_of_dimethyl_sulfide_in_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Mole concentration of dimethyl sulphide in water in the near surface layer",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Mole Concentration of Dimethyl Sulphide in Sea Water",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time CMIP7:longitude latitude time depth0m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "DMS_SURF",
+      "Model units": "nmol L-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1408,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.dmso_tavg-u-hm-sea (Omon.dmsos)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "dmso_tavg-l-hxy-sea",
+      "CF standard name": "mole_concentration_of_dimethyl_sulfide_in_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Mole concentration of dimethyl sulphide in water",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Mole Concentration of Dimethyl Sulphide in Sea Water",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1407,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.dmso_tavg-l-hxy-sea (Omon.dmso)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "dissoc_tavg-l-hxy-sea",
+      "CF standard name": "mole_concentration_of_dissolved_organic_carbon_in_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Sum of dissolved carbon component concentrations explicitly represented (i.e. not ~40 uM refractory unless explicit)",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Dissolved Organic Carbon Concentration",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "Concentrations of all 3D tracers in the uppermost ocean layer. See first table in Oyr for a complete list of these tracers.  \"Tracer\"  concentations should be reported even if they are diagnosed rather than prognostically calculated.",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1406,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.dissoc_tavg-l-hxy-sea (Omon.dissoc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "dissic_tavg-u-hm-sea",
+      "CF standard name": "mole_concentration_of_dissolved_inorganic_carbon_in_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Dissolved inorganic carbon (CO3+HCO3+H2CO3) concentration",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Dissolved Inorganic Carbon Concentration",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time CMIP7:longitude latitude time depth0m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "DIC[depth=0]",
+      "Model units": "mmol m-3"
+    },
+    "STASH entries": [],
+    "issue_number": 1405,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.dissic_tavg-u-hm-sea (Omon.dissicos)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "dissic_tavg-l-hxy-sea",
+      "CF standard name": "mole_concentration_of_dissolved_inorganic_carbon_in_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Dissolved inorganic carbon (CO3+HCO3+H2CO3) concentration",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Dissolved Inorganic Carbon Concentration",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "Concentrations of all 3D tracers in the uppermost ocean layer. See first table in Oyr for a complete list of these tracers.  \"Tracer\"  concentations should be reported even if they are diagnosed rather than prognostically calculated.",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "DIC_E3T / thkcello",
+      "Model units": "mmol m-3"
+    },
+    "STASH entries": [],
+    "issue_number": 1404,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.dissic_tavg-l-hxy-sea (Omon.dissic)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "dissi14cabio_tavg-u-hm-sea",
+      "CF standard name": "mole_concentration_of_dissolved_inorganic_14C_in_sea_water",
+      "CMIP6 Differences": "\"comment\" was \"Abiotic Dissolved inorganic carbon-14 (CO3+HCO3+H2CO3) concentration\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Abiotic Dissolved inorganic 14carbon (CO3+HCO3+H2CO3) concentration",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Abiotic Dissolved Inorganic Carbon-14 Concentration",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time CMIP7:longitude latitude time depth0m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1403,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.dissi14cabio_tavg-u-hm-sea (Omon.dissi14cabioos)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "dissi14cabio_tavg-l-hxy-sea",
+      "CF standard name": "mole_concentration_of_dissolved_inorganic_14C_in_sea_water",
+      "CMIP6 Differences": "\"comment\" was \"Abiotic Dissolved inorganic carbon-14 (CO3+HCO3+H2CO3) concentration\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Abiotic Dissolved inorganic 14carbon (CO3+HCO3+H2CO3) concentration",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Abiotic Dissolved Inorganic Carbon-14 Concentration",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "Concentrations of all 3D tracers in the uppermost ocean layer. See first table in Oyr for a complete list of these tracers.  \"Tracer\"  concentations should be reported even if they are diagnosed rather than prognostically calculated.",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1402,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.dissi14cabio_tavg-l-hxy-sea (Omon.dissi14cabio)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "dissi13c_tavg-u-hm-sea",
+      "CF standard name": "mole_concentration_of_dissolved_inorganic_13C_in_sea_water",
+      "CMIP6 Differences": "\"comment\" was \"Near surface dissolved inorganic carbon-13 (CO3+HCO3+H2CO3) concentration\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Dissolved inorganic 14carbon (CO3+HCO3+H2CO3) concentration",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Dissolved Inorganic Carbon-13 Concentration",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time CMIP7:longitude latitude time depth0m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1401,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.dissi13c_tavg-u-hm-sea (Omon.dissi13cos)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "dissi13c_tavg-l-hxy-sea",
+      "CF standard name": "mole_concentration_of_dissolved_inorganic_13C_in_sea_water",
+      "CMIP6 Differences": "\"comment\" was \"Dissolved inorganic carbon-13 (CO3+HCO3+H2CO3) concentration\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Dissolved inorganic 14carbon (CO3+HCO3+H2CO3) concentration",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Dissolved Inorganic Carbon-13 Concentration",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "Concentrations of all 3D tracers in the uppermost ocean layer. See first table in Oyr for a complete list of these tracers.  \"Tracer\"  concentations should be reported even if they are diagnosed rather than prognostically calculated.",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1400,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.dissi13c_tavg-l-hxy-sea (Omon.dissi13c)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "dfe_tavg-u-hm-sea",
+      "CF standard name": "mole_concentration_of_dissolved_iron_in_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "dissolved iron in sea water is meant to include both Fe2+ and Fe3+ ions (but not, e.g., particulate detrital iron)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Dissolved Iron Concentration",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time CMIP7:longitude latitude time depth0m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "FER_E3T[depth=0] / thkcello[depth=0]",
+      "Model units": "mmol m-3"
+    },
+    "STASH entries": [],
+    "issue_number": 1399,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.dfe_tavg-u-hm-sea (Omon.dfeos)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "dfe_tavg-l-hxy-sea",
       "CF standard name": "mole_concentration_of_dissolved_iron_in_sea_water",
       "CMIP6 Differences": "\"comment\" was \"Dissolved iron in sea water,  including both Fe2+ and Fe3+ ions (but not particulate detrital iron)\";",
