@@ -1,6 +1,491 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "rsdsdiff_tavg-u-hxy-u",
+      "CF standard name": "surface_diffuse_downwelling_shortwave_flux_in_air",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Surface downwelling solar irradiance from diffuse radiation for UV calculations.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Surface Diffuse Downwelling Shortwave Radiation",
+      "Modeling realm": "atmos",
+      "Positive": "down",
+      "Processing notes": "",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s01i216[lbproc=128]",
+      "Expression UKESM1": "m01s01i216[lbproc=128]",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s01i216",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "1,216",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s01i216",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "1,216",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 776,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.day.rsdsdiff_tavg-u-hxy-u (Eday.rsdsdiff)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rsdscsdiff_tavg-u-hxy-u",
+      "CF standard name": "surface_diffuse_downwelling_shortwave_flux_in_air_assuming_clear_sky",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Surface downwelling solar irradiance from diffuse radiation for UV calculations in clear sky conditions",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Surface Diffuse Downwelling Clear Sky Shortwave Radiation",
+      "Modeling realm": "atmos",
+      "Positive": "down",
+      "Processing notes": "",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 775,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.day.rsdscsdiff_tavg-u-hxy-u (Eday.rsdscsdiff)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rivo_tavg-u-hxy-lnd",
+      "CF standard name": "outgoing_water_volume_transport_along_river_channel",
+      "CMIP6 Differences": "\"comment\" was \"Outflow of River Water from Cell\";",
+      "Cell measures": "area: areacellr",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "water_flux_from_upstream",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "River Discharge",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m3 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 774,
+    "labels": [
+      "day",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.day.rivo_tavg-u-hxy-lnd (Eday.rivo)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rivi_tavg-u-hxy-lnd",
+      "CF standard name": "incoming_water_volume_transport_along_river_channel",
+      "CMIP6 Differences": "\"comment\" was \"Inflow of River Water into Cell\";",
+      "Cell measures": "area: areacellr",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "water_flux_to_downstream",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "River Inflow",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m3 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 773,
+    "labels": [
+      "day",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.day.rivi_tavg-u-hxy-lnd (Eday.rivi)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rhVgt_tavg-u-hxy-lus",
+      "CF standard name": "surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_heterotrophic_respiration",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where sector",
+      "Comment": "Carbon mass flux per unit area into atmosphere due to heterotrophic respiration on land (respiration by consumers), calculated on vegetation type.",
+      "Dimensions": "longitude latitude vegtype time",
+      "Frequency": "day",
+      "Long name": "Heterotrophic Respiration on Vegetation type as Carbon Mass Flux [kgC m-2 s-1]",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 772,
+    "labels": [
+      "day",
+      "land"
+    ],
+    "title": "Variable land.day.rhVgt_tavg-u-hxy-lus (Eday.rhVgt)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "reffsclwtop_tavg-u-hxy-scl",
+      "CF standard name": "effective_radius_of_stratiform_cloud_liquid_water_particles_at_stratiform_liquid_water_cloud_top",
+      "CMIP6 Differences": "\"standard_name\" was \"effective_radius_of_stratiform_cloud_liquid_water_particle_at_stratiform_liquid_water_cloud_top\"; ; \"comment\" was \"Droplets are liquid only.  This is the effective radius 'as seen from space' over liquid stratiform cloudy portion of grid cell.  This is the value from uppermost model layer with liquid cloud or, if available, or for some models it is the sum over all liquid cloud tops, no matter where they occur, as long as they are seen from the top of the atmosphere. Reported values are weighted by total liquid cloud top fraction of  (as seen from TOA) each time sample when computing monthly mean.daily data, separated to large-scale clouds, convective clouds. If any of the cloud is from more than one process (i.e. shallow convection), please provide them separately.\"; ; \"cell_methods\" was \"area: time: mean\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where stratiform_cloud (weighted by total stratiform cloud area)",
+      "Comment": "Droplets are liquid only.  This is the effective radius \"as seen from space\" over liquid stratiform cloudy portion of grid cell.  This is the value from uppermost model layer with liquid cloud or, if available, or for some models it is the sum over all liquid cloud tops, no matter where they occur, as long as they are seen from the top of the atmosphere. Reported values are weighted by total liquid cloud top fraction of  (as seen from TOA) each time sample when computing monthly mean.daily data, separated to large-scale clouds, convective clouds. If any of the cloud is from more than one process (i.e. shallow convection), please provide them separately.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Cloud-Top Effective Droplet Radius in Stratiform Cloud",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:area: time: mean where stratiform_cloud (weighted by total stratiform cloud area),; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:area: time: mean where stratiform_cloud (weighted by total stratiform cloud area),",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "mask_using_cube(m01s01i245[lbproc=128] / m01s01i246[lbproc=128], m01s02i391[lbproc=128] + m01s02i392[lbproc=128] - (m01s02i395[lbproc=128] + m01s02i396[lbproc=128]))",
+      "Expression UKESM1": "mask_using_cube(m01s01i245[lbproc=128] / m01s01i246[lbproc=128], m01s02i391[lbproc=128] + m01s02i392[lbproc=128] - (m01s02i395[lbproc=128] + m01s02i396[lbproc=128]))",
+      "Model units": "um"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s00i407",
+        "domain_profile": "DALLRHP1",
+        "model": "UKESM1",
+        "stash_number": "407",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s00i409",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "409",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s01i245",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "1,245",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s01i246",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "1,246",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s02i308",
+        "domain_profile": "DALLTH",
+        "model": "UKESM1",
+        "stash_number": "2,308",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s02i309",
+        "domain_profile": "DALLTH",
+        "model": "UKESM1",
+        "stash_number": "2,309",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s02i318",
+        "domain_profile": "DALLTH",
+        "model": "UKESM1",
+        "stash_number": "2,318",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s02i319",
+        "domain_profile": "DALLTH",
+        "model": "UKESM1",
+        "stash_number": "2,319",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s00i407",
+        "domain_profile": "DALLRHP1",
+        "model": "HadGEM3-GC31",
+        "stash_number": "407",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s00i409",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "409",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s01i245",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "1,245",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s01i246",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "1,246",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s02i308",
+        "domain_profile": "DALLTH",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,308",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s02i309",
+        "domain_profile": "DALLTH",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,309",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s02i318",
+        "domain_profile": "DALLTH",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,318",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s02i319",
+        "domain_profile": "DALLTH",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,319",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 771,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.day.reffsclwtop_tavg-u-hxy-scl (Eday.reffsclwtop)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "reffcclwtop_tavg-u-hxy-ccl",
+      "CF standard name": "effective_radius_of_convective_cloud_liquid_water_particles_at_convective_liquid_water_cloud_top",
+      "CMIP6 Differences": "\"standard_name\" was \"effective_radius_of_convective_cloud_liquid_water_particle_at_convective_liquid_water_cloud_top\"; ; \"comment\" was \"Droplets are liquid only.  This is the effective radius 'as seen from space' over convective liquid cloudy portion of grid cell.  This is the value from uppermost model layer with liquid cloud or, if available, or for some models it is the sum over all liquid cloud tops, no matter where they occur, as long as they are seen from the top of the atmosphere. Reported values are weighted by total liquid cloud top fraction of  (as seen from TOA) each time sample when computing monthly mean.daily data, separated to large-scale clouds, convective clouds. If any of the cloud is from more than one process (i.e. shallow convection), please provide them separately.\"; ; \"cell_methods\" was \"area: time: mean\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where convective_cloud (weighted by total convective cloud area)",
+      "Comment": "Droplets are liquid only.  This is the effective radius \"as seen from space\" over convective liquid cloudy portion of grid cell.  This is the value from uppermost model layer with liquid cloud or, if available, or for some models it is the sum over all liquid cloud tops, no matter where they occur, as long as they are seen from the top of the atmosphere. Reported values are weighted by total liquid cloud top fraction of  (as seen from TOA) each time sample when computing monthly mean.daily data, separated to large-scale clouds, convective clouds. If any of the cloud is from more than one process (i.e. shallow convection), please provide them separately.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Cloud-Top Effective Droplet Radius in Convective Cloud",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:area: time: mean where convective_cloud,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:area: time: mean where convective_cloud (weighted by total convective cloud area),; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:area: time: mean where convective_cloud (weighted by total convective cloud area), area: time: mean where stratifor (weighted by total convective cloud area) copy,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:area: time: mean where convective_cloud (weighted by total convective cloud area), area: time: mean where stratiform_cloud (weighted by total convective cloud area),",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "mask_using_cube(m01s01i245[lbproc=128] / m01s01i246[lbproc=128], m01s02i395[lbproc=128] + m01s02i396[lbproc=128])",
+      "Expression UKESM1": "mask_using_cube(m01s01i245[lbproc=128] / m01s01i246[lbproc=128], m01s02i395[lbproc=128] + m01s02i396[lbproc=128])",
+      "Model units": "um"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s00i407",
+        "domain_profile": "DALLRHP1",
+        "model": "UKESM1",
+        "stash_number": "407",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s00i409",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "409",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s01i245",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "1,245",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s01i246",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "1,246",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s02i318",
+        "domain_profile": "DALLTH",
+        "model": "UKESM1",
+        "stash_number": "2,318",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s02i319",
+        "domain_profile": "DALLTH",
+        "model": "UKESM1",
+        "stash_number": "2,319",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s00i407",
+        "domain_profile": "DALLRHP1",
+        "model": "HadGEM3-GC31",
+        "stash_number": "407",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s00i409",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "409",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s01i245",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "1,245",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s01i246",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "1,246",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s02i318",
+        "domain_profile": "DALLTH",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,318",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      },
+      {
+        "STASH": "m01s02i319",
+        "domain_profile": "DALLTH",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,319",
+        "time_profile": "TDAYMN",
+        "usage_profile": "UP6"
+      }
+    ],
+    "issue_number": 770,
+    "labels": [
+      "day",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.day.reffcclwtop_tavg-u-hxy-ccl (Eday.reffcclwtop)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "raVgt_tavg-u-hxy-lnd",
+      "CF standard name": "surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_plant_respiration",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where sector",
+      "Comment": "Carbon mass flux per unit area into atmosphere due to autotrophic respiration on land (respiration by producers) [see rh for heterotrophic production]. Calculated on vegetation type.",
+      "Dimensions": "longitude latitude vegtype time",
+      "Frequency": "day",
+      "Long name": "Autotrophic Respiration on Vegetation type as Carbon Mass Flux [kgC m-2 s-1]",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 769,
+    "labels": [
+      "day",
+      "land"
+    ],
+    "title": "Variable land.day.raVgt_tavg-u-hxy-lnd (Eday.raVgt)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "qgwr_tavg-u-hxy-lnd",
       "CF standard name": "downward_liquid_water_mass_flux_into_groundwater",
       "CMIP6 Differences": "\"comment\" was \"Mass flux of water from the soil layer into ground water.\";",
