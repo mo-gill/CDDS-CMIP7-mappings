@@ -1,6 +1,267 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "tsn_tavg-u-hxy-lnd",
+      "CF standard name": "temperature_in_surface_snow",
+      "CMIP6 Differences": "\"comment\" was \"This temperature is averaged over all the snow in the grid cell that rests on land or land ice.  When computing the time-mean here, the time samples, weighted by the mass of snow on the land portion of the grid cell, are accumulated and then divided by the sum of the weights.   Reported as missing in regions free of snow on land.\"; ; \"modeling_realm\" was \"landIce land\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "quantity averaged over ice sheet (grounded ice sheet and floating ice shelf) only. Needed to analyse the impact of downscaling methods",
+      "Dimensions": "xgre ygre time",
+      "Frequency": "mon",
+      "Long name": "Snow Internal Temperature",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:land, landIce CMIP7:land, ocean,",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1166,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.tsn_tavg-u-hxy-lnd (ImonGre.tsn)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ts_tavg-u-hxy-is",
+      "CF standard name": "surface_temperature",
+      "CMIP6 Differences": "\"comment\" was \"Temperature of the lower boundary of the atmosphere\"; ; \"modeling_realm\" was \"landIce land\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "quantity averaged over ice sheet (grounded ice sheet and floating ice shelf) only. Needed to analyse the impact of downscaling methods",
+      "Dimensions": "xgre ygre time",
+      "Frequency": "mon",
+      "Long name": "Surface Temperature",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:land, landIce CMIP7:land, ocean,",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1165,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.ts_tavg-u-hxy-is (ImonGre.ts)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tas_tavg-h2m-hm-is",
+      "CF standard name": "air_temperature",
+      "CMIP6 Differences": "\"comment\" was \"near-surface (usually, 2 meter) air temperature\"; ; \"modeling_realm\" was \"landIce land\";",
+      "Cell measures": "",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "quantity averaged over ice sheet (grounded ice sheet and floating ice shelf) only. Needed to analyse the impact of downscaling methods",
+      "Dimensions": "time height2m",
+      "Frequency": "mon",
+      "Long name": "Near-Surface Air Temperature",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:land, landIce CMIP7:land, ocean,",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1164,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.tas_tavg-h2m-hm-is (ImonGre.tas)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "snm_tavg-u-hxy-is",
+      "CF standard name": "surface_snow_melt_flux",
+      "CMIP6 Differences": "\"modeling_realm\" was \"landIce land\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "The total surface snow melt rate on the land portion of the grid cell divided by the land area in the grid cell; report as zero for snow-free land regions and missing where there is no land.",
+      "Dimensions": "xgre ygre time",
+      "Frequency": "mon",
+      "Long name": "Surface Snow Melt",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:land, landIce CMIP7:land, ocean,",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1163,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.snm_tavg-u-hxy-is (ImonGre.snm)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "snicem_tavg-u-hxy-is",
+      "CF standard name": "surface_snow_and_ice_melt_flux",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "Loss of snow and ice mass resulting from surface melting. Computed as the total surface melt on the land ice portion of the grid cell divided by land ice area in the grid cell.",
+      "Dimensions": "xgre ygre time",
+      "Frequency": "mon",
+      "Long name": "Surface Snow and Ice Melt Flux",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1162,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.snicem_tavg-u-hxy-is (ImonGre.snicem)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "snicefreez_tavg-u-hxy-is",
+      "CF standard name": "surface_snow_and_ice_refreezing_flux",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "Mass flux of surface meltwater which refreezes within the snowpack. Computed as the total refreezing on the land ice portion of the grid cell divided by land ice area in the grid cell.",
+      "Dimensions": "xgre ygre time",
+      "Frequency": "mon",
+      "Long name": "Surface Snow and Ice Refreeze Flux",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1161,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.snicefreez_tavg-u-hxy-is (ImonGre.snicefreez)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "snc_tavg-u-hxy-is",
+      "CF standard name": "surface_snow_area_fraction",
+      "CMIP6 Differences": "\"comment\" was \"Percentage of each grid cell that is occupied by snow that rests on land portion of cell.\"; ; \"modeling_realm\" was \"landIce land\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "quantity averaged over ice sheet (grounded ice sheet and floating ice shelf) only, to avoid contamination from other surfaces (eg: permafrost)",
+      "Dimensions": "xgre ygre time",
+      "Frequency": "mon",
+      "Long name": "Snow Area Percentage",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:land, landIce CMIP7:land, ocean,",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1160,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.snc_tavg-u-hxy-is (ImonGre.snc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sbl_tavg-u-hxy-is",
+      "CF standard name": "tendency_of_atmosphere_mass_content_of_water_vapor_due_to_sublimation_of_surface_snow_and_ice",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "The snow and ice sublimation flux is the loss of snow and ice mass per unit area from the surface resulting from their direct conversion to water vapor that enters the atmosphere.",
+      "Dimensions": "xgre ygre time",
+      "Frequency": "mon",
+      "Long name": "Surface Snow and Ice Sublimation Flux",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1159,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.sbl_tavg-u-hxy-is (ImonGre.sbl)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rsus_tavg-u-hxy-is",
+      "CF standard name": "surface_upwelling_shortwave_flux_in_air",
+      "CMIP6 Differences": "\"comment\" was \"The surface called 'surface' means the lower boundary of the atmosphere. 'shortwave' means shortwave radiation. Upwelling radiation is radiation from below. It does not mean 'net upward'. When thought of as being incident on a surface, a radiative flux is sometimes called 'irradiance'. In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called 'vector irradiance'. In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.\"; ; \"modeling_realm\" was \"landIce land\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "The surface called \"surface\" means the lower boundary of the atmosphere. \"shortwave\" means shortwave radiation. Upwelling radiation is radiation from below. It does not mean \"net upward\". When thought of as being incident on a surface, a radiative flux is sometimes called \"irradiance\". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called \"vector irradiance\". In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics.",
+      "Dimensions": "xgre ygre time",
+      "Frequency": "mon",
+      "Long name": "Surface Upwelling Shortwave Radiation",
+      "Modeling realm": "landIce",
+      "Positive": "up",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:land, landIce CMIP7:land, ocean,",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1158,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.rsus_tavg-u-hxy-is (ImonGre.rsus)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "rsds_tavg-u-hxy-is",
       "CF standard name": "surface_downwelling_shortwave_flux_in_air",
       "CMIP6 Differences": "\"modeling_realm\" was \"landIce land\";",
