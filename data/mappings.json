@@ -1,6 +1,112 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "raLeaf_tavg-u-hxy-lnd",
+      "CF standard name": "surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_plant_respiration_in_leaves",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "added for completeness with Ra_root",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Total Respiration from Leaves as Carbon Mass Flux [kgC m-2 s-1]",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 979,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.mon.raLeaf_tavg-u-hxy-lnd (Emon.raLeaf)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "raGrass_tavg-u-hxy-lnd",
+      "CF standard name": "surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_plant_respiration",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: time: mean where natural_grasses (comment: mask=grassFrac)\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where natural_grasses (mask=grassFrac)",
+      "Comment": "Total RA of grass in the grid cell",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Autotrophic Respiration on Grass Tiles as Carbon Mass Flux [kgC m-2 s-1]",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where natural_grasses (comment: mask=grassFrac) CMIP7:area: time: mean where natural_grasses (mask=grassFrac),",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "land_class_mean( m01s19i184[lbtim_ia=240,lbproc=128] / (SECONDS_IN_DAY * DAYS_IN_YEAR), m01s19i013[lbtim_ia=240,lbproc=128], land_class='grass')",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s19i013",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "19,013",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i184",
+        "domain_profile": "DPFTS",
+        "model": "UKESM1",
+        "stash_number": "19,184",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 978,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable land.mon.raGrass_tavg-u-hxy-lnd (Emon.raGrass)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "prsn2h_tavg-u-hxy-u",
+      "CF standard name": "solid_precipitation_flux_containing_single_2H",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Precipitation mass flux of water molecules that contain one atom of the hydrogen-2 isotope (1H 2H O), including solid phase only.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Precipitation Flux of Snow and Ice Containing Deuterium (1H 2H O)",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 977,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.mon.prsn2h_tavg-u-hxy-u (Emon.prsn2h)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "prsn18O_tavg-u-hxy-u",
       "CF standard name": "solid_precipitation_flux_containing_18O",
       "CMIP6 Differences": "",
