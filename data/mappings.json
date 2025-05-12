@@ -1,6 +1,272 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "fDeforestToProduct_tavg-u-hxy-lnd",
+      "CF standard name": "carbon_mass_flux_into_forestry_and_agricultural_products_due_to_anthropogenic_land_use_or_land_cover_change",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "When land use change results in deforestation of natural vegetation (trees or grasslands) then natural biomass is removed. The treatment of deforested biomass differs significantly across models, but it should be straight-forward to compare deforested biomass across models.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Deforested Biomass That Goes into Product Pool as a Result of Anthropogenic Land-Use Change",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "(m01s19i036[lbtim_ia=240,lbproc=128] + m01s19i037[lbtim_ia=240,lbproc=128] + m01s19i038[lbtim_ia=240,lbproc=128]) / (SECONDS_IN_DAY * DAYS_IN_YEAR)",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s19i036",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "19,036",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i037",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "19,037",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i038",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "19,038",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 884,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable land.mon.fDeforestToProduct_tavg-u-hxy-lnd (Emon.fDeforestToProduct)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fDeforestToAtmos_tavg-u-hxy-lnd",
+      "CF standard name": "surface_net_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_anthropogenic_land_use_change",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "When land use change results in deforestation of natural vegetation (trees or grasslands) then natural biomass is removed. The treatment of deforested biomass differs significantly across models, but it should be straight-forward to compare deforested biomass across models.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Deforested Biomass That Goes into Atmosphere as a Result of Anthropogenic Land-Use Change [kgC m-2 s-1]",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 883,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.mon.fDeforestToAtmos_tavg-u-hxy-lnd (Emon.fDeforestToAtmos)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fCLandToOcean_tavg-u-hxy-lnd",
+      "CF standard name": "mass_flux_of_carbon_into_sea_water_from_rivers",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacellr",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "leached carbon etc that goes into run off or river routing and finds its way into ocean should be reported here.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Lateral Transfer of Carbon out of Grid Cell That Eventually Goes into Ocean",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 882,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.mon.fCLandToOcean_tavg-u-hxy-lnd (Emon.fCLandToOcean)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fBNF_tavg-u-hxy-lnd",
+      "CF standard name": "tendency_of_soil_and_vegetation_mass_content_of_nitrogen_compounds_expressed_as_nitrogen_due_to_fixation",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "The fixation (uptake of nitrogen gas directly from the atmosphere) of nitrogen due to biological processes.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Biological Nitrogen Fixation",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "m01s19i113[lbtim_ia=240,lbproc=128] / (SECONDS_IN_DAY * DAYS_IN_YEAR)",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s19i113",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "19,113",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 881,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable land.mon.fBNF_tavg-u-hxy-lnd (Emon.fBNF)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fAnthDisturb_tavg-u-hxy-lnd",
+      "CF standard name": "tendency_of_atmosphere_mass_content_of_carbon_dioxide_expressed_as_carbon_due_to_anthropogenic_emission",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "Anthropogenic flux of carbon as carbon dioxide into the atmosphere. That is, emissions influenced, caused, or created by human activity. Anthropogenic emission of carbon dioxide includes fossil fuel use, cement production, agricultural burning and sources associated with anthropogenic land use change, except forest regrowth.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Carbon Mass Flux from Vegetation, Litter or Soil Pools into the Atmosphere Due to any Human Activity [kgC m-2 s-1]",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "(m01s19i044[lbtim_ia=240,lbproc=128])/ (SECONDS_IN_DAY * DAYS_IN_YEAR)",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 880,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable land.mon.fAnthDisturb_tavg-u-hxy-lnd (Emon.fAnthDisturb)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "expcalc_tavg-l-hxy-sea",
+      "CF standard name": "sinking_mole_flux_of_calcite_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Downward flux of Calcite",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Downward Flux of Calcite",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "down",
+      "Processing notes": "Those who wish to record vertical velocities and vertical fluxes on ocean half-levels may do so. If using CMOR3 you will be required to specify artificial bounds (e.g. located at full model levels) to avoid an error exit.",
+      "Units": "mol m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "FD_CAL3",
+      "Model units": "mmol m-2 d-1"
+    },
+    "STASH entries": [],
+    "issue_number": 879,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.expcalc_tavg-l-hxy-sea (Emon.expcalc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "evspsblpot_tavg-u-hxy-lnd",
+      "CF standard name": "water_potential_evaporation_flux",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "at surface; potential flux of water into the atmosphere due to conversion of both liquid and solid phases to vapor (from underlying surface and vegetation)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Potential Evapotranspiration",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i334[lbproc=128]",
+      "Expression UKESM1": "m01s03i334[lbproc=128]",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i334",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,334",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i334",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,334",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 878,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable land.mon.evspsblpot_tavg-u-hxy-lnd (Emon.evspsblpot)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "ec550aer_tavg-l-hxy-u",
       "CF standard name": "volume_extinction_coefficient_in_air_due_to_ambient_aerosol_particles",
       "CMIP6 Differences": "",
