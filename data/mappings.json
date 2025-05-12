@@ -1,6 +1,316 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "opottemptend_tavg-l-hxy-sea",
+      "CF standard name": "tendency_of_sea_water_potential_temperature_expressed_as_heat_content",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Tendency of heat content for a grid cell from all processes. Reported only for models that use potential temperature as prognostic field.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "yr",
+      "Long name": "Tendency of Sea Water Potential Temperature Expressed as Heat Content",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "opottemptend",
+      "Expression UKESM1": "opottemptend",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 1641,
+    "labels": [
+      "yr",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.yr.opottemptend_tavg-l-hxy-sea (Oyr.opottemptend)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "opottemprmadvect_tavg-l-hxy-sea",
+      "CF standard name": "tendency_of_sea_water_potential_temperature_expressed_as_heat_content_due_to_residual_mean_advection",
+      "CMIP6 Differences": "\"comment\" was \"The phrase 'residual mean advection' refers to the sum of the model's resolved advective transport plus any parameterized advective transport. Parameterized advective transport includes processes such as parameterized mesoscale and submesoscale transport, as well as any other advectively parameterized transport. When the parameterized advective transport is represented in the model as a skew-diffusion rather than an advection, then the parameterized skew diffusion should be included in this diagnostic, since the convergence of skew-fluxes are identical (in the continuous formulation) to the convergence of advective fluxes.\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Tendency of heat content for a grid cell from residual mean (sum of Eulerian mean + parameterized eddy-induced) advection. Reported only for models that use potential temperature as prognostic field.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "yr",
+      "Long name": "Tendency of Sea Water Potential Temperature Expressed as Heat Content Due to Residual Mean Advection",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "opottempadvect",
+      "Expression UKESM1": "opottempadvect",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 1640,
+    "labels": [
+      "yr",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.yr.opottemprmadvect_tavg-l-hxy-sea (Oyr.opottemprmadvect)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "opottemppsmadvect_tavg-l-hxy-sea",
+      "CF standard name": "tendency_of_sea_water_potential_temperature_expressed_as_heat_content_due_to_parameterized_submesoscale_eddy_advection",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Tendency of heat content for a grid cell from parameterized submesoscale eddy advection. Reported only for models that use potential temperature as prognostic field.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "yr",
+      "Long name": "Tendency of Sea Water Potential Temperature Expressed as Heat Content Due to Parameterized Submesoscale Advection",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1639,
+    "labels": [
+      "yr",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.yr.opottemppsmadvect_tavg-l-hxy-sea (Oyr.opottemppsmadvect)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "opottemppmdiff_tavg-l-hxy-sea",
+      "CF standard name": "tendency_of_sea_water_potential_temperature_expressed_as_heat_content_due_to_parameterized_mesoscale_eddy_diffusion",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Tendency of heat content for a grid cell from parameterized mesoscale eddy diffusion. Reported only for models that use potential temperature as prognostic field.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "yr",
+      "Long name": "Tendency of Sea Water Potential Temperature Expressed as Heat Content Due to Parameterized Mesoscale Diffusion",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "opottemppmdiff",
+      "Expression UKESM1": "opottemppmdiff",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 1638,
+    "labels": [
+      "yr",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.yr.opottemppmdiff_tavg-l-hxy-sea (Oyr.opottemppmdiff)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "opottemppadvect_tavg-l-hxy-sea",
+      "CF standard name": "tendency_of_sea_water_potential_temperature_expressed_as_heat_content_due_to_parameterized_eddy_advection",
+      "CMIP6 Differences": "\"comment\" was \"Tendency of heat content for a grid cell from parameterized eddy advection (any form of eddy advection). Reported only for models that use potential temperature as prognostic field.\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Tendency of heat content for a grid cell from parameterized  eddy advection (all forms of eddy advection). Reported only for models that use potential temperature as prognostic field.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "yr",
+      "Long name": "Tendency of Sea Water Potential Temperature Expressed as Heat Content Due to Parameterized Eddy Advection",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1637,
+    "labels": [
+      "yr",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.yr.opottemppadvect_tavg-l-hxy-sea (Oyr.opottemppadvect)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "opottempmint_tavg-u-hxy-sea",
+      "CF standard name": "integral_wrt_depth_of_product_of_potential_temperature_and_sea_water_density",
+      "CMIP6 Differences": "\"comment\" was \"Integral over the full ocean depth of the product of sea water density and potential temperature.\"; ; \"standard_name\" was \"integral_wrt_depth_of_product_of_sea_water_density_and_potential_temperature\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Full column sum of density\\*cell thickness\\*potential temperature. If the model is Boussinesq, then use Boussinesq reference density for the density factor.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "yr",
+      "Long name": "Integral with Respect to Depth of Product of Sea Water Density and Potential Temperature",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid.",
+      "Units": "degC kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "opottempmint",
+      "Expression UKESM1": "opottempmint",
+      "Model units": "degC kg m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 1636,
+    "labels": [
+      "yr",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.yr.opottempmint_tavg-u-hxy-sea (Oyr.opottempmint)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "opottempdiff_tavg-l-hxy-sea",
+      "CF standard name": "tendency_of_sea_water_potential_temperature_expressed_as_heat_content_due_to_parameterized_dianeutral_mixing",
+      "CMIP6 Differences": "\"standard_name\" was \"tendency_of_sea_water_potential_temperature_expressed_as_heat_content_due_to_parameterized_eddy_dianeutral_mixing\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Tendency of heat content for a grid cell from parameterized dianeutral mixing. Reported only for models that use potential temperature as prognostic field.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "yr",
+      "Long name": "Tendency of Sea Water Potential Temperature Expressed as Heat Content Due to Parameterized Dianeutral Mixing",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "opottempdiff",
+      "Expression UKESM1": "opottempdiff",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 1635,
+    "labels": [
+      "yr",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.yr.opottempdiff_tavg-l-hxy-sea (Oyr.opottempdiff)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ocontemptend_tavg-l-hxy-sea",
+      "CF standard name": "tendency_of_sea_water_conservative_temperature_expressed_as_heat_content",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Tendency of heat content for a grid cell from all processes. Reported only for models that use conservative temperature as prognostic field.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "yr",
+      "Long name": "Tendency of Sea Water Conservative Temperature Expressed as Heat Content",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1634,
+    "labels": [
+      "yr",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.yr.ocontemptend_tavg-l-hxy-sea (Oyr.ocontemptend)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ocontemprmadvect_tavg-l-hxy-sea",
+      "CF standard name": "tendency_of_sea_water_conservative_temperature_expressed_as_heat_content_due_to_residual_mean_advection",
+      "CMIP6 Differences": "\"comment\" was \"Conservative Temperature is defined as part of the Thermodynamic Equation of Seawater 2010 (TEOS-10) which was adopted in 2010 by the International Oceanographic Commission (IOC). The phrase 'residual mean advection' refers to the sum of the model's resolved advective transport plus any parameterized advective transport. Parameterized advective transport includes processes such as parameterized mesoscale and submesoscale transport, as well as any other advectively parameterized transport. When the parameterized advective transport is represented in the model as a skew-diffusion rather than an advection, then the parameterized skew diffusion should be included in this diagnostic, since the convergence of skew-fluxes are identical (in the continuous formulation) to the convergence of advective fluxes.\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Tendency of heat content for a grid cell from residual mean  (sum of Eulerian mean + parameterized eddy-induced) advection. Reported only for models that use conservative temperature as prognostic field.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "yr",
+      "Long name": "Tendency of Sea Water Conservative Temperature Expressed as Heat Content Due to Residual Mean Advection",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1633,
+    "labels": [
+      "yr",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.yr.ocontemprmadvect_tavg-l-hxy-sea (Oyr.ocontemprmadvect)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ocontemppsmadvect_tavg-l-hxy-sea",
+      "CF standard name": "tendency_of_sea_water_conservative_temperature_expressed_as_heat_content_due_to_parameterized_submesoscale_eddy_advection",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Tendency of heat content for a grid cell from parameterized submesoscale eddy advection. Reported only for models that use conservative temperature as prognostic field.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "yr",
+      "Long name": "Tendency of Sea Water Conservative Temperature Expressed as Heat Content Due to Parameterized Submesoscale Advection",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1632,
+    "labels": [
+      "yr",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.yr.ocontemppsmadvect_tavg-l-hxy-sea (Oyr.ocontemppsmadvect)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "ocontemppmdiff_tavg-l-hxy-sea",
       "CF standard name": "tendency_of_sea_water_conservative_temperature_expressed_as_heat_content_due_to_parameterized_mesoscale_eddy_diffusion",
       "CMIP6 Differences": "",
