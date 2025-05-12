@@ -1,4 +1,8 @@
 Model,Branded variable name,Frequency,STASH,Section,Item,time_profile,domain_profile,usage_profile
+UKESM1,fgdms_tavg-u-hm-sea,mon,m01s00i030,0,30,TMONMN,DIAG,UP5
+UKESM1,fgdms_tavg-u-hm-sea,mon,m01s50i214,50,214,TMONMN,DIAG,UP5
+HadGEM3-GC31,fgdms_tavg-u-hm-sea,mon,m01s00i030,0,30,TMONMN,DIAG,UP5
+HadGEM3-GC31,fgdms_tavg-u-hm-sea,mon,m01s50i214,50,214,TMONMN,DIAG,UP5
 UKESM1,tsl_tavg-l-hxy-lnd,mon,m01s08i225,8,225,TMONMN,DSOIL,UP5
 HadGEM3-GC31,tsl_tavg-l-hxy-lnd,mon,m01s08i225,8,225,TMONMN,DSOIL,UP5
 UKESM1,treeFrac_tavg-u-hxy-u,mon,m01s03i395,3,395,TMONMN,DIAG,UP5

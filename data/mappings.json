@@ -1,6 +1,378 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "fsfe_tavg-u-hm-sea",
+      "CF standard name": "tendency_of_ocean_mole_content_of_iron_due_to_deposition_and_runoff_and_sediment_dissolution",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Iron supply through deposition flux onto sea surface, runoff, coasts, sediments, etc",
+      "Dimensions": "longitude latitude time depth0m",
+      "Frequency": "mon",
+      "Long name": "Surface Downward Net Flux of Iron",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time depth0m CMIP7:longitude latitude time  depth0m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "mol m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "AEOLIAN + BENTHIC",
+      "Model units": "mmol m-2 d-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1437,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.fsfe_tavg-u-hm-sea (Omon.fsfe)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "froc_tavg-u-hxy-sea",
+      "CF standard name": "minus_tendency_of_ocean_mole_content_of_organic_carbon_due_to_sedimentation",
+      "CMIP6 Differences": "\"dimensions\" was \"longitude latitude time\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Organic Carbon loss to sediments",
+      "Dimensions": "longitude latitude depthseafloor time",
+      "Frequency": "mon",
+      "Long name": "Downward Organic Carbon Flux at Ocean Bottom",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6: Spatial shape updated to sea floor; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time CMIP7:longitude latitude depthseafloor time,",
+      "Units": "mol m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "IBEN_C",
+      "Model units": "mmol m-2 d-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1436,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.froc_tavg-u-hxy-sea (Omon.froc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "frn_tavg-u-hxy-sea",
+      "CF standard name": "minus_tendency_of_ocean_mole_content_of_elemental_nitrogen_due_to_denitrification_and_sedimentation",
+      "CMIP6 Differences": "\"comment\" was \"'Content' indicates a quantity per unit area.  The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity  named by omitting the phrase. 'Denitrification' is the conversion of nitrate into gaseous compounds such as nitric oxide, nitrous oxide and molecular nitrogen which are then emitted to the atmosphere.  'Sedimentation' is the sinking of particulate matter to the floor of a body of water. 'tendency_of_X' means derivative of X with respect to time.\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "\"Content\" indicates a quantity per unit area.  The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity  named by omitting the phrase. 'Denitrification' is the conversion of nitrate into gaseous compounds such as nitric oxide, nitrous oxide and molecular nitrogen which are then emitted to the atmosphere.  'Sedimentation' is the sinking of particulate matter to the floor of a body of water. \"tendency_of_X\" means derivative of X with respect to time.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Nitrogen Loss to Sediments and Through Denitrification",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6: Spatial shape updated to sea floor",
+      "Units": "mol m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1435,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.frn_tavg-u-hxy-sea (Omon.frn)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "friver_tavg-u-hxy-sea",
+      "CF standard name": "water_flux_into_sea_water_from_rivers",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "computed as the river flux of water into the ocean divided by the area of the ocean portion of the grid cell.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Water Flux into Sea Water from Rivers",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid.",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "friver",
+      "Expression UKESM1": "friver",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1434,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.mon.friver_tavg-u-hxy-sea (Omon.friver)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fric_tavg-u-hxy-sea",
+      "CF standard name": "minus_tendency_of_ocean_mole_content_of_inorganic_carbon_due_to_sedimentation",
+      "CMIP6 Differences": "\"dimensions\" was \"longitude latitude time\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Inorganic Carbon loss to sediments",
+      "Dimensions": "longitude latitude depthseafloor time",
+      "Frequency": "mon",
+      "Long name": "Downward Inorganic Carbon Flux at Ocean Bottom",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6: Spatial shape updated to sea floor; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time CMIP7:longitude latitude depthseafloor time,",
+      "Units": "mol m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "IBEN_CA",
+      "Model units": "mmol m-2 d-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1433,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.fric_tavg-u-hxy-sea (Omon.fric)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "frfe_tavg-u-hxy-sea",
+      "CF standard name": "minus_tendency_of_ocean_mole_content_of_iron_due_to_sedimentation",
+      "CMIP6 Differences": "\"comment\" was \"'Content' indicates a quantity per unit area.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  'tendency_of_X' means derivative of X with respect to time.\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "\"Content\" indicates a quantity per unit area.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  \"tendency_of_X\" means derivative of X with respect to time.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Iron Loss to Sediments",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1432,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.frfe_tavg-u-hxy-sea (Omon.frfe)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ficeberg_tavg-u-hxy-sea",
+      "CF standard name": "water_flux_into_sea_water_from_icebergs",
+      "CMIP6 Differences": "\"comment\" was \"computed as the iceberg melt water  flux into the ocean divided by the area of the ocean portion of the grid cell.\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "computed as the iceberg melt water flux into the ocean divided by the area of the ocean portion of the grid cell.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Water Flux into Sea Water from Icebergs",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "If only the vertically integrated melt water flux is available, report as this 2-d field; otherwise ficeberg should be used.",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1431,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.mon.ficeberg_tavg-u-hxy-sea (Omon.ficeberg2d)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ficeberg_tavg-l-hxy-sea",
+      "CF standard name": "water_flux_into_sea_water_from_icebergs",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "computed as the iceberg melt water  flux into the ocean divided by the area of the ocean portion of the grid cell.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Water Flux into Sea Water from Icebergs",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "sum_2d_and_3d(ficeberg, -1*vowflisf)",
+      "Expression UKESM1": "sum_2d_and_3d(ficeberg, -1*vowflisf)",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1430,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.mon.ficeberg_tavg-l-hxy-sea (Omon.ficeberg)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fgdms_tavg-u-hm-sea",
+      "CF standard name": "surface_upward_mole_flux_of_dimethyl_sulfide",
+      "CMIP6 Differences": "\"dimensions\" was \"longitude latitude time depth0m\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Gas exchange flux of DMS (positive into atmosphere)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Upward Flux of DMS",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "up",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time depth0m CMIP7:longitude latitude time  depth0m,",
+      "Units": "mol m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "calc_fgdms(m01s00i505, m01s50i214[lbproc=128] / MOLECULAR_MASS_OF_DMS )",
+      "Expression UKESM1": "calc_fgdms(m01s00i505, m01s50i214[lbproc=128] / MOLECULAR_MASS_OF_DMS )",
+      "Model units": "kmol m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s00i030",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "30",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s50i214",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "50,214",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s00i030",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "30",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s50i214",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "50,214",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1429,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocnBgchem.mon.fgdms_tavg-u-hm-sea (Omon.fgdms)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fgco2_tavg-u-hm-sea",
+      "CF standard name": "surface_downward_mass_flux_of_carbon_dioxide_expressed_as_carbon",
+      "CMIP6 Differences": "\"dimensions\" was \"longitude latitude time depth0m\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Gas exchange flux of CO2 (positive into ocean)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Downward Mass Flux of Carbon as CO2 [kgC m-2 s-1]",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "down",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time depth0m CMIP7:longitude latitude time  depth0m,",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "CO2FLUX * ATOMIC_MASS_OF_C",
+      "Model units": "mg m-2 d-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1428,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.fgco2_tavg-u-hm-sea (Omon.fgco2)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fg14co2abio_tavg-u-hm-sea",
+      "CF standard name": "surface_downward_mass_flux_of_14C_dioxide_abiotic_analogue_expressed_as_carbon",
+      "CMIP6 Differences": "\"dimensions\" was \"longitude latitude time depth0m\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Gas exchange flux of abiotic 14CO2 (positive into ocean)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Downward Mass Flux of Carbon-14 as Abiotic 14CO2 [kgC m-2 s-1]",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "down",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time depth0m CMIP7:longitude latitude time  depth0m,",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1427,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.fg14co2abio_tavg-u-hm-sea (Omon.fg14co2abio)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "fg13co2_tavg-u-hm-sea",
       "CF standard name": "surface_downward_mass_flux_of_13C_dioxide_abiotic_analogue_expressed_as_13C",
       "CMIP6 Differences": "\"dimensions\" was \"longitude latitude time depth0m\"; ; \"comment\" was \"Gas exchange flux of carbon-13 as CO2 (positive into ocean)\";",
