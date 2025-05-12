@@ -1,6 +1,380 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "mmraerh2o_tpt-u-hm-u",
+      "CF standard name": "mass_fraction_of_water_in_ambient_aerosol_particles_in_air",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "::MODEL",
+      "Cell methods": "area: point time: point",
+      "Comment": "This variable represents the instantaneous surface aerosol water\u00a0Mass Mixing Ratio at CF sites, sampled every 3 hours",
+      "Dimensions": "site time1",
+      "Frequency": "3hr",
+      "Long name": "Instantaneous surface aerosol water mass mixing ratio at CF sites",
+      "Modeling realm": "aerosol",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg kg-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 694,
+    "labels": [
+      "3hr",
+      "aerosol"
+    ],
+    "title": "Variable aerosol.3hr.mmraerh2o_tpt-u-hm-u (E3hrPt.mmraerh2o)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hus_tpt-u-hxy-air",
+      "CF standard name": "specific_humidity",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where air time: point",
+      "Comment": "Specific humidity on 6 pressure levels in the lower troposphere",
+      "Dimensions": "longitude latitude plev6 time1",
+      "Frequency": "3hr",
+      "Long name": "Specific humidity",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "950 hPa to 700 hPa with an interval of 50h Pa for vertical layers (6 vertical layers)",
+      "Units": "1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 693,
+    "labels": [
+      "3hr",
+      "atmos"
+    ],
+    "title": "Variable atmos.3hr.hus_tpt-u-hxy-air (E3hrPt.hus6)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hus_tpt-l-hxy-u",
+      "CF standard name": "specific_humidity",
+      "CMIP6 Differences": "\"comment\" was \"Specific humidity is the mass fraction of water vapor in (moist) air.\"; ; \"frequency\" was \"3hrPt\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean time: point",
+      "Comment": "Specific Humidity",
+      "Dimensions": "longitude latitude alevel time1",
+      "Frequency": "3hr",
+      "Long name": "Specific Humidity",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:3hrPt CMIP7:3hr,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s00i010[lbproc=0]",
+      "Expression UKESM1": "m01s00i010[lbproc=0]",
+      "Model units": "1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s00i010",
+        "domain_profile": "DALLTH",
+        "model": "UKESM1",
+        "stash_number": "10",
+        "time_profile": "T3HR",
+        "usage_profile": "UP8"
+      },
+      {
+        "STASH": "m01s00i033",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "33",
+        "time_profile": "T3HR",
+        "usage_profile": "UP8"
+      },
+      {
+        "STASH": "m01s00i010",
+        "domain_profile": "DALLTH",
+        "model": "HadGEM3-GC31",
+        "stash_number": "10",
+        "time_profile": "T3HR",
+        "usage_profile": "UP8"
+      },
+      {
+        "STASH": "m01s00i033",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "33",
+        "time_profile": "T3HR",
+        "usage_profile": "UP8"
+      }
+    ],
+    "issue_number": 692,
+    "labels": [
+      "3hr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.3hr.hus_tpt-l-hxy-u (E3hrPt.hus)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "conccn_tpt-u-hxys-u",
+      "CF standard name": "number_concentration_of_ambient_aerosol_particles_in_air",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "::MODEL",
+      "Cell methods": "area: point time: point",
+      "Comment": "The variable represents the instantaneous Aerosol Number Concentration at CF sites, sampled every 3 hours",
+      "Dimensions": "site time1",
+      "Frequency": "3hr",
+      "Long name": "Sub-daily Aerosol Number Concentration at CF sites",
+      "Modeling realm": "aerosol",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m-3",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 691,
+    "labels": [
+      "3hr",
+      "aerosol"
+    ],
+    "title": "Variable aerosol.3hr.conccn_tpt-u-hxys-u (E3hrPt.conccn)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "cltcalipso_tpt-u-hxy-u",
+      "CF standard name": "cloud_area_fraction",
+      "CMIP6 Differences": "\"frequency\" was \"3hrPt\"; ; \"comment\" was \"Total cloud area fraction (reported as a percentage) for the whole atmospheric column, as seen by the  Cloud-Aerosol Lidar and Infrared Pathfinder Satellite Observation (CALIPSO) instrument. Includes both large-scale and convective cloud.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean time: point",
+      "Comment": "CALIPSO Total Cloud Fraction",
+      "Dimensions": "longitude latitude time1",
+      "Frequency": "3hr",
+      "Long name": "CALIPSO Total Cloud Cover Percentage",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in CMIP7 Frequency - CMIP6:3hrPt CMIP7:3hr,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s02i347[lbproc=0] / m01s02i324[lbproc=0]",
+      "Expression UKESM1": "m01s02i347[lbproc=0] / m01s02i324[lbproc=0]",
+      "Model units": "1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s02i324",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "2,324",
+        "time_profile": "T3HR",
+        "usage_profile": "UP8"
+      },
+      {
+        "STASH": "m01s02i347",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "2,347",
+        "time_profile": "T3HR",
+        "usage_profile": "UP8"
+      },
+      {
+        "STASH": "m01s02i324",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,324",
+        "time_profile": "T3HR",
+        "usage_profile": "UP8"
+      },
+      {
+        "STASH": "m01s02i347",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,347",
+        "time_profile": "T3HR",
+        "usage_profile": "UP8"
+      }
+    ],
+    "issue_number": 690,
+    "labels": [
+      "3hr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.3hr.cltcalipso_tpt-u-hxy-u (E3hrPt.cltcalipso)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sfcWind_tavg-h10m-hxy-u",
+      "CF standard name": "wind_speed",
+      "CMIP6 Differences": "\"comment\" was \"near-surface (usually, 10 meters) wind speed.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Near surface wind speed",
+      "Dimensions": "longitude latitude time height10m",
+      "Frequency": "3hr",
+      "Long name": "Near-Surface Wind Speed",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time height10m CMIP7:longitude latitude time  height10m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i230[lbproc=128]",
+      "Expression UKESM1": "m01s03i230[lbproc=128]",
+      "Model units": "m s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i230",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,230",
+        "time_profile": "T3HRMN",
+        "usage_profile": "UP8"
+      },
+      {
+        "STASH": "m01s03i230",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,230",
+        "time_profile": "T3HRMN",
+        "usage_profile": "UP8"
+      }
+    ],
+    "issue_number": 689,
+    "labels": [
+      "3hr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.3hr.sfcWind_tavg-h10m-hxy-u (E3hr.sfcWind)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rsutcs_tavg-u-hxy-u",
+      "CF standard name": "toa_outgoing_shortwave_flux_assuming_clear_sky",
+      "CMIP6 Differences": "\"comment\" was \"Calculated in the absence of clouds.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "TOA outgoing clear sky shortwave",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "3hr",
+      "Long name": "TOA Outgoing Clear-Sky Shortwave Radiation",
+      "Modeling realm": "atmos",
+      "Positive": "up",
+      "Processing notes": "",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s01i209[lbproc=128]",
+      "Expression UKESM1": "m01s01i209[lbproc=128]",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s01i209",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "1,209",
+        "time_profile": "T3HRMN",
+        "usage_profile": "UP8"
+      },
+      {
+        "STASH": "m01s01i209",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "1,209",
+        "time_profile": "T3HRMN",
+        "usage_profile": "UP8"
+      }
+    ],
+    "issue_number": 688,
+    "labels": [
+      "3hr",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.3hr.rsutcs_tavg-u-hxy-u (E3hr.rsutcs)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rsut_tavg-u-hxy-u",
+      "CF standard name": "toa_outgoing_shortwave_flux",
+      "CMIP6 Differences": "\"comment\" was \"at the top of the atmosphere\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "TOA outgoing shortwave radiation",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "3hr",
+      "Long name": "TOA Outgoing Shortwave Radiation",
+      "Modeling realm": "atmos",
+      "Positive": "up",
+      "Processing notes": "",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 687,
+    "labels": [
+      "3hr",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.3hr.rsut_tavg-u-hxy-u (E3hr.rsut)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rlutcs_tavg-u-hxy-u",
+      "CF standard name": "toa_outgoing_longwave_flux_assuming_clear_sky",
+      "CMIP6 Differences": "\"comment\" was \"Upwelling clear-sky longwave radiation at top of atmosphere\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "TOA outgoing clear sky longwave",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "3hr",
+      "Long name": "TOA Outgoing Clear-Sky Longwave Radiation",
+      "Modeling realm": "atmos",
+      "Positive": "up",
+      "Processing notes": "",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 686,
+    "labels": [
+      "3hr",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.3hr.rlutcs_tavg-u-hxy-u (E3hr.rlutcs)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "rlut_tavg-u-hxy-u",
       "CF standard name": "toa_outgoing_longwave_flux",
       "CMIP6 Differences": "\"comment\" was \"at the top of the atmosphere (to be compared with satellite measurements)\";",
