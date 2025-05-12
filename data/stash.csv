@@ -1,4 +1,13 @@
 Model,Branded variable name,Frequency,STASH,Section,Item,time_profile,domain_profile,usage_profile
+UKESM1,fProductDecomp_tavg-u-hxy-lnd,mon,m01s19i042,19,042,TMONMN,DIAG,UP5
+UKESM1,fNup_tavg-u-hxy-lnd,mon,m01s19i113,19,113,TMONMN,DIAG,UP5
+UKESM1,fNup_tavg-u-hxy-lnd,mon,m01s19i160,19,160,TMONMN,DIAG,UP5
+UKESM1,fNnetmin_tavg-u-hxy-lnd,mon,m01s19i171,19,171,TMONMN,DIAG,UP5
+UKESM1,fNnetmin_tavg-u-hxy-lnd,mon,m01s19i181,19,181,TMONMN,DIAG,UP5
+UKESM1,fNloss_tavg-u-hxy-lnd,mon,m01s19i118,19,118,TMONMN,DIAG,UP5
+UKESM1,fNleach_tavg-u-hxy-lnd,mon,m01s19i114,19,114,TMONMN,DIAG,UP5
+UKESM1,fNgasNonFire_tavg-u-hxy-lnd,mon,m01s19i117,19,117,TMONMN,DIAG,UP5
+UKESM1,fNgas_tavg-u-hxy-lnd,mon,m01s19i117,19,117,TMONMN,DIAG,UP5
 UKESM1,fNfert_tavg-u-hxy-lnd,mon,m01s19i126,19,126,TMONMN,DIAG,UP5
 UKESM1,fNVegSoil_tavg-u-hxy-lnd,mon,m01s19i124,19,124,TMONMN,DIAG,UP5
 UKESM1,fNAnthDisturb_tavg-u-hxy-lnd,mon,m01s19i120,19,120,TMONMN,DIAG,UP5
