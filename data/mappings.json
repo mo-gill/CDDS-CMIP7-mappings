@@ -1,6 +1,314 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "sncitd_tavg-u-hxy-si",
+      "CF standard name": "surface_snow_area_fraction",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Area fraction of grid cell covered by snow in each ice thickness category (vector with one entry for each ice thickness category starting from the thinnest category, netcdf file should use thickness bounds of the categories as third coordinate axis).",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Snow Area Fractions in Ice Thickness Categories",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "%",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1673,
+    "labels": [
+      "day",
+      "seaIce"
+    ],
+    "title": "Variable seaIce.day.sncitd_tavg-u-hxy-si (SIday.siitdsnconc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "siconcitd_tavg-u-hxy-sea",
+      "CF standard name": "sea_ice_area_fraction",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Area fraction of grid cell covered by each ice thickness category (vector with one entry for each ice thickness category starting from the thinnest category, netcdf file should use thickness bounds of the categories as third coordinate axis).",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Sea-Ice Area Fractions in Ice Thickness Categories",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "%",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1672,
+    "labels": [
+      "day",
+      "seaIce"
+    ],
+    "title": "Variable seaIce.day.siconcitd_tavg-u-hxy-sea (SIday.siitdconc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sihc_tavg-u-hxy-sea",
+      "CF standard name": "sea_ice_enthalpy_content",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Heat content of all ice in grid cell divided by grid-cell area. This includes both the latent and sensible heat content contributions. Water at 0C is assumed to have a heat content of 0 J. This variable does not include heat content of snow, but does include heat content of brine. Heat content is always negative since both the sensible and the latent heat content of ice are less than that of water. Note that the CF standard name is incorrect since heat content is not only function of temperature but also of salinity, plus the link with temperature is not linear. A new CF standard name is currently being proposed to address this issue (https://github.com/cf-convention/vocabularies/issues/253).",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Sea-Ice Heat Content",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "J m-2",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1671,
+    "labels": [
+      "day",
+      "seaIce"
+    ],
+    "title": "Variable seaIce.day.sihc_tavg-u-hxy-sea (SIday.sihc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rsus_tavg-u-hxy-si",
+      "CF standard name": "surface_upwelling_shortwave_flux_in_air",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Upward shortwave flux from the sea-ice surface to the atmosphere\u00a0(energy flow per sea ice area). Always positive or zero.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Upwelling Shortwave Flux over Sea Ice",
+      "Modeling realm": "seaIce",
+      "Positive": "up",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.",
+      "Units": "W m-2",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1670,
+    "labels": [
+      "day",
+      "seaIce"
+    ],
+    "title": "Variable seaIce.day.rsus_tavg-u-hxy-si (SIday.siflswutop)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rsds_tavg-u-hxy-si",
+      "CF standard name": "surface_downwelling_shortwave_flux_in_air",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Downwelling shortwave flux from the atmosphere to the sea-ice surface (energy flow per sea ice area). Always positive or zero.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Downwelling Shortwave Flux over Sea Ice",
+      "Modeling realm": "seaIce",
+      "Positive": "down",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.",
+      "Units": "W m-2",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1669,
+    "labels": [
+      "day",
+      "seaIce"
+    ],
+    "title": "Variable seaIce.day.rsds_tavg-u-hxy-si (SIday.siflswdtop)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "siflswdbot_tavg-u-hxy-si",
+      "CF standard name": "downwelling_shortwave_flux_in_sea_water_at_sea_ice_base",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Downwelling shortwave flux underneath sea ice, i.e. the amount of shortwave radiation that penetrates the sea ice and reaches the sea ice-ocean interface\u00a0(energy flow per sea ice area). Always positive or zero.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Downwelling Shortwave Flux under Sea Ice",
+      "Modeling realm": "seaIce",
+      "Positive": "down",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.",
+      "Units": "W m-2",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1668,
+    "labels": [
+      "day",
+      "seaIce"
+    ],
+    "title": "Variable seaIce.day.siflswdbot_tavg-u-hxy-si (SIday.siflswdbot)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hfss_tavg-u-hxy-si",
+      "CF standard name": "surface_downward_sensible_heat_flux",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Net sensible heat flux over sea ice\u00a0(energy flow per sea ice area). Positive for a downward heat flux.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Net Downward Sensible Heat Flux over Sea Ice",
+      "Modeling realm": "seaIce",
+      "Positive": "down",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.",
+      "Units": "W m-2",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1667,
+    "labels": [
+      "day",
+      "seaIce"
+    ],
+    "title": "Variable seaIce.day.hfss_tavg-u-hxy-si (SIday.siflsenstop)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "siflsensbot_tavg-u-hxy-si",
+      "CF standard name": "upward_sea_ice_basal_heat_flux",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Net sensible heat flux under sea ice from or to the ocean\u00a0(energy flow per sea ice area). Per sign convention, heat from the ocean is counted as negative since it describes an upward heat flux.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Net Upward Sensible Heat Flux under Sea Ice",
+      "Modeling realm": "seaIce",
+      "Positive": "down",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.",
+      "Units": "W m-2",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1666,
+    "labels": [
+      "day",
+      "seaIce"
+    ],
+    "title": "Variable seaIce.day.siflsensbot_tavg-u-hxy-si (SIday.siflsensbot)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rlus_tavg-u-hxy-si",
+      "CF standard name": "surface_upwelling_longwave_flux_in_air",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Upward longwave flux from the sea-ice surface to the atmosphere\u00a0(energy flow per sea ice area). Always positive or zero.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Upwelling Longwave Flux over Sea Ice",
+      "Modeling realm": "seaIce",
+      "Positive": "up",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.",
+      "Units": "W m-2",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1665,
+    "labels": [
+      "day",
+      "seaIce"
+    ],
+    "title": "Variable seaIce.day.rlus_tavg-u-hxy-si (SIday.sifllwutop)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rlds_tavg-u-hxy-si",
+      "CF standard name": "surface_downwelling_longwave_flux_in_air",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Downwelling longwave flux from the atmosphere to the sea-ice surface\u00a0(energy flow per sea ice area). Always positive or zero.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Downwelling Longwave Flux over Sea Ice",
+      "Modeling realm": "seaIce",
+      "Positive": "down",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.",
+      "Units": "W m-2",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1664,
+    "labels": [
+      "day",
+      "seaIce"
+    ],
+    "title": "Variable seaIce.day.rlds_tavg-u-hxy-si (SIday.sifllwdtop)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hfls_tavg-u-hxy-si",
+      "CF standard name": "surface_downward_latent_heat_flux",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Net latent heat flux over sea ice\u00a0(energy flow per sea ice area). Positive for a downward heat flux.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Net Latent Heat Flux over Sea Ice",
+      "Modeling realm": "seaIce",
+      "Positive": "down",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.",
+      "Units": "W m-2",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1663,
+    "labels": [
+      "day",
+      "seaIce"
+    ],
+    "title": "Variable seaIce.day.hfls_tavg-u-hxy-si (SIday.sifllattop)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "siflcondtop_tavg-u-hxy-si",
       "CF standard name": "surface_downward_heat_flux_in_sea_ice",
       "CMIP6 Differences": "Not present",
