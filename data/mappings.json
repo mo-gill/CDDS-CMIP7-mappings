@@ -1,6 +1,258 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "zfull_ti-l-hxy-u",
+      "CF standard name": "height_above_reference_ellipsoid",
+      "CMIP6 Differences": "\"comment\" was \"Height of full model levels above a reference ellipsoid. A reference ellipsoid is a mathematical figure that approximates the geoid. The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. The ellipsoid is an approximation because the geoid is an irregular shape. A number of reference ellipsoids are defined for use in the field of geodesy. To specify which reference ellipsoid is being used, a grid_mapping variable should be attached to the data variable as described in Chapter 5.6 of the CF Convention.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean",
+      "Comment": "Provide only if altitude of full model levels is fixed",
+      "Dimensions": "longitude latitude alevel",
+      "Frequency": "fx",
+      "Long name": "Altitude of Model Full-Levels",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1857,
+    "labels": [
+      "fx",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.fx.zfull_ti-l-hxy-u (fx.zfull)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sftlkf_ti-u-hxy-u",
+      "CF standard name": "area_fraction",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean",
+      "Comment": "Fraction of horizontal land grid cell area occupied by lake.",
+      "Dimensions": "longitude latitude typelkins",
+      "Frequency": "fx",
+      "Long name": "Fraction of the Grid Cell Occupied by Lake",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "New area type 'lake_and_inland_sea': <https://github.com/cf-convention/vocabularies/issues/65>",
+      "Units": "1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1856,
+    "labels": [
+      "fx",
+      "land"
+    ],
+    "title": "Variable land.fx.sftlkf_ti-u-hxy-u (fx.sftlkf)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sftlf_ti-u-hxy-u",
+      "CF standard name": "land_area_fraction",
+      "CMIP6 Differences": "\"long_name\" was \"Percentage of the grid  cell occupied by land (including lakes)\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean",
+      "Comment": "Percentage of horizontal area occupied by land.",
+      "Dimensions": "longitude latitude",
+      "Frequency": "fx",
+      "Long name": "Percentage of the Grid Cell Occupied by Land (Including Lakes)",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "For atmospheres with more than 1 mesh (e.g., staggered grids), report areas that apply to surface vertical fluxes of energy.",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s00i505",
+      "Expression UKESM1": "m01s00i505",
+      "Model units": "1"
+    },
+    "STASH entries": [],
+    "issue_number": 1855,
+    "labels": [
+      "fx",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable atmos.fx.sftlf_ti-u-hxy-u (fx.sftlf)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sftgif_ti-u-hxy-u",
+      "CF standard name": "land_ice_area_fraction",
+      "CMIP6 Differences": "\"comment\" was \"Percentage of grid cell covered by land ice (ice sheet, ice shelf, ice cap, glacier)\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean",
+      "Comment": "fraction of grid cell occupied by \"permanent\" ice (i.e., glaciers).",
+      "Dimensions": "longitude latitude",
+      "Frequency": "fx",
+      "Long name": "Land Ice Area Percentage",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "For atmospheres with more than 1 mesh (e.g., staggered grids), report areas that apply to surface vertical fluxes of energy.",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i317",
+      "Expression UKESM1": "m01s03i317",
+      "Model units": "%"
+    },
+    "STASH entries": [],
+    "issue_number": 1854,
+    "labels": [
+      "fx",
+      "land",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable land.fx.sftgif_ti-u-hxy-u (fx.sftgif)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rootd_ti-u-hxy-lnd",
+      "CF standard name": "root_depth",
+      "CMIP6 Differences": "\"comment\" was \"report the maximum soil depth reachable by plant roots (if defined in model), i.e., the maximum soil depth from which they can extract moisture; report as *missing* where the land fraction is 0.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean",
+      "Comment": "report the maximum soil depth reachable by plant roots (if defined in model), i.e., the maximum soil depth from which they can extract moisture; report as \"missing\" where the land fraction is 0.",
+      "Dimensions": "longitude latitude",
+      "Frequency": "fx",
+      "Long name": "Maximum Root Depth",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1853,
+    "labels": [
+      "fx",
+      "land",
+      "CMIP6",
+      "BCV"
+    ],
+    "title": "Variable land.fx.rootd_ti-u-hxy-lnd (fx.rootd)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "orog_ti-u-hxy-u",
+      "CF standard name": "surface_altitude",
+      "CMIP6 Differences": "\"comment\" was \"The surface called 'surface' means the lower boundary of the atmosphere. Altitude is the (geometric) height above the geoid, which is the reference geopotential surface. The geoid is similar to mean sea level.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean",
+      "Comment": "height above the geoid; as defined here, \"the geoid\" is a surface of constant geopotential that, if the ocean were at rest, would coincide with mean sea level. Under this definition, the geoid changes as the mean volume of the ocean changes (e.g., due to glacial melt, or global warming of the ocean).  Reported here is the height above the present-day geoid (0.0 over ocean).",
+      "Dimensions": "longitude latitude",
+      "Frequency": "fx",
+      "Long name": "Surface Altitude",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s00i033",
+      "Expression UKESM1": "m01s00i033",
+      "Model units": "m"
+    },
+    "STASH entries": [],
+    "issue_number": 1852,
+    "labels": [
+      "fx",
+      "land",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable land.fx.orog_ti-u-hxy-u (fx.orog)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "mrsofc_ti-u-hxy-lnd",
+      "CF standard name": "soil_moisture_content_at_field_capacity",
+      "CMIP6 Differences": "\"comment\" was \"The bulk water content retained by the soil at -33 J/kg of suction pressure, expressed as mass per unit land area; report as missing where there is no land\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land",
+      "Comment": "reported \"where land\": divide the total water holding capacity of all the soil in the grid cell by the land area in the grid cell;  reported as \"missing\" where the land fraction is 0.",
+      "Dimensions": "longitude latitude",
+      "Frequency": "fx",
+      "Long name": "Capacity of Soil to Store Water (Field Capacity)",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "This variable should exclude lake water and must refer to soil water only.; CHANGE: processing clarified.",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "mask_zeros(m01s00i041 * FRESHWATER_DENSITY)",
+      "Expression UKESM1": "mask_zeros(m01s00i041 * FRESHWATER_DENSITY)",
+      "Model units": "kg m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 1851,
+    "labels": [
+      "fx",
+      "land",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable land.fx.mrsofc_ti-u-hxy-lnd (fx.mrsofc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "lon_ti-u-hxys-u",
+      "CF standard name": "longitude",
+      "CMIP6 Differences": "",
+      "Cell measures": "",
+      "Cell methods": "area: point",
+      "Comment": "Longitude is positive eastward; its units of degree_east (or equivalent) indicate this explicitly. In a latitude-longitude system defined with respect to a rotated North Pole, the standard name of grid_longitude should be used instead of longitude. Grid longitude is positive in the grid-eastward direction, but its units should be plain degree.",
+      "Dimensions": "site",
+      "Frequency": "fx",
+      "Long name": "Longitude",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "Note that the CF convention and CMOR2 require that this field will be included in each file that contains a variable that is a function of the \"site\" dimension, so there is no need to save this field by itself.  It is included here simply to indicate that longitudes should be stored for the site grid in each file written.; CHANGE SINCE CMIP6: compound name,",
+      "Units": "degrees_east",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1850,
+    "labels": [
+      "fx",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.fx.lon_ti-u-hxys-u (fx.lon)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "lithk_ti-u-hxy-u",
       "CF standard name": "land_ice_thickness",
       "CMIP6 Differences": "Not present",
