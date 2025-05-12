@@ -1,6 +1,330 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "gpp_tavg-u-hxy-ng",
+      "CF standard name": "gross_primary_productivity_of_biomass_expressed_as_carbon",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: time: mean where natural_grasses (comment: mask=grassFrac)\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where natural_grasses (mask=grassFrac)",
+      "Comment": "Total GPP of grass in the grid cell",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Gross Primary Production on Grass Tiles as Carbon Mass Flux [kgC m-2 s-1]",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where natural_grasses (comment: mask=grassFrac) CMIP7:area: time: mean where natural_grasses (mask=grassFrac),",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "land_class_mean( m01s19i182[lbtim_ia=240,lbproc=128] / (SECONDS_IN_DAY * DAYS_IN_YEAR), m01s19i013[lbtim_ia=240,lbproc=128], land_class='grass')",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s19i013",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "19,013",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i182",
+        "domain_profile": "DPFTS",
+        "model": "UKESM1",
+        "stash_number": "19,182",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 919,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable land.mon.gpp_tavg-u-hxy-ng (Emon.gppGrass)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fracLut_tavg-u-hxy-u",
+      "CF standard name": "area_fraction",
+      "CMIP6 Differences": "\"dimensions\" was \"longitude latitude landUse time\"; ; \"comment\" was \"End of year values (not annual mean); note that percentage should be reported as percentage of land grid cell (example: frac_lnd = 0.5, frac_ocn = 0.5, frac_crop_lnd = 0.2 (of land portion of grid cell), then frac_lut(crop) = 0.5*0.2 = 0.1)\"; ; \"cell_methods\" was \"area: mean where land over all_area_types time: mean\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean time: point",
+      "Comment": "End of month values (not monthly mean); note that percentage should be reported as percentage of land grid cell (example: frac_lnd = 0.5, frac_ocn = 0.5, frac_crop_lnd = 0.2 (of land portion of grid cell), then frac_lut(crop) = 0.5\\*0.2 = 0.1)",
+      "Dimensions": "longitude latitude landUse time1",
+      "Frequency": "mon",
+      "Long name": "Percentage of Grid Cell for Each Land-Use Tile",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean where land over all_area_types time: mean CMIP7:area: mean time: point,; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude landUse time CMIP7:longitude latitude landUse time1,",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "land_use_tile_area(m01s19i013[lbtim_ia=240,lbproc=128],m01s03i395[lbproc=128])",
+      "Model units": "%"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i395",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,395",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i013",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "19,013",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 918,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable land.mon.fracLut_tavg-u-hxy-u (Emon.fracLut)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "flashrate_tavg-u-hxy-u",
+      "CF standard name": "frequency_of_lightning_flashes_per_unit_area",
+      "CMIP6 Differences": "\"comment\" was \"proposed name: lightning_flash_rate (units to be interpreted as 'counts km-2 s-1)\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Lightning Flash Rate",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Lightning Flash Rate",
+      "Modeling realm": "atmosChem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "km-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "div_by_area(m01s50i082[lbproc=128])",
+      "Expression UKESM1": "div_by_area(m01s50i082[lbproc=128])",
+      "Model units": "m-2 min-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s50i082",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "50,082",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s50i082",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "50,082",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 917,
+    "labels": [
+      "mon",
+      "atmosChem",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmosChem.mon.flashrate_tavg-u-hxy-u (Emon.flashrate)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "flandice_tavg-u-hxy-sea",
+      "CF standard name": "water_flux_into_sea_water_from_land_ice",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Computed as the water flux into the ocean due to land ice (runoff water from surface and base of land ice or melt from base of ice shelf or vertical ice front) into the ocean divided by the area ocean portion of the grid cell",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Water Flux into Sea Water from Land Ice",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "sowflisf + berg_calve",
+      "Expression UKESM1": "sowflisf + berg_calve",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 916,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.mon.flandice_tavg-u-hxy-sea (Emon.flandice)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fg14co2_tavg-u-hxy-sea",
+      "CF standard name": "surface_downward_mass_flux_of_14C_dioxide_abiotic_analogue_expressed_as_carbon",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Gas exchange flux of carbon-14 as CO2 (positive into ocean)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Downward Mass Flux of Carbon-14 as 14CO2 [kgC m-2 s-1]",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 915,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.fg14co2_tavg-u-hxy-sea (Emon.fg14co2)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fVegSoilSenescence_tavg-u-hxy-lnd",
+      "CF standard name": "mass_flux_of_carbon_into_soil_from_vegetation_due_to_senescence",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "needed to separate changing vegetation C turnover times resulting from changing allocation versus changing mortality",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Total Carbon Mass Flux from Vegetation to Soil as a Result of Leaf, Branch, and Root Senescence",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 914,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.mon.fVegSoilSenescence_tavg-u-hxy-lnd (Emon.fVegSoilSenescence)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fVegSoilMortality_tavg-u-hxy-lnd",
+      "CF standard name": "mass_flux_of_carbon_into_soil_from_vegetation_due_to_mortality",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "needed to separate changing vegetation C turnover times resulting from changing allocation versus changing mortality",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Total Carbon Mass Flux from Vegetation to Soil as a Result of Mortality",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 913,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.mon.fVegSoilMortality_tavg-u-hxy-lnd (Emon.fVegSoilMortality)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fVegLitterSenescence_tavg-u-hxy-lnd",
+      "CF standard name": "mass_flux_of_carbon_into_litter_from_vegetation_due_to_senescence",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "needed to separate changing vegetation C turnover times resulting from changing allocation versus changing mortality",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Total Carbon Mass Flux from Vegetation to Litter as a Result of Leaf, Branch, and Root Senescence",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 912,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.mon.fVegLitterSenescence_tavg-u-hxy-lnd (Emon.fVegLitterSenescence)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fVegLitterMortality_tavg-u-hxy-lnd",
+      "CF standard name": "mass_flux_of_carbon_into_litter_from_vegetation_due_to_mortality",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "needed to separate changing vegetation C turnover times resulting from changing allocation versus changing mortality",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Total Carbon Mass Flux from Vegetation to Litter as a Result of Mortality",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 911,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.mon.fVegLitterMortality_tavg-u-hxy-lnd (Emon.fVegLitterMortality)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "fVegFire_tavg-u-hxy-lnd",
       "CF standard name": "surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_vegetation_in_fires",
       "CMIP6 Differences": "",

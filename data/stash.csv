@@ -1,4 +1,10 @@
 Model,Branded variable name,Frequency,STASH,Section,Item,time_profile,domain_profile,usage_profile
+UKESM1,gpp_tavg-u-hxy-ng,mon,m01s19i013,19,013,TMONMN,DTILE,UP5
+UKESM1,gpp_tavg-u-hxy-ng,mon,m01s19i182,19,182,TMONMN,DPFTS,UP5
+UKESM1,fracLut_tavg-u-hxy-u,mon,m01s03i395,3,395,TMONMN,DIAG,UP5
+UKESM1,fracLut_tavg-u-hxy-u,mon,m01s19i013,19,013,TMONMN,DTILE,UP5
+UKESM1,flashrate_tavg-u-hxy-u,mon,m01s50i082,50,082,TMONMN,DIAG,UP5
+HadGEM3-GC31,flashrate_tavg-u-hxy-u,mon,m01s50i082,50,082,TMONMN,DIAG,UP5
 UKESM1,fProductDecomp_tavg-u-hxy-lnd,mon,m01s19i042,19,042,TMONMN,DIAG,UP5
 UKESM1,fNup_tavg-u-hxy-lnd,mon,m01s19i113,19,113,TMONMN,DIAG,UP5
 UKESM1,fNup_tavg-u-hxy-lnd,mon,m01s19i160,19,160,TMONMN,DIAG,UP5
