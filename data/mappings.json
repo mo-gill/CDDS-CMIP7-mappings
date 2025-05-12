@@ -1,6 +1,296 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "rsds_tavg-u-hxy-is",
+      "CF standard name": "surface_downwelling_shortwave_flux_in_air",
+      "CMIP6 Differences": "\"modeling_realm\" was \"landIce land\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "Surface solar irradiance for UV calculations.",
+      "Dimensions": "xgre ygre time",
+      "Frequency": "mon",
+      "Long name": "Surface Downwelling Shortwave Radiation",
+      "Modeling realm": "landIce",
+      "Positive": "down",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:land, landIce CMIP7:land, ocean,",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1157,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.rsds_tavg-u-hxy-is (ImonGre.rsds)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rlus_tavg-u-hxy-is",
+      "CF standard name": "surface_upwelling_longwave_flux_in_air",
+      "CMIP6 Differences": "\"comment\" was \"The surface called 'surface' means the lower boundary of the atmosphere. 'longwave' means longwave radiation. Upwelling radiation is radiation from below. It does not mean 'net upward'. When thought of as being incident on a surface, a radiative flux is sometimes called 'irradiance'. In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called 'vector irradiance'. In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.\"; ; \"modeling_realm\" was \"landIce land\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "The surface called \"surface\" means the lower boundary of the atmosphere. \"longwave\" means longwave radiation. Upwelling radiation is radiation from below. It does not mean \"net upward\". When thought of as being incident on a surface, a radiative flux is sometimes called \"irradiance\". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called \"vector irradiance\". In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics.",
+      "Dimensions": "xgre ygre time",
+      "Frequency": "mon",
+      "Long name": "Surface Upwelling Longwave Radiation",
+      "Modeling realm": "landIce",
+      "Positive": "up",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:land, landIce CMIP7:land, ocean,",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1156,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.rlus_tavg-u-hxy-is (ImonGre.rlus)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rlds_tavg-u-hxy-is",
+      "CF standard name": "surface_downwelling_longwave_flux_in_air",
+      "CMIP6 Differences": "\"comment\" was \"The surface called 'surface' means the lower boundary of the atmosphere. 'longwave' means longwave radiation. Downwelling radiation is radiation from above. It does not mean 'net downward'. When thought of as being incident on a surface, a radiative flux is sometimes called 'irradiance'. In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called 'vector irradiance'. In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.\"; ; \"modeling_realm\" was \"landIce land\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "The surface called \"surface\" means the lower boundary of the atmosphere. \"longwave\" means longwave radiation. Downwelling radiation is radiation from above. It does not mean \"net downward\". When thought of as being incident on a surface, a radiative flux is sometimes called \"irradiance\". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called \"vector irradiance\". In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics.",
+      "Dimensions": "xgre ygre time",
+      "Frequency": "mon",
+      "Long name": "Surface Downwelling Longwave Radiation",
+      "Modeling realm": "landIce",
+      "Positive": "down",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:land, landIce CMIP7:land, ocean,",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1155,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.rlds_tavg-u-hxy-is (ImonGre.rlds)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "prsn_tavg-u-hxy-is",
+      "CF standard name": "snowfall_flux",
+      "CMIP6 Differences": "\"comment\" was \"At surface; includes precipitation of all forms of water in the solid phase\"; ; \"modeling_realm\" was \"landIce land\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "quantity averaged over ice sheet (grounded ice sheet and floating ice shelf) only. Needed to analyse the impact of downscaling methods",
+      "Dimensions": "xgre ygre time",
+      "Frequency": "mon",
+      "Long name": "Snowfall Flux",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:land, landIce CMIP7:land, ocean,",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1154,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.prsn_tavg-u-hxy-is (ImonGre.prsn)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "prra_tavg-u-hxy-is",
+      "CF standard name": "rainfall_flux",
+      "CMIP6 Differences": "\"comment\" was \"In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.\"; ; \"modeling_realm\" was \"landIce land\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "over Land Ice//quantity averaged over ice sheet (grounded ice sheet and floating ice shelf) only. Needed to analyse the impact of downscaling methods",
+      "Dimensions": "xgre ygre time",
+      "Frequency": "mon",
+      "Long name": "Rainfall Flux over Land Ice",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:land, landIce CMIP7:land, ocean,",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1153,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.prra_tavg-u-hxy-is (ImonGre.prra)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "orog_tavg-u-hxy-is",
+      "CF standard name": "surface_altitude",
+      "CMIP6 Differences": "\"comment\" was \"The surface called 'surface' means the lower boundary of the atmosphere. Altitude is the (geometric) height above the geoid, which is the reference geopotential surface. The geoid is similar to mean sea level.\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "The surface called \"surface\" means the lower boundary of the atmosphere. Altitude is the (geometric) height above the geoid, which is the reference geopotential surface. The geoid is similar to mean sea level.",
+      "Dimensions": "xgre ygre time",
+      "Frequency": "mon",
+      "Long name": "Surface Altitude",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1152,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.mon.orog_tavg-u-hxy-is (ImonGre.orog)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "mrroLi_tavg-u-hxy-is",
+      "CF standard name": "land_ice_runoff_flux",
+      "CMIP6 Differences": "\"modeling_realm\" was \"landIce land\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "Runoff flux over land ice is the difference between any available liquid water in the snowpack less any refreezing. Computed as the sum of rainfall and melt of snow or ice less any refreezing or water retained in the snowpack",
+      "Dimensions": "xgre ygre time",
+      "Frequency": "mon",
+      "Long name": "Land Ice Runoff Flux",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:land, landIce CMIP7:land, ocean,",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1151,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.mrroLi_tavg-u-hxy-is (ImonGre.mrroLi)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "litemptop_tavg-u-hxy-is",
+      "CF standard name": "temperature_at_top_of_ice_sheet_model",
+      "CMIP6 Differences": "\"comment\" was \"Upper boundary temperature that is used to force ice sheet models. It is the temperature at the base of the snowpack models, and does not vary with seasons. Report surface temperature of ice sheet where snow thickness is zero\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "quantity averaged over ice sheet (grounded ice sheet and floating ice shelf) only. Needed to analyse the impact of downscaling methods",
+      "Dimensions": "xgre ygre time",
+      "Frequency": "mon",
+      "Long name": "Temperature at Top of Ice Sheet Model",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1150,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.litemptop_tavg-u-hxy-is (ImonGre.litemptop)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "litempbot_tavg-u-hxy-gis",
+      "CF standard name": "land_ice_basal_temperature",
+      "CMIP6 Differences": "\"comment\" was \"Basal temperature that is used to force the ice sheet models, it is the temperature AT ice sheet - bedrock interface. Cell_methods: area: mean where grounded_ice_sheet\"; ; \"cell_methods\" was \"area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf)\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where grounded_ice_sheet (mask=sfgrlf)",
+      "Comment": "quantity averaged over grounded ice sheet",
+      "Dimensions": "xgre ygre time",
+      "Frequency": "mon",
+      "Long name": "Basal Temperature of Grounded Ice Sheet",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf), area: sum time: mean where grounded_ice_sheet (comment: mask=sfgrlf),;  ; CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: time: mean where grounded_ice_sheet (mask=sfgrlf),",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1149,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.litempbot_tavg-u-hxy-gis (ImonGre.litempbotgr)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "litempbot_tavg-u-hxy-fis",
+      "CF standard name": "land_ice_basal_temperature",
+      "CMIP6 Differences": "\"comment\" was \"Basal temperature that is used to force the ice sheet models, it is the temperature AT ice shelf-ocean interface.  Cell_methods: area: mean where floating_ice_shelf\"; ; \"cell_methods\" was \"area: time: mean where floating_ice_shelf (comment: mask=sftflf)\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where floating_ice_shelf (mask=sftflf)",
+      "Comment": "quantity averaged over floating ice shelf",
+      "Dimensions": "xgre ygre time",
+      "Frequency": "mon",
+      "Long name": "Basal Temperature of Floating Ice Shelf",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where floating_ice_shelf (comment: mask=sftflf) CMIP7:area: time: mean where floating_ice_shelf (comment: mask=sftflf), area: sutime: mean where floating_ice_shelf (comment: mask=sftflf) copy,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where floating_ice_shelf (comment: mask=sftflf) CMIP7:area: time: mean where floating_ice_shelf (comment: mask=sftflf), area: sum time: mean where floating_ice_shelf (comment: mask=sftflf),;  ; CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where floating_ice_shelf (comment: mask=sftflf) CMIP7:area: time: mean where floating_ice_shelf (mask=sftflf),",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1148,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.litempbot_tavg-u-hxy-fis (ImonGre.litempbotfl)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "lifmassbf_tavg-u-hxy-is",
       "CF standard name": "land_ice_specific_mass_flux_due_to_calving_and_ice_front_melting",
       "CMIP6 Differences": "",
