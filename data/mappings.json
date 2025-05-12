@@ -1,6 +1,280 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "msftmz_tavg-rho-hys-sea",
+      "CF standard name": "ocean_meridional_overturning_mass_streamfunction_due_to_parameterized_mesoscale_eddy_advection",
+      "CMIP6 Differences": "\"cell_methods\" was \"longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time: mean\"; ; \"comment\" was \"CMIP5 called this 'due to Bolus Advection'.  Name change respects the more general physics of the mesoscale parameterizations.\";",
+      "Cell measures": "",
+      "Cell methods": "longitude: sum (basin sum [along zig-zag grid path]) depth: sum time: mean",
+      "Comment": "CMIP5 called this \"due to Bolus Advection\".  Name change respects the more general physics of the mesoscale parameterizations.",
+      "Dimensions": "latitude rho basin time",
+      "Frequency": "mon",
+      "Long name": "Ocean Meridional Overturning Mass Streamfunction Due to Parameterized Mesoscale Advection",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Function of latitude, rho, basin. For a model with a cartesian latxlon grid, this is the same as the \"Ocean Y Overturning Mass Streamfunction\" (msftyrhompa), which should in this case be omitted.  For other models, this transport should be approximated as the transport across zig-zag paths corresponding to latitudes with spacing between latitudes appropriate to the model's resolution.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time: mean CMIP7:longitude: sum (basin sum [along zig-zag grid path]) depth: sum time: mean,",
+      "Units": "kg s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1509,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.mon.msftmz_tavg-rho-hys-sea (Omon.msftmrhompa)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "msftmz_tavg-rho-hys-sea",
+      "CF standard name": "ocean_meridional_overturning_mass_streamfunction",
+      "CMIP6 Differences": "\"cell_methods\" was \"longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time: mean\";",
+      "Cell measures": "",
+      "Cell methods": "longitude: sum (basin sum [along zig-zag grid path]) depth: sum time: mean",
+      "Comment": "Overturning mass streamfunction arising from all advective mass transport processes, resolved and parameterized.",
+      "Dimensions": "latitude rho basin time",
+      "Frequency": "mon",
+      "Long name": "Ocean Meridional Overturning Mass Streamfunction",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Function of latitude, rho, basin. For a model with a cartesian latxlon grid, this is the same as the \"Ocean Y Overturning Mass Streamfunction\" (msftyrho), which should in this case be omitted.  For other models, this transport should be approximated as the transport across zig-zag paths corresponding to latitudes with spacing between latitudes appropriate to the model's resolution.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time: mean CMIP7:longitude: sum (basin sum [along zig-zag grid path]) depth: sum time: mean,",
+      "Units": "kg s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1508,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.mon.msftmz_tavg-rho-hys-sea (Omon.msftmrho)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "msftbarot_tavg-u-hxy-sea",
+      "CF standard name": "ocean_barotropic_mass_streamfunction",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Streamfunction or its approximation for free surface models. See OMDP document for details.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Ocean Barotropic Mass Streamfunction",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid as well as on a spherical latitude/longitude grid.",
+      "Units": "kg s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "ocean_quasi_barotropic_streamfunc(umo_vint, areacello, cube_mask=mask_2D_T)",
+      "Expression UKESM1": "ocean_quasi_barotropic_streamfunc(umo_vint, areacello, cube_mask=mask_2D_T)",
+      "Model units": "kg s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1507,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.mon.msftbarot_tavg-u-hxy-sea (Omon.msftbarot)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "mpwwindsea_tavg-u-hxy-sea",
+      "CF standard name": "sea_surface_wind_wave_mean_period",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Average wave period (i.e., time in-between two wave crests) of wind-sea waves only (i.e., local wind waves). In spectral wind wave models, it is calculated using spectral moments, mathematical measures that describe the shape and characteristics of the wave spectrum.",
+      "Dimensions": "longitude latitude time depth0m",
+      "Frequency": "mon",
+      "Long name": "Wind Sea Wave Mean Period",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "s",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1506,
+    "labels": [
+      "mon",
+      "ocean"
+    ],
+    "title": "Variable ocean.mon.mpwwindsea_tavg-u-hxy-sea (Omon.mpwwindsea)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "mpwswell_tavg-u-hxy-sea",
+      "CF standard name": "sea_surface_swell_wave_mean_period",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Average wave period (i.e., time in-between two wave crests) of swell waves only (i.e., waves that have propagated away from their generation area). In spectral wind wave models, it is calculated using spectral moments, mathematical measures that describe the shape and characteristics of the wave spectrum.",
+      "Dimensions": "longitude latitude time depth0m",
+      "Frequency": "mon",
+      "Long name": "Swell Wave Mean Period",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "s",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1505,
+    "labels": [
+      "mon",
+      "ocean"
+    ],
+    "title": "Variable ocean.mon.mpwswell_tavg-u-hxy-sea (Omon.mpwswell)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "mpw_tavg-u-hxy-sea",
+      "CF standard name": "sea_surface_wave_mean_period",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Average wave period (i.e., time in-between two wave crests) across the entire two-dimensional wave spectrum, incorporating both wind-sea and swell waves. In spectral wind wave models, it is calculated using spectral moments, mathematical measures that describe the shape and characteristics of the wave spectrum.",
+      "Dimensions": "longitude latitude time depth0m",
+      "Frequency": "mon",
+      "Long name": "Total Wave Mean Period",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "s",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1504,
+    "labels": [
+      "mon",
+      "ocean"
+    ],
+    "title": "Variable ocean.mon.mpw_tavg-u-hxy-sea (Omon.mpw)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "mlotstsq_tavg-u-hxy-sea",
+      "CF standard name": "square_of_ocean_mixed_layer_thickness_defined_by_sigma_t",
+      "CMIP6 Differences": "\"comment\" was \"The phrase 'square_of_X' means X*X. The ocean mixed layer is the upper part of the ocean, regarded as being well-mixed. The base of the mixed layer defined by 'temperature', 'sigma', 'sigma_theta', 'sigma_t' or vertical diffusivity is the level at which the quantity indicated differs from its surface value by a certain amount. A coordinate variable or scalar coordinate variable with standard name sea_water_sigma_t_difference can be used to specify the sigma_t criterion that determines the layer thickness. Sigma-t of sea water is the density of water at atmospheric pressure (i.e. the surface) having the same temperature and salinity, minus 1000 kg m-3. 'Thickness' means the vertical extent of a layer.\"; ; \"dimensions\" was \"longitude latitude time\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "The phrase \"square_of_X\" means X\\*X. The ocean mixed layer is the upper part of the ocean, regarded as being well-mixed. The base of the mixed layer defined by \"temperature\", \"sigma\", \"sigma_theta\", \"sigma_t\" or vertical diffusivity is the level at which the quantity indicated differs from its surface value by a certain amount. A coordinate variable or scalar coordinate variable with standard name sea_water_sigma_t_difference can be used to specify the sigma_t criterion that determines the layer thickness. Sigma-t of sea water is the density of water at atmospheric pressure (i.e. the surface) having the same temperature and salinity, minus 1000 kg m-3. \"Thickness\" means the vertical extent of a layer.",
+      "Dimensions": "longitude latitude time deltasigt",
+      "Frequency": "mon",
+      "Long name": "Square of Ocean Mixed Layer Thickness Defined by Sigma T",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "dsigmat coordinate added to clarify definition. CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time CMIP7:longitude latitude time deltasigt,",
+      "Units": "m2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "mlotstsq",
+      "Expression UKESM1": "mlotstsq",
+      "Model units": "m2"
+    },
+    "STASH entries": [],
+    "issue_number": 1503,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.mon.mlotstsq_tavg-u-hxy-sea (Omon.mlotstsq)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "mlotstmin_tstat-u-hxy-sea",
+      "CF standard name": "ocean_mixed_layer_thickness_defined_by_sigma_t",
+      "CMIP6 Differences": "\"comment\" was \"Sigma T is potential density referenced to ocean surface.\"; ; \"dimensions\" was \"longitude latitude time\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean time: minimum",
+      "Comment": "Sigma T is potential density referenced to ocean surface. Defined by Sigma T of 0.03 kg m-3 wrt to model level closest to 10 m depth.",
+      "Dimensions": "longitude latitude time deltasigt",
+      "Frequency": "mon",
+      "Long name": "Minimum Ocean Mixed Layer Thickness Defined by Sigma T",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "dsigmat coordinate added to clarify definition. CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time CMIP7:longitude latitude time deltasigt,",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "mlotstmin",
+      "Expression UKESM1": "mlotstmin",
+      "Model units": "m"
+    },
+    "STASH entries": [],
+    "issue_number": 1502,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.mon.mlotstmin_tstat-u-hxy-sea (Omon.mlotstmin)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "mlotstmax_tstat-u-hxy-sea",
+      "CF standard name": "ocean_mixed_layer_thickness_defined_by_sigma_t",
+      "CMIP6 Differences": "\"cell_measures\" was \"area: areacello\"; ; \"comment\" was \"Sigma T is potential density referenced to ocean surface.\"; ; \"dimensions\" was \"longitude latitude time\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean time: maximum",
+      "Comment": "Sigma T is potential density referenced to ocean surface. Defined by Sigma T of 0.03 kg m-3 wrt to model level closest to 10 m depth.",
+      "Dimensions": "longitude latitude time deltasigt",
+      "Frequency": "mon",
+      "Long name": "Maximum Ocean Mixed Layer Thickness Defined by Sigma T",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "dsigmat coordinate added to clarify definition.Report on native horizontal grid as well as on a spherical latitude/longitude grid. CHANGE SINCE CMIP6 in Cell Measures - CMIP6:area: areacello CMIP7:area: areacella, CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time CMIP7:longitude latitude time deltasigt,",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "mlotstmax",
+      "Expression UKESM1": "mlotstmax",
+      "Model units": "m"
+    },
+    "STASH entries": [],
+    "issue_number": 1501,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.mon.mlotstmax_tstat-u-hxy-sea (Omon.mlotstmax)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "mlotst_tavg-u-hxy-sea",
       "CF standard name": "ocean_mixed_layer_thickness_defined_by_sigma_t",
       "CMIP6 Differences": "\"comment\" was \"Sigma T is potential density referenced to ocean surface.\"; ; \"dimensions\" was \"longitude latitude time\";",
