@@ -1,6 +1,296 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "limnsw_tavg-u-hm-is",
+      "CF standard name": "land_ice_mass_not_displacing_sea_water",
+      "CMIP6 Differences": "\"comment\" was \"The ice sheet mass is computed as the volume above flotation times density. Changes in land_ice_mass_not_displacing_sea_water will always result in a change in sea level, unlike changes in land_ice_mass which may not result in sea level change (such as melting of the floating ice shelves, or portion of ice that sits on bedrock below sea level)\"; ; \"cell_methods\" was \"area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf)\";",
+      "Cell measures": "",
+      "Cell methods": "area: sum where ice_sheet time: mean",
+      "Comment": "Antarctica",
+      "Dimensions": "time",
+      "Frequency": "yr",
+      "Long name": "Ice Sheet Mass That Does not Displace Sea Water",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: sum where ice_sheet time: mean,; CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean, CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: sum where ice_sheet time: mean,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: sum where ice_sheet time: mean,",
+      "Units": "kg",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1176,
+    "labels": [
+      "yr",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.yr.limnsw_tavg-u-hm-is (IyrAnt.limnsw)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "lim_tavg-u-hm-is",
+      "CF standard name": "land_ice_mass",
+      "CMIP6 Differences": "\"comment\" was \"The ice sheet mass is computed as the volume times density\";",
+      "Cell measures": "",
+      "Cell methods": "area: sum where ice_sheet time: mean",
+      "Comment": "Antarctica",
+      "Dimensions": "time",
+      "Frequency": "yr",
+      "Long name": "Ice Sheet Mass",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "kg",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1175,
+    "labels": [
+      "yr",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.yr.lim_tavg-u-hm-is (IyrAnt.lim)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "lifmassbf_tavg-u-hxy-is",
+      "CF standard name": "land_ice_specific_mass_flux_due_to_calving_and_ice_front_melting",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "Total mass balance at the ice front (or vertical margin). It includes both iceberg calving and melt on vertical ice front",
+      "Dimensions": "xant yant time",
+      "Frequency": "yr",
+      "Long name": "Land Ice Vertical Front Mass Balance Flux",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1174,
+    "labels": [
+      "yr",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.yr.lifmassbf_tavg-u-hxy-is (IyrAnt.lifmassbf)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "licalvf_tavg-u-hxy-is",
+      "CF standard name": "land_ice_specific_mass_flux_due_to_calving",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "Loss of ice mass resulting from iceberg calving. Computed as the rate of mass loss by the ice shelf (in kg s-1) divided by the horizontal area of the ice sheet (m2) in the grid box.",
+      "Dimensions": "xant yant time",
+      "Frequency": "yr",
+      "Long name": "Land Ice Calving Flux",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1173,
+    "labels": [
+      "yr",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.yr.licalvf_tavg-u-hxy-is (IyrAnt.licalvf)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "libmassbfgr_tavg-u-hxy-gis",
+      "CF standard name": "land_ice_basal_specific_mass_balance_flux",
+      "CMIP6 Differences": "\"comment\" was \"Specific mass balance means the net rate at which ice is added per unit area at the land ice base.  A negative value means loss of ice. Computed as the total basal mass balance on the grounded land ice portion of the grid cell divided by grounded land ice area in the grid cell. Cell_methods: area: mean where grounded_ice_sheet\"; ; \"cell_methods\" was \"area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf)\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where grounded_ice_sheet (mask=sfgrlf)",
+      "Comment": "quantity averaged over grounded land ice",
+      "Dimensions": "xant yant time",
+      "Frequency": "yr",
+      "Long name": "Basal Specific Mass Balance Flux of Grounded Ice Sheet",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf), area: sum time: mean where grounded_ice_sheet (comment: mask=sfgrlf),;  ; CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: time: mean where grounded_ice_sheet (mask=sfgrlf),",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1172,
+    "labels": [
+      "yr",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.yr.libmassbfgr_tavg-u-hxy-gis (IyrAnt.libmassbfgr)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "libmassbffl_tavg-u-hxy-fis",
+      "CF standard name": "land_ice_basal_specific_mass_balance_flux",
+      "CMIP6 Differences": "\"comment\" was \"Specific mass balance means the net rate at which ice is added per unit area at the land ice base.  A negative value means loss of ice. Computed as the total basal mass balance on the floating land ice (floating ice shelf) portion of the grid cell divided by floating land ice (floating ice shelf) area in the grid cell. Cell_methods: area: mean where floating_ice_shelf\"; ; \"cell_methods\" was \"area: time: mean where floating_ice_shelf (comment: mask=sftflf)\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where floating_ice_shelf (mask=sftflf)",
+      "Comment": "quantity averaged over floating land ice",
+      "Dimensions": "xant yant time",
+      "Frequency": "yr",
+      "Long name": "Basal Specific Mass Balance Flux of Floating Ice Shelf",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where floating_ice_shelf (comment: mask=sftflf) CMIP7:area: time: mean where floating_ice_shelf (comment: mask=sftflf), area: sutime: mean where floating_ice_shelf (comment: mask=sftflf) copy,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where floating_ice_shelf (comment: mask=sftflf) CMIP7:area: time: mean where floating_ice_shelf (comment: mask=sftflf), area: sum time: mean where floating_ice_shelf (comment: mask=sftflf),; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where floating_ice_shelf (comment: mask=sftflf) CMIP7:area: time: mean where floating_ice_shelf (comment: mask=sftflf), area: sum where floating_ice_shelf (comment: mask=sftflf) time: mean,;  ; CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where floating_ice_shelf (comment: mask=sftflf) CMIP7:area: time: mean where floating_ice_shelf (mask=sftflf),",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1171,
+    "labels": [
+      "yr",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.yr.libmassbffl_tavg-u-hxy-fis (IyrAnt.libmassbffl)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "iareagr_tavg-u-hm-fis",
+      "CF standard name": "grounded_ice_sheet_area",
+      "CMIP6 Differences": "\"comment\" was \"Total area of the grounded ice sheets (the component of ice sheet resting over bedrock)\"; ; \"cell_methods\" was \"area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf)\";",
+      "Cell measures": "",
+      "Cell methods": "area: sum where grounded_ice_sheet (mask=sfgrlf) time: mean",
+      "Comment": "Antarctica",
+      "Dimensions": "time",
+      "Frequency": "yr",
+      "Long name": "Area Covered by Grounded Ice Sheet",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: sum where ice_sheet time: mean,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: sum time: mean where grounded_ice_sheet (comment: mask=sfgrlf),; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: sum where grounded_ice_sheet (comment: mask=sfgrlf) time: mean,; CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: sum where grounded_ice_sheet (mask=sfgrlf) time: mean,",
+      "Units": "m2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1170,
+    "labels": [
+      "yr",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.yr.iareagr_tavg-u-hm-fis (IyrAnt.iareagr)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "iareafl_tavg-u-hm-fis",
+      "CF standard name": "floating_ice_shelf_area",
+      "CMIP6 Differences": "\"comment\" was \"Total area of the floating ice shelves (the component of ice sheet that flows over ocean)\"; ; \"cell_methods\" was \"area: time: mean where floating_ice_shelf (comment: mask=sftflf)\";",
+      "Cell measures": "",
+      "Cell methods": "area: sum where floating_ice_shelf (mask=sftflf) time: mean",
+      "Comment": "Antarctica",
+      "Dimensions": "time",
+      "Frequency": "yr",
+      "Long name": "Area Covered by Floating Ice Shelves",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where floating_ice_shelf (comment: mask=sftflf) CMIP7:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf),; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where floating_ice_shelf (comment: mask=sftflf) CMIP7:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf), area: sum time: mean where grounded_ice_sheet (comment: mask=sfgrlf),; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where floating_ice_shelf (comment: mask=sftflf) CMIP7:area: sum where floating_ice_shelf (comment: mask=sftflf) time: mean,; CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where floating_ice_shelf (comment: mask=sftflf) CMIP7:area: sum where floating_ice_shelf (mask=sftflf) time: mean,",
+      "Units": "m2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1169,
+    "labels": [
+      "yr",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.yr.iareafl_tavg-u-hm-fis (IyrAnt.iareafl)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "hfgeoubed_tavg-u-hxy-gis",
+      "CF standard name": "upward_geothermal_heat_flux_at_ground_level_in_land_ice",
+      "CMIP6 Differences": "\"comment\" was \"Upward geothermal heat flux per unit area beneath land ice\"; ; \"cell_methods\" was \"area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf)\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where grounded_ice_sheet (mask=sfgrlf)",
+      "Comment": "",
+      "Dimensions": "xant yant time",
+      "Frequency": "yr",
+      "Long name": "Geothermal Heat Flux Beneath Land Ice",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf), area: sutime: mean where grounded_ice_sheet (comment: mask=sfgrlf) copy,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf), area: sum time: mean where grounded_ice_sheet (comment: mask=sfgrlf),;  ; CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf) CMIP7:area: time: mean where grounded_ice_sheet (mask=sfgrlf),",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1168,
+    "labels": [
+      "yr",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.yr.hfgeoubed_tavg-u-hxy-gis (IyrAnt.hfgeoubed)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "acabf_tavg-u-hxy-is",
+      "CF standard name": "land_ice_surface_specific_mass_balance_flux",
+      "CMIP6 Differences": "\"comment\" was \"Specific mass balance means the net rate at which ice is added per unit area at the land ice surface. Computed as the total surface mass balance on the land ice portion of the grid cell divided by land ice area in the grid cell. A negative value means loss of ice\";",
+      "Cell measures": "area: areacellg",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "quantity averaged over ice sheet only, to avoid contamination from other surfaces (eg: permafrost)",
+      "Dimensions": "xant yant time",
+      "Frequency": "yr",
+      "Long name": "Surface Mass Balance Flux",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1167,
+    "labels": [
+      "yr",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.yr.acabf_tavg-u-hxy-is (IyrAnt.acabf)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "tsn_tavg-u-hxy-lnd",
       "CF standard name": "temperature_in_surface_snow",
       "CMIP6 Differences": "\"comment\" was \"This temperature is averaged over all the snow in the grid cell that rests on land or land ice.  When computing the time-mean here, the time samples, weighted by the mass of snow on the land portion of the grid cell, are accumulated and then divided by the sum of the weights.   Reported as missing in regions free of snow on land.\"; ; \"modeling_realm\" was \"landIce land\";",
