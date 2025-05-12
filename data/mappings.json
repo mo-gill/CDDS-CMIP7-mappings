@@ -1,6 +1,230 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "ts_tavg-u-hxy-u",
+      "CF standard name": "surface_temperature",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Surface temperature (skin for open ocean)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "1hr",
+      "Long name": "Surface Temperature",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "K",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 670,
+    "labels": [
+      "1hr",
+      "atmos"
+    ],
+    "title": "Variable atmos.1hr.ts_tavg-u-hxy-u (E1hr.ts)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tas_tavg-u-hxy-u",
+      "CF standard name": "air_temperature",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Hourly Temperature at 2m above the surface",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "1hr",
+      "Long name": "Hourly Temperature at Surface",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "K",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 669,
+    "labels": [
+      "1hr",
+      "land"
+    ],
+    "title": "Variable land.1hr.tas_tavg-u-hxy-u (E1hr.tas)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sfcWind_tavg-h10m-hxy-u",
+      "CF standard name": "wind_speed",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Hourly near-surface wind speed at 10m above the ground",
+      "Dimensions": "longitude latitude time height10m",
+      "Frequency": "1hr",
+      "Long name": "Hourly surface wind speed",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 668,
+    "labels": [
+      "1hr",
+      "atmos"
+    ],
+    "title": "Variable atmos.1hr.sfcWind_tavg-h10m-hxy-u (E1hr.sfcWind)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rsus_tavg-u-hxy-u",
+      "CF standard name": "surface_upwelling_shortwave_flux_in_air",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Surface upwelling shortwave radiation",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "1hr",
+      "Long name": "Surface upwelling shortwave radiation",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "W m-2",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 667,
+    "labels": [
+      "1hr",
+      "atmos"
+    ],
+    "title": "Variable atmos.1hr.rsus_tavg-u-hxy-u (E1hr.rsus)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rsdsdiff_tavg-u-hxy-u",
+      "CF standard name": "surface_diffuse_downwelling_shortwave_flux_in_air",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Surface Diffuse Downwelling Shortwave Radiation",
+      "Dimensions": "longitude latitude time height2m",
+      "Frequency": "1hr",
+      "Long name": "Surface Diffuse Downwelling Shortwave Radiation",
+      "Modeling realm": "atmos",
+      "Positive": "down",
+      "Processing notes": "This is a 3-hour mean flux.",
+      "Units": "W m-2",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 666,
+    "labels": [
+      "1hr",
+      "atmos"
+    ],
+    "title": "Variable atmos.1hr.rsdsdiff_tavg-u-hxy-u (E1hr.rsdsdiff)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rsds_tavg-u-hxy-u",
+      "CF standard name": "surface_downwelling_shortwave_flux_in_air",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Hourly downward solar radiation flux at the surface",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "1hr",
+      "Long name": "Hourly downward solar radiation flux at the surface",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "W m-2",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 665,
+    "labels": [
+      "1hr",
+      "atmos"
+    ],
+    "title": "Variable atmos.1hr.rsds_tavg-u-hxy-u (E1hr.rsds)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rlus_tavg-u-hxy-u",
+      "CF standard name": "surface_upwelling_longwave_flux_in_air",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Hourly surface upwelling shortwave radiation",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "1hr",
+      "Long name": "Surface upwelling shortwave radiation",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "W m-2",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 664,
+    "labels": [
+      "1hr",
+      "atmos"
+    ],
+    "title": "Variable atmos.1hr.rlus_tavg-u-hxy-u (E1hr.rlus)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rlds_tavg-u-hxy-u",
+      "CF standard name": "surface_downwelling_longwave_flux_in_air",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Surface Downwelling Longwave Radiation",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "1hr",
+      "Long name": "Surface Downwelling Longwave Radiation",
+      "Modeling realm": "atmos",
+      "Positive": "down",
+      "Processing notes": "This is the 3-hour mean flux.",
+      "Units": "W m-2",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 663,
+    "labels": [
+      "1hr",
+      "atmos"
+    ],
+    "title": "Variable atmos.1hr.rlds_tavg-u-hxy-u (E1hr.rlds)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "psl_tpt-u-hxy-u",
       "CF standard name": "air_pressure_at_mean_sea_level",
       "CMIP6 Differences": "\"frequency\" was \"1hrPt\"; ; \"comment\" was \"Sea Level Pressure\";",
