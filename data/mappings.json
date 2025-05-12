@@ -1,6 +1,304 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "zmeso_tavg-z0m-hxy-sea",
+      "CF standard name": "mole_concentration_of_mesozooplankton_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "carbon  concentration from mesozooplankton (20-200 um) component alone",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Mole Concentration of Mesozooplankton Expressed as Carbon in Sea Water",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "ZME[depth=0] * C_TO_N_RATIO_ZOO",
+      "Model units": "mmol m-3"
+    },
+    "STASH entries": [],
+    "issue_number": 1611,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.zmeso_tavg-z0m-hxy-sea (Omon.zmesoos)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "zmeso_tavg-l-hxy-sea",
+      "CF standard name": "mole_concentration_of_mesozooplankton_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "carbon  concentration from mesozooplankton (20-200 um) component alone",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Mole Concentration of Mesozooplankton Expressed as Carbon in Sea Water",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "ZME_E3T * C_TO_N_RATIO_ZOO / thkcello",
+      "Model units": "mmol m-3"
+    },
+    "STASH entries": [],
+    "issue_number": 1610,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.zmeso_tavg-l-hxy-sea (Omon.zmeso)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "wppwindsea_tavg-u-hxy-sea",
+      "CF standard name": "sea_surface_wind_wave_period_at_variance_spectral_density_maximum",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Wave period associated with the most energetic wind-sea waves (i.e., local wind waves).\u00a0In spectral wind wave models,\u00a0this represents the spectral peak\u00a0across part of the two-dimensional wave spectrum, incorporating just wind-sea waves.",
+      "Dimensions": "longitude latitude time depth0m",
+      "Frequency": "mon",
+      "Long name": "Wind Sea Wave Peak Period",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "s",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1609,
+    "labels": [
+      "mon",
+      "ocean"
+    ],
+    "title": "Variable ocean.mon.wppwindsea_tavg-u-hxy-sea (Omon.wppwindsea)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "wppswell_tavg-u-hxy-sea",
+      "CF standard name": "sea_surface_swell_wave_period_at_variance_spectral_density_maximum",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Wave period associated with the most energetic swell waves (i.e., waves that have propagated away from their generation area).\u00a0In spectral wind wave models,\u00a0this represents the spectral peak\u00a0across part of the two-dimensional wave spectrum, incorporating just swell waves.",
+      "Dimensions": "longitude latitude time depth0m",
+      "Frequency": "mon",
+      "Long name": "Swell Wave Peak Period",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "s",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1608,
+    "labels": [
+      "mon",
+      "ocean"
+    ],
+    "title": "Variable ocean.mon.wppswell_tavg-u-hxy-sea (Omon.wppswell)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "wpp_tavg-u-hxy-sea",
+      "CF standard name": "sea_surface_wave_period_at_variance_spectral_density_maximum",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Wave period associated with the most energetic waves in total wave spectrum, incorporating both wind-sea and swell waves.\u00a0In spectral wind wave models,\u00a0this represents the spectral peak\u00a0across the entire two-dimensional wave spectrum, incorporating both wind-sea and swell waves.",
+      "Dimensions": "longitude latitude time depth0m",
+      "Frequency": "mon",
+      "Long name": "Total Wave Peak Period",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "s",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1607,
+    "labels": [
+      "mon",
+      "ocean"
+    ],
+    "title": "Variable ocean.mon.wpp_tavg-u-hxy-sea (Omon.wpp)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "wpdirwindsea_tavg-u-hxy-sea",
+      "CF standard name": "sea_surface_wind_wave_from_direction_at_variance_spectral_density_maximum",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Direction of wave propagation (direction from which the wave is coming) derived from the wind-sea component of the wave energy spectrum (i.e., local wind waves), by identifying the direction associated with the peak (maximum) energy density. This variable is typically expressed in degrees relative to true north.",
+      "Dimensions": "longitude latitude time depth0m",
+      "Frequency": "mon",
+      "Long name": "Wind Sea Peak Wave Direction",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "degree",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1606,
+    "labels": [
+      "mon",
+      "ocean"
+    ],
+    "title": "Variable ocean.mon.wpdirwindsea_tavg-u-hxy-sea (Omon.wpdirwindsea)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "wpdirswell_tavg-u-hxy-sea",
+      "CF standard name": "sea_surface_swell_wave_from_direction_at_variance_spectral_density_maximum",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Direction of wave propagation (direction from which the wave is coming) derived from the swell component of the wave energy spectrum (i.e., waves that have propagated away from their generation area), by identifying the direction associated with the peak (maximum) energy density. This variable is typically expressed in degrees relative to true north.",
+      "Dimensions": "longitude latitude time depth0m",
+      "Frequency": "mon",
+      "Long name": "Swell Peak Wave Direction",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "degree",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1605,
+    "labels": [
+      "mon",
+      "ocean"
+    ],
+    "title": "Variable ocean.mon.wpdirswell_tavg-u-hxy-sea (Omon.wpdirswell)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "wpdir_tavg-u-hxy-sea",
+      "CF standard name": "sea_surface_wave_from_direction_at_variance_spectral_density_maximum",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Direction of wave propagation (direction from which the wave is coming)\u00a0derived from the total wave energy spectrum, incorporating both wind-sea and swell waves, by identifying the direction associated with the peak (maximum) energy density. This variable is usually expressed in degrees relative to true north.",
+      "Dimensions": "longitude latitude time depth0m",
+      "Frequency": "mon",
+      "Long name": "Total Peak Wave Direction",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "degree",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1604,
+    "labels": [
+      "mon",
+      "ocean"
+    ],
+    "title": "Variable ocean.mon.wpdir_tavg-u-hxy-sea (Omon.wpdir)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "wo_tavg-l-hxy-sea",
+      "CF standard name": "upward_sea_water_velocity",
+      "CMIP6 Differences": "\"cell_measures\" was \"--OPT\"; ; \"comment\" was \"A velocity is a vector quantity. 'Upward' indicates a vector component which is positive when directed upward (negative downward).\"; ; \"cell_methods\" was \"time: mean\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Prognostic z-ward velocity component resolved by the model.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Sea Water Vertical Velocity",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native. Those who wish to record vertical velocities and vertical fluxes on ocean half-levels may do so. If using CMOR3 you will be required to specify artificial bounds (e.g. located at full model levels) to avoid an error exit.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:time: mean CMIP7:area: mean where sea time: mean, CHANGE SINCE CMIP6 in Cell Measures - CMIP6:::OPT CMIP7:area: areacello volume: volcello,",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "mask_copy(wo, mask_3D_T)",
+      "Expression UKESM1": "mask_copy(wo, mask_3D_T)",
+      "Model units": "m s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1603,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable ocean.mon.wo_tavg-l-hxy-sea (Omon.wo)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "wmo_tavg-l-hxy-sea",
+      "CF standard name": "upward_ocean_mass_transport",
+      "CMIP6 Differences": "\"comment\" was \"Upward mass transport from resolved and parameterized advective transport.\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: sum where sea time: mean",
+      "Comment": "Upward mass transport from residual mean (resolved plus parameterized) advective transport.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Upward Ocean Mass Transport",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native. Those who wish to record vertical velocities and vertical fluxes on ocean half-levels may do so. If using CMOR3 you will be required to specify artificial bounds (e.g. located at full model levels) to avoid an error exit.",
+      "Units": "kg s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "mask_copy(wmo, mask_3D_T)",
+      "Expression UKESM1": "mask_copy(wmo, mask_3D_T)",
+      "Model units": "kg s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1602,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable ocean.mon.wmo_tavg-l-hxy-sea (Omon.wmo)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "wfo_tavg-u-hxy-sea",
       "CF standard name": "water_flux_into_sea_water",
       "CMIP6 Differences": "\"comment\" was \"Computed as the water flux into the ocean divided by the area of the ocean portion of the grid cell. This is the sum *wfonocorr* and *wfcorr*.\";",
