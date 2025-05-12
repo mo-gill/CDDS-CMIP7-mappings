@@ -1,6 +1,342 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "sisnmass_tavg-u-hm-u",
+      "CF standard name": "surface_snow_mass",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "",
+      "Cell methods": "area: sum time: mean",
+      "Comment": "Total integrated mass of snow on sea ice in the Northern Hemisphere.",
+      "Dimensions": "time",
+      "Frequency": "day",
+      "Long name": "Snow Mass on Sea Ice North",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1685,
+    "labels": [
+      "day",
+      "seaIce"
+    ],
+    "title": "Variable seaIce.day.sisnmass_tavg-u-hm-u (SIday.sisnmassn)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sisnhc_tavg-u-hxy-si",
+      "CF standard name": "thermal_energy_content_of_surface_snow",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Heat content of all snow in grid cell divided by grid-cell area. This includes both the latent and sensible heat content contributions. Snow-water equivalent at 0 C is assumed to have a heat content of 0 J. Does not include the heat content of sea ice.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Snow Heat Content",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "J m-2",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1684,
+    "labels": [
+      "day",
+      "seaIce"
+    ],
+    "title": "Variable seaIce.day.sisnhc_tavg-u-hxy-si (SIday.sisnhc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sisaltmass_tavg-u-hxy-si",
+      "CF standard name": "sea_ice_mass_content_of_salt",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Total mass of all salt in sea ice divided by grid-cell area. Sometimes, models implicitly or explicitly assume a different salinity of the ice for thermodynamic considerations than they do for closing the salt budget with the ocean. In these cases, the total mass of all salt in sea ice should be calculated from the salinity value used in the calculation of the salt budget.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Mass of Salt in Sea Ice",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "Total mass of all salt in sea ice divided by grid-cell area",
+      "Units": "kg m-2",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1683,
+    "labels": [
+      "day",
+      "seaIce"
+    ],
+    "title": "Variable seaIce.day.sisaltmass_tavg-u-hxy-si (SIday.sisaltmass)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sisali_tavg-u-hxy-si",
+      "CF standard name": "sea_ice_salinity",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Mean sea-ice salinity of all sea ice in grid cell. Sometimes, models implicitly or explicitly assume a different salinity of the ice for thermodynamic considerations than they do for closing the salt budget with the ocean. In these cases, the mean salinity used in the calculation of the salt budget should be reported.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Sea-Ice Salinity",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.",
+      "Units": "1E-03",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1682,
+    "labels": [
+      "day",
+      "seaIce"
+    ],
+    "title": "Variable seaIce.day.sisali_tavg-u-hxy-si (SIday.sisali)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sithickrdg_tavg-u-hxy-sir",
+      "CF standard name": "sea_ice_thickness",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Total volume of ridged sea ice divided by area of ridges, i.e. mean thickness of ridged sea ice.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Ridged Ice Thickness",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.",
+      "Units": "m",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1681,
+    "labels": [
+      "day",
+      "seaIce"
+    ],
+    "title": "Variable seaIce.day.sithickrdg_tavg-u-hxy-sir (SIday.sirdgthick)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sirdgconc_tavg-u-hxy-u",
+      "CF standard name": "area_fraction",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Area fraction of sea-ice surface that is ridged sea ice.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Fraction of Ridged Sea Ice",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "Fraction of sea ice, by area, which is covered by sea ice ridges, giving equal weight to every square metre of sea ice.",
+      "Units": "%",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1680,
+    "labels": [
+      "day",
+      "seaIce"
+    ],
+    "title": "Variable seaIce.day.sirdgconc_tavg-u-hxy-u (SIday.sirdgconc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "simpthick_tavg-u-hxy-si",
+      "CF standard name": "sea_ice_melt_pond_thickness",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Average depth of melt ponds on sea ice, that is melt pond volume divided by melt pond area.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Melt Pond Depth",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.",
+      "Units": "m",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1679,
+    "labels": [
+      "day",
+      "seaIce"
+    ],
+    "title": "Variable seaIce.day.simpthick_tavg-u-hxy-si (SIday.simpthick)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "simprefrozen_tavg-u-hxy-simp",
+      "CF standard name": "thickness_of_ice_on_sea_ice_melt_pond",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Volume of refrozen ice on melt ponds divided by melt pond covered area.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Thickness of Refrozen Ice on Melt Pond",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.",
+      "Units": "m",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1678,
+    "labels": [
+      "day",
+      "seaIce"
+    ],
+    "title": "Variable seaIce.day.simprefrozen_tavg-u-hxy-simp (SIday.simprefrozen)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "simpeffconc_tavg-u-hxy-si",
+      "CF standard name": "area_fraction",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Area fraction of sea-ice surface that is covered by open melt ponds, that is melt ponds that are not covered by snow or ice lids. This represents the effective (i.e. radiatively-active) melt pond area fraction.",
+      "Dimensions": "longitude latitude time typemp",
+      "Frequency": "day",
+      "Long name": "Fraction of Sea Ice Covered by Effective Melt Pond",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "%",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1677,
+    "labels": [
+      "day",
+      "seaIce"
+    ],
+    "title": "Variable seaIce.day.simpeffconc_tavg-u-hxy-si (SIday.simpeffconc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "simpconc_tavg-u-hxy-si",
+      "CF standard name": "area_fraction",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Area fraction of sea-ice surface that is covered by melt ponds.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Fraction of Sea Ice Covered by Melt Pond",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "%",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1676,
+    "labels": [
+      "day",
+      "seaIce"
+    ],
+    "title": "Variable seaIce.day.simpconc_tavg-u-hxy-si (SIday.simpconc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sithickitd_tavg-u-hxy-si",
+      "CF standard name": "sea_ice_thickness",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Actual (floe) thickness of sea ice in each ice thickness category, NOT volume divided by grid area (vector with one entry for each ice thickness category starting from the thinnest category, netcdf file should use thickness bounds of categories as third coordinate axis).",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Sea-Ice Thickness in Ice Thickness Categories",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.",
+      "Units": "m",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1675,
+    "labels": [
+      "day",
+      "seaIce"
+    ],
+    "title": "Variable seaIce.day.sithickitd_tavg-u-hxy-si (SIday.siitdthick)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "snditd_tavg-u-hxy-si",
+      "CF standard name": "surface_snow_thickness",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean where sea_ice (mask=siconc)",
+      "Comment": "Actual thickness of snow in each ice thickness category, NOT snow volume divided by grid area (vector with one entry for each ice thickness category starting from the thinnest category, netcdf file should use thickness bounds of categories as third coordinate axis). It can also be derived by dividing the volume of snow by the area of snow in each thickness category.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Snow Thickness in Ice Thickness Categories",
+      "Modeling realm": "seaIce",
+      "Positive": "",
+      "Processing notes": "Note that SIMIP requests the area-weighted average for all intensive variables (i.e., variables that are not proportional to area fraction such as albedo, temperature, or heat flux). Hence, all time samples with non-zero sea-ice fraction are first multiplied by area fraction, then summed, and then divided by the sum of the area fractions. See Appendix C of Notz et al. (2016) for more detail.",
+      "Units": "m",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1674,
+    "labels": [
+      "day",
+      "seaIce"
+    ],
+    "title": "Variable seaIce.day.snditd_tavg-u-hxy-si (SIday.siitdsnthick)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "sncitd_tavg-u-hxy-si",
       "CF standard name": "surface_snow_area_fraction",
       "CMIP6 Differences": "Not present",
