@@ -1,6 +1,306 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "no3_tavg-l-hxy-sea",
+      "CF standard name": "mole_concentration_of_nitrate_in_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Mole concentration means moles (amount of substance) per unit volume and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Dissolved Nitrate Concentration",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "Concentrations of all 3D tracers in the uppermost ocean layer. See first table in Oyr for a complete list of these tracers.  \"Tracer\"  concentations should be reported even if they are diagnosed rather than prognostically calculated.",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "DIN_E3T / thkcello",
+      "Model units": "mmol m-3"
+    },
+    "STASH entries": [],
+    "issue_number": 1519,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.mon.no3_tavg-l-hxy-sea (Omon.no3)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "nh4_tavg-u-hm-sea",
+      "CF standard name": "mole_concentration_of_ammonium_in_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Mole concentration means moles (amount of substance) per unit volume and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Dissolved Ammonium Concentration",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1518,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.nh4_tavg-u-hm-sea (Omon.nh4os)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "nh4_tavg-l-hxy-sea",
+      "CF standard name": "mole_concentration_of_ammonium_in_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Mole concentration means moles (amount of substance) per unit volume and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Dissolved Ammonium Concentration",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "Concentrations of all 3D tracers in the uppermost ocean layer. See first table in Oyr for a complete list of these tracers.  \"Tracer\"  concentations should be reported even if they are diagnosed rather than prognostically calculated.",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1517,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.nh4_tavg-l-hxy-sea (Omon.nh4)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "msftyzmpa_tavg-l-ht-sea",
+      "CF standard name": "ocean_y_overturning_mass_streamfunction_due_to_parameterized_mesoscale_eddy_advection",
+      "CMIP6 Differences": "\"comment\" was \"CMIP5 called this 'due to Bolus Advection'.  Name change respects the more general physics of the mesoscale parameterizations.\";",
+      "Cell measures": "",
+      "Cell methods": "time: mean grid_longitude: mean",
+      "Comment": "CMIP5 called this \"due to Bolus Advection\".  Name change respects the more general physics of the mesoscale parameterizations.",
+      "Dimensions": "gridlatitude olevel basin time",
+      "Frequency": "mon",
+      "Long name": "Ocean Y Overturning Mass Streamfunction Due to Parameterized Mesoscale Advection",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Function of Y, Z, basin. For a model with a cartesian latxlon grid, this is the same as the \"Ocean Meridional Overturning Mass Streamfunction\" (msftmzmpa) and should in this case be omitted.",
+      "Units": "kg s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "SEAWATER_DENSITY * combine_cubes_to_basin_coord(zomsfeivglo, zomsfeivatl, zomsfeivipc, mask_global=global_ocean_2D_V, mask_atl=atlantic_arctic_ocean_2D_V, mask_indpac=indian_pacific_ocean_2D_V)",
+      "Expression UKESM1": "SEAWATER_DENSITY * combine_cubes_to_basin_coord(zomsfeivglo, zomsfeivatl, zomsfeivipc, mask_global=global_ocean_2D_V, mask_atl=atlantic_arctic_ocean_2D_V, mask_indpac=indian_pacific_ocean_2D_V)",
+      "Model units": "sverdrup kg m-3"
+    },
+    "STASH entries": [],
+    "issue_number": 1516,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.mon.msftyzmpa_tavg-l-ht-sea (Omon.msftyzmpa)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "msftyz_tavg-l-ht-sea",
+      "CF standard name": "ocean_y_overturning_mass_streamfunction",
+      "CMIP6 Differences": "",
+      "Cell measures": "",
+      "Cell methods": "time: mean grid_longitude: mean",
+      "Comment": "Overturning mass streamfunction arising from all advective mass transport processes, resolved and parameterized.",
+      "Dimensions": "gridlatitude olevel basin time",
+      "Frequency": "mon",
+      "Long name": "Ocean Y Overturning Mass Streamfunction",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Function of Y, Z, basin. For a model with a cartesian latxlon grid, this is the same as the \"Ocean Meridional Overturning Mass Streamfunction\" (msftmz) and should in this case be omitted.",
+      "Units": "kg s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "SEAWATER_DENSITY * combine_cubes_to_basin_coord(zomsfglo, zomsfatl, zomsfipc, mask_global=global_ocean_2D_V, mask_atl=atlantic_arctic_ocean_2D_V, mask_indpac=indian_pacific_ocean_2D_V)",
+      "Expression UKESM1": "SEAWATER_DENSITY * combine_cubes_to_basin_coord(zomsfglo, zomsfatl, zomsfipc, mask_global=global_ocean_2D_V, mask_atl=atlantic_arctic_ocean_2D_V, mask_indpac=indian_pacific_ocean_2D_V)",
+      "Model units": "sverdrup kg m-3"
+    },
+    "STASH entries": [],
+    "issue_number": 1515,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.mon.msftyz_tavg-l-ht-sea (Omon.msftyz)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "msftyzmpa_tavg-rho-ht-sea",
+      "CF standard name": "ocean_y_overturning_mass_streamfunction_due_to_parameterized_mesoscale_eddy_advection",
+      "CMIP6 Differences": "\"comment\" was \"CMIP5 called this 'due to Bolus Advection'.  Name change respects the more general physics of the mesoscale parameterizations.\"; ; \"dimensions\" was \"gridlatitude rho basin time\";",
+      "Cell measures": "",
+      "Cell methods": "time: mean grid_longitude: mean",
+      "Comment": "CMIP5 called this \"due to Bolus Advection\".  Name change respects the more general physics of the mesoscale parameterizations.",
+      "Dimensions": "rho basin time",
+      "Frequency": "mon",
+      "Long name": "Ocean Y Overturning Mass Streamfunction Due to Parameterized Mesoscale Advection",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Function of Y, rho, basin. For a model with a cartesian latxlon grid, this is the same as the \"Ocean Meridional Overturning Mass Streamfunction\" (msftmrhompa) and should in this case be omitted. ; CHANGE SINCE CMIP6 in Dimensions - CMIP6:gridlatitude rho basin time CMIP7:rho basin time,",
+      "Units": "kg s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1514,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.mon.msftyzmpa_tavg-rho-ht-sea (Omon.msftyrhompa)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "msftyz_tavg-rho-hm-sea",
+      "CF standard name": "ocean_y_overturning_mass_streamfunction",
+      "CMIP6 Differences": "\"dimensions\" was \"gridlatitude rho basin time\";",
+      "Cell measures": "",
+      "Cell methods": "time: mean grid_longitude: mean",
+      "Comment": "Overturning mass streamfunction arising from all advective mass transport processes, resolved and parameterized.",
+      "Dimensions": "rho basin time",
+      "Frequency": "mon",
+      "Long name": "Ocean Y Overturning Mass Streamfunction",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Function of Y, rho, basin. For a model with a cartesian latxlon grid, this is the same as the \"Ocean Meridional Overturning Mass Streamfunction\" (msftmrho) and should in this case be omitted. ; CHANGE SINCE CMIP6 in Dimensions - CMIP6:gridlatitude rho basin time CMIP7:rho basin time,",
+      "Units": "kg s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1513,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.mon.msftyz_tavg-rho-hm-sea (Omon.msftyrho)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "msftmzsmpa_tavg-l-hys-sea",
+      "CF standard name": "ocean_meridional_overturning_mass_streamfunction_due_to_parameterized_submesoscale_eddy_advection",
+      "CMIP6 Differences": "\"cell_methods\" was \"longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time: mean\";",
+      "Cell measures": "",
+      "Cell methods": "longitude: sum (basin sum [along zig-zag grid path]) depth: sum time: mean",
+      "Comment": "Report only if there is a submesoscale eddy parameterization.",
+      "Dimensions": "latitude olevel basin time",
+      "Frequency": "mon",
+      "Long name": "Ocean Meridional Overturning Mass Streamfunction Due to Parameterized Submesoscale Advection",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Function of latitude, Z, basin. For a model with a cartesian latxlon grid, this is the same as the \"Ocean Y Overturning Mass Streamfunction\" (msftyzsmpa), which should in this case be omitted.  For other models, this transport should be approximated as the transport across zig-zag paths corresponding to latitudes with spacing between latitudes appropriate to the model's resolution.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time: mean CMIP7:longitude: sum (basin sum [along zig-zag grid path]) depth: sum time: mean,",
+      "Units": "kg s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1512,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.mon.msftmzsmpa_tavg-l-hys-sea (Omon.msftmzsmpa)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "msftmzmpa_tavg-l-hys-sea",
+      "CF standard name": "ocean_meridional_overturning_mass_streamfunction_due_to_parameterized_mesoscale_eddy_advection",
+      "CMIP6 Differences": "\"cell_methods\" was \"longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time: mean\"; ; \"comment\" was \"CMIP5 called this 'due to Bolus Advection'.  Name change respects the more general physics of the mesoscale parameterizations.\";",
+      "Cell measures": "",
+      "Cell methods": "longitude: sum (basin sum [along zig-zag grid path]) depth: sum time: mean",
+      "Comment": "CMIP5 called this \"due to Bolus Advection\".  Name change respects the more general physics of the mesoscale parameterizations.",
+      "Dimensions": "latitude olevel basin time",
+      "Frequency": "mon",
+      "Long name": "Ocean Meridional Overturning Mass Streamfunction Due to Parameterized Mesoscale Advection",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Function of latitude, Z, basin. For a model with a cartesian latxlon grid, this is the same as the \"Ocean Y Overturning Mass Streamfunction\" (msftyzmpa), which should in this case be omitted.  For other models, this transport should be approximated as the transport across zig-zag paths corresponding to latitudes with spacing between latitudes appropriate to the model's resolution.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time: mean CMIP7:longitude: sum (basin sum [along zig-zag grid path]) depth: sum time: mean,",
+      "Units": "kg s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1511,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.mon.msftmzmpa_tavg-l-hys-sea (Omon.msftmzmpa)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "msftmz_tavg-l-hys-sea",
+      "CF standard name": "ocean_meridional_overturning_mass_streamfunction",
+      "CMIP6 Differences": "\"cell_methods\" was \"longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time: mean\";",
+      "Cell measures": "",
+      "Cell methods": "longitude: sum (basin sum [along zig-zag grid path]) depth: sum time: mean",
+      "Comment": "Overturning mass streamfunction arising from all advective mass transport processes, resolved and parameterized.",
+      "Dimensions": "latitude olevel basin time",
+      "Frequency": "mon",
+      "Long name": "Ocean Meridional Overturning Mass Streamfunction",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Function of latitude, Z, basin. For a model with a cartesian latxlon grid, this is the same as the \"Ocean Y Overturning Mass Streamfunction\" (msftyz), which should in this case be omitted.  For other models, this transport should be approximated as the transport across zig-zag paths corresponding to latitudes with spacing between latitudes appropriate to the model's resolution.; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time: mean CMIP7:longitude: sum (basin sum [along zig-zag grid path]) depth: sum time: mean,",
+      "Units": "kg s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1510,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.mon.msftmz_tavg-l-hys-sea (Omon.msftmz)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "msftmz_tavg-rho-hys-sea",
       "CF standard name": "ocean_meridional_overturning_mass_streamfunction_due_to_parameterized_mesoscale_eddy_advection",
       "CMIP6 Differences": "\"cell_methods\" was \"longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time: mean\"; ; \"comment\" was \"CMIP5 called this 'due to Bolus Advection'.  Name change respects the more general physics of the mesoscale parameterizations.\";",
