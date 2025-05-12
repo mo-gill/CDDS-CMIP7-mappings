@@ -1,4 +1,10 @@
 Model,Branded variable name,Frequency,STASH,Section,Item,time_profile,domain_profile,usage_profile
+UKESM1,cSoil_tavg-u-hxy-lnd,mon,m01s19i016,19,016,TMONMN,DIAG,UP5
+UKESM1,cLand_tavg-u-hxy-lnd,mon,m01s19i002,19,002,TMONMN,DIAG,UP5
+UKESM1,cLand_tavg-u-hxy-lnd,mon,m01s19i016,19,016,TMONMN,DIAG,UP5
+UKESM1,cLand_tavg-u-hxy-lnd,mon,m01s19i032,19,032,TMONMN,DIAG,UP5
+UKESM1,cLand_tavg-u-hxy-lnd,mon,m01s19i033,19,033,TMONMN,DIAG,UP5
+UKESM1,cLand_tavg-u-hxy-lnd,mon,m01s19i034,19,034,TMONMN,DIAG,UP5
 UKESM1,zg_tavg-p39-hy-air,day,m01s30i297,30,297,TDAYMN,PLEV19Z,UP6
 UKESM1,zg_tavg-p39-hy-air,day,m01s30i304,30,304,TDAYMN,PLEV19Z,UP6
 HadGEM3-GC31,zg_tavg-p39-hy-air,day,m01s30i297,30,297,TDAYMN,PLEV19Z,UP6
