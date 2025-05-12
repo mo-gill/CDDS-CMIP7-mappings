@@ -1,6 +1,122 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "prsn18O_tavg-u-hxy-u",
+      "CF standard name": "solid_precipitation_flux_containing_18O",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Precipitation mass flux of water molecules that contain the oxygen-18 isotope (H2 18O), including solid phase only.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Precipitation Flux of Snow and Ice Containing Oxygen-18 (H2 18O)",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 976,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.mon.prsn18O_tavg-u-hxy-u (Emon.prsn18O)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "prhmax_tstat-u-hxy-u",
+      "CF standard name": "precipitation_flux",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: mean time: mean within hours time: maximum over hours\"; ; \"comment\" was \"In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean time: maximum",
+      "Comment": "In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Maximum Hourly Precipitation Rate",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean time: mean within hours time: maximum over hours CMIP7:area: mean time: maximum,",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 975,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.mon.prhmax_tstat-u-hxy-u (Emon.prhmax)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "pr2h_tavg-u-hxy-u",
+      "CF standard name": "precipitation_flux_containing_single_2H",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Precipitation mass flux of water molecules that contain one atom of the hydrogen-2 isotope (1H 2H O), including solid and liquid phases.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Precipitation Flux of Water Containing Deuterium (1H 2H O)",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 974,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.mon.pr2h_tavg-u-hxy-u (Emon.pr2h)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "pr18O_tavg-u-hxy-u",
+      "CF standard name": "precipitation_flux_containing_18O",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Precipitation mass flux of water molecules that contain the oxygen-18 isotope (H2 18O), including solid and liquid phases.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Precipitation Flux of Water Containing Oxygen-18 (H2 18O)",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 973,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.mon.pr18O_tavg-u-hxy-u (Emon.pr18O)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "pr17O_tavg-u-hxy-u",
       "CF standard name": "precipitation_flux_containing_17O",
       "CMIP6 Differences": "",
