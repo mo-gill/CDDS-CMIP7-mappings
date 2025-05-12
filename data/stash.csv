@@ -1,4 +1,10 @@
 Model,Branded variable name,Frequency,STASH,Section,Item,time_profile,domain_profile,usage_profile
+UKESM1,fNAnthDisturb_tavg-u-hxy-lnd,mon,m01s19i120,19,120,TMONMN,DIAG,UP5
+UKESM1,fNAnthDisturb_tavg-u-hxy-lnd,mon,m01s19i122,19,122,TMONMN,DIAG,UP5
+UKESM1,fLuc_tavg-u-hxy-lnd,mon,m01s19i039,19,039,TMONMN,DIAG,UP5
+UKESM1,fLuc_tavg-u-hxy-lnd,mon,m01s19i040,19,040,TMONMN,DIAG,UP5
+UKESM1,fLuc_tavg-u-hxy-lnd,mon,m01s19i041,19,041,TMONMN,DIAG,UP5
+UKESM1,fHarvestToAtmos_tavg-u-hxy-lnd,mon,m01s19i044,19,044,TMONMN,DIAG,UP5
 UKESM1,fDeforestToProduct_tavg-u-hxy-lnd,mon,m01s19i036,19,036,TMONMN,DIAG,UP5
 UKESM1,fDeforestToProduct_tavg-u-hxy-lnd,mon,m01s19i037,19,037,TMONMN,DIAG,UP5
 UKESM1,fDeforestToProduct_tavg-u-hxy-lnd,mon,m01s19i038,19,038,TMONMN,DIAG,UP5

@@ -1,6 +1,353 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "fNLandToOcean_tavg-u-hxy-lnd",
+      "CF standard name": "mass_flux_of_nitrogen_compounds_expressed_as_nitrogen_into_sea_from_rivers",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "leached nitrogen etc that goes into run off or river routing and finds its way into ocean should be reported here.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Lateral Transfer of Nitrogen out of Grid Cell That Eventually Goes into Ocean",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 894,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.mon.fNLandToOcean_tavg-u-hxy-lnd (Emon.fNLandToOcean)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fNAnthDisturb_tavg-u-hxy-lnd",
+      "CF standard name": "tendency_of_atmosphere_mass_content_of_nitrogen_compounds_expressed_as_nitrogen_due_to_anthropogenic_emission",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "will require some careful definition to make sure we capture everything - any human activity that releases nitrogen from land  instead of into product pool goes here. E.g. Deforestation fire, harvest assumed to decompose straight away, grazing...",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Nitrogen Mass Flux out of Land Due to any Human Activity",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "(m01s19i120[lbtim_ia=240,lbproc=128] + m01s19i122[lbtim_ia=240,lbproc=128]) / (SECONDS_IN_DAY * DAYS_IN_YEAR)",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s19i120",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "19,120",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i122",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "19,122",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 893,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable land.mon.fNAnthDisturb_tavg-u-hxy-lnd (Emon.fNAnthDisturb)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fN2O_tavg-u-hxy-lnd",
+      "CF standard name": "surface_upward_mass_flux_of_nitrous_oxide_expressed_as_nitrogen_out_of_vegetation_and_litter_and_soil",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "Surface upward flux of nitrous oxide (N2O) from vegetation (any living plants e.g. trees, shrubs, grass), litter (dead plant material in or above the soil), soil.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Total Land N2O Flux",
+      "Modeling realm": "land",
+      "Positive": "up",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 892,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.mon.fN2O_tavg-u-hxy-lnd (Emon.fN2O)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fLuc_tavg-u-hxy-lus",
+      "CF standard name": "surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_anthropogenic_land_use_or_land_cover_change_excluding_forestry_and_agricultural_products",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where sector",
+      "Comment": "This annual mean flux refers to the transfer of carbon directly to the atmosphere due to any land-use or land-cover change activities.  Include carbon transferred due to deforestation or agricultural directly into atmosphere, and  emissions form anthropogenic pools into atmosphere",
+      "Dimensions": "longitude latitude landUse time",
+      "Frequency": "mon",
+      "Long name": "Carbon Transferred Directly to Atmosphere Due to any Land-Use or Land-Cover Change Activities [kgC m-2 s-1]",
+      "Modeling realm": "land",
+      "Positive": "up",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude landUse time CMIP7:longitude latitude time landUse,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 891,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.mon.fLuc_tavg-u-hxy-lus (Emon.fLulccAtmLut)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fLuc_tavg-u-hxy-lnd",
+      "CF standard name": "surface_net_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_anthropogenic_land_use_change",
+      "CMIP6 Differences": "\"comment\" was \"Carbon mass flux per unit area into atmosphere due to human changes to land (excluding forest regrowth) accounting possibly for different time-scales related to fate of the wood, for example.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "Net Carbon Mass Flux into Atmosphere due to Land Use Change",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Net Carbon Mass Flux into Atmosphere Due to Land-Use Change [kgC m-2 s-1]",
+      "Modeling realm": "land",
+      "Positive": "up",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "(m01s19i039[lbtim_ia=240,lbproc=128] + m01s19i040[lbtim_ia=240,lbproc=128] + m01s19i041[lbtim_ia=240,lbproc=128]) / (SECONDS_IN_DAY * DAYS_IN_YEAR)",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s19i039",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "19,039",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i040",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "19,040",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i041",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "19,041",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 890,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable land.mon.fLuc_tavg-u-hxy-lnd (Emon.fLuc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fLitterFire_tavg-u-hxy-lnd",
+      "CF standard name": "surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_litter_in_fires",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "Required for unambiguous separation of vegetation and soil + litter turnover times, since total fire flux draws from both sources",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Carbon Mass Flux from Litter, CWD or any non-Living Pool into Atmosphere Due to CO2 Emission from All Fire [kgC m-2 s-1]",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 889,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.mon.fLitterFire_tavg-u-hxy-lnd (Emon.fLitterFire)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fHarvestToProduct_tavg-u-hxy-lnd",
+      "CF standard name": "mass_flux_of_carbon_into_forestry_and_agricultural_products_due_to_crop_harvesting",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "be it food or wood harvest, any carbon that is subsequently stored is reported here",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Harvested Biomass That Goes into Product Pool",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 888,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.mon.fHarvestToProduct_tavg-u-hxy-lnd (Emon.fHarvestToProduct)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fHarvestToAtmos_tavg-u-hxy-lnd",
+      "CF standard name": "surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_crop_harvesting",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "any harvested carbon that is assumed to decompose immediately into the atmosphere is reported here",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Harvested Biomass That Goes Straight into Atmosphere as Carbon Mass Flux [kgC m-2 s-1]",
+      "Modeling realm": "land",
+      "Positive": "up",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "m01s19i044[lbtim_ia=240,lbproc=128] / (SECONDS_IN_DAY * DAYS_IN_YEAR)",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s19i044",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "19,044",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 887,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable land.mon.fHarvestToAtmos_tavg-u-hxy-lnd (Emon.fHarvestToAtmos)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fFireNat_tavg-u-hxy-lnd",
+      "CF standard name": "surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_natural_fires",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "CO2 emissions from natural fires",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Carbon Mass Flux into Atmosphere Due to CO2 Emission from Natural Fire [kgC m-2 s-1]",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 886,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.mon.fFireNat_tavg-u-hxy-lnd (Emon.fFireNat)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fFireAll_tavg-u-hxy-lnd",
+      "CF standard name": "surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_fires",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "From all sources,  Including natural, anthropogenic and Land-use change. Only total fire emissions can be compared to observations.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Carbon Mass Flux into Atmosphere Due to CO2 Emission from Fire Including All Sources [kgC m-2 s-1]",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 885,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.mon.fFireAll_tavg-u-hxy-lnd (Emon.fFireAll)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "fDeforestToProduct_tavg-u-hxy-lnd",
       "CF standard name": "carbon_mass_flux_into_forestry_and_agricultural_products_due_to_anthropogenic_land_use_or_land_cover_change",
       "CMIP6 Differences": "",
