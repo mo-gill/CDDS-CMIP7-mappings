@@ -1,6 +1,306 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "tossq_tavg-u-hxy-sea",
+      "CF standard name": "square_of_sea_surface_temperature",
+      "CMIP6 Differences": "\"comment\" was \"Square of temperature of liquid ocean.\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Square of temperature of liquid ocean, averaged over the day.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Square of Sea Surface Temperature",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on the ocean horizontal native grid.",
+      "Units": "degC2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "tossq",
+      "Expression UKESM1": "tossq",
+      "Model units": "degC2"
+    },
+    "STASH entries": [],
+    "issue_number": 1341,
+    "labels": [
+      "day",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.day.tossq_tavg-u-hxy-sea (Oday.tossq)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tos_tavg-u-hxy-sea",
+      "CF standard name": "sea_surface_temperature",
+      "CMIP6 Differences": "\"comment\" was \"Temperature of upper boundary of the liquid ocean, including temperatures below sea-ice and floating ice shelves.\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "This may differ from \"surface temperature\" in regions of sea ice or floating ice shelves. For models using conservative temperature as the prognostic field, they should report the top ocean layer as surface potential temperature, which is the same as surface in situ temperature.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Sea Surface Temperature",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on the ocean horizontal native grid.",
+      "Units": "degC",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "tos",
+      "Expression UKESM1": "tos",
+      "Model units": "degC"
+    },
+    "STASH entries": [],
+    "issue_number": 1340,
+    "labels": [
+      "day",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable ocean.day.tos_tavg-u-hxy-sea (Oday.tos)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "thetao_tavg-u-hxy-sea",
+      "CF standard name": "sea_water_potential_temperature",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean",
+      "Comment": "Diagnostic should be contributed even for models using conservative temperature as prognostic field.",
+      "Dimensions": "longitude latitude time op20bar",
+      "Frequency": "day",
+      "Long name": "Sea Water Potential Temperature at 200 meters",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "The variable at the depth of 200 meters is requested.",
+      "Units": "degC",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1339,
+    "labels": [
+      "day",
+      "ocean"
+    ],
+    "title": "Variable ocean.day.thetao_tavg-u-hxy-sea (Oday.thetao200)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sos_tavg-u-hxy-sea",
+      "CF standard name": "sea_surface_salinity",
+      "CMIP6 Differences": "\"units\" was \"0.001\"; ; \"comment\" was \"Sea water salinity is the salt content of sea water, often on the Practical Salinity Scale of 1978. However, the unqualified term 'salinity' is generic and does not necessarily imply any particular method of calculation. The units of salinity are dimensionless and the units attribute should normally be given as 1e-3 or 0.001 i.e. parts per thousand. \";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Sea water salinity is the salt content of sea water, often on the Practical Salinity Scale of 1978. However, the unqualified term 'salinity' is generic and does not necessarily imply any particular method of calculation. The units of salinity are dimensionless and the units attribute should normally be given as 1e-3 or 0.001 i.e. parts per thousand.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Sea Surface Salinity",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on the ocean horizontal native grid.; ; ; CHANGE SINCE CMIP6 in Units (from Physical Parameter) - CMIP6:0.001 CMIP7:1E-03,",
+      "Units": "1E-03",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "sos",
+      "Expression UKESM1": "sos",
+      "Model units": "1e-3"
+    },
+    "STASH entries": [],
+    "issue_number": 1338,
+    "labels": [
+      "day",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable ocean.day.sos_tavg-u-hxy-sea (Oday.sos)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "so_tavg-l-hxy-sea",
+      "CF standard name": "sea_water_salinity",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Sea water salinity is the salt content of sea water, often on the Practical Salinity Scale of 1978. However, the unqualified term 'salinity' is generic and does not necessarily imply any particular method of calculation.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "day",
+      "Long name": "Sea water salinity",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid as well as on a spherical latitude/longitude grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native",
+      "Units": "1E-03",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1337,
+    "labels": [
+      "day",
+      "ocean"
+    ],
+    "title": "Variable ocean.day.so_tavg-l-hxy-sea (Oday.so)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rsdo_tavg-l-hxy-sea",
+      "CF standard name": "downwelling_shortwave_flux_in_sea_water",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Downwelling Shortwave Radiation in Sea Water",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "day",
+      "Long name": "Downwelling Shortwave Radiation in Sea Water",
+      "Modeling realm": "ocean",
+      "Positive": "down",
+      "Processing notes": "",
+      "Units": "W m-2",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1336,
+    "labels": [
+      "day",
+      "ocean"
+    ],
+    "title": "Variable ocean.day.rsdo_tavg-l-hxy-sea (Oday.rsdo)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "phycpico_ti-u-hm-u",
+      "CF standard name": "mole_concentration_of_picophytoplankton_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Mole Concentration of Picophytoplankton Expressed as Carbon in Sea Water",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Carbon concentration of picophytoplankton",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-3",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1335,
+    "labels": [
+      "day",
+      "ocnBgchem"
+    ],
+    "title": "Variable ocnBgchem.day.phycpico_ti-u-hm-u (Oday.phycpico)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "phyco_tavg-z0m-hxy-sea",
+      "CF standard name": "mole_concentration_of_phytoplankton_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "sum of phytoplankton organic carbon component concentrations at the sea surface",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Sea Surface Phytoplankton Carbon Concentration",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "(SURF_PHN + SURF_PHD) * C_TO_N_RATIO",
+      "Model units": "-"
+    },
+    "STASH entries": [],
+    "issue_number": 1334,
+    "labels": [
+      "day",
+      "ocnBgchem",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable ocnBgchem.day.phyco_tavg-z0m-hxy-sea (Oday.phycos)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "phycnano_tavg-u-hxy-sea",
+      "CF standard name": "mole_concentration_of_nanophytoplankton_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Mole Concentration of Nanophytoplankton Expressed as Carbon in Sea Water",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Carbon concentration of nanophytoplankton",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "Analogous to Oday.phyc",
+      "Units": "mol m-3",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1333,
+    "labels": [
+      "day",
+      "ocnBgchem"
+    ],
+    "title": "Variable ocnBgchem.day.phycnano_tavg-u-hxy-sea (Oday.phycnano)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "phycmisc_tavg-u-hxy-sea",
+      "CF standard name": "mole_concentration_of_miscellaneous_phytoplankton_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Mole Concentration of Miscellaneous Phytoplankton Expressed as Carbon in Sea Water",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Carbon concentration of miscellaneous phytoplankton",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-3",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1332,
+    "labels": [
+      "day",
+      "ocnBgchem"
+    ],
+    "title": "Variable ocnBgchem.day.phycmisc_tavg-u-hxy-sea (Oday.phycmisc)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "phycdiaz_tavg-u-hxy-sea",
       "CF standard name": "mole_concentration_of_diazotrophic_phytoplankton_expressed_as_carbon_in_sea_water",
       "CMIP6 Differences": "Not present",
