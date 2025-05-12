@@ -1,6 +1,308 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "ocontemppmdiff_tavg-l-hxy-sea",
+      "CF standard name": "tendency_of_sea_water_conservative_temperature_expressed_as_heat_content_due_to_parameterized_mesoscale_eddy_diffusion",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Tendency of heat content for a grid cell from parameterized mesoscale eddy diffusion. Reported only for models that use conservative temperature as prognostic field.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "yr",
+      "Long name": "Tendency of Sea Water Conservative Temperature Expressed as Heat Content Due to Parameterized Mesoscale Diffusion",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1631,
+    "labels": [
+      "yr",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.yr.ocontemppmdiff_tavg-l-hxy-sea (Oyr.ocontemppmdiff)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ocontemppadvect_tavg-l-hxy-sea",
+      "CF standard name": "tendency_of_sea_water_conservative_temperature_expressed_as_heat_content_due_to_parameterized_eddy_advection",
+      "CMIP6 Differences": "\"comment\" was \"Tendency of heat content for a grid cell from parameterized eddy advection (any form of eddy advection). Reported only for models that use conservative temperature as prognostic field.\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Tendency of heat content for a grid cell from parameterized eddy advection (all forms of eddy advection). Reported only for models that use conservative temperature as prognostic field.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "yr",
+      "Long name": "Tendency of Sea Water Conservative Temperature Expressed as Heat Content Due to Parameterized Eddy Advection",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1630,
+    "labels": [
+      "yr",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.yr.ocontemppadvect_tavg-l-hxy-sea (Oyr.ocontemppadvect)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ocontempmint_tavg-u-hxy-sea",
+      "CF standard name": "integral_wrt_depth_of_product_of_conservative_temperature_and_sea_water_density",
+      "CMIP6 Differences": "\"comment\" was \"Full column sum of density*cell thickness*conservative temperature. If the model is Boussinesq, then use Boussinesq reference density for the density factor.\"; ; \"standard_name\" was \"integral_wrt_depth_of_product_of_sea_water_density_and_conservative_temperature\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Full column sum of density\\*cell thickness\\*conservative temperature. If the model is Boussinesq, then use Boussinesq reference density for the density factor.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "yr",
+      "Long name": "Depth Integral of Product of Sea Water Density and Conservative Temperature",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid.",
+      "Units": "degC kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1629,
+    "labels": [
+      "yr",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.yr.ocontempmint_tavg-u-hxy-sea (Oyr.ocontempmint)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ocontempdiff_tavg-l-hxy-sea",
+      "CF standard name": "tendency_of_sea_water_conservative_temperature_expressed_as_heat_content_due_to_parameterized_dianeutral_mixing",
+      "CMIP6 Differences": "\"standard_name\" was \"tendency_of_sea_water_conservative_temperature_expressed_as_heat_content_due_to_parameterized_eddy_dianeutral_mixing\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Tendency of heat content for a grid cell from parameterized dianeutral mixing. Reported only for models that use conservative temperature as prognostic field.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "yr",
+      "Long name": "Tendency of Sea Water Conservative Temperature Expressed as Heat Content Due to Parameterized Dianeutral Mixing",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1628,
+    "labels": [
+      "yr",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.yr.ocontempdiff_tavg-l-hxy-sea (Oyr.ocontempdiff)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "dispkexyfo_tavg-u-hxy-sea",
+      "CF standard name": "ocean_kinetic_energy_dissipation_per_unit_area_due_to_xy_friction",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Depth integrated impacts on kinetic energy arising from lateral frictional dissipation associated with Laplacian and/or biharmonic viscosity. For CMIP5, this diagnostic was 3d, whereas the CMIP6 depth integrated diagnostic is sufficient for many purposes and reduces archive requirements.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "yr",
+      "Long name": "Ocean Kinetic Energy Dissipation per Unit Area Due to XY Friction",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid.",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "dispkexyfo",
+      "Expression UKESM1": "dispkexyfo",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 1627,
+    "labels": [
+      "yr",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.yr.dispkexyfo_tavg-u-hxy-sea (Oyr.dispkexyfo)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "difvso_tavg-l-hxy-sea",
+      "CF standard name": "ocean_vertical_salt_diffusivity",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Vertical/dianeutral diffusivity applied to prognostic salinity field.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "yr",
+      "Long name": "Ocean Vertical Salt Diffusivity",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.",
+      "Units": "m2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "difvso",
+      "Expression UKESM1": "difvso",
+      "Model units": "m2 s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1626,
+    "labels": [
+      "yr",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.yr.difvso_tavg-l-hxy-sea (Oyr.difvso)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "difvho_tavg-l-hxy-sea",
+      "CF standard name": "ocean_vertical_heat_diffusivity",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Vertical/dianeutral diffusivity applied to prognostic temperature field.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "yr",
+      "Long name": "Ocean Vertical Heat Diffusivity",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid as well. Online mapping to depth/pressure vertical grid if depth or pressure are not native.",
+      "Units": "m2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "difvho",
+      "Expression UKESM1": "difvho",
+      "Model units": "m2 s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1625,
+    "labels": [
+      "yr",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.yr.difvho_tavg-l-hxy-sea (Oyr.difvho)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "diftrelo_tavg-l-hxy-sea",
+      "CF standard name": "ocean_tracer_epineutral_laplacian_diffusivity",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Ocean tracer diffusivity associated with parameterized eddy-induced diffusive transport oriented along neutral or isopycnal directions. Sometimes this diffusivity is called the neutral diffusivity or isopycnal diffusivity or Redi diffusivity.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "yr",
+      "Long name": "Ocean Tracer Epineutral Laplacian Diffusivity",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.",
+      "Units": "m2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1624,
+    "labels": [
+      "yr",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.yr.diftrelo_tavg-l-hxy-sea (Oyr.diftrelo)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "diftrblo_tavg-l-hxy-sea",
+      "CF standard name": "ocean_tracer_laplacian_diffusivity_due_to_parameterized_mesoscale_eddy_advection",
+      "CMIP6 Differences": "\"comment\" was \"Ocean tracer diffusivity associated with parameterized eddy-induced advective transport. Sometimes this diffusivity is called the 'thickness' diffusivity. For CMIP5, this diagnostic was called 'ocean tracer bolus laplacian diffusivity'.  The CMIP6 name is physically more relevant.\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Ocean tracer diffusivity associated with parameterized eddy-induced advective transport. Sometimes this diffusivity is called the \"thickness\" diffusivity. For CMIP5, this diagnostic was called \"ocean tracer bolus laplacian diffusivity\".  The CMIP6 name is physically more relevant.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "yr",
+      "Long name": "Ocean Tracer Diffusivity Due to Parameterized Mesoscale Advection",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.",
+      "Units": "m2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1623,
+    "labels": [
+      "yr",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.yr.diftrblo_tavg-l-hxy-sea (Oyr.diftrblo)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "difmxylo_tavg-l-hxy-sea",
+      "CF standard name": "ocean_momentum_xy_laplacian_diffusivity",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Lateral Laplacian viscosity applied to the momentum equations.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "yr",
+      "Long name": "Ocean Momentum XY Laplacian Diffusivity",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.",
+      "Units": "m2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1622,
+    "labels": [
+      "yr",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.yr.difmxylo_tavg-l-hxy-sea (Oyr.difmxylo)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "difmxybo_tavg-l-hxy-sea",
       "CF standard name": "ocean_momentum_xy_biharmonic_diffusivity",
       "CMIP6 Differences": "",
