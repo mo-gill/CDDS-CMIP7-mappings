@@ -1,6 +1,540 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "sootsn_tavg-u-hxy-lnd",
+      "CF standard name": "soot_content_of_surface_snow",
+      "CMIP6 Differences": "\"modeling_realm\" was \"landIce land\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "the entire land portion of the grid cell is considered, with snow soot content set to 0.0 in regions free of snow.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Snow Soot Content",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:land, landIce CMIP7:land, ocean,",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1262,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.sootsn_tavg-u-hxy-lnd (LImon.sootsn)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "snw_tavg-u-hxy-lnd",
+      "CF standard name": "surface_snow_amount",
+      "CMIP6 Differences": "\"comment\" was \"The mass of surface snow on the land portion of the grid cell divided by the land area in the grid cell; reported as missing where the land fraction is 0; excludes snow on vegetation canopy or on sea ice.\"; ; \"modeling_realm\" was \"landIce land\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "Computed as the mass of surface snow on the land portion of the grid cell divided by the land area in the grid cell; reported as missing where the land fraction is 0; excluded is snow on vegetation canopy or on sea ice.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Snow Amount",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:land, landIce CMIP7:land, ocean,",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "land_class_mean(m01s08i236[lbproc=128], m01s03i317[lbproc=128], land_class='all')",
+      "Expression UKESM1": "land_class_mean(m01s08i236[lbproc=128], m01s03i317[lbproc=128], land_class='all')",
+      "Model units": "kg m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i236",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "8,236",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i236",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "8,236",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1261,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable landIce.mon.snw_tavg-u-hxy-lnd (LImon.snw)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "snm_tavg-u-hxy-is",
+      "CF standard name": "surface_snow_melt_flux",
+      "CMIP6 Differences": "\"comment\" was \"The total surface snow melt rate on the land portion of the grid cell divided by the land area in the grid cell; report as zero for snow-free land regions and missing where there is no land.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "Loss of snow mass resulting from surface melting. Computed as the surface melt water from snow on the ice sheet portion of the grid cell divided by the ice_sheet area in the grid cell; report as 0.0 for snow-free land_ice regions; report as missing where the land fraction is 0.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Ice Sheet Surface Snow Melt",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "land_class_mean(m01s08i579[lbproc=128], m01s03i317[lbproc=128], land_class='iceElev')",
+      "Expression UKESM1": "land_class_mean(m01s08i579[lbproc=128], m01s03i317[lbproc=128], land_class='iceElev')",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i579",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "8,579",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i579",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "8,579",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1260,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable landIce.mon.snm_tavg-u-hxy-is (LImon.snmIs)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "snm_tavg-u-hxy-lnd",
+      "CF standard name": "surface_snow_melt_flux",
+      "CMIP6 Differences": "\"comment\" was \"The total surface snow melt rate on the land portion of the grid cell divided by the land area in the grid cell; report as zero for snow-free land regions and missing where there is no land.\"; ; \"modeling_realm\" was \"landIce land\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "Computed as the total surface melt water on the land portion of the grid cell divided by the land area in the grid cell; report as 0.0 for snow-free land regions; report as missing where the land fraction is 0.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Snow Melt",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:land, landIce CMIP7:land, ocean,",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "land_class_mean(m01s08i237[lbproc=128], m01s03i317[lbproc=128], land_class='all')",
+      "Expression UKESM1": "land_class_mean(m01s08i237[lbproc=128], m01s03i317[lbproc=128], land_class='all')",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i237",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "8,237",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i237",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "8,237",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1259,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable landIce.mon.snm_tavg-u-hxy-lnd (LImon.snm)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "snicem_tavg-u-hxy-is",
+      "CF standard name": "surface_snow_and_ice_melt_flux",
+      "CMIP6 Differences": "\"comment\" was \"Loss of snow and ice mass resulting from surface melting. Computed as the total surface melt on the land ice portion of the grid cell divided by land ice area in the grid cell.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "quantity averaged over ice_sheet (meaning grounded ice sheet and floating ice shelf) only, to avoid contamination from other surfaces (eg: permafrost)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Ice Sheet Surface Snow and Ice Melt Flux",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "land_class_mean(m01s08i579[lbproc=128], m01s03i317[lbproc=128], land_class='iceElev')",
+      "Expression UKESM1": "land_class_mean(m01s08i579[lbproc=128], m01s03i317[lbproc=128], land_class='iceElev')",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i579",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "8,579",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i579",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "8,579",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1258,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable landIce.mon.snicem_tavg-u-hxy-is (LImon.snicemIs)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "snrefr_tavg-u-hxy-is",
+      "CF standard name": "surface_snow_and_ice_refreezing_flux",
+      "CMIP6 Differences": "\"comment\" was \"Mass flux of surface meltwater which refreezes within the snowpack. Computed as the total refreezing on the land ice portion of the grid cell divided by land ice area in the grid cell.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "quantity averaged over ice_sheet (meaning grounded ice sheet and floating ice shelf) only, to avoid contamination from other surfaces (eg: permafrost)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Ice Sheet Surface Snow and Ice Refreeze Flux",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "land_class_mean(m01s08i580[lbproc=128], m01s03i317[lbproc=128], land_class='iceElev')",
+      "Expression UKESM1": "land_class_mean(m01s08i580[lbproc=128], m01s03i317[lbproc=128], land_class='iceElev')",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i580",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "8,580",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i580",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "8,580",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1257,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable landIce.mon.snrefr_tavg-u-hxy-is (LImon.snicefreezIs)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "snd_tavg-u-hxy-lnd",
+      "CF standard name": "surface_snow_thickness",
+      "CMIP6 Differences": "\"comment\" was \"where land over land, this is computed as the mean thickness of snow in the land portion of the grid cell (averaging over the entire land portion, including the snow-free fraction).  Reported as 0.0 where the land fraction is 0.\"; ; \"modeling_realm\" was \"landIce land\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "where land over land, this is computed as the mean thickness of snow in the land portion of the grid cell (averaging over the entire land portion, including the snow-free fraction).  Reported as missing where the land fraction is 0.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Snow Depth",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:land, landIce CMIP7:land, ocean,",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "land_class_mean(m01s08i376[lbproc=128], m01s03i317[lbproc=128], land_class='all')",
+      "Expression UKESM1": "land_class_mean(m01s08i376[lbproc=128], m01s03i317[lbproc=128], land_class='all')",
+      "Model units": "m"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i376",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "8,376",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s08i376",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "8,376",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1256,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable landIce.mon.snd_tavg-u-hxy-lnd (LImon.snd)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "snc_tavg-u-hxy-is",
+      "CF standard name": "surface_snow_area_fraction",
+      "CMIP6 Differences": "\"comment\" was \"Percentage of each grid cell that is occupied by snow that rests on land portion of cell.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where ice_sheet",
+      "Comment": "quantity averaged over ice_sheet (meaning grounded ice sheet and floating ice shelf) only, to avoid contamination from other surfaces (eg: permafrost)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Ice Sheet Snow Cover Percentage",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1255,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.snc_tavg-u-hxy-is (LImon.sncIs)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sftgrf_tavg-u-hxy-u",
+      "CF standard name": "grounded_ice_sheet_area_fraction",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Percentage of grid cell covered by grounded ice sheet",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Grounded Ice Sheet Area Percentage",
+      "Modeling realm": "landIce",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Modeling Realm - CMIP6:landIce CMIP7:ocean,",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1254,
+    "labels": [
+      "mon",
+      "landIce",
+      "CMIP6"
+    ],
+    "title": "Variable landIce.mon.sftgrf_tavg-u-hxy-u (LImon.sftgrf)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sftgif_tavg-u-hxy-u",
+      "CF standard name": "land_ice_area_fraction",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Percentage of grid cell covered by land ice (ice sheet, ice shelf, ice cap, glacier)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Land Ice Area Percentage",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "land_class_area(m01s03i317[lbproc=128], m01s03i395[lbproc=128], land_class='iceElev')",
+      "Expression UKESM1": "land_class_area(m01s03i317[lbproc=128], m01s03i395[lbproc=128], land_class='iceElev')",
+      "Model units": "%"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i317",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,317",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1253,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable land.mon.sftgif_tavg-u-hxy-u (LImon.sftgif)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "sftflf_tavg-u-hxy-u",
       "CF standard name": "floating_ice_shelf_area_fraction",
       "CMIP6 Differences": "",
