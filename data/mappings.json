@@ -1,6 +1,413 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "clcalipsoice_tavg-h40-hxy-air",
+      "CF standard name": "ice_cloud_area_fraction_in_atmosphere_layer",
+      "CMIP6 Differences": "\"comment\" was \"Percentage cloud cover in CALIPSO standard atmospheric layers.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "time: mean",
+      "Comment": "CALIPSO Ice Cloud Fraction",
+      "Dimensions": "longitude latitude alt40 time",
+      "Frequency": "mon",
+      "Long name": "CALIPSO Ice Cloud Percentage",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s02i474[lbproc=128] / m01s02i325[lbproc=128]",
+      "Expression UKESM1": "m01s02i474[lbproc=128] / m01s02i325[lbproc=128]",
+      "Model units": "1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s02i325",
+        "domain_profile": "DCOSP40H",
+        "model": "UKESM1",
+        "stash_number": "2,325",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i474",
+        "domain_profile": "DCOSP40H",
+        "model": "UKESM1",
+        "stash_number": "2,474",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i325",
+        "domain_profile": "DCOSP40H",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,325",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i474",
+        "domain_profile": "DCOSP40H",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,474",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 861,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.clcalipsoice_tavg-h40-hxy-air (Emon.clcalipsoice)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "cfadLidarsr532_tavg-h40-hxy-air",
+      "CF standard name": "histogram_of_backscattering_ratio_in_air_over_height_above_reference_ellipsoid",
+      "CMIP6 Differences": "\"standard_name\" was \"histogram_of_backscattering_ratio_over_height_above_reference_ellipsoid\"; ; \"comment\" was \"CFAD (Cloud Frequency Altitude Diagrams) are frequency distributions of radar  reflectivity (or lidar scattering ratio) as a function of altitude. The variable cfadLidarsr532 is defined as the simulated relative frequency of lidar scattering ratio in sampling volumes defined by altitude bins. The lidar is observing at a wavelength of 532nm.\"; ; \"cell_methods\" was \"area: time: mean\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where air",
+      "Comment": "CALIPSO Scattering Ratio",
+      "Dimensions": "longitude latitude alt40 scatratio time",
+      "Frequency": "mon",
+      "Long name": "CALIPSO Scattering Ratio CFAD",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:area: time: mean where air,",
+      "Units": "1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s02i370[lbproc=128]",
+      "Expression UKESM1": "m01s02i370[lbproc=128]",
+      "Model units": "1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s02i370",
+        "domain_profile": "DCOSPCFL",
+        "model": "UKESM1",
+        "stash_number": "2,370",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i370",
+        "domain_profile": "DCOSPCFL",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,370",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 860,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.cfadLidarsr532_tavg-h40-hxy-air (Emon.cfadLidarsr532)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "cfadDbze94_tavg-h40-hxy-air",
+      "CF standard name": "histogram_of_equivalent_reflectivity_factor_over_height_above_reference_ellipsoid",
+      "CMIP6 Differences": "\"comment\" was \"CFAD (Cloud Frequency Altitude Diagrams) are frequency distributions of radar  reflectivity (or lidar scattering ratio) as a function of altitude. The variable cfadDbze94 is defined as the simulated relative frequency of occurrence of radar reflectivity in sampling volumes defined by altitude bins. The radar is observing at a frequency of 94GHz.\"; ; \"cell_methods\" was \"area: time: mean\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where air",
+      "Comment": "CloudSat Radar Reflectivity",
+      "Dimensions": "longitude latitude alt40 dbze time",
+      "Frequency": "mon",
+      "Long name": "CloudSat Radar Reflectivity CFAD",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:area: time: mean where air,",
+      "Units": "1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s02i372[lbproc=128]",
+      "Expression UKESM1": "m01s02i372[lbproc=128]",
+      "Model units": "1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s02i372",
+        "domain_profile": "DCOSPCFR",
+        "model": "UKESM1",
+        "stash_number": "2,372",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s02i372",
+        "domain_profile": "DCOSPCFR",
+        "model": "HadGEM3-GC31",
+        "stash_number": "2,372",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 859,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.cfadDbze94_tavg-h40-hxy-air (Emon.cfadDbze94)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ccldncl_tavg-u-hxy-ccl",
+      "CF standard name": "number_concentration_of_convective_cloud_liquid_water_particles_at_convective_liquid_water_cloud_top",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Cloud Droplet Number Concentration of Convective Cloud Tops",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Cloud Droplet Number Concentration of Convective Cloud Tops",
+      "Modeling realm": "aerosol",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "m-3",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 858,
+    "labels": [
+      "mon",
+      "aerosol"
+    ],
+    "title": "Variable aerosol.mon.ccldncl_tavg-u-hxy-ccl (Emon.ccldncl)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "cWood_tavg-u-hxy-lnd",
+      "CF standard name": "stem_mass_content_of_carbon",
+      "CMIP6 Differences": "\"comment\" was \"Carbon mass per unit area in wood, including sapwood and hardwood.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "Carbon Mass in Wood",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Carbon Mass in Wood",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 857,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.mon.cWood_tavg-u-hxy-lnd (Emon.cWood)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "cVeg_tavg-u-hxy-tree",
+      "CF standard name": "vegetation_carbon_content",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: time: mean where trees (comment: mask=treeFrac)\"; ; \"comment\" was \"'Content' indicates a quantity per unit area. 'Vegetation' means any plants e.g. trees, shrubs, grass. Plants are autotrophs i.e. 'producers' of biomass using carbon obtained from carbon dioxide.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where trees (mask=treeFrac)",
+      "Comment": "\"Content\" indicates a quantity per unit area. \"Vegetation\" means any plants e.g. trees, shrubs, grass. Plants are autotrophs i.e. \"producers\" of biomass using carbon obtained from carbon dioxide.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Carbon Mass in Vegetation on Tree Tiles",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where trees (comment: mask=treeFrac) CMIP7:area: time: mean where trees (mask=treeFrac),",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "land_class_mean(m01s19i001[lbtim_ia=240,lbproc=128], m01s19i013[lbtim_ia=240,lbproc=128], land_class='tree')",
+      "Model units": "kg m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s19i001",
+        "domain_profile": "DPFTS",
+        "model": "UKESM1",
+        "stash_number": "19,001",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i013",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "19,013",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 856,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable land.mon.cVeg_tavg-u-hxy-tree (Emon.cVegTree)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "cVeg_tavg-u-hxy-shb",
+      "CF standard name": "vegetation_carbon_content",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: time: mean where shrubs (comment: mask=shrubFrac)\"; ; \"comment\" was \"'Content' indicates a quantity per unit area. 'Vegetation' means any plants e.g. trees, shrubs, grass. Plants are autotrophs i.e. 'producers' of biomass using carbon obtained from carbon dioxide.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where shrubs (mask=shrubFrac)",
+      "Comment": "\"Content\" indicates a quantity per unit area. \"Vegetation\" means any plants e.g. trees, shrubs, grass. Plants are autotrophs i.e. \"producers\" of biomass using carbon obtained from carbon dioxide.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Carbon Mass in Vegetation on Shrub Tiles",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where shrubs (comment: mask=shrubFrac) CMIP7:area: time: mean where shrubs (mask=shrubFrac),",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "land_class_mean(m01s19i001[lbtim_ia=240,lbproc=128], m01s19i013[lbtim_ia=240,lbproc=128], land_class='shrub')",
+      "Model units": "kg m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s19i001",
+        "domain_profile": "DPFTS",
+        "model": "UKESM1",
+        "stash_number": "19,001",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i013",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "19,013",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 855,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable land.mon.cVeg_tavg-u-hxy-shb (Emon.cVegShrub)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "cVegGrass_tavg-u-hxy-ng",
+      "CF standard name": "vegetation_carbon_content",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: time: mean where natural_grasses (comment: mask=grassFrac)\"; ; \"comment\" was \"'Content' indicates a quantity per unit area. 'Vegetation' means any plants e.g. trees, shrubs, grass. Plants are autotrophs i.e. 'producers' of biomass using carbon obtained from carbon dioxide.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where natural_grasses (mask=grassFrac)",
+      "Comment": "\"Content\" indicates a quantity per unit area. \"Vegetation\" means any plants e.g. trees, shrubs, grass. Plants are autotrophs i.e. \"producers\" of biomass using carbon obtained from carbon dioxide.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Carbon Mass in Vegetation on Grass Tiles",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean where natural_grasses (comment: mask=grassFrac) CMIP7:area: time: mean where natural_grasses (mask=grassFrac),",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "land_class_mean(m01s19i001[lbtim_ia=240,lbproc=128],m01s19i013[lbtim_ia=240,lbproc=128], land_class='grass')",
+      "Model units": "kg m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s19i001",
+        "domain_profile": "DPFTS",
+        "model": "UKESM1",
+        "stash_number": "19,001",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i013",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "19,013",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 854,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable land.mon.cVegGrass_tavg-u-hxy-ng (Emon.cVegGrass)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "cStem_tavg-u-hxy-lnd",
+      "CF standard name": "stem_mass_content_of_carbon",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "including sapwood and hardwood.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Carbon Mass in Stem",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "m01s19i028[lbtim_ia=240,lbproc=128]",
+      "Model units": "kg m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s19i028",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "19,028",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 853,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable land.mon.cStem_tavg-u-hxy-lnd (Emon.cStem)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "cSoilPools_tavg-u-hxy-lnd",
       "CF standard name": "soil_mass_content_of_carbon",
       "CMIP6 Differences": "",

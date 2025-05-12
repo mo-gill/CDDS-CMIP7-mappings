@@ -1,4 +1,19 @@
 Model,Branded variable name,Frequency,STASH,Section,Item,time_profile,domain_profile,usage_profile
+UKESM1,clcalipsoice_tavg-h40-hxy-air,mon,m01s02i325,2,325,TMONMN,DCOSP40H,UP5
+UKESM1,clcalipsoice_tavg-h40-hxy-air,mon,m01s02i474,2,474,TMONMN,DCOSP40H,UP5
+HadGEM3-GC31,clcalipsoice_tavg-h40-hxy-air,mon,m01s02i325,2,325,TMONMN,DCOSP40H,UP5
+HadGEM3-GC31,clcalipsoice_tavg-h40-hxy-air,mon,m01s02i474,2,474,TMONMN,DCOSP40H,UP5
+UKESM1,cfadLidarsr532_tavg-h40-hxy-air,mon,m01s02i370,2,370,TMONMN,DCOSPCFL,UP5
+HadGEM3-GC31,cfadLidarsr532_tavg-h40-hxy-air,mon,m01s02i370,2,370,TMONMN,DCOSPCFL,UP5
+UKESM1,cfadDbze94_tavg-h40-hxy-air,mon,m01s02i372,2,372,TMONMN,DCOSPCFR,UP5
+HadGEM3-GC31,cfadDbze94_tavg-h40-hxy-air,mon,m01s02i372,2,372,TMONMN,DCOSPCFR,UP5
+UKESM1,cVeg_tavg-u-hxy-tree,mon,m01s19i001,19,001,TMONMN,DPFTS,UP5
+UKESM1,cVeg_tavg-u-hxy-tree,mon,m01s19i013,19,013,TMONMN,DTILE,UP5
+UKESM1,cVeg_tavg-u-hxy-shb,mon,m01s19i001,19,001,TMONMN,DPFTS,UP5
+UKESM1,cVeg_tavg-u-hxy-shb,mon,m01s19i013,19,013,TMONMN,DTILE,UP5
+UKESM1,cVegGrass_tavg-u-hxy-ng,mon,m01s19i001,19,001,TMONMN,DPFTS,UP5
+UKESM1,cVegGrass_tavg-u-hxy-ng,mon,m01s19i013,19,013,TMONMN,DTILE,UP5
+UKESM1,cStem_tavg-u-hxy-lnd,mon,m01s19i028,19,028,TMONMN,DIAG,UP5
 UKESM1,cSoil_tavg-u-hxy-lnd,mon,m01s19i016,19,016,TMONMN,DIAG,UP5
 UKESM1,cLand_tavg-u-hxy-lnd,mon,m01s19i002,19,002,TMONMN,DIAG,UP5
 UKESM1,cLand_tavg-u-hxy-lnd,mon,m01s19i016,19,016,TMONMN,DIAG,UP5
