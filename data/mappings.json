@@ -1,6 +1,320 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "tnpeo_tavg-u-hxy-sea",
+      "CF standard name": "tendency_of_ocean_potential_energy_content",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Rate that work is done against vertical stratification, as measured by the vertical heat and salt diffusivity. Report here as depth integrated two-dimensional field.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "yr",
+      "Long name": "Tendency of Ocean Potential Energy Content",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid.",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "tnpeo",
+      "Expression UKESM1": "tnpeo",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 1651,
+    "labels": [
+      "yr",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.yr.tnpeo_tavg-u-hxy-sea (Oyr.tnpeo)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "tnkebto_tavg-u-hxy-sea",
+      "CF standard name": "tendency_of_ocean_eddy_kinetic_energy_content_due_to_parameterized_eddy_advection",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Depth integrated impacts on kinetic energy arising from parameterized eddy-induced advection. For CMIP5, this diagnostic was 3d, whereas the CMIP6 depth integrated diagnostic is sufficient for many purposes and reduces archive requirements.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "yr",
+      "Long name": "Tendency of Ocean Eddy Kinetic Energy Content Due to Parameterized Eddy Advection",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid.",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "tnkebto",
+      "Expression UKESM1": "tnkebto",
+      "Model units": "W m-2"
+    },
+    "STASH entries": [],
+    "issue_number": 1650,
+    "labels": [
+      "yr",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.yr.tnkebto_tavg-u-hxy-sea (Oyr.tnkebto)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "somint_tavg-u-hxy-sea",
+      "CF standard name": "integral_wrt_depth_of_product_of_salinity_and_sea_water_density",
+      "CMIP6 Differences": "\"standard_name\" was \"integral_wrt_depth_of_product_of_sea_water_density_and_salinity\"; ; \"comment\" was \"Full column sum of density*cell thickness*prognostic salinity. If the model is Boussinesq, then use Boussinesq reference density for the density factor.\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Full column sum of density\\*cell thickness\\*salinity. If the model is Boussinesq, then use Boussinesq reference density for the density factor.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "yr",
+      "Long name": "Depth Integral of Product of Sea Water Density and Prognostic Salinity",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid.",
+      "Units": "g m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1649,
+    "labels": [
+      "yr",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.yr.somint_tavg-u-hxy-sea (Oyr.somint)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "rsdoabsorb_tavg-l-hxy-sea",
+      "CF standard name": "net_rate_of_absorption_of_shortwave_energy_in_ocean_layer",
+      "CMIP6 Differences": "\"comment\" was \"'shortwave' means shortwave radiation. 'Layer' means any layer with upper and lower boundaries that have constant values in some vertical coordinate. There must be a vertical coordinate variable indicating the extent of the layer(s). If the layers are model layers, the vertical coordinate can be model_level_number, but it is recommended to specify a physical coordinate (in a scalar or auxiliary coordinate variable) as well. Net absorbed radiation is the difference between absorbed and emitted radiation.\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Tendency of heat content for a grid cell from penetrative shortwave radiation within a grid cell.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "yr",
+      "Long name": "Net Rate of Absorption of Shortwave Energy in Ocean Layer",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid.",
+      "Units": "W m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1648,
+    "labels": [
+      "yr",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.yr.rsdoabsorb_tavg-l-hxy-sea (Oyr.rsdoabsorb)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "osalttend_tavg-l-hxy-sea",
+      "CF standard name": "tendency_of_sea_water_salinity_expressed_as_salt_content",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Tendency of salt content for a grid cell from all processes.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "yr",
+      "Long name": "Tendency of Sea Water Salinity Expressed as Salt Content",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "osalttend",
+      "Expression UKESM1": "osalttend",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1647,
+    "labels": [
+      "yr",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.yr.osalttend_tavg-l-hxy-sea (Oyr.osalttend)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "osaltrmadvect_tavg-l-hxy-sea",
+      "CF standard name": "tendency_of_sea_water_salinity_expressed_as_salt_content_due_to_residual_mean_advection",
+      "CMIP6 Differences": "\"comment\" was \"The phrase 'residual mean advection' refers to the sum of the model's resolved advective transport plus any parameterized advective transport. Parameterized advective transport includes processes such as parameterized mesoscale and submesoscale transport, as well as any other advectively parameterized transport. When the parameterized advective transport is represented in the model as a skew-diffusion rather than an advection, then the parameterized skew diffusion should be included in this diagnostic, since the convergence of skew-fluxes are identical (in the continuous formulation) to the convergence of advective fluxes.\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Tendency of salt content for a grid cell from residual mean  (sum of Eulerian mean + parameterized eddy-induced)  advection.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "yr",
+      "Long name": "Tendency of Sea Water Salinity Expressed as Salt Content Due to Residual Mean Advection",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "osaltadvect",
+      "Expression UKESM1": "osaltadvect",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1646,
+    "labels": [
+      "yr",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.yr.osaltrmadvect_tavg-l-hxy-sea (Oyr.osaltrmadvect)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "osaltpsmadvect_tavg-l-hxy-sea",
+      "CF standard name": "tendency_of_sea_water_salinity_expressed_as_salt_content_due_to_parameterized_submesoscale_eddy_advection",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Tendency of salt content for a grid cell from parameterized submesoscale eddy advection.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "yr",
+      "Long name": "Tendency of Sea Water Salinity Expressed as Salt Content Due to Parameterized Submesoscale Advection",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1645,
+    "labels": [
+      "yr",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.yr.osaltpsmadvect_tavg-l-hxy-sea (Oyr.osaltpsmadvect)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "osaltpmdiff_tavg-l-hxy-sea",
+      "CF standard name": "tendency_of_sea_water_salinity_expressed_as_salt_content_due_to_parameterized_mesoscale_eddy_diffusion",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Tendency of salt content for a grid cell from parameterized mesoscale eddy diffusion.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "yr",
+      "Long name": "Tendency of Sea Water Salinity Expressed as Salt Content Due to Parameterized Mesoscale Diffusion",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "osaltpmdiff",
+      "Expression UKESM1": "osaltpmdiff",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1644,
+    "labels": [
+      "yr",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.yr.osaltpmdiff_tavg-l-hxy-sea (Oyr.osaltpmdiff)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "osaltpadvect_tavg-l-hxy-sea",
+      "CF standard name": "tendency_of_sea_water_salinity_expressed_as_salt_content_due_to_parameterized_eddy_advection",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Tendency of salt content for a grid cell from parameterized eddy advection (any form of eddy advection).",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "yr",
+      "Long name": "Tendency of Sea Water Salinity Expressed as Salt Content Due to Parameterized Eddy Advection",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1643,
+    "labels": [
+      "yr",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.yr.osaltpadvect_tavg-l-hxy-sea (Oyr.osaltpadvect)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "osaltdiff_tavg-l-hxy-sea",
+      "CF standard name": "tendency_of_sea_water_salinity_expressed_as_salt_content_due_to_parameterized_dianeutral_mixing",
+      "CMIP6 Differences": "\"standard_name\" was \"tendency_of_sea_water_salinity_expressed_as_salt_content_due_to_parameterized_eddy_dianeutral_mixing\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Tendency of salt content for a grid cell from parameterized dianeutral mixing.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "yr",
+      "Long name": "Tendency of Sea Water Salinity Expressed as Salt Content Due to Parameterized Dianeutral Mixing",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "osaltdiff",
+      "Expression UKESM1": "osaltdiff",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [],
+    "issue_number": 1642,
+    "labels": [
+      "yr",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.yr.osaltdiff_tavg-l-hxy-sea (Oyr.osaltdiff)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "opottemptend_tavg-l-hxy-sea",
       "CF standard name": "tendency_of_sea_water_potential_temperature_expressed_as_heat_content",
       "CMIP6 Differences": "",
