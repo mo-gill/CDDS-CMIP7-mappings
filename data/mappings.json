@@ -1,6 +1,258 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "phycdiaz_tavg-u-hxy-sea",
+      "CF standard name": "mole_concentration_of_diazotrophic_phytoplankton_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Mole Concentration of Diazotrophs Expressed as Carbon in Sea Water",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Carbon concentration of diazotrophs",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-3",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1331,
+    "labels": [
+      "day",
+      "ocnBgchem"
+    ],
+    "title": "Variable ocnBgchem.day.phycdiaz_tavg-u-hxy-sea (Oday.phycdiaz)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "phycdiat_tavg-u-hxy-sea",
+      "CF standard name": "mole_concentration_of_diatoms_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Mole Concentration of Diatoms Expressed as Carbon in Sea Water",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Carbon concentration of diatoms",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-3",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1330,
+    "labels": [
+      "day",
+      "ocnBgchem"
+    ],
+    "title": "Variable ocnBgchem.day.phycdiat_tavg-u-hxy-sea (Oday.phycdiat)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "phycalc_tavg-l-hxy-sea",
+      "CF standard name": "mole_concentration_of_calcareous_phytoplankton_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Mole Concentration of Calcareous Phytoplankton Expressed as Carbon in Sea Water",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "day",
+      "Long name": "Mole Concentration of Calcareous Phytoplankton Expressed as Carbon in Sea Water",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "\"Tracer\" concentrations should be reported even if they are diagnosed rather than prognostically calculated.",
+      "Units": "mol m-3",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1329,
+    "labels": [
+      "day",
+      "ocnBgchem"
+    ],
+    "title": "Variable ocnBgchem.day.phycalc_tavg-l-hxy-sea (Oday.phycalc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "phyc_tavg-u-hxy-sea",
+      "CF standard name": "mole_concentration_of_phytoplankton_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean",
+      "Comment": "sum of phytoplankton carbon component concentrations. In most (all?) cases this is the sum of phycdiat and phycmisc (i.e., \"Diatom Carbon Concentration\" and \"Non-Diatom Phytoplankton Carbon Concentration\"",
+      "Dimensions": "longitude latitude time op20bar",
+      "Frequency": "day",
+      "Long name": "Phytoplankton Carbon Concentration",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "The variable at the depth of 200 meters is requested",
+      "Units": "mol m-3",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1328,
+    "labels": [
+      "day",
+      "ocnBgchem"
+    ],
+    "title": "Variable ocnBgchem.day.phyc_tavg-u-hxy-sea (Oday.phyc200)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ph_tavg-z0m-hxy-sea",
+      "CF standard name": "sea_water_ph_reported_on_total_scale",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Near surface negative log10 of hydrogen ion concentration with the concentration expressed as mol H kg-1.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Surface pH",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1327,
+    "labels": [
+      "day",
+      "ocnBgchem"
+    ],
+    "title": "Variable ocnBgchem.day.ph_tavg-z0m-hxy-sea (Oday.phos)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ph_tavg-u-hxy-sea",
+      "CF standard name": "sea_water_ph_reported_on_total_scale",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean",
+      "Comment": "negative log10 of hydrogen ion concentration with the concentration expressed as mol H kg-1.",
+      "Dimensions": "longitude latitude time op20bar",
+      "Frequency": "day",
+      "Long name": "pH",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "The variable at the depth of 200 meters is requested.",
+      "Units": "1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1326,
+    "labels": [
+      "day",
+      "ocnBgchem"
+    ],
+    "title": "Variable ocnBgchem.day.ph_tavg-u-hxy-sea (Oday.ph200)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "o2_tavg-u-hm-sea",
+      "CF standard name": "mole_concentration_of_dissolved_molecular_oxygen_in_sea_water",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Near surface 'Mole concentration' means number of moles per unit volume, also called \"molarity\", and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y. A chemical or biological species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The chemical formula for molecular oxygen is O2.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Surface Dissolved Oxygen Concentration",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-3",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1325,
+    "labels": [
+      "day",
+      "ocnBgchem"
+    ],
+    "title": "Variable ocnBgchem.day.o2_tavg-u-hm-sea (Oday.o2os)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "o2min_tavg-u-hxy-sea",
+      "CF standard name": "mole_concentration_of_dissolved_molecular_oxygen_in_sea_water_at_shallowest_local_minimum_in_vertical_profile",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "mole concentration of oxygen at the local minimum in the concentration profile that occurs closest to the sea surface.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "day",
+      "Long name": "Oxygen Minimum Concentration",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "mol m-3",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1324,
+    "labels": [
+      "day",
+      "ocnBgchem"
+    ],
+    "title": "Variable ocnBgchem.day.o2min_tavg-u-hxy-sea (Oday.o2min)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "o2_tavg-u-hxy-sea",
+      "CF standard name": "mole_concentration_of_dissolved_molecular_oxygen_in_sea_water",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: time: mean",
+      "Comment": "'Mole concentration' means number of moles per unit volume, also called \"molarity\", and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y. A chemical or biological species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'.",
+      "Dimensions": "longitude latitude time op20bar",
+      "Frequency": "day",
+      "Long name": "Dissolved Oxygen Concentration at 200 meters",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "The variable at the depth of 200 meters is requested.",
+      "Units": "mol m-3",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1323,
+    "labels": [
+      "day",
+      "ocnBgchem"
+    ],
+    "title": "Variable ocnBgchem.day.o2_tavg-u-hxy-sea (Oday.o2200)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "mlotst_tavg-u-hxy-sea",
       "CF standard name": "ocean_mixed_layer_thickness_defined_by_sigma_t",
       "CMIP6 Differences": "Not present",
