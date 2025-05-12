@@ -1,6 +1,218 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "arag_tavg-u-hm-sea",
+      "CF standard name": "mole_concentration_of_aragonite_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "sum of particulate aragonite components (e.g. Phytoplankton, Detrital, etc.)",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Surface Aragonite Concentration",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time CMIP7:longitude latitude time depth0m,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1378,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.arag_tavg-u-hm-sea (Omon.aragos)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "arag_tavg-l-hxy-sea",
+      "CF standard name": "mole_concentration_of_aragonite_expressed_as_carbon_in_sea_water",
+      "CMIP6 Differences": "\"comment\" was \"Sum of particulate aragonite components (e.g. Phytoplankton, Detrital, etc.)\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "sum of particulate aragonite components (e.g. Phytoplankton, Detrital, etc.)",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Aragonite Concentration",
+      "Modeling realm": "ocnBgchem",
+      "Positive": "",
+      "Processing notes": "Concentrations of all 3D tracers in the uppermost ocean layer. See first table in Oyr for a complete list of these tracers.  \"Tracer\"  concentations should be reported even if they are diagnosed rather than prognostically calculated.",
+      "Units": "mol m-3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1377,
+    "labels": [
+      "mon",
+      "ocnBgchem",
+      "CMIP6"
+    ],
+    "title": "Variable ocnBgchem.mon.arag_tavg-l-hxy-sea (Omon.arag)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "agessc_tavg-l-hxy-sea",
+      "CF standard name": "sea_water_age_since_surface_contact",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "Time elapsed since water was last in surface layer of the ocean.",
+      "Dimensions": "longitude latitude olevel time",
+      "Frequency": "mon",
+      "Long name": "Sea Water Age Since Surface Contact",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Report on native horizontal grid as well as on a spherical latitude/longitude grid. Online mapping to depth/pressure vertical grid if depth or pressure are not native.",
+      "Units": "yr",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "agessc",
+      "Expression UKESM1": "agessc",
+      "Model units": "yr"
+    },
+    "STASH entries": [],
+    "issue_number": 1376,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.mon.agessc_tavg-l-hxy-sea (Omon.agessc)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "absscint_tavg-u-hxy-u",
+      "CF standard name": "integral_wrt_depth_of_sea_water_absolute_salinity_expressed_as_salt_mass_content",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean where sea",
+      "Comment": "This is a fundamental aspect of the changes in the hydrological cycle and their impact on the oceans, and due to new numerical schemes and vertical discretizations, it is important to calculate it consistently with the model formulation.",
+      "Dimensions": "longitude latitude oplayer4 time",
+      "Frequency": "mon",
+      "Long name": "Integral wrt depth of seawater absolute salinity expressed as salt mass content",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "CHANGE: This is a new variable, which aids in understanding hydrological change.\u00a0It is preferable to calculate it online, due to difficulties with vertical discretizations.\u00a0It is calculated as an integral over hydrostatic pressure ranges, which makes it directly comparable with observations.",
+      "Units": "kg m-2",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1375,
+    "labels": [
+      "mon",
+      "ocean"
+    ],
+    "title": "Variable ocean.mon.absscint_tavg-u-hxy-u (Omon.absscint)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "volcello_ti-l-hxy-sea",
+      "CF standard name": "ocean_volume",
+      "CMIP6 Differences": "\"comment\" was \"grid-cell volume ca. 2000.\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: sum",
+      "Comment": "For oceans with more than 1 mesh (e.g. staggered grids), report areas that apply to surface vertical fluxes of energy. If this field is time-dependent then save it instead as one of your Omon and Odec fields",
+      "Dimensions": "longitude latitude olevel",
+      "Frequency": "fx",
+      "Long name": "Ocean Grid-Cell Volume",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "a 3-d field: For oceans with more than 1 mesh, report on grid that applies to temperature",
+      "Units": "m3",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1374,
+    "labels": [
+      "fx",
+      "ocean",
+      "CMIP6"
+    ],
+    "title": "Variable ocean.fx.volcello_ti-l-hxy-sea (Ofx.volcello)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "thkcello_ti-l-hxy-sea",
+      "CF standard name": "cell_thickness",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: mean\"; ; \"comment\" was \"'Thickness' means the vertical extent of a layer. 'Cell' refers to a model grid-cell.\";",
+      "Cell measures": "area: areacello volume: volcello",
+      "Cell methods": "area: mean where sea",
+      "Comment": "Thickness of ocean cells. \"Thickness\" means the vertical extent of a layer. \"Cell\" refers to a model grid-cell.",
+      "Dimensions": "longitude latitude olevel",
+      "Frequency": "fx",
+      "Long name": "Ocean Model Cell Thickness",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "If this field is time-dependent then save it instead as one of your Omon fields (see the Omon table); CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean CMIP7:area: mean where sea,",
+      "Units": "m",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1373,
+    "labels": [
+      "fx",
+      "ocean",
+      "CMIP6",
+      "BCV"
+    ],
+    "title": "Variable ocean.fx.thkcello_ti-l-hxy-sea (Ofx.thkcello)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "sftof_ti-u-hxy-u",
+      "CF standard name": "sea_area_fraction",
+      "CMIP6 Differences": "\"comment\" was \"Percentage of horizontal area occupied by ocean.\";",
+      "Cell measures": "area: areacello",
+      "Cell methods": "area: mean",
+      "Comment": "This is the area fraction at the ocean surface.",
+      "Dimensions": "longitude latitude",
+      "Frequency": "fx",
+      "Long name": "Sea Area Percentage",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "Should this be recorded as a function of depth?  Report on the same grid that ocean fields are reported (i.e., the ocean native grid, or the grid that ocean data has been provided to CMIP.  For completeness, provide this even if the ocean grid is the same as the atmospheric grid.",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "sftof",
+      "Expression UKESM1": "sftof",
+      "Model units": "%"
+    },
+    "STASH entries": [],
+    "issue_number": 1372,
+    "labels": [
+      "fx",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable ocean.fx.sftof_ti-u-hxy-u (Ofx.sftof)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "masscello_ti-l-hxy-sea",
       "CF standard name": "sea_water_mass_per_unit_area",
       "CMIP6 Differences": "\"cell_methods\" was \"area: sum\"; ; \"comment\" was \"Tracer grid-cell mass per unit area used for computing tracer budgets. For Boussinesq models with static ocean grid cell thickness, masscello = rhozero*thickcello, where thickcello is static cell thickness and rhozero is constant Boussinesq reference density. More generally, masscello is time dependent and reported as part of Omon.\";",
