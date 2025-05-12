@@ -1,4 +1,15 @@
 Model,Branded variable name,Frequency,STASH,Section,Item,time_profile,domain_profile,usage_profile
+UKESM1,evspsblveg_tavg-u-hxy-lnd,mon,m01s03i297,3,297,TMONMN,DIAG,UP5
+HadGEM3-GC31,evspsblveg_tavg-u-hxy-lnd,mon,m01s03i297,3,297,TMONMN,DIAG,UP5
+UKESM1,evspsblsoi_tavg-u-hxy-lnd,mon,m01s03i296,3,296,TMONMN,DIAG,UP5
+HadGEM3-GC31,evspsblsoi_tavg-u-hxy-lnd,mon,m01s03i296,3,296,TMONMN,DIAG,UP5
+UKESM1,cropFrac_tavg-u-hxy-u,mon,m01s03i395,3,395,TMONMN,DIAG,UP5
+UKESM1,cropFrac_tavg-u-hxy-u,mon,m01s19i013,19,013,TMONMN,DTILE,UP5
+UKESM1,cVeg_tavg-u-hxy-lnd,mon,m01s19i002,19,002,TMONMN,DIAG,UP5
+UKESM1,cRoot_tavg-u-hxy-lnd,mon,m01s19i030,19,030,TMONMN,DIAG,UP5
+UKESM1,cProduct_tavg-u-hxy-lnd,mon,m01s19i032,19,032,TMONMN,DIAG,UP5
+UKESM1,cProduct_tavg-u-hxy-lnd,mon,m01s19i033,19,033,TMONMN,DIAG,UP5
+UKESM1,cProduct_tavg-u-hxy-lnd,mon,m01s19i034,19,034,TMONMN,DIAG,UP5
 UKESM1,cLeaf_tavg-u-hxy-lnd,mon,m01s19i026,19,026,TMONMN,DIAG,UP5
 UKESM1,c4PftFrac_tavg-u-hxy-u,mon,m01s03i395,3,395,TMONMN,DIAG,UP5
 UKESM1,c4PftFrac_tavg-u-hxy-u,mon,m01s19i013,19,013,TMONMN,DTILE,UP5

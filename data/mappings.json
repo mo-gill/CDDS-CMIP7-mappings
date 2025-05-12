@@ -1,6 +1,407 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "fLitterSoil_tavg-u-hxy-lnd",
+      "CF standard name": "carbon_mass_flux_into_soil_from_litter",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "Carbon mass flux per unit area into soil from litter (dead plant material in or above the soil).",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Total Carbon Mass Flux from Litter to Soil",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1283,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.mon.fLitterSoil_tavg-u-hxy-lnd (Lmon.fLitterSoil)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fHarvestToGeologicStorage_tavg-u-hxy-lnd",
+      "CF standard name": "mass_flux_of_carbon_from_biomass_into_geological_storage",
+      "CMIP6 Differences": "Not present",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean",
+      "Comment": "Flux of carbon harvested from biomass that goes into geologic storage for the purposes of intentional carbon dioxide removal, via efforts such as bioenergy with carbon capture and storage (BECCS) or biomass removal and storage (BiCRS). The definition of geologic storage here is that the resulting carbon be  stored for a period of time that is long relative to that of the simulation.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Harvested Biomass That Goes into Geological Storage",
+      "Modeling realm": "land",
+      "Positive": "down",
+      "Processing notes": "Positive number represents a flux of carbon from biomass (down) to geologic storage.",
+      "Units": "kg m-2 s-1",
+      "Variable status": "New"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1282,
+    "labels": [
+      "mon",
+      "land"
+    ],
+    "title": "Variable land.mon.fHarvestToGeologicStorage_tavg-u-hxy-lnd (Lmon.fHarvestToGeologicStorage)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "fFire_tavg-u-hxy-lnd",
+      "CF standard name": "surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_fires_excluding_anthropogenic_land_use_change",
+      "CMIP6 Differences": "\"comment\" was \"CO2 emissions (expressed as a carbon mass flux per unit area) from natural fires and human ignition fires as calculated by the fire module of the dynamic vegetation model, but excluding any CO2 flux from fire included in fLuc (CO2 Flux to Atmosphere from Land Use Change).\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "CO2 emissions (expressed as a carbon mass flux) from natural fires + human ignition fires as calculated by the fire module of the DGVM, but excluding any CO2 flux from fire included in fLuc, defined below (CO2 Flux to Atmosphere from Land Use Change).",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Carbon Mass Flux into Atmosphere Due to CO2 Emission from Fire Excluding Land-Use Change [kgC m-2 s-1]",
+      "Modeling realm": "land",
+      "Positive": "up",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1281,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.mon.fFire_tavg-u-hxy-lnd (Lmon.fFire)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "evspsblveg_tavg-u-hxy-lnd",
+      "CF standard name": "water_evaporation_flux_from_canopy",
+      "CMIP6 Differences": "\"comment\" was \"The canopy evaporation and sublimation (if present in model); may include dew formation as a negative flux.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "the canopy evaporation+sublimation (if present in model).",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Evaporation from Canopy",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i297[lbproc=128]",
+      "Expression UKESM1": "m01s03i297[lbproc=128]",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i297",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,297",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i297",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,297",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1280,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable land.mon.evspsblveg_tavg-u-hxy-lnd (Lmon.evspsblveg)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "evspsblsoi_tavg-u-hxy-lnd",
+      "CF standard name": "water_evaporation_flux_from_soil",
+      "CMIP6 Differences": "\"comment\" was \"Water evaporation from soil (including sublimation).\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "includes sublimation.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Water Evaporation from Soil",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2 s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s03i296[lbproc=128] + m01s03i298[lbproc=128] - m01s03i539[lbproc=128]",
+      "Expression UKESM1": "m01s03i296[lbproc=128] + m01s03i298[lbproc=128] - m01s03i539[lbproc=128]",
+      "Model units": "kg m-2 s-1"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i296",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,296",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i296",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,296",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1279,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31",
+      "BCV"
+    ],
+    "title": "Variable land.mon.evspsblsoi_tavg-u-hxy-lnd (Lmon.evspsblsoi)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "cropFrac_tavg-u-hxy-u",
+      "CF standard name": "area_fraction",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: mean where land over all_area_types time: mean\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "Percentage of entire grid cell  that is covered by crop.",
+      "Dimensions": "longitude latitude time typecrop",
+      "Frequency": "mon",
+      "Long name": "Percentage Crop Cover",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "Note that if this variable is independent of time, it should be stored only for a single time (user choice).; CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time typecrop CMIP7:longitude latitude time  typecrop,;  ; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean where land over all_area_types time: mean CMIP7:area: time: mean,",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "land_class_area(m01s19i013[lbtim_ia=240,lbproc=128],m01s03i395[lbproc=128], land_class='crop')",
+      "Model units": "%"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i395",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,395",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i013",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "19,013",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1278,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable land.mon.cropFrac_tavg-u-hxy-u (Lmon.cropFrac)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "cVeg_tavg-u-hxy-lnd",
+      "CF standard name": "vegetation_carbon_content",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "Carbon mass per unit area in vegetation.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Carbon Mass in Vegetation",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "m01s19i002[lbtim_ia=240,lbproc=128]",
+      "Model units": "kg m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s19i002",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "19,002",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1277,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable land.mon.cVeg_tavg-u-hxy-lnd (Lmon.cVeg)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "cRoot_tavg-u-hxy-lnd",
+      "CF standard name": "root_mass_content_of_carbon",
+      "CMIP6 Differences": "\"comment\" was \"Carbon mass per unit area in roots, including fine and coarse roots.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "including fine and coarse roots.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Carbon Mass in Roots",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "m01s19i030[lbtim_ia=240,lbproc=128]",
+      "Model units": "kg m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s19i030",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "19,030",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1276,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable land.mon.cRoot_tavg-u-hxy-lnd (Lmon.cRoot)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "cProduct_tavg-u-hxy-lnd",
+      "CF standard name": "carbon_mass_content_of_forestry_and_agricultural_products",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "Carbon mass per unit area in that has been removed from the environment through  land use change.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Carbon Mass in Products of Land-Use Change",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "m01s19i032[lbtim_ia=240,lbproc=128] + m01s19i033[lbtim_ia=240,lbproc=128] + m01s19i034[lbtim_ia=240,lbproc=128]",
+      "Model units": "kg m-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s19i032",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "19,032",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i033",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "19,033",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i034",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "19,034",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1275,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable land.mon.cProduct_tavg-u-hxy-lnd (Lmon.cProduct)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "cLitter_tavg-u-hxy-lnd",
+      "CF standard name": "litter_mass_content_of_carbon",
+      "CMIP6 Differences": "\"comment\" was \"'Litter' is dead plant material in or above the soil. It is distinct from coarse wood debris. The precise distinction between 'fine' and 'coarse' is model dependent. 'Content' indicates a quantity per unit area. The sum of the quantities with standard names surface_litter_mass_content_of_carbon and subsurface_litter_mass_content_of_carbon has the standard name litter_mass_content_of_carbon.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: mean where land time: mean",
+      "Comment": "\"Litter\" is dead plant material in or above the soil. It is distinct from coarse wood debris. The precise distinction between \"fine\" and \"coarse\" is model dependent. \"Content\" indicates a quantity per unit area. The sum of the quantities with standard names surface_litter_mass_content_of_carbon and subsurface_litter_mass_content_of_carbon has the standard name litter_mass_content_of_carbon.",
+      "Dimensions": "longitude latitude time",
+      "Frequency": "mon",
+      "Long name": "Carbon Mass in Litter Pool",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "kg m-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1274,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6"
+    ],
+    "title": "Variable land.mon.cLitter_tavg-u-hxy-lnd (Lmon.cLitter)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "cLeaf_tavg-u-hxy-lnd",
       "CF standard name": "leaf_mass_content_of_carbon",
       "CMIP6 Differences": "",
