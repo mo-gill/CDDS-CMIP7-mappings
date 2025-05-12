@@ -1,3 +1,6 @@
+"""
+This script is used to update the json and csv files and is triggered by github actions
+"""
 import json
 import subprocess
 import re
