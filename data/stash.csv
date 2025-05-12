@@ -1,4 +1,22 @@
 Model,Branded variable name,Frequency,STASH,Section,Item,time_profile,domain_profile,usage_profile
+UKESM1,mrsol_tavg-l-hxy-lnd,day,m01s08i223,8,223,TDAYMN,DSOIL,UP6
+HadGEM3-GC31,mrsol_tavg-l-hxy-lnd,day,m01s08i223,8,223,TDAYMN,DSOIL,UP6
+UKESM1,mrsll_tavg-l-hxy-lnd,day,m01s08i223,8,223,TDAYMN,DSOIL,UP6
+UKESM1,mrsll_tavg-l-hxy-lnd,day,m01s08i229,8,229,TDAYMN,DSOIL,UP6
+UKESM1,mrsll_tavg-l-hxy-lnd,day,m01s08i230,8,230,TDAYMN,DSOIL,UP6
+HadGEM3-GC31,mrsll_tavg-l-hxy-lnd,day,m01s08i223,8,223,TDAYMN,DSOIL,UP6
+HadGEM3-GC31,mrsll_tavg-l-hxy-lnd,day,m01s08i229,8,229,TDAYMN,DSOIL,UP6
+HadGEM3-GC31,mrsll_tavg-l-hxy-lnd,day,m01s08i230,8,230,TDAYMN,DSOIL,UP6
+UKESM1,mrsfl_tavg-l-hxy-lnd,day,m01s08i223,8,223,TDAYMN,DSOIL,UP6
+UKESM1,mrsfl_tavg-l-hxy-lnd,day,m01s08i229,8,229,TDAYMN,DSOIL,UP6
+UKESM1,mrsfl_tavg-l-hxy-lnd,day,m01s08i230,8,230,TDAYMN,DSOIL,UP6
+HadGEM3-GC31,mrsfl_tavg-l-hxy-lnd,day,m01s08i223,8,223,TDAYMN,DSOIL,UP6
+HadGEM3-GC31,mrsfl_tavg-l-hxy-lnd,day,m01s08i229,8,229,TDAYMN,DSOIL,UP6
+HadGEM3-GC31,mrsfl_tavg-l-hxy-lnd,day,m01s08i230,8,230,TDAYMN,DSOIL,UP6
+UKESM1,mrros_tavg-u-hxy-lnd,day,m01s08i234,8,234,TDAYMN,DIAG,UP6
+HadGEM3-GC31,mrros_tavg-u-hxy-lnd,day,m01s08i234,8,234,TDAYMN,DIAG,UP6
+UKESM1,mrrob_tavg-u-hxy-lnd,day,m01s08i235,8,235,TDAYMN,DIAG,UP6
+HadGEM3-GC31,mrrob_tavg-u-hxy-lnd,day,m01s08i235,8,235,TDAYMN,DIAG,UP6
 UKESM1,loadss_tavg-u-hxy-u,day,m01s38i539,38,539,TDAYMN,DIAG,UP6
 UKESM1,loadso4_tavg-u-hxy-u,day,m01s38i520,38,520,TDAYMN,DIAG,UP6
 UKESM1,loadoa_tavg-u-hxy-u,day,m01s38i531,38,531,TDAYMN,DIAG,UP6
