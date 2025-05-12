@@ -1,6 +1,278 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "va_tavg-p19-hxy-air",
+      "CF standard name": "northward_wind",
+      "CMIP6 Differences": "\"dimensions\" was \"longitude latitude plev7h time\"; ; \"cell_methods\" was \"area: time: mean\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where air",
+      "Comment": "Meridional wind (positive in a northward direction).",
+      "Dimensions": "longitude latitude plev19 time",
+      "Frequency": "mon",
+      "Long name": "Northward Wind",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:area: time: mean where air, CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude plev7h time CMIP7:longitude latitude plev19 time,",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1047,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.mon.va_tavg-p19-hxy-air (Emon.va)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "utendogw_tavg-p19-hxy-air",
+      "CF standard name": "tendency_of_eastward_wind_due_to_orographic_gravity_wave_drag",
+      "CMIP6 Differences": "\"comment\" was \"Tendency of the eastward wind by parameterized orographic gravity waves.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "time: mean",
+      "Comment": "Tendency of eastward wind induced by the parameterized orographic gravity wave drag",
+      "Dimensions": "longitude latitude plev19 time",
+      "Frequency": "mon",
+      "Long name": "Eastward Acceleration Due to Orographic Gravity Wave Drag",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "This is the total tendency due to parameterized orographic gravity wave drag, which is the sum of all possible components of the parameterization (where applicable). We ask that in the Essential Model Documentation modelling centers specify the parameterization scheme used and the specific values of its tunable parameters used for the simulation, and a specification of the part of the gravity wave spectrum that is targeted by the parameterization (e.g., minimally, the effective resolution of the model).",
+      "Units": "m s-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s06i247[blev=PLEV19, lbproc=128]",
+      "Expression UKESM1": "m01s06i247[blev=PLEV19, lbproc=128]",
+      "Model units": "m s-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s06i247",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "6,247",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s06i247",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "6,247",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1046,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.utendogw_tavg-p19-hxy-air (Emon.utendogw)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "utendnogw_tavg-p19-hxy-air",
+      "CF standard name": "tendency_of_eastward_wind_due_to_nonorographic_gravity_wave_drag",
+      "CMIP6 Differences": "\"comment\" was \"Tendency of the eastward wind by parameterized nonorographic gravity waves.\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "time: mean",
+      "Comment": "Tendency of eastward wind induced by the parameterized non-orographic gravity wave drag",
+      "Dimensions": "longitude latitude plev19 time",
+      "Frequency": "mon",
+      "Long name": "Eastward Acceleration Due to Non-Orographic Gravity Wave Drag",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "This is the total tendency due to parameterized non-orographic gravity wave drag, which is the sum of all possible components of the parameterization (where applicable). We ask that in the Essential Model Documentation modelling centers specify the parameterization scheme used and the specific values of its tunable parameters used for the simulation, and a specification of the part of the gravity wave spectrum that is targeted by the parameterization (e.g., minimally, the effective resolution of the model).",
+      "Units": "m s-2",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "m01s06i115[blev=PLEV19, lbproc=128]",
+      "Expression UKESM1": "m01s06i115[blev=PLEV19, lbproc=128]",
+      "Model units": "m s-2"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s06i115",
+        "domain_profile": "PLEV19",
+        "model": "UKESM1",
+        "stash_number": "6,115",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s06i115",
+        "domain_profile": "PLEV19",
+        "model": "HadGEM3-GC31",
+        "stash_number": "6,115",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1045,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable atmos.mon.utendnogw_tavg-p19-hxy-air (Emon.utendnogw)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ua_tavg-p19-hxy-air",
+      "CF standard name": "eastward_wind",
+      "CMIP6 Differences": "\"dimensions\" was \"longitude latitude plev7h time\"; ; \"cell_methods\" was \"area: time: mean\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where air",
+      "Comment": "Zonal wind (positive in a eastward direction).",
+      "Dimensions": "longitude latitude plev19 time",
+      "Frequency": "mon",
+      "Long name": "Eastward Wind",
+      "Modeling realm": "atmos",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: time: mean CMIP7:area: time: mean where air, CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude plev7h time CMIP7:longitude latitude plev19 time,",
+      "Units": "m s-1",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Model units": ""
+    },
+    "STASH entries": [],
+    "issue_number": 1044,
+    "labels": [
+      "mon",
+      "atmos",
+      "CMIP6"
+    ],
+    "title": "Variable atmos.mon.ua_tavg-p19-hxy-air (Emon.ua)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "ts_tavg-u-hxy-lus",
+      "CF standard name": "surface_temperature",
+      "CMIP6 Differences": "",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean where sector",
+      "Comment": "Surface temperature (i.e. temperature at which long-wave radiation emitted)",
+      "Dimensions": "longitude latitude landUse time",
+      "Frequency": "mon",
+      "Long name": "Surface Temperature on Landuse Tile",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude landUse time CMIP7:longitude latitude time landUse,;  Changes since reverted/fixed. Variable now matches CMIP6 definition.",
+      "Units": "K",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression UKESM1": "land_use_tile_mean(m01s03i316[lbproc=128],m01s19i013[lbtim_ia=240,lbproc=128])",
+      "Model units": "K"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s00i024",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "24",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i013",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "19,013",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1043,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1"
+    ],
+    "title": "Variable land.mon.ts_tavg-u-hxy-lus (Emon.tslsiLut)"
+  },
+  {
+    "Data Request information": {
+      "Branded variable name": "treeFracNdlEvg_tavg-u-hxy-u",
+      "CF standard name": "area_fraction",
+      "CMIP6 Differences": "\"cell_methods\" was \"area: mean where land over all_area_types time: mean\";",
+      "Cell measures": "area: areacella",
+      "Cell methods": "area: time: mean",
+      "Comment": "This is the percentage of the entire grid cell that is covered by needleleaf evergreen trees.",
+      "Dimensions": "longitude latitude time typetreene",
+      "Frequency": "mon",
+      "Long name": "Needleleaf Evergreen Tree Area Percentage",
+      "Modeling realm": "land",
+      "Positive": "",
+      "Processing notes": "CHANGE SINCE CMIP6 in Dimensions - CMIP6:longitude latitude time typetreene CMIP7:longitude latitude time  typetreene,;  ; CHANGE SINCE CMIP6 in Cell Methods - CMIP6:area: mean where land over all_area_types time: mean CMIP7:area: time: mean,",
+      "Units": "%",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "land_class_area(m01s19i013[lbtim_ia=240,lbproc=128], m01s03i395[lbproc=128], land_class='needleLeafTreeEvergreen')",
+      "Expression UKESM1": "land_class_area(m01s19i013[lbtim_ia=240,lbproc=128], m01s03i395[lbproc=128], land_class='needleLeafTreeEvergreen')",
+      "Model units": "%"
+    },
+    "STASH entries": [
+      {
+        "STASH": "m01s03i395",
+        "domain_profile": "DIAG",
+        "model": "UKESM1",
+        "stash_number": "3,395",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i013",
+        "domain_profile": "DTILE",
+        "model": "UKESM1",
+        "stash_number": "19,013",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i395",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC31",
+        "stash_number": "3,395",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s19i013",
+        "domain_profile": "DTILE",
+        "model": "HadGEM3-GC31",
+        "stash_number": "19,013",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      }
+    ],
+    "issue_number": 1042,
+    "labels": [
+      "mon",
+      "land",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable land.mon.treeFracNdlEvg_tavg-u-hxy-u (Emon.treeFracNdlEvg)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "treeFracNdlDcd_tavg-u-hxy-u",
       "CF standard name": "area_fraction",
       "CMIP6 Differences": "\"cell_methods\" was \"area: mean where land over all_area_types time: mean\";",
