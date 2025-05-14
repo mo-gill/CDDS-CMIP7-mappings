@@ -1,6 +1,39 @@
 [
   {
     "Data Request information": {
+      "Branded variable name": "tos_tavg-u-hm-sea",
+      "CF standard name": "sea_surface_temperature",
+      "CMIP6 Differences": "\"comment\" was \"Temperature of upper boundary of the liquid ocean, including temperatures below sea-ice and floating ice shelves.\";",
+      "Cell measures": "",
+      "Cell methods": "area: mean where sea time: mean",
+      "Comment": "This may differ from \"surface temperature\" in regions of sea ice or floating ice shelves. For models using conservative temperature as the prognostic field, they should report the top ocean layer as surface potential temperature, which is the same as surface in situ temperature.",
+      "Dimensions": "time",
+      "Frequency": "mon",
+      "Long name": "Global Average Sea Surface Temperature",
+      "Modeling realm": "ocean",
+      "Positive": "",
+      "Processing notes": "",
+      "Units": "degC",
+      "Variable status": "CMIP6 CMOR variable"
+    },
+    "Mapping information": {
+      "Expression HadGEM3-GC31": "area_mean(tos, areacello)",
+      "Expression UKESM1": "area_mean(tos, areacello)",
+      "Model units": "degC"
+    },
+    "STASH entries": [],
+    "issue_number": 1864,
+    "labels": [
+      "mon",
+      "ocean",
+      "CMIP6",
+      "UKESM1",
+      "HadGEM3-GC31"
+    ],
+    "title": "Variable ocean.mon.tos_tavg-u-hm-sea (Omon.tosga)"
+  },
+  {
+    "Data Request information": {
       "Branded variable name": "dpco2_tavg-u-hm-sea",
       "CF standard name": "surface_carbon_dioxide_partial_pressure_difference_between_sea_water_and_air",
       "CMIP6 Differences": "\"comment\" was \"Difference in partial pressure of carbon dioxide between sea water and air.  The partial pressure of a dissolved gas in sea water is the partial pressure in air with which it would be in equilibrium. \";",
