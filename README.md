@@ -13,7 +13,18 @@ The information in the issues is also presented in the following files;
 * [data/mappings.csv](https://github.com/UKNCSP/CDDS-CMIP7-mappings/blob/main/data/mappings.csv) (Excel CSV representation of Data Request and Mapping information)
 * [data/stash.csv](https://github.com/UKNCSP/CDDS-CMIP7-mappings/blob/main/data/stash.csv) (Excel CSV representation of STASH information)
 
-Automatic processes (github actions) regenerate these files as issues are added or updated (see [here](https://github.com/UKNCSP/CDDS-CMIP7-mappings/actions/workflows/update_data_csv_json.yml))
+Github will provide an interface to search CSV files, but the mappings.csv file is above the size limit on this service (512 K) so the mappings are also presented in a set of files organised by realm;
+
+  **[aerosol](https://github.com/UKNCSP/CDDS-CMIP7-mappings/blob/main/data/aerosol_mappings.csv)**
+  **[atmosChem](https://github.com/UKNCSP/CDDS-CMIP7-mappings/blob/main/data/atmosChem_mappings.csv)**
+  **[atmos](https://github.com/UKNCSP/CDDS-CMIP7-mappings/blob/main/data/atmos_mappings.csv)**
+  **[landIce](https://github.com/UKNCSP/CDDS-CMIP7-mappings/blob/main/data/landIce_mappings.csv)**
+  **[land](https://github.com/UKNCSP/CDDS-CMIP7-mappings/blob/main/data/land_mappings.csv)**
+  **[ocean](https://github.com/UKNCSP/CDDS-CMIP7-mappings/blob/main/data/ocean_mappings.csv)**
+  **[ocnBgchem](https://github.com/UKNCSP/CDDS-CMIP7-mappings/blob/main/data/ocnBgchem_mappings.csv)**
+  **[seaIce](https://github.com/UKNCSP/CDDS-CMIP7-mappings/blob/main/data/seaIce_mappings.csv)**
+
+Automatic processes (github actions) regenerate these files as issues are added or updated (see [here](https://github.com/UKNCSP/CDDS-CMIP7-mappings/actions/workflows/update_data_csv_json.yml)).
 
 ## Prerequisites for the Review process
 
