@@ -7,6 +7,7 @@ import re
 import csv
 import sys
 import os
+from collections import defaultdict
 
 
 def tables_to_dict(text):
@@ -89,7 +90,7 @@ if __name__ == '__main__':
     order_dr = sorted(list(results[0]['Data Request information'].keys()))
     order_mapping = sorted(list(all_mapping_keys))
     title_list = order_first + order_link + order_labels + order_dr + order_mapping
-    csv_output = [title_list]
+    csv_output = []
     for entry in results:
         record = [entry[i] for i in order_first]
         record += ['https://github.com/UKNCSP/CDDS-CMIP7-mappings/issues/{}'.format(entry['issue_number'])]
@@ -100,8 +101,25 @@ if __name__ == '__main__':
 
     with open(os.path.join(output_dir, 'mappings.csv'), 'w') as fh:
         writer = csv.writer(fh, dialect='excel')
+        writer.writerow(title_list)
         for row in csv_output:
             writer.writerow(row)
+
+    # per realm csv
+    per_realm_csv = defaultdict(list)
+    for entry in csv_output:
+        realm = entry[0].split(" ")[1].split(".")[0]
+        per_realm_csv[realm].append(entry)
+
+    
+    for realm, realm_csv in per_realm_csv.items():
+        with open(os.path.join(output_dir, '{}_mappings.csv'.format(realm)), 'w') as fh:
+            writer = csv.writer(fh, dialect='excel')
+            writer.writerow(title_list)
+            for row in realm_csv:
+                writer.writerow(row)
+
+
 
     # prepare stash csv
     stash_headings = [
