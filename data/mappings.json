@@ -74446,7 +74446,8 @@
       "atmos",
       "CMIP6",
       "UKESM1",
-      "HadGEM3-GC31"
+      "HadGEM3-GC31",
+      "approved"
     ],
     "title": "Variable atmos.mon.rlut_tavg-u-hxy-u (Amon.rlut)"
   },
