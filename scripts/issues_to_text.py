@@ -51,8 +51,14 @@ def tables_to_dict(text):
                         })
     return results
                 
-                
-                
+
+def write_csv(output_dir, title_list, per_realm_csv, suffix):
+    for realm, realm_csv in per_realm_csv.items():
+        with open(os.path.join(output_dir, '{}_{}.csv'.format(realm, suffix)), 'w') as fh:
+            writer = csv.writer(fh, dialect='excel')
+            writer.writerow(title_list)
+            for row in realm_csv:
+                writer.writerow(row)
 
 
 if __name__ == '__main__':
@@ -105,20 +111,23 @@ if __name__ == '__main__':
         for row in csv_output:
             writer.writerow(row)
 
-    # per realm csv
+    # per realm csvs
     per_realm_csv = defaultdict(list)
+    per_realm_csv_cmip6 = defaultdict(list)
+    per_realm_csv_new = defaultdict(list)
     for entry in csv_output:
         realm = entry[0].split(" ")[1].split(".")[0]
         per_realm_csv[realm].append(entry)
+        labels = entry[3]
+        if 'CMIP6' in labels:
+            per_realm_csv_cmip6[realm].append(entry)
+        else:
+            per_realm_csv_new[realm].append(entry)
 
     
-    for realm, realm_csv in per_realm_csv.items():
-        with open(os.path.join(output_dir, '{}_mappings.csv'.format(realm)), 'w') as fh:
-            writer = csv.writer(fh, dialect='excel')
-            writer.writerow(title_list)
-            for row in realm_csv:
-                writer.writerow(row)
-
+    write_csv(output_dir, title_list, per_realm_csv, 'mappings')
+    write_csv(output_dir, title_list, per_realm_csv_cmip6, 'mappings_CMIP6')
+    write_csv(output_dir, title_list, per_realm_csv_new, 'mappings_new')
 
 
     # prepare stash csv
