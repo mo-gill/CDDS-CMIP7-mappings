@@ -74401,7 +74401,9 @@
     },
     "Mapping information": {
       "Expression HadGEM3-GC31": "m01s03i332[lbproc=128]",
+      "Expression HadGEM3-GC5": "m01s03i332[lbproc=128]",
       "Expression UKESM1": "m01s03i332[lbproc=128]",
+      "Expression UKESM1-3": "m01s03i332[lbproc=128]",
       "Model units": "W m-2"
     },
     "STASH entries": [
@@ -74417,6 +74419,22 @@
         "STASH": "m01s03i332",
         "domain_profile": "DIAG",
         "model": "HadGEM3-GC31",
+        "stash_number": "3,332",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i332",
+        "domain_profile": "DIAG",
+        "model": "UKESM1-3",
+        "stash_number": "3,332",
+        "time_profile": "TMONMN",
+        "usage_profile": "UP5"
+      },
+      {
+        "STASH": "m01s03i332",
+        "domain_profile": "DIAG",
+        "model": "HadGEM3-GC5",
         "stash_number": "3,332",
         "time_profile": "TMONMN",
         "usage_profile": "UP5"

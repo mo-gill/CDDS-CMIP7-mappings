@@ -2306,6 +2306,8 @@ HadGEM3-GC31,rlutcs_tavg-u-hxy-u,mon,m01s02i206,2,206,TMONMN,DIAG,UP5
 HadGEM3-GC31,rlutcs_tavg-u-hxy-u,mon,m01s03i332,3,332,TMONMN,DIAG,UP5
 UKESM1,rlut_tavg-u-hxy-u,mon,m01s03i332,3,332,TMONMN,DIAG,UP5
 HadGEM3-GC31,rlut_tavg-u-hxy-u,mon,m01s03i332,3,332,TMONMN,DIAG,UP5
+UKESM1-3,rlut_tavg-u-hxy-u,mon,m01s03i332,3,332,TMONMN,DIAG,UP5
+HadGEM3-GC5,rlut_tavg-u-hxy-u,mon,m01s03i332,3,332,TMONMN,DIAG,UP5
 UKESM1,rlus_tavg-u-hxy-u,mon,m01s02i201,2,201,TMONMN,DIAG,UP5
 UKESM1,rlus_tavg-u-hxy-u,mon,m01s02i205,2,205,TMONMN,DIAG,UP5
 UKESM1,rlus_tavg-u-hxy-u,mon,m01s02i207,2,207,TMONMN,DIAG,UP5
