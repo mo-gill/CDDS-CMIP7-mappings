@@ -24,6 +24,8 @@ Github will provide an interface to search CSV files, but the mappings.csv file 
   **[ocnBgchem](https://github.com/UKNCSP/CDDS-CMIP7-mappings/blob/main/data/ocnBgchem_mappings.csv)**
   **[seaIce](https://github.com/UKNCSP/CDDS-CMIP7-mappings/blob/main/data/seaIce_mappings.csv)**
 
+Note that there are separate files for variables which were present in CMIP6 and those that appear to be new in the [data subdirectory](https://github.com/UKNCSP/CDDS-CMIP7-mappings/blob/main/data/).
+
 Automatic processes (github actions) regenerate these files as issues are added or updated (see [here](https://github.com/UKNCSP/CDDS-CMIP7-mappings/actions/workflows/update_data_csv_json.yml)).
 
 ## Prerequisites for the Review process
