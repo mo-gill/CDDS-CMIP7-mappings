@@ -19,7 +19,7 @@ if __name__ == '__main__':
 
         issues = [i for i in alldata if '({})'.format(key) in i['title']]
 
-        if len(data) > 1:
+        if len(issues) > 1:
             print("found more than 1 record")
             sys.exit(1)
 
