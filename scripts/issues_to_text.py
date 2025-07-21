@@ -75,6 +75,8 @@ if __name__ == '__main__':
     # prepare mappings.json
     results = []
     for entry in data:
+        if not entry['title'].startswith('Variable'):
+            continue
         result = tables_to_dict(entry['body'])
         result['title'] = entry['title']
         result['issue_number'] = entry['number']
