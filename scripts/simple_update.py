@@ -20,8 +20,8 @@ if __name__ == '__main__':
         for line in lines:
             newlines.append(line)
             
-            if "UKESM1" in line:
-                line2 = line.replace("UKESM1", "UKESM1-3")
+            if "UKESM1 " in line:
+                line2 = line.replace("UKESM1 ", "UKESM1-3 ")
                 newlines.append(line2)
             
             if 'HadGEM3-GC31' in line:
