@@ -31,4 +31,7 @@ if __name__ == '__main__':
 
         command = 'gh issue edit {} -F {}'.format(number, filename) 
         print(command)
+        command2 = '# gh issue edit {} --add-label approved'.format(number) 
+        print(command2)
+        
 
