@@ -41464,7 +41464,6 @@
       "Variable status": "CMIP6 CMOR variable"
     },
     "Mapping information": {
-      "Expression UKESM1": "land_class_mean(m01s19i007[lbtim_ia=240,lbproc=128], m01s19i013[lbtim_ia=240,lbproc=128], land_class=\"veg\")",
       "Model units": "-"
     },
     "STASH entries": [],
